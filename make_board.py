@@ -72,6 +72,72 @@ NO_API = [
     ("Tsuga",        "no job board found"),
 ]
 
+
+# --- Batch 2: French tech / fintech / scale-ups -----------------------------
+# Confirmed against live API responses on 2026-09-02. Doctolib is intentionally
+# absent - it lives in COMPANIES (batch 1) and must not be tracked twice.
+COMPANIES2 = [
+    {"name": "Qonto",            "ats": "lever", "slug": "qonto",
+     "careers": "https://qonto.com/en/careers"},
+    {"name": "Contentsquare",    "ats": "lever", "slug": "contentsquare",
+     "careers": "https://contentsquare.com/careers/"},
+    {"name": "BlaBlaCar",        "ats": "lever", "slug": "blablacar",
+     "careers": "https://blog.blablacar.com/careers"},
+    {"name": "Swile",            "ats": "lever", "slug": "swile",
+     "careers": "https://www.swile.co/en-gb/careers"},
+    {"name": "Aircall",          "ats": "lever", "slug": "aircall",
+     "careers": "https://aircall.io/careers/"},
+    {"name": "Younited",         "ats": "lever", "slug": "younited",
+     "careers": "https://www.younited-credit.com/carrieres"},
+    {"name": "Back Market",      "ats": "ashby", "slug": "backmarket",
+     "careers": "https://jobs.backmarket.com/"},
+    {"name": "Alan",             "ats": "ashby", "slug": "alan",
+     "careers": "https://alan.com/careers"},
+    {"name": "Pennylane",        "ats": "ashby", "slug": "pennylane",
+     "careers": "https://www.pennylane.com/careers/"},
+    {"name": "Ledger",           "ats": "ashby", "slug": "ledger",
+     "careers": "https://www.ledger.com/careers"},
+    {"name": "Sorare",           "ats": "ashby", "slug": "sorare",
+     "careers": "https://sorare.com/careers"},
+    {"name": "Mirakl",           "ats": "greenhouse", "slug": "mirakl",
+     "careers": "https://www.mirakl.com/careers"},
+    # ashby/shift is a DIFFERENT company (an Australian lender). Do not "fix" this slug.
+    {"name": "Shift Technology", "ats": "greenhouse", "slug": "shifttechnology",
+     "careers": "https://www.shift-technology.com/careers"},
+    {"name": "Dailymotion",      "ats": "smartrecruiters", "slug": "dailymotion",
+     "careers": "https://careers.dailymotion.com/"},
+    {"name": "Hugging Face",     "ats": "workable", "slug": "huggingface",
+     "careers": "https://apply.workable.com/huggingface/"},
+    {"name": "Payfit",           "ats": "teamtailor", "slug": "payfit",
+     "careers": "https://payfit.com/careers/"},
+    {"name": "Amadeus",          "ats": "workday", "tenant": "amadeus", "wd": "wd502",
+     "site": "jobs", "careers": "https://careers.amadeus.com/"},
+    {"name": "Murex",            "ats": "workday", "tenant": "murex", "wd": "wd3",
+     "site": "MurexCareerPage1", "careers": "https://careers.murex.com/"},
+]
+
+NO_API2 = [
+    ("Deezer",     "careers URL redirects to their investor site; no job board found"),
+    ("Mistral AI", "Ashby UI only - the posting API 404s for every slug variant"),
+    ("Kayrros",    "careers page returns 404"),
+    ("INRIA",      "custom public-research portal (jobs.inria.fr)"),
+    ("CEA",        "custom public-research portal"),
+    ("CNRS",       "custom public-research portal (emploi.cnrs.fr)"),
+]
+
+# Selected by --roster; render() reads BOARD for the page name and blurb.
+ROSTERS = {
+    "1": {"name": "Stage Watch", "companies": COMPANIES,
+          "blurb": "Tech internships and PFE in France at observability, infrastructure and "
+                   "developer-tools companies, read straight from each company&rsquo;s "
+                   "applicant-tracking API."},
+    "2": {"name": "French Tech Watch", "companies": COMPANIES2,
+          "blurb": "Tech internships and PFE in France at French tech, fintech and scale-up "
+                   "companies, read straight from each company&rsquo;s applicant-tracking API."},
+}
+
+BOARD = ROSTERS["1"]
+
 LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg)\b", re.I)
 INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
@@ -232,7 +298,7 @@ ENDPOINT = {
 
 def scan():
     results = []
-    for c in COMPANIES:
+    for c in BOARD["companies"]:
         row = {"name": c["name"], "ats": c["ats"], "careers": c.get("careers", ""),
                "endpoint": ENDPOINT[c["ats"]](c), "error": None,
                "total": 0, "france": 0, "hits": [], "other": []}
@@ -265,7 +331,7 @@ def load_prev(path):
 
 
 CSS = """
-<title>Stage Watch</title>
+<title>__BOARD_NAME__</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -425,14 +491,13 @@ def render(results, prev):
     live   = sum(len(r["hits"]) for r in results)
     broken = [r for r in results if r["error"]]
 
-    p = [CSS, '<div class="wrap">']
+    p = [CSS.replace("__BOARD_NAME__", esc(BOARD["name"])), '<div class="wrap">']
 
     p.append('<header class="head">')
     p.append('<p class="eyebrow">Daily ATS sweep &middot; Europe/Paris</p>')
-    p.append("<h1>Stage Watch</h1>")
-    p.append('<p class="tagline">Tech internships and PFE in France, read straight from each '
-             "company&rsquo;s applicant-tracking API. Every link below came back in a live API "
-             "response &mdash; none were searched for or guessed.</p>")
+    p.append("<h1>%s</h1>" % esc(BOARD["name"]))
+    p.append('<p class="tagline">%s Every link below came back in a live API '
+             "response &mdash; none were searched for or guessed.</p>" % BOARD["blurb"])
     p.append('<p class="statusline">')
     p.append('<span class="live"><b>%d</b> live match%s</span>' % (live, "" if live == 1 else "es"))
     p.append("<span><b>%d</b> new since last run</span>" % new_ct)
@@ -510,6 +575,8 @@ def render(results, prev):
 
 
 if __name__ == "__main__":
+    if "--roster" in sys.argv:
+        BOARD = ROSTERS[sys.argv[sys.argv.index("--roster") + 1]]
     prev_path = sys.argv[sys.argv.index("--prev") + 1] if "--prev" in sys.argv else None
     out = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "board.html"
     res = scan()

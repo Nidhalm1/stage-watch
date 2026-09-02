@@ -24,16 +24,22 @@ jobs:
 
       - name: Sweep the ATS APIs
         run: |
-          # the committed board is the previous state: it carries the hidden
-          # JSON block recording which postings were already seen
+          # Batch 1 - Stage Watch (observability / infra / dev tools)
           cp board.html prev.html 2>/dev/null || true
           python make_board.py --prev prev.html --out board.html
           rm -f prev.html
+          # Batch 2 - French Tech Watch (French tech / fintech / scale-ups).
+          # Separate roster, separate board, separate state block. make_board.py
+          # exits 2 without writing if every company in a roster fails, so a
+          # broken sweep fails this step instead of committing an empty board.
+          cp board2.html prev2.html 2>/dev/null || true
+          python make_board.py --roster 2 --prev prev2.html --out board2.html
+          rm -f prev2.html
 
       - name: Commit the new board
         run: |
           git config user.name  "stage-watch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add board.html
+          git add board.html board2.html
           git diff --staged --quiet || git commit -m "sweep $(date -u +%F)"
           git push

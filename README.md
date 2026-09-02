@@ -1,5 +1,18 @@
 # Stage Watch
 
+Two independent nightly job watches sharing one codebase.
+
+| Board | File | Roster | Artifact |
+|---|---|---|---|
+| Stage Watch | `board.html` | `COMPANIES` - 20 observability / infra / dev-tools | 92513aa1 |
+| French Tech Watch | `board2.html` | `COMPANIES2` - 18 French tech / fintech / scale-ups | 277bfba8 |
+
+Each board has its own hidden state block, so NEW / closed detection is per-board.
+They never share results. `make_board.py --roster 2` selects the second roster;
+fetchers, filters and the renderer are shared, so a fix lands in both at once.
+Doctolib sits in batch 1 only - listing it twice would report one role as new on
+two boards.
+
 Nightly sweep for tech internships / PFE in France, read straight from each
 company's ATS API. No web search, no scraping, no guessed URLs: every link in
 the board came back in a live API response.
