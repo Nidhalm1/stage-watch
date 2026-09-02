@@ -1,0 +1,36 @@
+name: Stage Watch sweep
+
+on:
+  schedule:
+    # 15:45 UTC = 17:45 Europe/Paris in summer (CEST), 16:45 in winter (CET).
+    # Runs 15 min before the Claude routine that publishes the artifact.
+    - cron: "45 15 * * *"
+  workflow_dispatch:        # lets you run it by hand from the Actions tab
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sweep the ATS APIs
+        run: |
+          # the committed board is the previous state: it carries the hidden
+          # JSON block recording which postings were already seen
+          cp board.html prev.html 2>/dev/null || true
+          python make_board.py --prev prev.html --out board.html
+          rm -f prev.html
+
+      - name: Commit the new board
+        run: |
+          git config user.name  "stage-watch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add board.html
+          git diff --staged --quiet || git commit -m "sweep $(date -u +%F)"
+          git push

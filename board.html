@@ -1,0 +1,179 @@
+
+<title>Stage Watch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Public+Sans:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --sunk:#F0F2F5;
+  --ink:#14181F; --muted:#5C6472; --line:#E2E6EC;
+  --accent:#10695A; --accent-soft:#E4F0EC;
+  --new:#9A5B00; --new-soft:#FBEEDB;
+  --closed:#A03A30; --closed-soft:#F7E7E4;
+  --shadow:0 1px 2px rgba(20,24,31,.05),0 8px 24px -16px rgba(20,24,31,.25);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1117; --surface:#161A22; --sunk:#12161D;
+    --ink:#E6EAF1; --muted:#939CAC; --line:#242A35;
+    --accent:#43C9A7; --accent-soft:#12302A;
+    --new:#D9A052; --new-soft:#31250F;
+    --closed:#DE8074; --closed-soft:#331A17;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1117; --surface:#161A22; --sunk:#12161D;
+  --ink:#E6EAF1; --muted:#939CAC; --line:#242A35;
+  --accent:#43C9A7; --accent-soft:#12302A;
+  --new:#D9A052; --new-soft:#31250F;
+  --closed:#DE8074; --closed-soft:#331A17;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:60rem;margin:0 auto;padding:2.75rem 1.5rem 4rem;display:flex;flex-direction:column;gap:2rem}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+
+/* masthead */
+.head{display:flex;flex-direction:column;gap:.5rem}
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin:0;
+}
+h1{
+  font-family:Archivo,sans-serif;font-weight:700;font-size:clamp(1.9rem,5vw,2.6rem);
+  letter-spacing:-.02em;margin:0;text-wrap:balance;
+}
+.tagline{margin:0;color:var(--muted);max-width:48ch}
+.statusline{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.8rem;color:var(--muted);
+  margin:.35rem 0 0;padding-top:.85rem;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:.35rem 1rem;font-variant-numeric:tabular-nums;
+}
+.statusline b{color:var(--ink);font-weight:500}
+.statusline .live{color:var(--accent);font-weight:500}
+
+/* company cards */
+.cards{display:flex;flex-direction:column;gap:1rem}
+.co{
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--shadow);overflow:hidden;
+}
+.co-h{
+  display:flex;align-items:baseline;flex-wrap:wrap;gap:.5rem .75rem;
+  padding:1rem 1.25rem;border-bottom:1px solid var(--line);background:var(--sunk);
+}
+.co-h h2{font-family:Archivo,sans-serif;font-size:1.06rem;font-weight:600;margin:0;letter-spacing:-.01em}
+.badge{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.06em;
+  text-transform:uppercase;padding:.2rem .45rem;border-radius:4px;
+  background:var(--accent-soft);color:var(--accent);
+}
+.counts{
+  margin-left:auto;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.75rem;
+  color:var(--muted);font-variant-numeric:tabular-nums;
+}
+.jobs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.job{padding:.95rem 1.25rem;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:.3rem}
+.job:last-child{border-bottom:0}
+.job a{
+  font-family:Archivo,sans-serif;font-weight:600;font-size:1rem;
+  color:var(--ink);text-decoration:underline;text-decoration-color:var(--line);
+  text-underline-offset:3px;transition:text-decoration-color .15s;
+}
+.job a:hover{text-decoration-color:var(--accent)}
+.job .meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.74rem;color:var(--muted);
+}
+.chip{
+  font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;font-weight:500;
+  padding:.15rem .4rem;border-radius:3px;
+}
+.chip.new{background:var(--new-soft);color:var(--new)}
+.chip.gone{background:var(--closed-soft);color:var(--closed)}
+.none{margin:0;padding:.95rem 1.25rem;color:var(--muted);font-size:.9rem}
+.err{margin:0;padding:.95rem 1.25rem;color:var(--closed);font-size:.85rem;
+     font-family:"JetBrains Mono",ui-monospace,monospace;background:var(--closed-soft)}
+details{border-top:1px solid var(--line);background:var(--sunk)}
+summary{
+  cursor:pointer;padding:.6rem 1.25rem;font-size:.78rem;color:var(--muted);
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+}
+details ul{list-style:none;margin:0;padding:0 1.25rem .85rem;display:flex;flex-direction:column;gap:.3rem}
+details li{font-size:.83rem;color:var(--muted)}
+.gone-list .job a{color:var(--muted);text-decoration-line:line-through}
+
+/* provenance */
+.sources{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+.sources h2{font-family:Archivo,sans-serif;font-size:.9rem;font-weight:600;margin:0}
+.sources p{margin:0;font-size:.83rem;color:var(--muted);max-width:64ch}
+.sources p.warn{color:var(--closed)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.73rem}
+th,td{text-align:left;padding:.45rem .7rem .45rem 0;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--muted);font-weight:500;letter-spacing:.05em;text-transform:uppercase;font-size:.65rem}
+td{color:var(--muted)}
+td.co-name{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header class="head">
+<p class="eyebrow">Daily ATS sweep &middot; Europe/Paris</p>
+<h1>Stage Watch</h1>
+<p class="tagline">Tech internships and PFE in France, read straight from each company&rsquo;s applicant-tracking API. Every link below came back in a live API response &mdash; none were searched for or guessed.</p>
+<p class="statusline">
+<span class="live"><b>2</b> live matches</span>
+<span><b>0</b> new since last run</span>
+<span><b>677</b> roles scanned</span>
+<span><b>3</b> companies</span>
+<span>run Wed 02 Sep 2026, 18:04 CEST</span>
+</p></header>
+<div class="cards">
+<article class="co">
+<header class="co-h"><h2>Datadog</h2><span class="badge">greenhouse</span>
+<span class="counts">439 open &middot; 51 in France</span>
+</header>
+<p class="none">No tech internships open in France right now.</p>
+</article>
+<article class="co">
+<header class="co-h"><h2>Doctolib</h2><span class="badge">greenhouse</span>
+<span class="counts">126 open &middot; 49 in France</span>
+</header>
+<p class="none">No tech internships open in France right now.</p>
+<details><summary>3 non-tech internships filtered out</summary><ul>
+<li>Stage - Community Engagement Associate (x/f/m) - Octobre 2026 &mdash; Paris, Paris, France</li>
+<li>Stage - Consolidation et Contrôle financier (x/f/m) - Septembre 2026 &mdash; Paris, Paris, France</li>
+<li>Stage - Medical Content Associate (x/f/m) - Septembre 2026 &mdash; Paris, Paris, France</li>
+</ul></details>
+</article>
+<article class="co">
+<header class="co-h"><h2>Criteo</h2><span class="badge">workday</span>
+<span class="counts">112 open &middot; 23 in France</span>
+</header>
+<ul class="jobs">
+<li class="job"><a href="https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Software-Engineer-Intern---Front-End-or-Fullstack_r16311" target="_blank" rel="noopener">Software Engineer Intern - Front-End or Fullstack</a><div class="meta"><span>Paris, France</span><span>seen since 2026-09-02</span></div></li>
+<li class="job"><a href="https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Scientist-Intern_r15715-1" target="_blank" rel="noopener">Product Data Scientist Intern</a><div class="meta"><span>Paris, France</span><span>seen since 2026-09-02</span></div></li>
+</ul>
+<details><summary>1 non-tech internship filtered out</summary><ul>
+<li>Stage – Campaign Manager Intern &mdash; Paris, France</li>
+</ul></details>
+</article>
+</div>
+<section class="sources"><h2>Where this came from</h2>
+<p>One request per company, straight to the board API. A role is listed only if the API returned it in this run, so a posting that disappears has been filled or pulled &mdash; no link here needs re-checking by hand.</p>
+<div class="tbl"><table><thead><tr><th>Company</th><th>ATS</th><th>Endpoint</th><th>This run</th></tr></thead><tbody>
+<tr><td class="co-name">Datadog</td><td>greenhouse</td><td>boards-api.greenhouse.io/v1/boards/datadog/jobs</td><td>439 roles</td></tr>
+<tr><td class="co-name">Doctolib</td><td>greenhouse</td><td>boards-api.greenhouse.io/v1/boards/doctolib/jobs</td><td>126 roles</td></tr>
+<tr><td class="co-name">Criteo</td><td>workday</td><td>criteo.wd3.myworkdayjobs.com/wday/cxs/criteo/Criteo_Career_Site/jobs</td><td>112 roles</td></tr>
+</tbody></table></div>
+<p>Filter: location in France &middot; title contains stage / stagiaire / PFE / intern &middot; excludes alternance and apprentissage &middot; engineering, data, infra, SRE or security role.</p>
+</section></div>
+<script type="application/json" id="state">{"generated": "2026-09-02T18:04:56.937884+02:00", "postings": {"https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Software-Engineer-Intern---Front-End-or-Fullstack_r16311": {"title": "Software Engineer Intern - Front-End or Fullstack", "company": "Criteo", "location": "Paris, France", "first_seen": "2026-09-02"}, "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Scientist-Intern_r15715-1": {"title": "Product Data Scientist Intern", "company": "Criteo", "location": "Paris, France", "first_seen": "2026-09-02"}}, "closed": []}</script>
