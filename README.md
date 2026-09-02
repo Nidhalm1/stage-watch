@@ -24,14 +24,32 @@ bridge between the two.
 already seen and when it was first seen, so the next run can mark roles NEW and
 detect ones that vanished (= filled or pulled). Git history is the audit trail.
 
+## Companies
+
+20 with a working public API (see `COMPANIES` in `make_board.py`), 6 without
+(see `NO_API` in the same file, with the reason for each).
+
 ## Adding a company
 
-Never guess a slug — a wrong one fails silently as "0 jobs". Probe it first:
+Never guess a slug. Two ways it bites:
 
-    python ats_scan.py --probe Qonto greenhouse:qonto lever:qonto
+1. A wrong slug fails **silently** as "0 jobs" — the company looks healthy and
+   watched while actually being invisible.
+2. A slug can belong to a **different company of the same name**.
+   `workable/kestra` returns 36 real, live jobs — for "Kestra Financial
+   Independent Advisor", a US financial advisory firm, not Kestra.io. Always
+   confirm the job titles look like the right company before trusting a hit.
+
+Probe candidates in bulk, then check the winner's titles:
+
+    python bulk_probe.py cands.json     # {"Company": ["slug1","slug2"], ...}
+
+A hit only counts if the response actually carries jobs. In particular
+SmartRecruiters returns HTTP 200 with an empty `content[]` for ANY bogus slug,
+so `totalFound > 0` is the real test.
 
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
-`greenhouse`, `lever`, `workable`, `smartrecruiters`, `workday`.
+`greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`.
 
 Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
 `{"name": "Criteo", "ats": "workday", "tenant": "criteo", "wd": "wd3", "site": "Criteo_Career_Site"}`.

@@ -15,12 +15,61 @@ from datetime import datetime, timezone, timedelta
 # Every slug below was confirmed against a live API response. Never add one
 # that has not been probed - a wrong slug fails silently as "0 jobs".
 COMPANIES = [
-    {"name": "Datadog",  "ats": "greenhouse", "slug": "datadog",
+    # Every slug below was confirmed against a live API response on 2026-09-02.
+    # Never add one that has not been probed: a wrong slug fails silently as
+    # "0 jobs", and a slug belonging to a DIFFERENT company of the same name is
+    # worse still (workable/kestra is a US financial advisor, not Kestra.io).
+    {"name": "Datadog",      "ats": "greenhouse", "slug": "datadog",
      "careers": "https://careers.datadoghq.com/"},
-    {"name": "Doctolib", "ats": "greenhouse", "slug": "doctolib",
+    {"name": "Doctolib",     "ats": "greenhouse", "slug": "doctolib",
      "careers": "https://careers.doctolib.com/"},
-    {"name": "Criteo",   "ats": "workday", "tenant": "criteo", "wd": "wd3",
+    {"name": "Criteo",       "ats": "workday", "tenant": "criteo", "wd": "wd3",
      "site": "Criteo_Career_Site", "careers": "https://careers.criteo.com/en/jobs/"},
+    {"name": "Grafana Labs", "ats": "greenhouse", "slug": "grafanalabs",
+     "careers": "https://grafana.com/about/careers/"},
+    {"name": "Elastic",      "ats": "greenhouse", "slug": "elastic",
+     "careers": "https://www.elastic.co/about/careers/"},
+    {"name": "Sentry",       "ats": "ashby", "slug": "sentry",
+     "careers": "https://sentry.io/careers/"},
+    {"name": "Dataiku",      "ats": "greenhouse", "slug": "dataiku",
+     "careers": "https://www.dataiku.com/careers/"},
+    {"name": "Algolia",      "ats": "greenhouse", "slug": "algolia",
+     "careers": "https://www.algolia.com/careers/"},
+    {"name": "Meilisearch",  "ats": "lever", "slug": "meili",
+     "careers": "https://www.meilisearch.com/careers"},
+    {"name": "Kestra",       "ats": "ashby", "slug": "kestra",
+     "careers": "https://kestra.io/careers"},
+    {"name": "Sifflet",      "ats": "ashby", "slug": "sifflet",
+     "careers": "https://www.siffletdata.com/careers"},
+    {"name": "OpsMill",      "ats": "ashby", "slug": "opsmill",
+     "careers": "https://opsmill.com/careers/"},
+    {"name": "Scaleway",     "ats": "lever", "slug": "scaleway",
+     "careers": "https://www.scaleway.com/en/careers/"},
+    {"name": "Cloudflare",   "ats": "greenhouse", "slug": "cloudflare",
+     "careers": "https://www.cloudflare.com/careers/"},
+    {"name": "MongoDB",      "ats": "greenhouse", "slug": "mongodb",
+     "careers": "https://www.mongodb.com/careers"},
+    {"name": "GitLab",       "ats": "greenhouse", "slug": "gitlab",
+     "careers": "https://about.gitlab.com/jobs/"},
+    {"name": "Confluent",    "ats": "ashby", "slug": "confluent",
+     "careers": "https://www.confluent.io/careers/"},
+    {"name": "Snowflake",    "ats": "ashby", "slug": "snowflake",
+     "careers": "https://careers.snowflake.com/"},
+    {"name": "Databricks",   "ats": "greenhouse", "slug": "databricks",
+     "careers": "https://www.databricks.com/company/careers"},
+    {"name": "Red Hat",      "ats": "workday", "tenant": "redhat", "wd": "wd5",
+     "site": "jobs", "careers": "https://www.redhat.com/en/jobs"},
+]
+
+# Probed on 2026-09-02 and confirmed to have NO supported public API. Listed so
+# nobody wastes time re-probing them; check these by hand or via their own alerts.
+NO_API = [
+    ("Dynatrace",    "custom Coveo search endpoint, not a standard ATS"),
+    ("OVHcloud",     "SAP SuccessFactors"),
+    ("GitHub",       "iCIMS"),
+    ("HashiCorp",    "acquired by IBM; careers now redirect to IBM Careers"),
+    ("Clever Cloud", "no careers site found; /careers/ redirects to a product page"),
+    ("Tsuga",        "no job board found"),
 ]
 
 LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg)\b", re.I)
@@ -125,8 +174,25 @@ def f_workday(c):
         time.sleep(0.3)
 
 
+def f_ashby(c):
+    d = get("https://api.ashbyhq.com/posting-api/job-board/%s" % c["slug"])
+    out = []
+    for j in d.get("jobs", []):
+        if j.get("isListed") is False:
+            continue
+        sec = []
+        for s in (j.get("secondaryLocations") or []):
+            sec.append(s.get("location", "") if isinstance(s, dict) else str(s))
+        loc = j.get("location", "") or ""
+        blob = " ".join([x for x in [loc] + sec if x])
+        # jobUrl comes back verbatim from the API - never construct it
+        out.append((j.get("title", ""), blob or loc, j.get("jobUrl", ""), blob))
+    return out
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
-         "smartrecruiters": f_smartrecruiters, "workday": f_workday}
+         "smartrecruiters": f_smartrecruiters, "workday": f_workday,
+         "ashby": f_ashby}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -134,6 +200,7 @@ ENDPOINT = {
     "workable":        lambda c: "apply.workable.com/api/v1/widget/accounts/%s" % c["slug"],
     "smartrecruiters": lambda c: "api.smartrecruiters.com/v1/companies/%s/postings" % c["slug"],
     "workday":         lambda c: "%s.%s.myworkdayjobs.com/wday/cxs/%s/%s/jobs" % (c["tenant"], c["wd"], c["tenant"], c["site"]),
+    "ashby":           lambda c: "api.ashbyhq.com/posting-api/job-board/%s" % c["slug"],
 }
 
 
