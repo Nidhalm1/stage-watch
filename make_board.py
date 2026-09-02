@@ -420,6 +420,14 @@ if __name__ == "__main__":
     prev_path = sys.argv[sys.argv.index("--prev") + 1] if "--prev" in sys.argv else None
     out = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "board.html"
     res = scan()
+    # A board where every company errored is worse than no board: publishing it
+    # wipes real postings out of the state block. Bail before writing anything.
+    failed = [r for r in res if r["error"]]
+    if failed and len(failed) == len(res):
+        print("ALL %d companies failed to fetch - refusing to write a board" % len(res), file=sys.stderr)
+        for r in failed:
+            print("  %s: %s" % (r["name"], r["error"]), file=sys.stderr)
+        sys.exit(2)
     doc, live, new = render(res, load_prev(prev_path))
     open(out, "w", encoding="utf-8").write(doc)
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
