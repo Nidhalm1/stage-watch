@@ -76,6 +76,9 @@ LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenob
 INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
 TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|network|system)", re.I)
+# A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
+# These business-function words veto a tech match.
+EXCL   = re.compile(r"\b(legal|juridique|marketing|sales|vente|commercial|business development|talent|recruit|people|hr|rh|brand|communication|content|community|finance|accounting|comptab|audit|payroll|paie|office manager|customer success|account executive|partnership)\b", re.I)
 
 def _paris_now():
     """Paris wall clock. zoneinfo where tzdata exists (Linux cloud), else the
@@ -190,9 +193,31 @@ def f_ashby(c):
     return out
 
 
+def f_teamtailor(c):
+    # Teamtailor career sites expose a JSON Feed at <slug>.teamtailor.com/jobs.json.
+    # There is no page parameter that works (page=2 returns nothing), so the feed is
+    # all published jobs; if a company ever exceeds the feed size this would silently
+    # under-report, so keep an eye on the count.
+    d = get("https://%s.teamtailor.com/jobs.json" % c["slug"])
+    out = []
+    for it in d.get("items", []):
+        jp = it.get("_jobposting") or {}
+        raw = jp.get("jobLocation") or []
+        if isinstance(raw, dict):
+            raw = [raw]
+        locs = []
+        for L in raw:
+            a = (L or {}).get("address") or {}
+            locs.append(", ".join(x for x in [a.get("addressLocality"), a.get("addressCountry")] if x))
+        loc = "; ".join([x for x in locs if x])
+        # url comes back verbatim from the feed - never construct it
+        out.append((it.get("title", ""), loc, it.get("url", ""), loc))
+    return out
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
-         "ashby": f_ashby}
+         "ashby": f_ashby, "teamtailor": f_teamtailor}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -201,6 +226,7 @@ ENDPOINT = {
     "smartrecruiters": lambda c: "api.smartrecruiters.com/v1/companies/%s/postings" % c["slug"],
     "workday":         lambda c: "%s.%s.myworkdayjobs.com/wday/cxs/%s/%s/jobs" % (c["tenant"], c["wd"], c["tenant"], c["site"]),
     "ashby":           lambda c: "api.ashbyhq.com/posting-api/job-board/%s" % c["slug"],
+    "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
 }
 
 
@@ -220,8 +246,8 @@ def scan():
         itn = [j for j in fr if INTERN.search(j[0]) and not ALT.search(j[0])]
         row["total"]  = len(jobs)
         row["france"] = len(fr)
-        row["hits"]   = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if TECH.search(t)]
-        row["other"]  = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if not TECH.search(t)]
+        row["hits"]   = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if TECH.search(t) and not EXCL.search(t)]
+        row["other"]  = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if not (TECH.search(t) and not EXCL.search(t))]
         results.append(row)
     return results
 
