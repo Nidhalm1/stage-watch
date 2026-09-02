@@ -8,8 +8,11 @@ the board came back in a live API response.
 
 | When (Paris) | What |
 |---|---|
-| 17:45 | GitHub Action runs `make_board.py`, commits `board.html` |
-| 18:00 | Claude cloud routine clones this repo and publishes `board.html` as the Stage Watch artifact, which sends the notification email |
+| 17:00 | GitHub Action runs `make_board.py`, commits `board.html` |
+| 18:00 | Claude cloud routine clones this repo and publishes `board.html` as the Stage Watch artifact, and pings only if something changed |
+
+The hour of slack is deliberate - GitHub delays scheduled runs under load, and a
+late sweep would mean the routine publishes the previous day's board.
 
 The sweep runs here rather than in the Claude sandbox because that sandbox's
 egress proxy is default-deny and blocks both `boards-api.greenhouse.io` and
