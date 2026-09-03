@@ -10,6 +10,12 @@ on:
     - cron: "0 15 * * *"
   workflow_dispatch:        # lets you run it by hand from the Actions tab
 
+# Two sweeps running at once would both commit the same four files and the
+# loser's push is rejected, silently dropping a sweep.
+concurrency:
+  group: stage-watch-sweep
+  cancel-in-progress: false
+
 jobs:
   sweep:
     runs-on: ubuntu-latest
@@ -22,30 +28,74 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Sweep the ATS APIs
+      # One step per roster, and each one continue-on-error. These used to share
+      # a single `run:` block, which GitHub executes under `bash -e`: when roster
+      # 1 exited 2 ("every company failed", make_board.py refusing to write an
+      # empty board) the step aborted, boards 2 and 3 were never built, and the
+      # commit step never ran - three watches taken out by one bad roster. The
+      # gate step at the end still turns the run red so a failure is visible.
+      - name: Batch 1 - Stage Watch
+        id: b1
+        continue-on-error: true
         run: |
-          # Batch 1 - Stage Watch (observability / infra / dev tools)
           cp board.html prev.html 2>/dev/null || true
           python make_board.py --prev prev.html --out board.html
           rm -f prev.html
-          # Batch 2 - French Tech Watch (French tech / fintech / scale-ups).
-          # Separate roster, separate board, separate state block. make_board.py
-          # exits 2 without writing if every company in a roster fails, so a
-          # broken sweep fails this step instead of committing an empty board.
+
+      - name: Batch 2 - French Tech Watch
+        id: b2
+        continue-on-error: true
+        run: |
           cp board2.html prev2.html 2>/dev/null || true
           python make_board.py --roster 2 --prev prev2.html --out board2.html
           rm -f prev2.html
-          # Batch 3 - Defence & Finance Watch. Thales and Airbus are 6000+ posting
-          # Workday boards, fetched as a union of the intern facet plus keyword
-          # searches, so this step takes ~70s longer than the other two.
+
+      # Thales and Airbus are 6000+ posting Workday boards, fetched as a union of
+      # the intern facet plus keyword searches, so this step takes ~70s longer
+      # than the other two.
+      - name: Batch 3 - Defence & Finance Watch
+        id: b3
+        continue-on-error: true
+        run: |
           cp board3.html prev3.html 2>/dev/null || true
           python make_board.py --roster 3 --prev prev3.html --out board3.html
           rm -f prev3.html
 
-      - name: Commit the new board
+      - name: Commit the new boards
+        if: always()
         run: |
           git config user.name  "stage-watch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add board.html board2.html board3.html
-          git diff --staged --quiet || git commit -m "sweep $(date -u +%F)"
+          for f in board.html board2.html board3.html status.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          if git diff --staged --quiet; then
+            echo "nothing changed this run"
+            exit 0
+          fi
+          git commit -m "sweep $(date -u +%F)"
+          # Retry on a rejected push: rebase onto whatever landed first rather
+          # than dropping this sweep on the floor.
+          for i in 1 2 3 4; do
+            git push && exit 0
+            echo "push rejected; rebasing and retrying ($i/4)"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            sleep $((i * 5))
+          done
           git push
+
+      # continue-on-error above hides a failure from the job status, so restore
+      # it here: a roster that stopped fetching should show up red in the
+      # Actions tab, not pass quietly while its board goes stale.
+      - name: Fail the run if a roster failed
+        if: always()
+        run: |
+          rc=0
+          for pair in "1:${{ steps.b1.outcome }}" "2:${{ steps.b2.outcome }}" "3:${{ steps.b3.outcome }}"; do
+            n="${pair%%:*}"; o="${pair#*:}"
+            if [ "$o" != "success" ]; then
+              echo "::error::batch $n did not succeed ($o) - its board was not rebuilt"
+              rc=1
+            fi
+          done
+          exit $rc
