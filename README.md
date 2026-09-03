@@ -122,6 +122,9 @@ Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
     python make_board.py --roster 2 --prev board2.html --out board2.html
     python make_board.py --roster 3 --prev board3.html --out board3.html
 
+`ROUTINE.md` holds the prompt the 16:00 UTC publish routine runs, so it can be
+kept in step with the `status.json` this code writes.
+
 `ats_scan.py` is an earlier standalone sweeper kept for reference only. It reads
 an `ats-state.json` that no longer exists in this repo, so it will not run as-is;
 `make_board.py` is the one the Action calls.
