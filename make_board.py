@@ -8,7 +8,7 @@
 Self-contained on purpose: the nightly cloud run has no access to any other
 file, so config + fetchers + template all live here.
 """
-import json, re, sys, html, urllib.request, time
+import json, os, re, sys, html, urllib.request, time
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------- config ----
@@ -187,13 +187,88 @@ ROSTERS = {
 
 BOARD = ROSTERS["1"]
 
-LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg|marseille|aix-en-provence|cannes|toulon|marignane|blagnac|colomiers|saint-nazaire|brest|angers|le mans|tours|orl[ée]ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|saint-[ée]tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|v[ée]lizy|[ée]lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|meudon|montrouge|levallois|neuilly|cergy|[ée]vry|cr[ée]teil|roissy|gennevilliers|saint-denis|marne-la-vall[ée]e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]ry|besan[çc]on|mulhouse|colmar|belfort|montbeliard|vitrolles|rungis|suresnes|colombes|vannes|lorient|quimper|laval|cholet|niort|bayonne|perpignan|b[ée]ziers)\b", re.I)
-INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship)\b", re.I)
+# --- location -------------------------------------------------------------
+# A city whitelist can only ever SHRINK the result set: a role in a town that is
+# not listed is invisible and nothing says so. Three defences: the list below is
+# long, it also carries regions/departments (Workday often shows only those), and
+# every fetcher that gets a structured country back normalises it to "France" so
+# the country alone is enough.
+_FR_CITIES = (
+    "paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg|"
+    "marseille|aix-en-provence|cannes|toulon|marignane|blagnac|colomiers|cugnaux|saint-nazaire|brest|"
+    "angers|le mans|tours|orl[ée]ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|"
+    "saint-[ée]tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|"
+    "v[ée]lizy|villacoublay|[ée]lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|"
+    "meudon|montrouge|levallois|neuilly|cergy|[ée]vry|cr[ée]teil|roissy|gennevilliers|saint-denis|"
+    "marne-la-vall[ée]e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]ry|besan[çc]on|"
+    "mulhouse|colmar|belfort|montbeliard|vitrolles|rungis|suresnes|colombes|vannes|lorient|quimper|"
+    "laval|cholet|niort|bayonne|perpignan|b[ée]ziers|"
+    # added after an audit found real defence/aerospace/industrial sites missing
+    "m[ée]rignac|le haillan|saint-m[ée]dard|bourges|ch[âa]tellerault|istres|ymare|val-de-reuil|"
+    "moirans|fleury-les-aubrais|bezons|osny|conflans|vitry|saint-quentin-en-yvelines|lannion|"
+    "plouzan[ée]|cesson|bruz|les mureaux|mantes|poissy|montigny|plaisir|argenteuil|la d[ée]fense|"
+    "puteaux|malakoff|vanves|clichy|saint-cloud|s[èe]vres|chatou|rueil|antony|orsay|gif-sur-yvette|"
+    "marcoussis|les ulis|corbeil|villebon|ivry|alfortville|charenton|montreuil|pantin|aubervilliers|"
+    "le bourget|villaroche|melun|compi[èe]gne|beauvais|chartres|blois|bourg-en-bresse|roanne|vienne|"
+    "salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse"
+)
+# Workday and some Taleo fronts show only the region or the department.
+_FR_REGIONS = (
+    "[îi]le-de-france|hauts-de-seine|seine-saint-denis|val-de-marne|val-d.oise|yvelines|essonne|"
+    "seine-et-marne|bouches-du-rh[ôo]ne|haute-garonne|gironde|loire-atlantique|ille-et-vilaine|"
+    "bas-rhin|haut-rhin|alpes-maritimes|is[èe]re|rh[ôo]ne|occitanie|nouvelle-aquitaine|"
+    "auvergne-rh[ôo]ne-alpes|bretagne|normandie|grand est|hauts-de-france|provence|"
+    "pays de la loire|centre-val de loire|bourgogne|franche-comt[ée]|corse"
+)
+LOC    = re.compile(r"\b(france|" + _FR_CITIES + "|" + _FR_REGIONS + r")\b", re.I)
+# What a fetcher's structured country field looks like when it means France.
+FR_CODE = re.compile(r"^\s*(fr|fra|france|frankreich)\s*$", re.I)
+
+INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship|fin d['’]?\s*[ée]tudes|c[ée]sure)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
-TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|ing[\u00e9e]nieur|informatique|logiciel|d[\u00e9e]veloppement|donn[\u00e9e]es|r[\u00e9e]seau|syst[\u00e8e]me|embarqu[\u00e9e]|cybers[\u00e9e]curit[\u00e9e]|algorithm|calcul|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|scientist|chercheur|quantitative|quant )", re.I)
-# A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
+
+# Anything that plausibly means "this is an engineering role". Deliberately wide:
+# a false positive costs one glance, a false negative costs an application.
+TECH   = re.compile(
+    r"(software|swe|engineer|engineering|developer|d[ée]veloppeur|ing[ée]nieur|informatique|logiciel|"
+    r"d[ée]veloppement|donn[ée]es|r[ée]seau|syst[èe]me|embarqu[ée]|embedded|cybers[ée]curit[ée]|"
+    r"algorithm|calcul|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|"
+    r"devops|devsecops|mlops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|"
+    r"machine learning|deep learning|\bnlp\b|\bllm\b|\bgpu\b|\bhpc\b|\bai\b|\bia\b|"
+    r"intelligence artificielle|security|s[ée]curit[ée]|scientist|chercheur|quantitative|quant |"
+    # added after an audit: these were all being dropped
+    r"signal|radar|avionique|optique|photoniq|fpga|vhdl|verilog|[ée]lectroniq|firmware|hardware|"
+    r"t[ée]l[ée]com|robot|automatis|automation|simulation|mod[ée]lisation|\bqa\b|\btest\b|validation|"
+    r"\bit\b|\bweb\b|mobile|android|\bios\b|python|javascript|typescript|\bjava\b|\bc\+\+|"
+    r"architect|compilateur|compiler|database|base de donn[ée]es|\bsql\b|linux|\bsap\b|"
+    r"observabilit|monitoring|blockchain|cryptograph|statistiq|analytics)", re.I)
+
+# A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
 # These business-function words veto a tech match.
-EXCL   = re.compile(r"\b(legal|juridique|marketing|sales|vente|commercial|business development|talent|recruit|people|hr|rh|brand|communication|content|community|finance|accounting|comptab|audit|payroll|paie|office manager|customer success|account executive|partnership)\b", re.I)
+EXCL   = re.compile(r"\b(legal|juridique|marketing|sales|vente|commercial|business development|talent|"
+                    r"recruit|people|hr|rh|brand|communication|content|community|finance|accounting|"
+                    r"comptab|audit|payroll|paie|office manager|customer success|account executive|"
+                    r"partnership)\b", re.I)
+# ...but a veto word is often just the DOMAIN of a real engineering role: a data
+# engineer on the finance team, a security audit, cloud pre-sales. When one of
+# these unambiguous words is present the veto is overridden. Nothing generic goes
+# in here - 'reseau' would let 'Marketing & Reseaux Sociaux' back in.
+STRONG = re.compile(
+    r"(software|\bswe\b|d[ée]veloppeur|developer|backend|back-end|frontend|front-end|fullstack|"
+    r"full.stack|devops|devsecops|mlops|\bsre\b|site reliability|kubernetes|cloud|infrastructure|"
+    r"\binfra\b|cybers[ée]curit[ée]|s[ée]curit[ée]|machine learning|deep learning|"
+    r"data\s+(?:engineer|scientist|engineering|platform|architect)|logiciel|informatique|embarqu[ée]|"
+    r"embedded|firmware|hardware|fpga|vhdl|compilateur|compiler|blockchain|cryptograph|linux|"
+    r"\bsql\b|python|javascript|typescript)", re.I)
+
+
+def is_tech(title):
+    """True when the title reads as an engineering role. EXCL vetoes a weak
+    match; STRONG overrides the veto."""
+    if not TECH.search(title):
+        return False
+    return bool(STRONG.search(title)) or not EXCL.search(title)
+
 
 def _paris_now():
     """Paris wall clock. zoneinfo where tzdata exists (Linux cloud), else the
@@ -215,6 +290,17 @@ NOW   = _paris_now()
 TZLABEL = "CEST" if NOW.utcoffset().total_seconds() == 7200 else "CET"
 TODAY = NOW.date().isoformat()
 UA    = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+
+
+def _fr(blob, *countries):
+    """Append 'France' when the ATS handed back a structured country field that
+    means France. Some boards send the ISO code only, and a bare 'FR' matches
+    nothing in the city list - the country is the most reliable signal there is,
+    so never let it fall through."""
+    for ctry in countries:
+        if ctry and FR_CODE.match(str(ctry)):
+            return ("%s France" % blob).strip()
+    return blob
 
 
 def get(url, body=None):
@@ -250,7 +336,8 @@ def f_workable(c):
     out = []
     for j in d.get("jobs", []):
         loc = ", ".join(x for x in [j.get("city"), j.get("country")] if x)
-        out.append((j.get("title", ""), loc, j.get("url", ""), loc))
+        out.append((j.get("title", ""), loc, j.get("url", ""),
+                    _fr(loc, j.get("country"), j.get("country_code"))))
     return out
 
 
@@ -262,7 +349,8 @@ def f_smartrecruiters(c):
             lo = j.get("location") or {}
             loc = ", ".join(x for x in [lo.get("city"), lo.get("country")] if x)
             out.append((j.get("name", ""), loc,
-                        "https://jobs.smartrecruiters.com/%s/%s" % (c["slug"], j.get("id", "")), loc))
+                        "https://jobs.smartrecruiters.com/%s/%s" % (c["slug"], j.get("id", "")),
+                        _fr(loc, lo.get("country"), lo.get("countryCode"))))
         off += 100
         if off >= d.get("totalFound", 0):
             return out
@@ -293,6 +381,12 @@ def _workday_intern_facets(api):
 
 WORKDAY_MAX = 1200          # ceiling; Thales and Airbus are ~2-3k each
 
+# Companies whose fetch came back INCOMPLETE (a paging ceiling was hit, not an
+# error). Their roles are shown, but nothing of theirs may be marked closed: a
+# posting past the cut-off is invisible, not gone, and closing it would fire a
+# "role closed" notification for a role that is still open.
+PARTIAL = set()
+
 
 def f_workday(c):
     host = "https://%s.%s.myworkdayjobs.com" % (c["tenant"], c["wd"])
@@ -313,15 +407,23 @@ def f_workday(c):
             queries.append(({}, kw))
         seen, merged = set(), []
         for facets_q, text in queries:
-            for row in _workday_page(api, pub, facets_q, text):
+            rows, cut = _workday_page(api, pub, facets_q, text)
+            if cut:
+                PARTIAL.add(c["name"])
+            for row in rows:
                 if row[2] not in seen:
                     seen.add(row[2])
                     merged.append(row)
         return merged
-    return _workday_page(api, pub, {}, "")
+    rows, cut = _workday_page(api, pub, {}, "")
+    if cut:
+        PARTIAL.add(c["name"])
+    return rows
 
 
 def _workday_page(api, pub, facets, text):
+    """-> (rows, truncated). truncated means the ceiling stopped us early, so
+    the caller must not treat anything missing as closed."""
     out, off = [], 0
     # Workday's "total" is capped at 2000 and keeps reporting 2000 while further
     # offsets still return results, so it cannot be used as the stop condition.
@@ -340,8 +442,10 @@ def _workday_page(api, pub, facets, text):
         off += 20
         # A keyword that turns out to be too fuzzy just stops at the ceiling
         # rather than failing the whole company; the other queries still run.
-        if len(page) < 20 or off >= WORKDAY_MAX:
-            return out
+        if len(page) < 20:
+            return out, False
+        if off >= WORKDAY_MAX:
+            return out, True
         time.sleep(0.15)
 
 
@@ -356,8 +460,9 @@ def f_ashby(c):
             sec.append(s.get("location", "") if isinstance(s, dict) else str(s))
         loc = j.get("location", "") or ""
         blob = " ".join([x for x in [loc] + sec if x])
+        ctry = (((j.get("address") or {}).get("postalAddress") or {}).get("addressCountry"))
         # jobUrl comes back verbatim from the API - never construct it
-        out.append((j.get("title", ""), blob or loc, j.get("jobUrl", ""), blob))
+        out.append((j.get("title", ""), blob or loc, j.get("jobUrl", ""), _fr(blob, ctry)))
     return out
 
 
@@ -373,13 +478,14 @@ def f_teamtailor(c):
         raw = jp.get("jobLocation") or []
         if isinstance(raw, dict):
             raw = [raw]
-        locs = []
+        locs, ctries = [], []
         for L in raw:
             a = (L or {}).get("address") or {}
+            ctries.append(a.get("addressCountry"))
             locs.append(", ".join(x for x in [a.get("addressLocality"), a.get("addressCountry")] if x))
         loc = "; ".join([x for x in locs if x])
         # url comes back verbatim from the feed - never construct it
-        out.append((it.get("title", ""), loc, it.get("url", ""), loc))
+        out.append((it.get("title", ""), loc, it.get("url", ""), _fr(loc, *ctries)))
     return out
 
 
@@ -407,7 +513,11 @@ def f_dassault(c):
             if title and url:
                 out.append((title, loc, url, loc))
         off += 100
-        if not hits or off >= int(d.get("nhits") or 0) or off >= 2000:
+        total = int(d.get("nhits") or 0)
+        if off >= 2000 and off < total:
+            PARTIAL.add(c["name"])
+            return out
+        if not hits or off >= total:
             return out
 
 
@@ -432,8 +542,8 @@ def scan():
     results = []
     for c in BOARD["companies"]:
         row = {"name": c["name"], "ats": c["ats"], "careers": c.get("careers", ""),
-               "endpoint": ENDPOINT[c["ats"]](c), "error": None,
-               "total": 0, "france": 0, "hits": [], "other": []}
+               "endpoint": ENDPOINT[c["ats"]](c), "error": None, "zero": False,
+               "partial": False, "total": 0, "france": 0, "hits": [], "other": []}
         try:
             jobs = FETCH[c["ats"]](c)
         except Exception as e:
@@ -447,8 +557,13 @@ def scan():
                and not ALT.search(j[0]) and not ALT.search(j[3])]
         row["total"]  = len(jobs)
         row["france"] = len(fr)
-        row["hits"]   = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if TECH.search(t) and not EXCL.search(t)]
-        row["other"]  = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if not (TECH.search(t) and not EXCL.search(t))]
+        row["hits"]   = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if is_tech(t)]
+        row["other"]  = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if not is_tech(t)]
+        # A dead slug does not raise: several ATSs answer 200 with an empty list,
+        # so the company looks healthy while being invisible. Treated like a
+        # partial fetch below - shown, but never a reason to close anything.
+        row["zero"]    = len(jobs) == 0
+        row["partial"] = c["name"] in PARTIAL
         results.append(row)
     return results
 
@@ -601,22 +716,37 @@ def render(results, prev):
     prev_posts = prev.get("postings", {})
     cur = {}
     new_ct = 0
+    new_roles, recent_roles = [], []
+    cutoff = (NOW.date() - timedelta(days=2)).isoformat()
     for r in results:
         for h in r["hits"]:
             u = h["url"]
             h["first_seen"] = prev_posts.get(u, {}).get("first_seen", TODAY)
             h["is_new"] = (u not in prev_posts) and bool(prev_posts)
+            entry = {"title": h["title"], "company": r["name"], "url": u,
+                     "first_seen": h["first_seen"]}
             if h["is_new"]:
                 new_ct += 1
+                new_roles.append(entry)
+            # first seen in the last two sweeps. The publish step needs this:
+            # "new since last run" is reset by the NEXT sweep, so a day where
+            # the publish did not happen would otherwise lose the role silently.
+            if h["first_seen"] >= cutoff:
+                recent_roles.append(entry)
             cur[u] = {"title": h["title"], "company": r["name"],
                       "location": h["location"], "first_seen": h["first_seen"]}
 
     # a posting that was live last run and is absent now == filled or pulled.
     # keep it visible for 14 days so a missed day is not a silent deletion.
     closed = [c for c in prev.get("closed", [])
-              if (NOW.date() - datetime.fromisoformat(c["closed_on"]).date()).days < 14]
+              # a role that is live again is not closed - without this it would
+              # sit in both lists for 14 days, and re-closing it would re-notify
+              if (NOW.date() - datetime.fromisoformat(c["closed_on"]).date()).days < 14
+              and c["url"] not in cur]
     known = {c["url"] for c in closed}
-    ok_names = {r["name"] for r in results if not r["error"]}
+    # an errored, empty or truncated fetch proves nothing about what is still open
+    ok_names = {r["name"] for r in results
+                if not r["error"] and not r["zero"] and not r["partial"]}
     for u, p in prev_posts.items():
         # never mark closed off the back of a failed fetch
         if u not in cur and u not in known and p.get("company") in ok_names:
@@ -701,12 +831,56 @@ def render(results, prev):
         p.append('<p class="warn">%d compan%s failed to fetch this run, so its roles may be stale. '
                  "Nothing was marked closed for it.</p>"
                  % (len(broken), "y" if len(broken) == 1 else "ies"))
+    suspect = [r for r in results if not r["error"] and (r["zero"] or r["partial"])]
+    if suspect:
+        p.append('<p class="warn">Incomplete this run: %s. An empty response can mean a dead slug '
+                 "rather than an empty board, and a paging ceiling hides the tail, so nothing was "
+                 "marked closed for these.</p>"
+                 % esc(", ".join("%s (%s)" % (r["name"], "empty" if r["zero"] else "truncated")
+                                 for r in suspect)))
     p.append("</section></div>")
 
     state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed}
     p.append('<script type="application/json" id="state">%s</script>'
              % json.dumps(state, ensure_ascii=False).replace("</", "<\\/"))
-    return "\n".join(p), live, new_ct
+
+    stats = {
+        "board": BOARD["name"],
+        "stamp": TODAY,
+        "generated": NOW.isoformat(),
+        "companies": len(results),
+        "scanned": total,
+        "live": live,
+        "new": new_ct,
+        "new_roles": new_roles,
+        "recent_roles": recent_roles,
+        "failed": len(broken),
+        "failed_names": [r["name"] for r in broken],
+        "incomplete": ["%s (%s)" % (r["name"], "empty" if r["zero"] else "truncated")
+                       for r in results if not r["error"] and (r["zero"] or r["partial"])],
+        "closed_total": len(closed),
+        "closed_today": [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
+                         for c in closed if c["closed_on"] == TODAY],
+    }
+    return "\n".join(p), stats
+
+
+STATUS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "status.json")
+
+
+def write_status(out, stats):
+    """One small JSON summarising every board, so the publish step never has to
+    parse the HTML back out. Read-modify-write: the three rosters run one after
+    the other and each owns only its own key."""
+    try:
+        doc = json.load(open(STATUS, encoding="utf-8"))
+    except Exception:
+        doc = {}
+    if not isinstance(doc.get("boards"), dict):
+        doc = {"boards": {}}
+    doc["boards"][os.path.basename(out)] = stats
+    doc["generated"] = NOW.isoformat()
+    json.dump(doc, open(STATUS, "w", encoding="utf-8"), indent=2, ensure_ascii=False, sort_keys=True)
 
 
 if __name__ == "__main__":
@@ -723,10 +897,12 @@ if __name__ == "__main__":
         for r in failed:
             print("  %s: %s" % (r["name"], r["error"]), file=sys.stderr)
         sys.exit(2)
-    doc, live, new = render(res, load_prev(prev_path))
+    doc, stats = render(res, load_prev(prev_path))
     open(out, "w", encoding="utf-8").write(doc)
+    write_status(out, stats)
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     for r in res:
-        print("%-12s %-16s %s" % (r["name"], r["ats"], r["error"] or
-              "%3d open / %2d FR / %d hits" % (r["total"], r["france"], len(r["hits"]))))
-    print("-> %s  (%d live, %d new)" % (out, live, new))
+        note = " INCOMPLETE" if (r["zero"] or r["partial"]) else ""
+        print("%-12s %-16s %s%s" % (r["name"], r["ats"], r["error"] or
+              "%3d open / %2d FR / %d hits" % (r["total"], r["france"], len(r["hits"])), note))
+    print("-> %s  (%d live, %d new)" % (out, stats["live"], stats["new"]))
