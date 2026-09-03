@@ -186,7 +186,7 @@ BOARD = ROSTERS["1"]
 LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg|marseille|aix-en-provence|cannes|toulon|marignane|blagnac|colomiers|saint-nazaire|brest|angers|le mans|tours|orl[ée]ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|saint-[ée]tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|v[ée]lizy|[ée]lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|meudon|montrouge|levallois|neuilly|cergy|[ée]vry|cr[ée]teil|roissy|gennevilliers|saint-denis|marne-la-vall[ée]e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]ry|besan[çc]on|mulhouse|colmar|belfort|montbeliard|vitrolles|rungis|suresnes|colombes|vannes|lorient|quimper|laval|cholet|niort|bayonne|perpignan|b[ée]ziers)\b", re.I)
 INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
-TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|network|system)", re.I)
+TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|ing[\u00e9e]nieur|informatique|logiciel|d[\u00e9e]veloppement|donn[\u00e9e]es|r[\u00e9e]seau|syst[\u00e8e]me|embarqu[\u00e9e]|cybers[\u00e9e]curit[\u00e9e]|algorithm|calcul|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|network|system)", re.I)
 # A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
 # These business-function words veto a tech match.
 EXCL   = re.compile(r"\b(legal|juridique|marketing|sales|vente|commercial|business development|talent|recruit|people|hr|rh|brand|communication|content|community|finance|accounting|comptab|audit|payroll|paie|office manager|customer success|account executive|partnership)\b", re.I)
@@ -437,7 +437,10 @@ def scan():
             results.append(row)
             continue
         fr  = [j for j in jobs if LOC.search(j[3])]
-        itn = [j for j in fr if INTERN.search(j[0]) and not ALT.search(j[0])]
+        # the title can lie: Thales titles an apprenticeship "STAGE - ..." while its
+        # URL and Workday contract type both say alternance/apprentice.
+        itn = [j for j in fr if INTERN.search(j[0])
+               and not ALT.search(j[0]) and not ALT.search(j[3])]
         row["total"]  = len(jobs)
         row["france"] = len(fr)
         row["hits"]   = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if TECH.search(t) and not EXCL.search(t)]
