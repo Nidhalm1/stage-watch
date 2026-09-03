@@ -14,12 +14,19 @@
       "companies": 20,
       "failed": 0,
       "failed_names": [],
-      "filtered": 8,
-      "generated": "2026-09-03T20:15:46.729635+02:00",
+      "filtered": 7,
+      "generated": "2026-09-03T20:41:58.650543+02:00",
       "incomplete": [],
-      "live": 2,
-      "new": 0,
-      "new_roles": [],
+      "live": 3,
+      "new": 1,
+      "new_roles": [
+        {
+          "company": "Scaleway",
+          "first_seen": "2026-09-03",
+          "title": "IT Workplace - Internship",
+          "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
+        }
+      ],
       "recent_roles": [
         {
           "company": "Criteo",
@@ -32,11 +39,17 @@
           "first_seen": "2026-09-02",
           "title": "Product Data Scientist Intern",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Scientist-Intern_r15715-1"
+        },
+        {
+          "company": "Scaleway",
+          "first_seen": "2026-09-03",
+          "title": "IT Workplace - Internship",
+          "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
         }
       ],
-      "scanned": 3667,
+      "scanned": 3664,
       "stamp": "2026-09-03",
-      "unsure": 0
+      "unsure": 7
     },
     "board2.html": {
       "also_new": [],
@@ -47,7 +60,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 20,
-      "generated": "2026-09-03T20:16:03.561676+02:00",
+      "generated": "2026-09-03T20:42:16.307322+02:00",
       "incomplete": [],
       "live": 4,
       "new": 0,
@@ -78,7 +91,7 @@
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003"
         }
       ],
-      "scanned": 907,
+      "scanned": 902,
       "stamp": "2026-09-03",
       "unsure": 0
     },
@@ -90,24 +103,37 @@
       "companies": 5,
       "failed": 0,
       "failed_names": [],
-      "filtered": 5,
-      "generated": "2026-09-03T20:16:21.222864+02:00",
+      "filtered": 4,
+      "generated": "2026-09-03T20:42:31.987947+02:00",
       "incomplete": [],
-      "live": 1,
-      "new": 0,
-      "new_roles": [],
+      "live": 2,
+      "new": 1,
+      "new_roles": [
+        {
+          "company": "Thales",
+          "first_seen": "2026-09-03",
+          "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
+        }
+      ],
       "recent_roles": [
         {
           "company": "Thales",
           "first_seen": "2026-09-03",
           "title": "STAGE– Ingénieur Tests fonctionnels système - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
+        },
+        {
+          "company": "Thales",
+          "first_seen": "2026-09-03",
+          "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
         }
       ],
-      "scanned": 1681,
+      "scanned": 1684,
       "stamp": "2026-09-03",
-      "unsure": 0
+      "unsure": 41
     }
   },
-  "generated": "2026-09-03T20:16:21.222864+02:00"
+  "generated": "2026-09-03T20:42:31.987947+02:00"
 }

@@ -1,0 +1,848 @@
+{
+  "boards": {
+    "board.html": {
+      "board": "Stage Watch",
+      "foreign_count": 25,
+      "foreign_sample": [
+        {
+          "company": "Datadog",
+          "location": "New York, New York, USA",
+          "title": "Product Management Intern",
+          "url": "https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241"
+        },
+        {
+          "company": "Datadog",
+          "location": "Boston, Massachusetts, USA; New York, New York, USA",
+          "title": "Software Engineering Intern (Winter)",
+          "url": "https://careers.datadoghq.com/detail/8052095/?gh_jid=8052095"
+        },
+        {
+          "company": "Doctolib",
+          "location": "Milano, Milan, Italy",
+          "title": "Business Development Representative Intern - Milano (x/f/m)",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7800808003"
+        },
+        {
+          "company": "Doctolib",
+          "location": "Milano, Milan, Italy",
+          "title": "SEO & AI Intern (x/f/m)",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7864184003"
+        },
+        {
+          "company": "Doctolib",
+          "location": "Milano, Milan, Italy",
+          "title": "SEO & AI Intern (x/f/m)",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7824240003"
+        },
+        {
+          "company": "Criteo",
+          "location": "Amsterdam, Netherlands",
+          "title": "Account Strategist Intern - Retail Media Benelux & Nordics",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "Account Strategist Intern - French Speaker",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern_r20801"
+        },
+        {
+          "company": "Criteo",
+          "location": "Munich, Germany",
+          "title": "Account Strategist Intern, 6-month (German-Speaker)",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Account-Strategist-Intern--6-month--German-Speaker-_r20959"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "Account Strategist (Intern)",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802"
+        },
+        {
+          "company": "Criteo",
+          "location": "Munich, Germany",
+          "title": "Customer Success Intern, 6-month (German-Speaker)",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "Campaign Manager Intern, Performance Media - Spanish & Italian Speaker",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Campaign-Manager-Intern---Spanish---Italian-Speaker_r20908"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "Sales Operations Data Analyst Intern",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Operations-Data-Analyst-Intern_r20723"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "People Operations Internship – French Speaker",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/People-Operations-Intern--French-Speaker_r20828"
+        },
+        {
+          "company": "Criteo",
+          "location": "Gurgaon, India",
+          "title": "Customer Care Intern",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Gurgaon/Customer-Care-Intern_r20805"
+        }
+      ],
+      "non_tech": [
+        {
+          "company": "Doctolib",
+          "is_new": false,
+          "location": "Paris, Paris, France",
+          "title": "Stage - Community Engagement Associate (x/f/m) - Octobre 2026",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7802416003"
+        },
+        {
+          "company": "Doctolib",
+          "is_new": false,
+          "location": "Paris, Paris, France",
+          "title": "Stage - Consolidation et Contrôle financier (x/f/m) - Septembre 2026",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7610171003"
+        },
+        {
+          "company": "Doctolib",
+          "is_new": false,
+          "location": "Paris, Paris, France",
+          "title": "Stage - Medical Content Associate (x/f/m) - Septembre 2026",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7784750003"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Scaleway",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Approvisionneur - Stage",
+          "url": "https://jobs.lever.co/scaleway/c85a7df4-bee6-41c2-9983-06db6a116bb8"
+        },
+        {
+          "company": "Scaleway",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Event Operations Intern",
+          "url": "https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7"
+        },
+        {
+          "company": "Snowflake",
+          "is_new": false,
+          "location": "FR-Paris",
+          "title": "Partner Marketing Intern - Paris (French Speaking ",
+          "url": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9"
+        }
+      ],
+      "stamp": "2026-09-03",
+      "unknown_location": [
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "EIAM Business Enablement & Operations Intern (Fall 2026) ",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Research Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Research Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Research Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Software Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Software Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785"
+        }
+      ]
+    },
+    "board2.html": {
+      "board": "French Tech Watch",
+      "foreign_count": 13,
+      "foreign_sample": [
+        {
+          "company": "Aircall",
+          "location": "San Francisco Office",
+          "title": "Regional Marketing Intern - NA Market",
+          "url": "https://jobs.lever.co/aircall/0fbc9b05-520b-4cbb-a276-5a9a75e8f3bf"
+        },
+        {
+          "company": "Aircall",
+          "location": "San Francisco Office",
+          "title": "Regional Marketing Intern, LATAM (12 months)",
+          "url": "https://jobs.lever.co/aircall/0e52ec00-a327-49de-9378-6b8487229f89"
+        },
+        {
+          "company": "Aircall",
+          "location": "London Office",
+          "title": "Sales Intern - UKI Market",
+          "url": "https://jobs.lever.co/aircall/f1d2fb78-a40b-4a33-ab8f-75e573ba9749"
+        },
+        {
+          "company": "Aircall",
+          "location": "Madrid Office",
+          "title": "Sales Partnerships Intern",
+          "url": "https://jobs.lever.co/aircall/462b6547-d555-4e5f-b5a2-ea8c2de46101"
+        },
+        {
+          "company": "Back Market",
+          "location": "Hong Kong",
+          "title": "Business Development Intern (HK 6-month Full-Time Internship)",
+          "url": "https://jobs.ashbyhq.com/backmarket/1d015812-58ea-4f4e-a2c2-81db4fc40129"
+        },
+        {
+          "company": "Shift Technology",
+          "location": "Singapore - Singapore",
+          "title": " Data Science Internship ",
+          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003"
+        },
+        {
+          "company": "Shift Technology",
+          "location": "Spain - Madrid",
+          "title": "Data Science internship - Spanish speaker (6months)",
+          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003"
+        },
+        {
+          "company": "Shift Technology",
+          "location": "Mexico - Mexico City",
+          "title": "Data Scientist Intern (English Speaker)",
+          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003"
+        },
+        {
+          "company": "Amadeus",
+          "location": "Taguig-Metro-Manila, R36823",
+          "title": "Intern - Finance and Accounting (Source to Pay and Travel Management Expense)",
+          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Finance-and-Accounting--Source-to-Pay-and-Travel-Management-Expense-_R36823"
+        },
+        {
+          "company": "Amadeus",
+          "location": "Taguig-Metro-Manila, R31596",
+          "title": "Cybersecurity Intern",
+          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Cybersecurity-Intern_R31596"
+        },
+        {
+          "company": "Amadeus",
+          "location": "Taguig-Metro-Manila, R31590",
+          "title": "Software Developer Intern",
+          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590"
+        },
+        {
+          "company": "Amadeus",
+          "location": "Manila-Metro-Manila, R29236",
+          "title": "Software QA Engineering Intern",
+          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236"
+        },
+        {
+          "company": "Murex",
+          "location": "Beijing, JR101126; Intern",
+          "title": "Murex Internship",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beijing/Murex-Internship_JR101126-1"
+        }
+      ],
+      "non_tech": [
+        {
+          "company": "Qonto",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Legal Intern - Commercial",
+          "url": "https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392"
+        },
+        {
+          "company": "Qonto",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Legal Intern - Product & AI",
+          "url": "https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3"
+        },
+        {
+          "company": "Qonto",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Product Marketing Manager Intern",
+          "url": "https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad"
+        },
+        {
+          "company": "BlaBlaCar",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stagiaire Communication & Relations Publiques (6 mois) - Paris, France",
+          "url": "https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad"
+        },
+        {
+          "company": "BlaBlaCar",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stagiaire Marketing & Réseaux Sociaux France",
+          "url": "https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "GTM Enablement Intern",
+          "url": "https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "Product Manager Intern",
+          "url": "https://jobs.lever.co/aircall/c71f52af-d884-4a38-9db7-7f7ff402e2ef"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "Regional Marketing Intern, DACH Market",
+          "url": "https://jobs.lever.co/aircall/6737595c-eea0-4e64-b619-0894d532bead"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "Sales Intern - French market - 6 months",
+          "url": "https://jobs.lever.co/aircall/131dcb57-0ba9-45fe-b5a4-e88e118bb06d"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "Sales Intern - Iberia market - 6 months",
+          "url": "https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "Sales Partner Manager Intern",
+          "url": "https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b"
+        },
+        {
+          "company": "Aircall",
+          "is_new": false,
+          "location": "Paris Office",
+          "title": "Strategy & Operations Intern — Office of the General Manager, Small Business",
+          "url": "https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df"
+        },
+        {
+          "company": "Alan",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "CTO Founder Associate - internship",
+          "url": "https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0"
+        },
+        {
+          "company": "Alan",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "CEO Founder Associate - Internship",
+          "url": "https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9"
+        },
+        {
+          "company": "Alan",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Insurance Legal - Internship",
+          "url": "https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd"
+        },
+        {
+          "company": "Alan",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Talent Associate (internship)",
+          "url": "https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d"
+        },
+        {
+          "company": "Alan",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Brand Associate (Internship)",
+          "url": "https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df"
+        },
+        {
+          "company": "Ledger",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Internship - Total Rewards (Compensation & Benefits)",
+          "url": "https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2"
+        },
+        {
+          "company": "Sorare",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Marketing Intern",
+          "url": "https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d"
+        },
+        {
+          "company": "Sorare",
+          "is_new": false,
+          "location": "Paris",
+          "title": "Player Experience Intern",
+          "url": "https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257"
+        }
+      ],
+      "stamp": "2026-09-03",
+      "unknown_location": []
+    },
+    "board3.html": {
+      "board": "Defence & Finance Watch",
+      "foreign_count": 93,
+      "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
+          "title": "Software Engineer Intern - Middleware (IBS)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782"
+        },
+        {
+          "company": "Thales",
+          "location": "Firenze, CW Intern/Trainee; R0338900; 18 - SYSTEM; Thales Italia S.P.A.",
+          "title": "Internship as Defense System Engineer (Open also to Protected Categories, Law 68/99)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Internship-as-Defense-System-Engineer--Open-also-to-Protected-Categories--Law-68-99-_R0338900"
+        },
+        {
+          "company": "Thales",
+          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0338806; 14 - COMMUNICATIONS; Thales Solutions Asia Pte. Ltd.",
+          "title": "Communications Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Communications-Intern_R0338806"
+        },
+        {
+          "company": "Thales",
+          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd.",
+          "title": "Business App Support Intern - 2027 Start",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783"
+        },
+        {
+          "company": "Thales",
+          "location": "Beijing-Airport, Intern/Trainee (Fixed Term) (Trainee); R0336817; 07 - CUSTOMER SERVICE; Thales Aerospace (Beijing) Co., Ltd.",
+          "title": "Supply Chain Management Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing-Airport/Supply-Chain-Management-Intern_R0336817"
+        },
+        {
+          "company": "Thales",
+          "location": "Firenze, Intern/Trainee (Fixed Term) (Trainee); R0337042; 20 - SOFTWARE; Thales Italia S.P.A.",
+          "title": "Junior IVVQ Engineer - Internship (Open also to Protected Categories, Law 68/99)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Junior-IVVQ-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0337042"
+        },
+        {
+          "company": "Thales",
+          "location": "SINGAPORE, Intern/Trainee (Fixed Term) (Trainee); R0324316; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
+          "title": "Software Engineer Intern (C#)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/SINGAPORE/Software-Engineer-Intern--C--_R0324316"
+        },
+        {
+          "company": "Thales",
+          "location": "Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0334316; 07 - CUSTOMER SERVICE; Thales DIS Mexico SA de CV",
+          "title": "Customer Service & Sales Operations Internship",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/Customer-Service---Sales-Operations-Internship_R0334316"
+        },
+        {
+          "company": "Thales",
+          "location": "Halifax---Wilkinson, Student/Work Experience (Fixed Term) (Seasonal); R0333841; 19 - HARDWARE; Thales Canada Inc., Defence and Security",
+          "title": "Naval Architect Intern/Co op - Halifax",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Halifax---Wilkinson/Naval-Architect-Intern-Co-op---Halifax_R0333841-2"
+        },
+        {
+          "company": "Thales",
+          "location": "Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0334747; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Cyber Solutions Belgium SA",
+          "title": "Trainee NetSec - (Internship September 2026)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Trainee-NetSec----Internship-September-2026-_R0334747"
+        },
+        {
+          "company": "Thales",
+          "location": "Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE",
+          "title": "Stagiaire Finance",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1"
+        },
+        {
+          "company": "Thales",
+          "location": "Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A.",
+          "title": "Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671"
+        },
+        {
+          "company": "Thales",
+          "location": "Gorgonzola, CW Intern/Trainee; R0331969; 08 - QUALITY & CUSTOMER SATISFACTION; Thales Italia S.P.A.",
+          "title": "Software Developer Intern (Open also to Protected Categories, Law 68/99)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Software-Developer-Intern--Open-also-to-Protected-Categories--Law-68-99-_R0331969"
+        },
+        {
+          "company": "Thales",
+          "location": "Amersfoort-CDI, Intern/Trainee (Fixed Term) (Trainee); R0331784; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
+          "title": "Internship/Graduation assignment - HBO/WO Marketing operations",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Amersfoort-CDI/Internship-Graduation-assignment---HBO-WO-Marketing-operations_R0331784"
+        },
+        {
+          "company": "Thales",
+          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0330671; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
+          "title": "Internship HSE (Health, Safety & Environment)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Internship-HSE--Health--Safety---Environment-_R0330671"
+        }
+      ],
+      "non_tech": [
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0334380; 11 - FINANCE; Thales Avs France Sas",
+          "title": "STAGE - Contrôleur de gestion Offres et Projets - H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Contrleur-de-gestion-Offres-et-Projets---H-F_R0334380-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0326789; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales",
+          "title": "STAGE - Project Support for Contract Management Transformation - H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales",
+          "title": "STAGE - Legal M&A - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Toulouse-Area, JR10437292",
+          "title": "Testia SAS – Stage Comptabilité (H/F) – Toulouse",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
+        }
+      ],
+      "stamp": "2026-09-03",
+      "unknown_location": [
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
+          "title": "Solution Customer Service Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
+          "title": "Technical Consultant Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "Gorgonzola, CW Intern/Trainee; R0332137; 08 - QUALITY & CUSTOMER SATISFACTION",
+          "title": "AI Engineer - Internship (Open also to Protected Categories, Law 68/99)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/AI-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0332137"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0222821; 08 - QUALITY & CUSTOMER SATISFACTION",
+          "title": "Stage-/Afstudeeropdrachten- HBO/WO - computer science, software engineering - Sensor Platform Assignments",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Stage--Afstudeeropdrachten--HBO-WO---computer-science--software-engineering---Sensor-Platform-Assignments_R0222821"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10437411",
+          "title": "ACOLP2 intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLP2-intern_JR10437411"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10438475",
+          "title": "EHS intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/EHS-intern_JR10438475"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10438476",
+          "title": "ACOLH1 trainer Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLH1-trainer-Intern_JR10438476"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Salaunes, JR10438249",
+          "title": "Stage Peintre Aéro / Opérateur(trice) matériau composite H/F",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Suzhou, JR10435671",
+          "title": "Intern - Software Development",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---Software-Development_JR10435671"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Bremen-Area, JR10426102",
+          "title": "Intern (d/f/m) for Additive Manufacturing (AM) Design of fuel components",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen-Area/Intern--d-f-m--for-Additive-Manufacturing--AM--Design-of-fuel-components_JR10426102"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10437414",
+          "title": "Paint Shop Production Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Paint-Shop-Production-Intern_JR10437414"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Immenstaad-am-Bodensee, JR10433759",
+          "title": "Intern in Space-Software Unit Testing & Migration (d/f/m)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern-in-Space-Software-Unit-Testing---Migration--d-f-m-_JR10433759"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Immenstaad-am-Bodensee, JR10435898",
+          "title": "Intern (d/f/m) in the field of Space Situational Awareness and Intelligence",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-Situational-Awareness-and-Intelligence_JR10435898"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Chengdu, JR10437141",
+          "title": "Planning intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Chengdu/Planning-intern_JR10437141"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Bremen, JR10412367",
+          "title": "Surface Technology Internship in Paints & Coatings team (d/f/m)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen/Surface-Technology-Internship-in-Paints---Coatings-team--d-f-m-_JR10412367"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10436889",
+          "title": "internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/internship_JR10436889"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10436016",
+          "title": "ACOLJ3 INTERN",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLJ3-INTERN_JR10436016"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10427106",
+          "title": "Flowline Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flowline-Intern_JR10427106"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10434127",
+          "title": "ACOLS35 Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434127"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10434129",
+          "title": "ACOLS35 Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434129"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10434130",
+          "title": "ACOLS35 Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434130"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10433763",
+          "title": "Department Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Department-Intern_JR10433763"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Manching, JR10433215",
+          "title": "Internship (d/f/m) for Multi-Agent Trajectory Planning",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Manching/Internship--d-f-m--for-Multi-Agent-Trajectory-Planning_JR10433215"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Suzhou, JR10433733",
+          "title": "Intern - AIRBUS Suzhou R&D Centre",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---AIRBUS-Suzhou-R-D-Centre_JR10433733"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Donauwrth, JR10418211",
+          "title": "IT Digital Workplace Internship - Workspace Operation Specialist Support (d/f/m)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Donauwrth/IT-Digital-Workplace-Internship---Workspace-Operation-Specialist-Support--d-f-m-_JR10418211-1"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10429875",
+          "title": "Flight Test Support Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flight-Test-Support-Intern_JR10429875"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Lodz, JR10427821",
+          "title": "BHP Intern (f/m)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Lodz/HSE-Intern--f-m-_JR10427821"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10423757",
+          "title": "ACOLEA Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLEA-Intern_JR10423757"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Immenstaad-am-Bodensee, JR10420054",
+          "title": "Intern (d/f/m) in the field of Space-based Intelligence, Surveillance and Reconnaissance",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-based-Intelligence--Surveillance-and-Reconnaissance_JR10420054"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10415943",
+          "title": "#Discover II 2026-2027 Future Capabilities Internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Future-Capabilities-Internship_JR10415943"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10412143",
+          "title": "#Discover II 2026-2027/ Business & Product Development / Programme Management Internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Business---Product-Development---Programme-Management-Internship_JR10412143"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10411936",
+          "title": "#Discover II 2026-2027/ Internship in Air Power Central Finance (FP&A, Controlling)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Internship-in-Air-Power-Central-Finance--FP-A--Controlling-_JR10411936"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Cadiz-Area, JR10411377",
+          "title": "#Discover II 2026-2027 / RFE Design/Stress Engineer Internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Cadiz-Area/XMLNAME--Discover-II-2026-2027---RFE-Design-Stress-Engineer-Internship_JR10411377"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10411087",
+          "title": "#Discover II 2026 2027 / AIRBUS DERIVATIVES STRUCTURAL DESIGN ENGINEERING INTERNSHIP",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---AIRBUS-DERIVATIVES-STRUCTURAL-DESIGN-ENGINEERING-INTERNSHIP_JR10411087"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10411307",
+          "title": "#Discover II 2026-2027 INTERNSHIP Artificial Intelligence for Composite Structural Sizing Process",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-INTERNSHIP-Artificial-Intelligence-for-Composite-Structural-Sizing-Process_JR10411307"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10410268",
+          "title": "#Discover II 2026-2027 - MRTT & LTA Flight Operations Support Internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---MRTT---LTA-Flight-Operations-Support-Internship_JR10410268"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10409263",
+          "title": "#XPLORER 2027 INTERNSHIP PROGRAMME",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--XPLORER-2027-INTERNSHIP-PROGRAMME_JR10409263"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Tianjin-Area, JR10402686",
+          "title": "ACOLSV Tactical Planner - Internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLSV-Tactical-Planner---Internship_JR10402686"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Getafe-Area, JR10394802",
+          "title": "#MMCC 2026-2027 - Internship + Master in Composite Materials",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--MMCC-2026-2027---Internship---Master-in-Composite-Materials_JR10394802"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca",
+          "title": "INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Brasov-30-Hermann, JR10422949",
+          "title": "Tehnolog Productie / Program internship",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Brasov-30-Hermann/Tehnolog-Productie---Program-internship_JR10422949-1"
+        }
+      ]
+    }
+  },
+  "generated": "2026-09-03T20:42:31.987947+02:00"
+}
