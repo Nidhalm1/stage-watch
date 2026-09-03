@@ -135,6 +135,8 @@ COMPANIES3 = [
      "site": "Careers", "big": True, "careers": "https://www.thalesgroup.com/en/career"},
     {"name": "Airbus",      "ats": "workday", "tenant": "ag", "wd": "wd3",
      "site": "Airbus", "big": True, "careers": "https://www.airbus.com/en/careers"},
+    {"name": "Dassault Systemes", "ats": "dassault", "slug": "3ds",
+     "careers": "https://www.3ds.com/careers/jobs"},
     # Jane Street and IMC have working boards but no French office, so they will
     # normally show 0. Kept because a Paris desk would appear here immediately.
     {"name": "Jane Street", "ats": "greenhouse", "slug": "janestreet",
@@ -144,7 +146,6 @@ COMPANIES3 = [
 ]
 
 NO_API3 = [
-    ("Dassault Systemes",  "site was in maintenance during discovery - undetermined, re-probe"),
     ("Capgemini",          "Phenom People"),
     ("Atos / Eviden",      "no job board found; listing paths 404"),
     ("Safran",             "only workable/safrangroup exists = Safran Engineering Services UK Ltd, a UK subsidiary"),
@@ -378,9 +379,38 @@ def f_teamtailor(c):
     return out
 
 
+def f_dassault(c):
+    # 3ds.com exposes a public JSON search over its career cards. Underlying ATS
+    # is Taleo (see content_cta_2_url), but this layer is clean and paginated:
+    # b = offset, hf = hits per fetch, nhits = true total.
+    base = ("https://www.3ds.com/apisearch/card_search_api?q=%23all%20card_content_lang%3Aen"
+            "%20%20%20(card_content_type%3D%22career%22)%20&s=desc(card_content_start_datetime)")
+    out, off = [], 0
+    while True:
+        d = get("%s&b=%d&hf=100&output_format=json" % (base, off))
+        hits = d.get("hits", []) or []
+        for h in hits:
+            m = {}
+            for meta in h.get("metas", []) or []:
+                if isinstance(meta, dict):
+                    k, v = meta.get("name"), meta.get("value")
+                    if k and k not in m:
+                        m[k] = v
+            title = m.get("content_title", "")
+            loc = m.get("content_info_2_value", "") or ""
+            # content_cta_1_url is the real posting URL, returned verbatim
+            url = m.get("content_cta_1_url", "") or ""
+            if title and url:
+                out.append((title, loc, url, loc))
+        off += 100
+        if not hits or off >= int(d.get("nhits") or 0) or off >= 2000:
+            return out
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
-         "ashby": f_ashby, "teamtailor": f_teamtailor}
+         "ashby": f_ashby, "teamtailor": f_teamtailor,
+         "dassault": f_dassault}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -390,6 +420,7 @@ ENDPOINT = {
     "workday":         lambda c: "%s.%s.myworkdayjobs.com/wday/cxs/%s/%s/jobs" % (c["tenant"], c["wd"], c["tenant"], c["site"]),
     "ashby":           lambda c: "api.ashbyhq.com/posting-api/job-board/%s" % c["slug"],
     "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
+    "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
 }
 
 
