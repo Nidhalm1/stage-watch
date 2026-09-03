@@ -126,11 +126,55 @@ NO_API2 = [
 ]
 
 # Selected by --roster; render() reads BOARD for the page name and blurb.
+# --- Batch 3: defence / aerospace / trading ---------------------------------
+# Thales and Airbus are flagged "big": 6000+ postings each, so they are fetched
+# as a union of the intern/trainee facet plus keyword searches instead of being
+# paged whole. See f_workday.
+COMPANIES3 = [
+    {"name": "Thales",      "ats": "workday", "tenant": "thales", "wd": "wd3",
+     "site": "Careers", "big": True, "careers": "https://www.thalesgroup.com/en/career"},
+    {"name": "Airbus",      "ats": "workday", "tenant": "ag", "wd": "wd3",
+     "site": "Airbus", "big": True, "careers": "https://www.airbus.com/en/careers"},
+    # Jane Street and IMC have working boards but no French office, so they will
+    # normally show 0. Kept because a Paris desk would appear here immediately.
+    {"name": "Jane Street", "ats": "greenhouse", "slug": "janestreet",
+     "careers": "https://www.janestreet.com/join-jane-street/"},
+    {"name": "IMC",         "ats": "greenhouse", "slug": "imc",
+     "careers": "https://careers.imc.com/"},
+]
+
+NO_API3 = [
+    ("Dassault Systemes",  "site was in maintenance during discovery - undetermined, re-probe"),
+    ("Capgemini",          "Phenom People"),
+    ("Atos / Eviden",      "no job board found; listing paths 404"),
+    ("Safran",             "only workable/safrangroup exists = Safran Engineering Services UK Ltd, a UK subsidiary"),
+    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic entries), not the real board; no French office"),
+    ("Optiver",            "bespoke careers system, no ATS"),
+    ("Millennium",         "Eightfold"),
+    ("BNP Paribas",        "careers site returns 403 to non-browser clients"),
+    ("Societe Generale",   "Oracle Taleo"),
+    ("Credit Agricole",    "Oracle Taleo"),
+    ("Groupe BPCE",        "no public job API found"),
+    ("Natixis",            "no public job API found"),
+    ("Banque Populaire",   "regional BPCE portals, no public API"),
+    ("Caisse d'Epargne",   "regional BPCE portals, no public API"),
+    ("Credit Mutuel",      "no public job API found"),
+    ("CIC",                "lever/cic is Cambridge Innovation Center, NOT the French bank"),
+    ("Credit Mutuel Arkea","no public job API found"),
+    ("La Banque Postale",  "no public job API found"),
+    ("LCL",                "no public job API found"),
+    ("HSBC / CCF",         "no public job API found"),
+    ("Bpifrance",          "no public job API found"),
+]
+
 ROSTERS = {
     "1": {"name": "Stage Watch", "companies": COMPANIES,
           "blurb": "Tech internships and PFE in France at observability, infrastructure and "
                    "developer-tools companies, read straight from each company&rsquo;s "
                    "applicant-tracking API."},
+    "3": {"name": "Defence & Finance Watch", "companies": COMPANIES3,
+          "blurb": "Tech internships and PFE in France at defence, aerospace and trading "
+                   "firms, read straight from each company&rsquo;s applicant-tracking API."},
     "2": {"name": "French Tech Watch", "companies": COMPANIES2,
           "blurb": "Tech internships and PFE in France at French tech, fintech and scale-up "
                    "companies, read straight from each company&rsquo;s applicant-tracking API."},
@@ -138,7 +182,7 @@ ROSTERS = {
 
 BOARD = ROSTERS["1"]
 
-LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg)\b", re.I)
+LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg|marseille|aix-en-provence|cannes|toulon|marignane|blagnac|colomiers|saint-nazaire|brest|angers|le mans|tours|orl[ée]ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|saint-[ée]tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|v[ée]lizy|[ée]lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|meudon|montrouge|levallois|neuilly|cergy|[ée]vry|cr[ée]teil|roissy|gennevilliers|saint-denis|marne-la-vall[ée]e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]ry|besan[çc]on|mulhouse|colmar|belfort|montbeliard|vitrolles|rungis|suresnes|colombes|vannes|lorient|quimper|laval|cholet|niort|bayonne|perpignan|b[ée]ziers)\b", re.I)
 INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
 TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|network|system)", re.I)
@@ -219,16 +263,67 @@ def f_smartrecruiters(c):
             return out
 
 
+INTERN_SUBTYPE = re.compile(r"intern|trainee|student|stage|stagiaire", re.I)
+APPRENTICE_SUBTYPE = re.compile(r"apprentice|apprenti|alternan", re.I)
+
+
+def _workday_intern_facets(api):
+    """workerSubType ids meaning intern/trainee, discovered live.
+
+    Returns [] when the tenant exposes no such facet, in which case the caller
+    pages the whole board rather than silently fetching nothing.
+    """
+    d = get(api, {"appliedFacets": {}, "limit": 1, "offset": 0, "searchText": ""})
+    ids = []
+    for fp in d.get("facets", []) or []:
+        if fp.get("facetParameter") != "workerSubType":
+            continue
+        for v in fp.get("values") or []:
+            desc = v.get("descriptor") or ""
+            if INTERN_SUBTYPE.search(desc) and not APPRENTICE_SUBTYPE.search(desc):
+                if v.get("id"):
+                    ids.append(v["id"])
+    return ids
+
+
+WORKDAY_MAX = 1200          # ceiling; Thales and Airbus are ~2-3k each
+
+
 def f_workday(c):
     host = "https://%s.%s.myworkdayjobs.com" % (c["tenant"], c["wd"])
     api  = "%s/wday/cxs/%s/%s/jobs" % (host, c["tenant"], c["site"])
     pub  = "%s/en-US/%s" % (host, c["site"])
-    out, off, total = [], 0, None
+    # Boards flagged "big" (Thales, Airbus: 6000+ postings) are never paged whole.
+    # Instead: the intern/trainee facet UNION a few keyword searches. The facet
+    # alone is not enough - Airbus files some French stages under other contract
+    # types - and the keywords alone miss English-titled trainee roles.
+    if c.get("big"):
+        queries = []
+        ids = _workday_intern_facets(api)
+        if ids:
+            queries.append(({"workerSubType": ids}, ""))
+        # "intern" is deliberately absent: Workday's search is fuzzy and it matches
+        # essentially the whole Thales board, which is useless as a narrowing term.
+        for kw in ("stagiaire", "stage", "internship", "apprenti"):
+            queries.append(({}, kw))
+        seen, merged = set(), []
+        for facets_q, text in queries:
+            for row in _workday_page(api, pub, facets_q, text):
+                if row[2] not in seen:
+                    seen.add(row[2])
+                    merged.append(row)
+        return merged
+    return _workday_page(api, pub, {}, "")
+
+
+def _workday_page(api, pub, facets, text):
+    out, off = [], 0
+    # Workday's "total" is capped at 2000 and keeps reporting 2000 while further
+    # offsets still return results, so it cannot be used as the stop condition.
+    # Page until a short page comes back.
     while True:
-        d = get(api, {"appliedFacets": {}, "limit": 20, "offset": off, "searchText": ""})
+        d = get(api, {"appliedFacets": facets, "limit": 20, "offset": off, "searchText": text})
         page = d.get("jobPostings", [])
-        if total is None:
-            total = d.get("total", 0)
         for j in page:
             path = j.get("externalPath", "")
             blob = "%s %s %s" % (j.get("locationsText", ""),
@@ -238,9 +333,11 @@ def f_workday(c):
             show = ", ".join(x for x in [city, "; ".join(j.get("bulletFields") or [])] if x)
             out.append((j.get("title", ""), show, pub + path, blob))
         off += 20
-        if not page or off >= total:
+        # A keyword that turns out to be too fuzzy just stops at the ceiling
+        # rather than failing the whole company; the other queries still run.
+        if len(page) < 20 or off >= WORKDAY_MAX:
             return out
-        time.sleep(0.3)
+        time.sleep(0.15)
 
 
 def f_ashby(c):
