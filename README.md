@@ -65,9 +65,29 @@ both.
 
 ## Filters
 
-A role is kept when its location is in France, its title says stage / stagiaire /
-PFE / intern / internship / fin d'etudes / cesure, its title does *not* say
-alternance or apprentissage, and `is_tech(title)` is true.
+A role is kept when its title says stage / stagiaire / PFE / intern / internship /
+fin d'etudes / cesure, its title does *not* say alternance or apprentissage, its
+location is in France, and `is_tech(title)` is true.
+
+**Only the first of those four can delete a role.** The other two put it in a
+collapsed box on its company card instead:
+
+| Box | What is in it |
+|---|---|
+| *N non-tech internships filtered out* | in France, title did not read as engineering |
+| *N internships with an unrecognised location* | could not be placed as France **or** as anywhere else |
+
+Both boxes are tracked in state and get a **New** chip, and a new entry is
+reported to the publish routine in `also_new`, so a filter mistake costs a glance
+rather than the job. The box opens itself when it has something new in it.
+
+`where(location)` is what makes the second box possible. It answers `fr`,
+`foreign` or `unknown` rather than yes/no: `fr` when the city/region list or a
+structured country field says France, `foreign` only when the string positively
+names somewhere else, and `unknown` otherwise. Only `foreign` is dropped, so an
+unlisted French town ends up visible instead of deleted. Filtering by internship
+*first* and location *second* is what keeps that box down to a couple of entries
+a week instead of every oddly-labelled role on a global board.
 
 `is_tech` is two-stage. `TECH` is deliberately wide - a false positive costs one
 glance, a false negative costs an application. `EXCL` then vetoes the
@@ -115,6 +135,23 @@ Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 
 Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
 `{"name": "Criteo", "ats": "workday", "tenant": "criteo", "wd": "wd3", "site": "Criteo_Career_Site"}`.
+
+## Audit
+
+Every sweep writes `audit.json` and, from it, `audit.md` - everything the filters
+dropped, per board. Skim it weekly:
+
+- anything under **unrecognised location** that is really in France belongs in
+  `_FR_CITIES`
+- anything under **not tech** that is really an engineering role belongs in
+  `TECH`, or in `STRONG` if an `EXCL` veto word is what is blocking it
+
+Roles outside France are counted rather than listed - that call is nearly always
+right and the list would be hundreds long - but a sample is kept so a systematic
+mistake (a French site being read as foreign) is still visible.
+
+This is the feedback loop the word lists never had: they get corrected from
+evidence instead of guessed at again.
 
 ## Running it by hand
 

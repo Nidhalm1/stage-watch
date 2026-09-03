@@ -12,6 +12,12 @@ What changed from the previous version, and why:
 - **It no longer reads the artifact's saved HTML.** The `Artifact` read call is
   what makes a republish legal; opening the file it saves adds nothing.
 - **Counts corrected**: the rosters are 20 / 19 / 5 companies, not 20 / 18 / 4.
+- **The filtered boxes can now ping.** A role that failed the tech filter or
+  whose location could not be placed is on the board but was never announced.
+  `also_new` carries them, tagged `unsure` (location not placed - could be a real
+  French role) or `other` (read as non-tech). An `unsure` entry is worth a ping
+  on its own; an `other` entry only rides along on a ping that was already going
+  out.
 - **`recent_roles` covers a missed publish.** `new` is reset by the *next*
   sweep, so if the routine does not run one day, a role found that day would
   never be announced. When a board's stamp is not today, the routine announces
@@ -48,7 +54,13 @@ The sweep writes status.json for exactly this purpose. Run ONE command:
   cat status.json; echo '--today--'; date -u '+%F %a'; ls -l board.html board2.html board3.html
 
 Per board it carries: stamp, scanned, live, new, new_roles[], recent_roles[],
-failed, failed_names[], incomplete[], closed_total, closed_today[].
+failed, failed_names[], incomplete[], closed_total, closed_today[], and the two
+boxes that are shown on the board but filtered out of the live list: filtered
+(count), unsure (count) and also_new[] (the ones that appeared today, each with
+kind = "unsure" or "other").
+
+Treat any field that is absent as zero or empty - an older status.json will not
+have the newer keys.
 
 Do NOT open board.html / board2.html / board3.html. Everything you need to
 decide and to report is in status.json, and the boards are ~46 KB of HTML.
@@ -109,14 +121,24 @@ stop reading notifications.
 Send AT MOST ONE PushNotification covering all three, and only if ANY of:
   - any board's `new` >= 1
   - any board's `closed_today` is non-empty (a tracked role closed TODAY)
+  - any board has an `also_new` entry with kind "unsure" - the location filter
+    could not place it, so it may well be a real tech internship in France
   - today is Monday (weekly heartbeat)
   - any board was stale or failed its checks
+
+An `also_new` entry with kind "other" is NOT a reason to send on its own - it
+read as non-tech, and pinging on every new marketing internship is exactly the
+noise that makes him stop reading. When a ping is already going out for one of
+the reasons above, you may add a short tail like "+2 in the filtered boxes".
 
 Otherwise send NOTHING. Silence on an ordinary no-change weekday is correct.
 
 Which roles to name: `new_roles` normally. For a board whose stamp is NOT today,
 use `recent_roles` instead - `new` was reset by a later sweep, and those roles
-have never been announced.
+have never been announced. Name an `unsure` role the same way you would a live
+one, but say the location was not recognised rather than claiming it is in
+France:
+Good:  'French Tech Watch: NEW - Stage Data Engineer at Qonto, location "Ploumagoar" not recognised - check it. 2+4+1 live.
 
 Do NOT notify because closed_total is above zero. That count stays up for 14 days
 after a closure, so using it would ping him about the same closed role every
@@ -131,9 +153,13 @@ Bad:   'The daily sweep completed and the artifacts were updated.'
 === STEP 4 - report ===
 One short block per board, taken from status.json and not from memory: live, new,
 any closed_today, closed_total, the stamp and whether it is today, and anything
-in failed_names or incomplete. Name any NEW role with its title and company.
-Then say whether you sent a notification and why, and flag any board you skipped
-and which check failed.
+in failed_names or incomplete. Name any NEW role with its title and company, and
+any also_new entry with its kind. Then say whether you sent a notification and
+why, and flag any board you skipped and which check failed.
+
+On Mondays only, add one line: the total `unsure` across the three boards, and a
+reminder that audit.md lists what the filters dropped and is worth a skim. Do not
+read audit.md yourself - it is for him, and it is large.
 
 Hard rules: never edit a board file, never invent a job, a URL or a company,
 never fetch job data yourself, and never publish a board to another board's

@@ -10,8 +10,8 @@ on:
     - cron: "0 15 * * *"
   workflow_dispatch:        # lets you run it by hand from the Actions tab
 
-# Two sweeps running at once would both commit the same four files and the
-# loser's push is rejected, silently dropping a sweep.
+# Two sweeps running at once would both commit the same files and the loser's
+# push is rejected, silently dropping a sweep.
 concurrency:
   group: stage-watch-sweep
   cancel-in-progress: false
@@ -66,7 +66,7 @@ jobs:
         run: |
           git config user.name  "stage-watch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for f in board.html board2.html board3.html status.json; do
+          for f in board.html board2.html board3.html status.json audit.json audit.md; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if git diff --staged --quiet; then
