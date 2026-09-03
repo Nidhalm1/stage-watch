@@ -93,6 +93,11 @@ COMPANIES2 = [
      "careers": "https://jobs.backmarket.com/"},
     {"name": "Alan",             "ats": "ashby", "slug": "alan",
      "careers": "https://alan.com/careers"},
+    # slug is "mistral.ai" WITH the dot - "mistral", "mistralai" and "mistral-ai"
+    # all return an empty SPA shell that answers 200, which is why probing by
+    # status code alone marked this company unreachable.
+    {"name": "Mistral AI",       "ats": "ashby", "slug": "mistral.ai",
+     "careers": "https://mistral.ai/careers"},
     {"name": "Pennylane",        "ats": "ashby", "slug": "pennylane",
      "careers": "https://www.pennylane.com/careers/"},
     {"name": "Ledger",           "ats": "ashby", "slug": "ledger",
@@ -118,7 +123,6 @@ COMPANIES2 = [
 
 NO_API2 = [
     ("Deezer",     "careers URL redirects to their investor site; no job board found"),
-    ("Mistral AI", "Ashby UI only - the posting API 404s for every slug variant"),
     ("Kayrros",    "careers page returns 404"),
     ("INRIA",      "custom public-research portal (jobs.inria.fr)"),
     ("CEA",        "custom public-research portal"),
@@ -186,7 +190,7 @@ BOARD = ROSTERS["1"]
 LOC    = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg|marseille|aix-en-provence|cannes|toulon|marignane|blagnac|colomiers|saint-nazaire|brest|angers|le mans|tours|orl[ée]ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|saint-[ée]tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|v[ée]lizy|[ée]lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|meudon|montrouge|levallois|neuilly|cergy|[ée]vry|cr[ée]teil|roissy|gennevilliers|saint-denis|marne-la-vall[ée]e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]ry|besan[çc]on|mulhouse|colmar|belfort|montbeliard|vitrolles|rungis|suresnes|colombes|vannes|lorient|quimper|laval|cholet|niort|bayonne|perpignan|b[ée]ziers)\b", re.I)
 INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
-TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|ing[\u00e9e]nieur|informatique|logiciel|d[\u00e9e]veloppement|donn[\u00e9e]es|r[\u00e9e]seau|syst[\u00e8e]me|embarqu[\u00e9e]|cybers[\u00e9e]curit[\u00e9e]|algorithm|calcul|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|network|system)", re.I)
+TECH   = re.compile(r"(software|swe|engineer|engineering|developer|d[\u00e9e]veloppeur|ing[\u00e9e]nieur|informatique|logiciel|d[\u00e9e]veloppement|donn[\u00e9e]es|r[\u00e9e]seau|syst[\u00e8e]me|embarqu[\u00e9e]|cybers[\u00e9e]curit[\u00e9e]|algorithm|calcul|backend|back-end|frontend|front-end|fullstack|full.stack|sre|site reliability|devops|platform|infra|infrastructure|cloud|kubernetes|data|\bml\b|machine learning|\bai\b|security|s[\u00e9e]curit[\u00e9e]|scientist|chercheur|quantitative|quant )", re.I)
 # A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
 # These business-function words veto a tech match.
 EXCL   = re.compile(r"\b(legal|juridique|marketing|sales|vente|commercial|business development|talent|recruit|people|hr|rh|brand|communication|content|community|finance|accounting|comptab|audit|payroll|paie|office manager|customer success|account executive|partnership)\b", re.I)
