@@ -81,6 +81,13 @@ Both boxes are tracked in state and get a **New** chip, and a new entry is
 reported to the publish routine in `also_new`, so a filter mistake costs a glance
 rather than the job. The box opens itself when it has something new in it.
 
+Workday builds its city from `externalPath`, which is ASCII-folded: the board
+really contains `Vlizy-Villacoublay`, `Donauwrth`, `So-Paulo`. An accent class
+like `[ée]` cannot match a *missing* letter, so every accented French town was
+one URL slug away from being unmatchable - the accent is optional in
+`_FR_CITIES` and `_FR_REGIONS` for exactly that reason. Do not "tidy" the `?`
+away.
+
 `where(location)` is what makes the second box possible. It answers `fr`,
 `foreign` or `unknown` rather than yes/no: `fr` when the city/region list or a
 structured country field says France, `foreign` only when the string positively

@@ -196,29 +196,29 @@ BOARD = ROSTERS["1"]
 _FR_CITIES = (
     "paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|sophia|montpellier|nice|rennes|strasbourg|"
     "marseille|aix-en-provence|cannes|toulon|marignane|blagnac|colomiers|cugnaux|saint-nazaire|brest|"
-    "angers|le mans|tours|orl[ée]ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|"
-    "saint-[ée]tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|"
-    "v[ée]lizy|villacoublay|[ée]lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|"
-    "meudon|montrouge|levallois|neuilly|cergy|[ée]vry|cr[ée]teil|roissy|gennevilliers|saint-denis|"
-    "marne-la-vall[ée]e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]ry|besan[çc]on|"
+    "angers|le mans|tours|orl[ée]?ans|dijon|metz|nancy|reims|rouen|caen|limoges|clermont-ferrand|"
+    "saint-[ée]?tienne|valence|avignon|pau|tarbes|la rochelle|poitiers|amiens|dunkerque|versailles|"
+    "v[ée]?lizy|villacoublay|[ée]?lancourt|massy|palaiseau|saclay|courbevoie|nanterre|boulogne|issy|"
+    "meudon|montrouge|levallois|neuilly|cergy|[ée]?vry|cr[ée]?teil|roissy|gennevilliers|saint-denis|"
+    "marne-la-vall[ée]?e|guyancourt|trappes|carquefou|villeurbanne|annecy|chamb[ée]?ry|besan[çc]?on|"
     "mulhouse|colmar|belfort|montbeliard|vitrolles|rungis|suresnes|colombes|vannes|lorient|quimper|"
-    "laval|cholet|niort|bayonne|perpignan|b[ée]ziers|"
+    "laval|cholet|niort|bayonne|perpignan|b[ée]?ziers|"
     # added after an audit found real defence/aerospace/industrial sites missing
-    "m[ée]rignac|le haillan|saint-m[ée]dard|bourges|ch[âa]tellerault|istres|ymare|val-de-reuil|"
+    "m[ée]?rignac|le haillan|saint-m[ée]?dard|bourges|ch[âa]?tellerault|istres|ymare|val-de-reuil|"
     "moirans|fleury-les-aubrais|bezons|osny|conflans|vitry|saint-quentin-en-yvelines|lannion|"
-    "plouzan[ée]|cesson|bruz|les mureaux|mantes|poissy|montigny|plaisir|argenteuil|la d[ée]fense|"
-    "puteaux|malakoff|vanves|clichy|saint-cloud|s[èe]vres|chatou|rueil|antony|orsay|gif-sur-yvette|"
+    "plouzan[ée]?|cesson|bruz|les mureaux|mantes|poissy|montigny|plaisir|argenteuil|la d[ée]?fense|"
+    "puteaux|malakoff|vanves|clichy|saint-cloud|s[èe]?vres|chatou|rueil|antony|orsay|gif-sur-yvette|"
     "marcoussis|les ulis|corbeil|villebon|ivry|alfortville|charenton|montreuil|pantin|aubervilliers|"
-    "le bourget|villaroche|melun|compi[èe]gne|beauvais|chartres|blois|bourg-en-bresse|roanne|vienne|"
-    "salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse"
+    "le bourget|villaroche|melun|compi[èe]?gne|beauvais|chartres|blois|bourg-en-bresse|roanne|vienne|"
+    "salaunes|salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse"
 )
 # Workday and some Taleo fronts show only the region or the department.
 _FR_REGIONS = (
-    "[îi]le-de-france|hauts-de-seine|seine-saint-denis|val-de-marne|val-d.oise|yvelines|essonne|"
-    "seine-et-marne|bouches-du-rh[ôo]ne|haute-garonne|gironde|loire-atlantique|ille-et-vilaine|"
-    "bas-rhin|haut-rhin|alpes-maritimes|is[èe]re|rh[ôo]ne|occitanie|nouvelle-aquitaine|"
-    "auvergne-rh[ôo]ne-alpes|bretagne|normandie|grand est|hauts-de-france|provence|"
-    "pays de la loire|centre-val de loire|bourgogne|franche-comt[ée]|corse"
+    "[îi]?le-de-france|hauts-de-seine|seine-saint-denis|val-de-marne|val-d.oise|yvelines|essonne|"
+    "seine-et-marne|bouches-du-rh[ôo]?ne|haute-garonne|gironde|loire-atlantique|ille-et-vilaine|"
+    "bas-rhin|haut-rhin|alpes-maritimes|is[èe]?re|rh[ôo]?ne|occitanie|nouvelle-aquitaine|"
+    "auvergne-rh[ôo]?ne-alpes|bretagne|normandie|grand est|hauts-de-france|provence|"
+    "pays de la loire|centre-val de loire|bourgogne|franche-comt[ée]?|corse"
 )
 LOC    = re.compile(r"\b(france|" + _FR_CITIES + "|" + _FR_REGIONS + r")\b", re.I)
 # What a fetcher's structured country field looks like when it means France.
@@ -274,6 +274,9 @@ _NOT_FR = (
     "miami|philadelphia|pittsburgh|detroit|minneapolis|salt lake|raleigh|charlotte|nashville|"
     "toronto|vancouver|montreal|montr[ée]al|ottawa|calgary|waterloo, on|"
     # region buckets a global board uses instead of a country
+    # added from the audit box after the first run - all Airbus/Thales sites
+    "tianjin|suzhou|chengdu|s[ãa]?o.paulo|manching|donauw[öo]?rth|immenstaad|bremen|lodz|"
+    "hengelo|gorgonzola|getafe|cadiz|c[áa]diz|brasov|braov|toulouse-blagnac-area|"
     "worldwide|global|anywhere|multiple countries"
 )
 NOT_FR = re.compile(r"\b(" + _NOT_FR + r")\b", re.I)
@@ -829,7 +832,7 @@ def render(results, prev):
                 u = h["url"]
                 h["is_new"] = (u not in prev_watch) and bool(prev_watch)
                 entry = {"title": h["title"], "company": r["name"], "url": u, "kind": kind}
-                if h["is_new"]:
+                if h["is_new"] and (kind == "other" or is_tech(h["title"])):
                     also_new.append(entry)
                 watch[u] = {"title": h["title"], "company": r["name"], "kind": kind}
 
