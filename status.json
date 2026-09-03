@@ -1,6 +1,7 @@
 {
   "boards": {
     "board.html": {
+      "also_new": [],
       "board": "Stage Watch",
       "closed_today": [
         {
@@ -13,7 +14,8 @@
       "companies": 20,
       "failed": 0,
       "failed_names": [],
-      "generated": "2026-09-03T19:46:04.830671+02:00",
+      "filtered": 8,
+      "generated": "2026-09-03T20:15:46.729635+02:00",
       "incomplete": [],
       "live": 2,
       "new": 0,
@@ -33,27 +35,23 @@
         }
       ],
       "scanned": 3667,
-      "stamp": "2026-09-03"
+      "stamp": "2026-09-03",
+      "unsure": 0
     },
     "board2.html": {
+      "also_new": [],
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_total": 0,
       "companies": 19,
       "failed": 0,
       "failed_names": [],
-      "generated": "2026-09-03T19:45:35.346243+02:00",
+      "filtered": 20,
+      "generated": "2026-09-03T20:16:03.561676+02:00",
       "incomplete": [],
       "live": 4,
-      "new": 1,
-      "new_roles": [
-        {
-          "company": "Mistral AI",
-          "first_seen": "2026-09-03",
-          "title": "Applied Scientist  (Internship)",
-          "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e"
-        }
-      ],
+      "new": 0,
+      "new_roles": [],
       "recent_roles": [
         {
           "company": "Alan",
@@ -80,17 +78,20 @@
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003"
         }
       ],
-      "scanned": 908,
-      "stamp": "2026-09-03"
+      "scanned": 907,
+      "stamp": "2026-09-03",
+      "unsure": 0
     },
     "board3.html": {
+      "also_new": [],
       "board": "Defence & Finance Watch",
       "closed_today": [],
       "closed_total": 0,
       "companies": 5,
       "failed": 0,
       "failed_names": [],
-      "generated": "2026-09-03T19:46:58.435175+02:00",
+      "filtered": 5,
+      "generated": "2026-09-03T20:16:21.222864+02:00",
       "incomplete": [],
       "live": 1,
       "new": 0,
@@ -103,9 +104,10 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
         }
       ],
-      "scanned": 1680,
-      "stamp": "2026-09-03"
+      "scanned": 1681,
+      "stamp": "2026-09-03",
+      "unsure": 0
     }
   },
-  "generated": "2026-09-03T19:46:58.435175+02:00"
+  "generated": "2026-09-03T20:16:21.222864+02:00"
 }

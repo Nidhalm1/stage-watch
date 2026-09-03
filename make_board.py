@@ -224,6 +224,78 @@ LOC    = re.compile(r"\b(france|" + _FR_CITIES + "|" + _FR_REGIONS + r")\b", re.
 # What a fetcher's structured country field looks like when it means France.
 FR_CODE = re.compile(r"^\s*(fr|fra|france|frankreich)\s*$", re.I)
 
+# --- is this role in France? ----------------------------------------------
+# Three answers, not two. The old code asked "does the location match my city
+# list?" and dropped everything else, so a stage in a town nobody had listed
+# vanished with nothing to show it ever existed. A city whitelist can only
+# shrink the result set and never tells you what it cost you.
+#
+# So: France when we recognise it, FOREIGN only when the string positively says
+# somewhere else, and UNKNOWN otherwise - and UNKNOWN is shown on the board
+# instead of being thrown away. Any real French town that turns up in that box
+# belongs in _FR_CITIES; that is the feedback loop the whitelist never had.
+_NOT_FR = (
+    "united states|u\\.s\\.a?\\.|america|canada|mexico|brazil|br[ée]sil|argentina|chile|colombia|"
+    "united kingdom|england|scotland|wales|ireland|irlande|london|londres|manchester|edinburgh|"
+    "dublin|cork|belfast|"
+    "germany|allemagne|deutschland|berlin|munich|m[üu]nchen|hamburg|frankfurt|cologne|k[öo]ln|"
+    "stuttgart|d[üu]sseldorf|"
+    "spain|espagne|espa[ñn]a|madrid|barcelona|barcelone|valencia|sevilla|m[áa]laga|"
+    "portugal|lisbon|lisbonne|lisboa|porto|"
+    "italy|italie|italia|milan|milano|rome|roma|turin|torino|"
+    "netherlands|pays-bas|nederland|amsterdam|rotterdam|utrecht|eindhoven|the hague|"
+    "belgium|belgique|belgi[ëe]|brussels|bruxelles|antwerp|anvers|ghent|"
+    "switzerland|suisse|schweiz|zurich|z[üu]rich|geneva|gen[èe]ve|lausanne|basel|b[âa]le|"
+    "austria|autriche|vienna|vienne|wien|"
+    "poland|pologne|polska|warsaw|varsovie|krakow|cracovie|wroclaw|gdansk|"
+    "czech|tch[èe]que|prague|praha|slovakia|slovaquie|bratislava|hungary|hongrie|budapest|"
+    "romania|roumanie|bucharest|bucarest|cluj|bulgaria|bulgarie|sofia|"
+    "sweden|su[èe]de|stockholm|gothenburg|norway|norv[èe]ge|oslo|denmark|danemark|copenhagen|"
+    "copenhague|finland|finlande|helsinki|iceland|islande|reykjavik|"
+    "estonia|estonie|tallinn|latvia|lettonie|riga|lithuania|lituanie|vilnius|"
+    "greece|gr[èe]ce|athens|ath[èe]nes|cyprus|chypre|malta|malte|"
+    "ukraine|kyiv|kiev|lviv|poland|serbia|serbie|belgrade|croatia|croatie|zagreb|slovenia|"
+    "slov[ée]nie|ljubljana|"
+    "israel|isra[ëe]l|tel aviv|jerusalem|turkey|turquie|istanbul|ankara|"
+    "india|inde|bangalore|bengaluru|hyderabad|mumbai|pune|chennai|delhi|gurgaon|noida|"
+    "china|chine|beijing|p[ée]kin|shanghai|shenzhen|hong kong|taiwan|taipei|"
+    "japan|japon|tokyo|osaka|korea|cor[ée]e|seoul|s[ée]oul|"
+    "singapore|singapour|malaysia|malaisie|kuala lumpur|indonesia|indon[ée]sie|jakarta|"
+    "thailand|tha[ïi]lande|bangkok|vietnam|hanoi|philippines|manila|manille|"
+    "australia|australie|sydney|melbourne|brisbane|perth|new zealand|auckland|"
+    "south africa|afrique du sud|johannesburg|cape town|nigeria|lagos|kenya|nairobi|egypt|"
+    "[ée]gypte|cairo|le caire|morocco|maroc|casablanca|rabat|tunisia|tunisie|tunis|algeria|"
+    "alg[ée]rie|alger|"
+    "united arab emirates|dubai|duba[ïi]|abu dhabi|saudi|arabie|riyadh|qatar|doha|"
+    # US and Canadian metros that show up without a country
+    "new york|nyc|brooklyn|san francisco|bay area|palo alto|mountain view|sunnyvale|san jose|"
+    "santa clara|seattle|bellevue|portland|austin|dallas|houston|atlanta|chicago|boston|"
+    "cambridge, ma|denver|boulder|phoenix|san diego|los angeles|washington, d|arlington, v|"
+    "miami|philadelphia|pittsburgh|detroit|minneapolis|salt lake|raleigh|charlotte|nashville|"
+    "toronto|vancouver|montreal|montr[ée]al|ottawa|calgary|waterloo, on|"
+    # region buckets a global board uses instead of a country
+    "worldwide|global|anywhere|multiple countries"
+)
+NOT_FR = re.compile(r"\b(" + _NOT_FR + r")\b", re.I)
+# Case-SENSITIVE on purpose. Lowercased, 'in' is Indiana, 'us' is the pronoun and
+# 'me' is Maine - matching those case-insensitively turns "Remote in Europe" into
+# a US role. A state code only counts after a comma, which is how every board
+# writes it.
+NOT_FR_CS = re.compile(r",\s*(A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|"
+                       r"N[CDEHJMVY]|O[HKR]|P[AR]|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\b"
+                       r"|\b(US|USA|U\.S\.|UK|EMEA|APAC|LATAM|NAMER|AMER|ANZ|DACH|BENELUX|MENA)\b")
+
+
+def where(blob):
+    """'fr' | 'foreign' | 'unknown'. France wins ties: a posting listed for both
+    Paris and London is a Paris posting as far as this board is concerned."""
+    if LOC.search(blob):
+        return "fr"
+    if NOT_FR.search(blob) or NOT_FR_CS.search(blob):
+        return "foreign"
+    return "unknown"
+
+
 INTERN = re.compile(r"\b(stage|stagiaire|pfe|intern|internship|fin d['’]?\s*[ée]tudes|c[ée]sure)\b", re.I)
 ALT    = re.compile(r"\b(alternance|alternant|apprenti|apprentissage|apprentice)\b", re.I)
 
@@ -543,22 +615,30 @@ def scan():
     for c in BOARD["companies"]:
         row = {"name": c["name"], "ats": c["ats"], "careers": c.get("careers", ""),
                "endpoint": ENDPOINT[c["ats"]](c), "error": None, "zero": False,
-               "partial": False, "total": 0, "france": 0, "hits": [], "other": []}
+               "partial": False, "total": 0, "france": 0, "hits": [], "other": [],
+               "unsure": [], "foreign": []}
         try:
             jobs = FETCH[c["ats"]](c)
         except Exception as e:
             row["error"] = "%s: %s" % (type(e).__name__, e)
             results.append(row)
             continue
-        fr  = [j for j in jobs if LOC.search(j[3])]
-        # the title can lie: Thales titles an apprenticeship "STAGE - ..." while its
-        # URL and Workday contract type both say alternance/apprentice.
-        itn = [j for j in fr if INTERN.search(j[0])
-               and not ALT.search(j[0]) and not ALT.search(j[3])]
+        placed = [(j, where(j[3])) for j in jobs]
         row["total"]  = len(jobs)
-        row["france"] = len(fr)
-        row["hits"]   = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if is_tech(t)]
-        row["other"]  = [{"title": t, "location": l, "url": u} for t, l, u, _ in itn if not is_tech(t)]
+        row["france"] = sum(1 for _, w in placed if w == "fr")
+        # Internship first, location second. Done the other way round the
+        # unrecognised-location box would have to hold every role on a global
+        # board with an odd location string; this way it holds a couple a week.
+        # The title can lie: Thales titles an apprenticeship "STAGE - ..." while
+        # its URL and Workday contract type both say alternance/apprentice.
+        itn = [(j, w) for j, w in placed if INTERN.search(j[0])
+               and not ALT.search(j[0]) and not ALT.search(j[3])]
+        rec = lambda j: {"title": j[0], "location": j[1], "url": j[2]}
+        row["hits"]    = [rec(j) for j, w in itn if w == "fr" and is_tech(j[0])]
+        row["other"]   = [rec(j) for j, w in itn if w == "fr" and not is_tech(j[0])]
+        # not obviously France and not obviously anywhere else - shown, never dropped
+        row["unsure"]  = [rec(j) for j, w in itn if w == "unknown"]
+        row["foreign"] = [rec(j) for j, w in itn if w == "foreign"]   # audit only
         # A dead slug does not raise: several ATSs answer 200 with an empty list,
         # so the company looks healthy while being invisible. Treated like a
         # partial fetch below - shown, but never a reason to close anything.
@@ -736,6 +816,23 @@ def render(results, prev):
             cur[u] = {"title": h["title"], "company": r["name"],
                       "location": h["location"], "first_seen": h["first_seen"]}
 
+    # The filtered-out and unrecognised-location boxes were untracked: a role
+    # landing in one got no chip and no ping, so a filter mistake cost the job
+    # even though the role was sitting on the page. They are tracked here in
+    # their own state block - never in `postings`, because a marketing intern
+    # going away is not a closure worth reporting.
+    prev_watch = prev.get("watch", {})
+    watch, also_new = {}, []
+    for r in results:
+        for kind in ("other", "unsure"):
+            for h in r[kind]:
+                u = h["url"]
+                h["is_new"] = (u not in prev_watch) and bool(prev_watch)
+                entry = {"title": h["title"], "company": r["name"], "url": u, "kind": kind}
+                if h["is_new"]:
+                    also_new.append(entry)
+                watch[u] = {"title": h["title"], "company": r["name"], "kind": kind}
+
     # a posting that was live last run and is absent now == filled or pulled.
     # keep it visible for 14 days so a missed day is not a silent deletion.
     closed = [c for c in prev.get("closed", [])
@@ -795,10 +892,27 @@ def render(results, prev):
             p.append('<p class="none">No tech internships open in France right now.</p>')
 
         if r["other"]:
-            p.append("<details><summary>%d non-tech internship%s filtered out</summary><ul>"
-                     % (len(r["other"]), "" if len(r["other"]) == 1 else "s"))
+            p.append("<details%s><summary>%d non-tech internship%s filtered out</summary><ul>"
+                     % (" open" if any(o["is_new"] for o in r["other"]) else "",
+                        len(r["other"]), "" if len(r["other"]) == 1 else "s"))
             for o in r["other"]:
-                p.append("<li>%s &mdash; %s</li>" % (esc(o["title"]), esc(o["location"])))
+                p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
+                         % (esc(o["url"]), esc(o["title"]), esc(o["location"]),
+                            '<span class="chip new">New</span>' if o["is_new"] else ""))
+            p.append("</ul></details>")
+
+        # Never silently dropped: a location this build could not place is shown
+        # here so a French town missing from the city list is visible instead of
+        # costing an application. Anything real in here belongs in _FR_CITIES.
+        if r["unsure"]:
+            p.append("<details%s><summary>%d internship%s with an unrecognised location"
+                     "</summary><ul>"
+                     % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
+                        len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
+            for o in r["unsure"]:
+                p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
+                         % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
+                            '<span class="chip new">New</span>' if o["is_new"] else ""))
             p.append("</ul></details>")
         p.append("</article>")
 
@@ -824,9 +938,11 @@ def render(results, prev):
         p.append('<tr><td class="co-name">%s</td><td>%s</td><td>%s</td><td>%s</td></tr>'
                  % (esc(r["name"]), esc(r["ats"]), esc(r["endpoint"]), esc(st)))
     p.append("</tbody></table></div>")
-    p.append("<p>Filter: location in France &middot; title contains stage / stagiaire / PFE / intern "
-             "&middot; excludes alternance and apprentissage &middot; engineering, data, infra, SRE or "
-             "security role.</p>")
+    p.append("<p>Filter: title contains stage / stagiaire / PFE / intern / fin d&rsquo;&eacute;tudes "
+             "&middot; excludes alternance and apprentissage &middot; location in France &middot; "
+             "engineering, data, infra, SRE or security role. The last two steps do not delete "
+             "anything: a role that fails them is in the collapsed box on its company, either as "
+             "non-tech or as an unrecognised location.</p>")
     if broken:
         p.append('<p class="warn">%d compan%s failed to fetch this run, so its roles may be stale. '
                  "Nothing was marked closed for it.</p>"
@@ -840,7 +956,7 @@ def render(results, prev):
                                  for r in suspect)))
     p.append("</section></div>")
 
-    state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed}
+    state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed, "watch": watch}
     p.append('<script type="application/json" id="state">%s</script>'
              % json.dumps(state, ensure_ascii=False).replace("</", "<\\/"))
 
@@ -858,6 +974,9 @@ def render(results, prev):
         "failed_names": [r["name"] for r in broken],
         "incomplete": ["%s (%s)" % (r["name"], "empty" if r["zero"] else "truncated")
                        for r in results if not r["error"] and (r["zero"] or r["partial"])],
+        "also_new": also_new,
+        "unsure": sum(len(r["unsure"]) for r in results),
+        "filtered": sum(len(r["other"]) for r in results),
         "closed_total": len(closed),
         "closed_today": [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
                          for c in closed if c["closed_on"] == TODAY],
@@ -865,22 +984,93 @@ def render(results, prev):
     return "\n".join(p), stats
 
 
-STATUS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "status.json")
+HERE     = os.path.dirname(os.path.abspath(__file__))
+STATUS   = os.path.join(HERE, "status.json")
+AUDIT    = os.path.join(HERE, "audit.json")
+AUDIT_MD = os.path.join(HERE, "audit.md")
 
 
-def write_status(out, stats):
-    """One small JSON summarising every board, so the publish step never has to
-    parse the HTML back out. Read-modify-write: the three rosters run one after
-    the other and each owns only its own key."""
+def _merge(path, key, payload):
+    """Read-modify-write keyed by board file. The three rosters run one after the
+    other and each owns only its own key."""
     try:
-        doc = json.load(open(STATUS, encoding="utf-8"))
+        doc = json.load(open(path, encoding="utf-8"))
     except Exception:
         doc = {}
     if not isinstance(doc.get("boards"), dict):
         doc = {"boards": {}}
-    doc["boards"][os.path.basename(out)] = stats
+    doc["boards"][key] = payload
     doc["generated"] = NOW.isoformat()
-    json.dump(doc, open(STATUS, "w", encoding="utf-8"), indent=2, ensure_ascii=False, sort_keys=True)
+    json.dump(doc, open(path, "w", encoding="utf-8"), indent=2, ensure_ascii=False, sort_keys=True)
+    return doc
+
+
+def write_status(out, stats):
+    """One small JSON summarising every board, so the publish step never has to
+    parse the HTML back out."""
+    _merge(STATUS, os.path.basename(out), stats)
+
+
+FOREIGN_SAMPLE = 15
+
+
+def write_audit(out, results):
+    """Everything the filters threw away, so the word lists get corrected from
+    evidence instead of guessed at again."""
+    tag = lambda r, xs: [dict(x, company=r["name"]) for x in xs]
+    foreign = [x for r in results for x in tag(r, r["foreign"])]
+    payload = {
+        "board": BOARD["name"],
+        "stamp": TODAY,
+        "unknown_location": [x for r in results for x in tag(r, r["unsure"])],
+        "non_tech":         [x for r in results for x in tag(r, r["other"])],
+        # nearly always correct, and there can be hundreds - count them and keep
+        # a sample rather than committing the whole list every night
+        "foreign_count":  len(foreign),
+        "foreign_sample": foreign[:FOREIGN_SAMPLE],
+    }
+    _render_audit_md(_merge(AUDIT, os.path.basename(out), payload))
+
+
+def _cell(s):
+    return str(s or "").replace("|", "\\|").replace("\n", " ").strip()
+
+
+def _table(rows):
+    if not rows:
+        return ["", "_none_"]
+    out = ["", "| Company | Title | Location |", "|---|---|---|"]
+    for x in rows:
+        out.append("| %s | [%s](%s) | %s |" % (_cell(x.get("company")), _cell(x.get("title")),
+                                               x.get("url", ""), _cell(x.get("location")) or "-"))
+    return out
+
+
+def _render_audit_md(doc):
+    """The skimmable half of audit.json. Read it once a week."""
+    p = ["# What the filters dropped", "",
+         "Rewritten by every sweep; worth a skim once a week.", "",
+         "- anything under **unrecognised location** that is really in France belongs in",
+         "  `_FR_CITIES` in `make_board.py` - that box is the whole point of not dropping",
+         "  a role just because its town was not on a hand-written list",
+         "- anything under **not tech** that is really an engineering role belongs in",
+         "  `TECH`, or in `STRONG` if one of the `EXCL` veto words is what is blocking it",
+         "",
+         "Roles outside France are counted, not listed: that call is nearly always right",
+         "and the list would be hundreds long. A sample is kept to spot a systematic",
+         "mistake (a French site being read as foreign).", ""]
+    for name in sorted(doc.get("boards", {})):
+        b = doc["boards"][name]
+        p += ["---", "", "## %s" % b.get("board", name),
+              "", "`%s` &middot; sweep of %s" % (name, b.get("stamp", "?")), ""]
+        p += ["### Unrecognised location - %d" % len(b.get("unknown_location") or [])]
+        p += _table(b.get("unknown_location") or [])
+        p += ["", "### Not tech - %d" % len(b.get("non_tech") or [])]
+        p += _table(b.get("non_tech") or [])
+        p += ["", "### Outside France - %d (sample below)" % b.get("foreign_count", 0)]
+        p += _table(b.get("foreign_sample") or [])
+        p += [""]
+    open(AUDIT_MD, "w", encoding="utf-8").write("\n".join(p) + "\n")
 
 
 if __name__ == "__main__":
@@ -900,6 +1090,7 @@ if __name__ == "__main__":
     doc, stats = render(res, load_prev(prev_path))
     open(out, "w", encoding="utf-8").write(doc)
     write_status(out, stats)
+    write_audit(out, res)
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     for r in res:
         note = " INCOMPLETE" if (r["zero"] or r["partial"]) else ""
