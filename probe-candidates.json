@@ -1,0 +1,37 @@
+{
+  "Dynatrace":            ["dynatrace", "workday:dynatrace,wd3,Careers", "eightfold:dynatrace.com"],
+  "OVHcloud":             ["ovhcloud", "ovh", "ovhgroupe", "workday:ovhcloud,wd3,Careers"],
+  "GitHub":               ["github", "githubinc"],
+  "HashiCorp":            ["hashicorp"],
+  "Clever Cloud":         ["clevercloud", "clever-cloud"],
+  "Tsuga":                ["tsuga", "tsuga-io"],
+
+  "Deezer":               ["deezer"],
+  "Kayrros":              ["kayrros"],
+  "INRIA":                ["inria", "url:https://jobs.inria.fr/public/classic/api/offers",
+                           "url:https://jobs.inria.fr/public/classic/fr/offres.json"],
+  "CEA":                  ["cea", "cea-recrutement"],
+  "CNRS":                 ["cnrs"],
+
+  "Capgemini":            ["capgemini", "eightfold:capgemini.com"],
+  "Societe Generale":     ["societegenerale", "socgen", "eightfold:societegenerale.com"],
+  "Credit Agricole":      ["creditagricole", "ca-recrutement", "eightfold:credit-agricole.com"],
+  "BNP Paribas":          ["bnpparibas", "bnp", "eightfold:bnpparibas.com"],
+  "HSBC / CCF":           ["hsbc", "eightfold:hsbc.com"],
+  "Atos / Eviden":        ["atos", "eviden"],
+  "Millennium":           ["eightfold:mlp.com", "millennium", "eightfold:millennium.com"],
+  "Safran":               ["safran", "safrangroup", "workday:safran,wd3,Careers"],
+  "Optiver":              ["optiver"],
+  "Hudson River Trading": ["hudsonrivertrading", "hrt"],
+  "CIC":                  ["cic"],
+
+  "Groupe BPCE":          ["bpce", "groupebpce"],
+  "Natixis":              ["natixis", "eightfold:natixis.com"],
+  "Banque Populaire":     ["banquepopulaire"],
+  "Caisse d'Epargne":     ["caissedepargne"],
+  "Credit Mutuel":        ["creditmutuel"],
+  "Credit Mutuel Arkea":  ["arkea", "creditmutuelarkea"],
+  "La Banque Postale":    ["labanquepostale"],
+  "LCL":                  ["lcl"],
+  "Bpifrance":            ["bpifrance"]
+}

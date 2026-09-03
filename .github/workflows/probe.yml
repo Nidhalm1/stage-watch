@@ -1,0 +1,23 @@
+name: Probe candidate ATS slugs
+
+# Manual only. The Claude sandbox's egress proxy is default-deny and answers 403
+# to CONNECT for every ATS host, so discovery cannot run there - same reason the
+# sweep itself lives in Actions. Run this, then read the log.
+on:
+  workflow_dispatch:
+    inputs:
+      candidates:
+        description: "Path to the candidates JSON in the repo"
+        required: false
+        default: "probe-candidates.json"
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        run: python bulk_probe.py "${{ inputs.candidates }}"
