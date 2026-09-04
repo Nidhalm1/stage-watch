@@ -83,20 +83,8 @@ def probe(name):
     url, container, want = SOURCES[name]
     print("=" * 78)
     print("%-12s %s" % (name, url))
-    try:
-        status, final, page = fetch(url)
-    except urllib.error.HTTPError as e:
-        print("  HTTPError %s %s" % (e.code, e.reason))
-        return
-    except Exception as e:
-        print("  %s: %s" % (type(e).__name__, e))
-        return
-    print("  status %s  %d bytes%s" % (status, len(page),
-                                       "  -> %s" % final if final != url else ""))
-    for m in re.finditer(r"(\d[\d\s ]{0,6})\s*(offres?|r[ée]sultats?|postes?)", page, re.I):
-        print("  count-hint: %r" % m.group(0).strip()[:60])
-        break
-
+    # VARIANTS drives its own requests, so it has to run BEFORE the fetch below -
+    # its placeholder url is not a url and urlopen rejects it.
     if container == "VARIANTS":
         base = "https://group.bnpparibas/en/careers/all-job-offers"
         q = urllib.parse.urlencode({"form[type][]": "28"})
@@ -126,6 +114,20 @@ def probe(name):
             print("        first offer: %s" % (first.group(1) if first else "-"))
             time.sleep(2)
         return
+
+    try:
+        status, final, page = fetch(url)
+    except urllib.error.HTTPError as e:
+        print("  HTTPError %s %s" % (e.code, e.reason))
+        return
+    except Exception as e:
+        print("  %s: %s" % (type(e).__name__, e))
+        return
+    print("  status %s  %d bytes%s" % (status, len(page),
+                                       "  -> %s" % final if final != url else ""))
+    for m in re.finditer(r"(\d[\d\s ]{0,6})\s*(offres?|r[ée]sultats?|postes?)", page, re.I):
+        print("  count-hint: %r" % m.group(0).strip()[:60])
+        break
 
     if container == "CONTEXT":
         hits = list(re.finditer(r'<a\b[^>]*href="https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*"',
