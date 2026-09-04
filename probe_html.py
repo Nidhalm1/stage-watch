@@ -13,7 +13,7 @@ the block of markup around one offer, which is where the location and contract
 live. So each source names the container it wraps an offer in, and this prints
 whole containers verbatim.
 """
-import re, sys, gzip, urllib.error, urllib.parse, urllib.request
+import re, sys, gzip, time, urllib.error, urllib.parse, urllib.request
 
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -50,6 +50,10 @@ SOURCES = {
     # The facet VALUES, not just the control names: paging all 380 pages daily to
     # find 362 internships is the wrong trade when the board can be asked.
     "bnp-facets":  ("https://group.bnpparibas/en/careers/all-job-offers", "FACETS", 0),
+    # The filtered fetch answered 200 but parsed 0 cards, so either form[type][]
+    # is not honoured as a GET param or page is not 0-based. Try the variants
+    # side by side and count cards + offer-types on each.
+    "bnp-filter":  ("VARIANTS", "VARIANTS", 0),
     "bnp-p2":      ("https://group.bnpparibas/en/careers/all-job-offers?page=1", "FORM", 1),
 }
 
@@ -92,6 +96,36 @@ def probe(name):
     for m in re.finditer(r"(\d[\d\s ]{0,6})\s*(offres?|r[ée]sultats?|postes?)", page, re.I):
         print("  count-hint: %r" % m.group(0).strip()[:60])
         break
+
+    if container == "VARIANTS":
+        base = "https://group.bnpparibas/en/careers/all-job-offers"
+        q = urllib.parse.urlencode({"form[type][]": "28"})
+        for u in (base,
+                  "%s?%s" % (base, q),
+                  "%s?%s&page=0" % (base, q),
+                  "%s?%s&page=1" % (base, q),
+                  "%s?%s&page=2" % (base, q),
+                  "%s?page=0" % base,
+                  "%s?page=1" % base,
+                  "%s?%s" % (base, urllib.parse.urlencode({"form[type]": "28"})),
+                  "%s?%s" % (base, urllib.parse.urlencode({"type[]": "28"}))):
+            try:
+                st, final, page = fetch(u)
+            except urllib.error.HTTPError as e:
+                print("  %-72s HTTP %s" % (u[len(base):] or "(bare)", e.code))
+                continue
+            except Exception as e:
+                print("  %-72s %s" % (u[len(base):] or "(bare)", type(e).__name__))
+                continue
+            cards = len(re.findall(r'<article[^>]*class="[^"]*card-offer[^"]*"', page, re.I))
+            types = sorted(set(t.strip() for t in re.findall(
+                r'<div[^>]*class="offer-type"[^>]*>([^<]*)</div>', page, re.I)))
+            first = re.search(r'<a[^>]*href="([^"]*/job-offer/[^"]*)"', page, re.I)
+            print("  %-58s %s %7d B  cards=%-3d types=%s" %
+                  (u[len(base):] or "(bare)", st, len(page), cards, types))
+            print("        first offer: %s" % (first.group(1) if first else "-"))
+            time.sleep(2)
+        return
 
     if container == "CONTEXT":
         hits = list(re.finditer(r'<a\b[^>]*href="https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*"',
