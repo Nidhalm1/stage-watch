@@ -23,8 +23,8 @@ mistake (a French site being read as foreign).
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
 ### Not tech - 7
@@ -163,7 +163,7 @@ mistake (a French site being read as foreign).
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 7
+### Unrecognised location - 6
 
 | Company | Title | Location |
 |---|---|---|
@@ -173,7 +173,6 @@ mistake (a French site being read as foreign).
 | Amundi | [FC - Stage Fund Dealing Support (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-fc-stage-fund-dealing-support-6-12-months-h-f_113088.aspx) | Luxembourg |
 | Amundi | [Stage - Contrôleur financier (6/12 mois) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-controleur-financier-6-12-mois-h-f_114098.aspx) | Luxembourg |
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | Stage |
-| MBDA | [Stage Navigation : Etude du Guidage d'un Système Spatial Réactif F/H](https://mbda.gestmax.fr/19408/1/stage-navigation-etude-du-guidage-d-un-systeme-spatial-reactif-f-h?backlink=search) | - |
 
 ### Not tech - 193 (showing the first 60)
 

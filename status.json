@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T20:58:26.603424+02:00",
+      "generated": "2026-09-04T21:05:59.300433+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -41,7 +41,7 @@
         }
       ],
       "recent_roles_total": 3,
-      "scanned": 3682,
+      "scanned": 3681,
       "stamp": "2026-09-04",
       "unsure": 4
     },
@@ -56,7 +56,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 49,
-      "generated": "2026-09-04T20:58:45.961518+02:00",
+      "generated": "2026-09-04T21:06:16.204910+02:00",
       "incomplete": [],
       "live": 64,
       "new": 0,
@@ -149,74 +149,13 @@
         }
       ],
       "recent_roles_total": 64,
-      "scanned": 4855,
+      "scanned": 4856,
       "stamp": "2026-09-04",
       "unsure": 13
     },
     "board3.html": {
-      "also_new": [
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Analyste Transition Energétique H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Analyste Transition Energétique H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Analyste SCPI H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Carbon Integration Analyst H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Assistant Chef de projets Evénementiels H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage – Talent Acquisition Assistant / Chargé de sourcing talents H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Chargé de Marketing Digital H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Projet RGPD RH H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Inside Sales - Data-as-a-Service H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - ESG Analyst Intern H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Chargé de conformité H/F"
-        },
-        {
-          "company": "Amundi",
-          "kind": "other",
-          "title": "Stage - Chargé Marketing Financier H/F"
-        }
-      ],
-      "also_new_total": 22,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
@@ -233,46 +172,25 @@
       "closed_today_total": 2,
       "closed_total": 2,
       "companies": 12,
-      "failed": 1,
-      "failed_names": [
-        "BNP Paribas"
-      ],
+      "failed": 0,
+      "failed_names": [],
       "filtered": 193,
-      "generated": "2026-09-04T20:59:54.643498+02:00",
-      "incomplete": [],
-      "live": 35,
-      "new": 4,
+      "generated": "2026-09-04T21:07:30.555144+02:00",
+      "incomplete": [
+        "BNP Paribas (empty)"
+      ],
+      "live": 36,
+      "new": 1,
       "new_roles": [
         {
-          "company": "Amundi",
+          "company": "MBDA",
           "first_seen": "2026-09-04",
-          "location": "Paris 15 éme",
-          "title": "Stagiaire - Data Science & IA H/F",
-          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stagiaire-data-science-ia-h-f_113923.aspx"
-        },
-        {
-          "company": "Amundi",
-          "first_seen": "2026-09-04",
-          "location": "Paris 15ème",
-          "title": "Stage - Middle Office Automatisation & Intelligence Artificielle H/F",
-          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stage-middle-office-automatisation-intelligence-artificielle-h-f_113870.aspx"
-        },
-        {
-          "company": "Amundi",
-          "first_seen": "2026-09-04",
-          "location": "Paris",
-          "title": "Stagiaire Data H/F",
-          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stagiaire-data-h-f_115015.aspx"
-        },
-        {
-          "company": "Dassault Aviation",
-          "first_seen": "2026-09-04",
-          "location": "Mérignac",
-          "title": "Utilisation de IA pour la conception de documentation Falcon F/H",
-          "url": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-utilisation-de-ia-pour-la-conception-de-documentation-falcon-f-h_15488.aspx"
+          "location": "Le Plessis Robinson (92)",
+          "title": "Stage Navigation : Etude du Guidage d'un Système Spatial Réactif F/H",
+          "url": "https://mbda.gestmax.fr/19408/1/stage-navigation-etude-du-guidage-d-un-systeme-spatial-reactif-f-h?backlink=search"
         }
       ],
-      "new_roles_total": 4,
+      "new_roles_total": 1,
       "recent_roles": [
         {
           "company": "Thales",
@@ -359,10 +277,10 @@
           "url": "https://careers.societegenerale.com/offres-d-emploi/software-developper-26000AA7-fr"
         }
       ],
-      "recent_roles_total": 35,
+      "recent_roles_total": 36,
       "scanned": 2480,
       "stamp": "2026-09-04",
-      "unsure": 7
+      "unsure": 6
     },
     "t3.html": {
       "also_new": [],
@@ -395,5 +313,5 @@
       "unsure": 0
     }
   },
-  "generated": "2026-09-04T20:59:54.643498+02:00"
+  "generated": "2026-09-04T21:07:30.555144+02:00"
 }
