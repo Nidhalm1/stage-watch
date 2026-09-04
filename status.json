@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T20:37:36.062663+02:00",
+      "generated": "2026-09-04T20:58:26.603424+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -21,18 +21,21 @@
         {
           "company": "Criteo",
           "first_seen": "2026-09-02",
+          "location": "Paris, France",
           "title": "Software Engineer Intern - Front-End or Fullstack",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Software-Engineer-Intern---Front-End-or-Fullstack_r16311"
         },
         {
           "company": "Criteo",
           "first_seen": "2026-09-02",
+          "location": "Paris, France",
           "title": "Product Data Scientist Intern",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Scientist-Intern_r15715-1"
         },
         {
           "company": "Scaleway",
           "first_seen": "2026-09-03",
+          "location": "Paris",
           "title": "IT Workplace - Internship",
           "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
         }
@@ -43,299 +46,177 @@
       "unsure": 4
     },
     "board2.html": {
-      "also_new": [
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage Consultant(e) - Transformation digitale - People&Change - Ile de France"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage - Chef/fe de Projet - Services Publics - Ile de France"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage Business Analyst - Maintenance - Aéroline - Ile-de-France"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage PPI - Juriste en droit social"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage Consultant(e) fonctionnel(le) - Aéronautique - Bordeaux"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage Conseil - Transformation Digitale - Energie - IDF"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage PPI - Juriste droit social France"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage - Chargé(e) de projet Solidarités & Engagement citoyen"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage de fin d'études - Consultant(e) en Transformation digitale – Services Publics - IDF"
-        },
-        {
-          "company": "Sopra Steria",
-          "kind": "other",
-          "title": "Stage - Consultant PLM et Sustainability : ACV, DPP et CSRD - Colomiers"
-        }
-      ],
-      "also_new_total": 26,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
       "closed_total": 0,
-      "companies": 24,
+      "companies": 25,
       "failed": 0,
       "failed_names": [],
       "filtered": 49,
-      "generated": "2026-09-04T20:38:06.596807+02:00",
+      "generated": "2026-09-04T20:58:45.961518+02:00",
       "incomplete": [],
       "live": 64,
-      "new": 60,
-      "new_roles": [
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste Cybersécurité - Investigation - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147550118"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste VOC - Cybersécurité - Île-De-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147506608"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste VOC - Cybersécurité - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147506149"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste Cybersécurité - Response - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147473198"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Développeur/euse Java - Lyon",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147265919"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage Consultant/e - SAP - Aéroline - Ile-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147264089"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage – Ingénieur(e) technique Cybersécurité – Défense & Sécurité – Île-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257367"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Développeur Fullstack – Défense & Sécurité – Île-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258410"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage Développeur/se - Java - Energie & Telecom - Ile-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147249360"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste MDR - Detection Cybersécurité - Rennes",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147248678"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste MDR - Detection Cybersécurité - Île-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147246974"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Analyste MDR - Detection Cybersécurité - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147248409"
-        }
-      ],
-      "new_roles_total": 60,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
         {
           "company": "Alan",
           "first_seen": "2026-09-02",
+          "location": "Paris",
           "title": "Software Engineer Internship (6 months)",
           "url": "https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671"
         },
         {
           "company": "Mistral AI",
           "first_seen": "2026-09-03",
+          "location": "Paris",
           "title": "Applied AI, Forward Deployed Machine Learning Engineer - (Internship)",
           "url": "https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b"
         },
         {
           "company": "Mistral AI",
           "first_seen": "2026-09-03",
+          "location": "Paris London",
           "title": "Applied Scientist  (Internship)",
           "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e"
         },
         {
           "company": "Shift Technology",
           "first_seen": "2026-09-02",
+          "location": "France - Remote",
           "title": "Data Science internship - Spanish speaker (6months)",
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Colomiers, fr",
           "title": "Stage - Analyste Cybersécurité - Investigation - Toulouse",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147550118"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
           "title": "Stage - Analyste VOC - Cybersécurité - Île-De-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147506608"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Colomiers, fr",
           "title": "Stage - Analyste VOC - Cybersécurité - Toulouse",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147506149"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Colomiers, fr",
           "title": "Stage - Analyste Cybersécurité - Response - Toulouse",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147473198"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Limonest, fr",
           "title": "Stage - Développeur/euse Java - Lyon",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147265919"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
           "title": "Stage Consultant/e - SAP - Aéroline - Ile-de-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147264089"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Montreuil, fr",
           "title": "Stage – Ingénieur(e) technique Cybersécurité – Défense & Sécurité – Île-de-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257367"
         },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
           "title": "Stage - Développeur Fullstack – Défense & Sécurité – Île-de-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258410"
         }
       ],
       "recent_roles_total": 64,
-      "scanned": 4364,
+      "scanned": 4855,
       "stamp": "2026-09-04",
       "unsure": 13
     },
     "board3.html": {
       "also_new": [
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Juriste Conseil juridique et ingénierie patrimoniale"
+          "title": "Stage - Analyste Transition Energétique H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Auditeur Interne - Banque de Détail, Banque Privée et Assurance en France"
+          "title": "Stage - Analyste Transition Energétique H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Analyste Private Equity"
+          "title": "Stage - Analyste SCPI H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Chargé(e) de recouvrement - Juriste"
+          "title": "Stage - Carbon Integration Analyst H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Analyste risques suivi d'activité de marché"
+          "title": "Stage - Assistant Chef de projets Evénementiels H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Conseiller fusion et acquisition"
+          "title": "Stage – Talent Acquisition Assistant / Chargé de sourcing talents H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Stage Conseiller Clientèle Particuliers"
+          "title": "Stage - Chargé de Marketing Digital H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Stage marché des particuliers"
+          "title": "Stage - Projet RGPD RH H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Assistant d'études RH"
+          "title": "Stage - Inside Sales - Data-as-a-Service H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Stage Conseiller Clientèle Particuliers"
+          "title": "Stage - ESG Analyst Intern H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Fiscaliste"
+          "title": "Stage - Chargé de conformité H/F"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "kind": "other",
-          "title": "Chargés d’étude – Ingénierie patrimoniale"
+          "title": "Stage - Chargé Marketing Financier H/F"
         }
       ],
-      "also_new_total": 104,
+      "also_new_total": 22,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
@@ -351,167 +232,137 @@
       ],
       "closed_today_total": 2,
       "closed_total": 2,
-      "companies": 9,
-      "failed": 0,
-      "failed_names": [],
-      "filtered": 216,
-      "generated": "2026-09-04T20:38:39.125540+02:00",
+      "companies": 12,
+      "failed": 1,
+      "failed_names": [
+        "BNP Paribas"
+      ],
+      "filtered": 193,
+      "generated": "2026-09-04T20:59:54.643498+02:00",
       "incomplete": [],
-      "live": 48,
-      "new": 14,
+      "live": 35,
+      "new": 4,
       "new_roles": [
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "first_seen": "2026-09-04",
-          "title": "Chargé de formation et développement des compétences",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-formation-et-developpement-des-competences-26000IZJ-fr"
+          "location": "Paris 15 éme",
+          "title": "Stagiaire - Data Science & IA H/F",
+          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stagiaire-data-science-ia-h-f_113923.aspx"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "first_seen": "2026-09-04",
-          "title": "Chargé de Transformation, Engagement collaborateur et acculturation IA",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-transformation-engagement-collaborateur-et-acculturation-ia-26000HQ0-fr"
+          "location": "Paris 15ème",
+          "title": "Stage - Middle Office Automatisation & Intelligence Artificielle H/F",
+          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stage-middle-office-automatisation-intelligence-artificielle-h-f_113870.aspx"
         },
         {
-          "company": "Societe Generale",
+          "company": "Amundi",
           "first_seen": "2026-09-04",
-          "title": "Customer Success - Crypto et Blockchain",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/customer-success-crypto-et-blockchain-26000DO8-fr"
+          "location": "Paris",
+          "title": "Stagiaire Data H/F",
+          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stagiaire-data-h-f_115015.aspx"
         },
         {
-          "company": "Societe Generale",
+          "company": "Dassault Aviation",
           "first_seen": "2026-09-04",
-          "title": "1 STAGE EN 1 JOUR – Ingénieur produits structurés",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-ingenieur-produits-structures-26000IMI-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Assistant ingénieur patrimonial",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-ingenieur-patrimonial-26000IT9-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Data & Analytics – Amélioration de la qualité des données et transformation",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/data-analytics-amelioration-de-la-qualite-des-donnees-et-transformation-26000HOR-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Développeur Front React",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/developpeur-front-react-26000HBM-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Développeur Front React",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/developpeur-front-react-26000HBN-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Auditeur IT",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/auditeur-it-26000F55-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "TRACKING ET WEBANALYTICS",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Software developper",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/software-developper-26000AA7-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "title": "Software developper",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/software-developper-26000A5C-fr"
+          "location": "Mérignac",
+          "title": "Utilisation de IA pour la conception de documentation Falcon F/H",
+          "url": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-utilisation-de-ia-pour-la-conception-de-documentation-falcon-f-h_15488.aspx"
         }
       ],
-      "new_roles_total": 14,
+      "new_roles_total": 4,
       "recent_roles": [
         {
           "company": "Thales",
           "first_seen": "2026-09-03",
+          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0330328; 10 - INDUSTRY; Thales Avs France Sas",
           "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "La Defense, France",
           "title": "Chargé de formation et développement des compétences",
           "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-formation-et-developpement-des-competences-26000IZJ-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "Nanterre, France",
           "title": "Chargé de Transformation, Engagement collaborateur et acculturation IA",
           "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-transformation-engagement-collaborateur-et-acculturation-ia-26000HQ0-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "La Defense, France",
           "title": "Customer Success - Crypto et Blockchain",
           "url": "https://careers.societegenerale.com/offres-d-emploi/customer-success-crypto-et-blockchain-26000DO8-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "La Defense, France",
           "title": "1 STAGE EN 1 JOUR – Ingénieur produits structurés",
           "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-ingenieur-produits-structures-26000IMI-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "France",
           "title": "Assistant ingénieur patrimonial",
           "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-ingenieur-patrimonial-26000IT9-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "La Defense, France",
           "title": "Data & Analytics – Amélioration de la qualité des données et transformation",
           "url": "https://careers.societegenerale.com/offres-d-emploi/data-analytics-amelioration-de-la-qualite-des-donnees-et-transformation-26000HOR-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "Nantes, France",
           "title": "Développeur Front React",
           "url": "https://careers.societegenerale.com/offres-d-emploi/developpeur-front-react-26000HBM-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "La Defense, France",
           "title": "Développeur Front React",
           "url": "https://careers.societegenerale.com/offres-d-emploi/developpeur-front-react-26000HBN-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "La Defense, France",
           "title": "Auditeur IT",
           "url": "https://careers.societegenerale.com/offres-d-emploi/auditeur-it-26000F55-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "Courbevoie, France",
           "title": "TRACKING ET WEBANALYTICS",
           "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
+          "location": "Fontenay-Sous-Bois, France",
           "title": "Software developper",
           "url": "https://careers.societegenerale.com/offres-d-emploi/software-developper-26000AA7-fr"
         }
       ],
-      "recent_roles_total": 48,
-      "scanned": 1937,
+      "recent_roles_total": 35,
+      "scanned": 2480,
       "stamp": "2026-09-04",
-      "unsure": 1
+      "unsure": 7
     },
     "t3.html": {
       "also_new": [],
@@ -544,5 +395,5 @@
       "unsure": 0
     }
   },
-  "generated": "2026-09-04T20:38:39.125540+02:00"
+  "generated": "2026-09-04T20:59:54.643498+02:00"
 }

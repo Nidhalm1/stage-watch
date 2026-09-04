@@ -163,13 +163,19 @@ mistake (a French site being read as foreign).
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 1
+### Unrecognised location - 7
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
+| Amundi | [Stage - Fund Distributor Operations Officer – Trailer Fees H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-fund-distributor-operations-officer-trailer-fees-h-f_100414.aspx) | Luxembourg |
+| Amundi | [Stage - Fund Manager Operations Officer (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-fund-manager-operations-officer-6-12-months-h-f_114757.aspx) | Luxembourg |
+| Amundi | [FC - Stage Fund Dealing Support (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-fc-stage-fund-dealing-support-6-12-months-h-f_113088.aspx) | Luxembourg |
+| Amundi | [Stage - Contrôleur financier (6/12 mois) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-controleur-financier-6-12-mois-h-f_114098.aspx) | Luxembourg |
+| Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | Stage |
+| MBDA | [Stage Navigation : Etude du Guidage d'un Système Spatial Réactif F/H](https://mbda.gestmax.fr/19408/1/stage-navigation-etude-du-guidage-d-un-systeme-spatial-reactif-f-h?backlink=search) | - |
 
-### Not tech - 216 (showing the first 60)
+### Not tech - 193 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -234,7 +240,7 @@ mistake (a French site being read as foreign).
 | Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr) | Besancon, France |
 | Societe Generale | [Chargé de projets RH](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr) | La Defense, France |
 
-### Outside France - 131 (sample below)
+### Outside France - 134 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
