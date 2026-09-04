@@ -36,6 +36,9 @@ SOURCES = {
     # and it carries only 33 anchors. Dump every anchor to find out what it does
     # link to before writing anything.
     "mbda":        ("https://mbda.gestmax.fr/search/index/page/1", None, 0),
+    # 472 offers parse but 0 place as France, so the location cell is not where
+    # the link-to-link text picks it up. Dump the whole row around a link.
+    "mbda-row":    ("https://mbda.gestmax.fr/search/index/page/1", "CONTEXT", 2),
     "mbda2":       ("https://mbda.gestmax.fr/search/index/page/2", None, 0),
     # BNP. The public board is group.bnpparibas/en/careers/all-job-offers, which
     # answers 200 to a plain server-side fetch with no cookies and a non-browser
@@ -89,6 +92,15 @@ def probe(name):
     for m in re.finditer(r"(\d[\d\s ]{0,6})\s*(offres?|r[ée]sultats?|postes?)", page, re.I):
         print("  count-hint: %r" % m.group(0).strip()[:60])
         break
+
+    if container == "CONTEXT":
+        hits = list(re.finditer(r'<a\b[^>]*href="https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*"',
+                                page, re.I))
+        print("  %d offer links; dumping context around the first %d" % (len(hits), want))
+        for m in hits[:want]:
+            print("  --- 1800 chars before / 900 after ---")
+            print(page[max(0, m.start() - 1800):m.end() + 900])
+        return
 
     if container == "FACETS":
         for m in re.finditer(r'<input\b[^>]*name="(form\[(?:type|schedule|domain|experience|study_level|international)\]\[?\]?)"[^>]*>',

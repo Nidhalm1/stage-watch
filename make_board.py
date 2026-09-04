@@ -1181,6 +1181,10 @@ def _bnp_url(page):
     try to read as a conversion and blow up on."""
     return "%s/en/careers/all-job-offers?%s&page=%d" % (BNP_HOST, BNP_QUERY, page)
 BNP_HEADERS = {
+    # The bare "Mozilla/5.0" in UA is a bot signature and 403s here: the ladder
+    # rung that got 200 sent a full Chrome string, so send exactly that.
+    "User-Agent": ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
     "Referer": BNP_HOST + "/en/careers",
     "Upgrade-Insecure-Requests": "1",
     "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate",
