@@ -661,7 +661,8 @@ WTTJ_PAGES = 6              # 100 per page; Algolia caps any one query at 1000
 def f_wttj(c):
     slug = c["slug"]
     flt = 'organization.slug:"%s" AND contract_type:"INTERNSHIP"' % slug
-    out, seen, unverified = [], set(), 0
+    out, seen, dropped = [], set(), 0
+    verify, blocked = True, False
     for page in range(WTTJ_PAGES):
         params = "hitsPerPage=100&page=%d&filters=%s" % (page, urllib.parse.quote(flt))
         body = json.dumps({"requests": [{"indexName": WTTJ_JOBS, "params": params}]}).encode()
@@ -688,32 +689,49 @@ def f_wttj(c):
             off = h.get("office") if isinstance(h.get("office"), dict) else {}
             loc = ", ".join(x for x in [off.get("city"), off.get("country")] if x)
             # This URL is built from two API fields rather than returned whole, so
-            # it is checked before it is recorded - the board's promise is that
+            # it is checked before being recorded - the board's promise is that
             # every link came back live, and a constructed link has to earn that.
-            if not _head_ok(url):
-                unverified += 1
-                continue
+            # But only a 404 disproves a URL. See _verify.
+            if verify:
+                v = _verify(url)
+                if v == "blocked":
+                    verify = False      # the host refuses us; stop spending requests
+                    blocked = True
+                elif v == "gone":
+                    dropped += 1
+                    continue
             out.append((h.get("name", ""), loc, url, _fr(loc, off.get("country"))))
         if len(hits) < 100 or page + 1 >= (d.get("nbPages") or 1):
             break
         time.sleep(0.2)
-    if unverified:
-        # Never silently lose a role: a URL that would not resolve means this
-        # fetch is incomplete, so nothing of this company's may be marked closed.
+    if dropped:
+        # A real 404 means the URL pattern is not reliable for this company, so
+        # the fetch cannot be trusted to close anything.
         PARTIAL.add(c["name"])
-        print("  %s: %d WTTJ url(s) failed verification" % (c["name"], unverified), file=sys.stderr)
+        print("  %s: %d WTTJ url(s) 404ed" % (c["name"], dropped), file=sys.stderr)
+    elif blocked:
+        print("  %s: WTTJ blocked link verification (403); links unverified this run"
+              % c["name"], file=sys.stderr)
     return out
 
 
-def _head_ok(url):
+def _verify(url):
+    """'ok' | 'gone' | 'blocked'.
+
+    Only a 404/410 disproves a URL. www.welcometothejungle.com answers 403 to a
+    datacenter IP for HEAD and GET alike (measured 2026-09-04), and the first
+    live sweep read that "cannot check" as "does not exist" and dropped every
+    role at all four banks - the exact silent deletion this check exists to
+    prevent, caused by the check itself. So a blocked or failed request leaves
+    the role in place; only a 404 removes it."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA["User-Agent"]})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
-            return r.status < 400
+            return "ok" if r.status < 400 else "gone"
     except urllib.error.HTTPError as e:
-        return e.code < 400
+        return "gone" if e.code in (404, 410) else "blocked"
     except Exception:
-        return False
+        return "blocked"
 
 
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
