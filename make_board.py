@@ -757,13 +757,15 @@ def f_wttj(c):
 # stale assumption this file keeps being burned by.
 BNP_HOST  = "https://group.bnpparibas"
 BNP_LIST  = BNP_HOST + "/emploi-carriere/toutes-offres-emploi/"
-# Depth in the categories a tech student actually wants...
-BNP_PATHS = ("stage/informatique", "stage/technologie", "stage/digital-it", "stage/data-analytics")
-BNP_PAGES = 5
-# ...plus the newest few pages of ALL internships, because a tech role filed
-# under a category not listed above would otherwise be invisible. The listing is
-# newest-first, so this is also the part that delivers the lead time.
-BNP_BROAD, BNP_BROAD_PAGES = "stage", 3
+# One path, crawled to the end. The first version took four tech category paths
+# plus the newest three pages of /stage, and lost a real role to it: "Stage Dev
+# React Frontend" (Puteaux) was on the board via WTTJ and vanished. Measured
+# 2026-09-04 - /stage holds 362 offers over ~37 pages and runs out on its own,
+# /stage/informatique holds 12, and the React role sits on page 29. So the
+# categories are a strict subset that buy nothing but requests and a blind spot.
+# Crawling the lot is ~37 requests once a night and has no blind spot at all.
+BNP_PATH  = "stage"
+BNP_PAGES = 45          # safety stop only; the listing ends around 37
 
 BNP_CARD = re.compile(
     r'<a href="(/emploi-carriere/offre-emploi/[^"?#]+)"[^>]*class="card-link".*?'
@@ -797,37 +799,31 @@ def _bnp_allowed(url):
 
 
 def f_bnp(c):
-    out, seen, capped = [], set(), False
-    plans = [(p, BNP_PAGES) for p in BNP_PATHS] + [(BNP_BROAD, BNP_BROAD_PAGES)]
-    for path, maxpage in plans:
-        for page in range(1, maxpage + 1):
-            url = BNP_LIST + path + ("" if page == 1 else "?page=%d" % page)
-            if not _bnp_allowed(url):
-                raise RuntimeError("robots.txt disallows %s" % url)
-            cards = BNP_CARD.findall(_bnp_fetch(url))
-            fresh = 0
-            for href, kind, title, loc in cards:
-                full = BNP_HOST + href
-                if full in seen:
-                    continue
-                seen.add(full)
-                fresh += 1
-                loc = html.unescape(re.sub(r"<[^>]+>", " ", loc))
-                loc = " ".join(loc.split())
-                title = html.unescape(re.sub(r"<[^>]+>", " ", title))
-                title = " ".join(title.split())
-                # the listing is global - Madrid and Milan sit on page 1 - so the
-                # usual where() does the France call, exactly as everywhere else
-                out.append((title, loc, full, loc))
-            if len(cards) < 10:
-                break
-            if page == maxpage and fresh:
-                capped = True
-            time.sleep(0.4)
+    out, seen, capped = [], set(), True
+    for page in range(1, BNP_PAGES + 1):
+        url = BNP_LIST + BNP_PATH + ("" if page == 1 else "?page=%d" % page)
+        if not _bnp_allowed(url):
+            raise RuntimeError("robots.txt disallows %s" % url)
+        cards = BNP_CARD.findall(_bnp_fetch(url))
+        for href, kind, title, loc in cards:
+            full = BNP_HOST + href
+            if full in seen:
+                continue
+            seen.add(full)
+            loc = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", loc)).split())
+            title = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", title)).split())
+            # the listing is global - Madrid and Milan sit on page 1 - so the
+            # usual where() makes the France call, exactly as everywhere else
+            out.append((title, loc, full, loc))
+        if len(cards) < 10:
+            capped = False          # reached the natural end of the listing
+            break
+        time.sleep(0.4)
     if capped:
         # a paging ceiling hides the tail; never close a role off a partial read
         PARTIAL.add(c["name"])
-        print("  %s: hit the BNP page ceiling; treated as incomplete" % c["name"], file=sys.stderr)
+        print("  %s: hit the %d-page BNP ceiling without reaching the end;"
+              " treated as incomplete" % (c["name"], BNP_PAGES), file=sys.stderr)
     return out
 
 
@@ -865,7 +861,7 @@ ENDPOINT = {
     "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
     "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
     "wttj":            lambda c: "csekhvms53-dsn.algolia.net wk_cms_jobs_production (org %s)" % c["slug"],
-    "bnp":             lambda c: "group.bnpparibas/emploi-carriere/toutes-offres-emploi (4 tech paths + newest)",
+    "bnp":             lambda c: "group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage (full crawl)",
 }
 
 
