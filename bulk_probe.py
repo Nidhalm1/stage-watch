@@ -225,6 +225,32 @@ def t_wttj_filter(spec):
     return [(h.get("name", ""), ((h.get("office") or {}) or {}).get("city", "")) for h in hits[:6]]
 
 
+def t_wttj_head(slug):
+    """The live sweep returned 0 roles for every WTTJ company while this probe
+    returned 6. The only step the fetcher has that the probe does not is the
+    HEAD verification of the constructed job URL, so measure exactly what that
+    HEAD returns instead of reasoning about it."""
+    f = 'organization.slug:"%s" AND contract_type:"INTERNSHIP"' % slug
+    d = _algolia(WTTJ_JOBS, "hitsPerPage=3&page=0&filters=" + urllib.parse.quote(f))
+    out = []
+    for h in (d.get("hits") or [])[:3]:
+        org, job = (h.get("organization") or {}).get("slug"), h.get("slug")
+        url = "https://www.welcometothejungle.com/fr/companies/%s/jobs/%s" % (org, job)
+        for method in ("HEAD", "GET"):
+            req = urllib.request.Request(url, method=method,
+                                         headers={"User-Agent": UA["User-Agent"]})
+            try:
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    verdict = "%s %s" % (method, r.status)
+            except urllib.error.HTTPError as e:
+                verdict = "%s HTTPError %s" % (method, e.code)
+            except Exception as e:
+                verdict = "%s %s" % (method, type(e).__name__)
+            print("      %-6s %s" % (verdict, url[:96]))
+            out.append((verdict, url[-40:]))
+    return out
+
+
 def t_wttj_org(slug):
     o = get("https://api.welcometothejungle.com/api/v1/organizations/%s" % slug)
     org = o.get("organization") or o
@@ -287,7 +313,7 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 # Re-enable only alongside something that can present as a browser.
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
          "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
-         "wttjfilter": t_wttj_filter,
+         "wttjfilter": t_wttj_filter, "wttjhead": t_wttj_head,
          "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 
 

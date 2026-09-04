@@ -1,10 +1,6 @@
 {
-  "WTTJ filter syntax":   ["wttjfilter:societe-generale", "wttjfilter:bnp-paribas",
-                           "wttjfilter:groupe-credit-agricole", "wttjfilter:natixis",
-                           "wttjfilter:deezer"],
-
-  "CA-CIB rss France":    ["rss:https://jobs.ca-cib.com/handlers/offerRss.ashx?lcid=1036&Rss_JobDescription_Contract=579&Rss_JobDescription_JobCountry=79"],
-  "CA-CIB rss plain":     ["rss:https://jobs.ca-cib.com/handlers/offerRss.ashx?lcid=1036&Rss_JobDescription_Contract=579"],
-
-  "BNP browser-ish":      ["html:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage"]
+  "WTTJ head check": [
+    "wttjhead:natixis",
+    "wttjhead:bnp-paribas"
+  ]
 }
