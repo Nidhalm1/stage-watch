@@ -150,6 +150,11 @@ COMPANIES2 = [
      "careers": "https://www.ubisoft.com/en-us/company/careers"},
     {"name": "Veepee",           "ats": "lever", "slug": "veepee",
      "careers": "https://careers.veepee.com/"},
+    # iCIMS, 20 cards a page, ~25 pages. pr is 0-based and in_iframe=1 is what
+    # returns the bare list instead of the chrome around it.
+    {"name": "Expleo",           "ats": "icims", "pages": 35,
+     "list": "https://expleo-jobs-fr-fr.icims.com/jobs/search?pr=%d&in_iframe=1",
+     "careers": "https://expleo-jobs-fr-fr.icims.com/jobs/search?in_iframe=1"},
 ]
 
 NO_API2 = [
@@ -191,6 +196,27 @@ COMPANIES3 = [
      "careers": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs"},
     {"name": "Natixis",         "ats": "wttj", "slug": "natixis",
      "careers": "https://www.welcometothejungle.com/fr/companies/natixis/jobs"},
+    # Amundi needs its own fetcher rather than riding on Credit Agricole: it is a
+    # separate Talentsoft tenant (jobs.amundi.com, mirrored at
+    # casa-amundi-recrute.talent-soft.com) that the CA sources do not cover. 78
+    # offers, 50 a page, and 30 of them are stages - the highest stage density of
+    # anything on these three boards. LCID=1036 is French; the RSS the tenant
+    # advertises 404s, so the list pages are the way in.
+    {"name": "Amundi",          "ats": "talentsoft", "pages": 8,
+     "base": "https://jobs.amundi.com",
+     "list": "https://jobs.amundi.com/offre-de-emploi/liste-toutes-offres.aspx?page=%d&LCID=1036",
+     "careers": "https://jobs.amundi.com/offre-de-emploi/liste-toutes-offres.aspx"},
+    # Same Talentsoft layout, different field order in the card - see
+    # f_talentsoft. 55 offers, 10 a page.
+    {"name": "Dassault Aviation", "ats": "talentsoft", "pages": 12,
+     "base": "https://dassault-aviation-cand.talent-soft.com",
+     "list": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/liste-offres.aspx?page=%d",
+     "careers": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/liste-offres.aspx"},
+    # Gestmax (Kioskemploi). 20 rows a page over 24 pages; the site is MBDA
+    # France, so nothing on it is foreign.
+    {"name": "MBDA",            "ats": "gestmax", "pages": 30,
+     "list": "https://mbda.gestmax.fr/search/index/page/%d",
+     "careers": "https://mbda.gestmax.fr/search/index/page/1"},
     # Jane Street and IMC have working boards but no French office, so they will
     # normally show 0. Kept because a Paris desk would appear here immediately.
     {"name": "Jane Street", "ats": "greenhouse", "slug": "janestreet",
@@ -246,6 +272,14 @@ NO_API3 = [
     ("DRW",                "no public JSON board; drw.com/work-at-drw/listings is ServiceNow-backed. The "
                            "office list it renders is CA, HK, IL, NL, SG, UK, US - no France - so even a "
                            "working feed would show 0"),
+    ("Naval Group",        "naval-group.com/fr/nous-rejoindre answers 200 from a runner but serves a "
+                           "JS anti-bot challenge, not the board: 242839 bytes of packed script, empty "
+                           "<title>, zero anchors, and byte-for-byte identical with and without the "
+                           "contractType filter. Same class of block as BNP's careers site. The filters "
+                           "are real and recorded for the day it is reachable - contractType[]=2463 "
+                           "Stagiaire, 33228 Alternance, 2461 CDI, 2460 CDD, 2464 VIE, plus keywords=, "
+                           "country=, city=, offerFamilyCategory= - but only 3 stages were live, so this "
+                           "is a small loss. Do not re-probe it with plain HTTP; it needs a browser"),
 ]
 
 ROSTERS = {
@@ -943,10 +977,175 @@ def f_sgcareers(c):
     return out
 
 
+# ---------------------------------------------------------- HTML boards ----
+# Four sources below publish no JSON at all and are read from their list pages.
+# That is strictly worse than an API and is treated that way: each pages until a
+# page adds nothing new, and a page ceiling marks the company PARTIAL rather than
+# letting a missing role look closed. Every selector here was read off a live
+# page by probe_html.py - none of it is guessed. Re-run that probe before
+# changing any of these patterns.
+_STRIP = re.compile(r"(?is)<(script|style)\b.*?</\1\s*>")
+_TAG   = re.compile(r"<[^>]+>")
+
+
+def get_text(url):
+    """A page as text. Sends a browser Accept - UA's JSON Accept gets a 406 or a
+    different rendering out of several of these hosts."""
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA["User-Agent"],
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8"})
+    with urllib.request.urlopen(req, timeout=45) as r:
+        return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
+
+
+def _plain(fragment):
+    """Markup -> the words a human would read, entities resolved."""
+    return re.sub(r"\s+", " ",
+                  html.unescape(_TAG.sub(" ", _STRIP.sub(" ", fragment or "")))).strip()
+
+
+def _blocks(page, open_re):
+    """Slice a page into one string per card. A card runs from its opening tag to
+    the next one, which is exact enough for these layouts and needs no parser."""
+    starts = [m.start() for m in open_re.finditer(page)]
+    return [page[st:(starts[i + 1] if i + 1 < len(starts) else min(len(page), st + 8000))]
+            for i, st in enumerate(starts)]
+
+
+def _paged(c, url_for, parse, pages):
+    """Page a list until a page adds nothing new. parse(page) -> rows keyed by url."""
+    out, seen = [], set()
+    for p in range(pages):
+        try:
+            page = get_text(url_for(p))
+        except urllib.error.HTTPError as e:
+            if p and e.code in (404, 410):
+                return out                      # ran off the end of the pagination
+            raise
+        fresh = 0
+        for row in parse(page):
+            if row[2] in seen:
+                continue
+            seen.add(row[2])
+            fresh += 1
+            out.append(row)
+        # Paging past the last page does NOT reliably 404 - Talentsoft repeats a
+        # page and BNP quietly drops the filter - so "this page added nothing
+        # new" is the stop condition, not the status code.
+        if not fresh:
+            return out
+        time.sleep(0.4)
+    # Every page we were willing to fetch had something new on it, so there is
+    # very likely more. Shown, but nothing of theirs may be closed.
+    PARTIAL.add(c["name"])
+    return out
+
+
+# --- Talentsoft (Amundi, Dassault Aviation) ---------------------------------
+# One <li class="ts-offer-list-item"> per offer, holding the title link and a
+# <ul class="ts-offer-list-item__description"> of loose fields. The ORDER of
+# those fields differs per tenant - Amundi is [contract, entity, country,
+# postcode], Dassault Aviation is [ref, date, contract, city] - so the contract
+# is found by asking every field what it is rather than by position.
+_TS_CARD = re.compile(r'<li[^>]*class="[^"]*ts-offer-list-item[^"]*"', re.I)
+_TS_LINK = re.compile(r'<a[^>]*href="([^"]*/offre-de-emploi/emploi[^"]*\.aspx[^"]*)"[^>]*>(.*?)</a>',
+                      re.I | re.S)
+_TS_DESC = re.compile(r'<ul[^>]*class="[^"]*ts-offer-list-item__description[^"]*"[^>]*>(.*?)</ul>',
+                      re.I | re.S)
+_LI      = re.compile(r"<li[^>]*>(.*?)</li>", re.I | re.S)
+
+
+def f_talentsoft(c):
+    base = c["base"]
+
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _TS_CARD):
+            m = _TS_LINK.search(card)
+            if not m:
+                continue
+            title = _plain(m.group(2))
+            if not title:
+                continue
+            d = _TS_DESC.search(card)
+            fields = [_plain(x) for x in _LI.findall(d.group(1))] if d else []
+            fields = [f for f in fields if f]
+            ct = next((k for k in (_contract(f) for f in fields) if k), None)
+            # last field is the town on both tenants; the whole list is the blob
+            rows.append((title, fields[-1] if fields else "",
+                         urllib.parse.urljoin(base, html.unescape(m.group(1))),
+                         " ".join(fields), ct))
+        return rows
+
+    return _paged(c, lambda p: c["list"] % (p + 1), parse, c.get("pages", 12))
+
+
+# --- iCIMS (Expleo) ---------------------------------------------------------
+# <li class="iCIMS_JobCardItem">, then a <dl> of labelled fields. The location
+# field is the one whose <dt> carries the map-marker glyph: matching the LABEL
+# would pick up "Lieu de travail", which says "Sur place" or "Hybride", not where.
+_IC_CARD = re.compile(r'<li[^>]*class="[^"]*iCIMS_JobCardItem[^"]*"', re.I)
+_IC_LINK = re.compile(r'<a[^>]*href="([^"]*/jobs/\d+/[^"]*)"[^>]*>(.*?)</a>', re.I | re.S)
+_IC_H3   = re.compile(r"<h3[^>]*>(.*?)</h3>", re.I | re.S)
+_IC_TAG  = re.compile(r'<dt[^>]*>(.*?)</dt>\s*<dd[^>]*>(.*?)</dd>', re.I | re.S)
+_IC_TYPE = re.compile(r"type\s*d.{0,3}emploi|employment\s*type|job\s*type", re.I)
+
+
+def f_icims(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _IC_CARD):
+            m = _IC_LINK.search(card)
+            if not m:
+                continue
+            h3 = _IC_H3.search(m.group(2))
+            title = _plain(h3.group(1) if h3 else m.group(2))
+            if not title:
+                continue
+            loc, ct = "", None
+            for dt, dd in _IC_TAG.findall(card):
+                val = _plain(dd)
+                if "map-marker" in dt and not loc:
+                    loc = val
+                elif _IC_TYPE.search(_plain(dt)):
+                    ct = ct or _contract(val)
+            # "FR-64-Biarritz": the country prefix is the only France signal for
+            # a town no city list has, so hand it to _fr rather than the matcher.
+            rows.append((title, loc, html.unescape(m.group(1)), _fr(loc, loc.split("-")[0]), ct))
+        return rows
+
+    return _paged(c, lambda p: c["list"] % p, parse, c.get("pages", 35))
+
+
+# --- Gestmax / Kioskemploi (MBDA) -------------------------------------------
+# A sortable table, one row per offer: the offer link, then the sector and the
+# location in the following cells. No contract column, so the title decides.
+_GX_LINK = re.compile(r'<a[^>]*href="(https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*)"[^>]*>(.*?)</a>',
+                      re.I | re.S)
+
+
+def f_gestmax(c):
+    def parse(page):
+        rows, hits = [], list(_GX_LINK.finditer(page))
+        for i, m in enumerate(hits):
+            title = _plain(m.group(2))
+            if not title:
+                continue
+            end = hits[i + 1].start() if i + 1 < len(hits) else len(page)
+            cells = _plain(page[m.end():min(end, m.end() + 1500)])
+            rows.append((title, (cells[:90] + "\u2026") if len(cells) > 90 else cells,
+                         html.unescape(m.group(1)), cells))
+        return rows
+
+    return _paged(c, lambda p: c["list"] % (p + 1), parse, c.get("pages", 30))
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
-         "dassault": f_dassault, "wttj": f_wttj, "sgcareers": f_sgcareers}
+         "dassault": f_dassault, "wttj": f_wttj, "sgcareers": f_sgcareers,
+         "talentsoft": f_talentsoft, "icims": f_icims, "gestmax": f_gestmax}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -959,6 +1158,9 @@ ENDPOINT = {
     "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
     "wttj":            lambda c: "csekhvms53-dsn.algolia.net wk_cms_jobs_production (org %s)" % c["slug"],
     "sgcareers":       lambda c: "careers.societegenerale.com/search-proxy.php (CES search-profile)",
+    "talentsoft":      lambda c: (c["list"] % 1).split("?")[0].replace("https://", ""),
+    "icims":           lambda c: (c["list"] % 0).split("?")[0].replace("https://", ""),
+    "gestmax":         lambda c: (c["list"] % 1).replace("https://", ""),
 }
 
 

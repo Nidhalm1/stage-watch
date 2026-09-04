@@ -134,8 +134,67 @@ def probe(name):
         print(page[st:end])
 
 
+# BNP got a 403 from the runner on the very URL that answers 200 from a normal
+# connection, with a browser UA and browser Accept headers. That is the shape of
+# an IP-reputation block, not a header problem - but "looks like" is not a
+# finding, so this climbs the ladder for real and prints what each rung gets.
+BNP_URL = "https://group.bnpparibas/en/careers/all-job-offers"
+BNP_RUNGS = [
+    ("urllib default UA, no headers at all", {}),
+    ("plain non-browser UA", {"User-Agent": "python-requests/2.31.0"}),
+    ("browser UA only", {"User-Agent": UA["User-Agent"]}),
+    ("browser UA + Accept */*", {"User-Agent": UA["User-Agent"], "Accept": "*/*"}),
+    ("full browser header set", dict(UA, **{
+        "Referer": "https://group.bnpparibas/en/careers",
+        "Upgrade-Insecure-Requests": "1",
+        "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate",
+        "Sec-Fetch-Site": "same-origin", "Sec-Fetch-User": "?1",
+        "Connection": "keep-alive"})),
+]
+
+
+def bnp_ladder():
+    import time
+    print("=" * 78)
+    print("bnp ladder   %s" % BNP_URL)
+    for label, headers in BNP_RUNGS:
+        req = urllib.request.Request(BNP_URL, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=45) as r:
+                body = r.read()
+                print("  %-38s %s  %d bytes" % (label, r.status, len(body)))
+                text = body.decode("utf-8", "replace")
+                for pat in (r"(\d[\d\s ]{0,6})\s*job offers", r"<title[^>]*>([^<]{0,120})"):
+                    m = re.search(pat, text, re.I)
+                    if m:
+                        print("       %s" % m.group(0).strip()[:100])
+        except urllib.error.HTTPError as e:
+            snippet = e.read(400).decode("utf-8", "replace").replace("\n", " ")
+            print("  %-38s HTTP %s  %s" % (label, e.code, snippet[:220]))
+        except Exception as e:
+            print("  %-38s %s: %s" % (label, type(e).__name__, e))
+        time.sleep(2)
+    # Is it the host or the path? A 200 on any other page of the same host means
+    # the block is per-path; a 403 everywhere means the IP is the problem.
+    for other in ("https://group.bnpparibas/en/",
+                  "https://group.bnpparibas/robots.txt",
+                  "https://group.bnpparibas/en/careers"):
+        try:
+            with urllib.request.urlopen(
+                    urllib.request.Request(other, headers=UA), timeout=30) as r:
+                print("  same host %-45s %s  %d bytes" % (other, r.status, len(r.read())))
+        except urllib.error.HTTPError as e:
+            print("  same host %-45s HTTP %s" % (other, e.code))
+        except Exception as e:
+            print("  same host %-45s %s" % (other, type(e).__name__))
+        time.sleep(2)
+
+
 if __name__ == "__main__":
     for n in (sys.argv[1:] or list(SOURCES)):
+        if n == "bnp-ladder":
+            bnp_ladder()
+            continue
         if n not in SOURCES:
             print("unknown source %r; known: %s" % (n, ", ".join(SOURCES)))
             continue
