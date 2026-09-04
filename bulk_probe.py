@@ -59,7 +59,17 @@ def t_recruitee(s):
             get("https://%s.recruitee.com/api/offers/" % s).get("offers", [])]
 
 def t_teamtailor(s):
-    return [(i.get("title", ""), "") for i in get("https://%s.teamtailor.com/jobs.json" % s).get("items", [])]
+    out = []
+    for i in get("https://%s.teamtailor.com/jobs.json" % s).get("items", []):
+        raw = (i.get("_jobposting") or {}).get("jobLocation") or []
+        if isinstance(raw, dict):
+            raw = [raw]
+        locs = []
+        for L in raw:
+            a = (L or {}).get("address") or {}
+            locs.append(", ".join(x for x in [a.get("addressLocality"), a.get("addressCountry")] if x))
+        out.append((i.get("title", ""), "; ".join(x for x in locs if x)))
+    return out
 
 def t_welcometothejungle(s):
     d = get("https://api.welcometothejungle.com/api/v1/organizations/%s/jobs?page=1&per_page=30" % s)
@@ -155,6 +165,25 @@ def main(path):
     print("\n" + "=" * 78)
     print("NOTHING FOUND (need a browser pass): %s"
           % ", ".join(c for c in cands if c not in hits))
+    print("\nPer-tester tally. A tester with 0 hits and 404 on EVERY candidate is more"
+          "\nlikely broken than proof that nobody uses it - check it before trusting a miss.")
+    tally = {}
+    for company, ats, spec, rows, err in results:
+        t = tally.setdefault(ats, {"hits": 0, "404": 0, "other_err": 0, "empty200": 0})
+        if err == "HTTP 404":
+            t["404"] += 1
+        elif err:
+            t["other_err"] += 1
+        elif rows:
+            t["hits"] += 1
+        else:
+            t["empty200"] += 1
+    for ats in sorted(tally):
+        t = tally[ats]
+        flag = "   <-- SUSPECT: never once answered" if not t["hits"] and not t["empty200"] else ""
+        print("   %-16s hits=%-3d empty-200=%-3d 404=%-3d other-error=%-3d%s"
+              % (ats, t["hits"], t["empty200"], t["404"], t["other_err"], flag))
+
     print("\nErrors, for the record:")
     for company, ats, spec, rows, err in results:
         if err and not err.startswith("HTTP 404"):

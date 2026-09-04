@@ -115,6 +115,12 @@ COMPANIES2 = [
      "careers": "https://apply.workable.com/huggingface/"},
     {"name": "Payfit",           "ats": "teamtailor", "slug": "payfit",
      "careers": "https://payfit.com/careers/"},
+    # Confirmed 2026-09-04 by the probe workflow: 16 postings on teamtailor/deezer,
+    # titles unmistakably Deezer France. The old note said the careers URL
+    # redirected to their investor site, which was true and beside the point -
+    # the ATS feed was there the whole time.
+    {"name": "Deezer",           "ats": "teamtailor", "slug": "deezer",
+     "careers": "https://deezer.teamtailor.com/"},
     {"name": "Amadeus",          "ats": "workday", "tenant": "amadeus", "wd": "wd502",
      "site": "jobs", "careers": "https://careers.amadeus.com/"},
     {"name": "Murex",            "ats": "workday", "tenant": "murex", "wd": "wd3",
@@ -122,7 +128,6 @@ COMPANIES2 = [
 ]
 
 NO_API2 = [
-    ("Deezer",     "careers URL redirects to their investor site; no job board found"),
     ("Kayrros",    "careers page returns 404"),
     ("INRIA",      "custom public-research portal (jobs.inria.fr)"),
     ("CEA",        "custom public-research portal"),
@@ -152,7 +157,8 @@ COMPANIES3 = [
 NO_API3 = [
     ("Capgemini",          "Phenom People"),
     ("Atos / Eviden",      "no job board found; listing paths 404"),
-    ("Safran",             "only workable/safrangroup exists = Safran Engineering Services UK Ltd, a UK subsidiary"),
+    ("Safran",             "workable/safrangroup re-probed 2026-09-04: 17 postings, every one in "
+                           "Pitstone or Banbury UK = Safran Engineering Services UK Ltd, not the group"),
     ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic entries), not the real board; no French office"),
     ("Optiver",            "bespoke careers system, no ATS"),
     ("Millennium",         "Eightfold"),
@@ -164,7 +170,8 @@ NO_API3 = [
     ("Banque Populaire",   "regional BPCE portals, no public API"),
     ("Caisse d'Epargne",   "regional BPCE portals, no public API"),
     ("Credit Mutuel",      "no public job API found"),
-    ("CIC",                "lever/cic is Cambridge Innovation Center, NOT the French bank"),
+    ("CIC",                "lever/cic re-probed 2026-09-04: 13 postings in Tokyo, Cambridge MA and "
+                           "Warsaw = Cambridge Innovation Center, NOT the French bank"),
     ("Credit Mutuel Arkea","no public job API found"),
     ("La Banque Postale",  "no public job API found"),
     ("LCL",                "no public job API found"),
