@@ -15,7 +15,7 @@ financial advisory firm, not Kestra.io. So a candidate only counts as confirmed
 if the response carries jobs, and sample titles are printed for every hit so the
 company can be identified before the slug is trusted.
 """
-import json, re, sys, urllib.request, urllib.error
+import json, random, re, sys, time, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
@@ -23,12 +23,20 @@ FR = re.compile(r"\b(france|paris|lyon|nantes|lille|bordeaux|toulouse|grenoble|s
                 r"m[ée]rignac|v[ée]lizy|issy|courbevoie|nanterre|montrouge|cesson|blagnac)\b", re.I)
 
 
-def get(url, body=None, timeout=25):
+def get(url, body=None, timeout=25, tries=4):
     req = urllib.request.Request(
         url, data=json.dumps(body).encode() if body else None,
         headers={**UA, **({"Content-Type": "application/json"} if body else {})})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.load(r)
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            # 429 is "ask again later", not "this company has no jobs". Recording
+            # it as a miss is how a reachable company gets written off.
+            if e.code not in (429, 503) or attempt == tries - 1:
+                raise
+            time.sleep(2 ** attempt + random.random())
 
 
 # each tester returns [(title, location)] -----------------------------------
@@ -71,9 +79,26 @@ def t_teamtailor(s):
         out.append((i.get("title", ""), "; ".join(x for x in locs if x)))
     return out
 
+WTTJ_SHAPES = ["https://api.welcometothejungle.com/api/v1/organizations/%s/jobs?page=1&per_page=30",
+               "https://www.welcometothejungle.com/api/v1/organizations/%s/jobs?page=1&per_page=30",
+               "https://api.welcometothejungle.com/api/v1/organizations/%s"]
+
+
 def t_welcometothejungle(s):
-    d = get("https://api.welcometothejungle.com/api/v1/organizations/%s/jobs?page=1&per_page=30" % s)
-    return [(j.get("name", ""), ((j.get("offices") or [{}])[0] or {}).get("city", "")) for j in d.get("jobs", [])]
+    last = None
+    for shape in WTTJ_SHAPES:
+        try:
+            d = get(shape % s, tries=2)
+        except Exception as e:
+            last = e
+            continue
+        jobs = d.get("jobs") or (d.get("organization") or {}).get("jobs") or []
+        if jobs:
+            return [(j.get("name", ""), ((j.get("offices") or [{}])[0] or {}).get("city", ""))
+                    for j in jobs]
+    if last:
+        raise last
+    return []
 
 def t_eightfold(domain):
     d = get("https://api.eightfold.ai/api/apply/v2/jobs?domain=%s&start=0&num=30&sort_by=relevance" % domain)
@@ -140,7 +165,7 @@ def main(path):
             else:
                 for ats, fn in SLUG_TESTS:
                     jobs.append((company, ats, fn, spec))
-    with ThreadPoolExecutor(max_workers=16) as ex:
+    with ThreadPoolExecutor(max_workers=5) as ex:
         results = list(ex.map(probe, jobs))
 
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -183,6 +208,13 @@ def main(path):
         flag = "   <-- SUSPECT: never once answered" if not t["hits"] and not t["empty200"] else ""
         print("   %-16s hits=%-3d empty-200=%-3d 404=%-3d other-error=%-3d%s"
               % (ats, t["hits"], t["empty200"], t["404"], t["other_err"], flag))
+
+    throttled = [(c, a, sp) for c, a, sp, rows, err in results if err and "429" in err]
+    if throttled:
+        print("\n!! %d probes ended in 429 even after backoff. These are NOT misses - nothing"
+              "\n   was learned about them. Re-run before treating any as unreachable:" % len(throttled))
+        for c, a, sp in throttled[:20]:
+            print("     %-22s %-16s %s" % (c, a, sp))
 
     print("\nErrors, for the record:")
     for company, ats, spec, rows, err in results:
