@@ -362,6 +362,45 @@ def t_bnpcards(spec):
     return [("bnpcards done", spec)]
 
 
+def t_bnpdepth(spec):
+    """How deep does /stage go, and where does a known-missing role sit?
+
+    The first live run of the direct BNP fetcher returned 13 live roles where
+    WTTJ returned 17, and "Stage Dev React Frontend" was among the losses. That
+    is the category blind spot, and the ceiling has to be set from evidence
+    rather than picked. Walks pages until they run out and reports the page each
+    needle lands on."""
+    try:
+        from curl_cffi import requests as creq
+    except ImportError:
+        print("      curl_cffi not installed"); return []
+    path, maxp = spec.split(",")
+    base = "https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/" + path
+    needles = ("react", "frontend", "dev-react")
+    seen, found = set(), {}
+    for page in range(1, int(maxp) + 1):
+        u = base if page == 1 else base + "?page=%d" % page
+        try:
+            r = creq.get(u, impersonate="chrome", timeout=30)
+        except Exception as e:
+            print("      page %d: %s" % (page, e)); break
+        links = re.findall(r'href="(/emploi-carriere/offre-emploi/[^"?#]+)"', r.text)
+        new = [l for l in links if l not in seen]
+        seen.update(links)
+        for l in links:
+            for n in needles:
+                if n in l.lower() and n not in found:
+                    found[n] = (page, l)
+        if page % 5 == 0 or len(links) < 10 or page == 1:
+            print("      page %-3d %2d links, %2d new, %3d cumulative" % (page, len(links), len(new), len(seen)))
+        if len(links) < 10:
+            print("      ran out at page %d, %d unique offers total" % (page, len(seen)))
+            break
+        time.sleep(0.25)
+    print("      needles found: %s" % ({k: "page %d %s" % (v[0], v[1][-42:]) for k, v in found.items()} or "NONE"))
+    return [("depth done", "%s -> %d unique" % (path, len(seen)))]
+
+
 def t_robots3(url):
     """robots.txt read with the only client the host answers. Reading it matters
     more than reaching the listing: an automated fetcher has no business on a
@@ -532,7 +571,8 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
          "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
          "wttjfilter": t_wttj_filter, "wttjhead": t_wttj_head,
-         "robots": t_robots, "robots3": t_robots3, "bnpcards": t_bnpcards, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
+         "robots": t_robots, "robots3": t_robots3, "bnpcards": t_bnpcards,
+         "bnpdepth": t_bnpdepth, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
          "sgtaleo": t_sgtaleo,
          "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 
