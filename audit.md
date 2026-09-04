@@ -23,9 +23,9 @@ mistake (a French site being read as foreign).
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400) | In-Office |
 | Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407) | In-Office |
 | Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379) | In-Office |
+| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
@@ -51,12 +51,12 @@ mistake (a French site being read as foreign).
 | Doctolib | [Business Development Representative Intern - Milano (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7800808003) | Milano, Milan, Italy |
 | Doctolib | [SEO & AI Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7824240003) | Milano, Milan, Italy |
 | Doctolib | [SEO & AI Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7864184003) | Milano, Milan, Italy |
+| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
 | Criteo | [Account Strategist Intern - Retail Media Benelux & Nordics](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739) | Amsterdam, Netherlands |
 | Criteo | [Account Strategist Intern - French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern_r20801) | Barcelona, Spain |
 | Criteo | [Account Strategist Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Account-Strategist-Intern--6-month--German-Speaker-_r20959) | Munich, Germany |
 | Criteo | [Account Strategist (Intern)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979) | Barcelona, Spain |
 | Criteo | [Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802) | Barcelona, Spain |
-| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
 | Criteo | [Campaign Manager Intern, Performance Media - Spanish & Italian Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Campaign-Manager-Intern---Spanish---Italian-Speaker_r20908) | Barcelona, Spain |
 | Criteo | [Sales Operations Data Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Operations-Data-Analyst-Intern_r20723) | Barcelona, Spain |
 | Criteo | [People Operations Internship – French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/People-Operations-Intern--French-Speaker_r20828) | Barcelona, Spain |
@@ -72,7 +72,7 @@ mistake (a French site being read as foreign).
 
 _none_
 
-### Not tech - 26
+### Not tech - 28
 
 | Company | Title | Location |
 |---|---|---|
@@ -88,6 +88,8 @@ _none_
 | Aircall | [Sales Intern - Iberia market - 6 months](https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc) | Paris Office |
 | Aircall | [Sales Partner Manager Intern](https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b) | Paris Office |
 | Aircall | [Strategy & Operations Intern — Office of the General Manager, Small Business](https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df) | Paris Office |
+| Back Market | [Legal Intern / Juriste Droit des Affaires (Paris)](https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5) | Paris |
+| Back Market | [Sustainability and Public Affairs Intern (Paris )](https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7) | Paris |
 | Alan | [CTO Founder Associate - internship](https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0) | Paris, France |
 | Alan | [CEO Founder Associate - Internship](https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9) | Paris, France |
 | Alan | [Insurance Legal - Internship](https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd) | Paris, France |
@@ -115,7 +117,7 @@ _none_
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
 | Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003) | Mexico - Mexico City |
-| Amadeus | [Intern - Finance and Accounting (Source to Pay and Travel Management Expense)](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Finance-and-Accounting--Source-to-Pay-and-Travel-Management-Expense-_R36823) | Taguig-Metro-Manila, R36823 |
+| Amadeus | [Intern - Customer Management Operations](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Customer-Management-Operations_R37261) | Taguig-Metro-Manila, R37261 |
 | Amadeus | [Cybersecurity Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Cybersecurity-Intern_R31596) | Taguig-Metro-Manila, R31596 |
 | Amadeus | [Software Developer Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590) | Taguig-Metro-Manila, R31590 |
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
@@ -127,13 +129,19 @@ _none_
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 1
+### Unrecognised location - 7
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
+| BNP Paribas | [Stagiaire - IT Security Officer (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-it-security-officer-h-f-1) | Luxembourg, Luxembourg |
+| BNP Paribas | [Stage - Data visualization - PMO IT (h/f)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-visualization-pmo-it-h-f) | Luxembourg, Luxembourg, Luxembourg |
+| BNP Paribas | [2027 – Summer Assistant Vice President Internship - Corporate Functions, Analytics Lab (Machine Learning Engineer)](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-assistant-vice-president-internship-corporate-functions-analytics-lab-machine-learning-engineer) | Jersey City, New Jersey, États-Unis |
+| BNP Paribas | [2027 – Summer Analyst Internship - Corporate Functions, Technology](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-analyst-internship-corporate-functions-technology) | Jersey City, New Jersey, États-Unis |
+| BNP Paribas | [Stage - RH Gestionnaire Administratif (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-rh-gestionnaire-administratif-h-f-1) | Luxembourg, Luxembourg |
+| BNP Paribas | [Stage - Transformation digitale (M/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-transformation-digitale-m-f-1) | Kirchberg, Luxembourg, Luxembourg |
 
-### Not tech - 158 (showing the first 60)
+### Not tech - 117 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -186,19 +194,19 @@ _none_
 | Societe Generale | [Stage Assistant Banquier Privé](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-banquier-prive_talence) | Talence, France |
 | Societe Generale | [Stage marché patrimonial](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_menton) | Menton, France |
 | Societe Generale | [Stagiaire Animation Commerciale & Supports Stratégiques](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stagiaire-animation-commerciale-supports-strategiques_paris) | Paris, France |
-| BNP Paribas | [Stage - Analyste Transactions Immobilières  F/H](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-transactions-immobilieres-f-h_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage- Assistant pôle SOFICA - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-pole-sofica-h-f_paris) | Paris, France |
-| BNP Paribas | [STAGE - PROJECT MANAGEMENT OFFICER - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-project-management-officer-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Analyste Coverage Banques France & Luxembourg - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-coverage-banques-france-luxembourg-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Chargé de Communication Interne -  H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-communication-interne-h-f_levallois) | Levallois, France |
-| BNP Paribas | [STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS  - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-business-analyst-ultra-hight-net-worth-clients-h-f_paris_BP_j5Xr67l) | Paris, France |
-| BNP Paribas | [Stage – Contrôleur de gestion ALM Treasury – H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-controleur-de-gestion-alm-treasury-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - ESG Analyst F/H](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-esg-analyst-f-h_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Analyste risques opérationnels H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-risques-operationnels-h-f_paris_BP_dRgLraV) | Paris, France |
-| BNP Paribas | [Stage - Analyste Conformité AML/CFT H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage – Chargé de relations média – H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-relations-media-h-f_paris) | Paris, France |
+| BNP Paribas | [STAGE - Business Analyst H/F - 6 mois](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-business-analyst-h-f-6-mois-1) | Montreuil, Île-de-France, France |
+| BNP Paribas | [Stage - Contrôleur Financier Listed Real Assets H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-controleur-financier-listed-real-assets-h-f) | Puteaux, Île-de-France, France |
+| BNP Paribas | [Stage -Analyste quantitatif - H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-quantitatif-h-f) | Levallois-Perret, Île-de-France, France |
+| BNP Paribas | [Stage - Analyste Quantitatif RIESG H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-quantitatif-riesg-h-f) | Puteaux, Île-de-France, France |
+| BNP Paribas | [Stage - Analyste Transactions Immobilières F/H](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-transactions-immobilieres-f-h) | Puteaux, Île-de-France, France |
+| BNP Paribas | [Stage - Analyste risques opérationnels H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-risques-operationnels-h-f) | Paris, Île-de-France, France |
+| Credit Agricole | [STAGE ASSISTANT COORDINATION OPERATIONNELLE ET ADMINISTRATIVE H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-coordination-operationnelle-et-administrative-h-f_paris) | Paris, France |
+| Credit Agricole | [Stage - Depositary Control Assistant H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-depositary-control-assistant-h-f_montrouge) | Montrouge, France |
+| Credit Agricole | [STAGE - Product Owner H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-product-owner-h-f_paris) | Paris, France |
+| Credit Agricole | [STAGE - Chargé de communication IT H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-community-manager-it-h-f_guyancourt) | Guyancourt, France |
+| Credit Agricole | [Stage Gestionnaire back office FDS H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-gestionnaire-back-office-fds-h-f_montrouge_GCA_94Pa71m) | Montrouge, France |
 
-### Outside France - 113 (sample below)
+### Outside France - 156 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

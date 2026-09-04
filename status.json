@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T08:46:20.312944+02:00",
+      "generated": "2026-09-04T16:55:15.296519+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -38,13 +38,24 @@
         }
       ],
       "recent_roles_total": 3,
-      "scanned": 3677,
+      "scanned": 3679,
       "stamp": "2026-09-04",
       "unsure": 7
     },
     "board2.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "Back Market",
+          "kind": "other",
+          "title": "Legal Intern / Juriste Droit des Affaires (Paris)"
+        },
+        {
+          "company": "Back Market",
+          "kind": "other",
+          "title": "Sustainability and Public Affairs Intern (Paris )"
+        }
+      ],
+      "also_new_total": 2,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
@@ -52,8 +63,8 @@
       "companies": 20,
       "failed": 0,
       "failed_names": [],
-      "filtered": 26,
-      "generated": "2026-09-04T08:46:38.091715+02:00",
+      "filtered": 28,
+      "generated": "2026-09-04T16:55:41.588517+02:00",
       "incomplete": [],
       "live": 4,
       "new": 0,
@@ -86,36 +97,156 @@
         }
       ],
       "recent_roles_total": 4,
-      "scanned": 917,
+      "scanned": 928,
       "stamp": "2026-09-04",
       "unsure": 0
     },
     "board3.html": {
-      "also_new": [],
-      "also_new_total": 0,
-      "board": "Defence & Finance Watch",
-      "closed_today": [],
-      "closed_today_total": 0,
-      "closed_total": 0,
-      "companies": 9,
-      "failed": 1,
-      "failed_names": [
-        "Dassault Systemes"
+      "also_new": [
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "STAGE - Business Analyst H/F - 6 mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Contrôleur Financier Listed Real Assets H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage -Analyste quantitatif - H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Analyste Quantitatif RIESG H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Analyste Transactions Immobilières F/H"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Analyste risques opérationnels H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "unsure",
+          "title": "Stagiaire - IT Security Officer (H/F)"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "unsure",
+          "title": "Stage - Data visualization - PMO IT (h/f)"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "unsure",
+          "title": "2027 – Summer Assistant Vice President Internship - Corporate Functions, Analytics Lab (Machine Learning Engineer)"
+        }
       ],
-      "filtered": 158,
-      "generated": "2026-09-04T08:46:57.848846+02:00",
-      "incomplete": [],
-      "live": 36,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
-      "recent_roles": [
+      "also_new_total": 9,
+      "board": "Defence & Finance Watch",
+      "closed_today": [
         {
           "company": "Thales",
-          "first_seen": "2026-09-03",
           "title": "STAGE– Ingénieur Tests fonctionnels système - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
+        }
+      ],
+      "closed_today_total": 1,
+      "closed_total": 1,
+      "companies": 9,
+      "failed": 0,
+      "failed_names": [],
+      "filtered": 117,
+      "generated": "2026-09-04T16:56:01.870607+02:00",
+      "incomplete": [
+        "Societe Generale (truncated)",
+        "BNP Paribas (truncated)"
+      ],
+      "live": 31,
+      "new": 13,
+      "new_roles": [
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois"
         },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "STAGE – Développeur Java/Angular/Cloud H/F - 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-developpeur-java-angular-cloud-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Developpeur fullstack Java / Angular (F/H) – 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-developpeur-fullstack-java-angular-f-h-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Architecte Poste de Travail Intune H/F - 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-architecte-poste-de-travail-intune-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Chargé de conformité Sécurité financière KYC H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-conformite-securite-financiere-kyc-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Acheteur IT software Junior H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-acheteur-it-software-junior-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Acheteur IT Junior H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-acheteur-it-junior-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-assistant-e-chief-data-officer-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-economiste-data-visualisation-h-f-4-a-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "STAGE - Data Scientist H/F - 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-scientist-h-f-6-mois-7"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Chargé(e) de Conformité – Data & Sécurité Financière",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-e-de-conformite-data-securite-financiere"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Private Equity Infrastructure F/H",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-infrastructure-equity-h-f-1"
+        }
+      ],
+      "new_roles_total": 13,
+      "recent_roles": [
         {
           "company": "Thales",
           "first_seen": "2026-09-03",
@@ -131,63 +262,69 @@
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
-          "title": "Stage - Private Equity Infrastructure F/H",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-infrastructure-equity-h-f_puteaux_BP_OXkdOVj"
+          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
-          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-economiste-data-visualisation-h-f-4-a-6-mois_paris"
+          "title": "STAGE – Développeur Java/Angular/Cloud H/F - 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-developpeur-java-angular-cloud-h-f-6-mois"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
-          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-chief-data-officer-h-f_paris"
+          "title": "Stage – Developpeur fullstack Java / Angular (F/H) – 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-developpeur-fullstack-java-angular-f-h-6-mois"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
-          "title": "Portzamparc-Stage de Développement Commerciale (H/F) à Nantes",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/portzamparc-stage-de-developpement-commerciale-h-f-a-nantes_nantes"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Acheteur Hardware Telecom H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-hardware-telecom-h-f_pantin"
+          "title": "Stage - Architecte Poste de Travail Intune H/F - 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-architecte-poste-de-travail-intune-h-f-6-mois"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
           "title": "Stage – Chargé de conformité Sécurité financière KYC H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-conformite-securite-financiere-kyc-h-f_paris"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "title": "Stage - Assistant risques sécurité / sûreté International H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-risques-securite-surete-international-h-f_montreuil"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois_paris"
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-conformite-securite-financiere-kyc-h-f"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
           "title": "Stage - Acheteur IT software Junior H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-it-software-junior-h-f-6-mois_pantin"
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-acheteur-it-software-junior-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Acheteur IT Junior H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-acheteur-it-junior-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-assistant-e-chief-data-officer-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-economiste-data-visualisation-h-f-4-a-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "STAGE - Data Scientist H/F - 6 mois",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-scientist-h-f-6-mois-7"
         }
       ],
-      "recent_roles_total": 36,
-      "scanned": 1522,
+      "recent_roles_total": 31,
+      "scanned": 1932,
       "stamp": "2026-09-04",
-      "unsure": 1
+      "unsure": 7
     }
   },
-  "generated": "2026-09-04T08:46:57.848846+02:00"
+  "generated": "2026-09-04T16:56:01.870607+02:00"
 }

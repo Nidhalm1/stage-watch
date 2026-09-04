@@ -97,6 +97,19 @@ h1{
   padding:.15rem .4rem;border-radius:3px;
 }
 .chip.new{background:var(--new-soft);color:var(--new)}
+/* Hide control. Deliberately quiet until you hover the row - it is a convenience,
+   not the point of the page - and never destructive: hiding is per-browser
+   display state, the role stays in the data and can always be brought back. */
+.hide-btn{float:right;margin:-.1rem 0 0 .6rem;border:0;background:none;cursor:pointer;
+  color:var(--muted);font-size:1rem;line-height:1;padding:0 .15rem;opacity:0;
+  transition:opacity .12s,color .12s}
+li:hover>.hide-btn,.hide-btn:focus{opacity:1}
+.hide-btn:hover{color:var(--closed)}
+li.dimmed{opacity:.45}
+.hidebar{margin:.55rem 0 0;font-size:.78rem;color:var(--muted);
+  font-family:"JetBrains Mono",ui-monospace,monospace}
+.hidebar button{border:0;background:none;padding:0;margin-left:.5rem;cursor:pointer;
+  color:var(--accent);font:inherit;text-decoration:underline}
 .chip.gone{background:var(--closed-soft);color:var(--closed)}
 .none{margin:0;padding:.95rem 1.25rem;color:var(--muted);font-size:.9rem}
 .err{margin:0;padding:.95rem 1.25rem;color:var(--closed);font-size:.85rem;
@@ -132,20 +145,22 @@ td.co-name{color:var(--ink)}
 <p class="statusline">
 <span class="live"><b>4</b> live matches</span>
 <span><b>0</b> new since last run</span>
-<span><b>917</b> roles scanned</span>
+<span><b>928</b> roles scanned</span>
 <span><b>20</b> companies</span>
-<span>run Fri 04 Sep 2026, 08:46 CEST</span>
-</p></header>
+<span>run Fri 04 Sep 2026, 16:55 CEST</span>
+</p>
+<p class="hidebar" id="hidebar"></p>
+</header>
 <div class="cards">
 <article class="co">
 <header class="co-h"><h2>Qonto</h2><span class="badge">lever</span>
-<span class="counts">42 open &middot; 30 in France</span>
+<span class="counts">47 open &middot; 30 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
 <details><summary>3 non-tech internships filtered out</summary><ul>
-<li><a href="https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392" target="_blank" rel="noopener">Legal Intern - Commercial</a> &mdash; Paris</li>
-<li><a href="https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3" target="_blank" rel="noopener">Legal Intern - Product &amp; AI</a> &mdash; Paris</li>
-<li><a href="https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad" target="_blank" rel="noopener">Product Marketing Manager Intern</a> &mdash; Paris</li>
+<li data-u="https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392" target="_blank" rel="noopener">Legal Intern - Commercial</a> &mdash; Paris</li>
+<li data-u="https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3" target="_blank" rel="noopener">Legal Intern - Product &amp; AI</a> &mdash; Paris</li>
+<li data-u="https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad" target="_blank" rel="noopener">Product Marketing Manager Intern</a> &mdash; Paris</li>
 </ul></details>
 </article>
 <article class="co">
@@ -156,17 +171,17 @@ td.co-name{color:var(--ink)}
 </article>
 <article class="co">
 <header class="co-h"><h2>BlaBlaCar</h2><span class="badge">lever</span>
-<span class="counts">13 open &middot; 13 in France</span>
+<span class="counts">11 open &middot; 11 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
 <details><summary>2 non-tech internships filtered out</summary><ul>
-<li><a href="https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad" target="_blank" rel="noopener">Stagiaire Communication &amp; Relations Publiques (6 mois) - Paris, France</a> &mdash; Paris, France</li>
-<li><a href="https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e" target="_blank" rel="noopener">Stagiaire Marketing &amp; Réseaux Sociaux France</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad" target="_blank" rel="noopener">Stagiaire Communication &amp; Relations Publiques (6 mois) - Paris, France</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e" target="_blank" rel="noopener">Stagiaire Marketing &amp; Réseaux Sociaux France</a> &mdash; Paris, France</li>
 </ul></details>
 </article>
 <article class="co">
 <header class="co-h"><h2>Swile</h2><span class="badge">lever</span>
-<span class="counts">23 open &middot; 13 in France</span>
+<span class="counts">24 open &middot; 14 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
 </article>
@@ -176,13 +191,13 @@ td.co-name{color:var(--ink)}
 </header>
 <p class="none">No tech internships open in France right now.</p>
 <details><summary>7 non-tech internships filtered out</summary><ul>
-<li><a href="https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14" target="_blank" rel="noopener">GTM Enablement Intern</a> &mdash; Paris Office</li>
-<li><a href="https://jobs.lever.co/aircall/c71f52af-d884-4a38-9db7-7f7ff402e2ef" target="_blank" rel="noopener">Product Manager Intern</a> &mdash; Paris Office</li>
-<li><a href="https://jobs.lever.co/aircall/6737595c-eea0-4e64-b619-0894d532bead" target="_blank" rel="noopener">Regional Marketing Intern, DACH Market</a> &mdash; Paris Office</li>
-<li><a href="https://jobs.lever.co/aircall/131dcb57-0ba9-45fe-b5a4-e88e118bb06d" target="_blank" rel="noopener">Sales Intern - French market - 6 months</a> &mdash; Paris Office</li>
-<li><a href="https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc" target="_blank" rel="noopener">Sales Intern - Iberia market - 6 months</a> &mdash; Paris Office</li>
-<li><a href="https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b" target="_blank" rel="noopener">Sales Partner Manager Intern</a> &mdash; Paris Office</li>
-<li><a href="https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df" target="_blank" rel="noopener">Strategy &amp; Operations Intern — Office of the General Manager, Small Business</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14" target="_blank" rel="noopener">GTM Enablement Intern</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/c71f52af-d884-4a38-9db7-7f7ff402e2ef"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/c71f52af-d884-4a38-9db7-7f7ff402e2ef" target="_blank" rel="noopener">Product Manager Intern</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/6737595c-eea0-4e64-b619-0894d532bead"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/6737595c-eea0-4e64-b619-0894d532bead" target="_blank" rel="noopener">Regional Marketing Intern, DACH Market</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/131dcb57-0ba9-45fe-b5a4-e88e118bb06d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/131dcb57-0ba9-45fe-b5a4-e88e118bb06d" target="_blank" rel="noopener">Sales Intern - French market - 6 months</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc" target="_blank" rel="noopener">Sales Intern - Iberia market - 6 months</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b" target="_blank" rel="noopener">Sales Partner Manager Intern</a> &mdash; Paris Office</li>
+<li data-u="https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df" target="_blank" rel="noopener">Strategy &amp; Operations Intern — Office of the General Manager, Small Business</a> &mdash; Paris Office</li>
 </ul></details>
 </article>
 <article class="co">
@@ -193,37 +208,41 @@ td.co-name{color:var(--ink)}
 </article>
 <article class="co">
 <header class="co-h"><h2>Back Market</h2><span class="badge">ashby</span>
-<span class="counts">17 open &middot; 13 in France</span>
+<span class="counts">20 open &middot; 15 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
+<details open><summary>2 non-tech internships filtered out</summary><ul>
+<li data-u="https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5" target="_blank" rel="noopener">Legal Intern / Juriste Droit des Affaires (Paris)</a> &mdash; Paris<span class="chip new">New</span></li>
+<li data-u="https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7" target="_blank" rel="noopener">Sustainability and Public Affairs Intern (Paris )</a> &mdash; Paris<span class="chip new">New</span></li>
+</ul></details>
 </article>
 <article class="co">
 <header class="co-h"><h2>Alan</h2><span class="badge">ashby</span>
-<span class="counts">108 open &middot; 73 in France</span>
+<span class="counts">111 open &middot; 78 in France</span>
 </header>
 <ul class="jobs">
-<li class="job"><a href="https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671" target="_blank" rel="noopener">Software Engineer Internship (6 months)</a><div class="meta"><span>Paris</span><span>seen since 2026-09-02</span></div></li>
+<li class="job" data-u="https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671" data-live="1"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide this role">&times;</button><a href="https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671" target="_blank" rel="noopener">Software Engineer Internship (6 months)</a><div class="meta"><span>Paris</span><span>seen since 2026-09-02</span></div></li>
 </ul>
 <details><summary>5 non-tech internships filtered out</summary><ul>
-<li><a href="https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0" target="_blank" rel="noopener">CTO Founder Associate - internship</a> &mdash; Paris, France</li>
-<li><a href="https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9" target="_blank" rel="noopener">CEO Founder Associate - Internship</a> &mdash; Paris, France</li>
-<li><a href="https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd" target="_blank" rel="noopener">Insurance Legal - Internship</a> &mdash; Paris, France</li>
-<li><a href="https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d" target="_blank" rel="noopener">Talent Associate (internship)</a> &mdash; Paris, France</li>
-<li><a href="https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df" target="_blank" rel="noopener">Brand Associate (Internship)</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0" target="_blank" rel="noopener">CTO Founder Associate - internship</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9" target="_blank" rel="noopener">CEO Founder Associate - Internship</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd" target="_blank" rel="noopener">Insurance Legal - Internship</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d" target="_blank" rel="noopener">Talent Associate (internship)</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df" target="_blank" rel="noopener">Brand Associate (Internship)</a> &mdash; Paris, France</li>
 </ul></details>
 </article>
 <article class="co">
 <header class="co-h"><h2>Mistral AI</h2><span class="badge">ashby</span>
-<span class="counts">175 open &middot; 110 in France</span>
+<span class="counts">176 open &middot; 111 in France</span>
 </header>
 <ul class="jobs">
-<li class="job"><a href="https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b" target="_blank" rel="noopener">Applied AI, Forward Deployed Machine Learning Engineer - (Internship)</a><div class="meta"><span>Paris</span><span>seen since 2026-09-03</span></div></li>
-<li class="job"><a href="https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e" target="_blank" rel="noopener">Applied Scientist  (Internship)</a><div class="meta"><span>Paris London</span><span>seen since 2026-09-03</span></div></li>
+<li class="job" data-u="https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b" data-live="1"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide this role">&times;</button><a href="https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b" target="_blank" rel="noopener">Applied AI, Forward Deployed Machine Learning Engineer - (Internship)</a><div class="meta"><span>Paris</span><span>seen since 2026-09-03</span></div></li>
+<li class="job" data-u="https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e" data-live="1"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide this role">&times;</button><a href="https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e" target="_blank" rel="noopener">Applied Scientist  (Internship)</a><div class="meta"><span>Paris London</span><span>seen since 2026-09-03</span></div></li>
 </ul>
 </article>
 <article class="co">
 <header class="co-h"><h2>Pennylane</h2><span class="badge">ashby</span>
-<span class="counts">163 open &middot; 143 in France</span>
+<span class="counts">161 open &middot; 140 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
 </article>
@@ -233,7 +252,7 @@ td.co-name{color:var(--ink)}
 </header>
 <p class="none">No tech internships open in France right now.</p>
 <details><summary>1 non-tech internship filtered out</summary><ul>
-<li><a href="https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2" target="_blank" rel="noopener">Internship - Total Rewards (Compensation &amp; Benefits)</a> &mdash; Paris, France</li>
+<li data-u="https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2" target="_blank" rel="noopener">Internship - Total Rewards (Compensation &amp; Benefits)</a> &mdash; Paris, France</li>
 </ul></details>
 </article>
 <article class="co">
@@ -242,8 +261,8 @@ td.co-name{color:var(--ink)}
 </header>
 <p class="none">No tech internships open in France right now.</p>
 <details><summary>2 non-tech internships filtered out</summary><ul>
-<li><a href="https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d" target="_blank" rel="noopener">Marketing Intern</a> &mdash; Paris</li>
-<li><a href="https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257" target="_blank" rel="noopener">Player Experience Intern</a> &mdash; Paris</li>
+<li data-u="https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d" target="_blank" rel="noopener">Marketing Intern</a> &mdash; Paris</li>
+<li data-u="https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257" target="_blank" rel="noopener">Player Experience Intern</a> &mdash; Paris</li>
 </ul></details>
 </article>
 <article class="co">
@@ -257,7 +276,7 @@ td.co-name{color:var(--ink)}
 <span class="counts">23 open &middot; 8 in France</span>
 </header>
 <ul class="jobs">
-<li class="job"><a href="https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003" target="_blank" rel="noopener">Data Science internship - Spanish speaker (6months)</a><div class="meta"><span>France - Remote</span><span>seen since 2026-09-02</span></div></li>
+<li class="job" data-u="https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003" data-live="1"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide this role">&times;</button><a href="https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003" target="_blank" rel="noopener">Data Science internship - Spanish speaker (6months)</a><div class="meta"><span>France - Remote</span><span>seen since 2026-09-02</span></div></li>
 </ul>
 </article>
 <article class="co">
@@ -284,23 +303,23 @@ td.co-name{color:var(--ink)}
 </header>
 <p class="none">No tech internships open in France right now.</p>
 <details><summary>6 non-tech internships filtered out</summary><ul>
-<li><a href="https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d" target="_blank" rel="noopener">Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)</a> &mdash; Paris, FR</li>
-<li><a href="https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d" target="_blank" rel="noopener">Product Marketing Intern (m/f/d)</a> &mdash; Paris, FR</li>
-<li><a href="https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d" target="_blank" rel="noopener">Procurement Intern - 6 months (m/f/d)</a> &mdash; Paris, FR</li>
-<li><a href="https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d" target="_blank" rel="noopener">Artist Relations France Coordinator - Intern (m/f/d)</a> &mdash; Paris, FR</li>
-<li><a href="https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory" target="_blank" rel="noopener">Motion Design - 6 months Internship m/f/d - French speaking mandatory</a> &mdash; Paris, FR</li>
-<li><a href="https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d" target="_blank" rel="noopener">Legal &amp; Business Affairs - Intern (m/f/d)</a> &mdash; Paris, FR</li>
+<li data-u="https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d" target="_blank" rel="noopener">Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)</a> &mdash; Paris, FR</li>
+<li data-u="https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d" target="_blank" rel="noopener">Product Marketing Intern (m/f/d)</a> &mdash; Paris, FR</li>
+<li data-u="https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d" target="_blank" rel="noopener">Procurement Intern - 6 months (m/f/d)</a> &mdash; Paris, FR</li>
+<li data-u="https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d" target="_blank" rel="noopener">Artist Relations France Coordinator - Intern (m/f/d)</a> &mdash; Paris, FR</li>
+<li data-u="https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory" target="_blank" rel="noopener">Motion Design - 6 months Internship m/f/d - French speaking mandatory</a> &mdash; Paris, FR</li>
+<li data-u="https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d"><button class="hide-btn" type="button" title="Not interested - hide this" aria-label="Hide">&times;</button><a href="https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d" target="_blank" rel="noopener">Legal &amp; Business Affairs - Intern (m/f/d)</a> &mdash; Paris, FR</li>
 </ul></details>
 </article>
 <article class="co">
 <header class="co-h"><h2>Amadeus</h2><span class="badge">workday</span>
-<span class="counts">106 open &middot; 7 in France</span>
+<span class="counts">107 open &middot; 7 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
 </article>
 <article class="co">
 <header class="co-h"><h2>Murex</h2><span class="badge">workday</span>
-<span class="counts">63 open &middot; 9 in France</span>
+<span class="counts">64 open &middot; 9 in France</span>
 </header>
 <p class="none">No tech internships open in France right now.</p>
 </article>
@@ -308,16 +327,16 @@ td.co-name{color:var(--ink)}
 <section class="sources"><h2>Where this came from</h2>
 <p>One request per company, straight to the board API. A role is listed only if the API returned it in this run, so a posting that disappears has been filled or pulled &mdash; no link here needs re-checking by hand.</p>
 <div class="tbl"><table><thead><tr><th>Company</th><th>ATS</th><th>Endpoint</th><th>This run</th></tr></thead><tbody>
-<tr><td class="co-name">Qonto</td><td>lever</td><td>api.lever.co/v0/postings/qonto</td><td>42 roles</td></tr>
+<tr><td class="co-name">Qonto</td><td>lever</td><td>api.lever.co/v0/postings/qonto</td><td>47 roles</td></tr>
 <tr><td class="co-name">Contentsquare</td><td>lever</td><td>api.lever.co/v0/postings/contentsquare</td><td>31 roles</td></tr>
-<tr><td class="co-name">BlaBlaCar</td><td>lever</td><td>api.lever.co/v0/postings/blablacar</td><td>13 roles</td></tr>
-<tr><td class="co-name">Swile</td><td>lever</td><td>api.lever.co/v0/postings/swile</td><td>23 roles</td></tr>
+<tr><td class="co-name">BlaBlaCar</td><td>lever</td><td>api.lever.co/v0/postings/blablacar</td><td>11 roles</td></tr>
+<tr><td class="co-name">Swile</td><td>lever</td><td>api.lever.co/v0/postings/swile</td><td>24 roles</td></tr>
 <tr><td class="co-name">Aircall</td><td>lever</td><td>api.lever.co/v0/postings/aircall</td><td>77 roles</td></tr>
 <tr><td class="co-name">Younited</td><td>lever</td><td>api.lever.co/v0/postings/younited</td><td>5 roles</td></tr>
-<tr><td class="co-name">Back Market</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/backmarket</td><td>17 roles</td></tr>
-<tr><td class="co-name">Alan</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/alan</td><td>108 roles</td></tr>
-<tr><td class="co-name">Mistral AI</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/mistral.ai</td><td>175 roles</td></tr>
-<tr><td class="co-name">Pennylane</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/pennylane</td><td>163 roles</td></tr>
+<tr><td class="co-name">Back Market</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/backmarket</td><td>20 roles</td></tr>
+<tr><td class="co-name">Alan</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/alan</td><td>111 roles</td></tr>
+<tr><td class="co-name">Mistral AI</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/mistral.ai</td><td>176 roles</td></tr>
+<tr><td class="co-name">Pennylane</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/pennylane</td><td>161 roles</td></tr>
 <tr><td class="co-name">Ledger</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/ledger</td><td>8 roles</td></tr>
 <tr><td class="co-name">Sorare</td><td>ashby</td><td>api.ashbyhq.com/posting-api/job-board/sorare</td><td>4 roles</td></tr>
 <tr><td class="co-name">Mirakl</td><td>greenhouse</td><td>boards-api.greenhouse.io/v1/boards/mirakl/jobs</td><td>14 roles</td></tr>
@@ -326,9 +345,57 @@ td.co-name{color:var(--ink)}
 <tr><td class="co-name">Hugging Face</td><td>workable</td><td>apply.workable.com/api/v1/widget/accounts/huggingface</td><td>6 roles</td></tr>
 <tr><td class="co-name">Payfit</td><td>teamtailor</td><td>payfit.teamtailor.com/jobs.json</td><td>10 roles</td></tr>
 <tr><td class="co-name">Deezer</td><td>teamtailor</td><td>deezer.teamtailor.com/jobs.json</td><td>16 roles</td></tr>
-<tr><td class="co-name">Amadeus</td><td>workday</td><td>amadeus.wd502.myworkdayjobs.com/wday/cxs/amadeus/jobs/jobs</td><td>106 roles</td></tr>
-<tr><td class="co-name">Murex</td><td>workday</td><td>murex.wd3.myworkdayjobs.com/wday/cxs/murex/MurexCareerPage1/jobs</td><td>63 roles</td></tr>
+<tr><td class="co-name">Amadeus</td><td>workday</td><td>amadeus.wd502.myworkdayjobs.com/wday/cxs/amadeus/jobs/jobs</td><td>107 roles</td></tr>
+<tr><td class="co-name">Murex</td><td>workday</td><td>murex.wd3.myworkdayjobs.com/wday/cxs/murex/MurexCareerPage1/jobs</td><td>64 roles</td></tr>
 </tbody></table></div>
 <p>Filter: title contains stage / stagiaire / PFE / intern / fin d&rsquo;&eacute;tudes &middot; excludes alternance and apprentissage &middot; location in France &middot; engineering, data, infra, SRE or security role. The last two steps do not delete anything: a role that fails them is in the collapsed box on its company, either as non-tech or as an unrecognised location.</p>
 </section></div>
-<script type="application/json" id="state">{"generated": "2026-09-04T08:46:38.091715+02:00", "postings": {"https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671": {"title": "Software Engineer Internship (6 months)", "company": "Alan", "location": "Paris", "first_seen": "2026-09-02"}, "https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b": {"title": "Applied AI, Forward Deployed Machine Learning Engineer - (Internship)", "company": "Mistral AI", "location": "Paris", "first_seen": "2026-09-03"}, "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e": {"title": "Applied Scientist  (Internship)", "company": "Mistral AI", "location": "Paris London", "first_seen": "2026-09-03"}, "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003": {"title": "Data Science internship - Spanish speaker (6months)", "company": "Shift Technology", "location": "France - Remote", "first_seen": "2026-09-02"}}, "closed": [], "watch": {"https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392": {"title": "Legal Intern - Commercial", "company": "Qonto", "kind": "other"}, "https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3": {"title": "Legal Intern - Product & AI", "company": "Qonto", "kind": "other"}, "https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad": {"title": "Product Marketing Manager Intern", "company": "Qonto", "kind": "other"}, "https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad": {"title": "Stagiaire Communication & Relations Publiques (6 mois) - Paris, France", "company": "BlaBlaCar", "kind": "other"}, "https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e": {"title": "Stagiaire Marketing & Réseaux Sociaux France", "company": "BlaBlaCar", "kind": "other"}, "https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14": {"title": "GTM Enablement Intern", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/c71f52af-d884-4a38-9db7-7f7ff402e2ef": {"title": "Product Manager Intern", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/6737595c-eea0-4e64-b619-0894d532bead": {"title": "Regional Marketing Intern, DACH Market", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/131dcb57-0ba9-45fe-b5a4-e88e118bb06d": {"title": "Sales Intern - French market - 6 months", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc": {"title": "Sales Intern - Iberia market - 6 months", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b": {"title": "Sales Partner Manager Intern", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df": {"title": "Strategy & Operations Intern — Office of the General Manager, Small Business", "company": "Aircall", "kind": "other"}, "https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0": {"title": "CTO Founder Associate - internship", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9": {"title": "CEO Founder Associate - Internship", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd": {"title": "Insurance Legal - Internship", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d": {"title": "Talent Associate (internship)", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df": {"title": "Brand Associate (Internship)", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2": {"title": "Internship - Total Rewards (Compensation & Benefits)", "company": "Ledger", "kind": "other"}, "https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d": {"title": "Marketing Intern", "company": "Sorare", "kind": "other"}, "https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257": {"title": "Player Experience Intern", "company": "Sorare", "kind": "other"}, "https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d": {"title": "Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d": {"title": "Product Marketing Intern (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d": {"title": "Procurement Intern - 6 months (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d": {"title": "Artist Relations France Coordinator - Intern (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory": {"title": "Motion Design - 6 months Internship m/f/d - French speaking mandatory", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d": {"title": "Legal & Business Affairs - Intern (m/f/d)", "company": "Deezer", "kind": "other"}}}</script>
+<script>
+(function () {
+  var KEY = "stage-watch-hidden:" + (document.title || "board");
+  function read() { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); }
+                    catch (e) { return []; } }
+  function write(v) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} }
+  var hidden = read(), reveal = false, bar = document.getElementById("hidebar");
+  function apply() {
+    var rows = document.querySelectorAll("li[data-u]"), n = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var li = rows[i], off = hidden.indexOf(li.getAttribute("data-u")) !== -1;
+      if (off) { n++; }
+      li.hidden = off && !reveal;
+      li.classList.toggle("dimmed", off && reveal);
+    }
+    if (!bar) { return; }
+    bar.textContent = "";
+    if (!n) { return; }
+    bar.appendChild(document.createTextNode(n + " hidden as not interested"));
+    var t = document.createElement("button");
+    t.type = "button";
+    t.textContent = reveal ? "collapse again" : "show them";
+    t.onclick = function () { reveal = !reveal; apply(); };
+    bar.appendChild(t);
+    var r = document.createElement("button");
+    r.type = "button";
+    r.textContent = "restore all";
+    r.onclick = function () { hidden = []; write(hidden); reveal = false; apply(); };
+    bar.appendChild(r);
+  }
+  document.addEventListener("click", function (ev) {
+    var el = ev.target;
+    while (el && el !== document && !(el.classList && el.classList.contains("hide-btn"))) {
+      el = el.parentNode;
+    }
+    if (!el || el === document) { return; }
+    ev.preventDefault();
+    var li = el.parentNode;
+    while (li && li.tagName !== "LI") { li = li.parentNode; }
+    if (!li) { return; }
+    var u = li.getAttribute("data-u"), at = hidden.indexOf(u);
+    if (at === -1) { hidden.push(u); } else { hidden.splice(at, 1); }
+    write(hidden);
+    apply();
+  });
+  apply();
+})();
+</script>
+<script type="application/json" id="state">{"generated": "2026-09-04T16:55:41.588517+02:00", "postings": {"https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671": {"title": "Software Engineer Internship (6 months)", "company": "Alan", "location": "Paris", "first_seen": "2026-09-02"}, "https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b": {"title": "Applied AI, Forward Deployed Machine Learning Engineer - (Internship)", "company": "Mistral AI", "location": "Paris", "first_seen": "2026-09-03"}, "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e": {"title": "Applied Scientist  (Internship)", "company": "Mistral AI", "location": "Paris London", "first_seen": "2026-09-03"}, "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003": {"title": "Data Science internship - Spanish speaker (6months)", "company": "Shift Technology", "location": "France - Remote", "first_seen": "2026-09-02"}}, "closed": [], "watch": {"https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392": {"title": "Legal Intern - Commercial", "company": "Qonto", "kind": "other"}, "https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3": {"title": "Legal Intern - Product & AI", "company": "Qonto", "kind": "other"}, "https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad": {"title": "Product Marketing Manager Intern", "company": "Qonto", "kind": "other"}, "https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad": {"title": "Stagiaire Communication & Relations Publiques (6 mois) - Paris, France", "company": "BlaBlaCar", "kind": "other"}, "https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e": {"title": "Stagiaire Marketing & Réseaux Sociaux France", "company": "BlaBlaCar", "kind": "other"}, "https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14": {"title": "GTM Enablement Intern", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/c71f52af-d884-4a38-9db7-7f7ff402e2ef": {"title": "Product Manager Intern", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/6737595c-eea0-4e64-b619-0894d532bead": {"title": "Regional Marketing Intern, DACH Market", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/131dcb57-0ba9-45fe-b5a4-e88e118bb06d": {"title": "Sales Intern - French market - 6 months", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc": {"title": "Sales Intern - Iberia market - 6 months", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b": {"title": "Sales Partner Manager Intern", "company": "Aircall", "kind": "other"}, "https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df": {"title": "Strategy & Operations Intern — Office of the General Manager, Small Business", "company": "Aircall", "kind": "other"}, "https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5": {"title": "Legal Intern / Juriste Droit des Affaires (Paris)", "company": "Back Market", "kind": "other"}, "https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7": {"title": "Sustainability and Public Affairs Intern (Paris )", "company": "Back Market", "kind": "other"}, "https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0": {"title": "CTO Founder Associate - internship", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9": {"title": "CEO Founder Associate - Internship", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd": {"title": "Insurance Legal - Internship", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d": {"title": "Talent Associate (internship)", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df": {"title": "Brand Associate (Internship)", "company": "Alan", "kind": "other"}, "https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2": {"title": "Internship - Total Rewards (Compensation & Benefits)", "company": "Ledger", "kind": "other"}, "https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d": {"title": "Marketing Intern", "company": "Sorare", "kind": "other"}, "https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257": {"title": "Player Experience Intern", "company": "Sorare", "kind": "other"}, "https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d": {"title": "Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d": {"title": "Product Marketing Intern (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d": {"title": "Procurement Intern - 6 months (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d": {"title": "Artist Relations France Coordinator - Intern (m/f/d)", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory": {"title": "Motion Design - 6 months Internship m/f/d - French speaking mandatory", "company": "Deezer", "kind": "other"}, "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d": {"title": "Legal & Business Affairs - Intern (m/f/d)", "company": "Deezer", "kind": "other"}}}</script>
