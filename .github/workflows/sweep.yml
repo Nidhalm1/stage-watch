@@ -51,6 +51,7 @@ jobs:
 
       - name: Batch 1 - Stage Watch
         id: b1
+        if: inputs.probe_html == ''
         continue-on-error: true
         run: |
           cp board.html prev.html 2>/dev/null || true
@@ -59,6 +60,7 @@ jobs:
 
       - name: Batch 2 - French Tech Watch
         id: b2
+        if: inputs.probe_html == ''
         continue-on-error: true
         run: |
           cp board2.html prev2.html 2>/dev/null || true
@@ -70,6 +72,7 @@ jobs:
       # than the other two.
       - name: Batch 3 - Defence & Finance Watch
         id: b3
+        if: inputs.probe_html == ''
         continue-on-error: true
         run: |
           cp board3.html prev3.html 2>/dev/null || true
@@ -77,7 +80,7 @@ jobs:
           rm -f prev3.html
 
       - name: Commit the new boards
-        if: always()
+        if: always() && inputs.probe_html == ''
         run: |
           git config user.name  "stage-watch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -103,7 +106,7 @@ jobs:
       # it here: a roster that stopped fetching should show up red in the
       # Actions tab, not pass quietly while its board goes stale.
       - name: Fail the run if a roster failed
-        if: always()
+        if: always() && inputs.probe_html == ''
         run: |
           rc=0
           for pair in "1:${{ steps.b1.outcome }}" "2:${{ steps.b2.outcome }}" "3:${{ steps.b3.outcome }}"; do
