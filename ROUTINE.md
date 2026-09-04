@@ -59,6 +59,13 @@ boxes that are shown on the board but filtered out of the live list: filtered
 (count), unsure (count) and also_new[] (the ones that appeared today, each with
 kind = "unsure" or "other").
 
+Every list in status.json is CAPPED, and each has a matching `_total` field
+carrying the real count: new_roles/new_roles_total, recent_roles/
+recent_roles_total, also_new/also_new_total, closed_today/closed_today_total.
+Report the _total, name roles from the capped list. The cap exists because
+adding four companies at once put 153 rows in also_new and took this file from
+4.7 KB to 70 KB - bigger than the HTML it exists to save you reading.
+
 Treat any field that is absent as zero or empty - an older status.json will not
 have the newer keys.
 

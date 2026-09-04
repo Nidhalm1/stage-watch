@@ -970,7 +970,7 @@ def render(results, prev):
             for h in r[kind]:
                 u = h["url"]
                 h["is_new"] = (u not in prev_watch) and bool(prev_watch)
-                entry = {"title": h["title"], "company": r["name"], "url": u, "kind": kind}
+                entry = {"title": h["title"], "company": r["name"], "kind": kind}
                 if h["is_new"] and (kind == "other" or is_tech(h["title"])):
                     also_new.append(entry)
                 watch[u] = {"title": h["title"], "company": r["name"], "kind": kind}
@@ -1037,10 +1037,15 @@ def render(results, prev):
             p.append("<details%s><summary>%d non-tech internship%s filtered out</summary><ul>"
                      % (" open" if any(o["is_new"] for o in r["other"]) else "",
                         len(r["other"]), "" if len(r["other"]) == 1 else "s"))
-            for o in r["other"]:
+            # Anything new is listed first, so a cap can never hide the one entry
+            # that is actually news.
+            for o in sorted(r["other"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
                 p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
                          % (esc(o["url"]), esc(o["title"]), esc(o["location"]),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
+            if len(r["other"]) > BOX_ROWS:
+                p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
+                         % (len(r["other"]) - BOX_ROWS))
             p.append("</ul></details>")
 
         # Never silently dropped: a location this build could not place is shown
@@ -1051,10 +1056,13 @@ def render(results, prev):
                      "</summary><ul>"
                      % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
                         len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
-            for o in r["unsure"]:
+            for o in sorted(r["unsure"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
                 p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
                          % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
+            if len(r["unsure"]) > BOX_ROWS:
+                p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
+                         % (len(r["unsure"]) - BOX_ROWS))
             p.append("</ul></details>")
         p.append("</article>")
 
@@ -1098,6 +1106,8 @@ def render(results, prev):
                                  for r in suspect)))
     p.append("</section></div>")
 
+    closed_today = [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
+                    for c in closed if c["closed_on"] == TODAY]
     state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed, "watch": watch}
     p.append('<script type="application/json" id="state">%s</script>'
              % json.dumps(state, ensure_ascii=False).replace("</", "<\\/"))
@@ -1110,18 +1120,21 @@ def render(results, prev):
         "scanned": total,
         "live": live,
         "new": new_ct,
-        "new_roles": new_roles,
-        "recent_roles": recent_roles,
+        "new_roles": new_roles[:STATUS_ROWS],
+        "new_roles_total": len(new_roles),
+        "recent_roles": recent_roles[:STATUS_ROWS],
+        "recent_roles_total": len(recent_roles),
         "failed": len(broken),
         "failed_names": [r["name"] for r in broken],
         "incomplete": ["%s (%s)" % (r["name"], "empty" if r["zero"] else "truncated")
                        for r in results if not r["error"] and (r["zero"] or r["partial"])],
-        "also_new": also_new,
+        "also_new": also_new[:STATUS_ROWS],
+        "also_new_total": len(also_new),
         "unsure": sum(len(r["unsure"]) for r in results),
         "filtered": sum(len(r["other"]) for r in results),
         "closed_total": len(closed),
-        "closed_today": [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
-                         for c in closed if c["closed_on"] == TODAY],
+        "closed_today": closed_today[:STATUS_ROWS],
+        "closed_today_total": len(closed_today),
     }
     return "\n".join(p), stats
 
@@ -1153,6 +1166,21 @@ def write_status(out, stats):
     _merge(STATUS, os.path.basename(out), stats)
 
 
+# status.json is read IN FULL by the publish routine every night, so no list in
+# it may be unbounded. Adding four companies at once put 153 rows in also_new and
+# took the file from 4.7 KB to 70 KB - more than the HTML it exists to avoid
+# reading. Every capped list keeps its full count in a matching _total field, so
+# the number is never lost, only the tail.
+STATUS_ROWS = 12
+
+# Per collapsed box on the board itself. The board is an artifact the routine
+# may have to read back on a refused publish, and 158 filtered rows took board3
+# to 115 KB. New entries sort first so a cap can never hide the news.
+BOX_ROWS = 25
+
+# audit.json is not read by the routine, but it is committed nightly and a human
+# skims it weekly. Same reasoning, looser cap.
+AUDIT_ROWS = 60
 FOREIGN_SAMPLE = 15
 
 
@@ -1164,8 +1192,10 @@ def write_audit(out, results):
     payload = {
         "board": BOARD["name"],
         "stamp": TODAY,
-        "unknown_location": [x for r in results for x in tag(r, r["unsure"])],
-        "non_tech":         [x for r in results for x in tag(r, r["other"])],
+        "unknown_location":       [x for r in results for x in tag(r, r["unsure"])][:AUDIT_ROWS],
+        "unknown_location_total": sum(len(r["unsure"]) for r in results),
+        "non_tech":               [x for r in results for x in tag(r, r["other"])][:AUDIT_ROWS],
+        "non_tech_total":         sum(len(r["other"]) for r in results),
         # nearly always correct, and there can be hundreds - count them and keep
         # a sample rather than committing the whole list every night
         "foreign_count":  len(foreign),
@@ -1205,9 +1235,14 @@ def _render_audit_md(doc):
         b = doc["boards"][name]
         p += ["---", "", "## %s" % b.get("board", name),
               "", "`%s` &middot; sweep of %s" % (name, b.get("stamp", "?")), ""]
-        p += ["### Unrecognised location - %d" % len(b.get("unknown_location") or [])]
+        def _head(key, label):
+            rows = b.get(key) or []
+            tot = b.get(key + "_total", len(rows))
+            extra = " (showing the first %d)" % len(rows) if tot > len(rows) else ""
+            return ["### %s - %d%s" % (label, tot, extra)]
+        p += _head("unknown_location", "Unrecognised location")
         p += _table(b.get("unknown_location") or [])
-        p += ["", "### Not tech - %d" % len(b.get("non_tech") or [])]
+        p += [""] + _head("non_tech", "Not tech")
         p += _table(b.get("non_tech") or [])
         p += ["", "### Outside France - %d (sample below)" % b.get("foreign_count", 0)]
         p += _table(b.get("foreign_sample") or [])
