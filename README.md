@@ -5,8 +5,8 @@ Three independent nightly job watches sharing one codebase.
 | Board | File | Roster | Artifact |
 |---|---|---|---|
 | Stage Watch | `board.html` | `COMPANIES` - 20 observability / infra / dev-tools | 92513aa1 |
-| French Tech Watch | `board2.html` | `COMPANIES2` - 20 French tech / fintech / scale-ups | 277bfba8 |
-| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 9 defence / aerospace / trading / banks | 8f9b34a1 |
+| French Tech Watch | `board2.html` | `COMPANIES2` - 25 French tech / fintech / ESN / scale-ups | 277bfba8 |
+| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 12 defence / aerospace / trading / banks | 8f9b34a1 |
 
 Each board has its own hidden state block, so NEW / closed detection is per-board.
 They never share results. `make_board.py --roster 2` selects the second roster;
@@ -72,11 +72,23 @@ both.
 
 ## Filters
 
-A role is kept when its title says stage / stagiaire / PFE / intern / internship /
-fin d'etudes / cesure, its title does *not* say alternance or apprentissage, its
-location is in France, and `is_tech(title)` is true.
+A role is kept when it reads as an internship, its location is in France, and
+`is_tech(title)` is true.
 
-**Only the first of those four can delete a role.** The other two put it in a
+"Reads as an internship" is the title test - it says stage / stagiaire / PFE /
+intern / internship / fin d'etudes / cesure and does *not* say alternance or
+apprentissage - **unless the board told us what the posting is**. Where an ATS
+exposes its own contract field (`sourcestr8` at Societe Generale,
+`typeOfEmployment` on SmartRecruiters, `categories.commitment` on Lever), a
+fetcher passes it through as a fifth element of its row and it overrides the
+title outright. It has to override rather than merely add, because the title is
+wrong in both directions: SG files "Software developper" and "Developpeur Front
+React" under INTERNSHIP with nothing in the title to say so - 3 of its 5 live
+tech stages - while Thales titles an apprenticeship "STAGE - ...". A contract
+label the mapping does not recognise means "the board did not say", and the
+title test runs as before, so a new label costs nothing.
+
+**Only the internship test can delete a role.** The other two put it in a
 collapsed box on its company card instead:
 
 | Box | What is in it |
@@ -145,7 +157,43 @@ so `totalFound > 0` is the real test.
 
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 `greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`,
-`teamtailor`, `dassault`, `wttj`.
+`teamtailor`, `dassault`, `wttj`, `sgcareers`, `bnp`, `talentsoft`, `icims`,
+`gestmax`.
+
+The last four read HTML rather than JSON, which is strictly worse and is treated
+that way: each pages until a page adds nothing new, and a page ceiling marks the
+company partial so nothing of theirs can be closed. **Every selector in them was
+read off a live page by `probe_html.py`** - run that from the *Stage Watch sweep*
+Action (`probe_html` input; it skips the sweep) and write the fetcher against
+what it prints. Do not guess one: a wrong selector returns zero rows and looks
+exactly like a company with no openings.
+
+`bnp` needs the full browser navigation header set. Measured from a runner: no
+headers, a plain UA, a browser UA, and a browser UA with `Accept: */*` all get
+403 Access Denied; adding `Referer`, `Upgrade-Insecure-Requests` and the
+`Sec-Fetch-*` set gets 200 and the real listing. So it is a header check, not the
+IP block the old note assumed, and not Akamai gating the path. A 403 later on
+would be rate limiting - lengthen the sleep, do not add headers. It filters
+server-side to `form[type][]=28` (Trainee / Internship), which turns 380 pages of
+3787 offers into ~37 of 362. Paging past the last page **silently drops the
+filter and serves the unfiltered board**, so each card's own `.offer-type` is
+re-checked; that also ends the loop, since an overrun page contributes nothing.
+
+`sgcareers` is Societe Generale's own board, and it replaced a WTTJ feed that
+was showing **95** of SG's **1083** postings - an 11x under-report. Two calls:
+`/rechercher` for a session cookie and the CSRF token out of its `drupalSettings`
+blob, `/sg-careers-offers/get-token` for a ~600s JWT, then `/search-proxy.php`,
+a passthrough that moves `X-Proxy-URL` into the real request URL and takes the
+JWT in `Authorization-API`. Both paths are permitted by
+`careers.societegenerale.com/robots.txt`, which disallows only `/search/` and
+`/search?` and sets no crawl-delay; the robots block people hit is on
+`m.careers.societegenerale.com`, a different host this code never touches. The
+old "Taleo needs a PORTAL_ID" lead was a dead end - there is no `searchjobs` call
+to make - and is closed.
+
+`probe_html.py` (run from the *Probe HTML job boards* Action, never locally -
+same egress reason as `bulk_probe.py`) prints the shape of the HTML-only boards
+so a fetcher can be written against real markup instead of a guessed regex.
 
 `wttj` is the odd one out: an aggregator rather than an ATS, and the only way
 in to the French banks, whose own systems are vendor-locked or refuse a

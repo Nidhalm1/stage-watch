@@ -9,6 +9,11 @@ on:
     # ships yesterday's board and reports "0 new" while a role may have opened.
     - cron: "0 15 * * *"
   workflow_dispatch:        # lets you run it by hand from the Actions tab
+    inputs:
+      probe_html:
+        description: "Space-separated probe_html.py sources to dump before sweeping (blank = skip)"
+        required: false
+        default: ""
 
 # Two sweeps running at once would both commit the same files and the loser's
 # push is rejected, silently dropping a sweep.
@@ -34,8 +39,19 @@ jobs:
       # empty board) the step aborted, boards 2 and 3 were never built, and the
       # commit step never ran - three watches taken out by one bad roster. The
       # gate step at the end still turns the run red so a failure is visible.
+      # A new workflow FILE cannot be dispatched from a feature branch - GitHub
+      # only registers workflow_dispatch for files already on the default
+      # branch - but a dispatch of THIS file runs the branch's version of it.
+      # So the HTML-board probe rides along here until it can live on its own.
+      # Blank input = skipped, which is what every scheduled run does.
+      - name: Probe HTML job boards
+        if: inputs.probe_html != ''
+        continue-on-error: true
+        run: python probe_html.py ${{ inputs.probe_html }}
+
       - name: Batch 1 - Stage Watch
         id: b1
+        if: inputs.probe_html == ''
         continue-on-error: true
         run: |
           cp board.html prev.html 2>/dev/null || true
@@ -44,6 +60,7 @@ jobs:
 
       - name: Batch 2 - French Tech Watch
         id: b2
+        if: inputs.probe_html == ''
         continue-on-error: true
         run: |
           cp board2.html prev2.html 2>/dev/null || true
@@ -55,6 +72,7 @@ jobs:
       # than the other two.
       - name: Batch 3 - Defence & Finance Watch
         id: b3
+        if: inputs.probe_html == ''
         continue-on-error: true
         run: |
           cp board3.html prev3.html 2>/dev/null || true
@@ -62,7 +80,7 @@ jobs:
           rm -f prev3.html
 
       - name: Commit the new boards
-        if: always()
+        if: always() && inputs.probe_html == ''
         run: |
           git config user.name  "stage-watch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -88,7 +106,7 @@ jobs:
       # it here: a roster that stopped fetching should show up red in the
       # Actions tab, not pass quietly while its board goes stale.
       - name: Fail the run if a roster failed
-        if: always()
+        if: always() && inputs.probe_html == ''
         run: |
           rc=0
           for pair in "1:${{ steps.b1.outcome }}" "2:${{ steps.b2.outcome }}" "3:${{ steps.b3.outcome }}"; do

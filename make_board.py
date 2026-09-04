@@ -8,7 +8,7 @@
 Self-contained on purpose: the nightly cloud run has no access to any other
 file, so config + fetchers + template all live here.
 """
-import json, os, re, sys, html, urllib.error, urllib.parse, urllib.request, time
+import json, os, re, sys, html, http.cookiejar, urllib.error, urllib.parse, urllib.request, time
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------- config ----
@@ -138,6 +138,23 @@ COMPANIES2 = [
      "site": "jobs", "careers": "https://careers.amadeus.com/"},
     {"name": "Murex",            "ats": "workday", "tenant": "murex", "wd": "wd3",
      "site": "MurexCareerPage1", "careers": "https://careers.murex.com/"},
+    # Probed live 2026-09-04, totalFound on each: SopraSteria1 1969 (884 France),
+    # alten 1125 (608 France), Ubisoft2 281 (90 France), lever/veepee 73 (16
+    # France). The capital letters and the trailing digits in the SmartRecruiters
+    # slugs are part of the slug - "soprasteria" and "ubisoft" both 404.
+    {"name": "Sopra Steria",     "ats": "smartrecruiters", "slug": "SopraSteria1",
+     "careers": "https://www.soprasteria.com/careers"},
+    {"name": "Alten",            "ats": "smartrecruiters", "slug": "alten",
+     "careers": "https://www.alten.fr/nos-offres/"},
+    {"name": "Ubisoft",          "ats": "smartrecruiters", "slug": "Ubisoft2",
+     "careers": "https://www.ubisoft.com/en-us/company/careers"},
+    {"name": "Veepee",           "ats": "lever", "slug": "veepee",
+     "careers": "https://careers.veepee.com/"},
+    # iCIMS, 20 cards a page, ~25 pages. pr is 0-based and in_iframe=1 is what
+    # returns the bare list instead of the chrome around it.
+    {"name": "Expleo",           "ats": "icims", "pages": 35,
+     "list": "https://expleo-jobs-fr-fr.icims.com/jobs/search?pr=%d&in_iframe=1",
+     "careers": "https://expleo-jobs-fr-fr.icims.com/jobs/search?in_iframe=1"},
 ]
 
 NO_API2 = [
@@ -159,16 +176,21 @@ COMPANIES3 = [
      "site": "Airbus", "big": True, "careers": "https://www.airbus.com/en/careers"},
     {"name": "Dassault Systemes", "ats": "dassault", "slug": "3ds",
      "careers": "https://www.3ds.com/careers/jobs"},
-    # The four French banks below are reached through Welcome to the Jungle, not
-    # their own systems: BNP's careers site 403s a datacenter IP, Societe
-    # Generale's Taleo layer needs a PORTAL_ID that is not in the page source,
-    # and Credit Agricole and Natixis have no public feed at all. Confirmed
-    # 2026-09-04, each returning real stages - "Software developper" (Lille) at
-    # SocGen, "Stage - Economiste / Data visualisation" (Paris) at BNP.
-    {"name": "Societe Generale", "ats": "wttj", "slug": "societe-generale",
-     "careers": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs"},
-    {"name": "BNP Paribas",     "ats": "wttj", "slug": "bnp-paribas",
-     "careers": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs"},
+    # Societe Generale reads its OWN board (see f_sgcareers). WTTJ carried 95 SG
+    # postings against 1083 on the real board - an 11x under-report - so the
+    # aggregator was costing roles, not saving them. The old note here said SG's
+    # Taleo layer needed a PORTAL_ID: that was a dead end and is closed. There is
+    # no searchjobs call; careers.societegenerale.com has a JSON API of its own.
+    {"name": "Societe Generale", "ats": "sgcareers",
+     "careers": "https://careers.societegenerale.com/rechercher"},
+    # BNP reads its own board too - see f_bnp. The old note here said its careers
+    # site 403s a datacenter IP; that was measured against the wrong thing. The
+    # 403 is a missing-header check on the public board, and the applicant portal
+    # (bwelcome.hr.bnpparibas) is the auth-gated host that has no way in.
+    {"name": "BNP Paribas",     "ats": "bnp", "pages": 45,
+     "careers": "https://group.bnpparibas/en/careers/all-job-offers"},
+    # Credit Agricole and Natixis stay on Welcome to the Jungle: neither has a
+    # public feed of its own. Confirmed 2026-09-04, both returning real stages.
     # groupe-credit-agricole covers the group including CIB. jobs.ca-cib.com has
     # a working stage-filtered RSS feed, but it is capped at 20 items and carries
     # no location, so a role dropping off the end would look closed - see NO_API3.
@@ -176,6 +198,27 @@ COMPANIES3 = [
      "careers": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs"},
     {"name": "Natixis",         "ats": "wttj", "slug": "natixis",
      "careers": "https://www.welcometothejungle.com/fr/companies/natixis/jobs"},
+    # Amundi needs its own fetcher rather than riding on Credit Agricole: it is a
+    # separate Talentsoft tenant (jobs.amundi.com, mirrored at
+    # casa-amundi-recrute.talent-soft.com) that the CA sources do not cover. 78
+    # offers, 50 a page, and 30 of them are stages - the highest stage density of
+    # anything on these three boards. LCID=1036 is French; the RSS the tenant
+    # advertises 404s, so the list pages are the way in.
+    {"name": "Amundi",          "ats": "talentsoft", "pages": 8,
+     "base": "https://jobs.amundi.com",
+     "list": "https://jobs.amundi.com/offre-de-emploi/liste-toutes-offres.aspx?page=%d&LCID=1036",
+     "careers": "https://jobs.amundi.com/offre-de-emploi/liste-toutes-offres.aspx"},
+    # Same Talentsoft layout, different field order in the card - see
+    # f_talentsoft. 55 offers, 10 a page.
+    {"name": "Dassault Aviation", "ats": "talentsoft", "pages": 12,
+     "base": "https://dassault-aviation-cand.talent-soft.com",
+     "list": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/liste-offres.aspx?page=%d",
+     "careers": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/liste-offres.aspx"},
+    # Gestmax (Kioskemploi). 20 rows a page over 24 pages; the site is MBDA
+    # France, so nothing on it is foreign.
+    {"name": "MBDA",            "ats": "gestmax", "pages": 30,
+     "list": "https://mbda.gestmax.fr/search/index/page/%d",
+     "careers": "https://mbda.gestmax.fr/search/index/page/1"},
     # Jane Street and IMC have working boards but no French office, so they will
     # normally show 0. Kept because a Paris desk would appear here immediately.
     {"name": "Jane Street", "ats": "greenhouse", "slug": "janestreet",
@@ -192,9 +235,16 @@ COMPANIES3 = [
 #                        CLOSED, and Credit Agricole is covered via WTTJ anyway.
 #   group.bnpparibas     server-rendered and complete, but 403s a datacenter IP.
 #                        Works from a browser, not from the runner. BNP via WTTJ.
-#   socgen.taleo.net     real ATS layer, but searchjobs needs a PORTAL_ID that is
-#                        not in the page source; a regex pass over jobsearch.ftl
-#                        found none. Needs a browser network-tab pass. SG via WTTJ.
+#   socgen.taleo.net     real ATS layer, but there is no searchjobs call to make
+#                        and the PORTAL_ID hunt was chasing something that does
+#                        not exist. Closed: SG is on its own API now, see
+#                        f_sgcareers. Do not reopen this.
+#   m.careers.
+#     societegenerale.com  robots.txt blocks it. The DESKTOP host does not:
+#                        careers.societegenerale.com/robots.txt disallows only
+#                        /search/ and /search?, sets no crawl-delay, and leaves
+#                        /rechercher and /search-proxy.php open. Both endpoints
+#                        f_sgcareers uses are permitted; the mobile host is not.
 NO_API3 = [
     ("Capgemini",          "Phenom People; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                            The eightfold probe 404d, so that endpoint is unverified"),
     ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
@@ -214,6 +264,24 @@ NO_API3 = [
     ("LCL",                "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("HSBC / CCF",         "Avature (mycareer.hsbc.com); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
     ("Bpifrance",          "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    # These two are NOT "no API found" - both were located and answered. They are
+    # excluded because they have no French office, which is the same test that
+    # kept Jane Street and IMC in (working board, no France yet) and wrote off
+    # Hudson River Trading and Optiver.
+    ("XTX Markets",        "greenhouse/xtxmarketstechnologies answers 200 with 10 real jobs, but every "
+                           "one is London, Singapore or New York - zero France. Endpoint recorded so "
+                           "nobody re-probes it: boards-api.greenhouse.io/v1/boards/xtxmarketstechnologies/jobs"),
+    ("DRW",                "no public JSON board; drw.com/work-at-drw/listings is ServiceNow-backed. The "
+                           "office list it renders is CA, HK, IL, NL, SG, UK, US - no France - so even a "
+                           "working feed would show 0"),
+    ("Naval Group",        "naval-group.com/fr/nous-rejoindre answers 200 from a runner but serves a "
+                           "JS anti-bot challenge, not the board: 242839 bytes of packed script, empty "
+                           "<title>, zero anchors, and byte-for-byte identical with and without the "
+                           "contractType filter. Same class of block as BNP's careers site. The filters "
+                           "are real and recorded for the day it is reachable - contractType[]=2463 "
+                           "Stagiaire, 33228 Alternance, 2461 CDI, 2460 CDD, 2464 VIE, plus keywords=, "
+                           "country=, city=, offerFamilyCategory= - but only 3 stages were live, so this "
+                           "is a small loss. Do not re-probe it with plain HTTP; it needs a browser"),
 ]
 
 ROSTERS = {
@@ -254,7 +322,15 @@ _FR_CITIES = (
     "puteaux|malakoff|vanves|clichy|saint-cloud|s[èe]?vres|chatou|rueil|antony|orsay|gif-sur-yvette|"
     "marcoussis|les ulis|corbeil|villebon|ivry|alfortville|charenton|montreuil|pantin|aubervilliers|"
     "le bourget|villaroche|melun|compi[èe]?gne|beauvais|chartres|blois|bourg-en-bresse|roanne|vienne|"
-    "salaunes|salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse"
+    "salaunes|salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse|"
+    # added with MBDA, Dassault Aviation, Amundi and Expleo - every one of these
+    # is a real site of theirs that where() was answering "unknown" for
+    "le plessis[- ]robinson|plessis[- ]robinson|selles[- ]saint[- ]denis|bourges|"
+    "biarritz|anglet|martignas|martignas[- ]sur[- ]jalle|seclin|argonay|cazaux|"
+    "saint[- ]vulbas|"
+    "chateauroux|ch[âa]?teaudun|deols|saint-cloud|le plessis|fontenay-sous-bois|"
+    "fontenay|courbevoie|la garenne|bois-colombes|villepinte|noisy-le-grand|"
+    "champs-sur-marne|torcy|bussy|serris|coignieres|maurepas|elancourt|voisins"
 )
 # Workday and some Taleo fronts show only the region or the department.
 _FR_REGIONS = (
@@ -311,6 +387,9 @@ _NOT_FR = (
     "[ée]gypte|cairo|le caire|morocco|maroc|casablanca|rabat|tunisia|tunisie|tunis|algeria|"
     "alg[ée]rie|alger|"
     "united arab emirates|dubai|duba[ïi]|abu dhabi|saudi|arabie|riyadh|qatar|doha|"
+    # from the audit: 22 of board 3's 23 unplaced roles were these
+    "luxembourg|kirchberg|howald|jersey|guernsey|st helier|saint helier|senegal|"
+    "s[ée]n[ée]gal|dakar|"
     # US and Canadian metros that show up without a country
     "new york|nyc|brooklyn|san francisco|bay area|palo alto|mountain view|sunnyvale|san jose|"
     "santa clara|seattle|bellevue|portland|austin|dallas|houston|atlanta|chicago|boston|"
@@ -328,6 +407,10 @@ NOT_FR = re.compile(r"\b(" + _NOT_FR + r")\b", re.I)
 # 'me' is Maine - matching those case-insensitively turns "Remote in Europe" into
 # a US role. A state code only counts after a comma, which is how every board
 # writes it.
+_FOREIGN_ISO = ("it|nl|de|es|pt|be|lu|ch|at|pl|cz|sk|hu|ro|bg|hr|si|ee|lv|lt|gr|"
+                "se|no|dk|fi|ie|uk|gb|us|ca|br|mx|ar|cl|co|pe|in|cn|jp|kr|sg|hk|tw|"
+                "au|nz|za|ma|tn|dz|sn|eg|ae|qa|sa|il|tr|ua|vn|th|my|id|ph")
+NOT_FR_ISO = re.compile(r",\s*(?:%s)\s*$" % _FOREIGN_ISO, re.I)
 NOT_FR_CS = re.compile(r",\s*(A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|"
                        r"N[CDEHJMVY]|O[HKR]|P[AR]|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\b"
                        r"|\b(US|USA|U\.S\.|UK|EMEA|APAC|LATAM|NAMER|AMER|ANZ|DACH|BENELUX|MENA)\b")
@@ -338,7 +421,7 @@ def where(blob):
     Paris and London is a Paris posting as far as this board is concerned."""
     if LOC.search(blob):
         return "fr"
-    if NOT_FR.search(blob) or NOT_FR_CS.search(blob):
+    if NOT_FR.search(blob) or NOT_FR_CS.search(blob) or NOT_FR_ISO.search(blob.strip()):
         return "foreign"
     return "unknown"
 
@@ -360,7 +443,8 @@ TECH   = re.compile(
     r"t[ée]l[ée]com|robot|automatis|automation|simulation|mod[ée]lisation|\bqa\b|\btest\b|validation|"
     r"\bit\b|\bweb\b|mobile|android|\bios\b|python|javascript|typescript|\bjava\b|\bc\+\+|"
     r"architect|compilateur|compiler|database|base de donn[ée]es|\bsql\b|linux|\bsap\b|"
-    r"observabilit|monitoring|blockchain|cryptograph|statistiq|analytics)", re.I)
+    r"observabilit|monitoring|blockchain|cryptograph|statistiq|analytics|"
+    r"business analyst|analyste m[ée]tier)", re.I)
 
 # A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
 # These business-function words veto a tech match.
@@ -445,8 +529,11 @@ def f_lever(c):
     d = get("https://api.lever.co/v0/postings/%s?mode=json" % c["slug"])
     out = []
     for j in d:
-        loc = (j.get("categories") or {}).get("location", "") or ""
-        out.append((j.get("text", ""), loc, j.get("hostedUrl", ""), loc))
+        cat = j.get("categories") or {}
+        loc = cat.get("location", "") or ""
+        # commitment is Lever's own contract label ("Internship", "Stage", "CDI")
+        out.append((j.get("text", ""), loc, j.get("hostedUrl", ""), loc,
+                    _contract(cat.get("commitment"))))
     return out
 
 
@@ -460,7 +547,16 @@ def f_workable(c):
     return out
 
 
+SR_MAX = 4000               # Sopra Steria is the largest board here at ~1970
+
+
 def f_smartrecruiters(c):
+    # Paged whole rather than narrowed with the API's own &country=fr. That
+    # filter works (884 of Sopra Steria's 1969, 608 of Alten's 1125) and would
+    # save ~15 requests a day, but a server-side location filter can only ever
+    # DELETE roles, and silently: a posting whose country field is blank or
+    # mistyped disappears with nothing to show it existed. where() makes that
+    # same call locally and puts what it cannot place in a visible box instead.
     out, off = [], 0
     while True:
         d = get("https://api.smartrecruiters.com/v1/companies/%s/postings?limit=100&offset=%d" % (c["slug"], off))
@@ -469,14 +565,43 @@ def f_smartrecruiters(c):
             loc = ", ".join(x for x in [lo.get("city"), lo.get("country")] if x)
             out.append((j.get("name", ""), loc,
                         "https://jobs.smartrecruiters.com/%s/%s" % (c["slug"], j.get("id", "")),
-                        _fr(loc, lo.get("country"), lo.get("countryCode"))))
+                        _fr(loc, lo.get("country"), lo.get("countryCode")),
+                        _contract((j.get("typeOfEmployment") or {}).get("label"))))
         off += 100
-        if off >= d.get("totalFound", 0):
+        total = d.get("totalFound", 0)
+        if off >= SR_MAX and off < total:
+            PARTIAL.add(c["name"])
+            return out
+        if off >= total:
             return out
 
 
 INTERN_SUBTYPE = re.compile(r"intern|trainee|student|stage|stagiaire", re.I)
 APPRENTICE_SUBTYPE = re.compile(r"apprentice|apprenti|alternan", re.I)
+
+
+def _contract(label):
+    """An ATS's OWN contract label -> 'intern' | 'alt' | None.
+
+    Some boards say what a posting is - Societe Generale's sourcestr8,
+    SmartRecruiters' typeOfEmployment, Lever's categories.commitment - and a
+    fetcher may pass that through as a fifth element of its row. scan() lets it
+    OVERRIDE the title test, because the title is wrong in both directions:
+    Societe Generale files "Software developper" and "Developpeur Front React"
+    under INTERNSHIP with nothing in the title to say so (3 of its 5 live tech
+    stages), and Thales titles an apprenticeship "STAGE - ...".
+
+    None means "this board did not say", and the title test runs as before -
+    so a label this does not recognise costs nothing.
+    """
+    text = str(label or "").strip()
+    if not text:
+        return None
+    if APPRENTICE_SUBTYPE.search(text):
+        return "alt"
+    if INTERN_SUBTYPE.search(text):
+        return "intern"
+    return None
 
 
 def _workday_intern_facets(api):
@@ -734,10 +859,420 @@ def _verify(url):
         return "blocked"
 
 
+# Societe Generale. Its careers site is a Drupal front over a Sinequa ("CES")
+# search service at api.socgen.com, reached through a passthrough on the site's
+# own host. Two calls, both permitted by careers.societegenerale.com/robots.txt
+# (which disallows only /search/ and /search?, and sets no crawl-delay - the
+# robots block people run into is on m.careers.societegenerale.com, a different
+# host this code never touches):
+#
+#   1. GET /rechercher            - sets the session cookie and carries the CSRF
+#                                   token in its drupalSettings JSON blob
+#      GET /sg-careers-offers/get-token
+#                                 - with that cookie + token, returns a JWT
+#                                   (OAuth2 client_credentials, ~600s)
+#   2. POST /search-proxy.php     - a pure passthrough: it moves X-Proxy-URL into
+#                                   the real request URL. The JWT goes in
+#                                   Authorization-API, NOT Authorization.
+#
+# This replaced a Welcome to the Jungle feed that showed 95 of SG's 1083
+# postings. Polled once a day by the sweep, which is what "politely" means here.
+SG_HOST = "https://careers.societegenerale.com"
+SG_API  = ("https://api.socgen.com/business-support/it-for-it-support/"
+           "cognitive-service-knowledge/api/v1/search-profile")
+SG_PAGE = 100
+SG_MAX  = 20                # pages; 2000 is far past the whole board (~1083)
+
+# Field names are SG's, from the site's own global-quantum.js:
+#   sourcestr6 "job"|"page"   sourcestr4  reference     sourcestr7  location text
+#   sourcecsv1 location ids   sourcestr8  contract      sourcestr10 job family
+#   sourcestr12 <ref>-<lang>  sourcedatetime1 published  url1        offer URL
+# Contract ids: INTERNSHIP Stage - APPRENTICESHIP Alternance - STANDARD CDI -
+# TEMPORARY_WORK CDD - COOPERATIVE V.I.E - GRADUATE_JOB - SUMMER_JOB - EXPERIENCED.
+
+
+def _sg_field(doc, name):
+    """Sinequa returns metadata flat on the doc; some profiles nest it."""
+    if name in doc:
+        return doc[name]
+    for key in ("metadata", "Metadata", "columns", "Columns"):
+        sub = doc.get(key)
+        if isinstance(sub, dict) and name in sub:
+            return sub[name]
+    return None
+
+
+def _sg_token(opener):
+    req = urllib.request.Request(SG_HOST + "/rechercher", headers={
+        "User-Agent": UA["User-Agent"],
+        "Accept": "text/html,application/xhtml+xml"})
+    with opener.open(req, timeout=40) as r:
+        page = r.read().decode("utf-8", "replace")
+    m = re.search(r'"csrfToken"\s*:\s*"([^"]+)"', page)
+    if not m:
+        raise RuntimeError("no csrfToken in /rechercher - the page shape changed")
+    req = urllib.request.Request(SG_HOST + "/sg-careers-offers/get-token", headers={
+        "User-Agent": UA["User-Agent"],
+        "Accept": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+        "X-CSRF-Token": m.group(1)})
+    with opener.open(req, timeout=40) as r:
+        tok = (json.load(r) or {}).get("token")
+    if not tok:
+        raise RuntimeError("get-token returned no token")
+    return tok
+
+
+def f_sgcareers(c):
+    # One cookie jar for the whole fetch: /rechercher sets the session that
+    # get-token checks, and a fresh opener per call would fail that check.
+    opener = urllib.request.build_opener(
+        urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    token = _sg_token(opener)
+    out, frm, seen = [], 0, set()
+    for _ in range(SG_MAX):
+        # Filtered to internships in France, but NOT to a job family. The family
+        # ids exist (BJ725 IT, JN482 Innovation/Digital/Projet) and would cut 118
+        # French internships to 14, but that is the same call is_tech() makes -
+        # and is_tech shows what it rejected in a box on the card, where a
+        # mistake costs a glance. A server-side family filter just deletes.
+        body = {"profile": "ces_profile_sgcareers",
+                "query": {"advanced": [
+                    {"type": "simple", "name": "sourcestr6", "op": "eq", "value": "job"},
+                    {"type": "multi", "name": "sourcestr8", "op": "eq",
+                     "values": ["INTERNSHIP"]},
+                    {"type": "multi", "name": "sourcecsv1", "op": "eq",
+                     "values": ["FRA"]}],
+                    "skipCount": SG_PAGE, "skipFrom": frm,
+                    "sort": "sourcedatetime1.desc"},
+                "lang": "fr", "responseType": "SearchResult"}
+        req = urllib.request.Request(
+            SG_HOST + "/search-proxy.php", data=json.dumps(body).encode(),
+            headers={"Content-Type": "application/json",
+                     "Accept": "application/json",
+                     "User-Agent": UA["User-Agent"],
+                     "Authorization-API": "Bearer " + token,
+                     "X-Proxy-URL": SG_API})
+        with opener.open(req, timeout=60) as r:
+            d = json.load(r)
+        docs = ((d.get("Result") or {}).get("Docs")) or []
+        for doc in docs:
+            if not isinstance(doc, dict):
+                continue
+            # The three filters above are server-side, so check they held. A
+            # filter that quietly stopped narrowing would put SG's 1083 CDIs on
+            # an internship board.
+            kind = _sg_field(doc, "sourcestr6")
+            if kind and str(kind) != "job":
+                continue
+            title = str(_sg_field(doc, "title") or "").strip()
+            url   = str(_sg_field(doc, "url1") or "").strip()
+            if not title or not url:
+                continue
+            url = urllib.parse.urljoin(SG_HOST, url)
+            if url in seen:
+                continue
+            seen.add(url)
+            loc = str(_sg_field(doc, "sourcestr7") or "").strip()
+            codes = _sg_field(doc, "sourcecsv1") or ""
+            if isinstance(codes, (list, tuple)):
+                codes = ";".join(str(x) for x in codes)
+            # sourcecsv1 is "<City>;<Country>" ids - the FRA token is the most
+            # reliable France signal on the whole record, so feed it to _fr()
+            # rather than hoping the town is in _FR_CITIES (Fontenay-sous-Bois,
+            # La Defense and Lille's spellings are not all in there).
+            out.append((title, loc, url,
+                        _fr(loc, *re.split(r"[;,\s]+", str(codes))),
+                        _contract(_sg_field(doc, "sourcestr8"))))
+        frm += SG_PAGE
+        total = int(d.get("TotalCount") or 0)
+        if not docs or frm >= total:
+            break
+        time.sleep(0.3)
+    else:
+        # Ran out of pages before running out of results: shown, nothing closed.
+        PARTIAL.add(c["name"])
+    return out
+
+
+# ---------------------------------------------------------- HTML boards ----
+# Four sources below publish no JSON at all and are read from their list pages.
+# That is strictly worse than an API and is treated that way: each pages until a
+# page adds nothing new, and a page ceiling marks the company PARTIAL rather than
+# letting a missing role look closed. Every selector here was read off a live
+# page by probe_html.py - none of it is guessed. Re-run that probe before
+# changing any of these patterns.
+_STRIP = re.compile(r"(?is)<(script|style)\b.*?</\1\s*>")
+_TAG   = re.compile(r"<[^>]+>")
+
+
+def get_text(url, extra=None):
+    """A page as text. Sends a browser Accept - UA's JSON Accept gets a 406 or a
+    different rendering out of several of these hosts."""
+    req = urllib.request.Request(url, headers={
+        "User-Agent": UA["User-Agent"],
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+        **(extra or {})})
+    with urllib.request.urlopen(req, timeout=45) as r:
+        return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
+
+
+def _plain(fragment):
+    """Markup -> the words a human would read, entities resolved."""
+    return re.sub(r"\s+", " ",
+                  html.unescape(_TAG.sub(" ", _STRIP.sub(" ", fragment or "")))).strip()
+
+
+def _blocks(page, open_re):
+    """Slice a page into one string per card. A card runs from its opening tag to
+    the next one, which is exact enough for these layouts and needs no parser."""
+    starts = [m.start() for m in open_re.finditer(page)]
+    return [page[st:(starts[i + 1] if i + 1 < len(starts) else min(len(page), st + 8000))]
+            for i, st in enumerate(starts)]
+
+
+def _paged(c, url_for, parse, pages, headers=None):
+    """Page a list until a page adds nothing new. parse(page) -> rows keyed by url."""
+    out, seen = [], set()
+    for p in range(pages):
+        try:
+            page = get_text(url_for(p), headers)
+        except urllib.error.HTTPError as e:
+            if p and e.code in (404, 410):
+                return out                      # ran off the end of the pagination
+            raise
+        fresh = 0
+        for row in parse(page):
+            if row[2] in seen:
+                continue
+            seen.add(row[2])
+            fresh += 1
+            out.append(row)
+        # Paging past the last page does NOT reliably 404 - Talentsoft repeats a
+        # page and BNP quietly drops the filter - so "this page added nothing
+        # new" is the stop condition, not the status code.
+        if not fresh:
+            return out
+        time.sleep(0.4)
+    # Every page we were willing to fetch had something new on it, so there is
+    # very likely more. Shown, but nothing of theirs may be closed.
+    PARTIAL.add(c["name"])
+    return out
+
+
+# --- Talentsoft (Amundi, Dassault Aviation) ---------------------------------
+# One <li class="ts-offer-list-item"> per offer, holding the title link and a
+# <ul class="ts-offer-list-item__description"> of loose fields. The ORDER of
+# those fields differs per tenant - Amundi is [contract, entity, country,
+# postcode], Dassault Aviation is [ref, date, contract, city] - so the contract
+# is found by asking every field what it is rather than by position.
+_TS_CARD = re.compile(r'<li[^>]*class="[^"]*ts-offer-list-item[^"]*"', re.I)
+_TS_LINK = re.compile(r'<a[^>]*href="([^"]*/offre-de-emploi/emploi[^"]*\.aspx[^"]*)"[^>]*>(.*?)</a>',
+                      re.I | re.S)
+_TS_DESC = re.compile(r'<ul[^>]*class="[^"]*ts-offer-list-item__description[^"]*"[^>]*>(.*?)</ul>',
+                      re.I | re.S)
+_LI      = re.compile(r"<li[^>]*>(.*?)</li>", re.I | re.S)
+# a reference or a date is never the town
+_TS_NOISE = re.compile(r"^\s*(?:r[ée]f\.?\s*:|\d{1,2}/\d{1,2}/\d{2,4}\s*$|\d{4}-\d+\s*$)", re.I)
+
+
+def f_talentsoft(c):
+    base = c["base"]
+
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _TS_CARD):
+            m = _TS_LINK.search(card)
+            if not m:
+                continue
+            title = _plain(m.group(2))
+            if not title:
+                continue
+            d = _TS_DESC.search(card)
+            fields = [_plain(x) for x in _LI.findall(d.group(1))] if d else []
+            fields = [f for f in fields if f]
+            ct, ct_at = None, -1
+            for n, f in enumerate(fields):
+                k = _contract(f)
+                if k:
+                    ct, ct_at = k, n
+                    break
+            # The town is the last field on both tenants - but skip the contract,
+            # the reference and the date, or a card that carries no location at
+            # all comes out located "Stage" or "04/09/2026". A card with nothing
+            # left shows blank, which the board renders as "no location given":
+            # honest, and it lands in the unrecognised-location box where it can
+            # be seen rather than being quietly mislabelled.
+            shown = [f for n, f in enumerate(fields)
+                     if n != ct_at and not _TS_NOISE.match(f)]
+            rows.append((title, shown[-1] if shown else "",
+                         urllib.parse.urljoin(base, html.unescape(m.group(1))),
+                         " ".join(fields), ct))
+        return rows
+
+    return _paged(c, lambda p: c["list"] % (p + 1), parse, c.get("pages", 12))
+
+
+# --- iCIMS (Expleo) ---------------------------------------------------------
+# <li class="iCIMS_JobCardItem">, then a <dl> of labelled fields. The location
+# field is the one whose <dt> carries the map-marker glyph: matching the LABEL
+# would pick up "Lieu de travail", which says "Sur place" or "Hybride", not where.
+_IC_CARD = re.compile(r'<li[^>]*class="[^"]*iCIMS_JobCardItem[^"]*"', re.I)
+_IC_LINK = re.compile(r'<a[^>]*href="([^"]*/jobs/\d+/[^"]*)"[^>]*>(.*?)</a>', re.I | re.S)
+_IC_H3   = re.compile(r"<h3[^>]*>(.*?)</h3>", re.I | re.S)
+_IC_TAG  = re.compile(r'<dt[^>]*>(.*?)</dt>\s*<dd[^>]*>(.*?)</dd>', re.I | re.S)
+_IC_TYPE = re.compile(r"type\s*d.{0,3}emploi|employment\s*type|job\s*type", re.I)
+
+
+def f_icims(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _IC_CARD):
+            m = _IC_LINK.search(card)
+            if not m:
+                continue
+            h3 = _IC_H3.search(m.group(2))
+            title = _plain(h3.group(1) if h3 else m.group(2))
+            if not title:
+                continue
+            loc, ct = "", None
+            for dt, dd in _IC_TAG.findall(card):
+                val = _plain(dd)
+                if "map-marker" in dt and not loc:
+                    loc = val
+                elif _IC_TYPE.search(_plain(dt)):
+                    ct = ct or _contract(val)
+            # "FR-64-Biarritz": the country prefix is the only France signal for
+            # a town no city list has, so hand it to _fr rather than the matcher.
+            rows.append((title, loc, html.unescape(m.group(1)), _fr(loc, loc.split("-")[0]), ct))
+        return rows
+
+    return _paged(c, lambda p: c["list"] % p, parse, c.get("pages", 35))
+
+
+# --- Gestmax / Kioskemploi (MBDA) -------------------------------------------
+# A sortable table, one <tr class="... vacancy-id-N"> per offer, with the title,
+# date, sector and location each in a <td headers="..."> cell.
+#
+# EVERY cell is wrapped in its own copy of the same offer link. Reading the text
+# between one link and the next therefore yields nothing at all, which is why the
+# first version of this parsed 472 of MBDA's 475 offers and placed 0 of them in
+# France. Parse the row and read the cells by name.
+_GX_ROW  = re.compile(r'<tr[^>]*class="[^"]*vacancy-id-\d+[^"]*"', re.I)
+_GX_CELL = re.compile(r'<td[^>]*headers="([a-z_]+)"[^>]*>(.*?)</td>', re.I | re.S)
+_GX_HREF = re.compile(r'href="(https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*)"', re.I)
+# Gestmax writes the town as "Le Plessis Robinson (92)" - no hyphens, and with
+# the French department number. The number is the reliable signal: it places
+# every French town whatever the city list happens to spell, and cannot match a
+# foreign site, which is written "Stevenage (UK)".
+_GX_DEPT = re.compile(r"\(\s*(?:0[1-9]|[1-8]\d|9[0-8]|2[AB]|97[1-6])\s*\)")
+
+
+def f_gestmax(c):
+    def parse(page):
+        rows = []
+        for row in _blocks(page, _GX_ROW):
+            row = row.split("</tr>")[0]
+            cells = {k: _plain(v) for k, v in _GX_CELL.findall(row)}
+            href  = _GX_HREF.search(row)
+            title = cells.get("vacancy_title", "")
+            if not href or not title:
+                continue
+            loc = cells.get("vac_localisation", "")
+            blob = ("%s France" % loc) if _GX_DEPT.search(loc) else loc
+            rows.append((title, loc, html.unescape(href.group(1)), blob))
+        return rows
+
+    return _paged(c, lambda p: c["list"] % (p + 1), parse, c.get("pages", 30))
+
+
+# --- BNP Paribas ------------------------------------------------------------
+# group.bnpparibas/en/careers/all-job-offers, server-rendered and complete. What
+# it wants is the FULL browser navigation header set: measured from a runner,
+# no headers / a plain UA / a browser UA / a browser UA with Accept:*/* all get
+# 403 Access Denied, and adding Referer, Upgrade-Insecure-Requests and the
+# Sec-Fetch-* set gets 200 and the real listing. So this is a header check, not
+# the IP block the old note assumed - and NOT Akamai gating the path, though
+# Akamai Bot Manager is on the domain. A 403 appearing later would be rate
+# limiting, and the answer to that is a longer sleep, not more headers.
+#
+# robots.txt disallows only URLs carrying ref, cat, field, key, NumPage or
+# as_url_id. form[type][] and page are none of those.
+#
+# form[type][] ids, read off the page: 2 Permanent - 146 Fixed Term - 28 Trainee
+# / Internship - 33 International Volunteer - 35 Summer Job - 36 Apprenticeship -
+# 2374 Zero Hours - 2134 Graduate Programme. Filtering to 28 turns 380 pages of
+# 3787 offers into ~37 pages of 362, which is the difference between polite and
+# not. Location is NOT filtered server-side; where() does that locally and shows
+# what it cannot place.
+BNP_HOST = "https://group.bnpparibas"
+BNP_INTERNSHIP = "28"       # form[type][] id for "Trainee / Internship"
+BNP_QUERY = urllib.parse.urlencode({"form[type][]": BNP_INTERNSHIP})
+
+
+def _bnp_url(page):
+    """page counts from 0 here and is sent 1-BASED, because ?page=0 returns a
+    page with zero cards on it. Measured: ?page=0 -> 0 cards, ?page=1 -> 10,
+    ?page=2 -> 10. Sending 0 made the first page look empty and ended the loop
+    before it started, which is how this fetched nothing at all while answering
+    200. Also measured: form[type] without the [] is ignored and the board comes
+    back unfiltered, and type[] is a 400 - only form[type][] filters.
+
+    Built here rather than kept as a %-template: the query percent-escapes to
+    form%5Btype%5D%5B%5D, which a later %-format reads as a conversion."""
+    return "%s/en/careers/all-job-offers?%s&page=%d" % (BNP_HOST, BNP_QUERY, page + 1)
+BNP_HEADERS = {
+    # The bare "Mozilla/5.0" in UA is a bot signature and 403s here: the ladder
+    # rung that got 200 sent a full Chrome string, so send exactly that.
+    "User-Agent": ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+    "Referer": BNP_HOST + "/en/careers",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin", "Sec-Fetch-User": "?1",
+    "Connection": "keep-alive"}
+
+_BNP_CARD  = re.compile(r'<article[^>]*class="[^"]*card-offer[^"]*"', re.I)
+_BNP_LINK  = re.compile(r'<a[^>]*href="([^"]*/job-offer/[^"]*)"', re.I)
+_BNP_TITLE = re.compile(r'<h3[^>]*class="[^"]*title-4[^"]*"[^>]*>(.*?)</h3>', re.I | re.S)
+_BNP_TYPE  = re.compile(r'<div[^>]*class="offer-type"[^>]*>(.*?)</div>', re.I | re.S)
+_BNP_LOC   = re.compile(r'<div[^>]*class="offer-location"[^>]*>(.*?)</div>', re.I | re.S)
+
+
+def f_bnp(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _BNP_CARD):
+            link = _BNP_LINK.search(card)
+            ttl  = _BNP_TITLE.search(card)
+            if not link or not ttl:
+                continue
+            kt = _BNP_TYPE.search(card)
+            kind = _contract(_plain(kt.group(1)) if kt else "")
+            # Paging past the last page silently drops the filter and serves the
+            # unfiltered board, so the card's OWN offer-type is checked rather
+            # than trusted. Everything past the end reads "Permanent" and is
+            # dropped here, which also ends the loop: _paged stops when a page
+            # contributes nothing.
+            if kind != "intern":
+                continue
+            lm = _BNP_LOC.search(card)
+            loc = _plain(lm.group(1)) if lm else ""
+            rows.append((_plain(ttl.group(1)), loc,
+                         urllib.parse.urljoin(BNP_HOST, html.unescape(link.group(1))),
+                         loc, kind))
+        return rows
+
+    return _paged(c, _bnp_url, parse, c.get("pages", 45), BNP_HEADERS)
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
-         "dassault": f_dassault, "wttj": f_wttj}
+         "dassault": f_dassault, "wttj": f_wttj, "sgcareers": f_sgcareers,
+         "talentsoft": f_talentsoft, "icims": f_icims, "gestmax": f_gestmax,
+         "bnp": f_bnp}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -749,7 +1284,31 @@ ENDPOINT = {
     "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
     "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
     "wttj":            lambda c: "csekhvms53-dsn.algolia.net wk_cms_jobs_production (org %s)" % c["slug"],
+    "sgcareers":       lambda c: "careers.societegenerale.com/search-proxy.php (CES search-profile)",
+    "talentsoft":      lambda c: (c["list"] % 1).split("?")[0].replace("https://", ""),
+    "icims":           lambda c: (c["list"] % 0).split("?")[0].replace("https://", ""),
+    "gestmax":         lambda c: (c["list"] % 1).replace("https://", ""),
+    "bnp":             lambda c: "group.bnpparibas/en/careers/all-job-offers (form[type][]=28)",
 }
+
+
+def _is_intern(j):
+    """Is this row an internship?
+
+    A row may carry the board's OWN contract label as a fifth element (see
+    _contract). When it does, it wins outright - it is the field the ATS filters
+    on, which beats a word in the title in both directions. Societe Generale
+    lists "Software developper" as INTERNSHIP with no hint in the title, and
+    Thales titles an apprenticeship "STAGE - ...".
+
+    With no label, the old test stands: the title says internship, and neither
+    the title nor the location blob says alternance."""
+    said = j[4] if len(j) > 4 else None
+    if said == "intern":
+        return True
+    if said == "alt":
+        return False
+    return bool(INTERN.search(j[0])) and not ALT.search(j[0]) and not ALT.search(j[3])
 
 
 def scan():
@@ -773,8 +1332,7 @@ def scan():
         # board with an odd location string; this way it holds a couple a week.
         # The title can lie: Thales titles an apprenticeship "STAGE - ..." while
         # its URL and Workday contract type both say alternance/apprentice.
-        itn = [(j, w) for j, w in placed if INTERN.search(j[0])
-               and not ALT.search(j[0]) and not ALT.search(j[3])]
+        itn = [(j, w) for j, w in placed if _is_intern(j)]
         rec = lambda j: {"title": j[0], "location": j[1], "url": j[2]}
         row["hits"]    = [rec(j) for j, w in itn if w == "fr" and is_tech(j[0])]
         row["other"]   = [rec(j) for j, w in itn if w == "fr" and not is_tech(j[0])]
@@ -945,8 +1503,11 @@ def render(results, prev):
             u = h["url"]
             h["first_seen"] = prev_posts.get(u, {}).get("first_seen", TODAY)
             h["is_new"] = (u not in prev_posts) and bool(prev_posts)
+            # location included: the nightly ping reads only status.json, and
+            # "Software developper" is a different decision in Lille than in
+            # La Defense. STATUS_ROWS still caps the list, so this cannot grow.
             entry = {"title": h["title"], "company": r["name"], "url": u,
-                     "first_seen": h["first_seen"]}
+                     "location": h["location"], "first_seen": h["first_seen"]}
             if h["is_new"]:
                 new_ct += 1
                 new_roles.append(entry)

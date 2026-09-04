@@ -23,8 +23,8 @@ mistake (a French site being read as foreign).
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
 ### Not tech - 7
@@ -69,7 +69,7 @@ mistake (a French site being read as foreign).
 
 _none_
 
-### Not tech - 28
+### Not tech - 48
 
 | Company | Title | Location |
 |---|---|---|
@@ -101,11 +101,32 @@ _none_
 | Deezer | [Artist Relations France Coordinator - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d) | Paris, FR |
 | Deezer | [Motion Design - 6 months Internship m/f/d - French speaking mandatory](https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory) | Paris, FR |
 | Deezer | [Legal & Business Affairs - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d) | Paris, FR |
+| Sopra Steria | [Stage Consultant(e) - Transformation digitale - People&Change - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000147559756) | Courbevoie, fr |
+| Sopra Steria | [Stage - Chef/fe de Projet - Services Publics - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000147258373) | Courbevoie, fr |
+| Sopra Steria | [Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie](https://jobs.smartrecruiters.com/SopraSteria1/744000145930048) | Courbevoie, fr |
+| Sopra Steria | [Stage PPI - Juriste en droit social](https://jobs.smartrecruiters.com/SopraSteria1/744000143852928) | Paris, fr |
+| Sopra Steria | [Stage Consultant(e) fonctionnel(le) - Aéronautique - Bordeaux](https://jobs.smartrecruiters.com/SopraSteria1/744000140908198) | Mérignac, fr |
+| Sopra Steria | [Stage Conseil - Transformation Digitale - Energie - IDF](https://jobs.smartrecruiters.com/SopraSteria1/744000138715890) | Courbevoie, fr |
+| Sopra Steria | [Stage PPI - Juriste droit social France](https://jobs.smartrecruiters.com/SopraSteria1/744000135956173) | Courbevoie, fr |
+| Sopra Steria | [Stage - Chargé(e) de projet Solidarités & Engagement citoyen](https://jobs.smartrecruiters.com/SopraSteria1/744000135648124) | Paris, fr |
+| Sopra Steria | [Stage de fin d'études - Consultant(e) en Transformation digitale – Services Publics - IDF](https://jobs.smartrecruiters.com/SopraSteria1/744000128533061) | Courbevoie, fr |
+| Sopra Steria | [Stage - Consultant PLM et Sustainability : ACV, DPP et CSRD - Colomiers](https://jobs.smartrecruiters.com/SopraSteria1/744000111047098) | Colomiers, fr |
+| Sopra Steria | [Stage de fin d'études - Consultant en transformation digitale](https://jobs.smartrecruiters.com/SopraSteria1/744000104203669) | Courbevoie, fr |
+| Sopra Steria | [Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France](https://jobs.smartrecruiters.com/SopraSteria1/744000099047104) | Paris, fr |
+| Sopra Steria | [Stage - Chargé (e)  de Recrutement](https://jobs.smartrecruiters.com/SopraSteria1/744000091562029) | Colomiers, fr |
+| Alten | [STAGE - Chargé de projet qualité](https://jobs.smartrecruiters.com/alten/744000146498239) | Vitrolles, fr |
+| Alten | [Internship Offer – Product Owner (Project Management Tool)](https://jobs.smartrecruiters.com/alten/744000131167400) | Toulouse, fr |
+| Ubisoft | [Internship 6 months - Technical Designer (F/M/NB) [AAA Project]](https://jobs.smartrecruiters.com/Ubisoft2/744000147274629) | Annecy, fr |
+| Ubisoft | [Assistant(e) Chef(fe) de Projet Communication & Evènementiel - Stage 6 mois - (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000147273141) | Annecy, fr |
+| Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/6c32487d-4531-49ea-b5fc-b1facc8de206) | Saint-Denis |
+| Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c) | Saint Vulbas |
+| Veepee | [Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)](https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2) | Saint-Denis |
 
-### Outside France - 13 (sample below)
+### Outside France - 39 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
+| Qonto | [Social Media Werkstudent (m/w/d)](https://jobs.lever.co/qonto/cb2053c9-938e-4b73-a3c8-d8d42243b301) | Berlin |
 | Aircall | [Regional Marketing Intern - NA Market](https://jobs.lever.co/aircall/0fbc9b05-520b-4cbb-a276-5a9a75e8f3bf) | San Francisco Office |
 | Aircall | [Regional Marketing Intern, LATAM (12 months)](https://jobs.lever.co/aircall/0e52ec00-a327-49de-9378-6b8487229f89) | San Francisco Office |
 | Aircall | [Sales Intern - UKI Market](https://jobs.lever.co/aircall/f1d2fb78-a40b-4a33-ab8f-75e573ba9749) | London Office |
@@ -119,6 +140,7 @@ _none_
 | Amadeus | [Software Developer Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590) | Taguig-Metro-Manila, R31590 |
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
 | Murex | [Murex Internship](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beijing/Murex-Internship_JR101126-1) | Beijing, JR101126; Intern |
+| Sopra Steria | [Stage Business Analyst – Reporting & Controlling](https://jobs.smartrecruiters.com/SopraSteria1/744000146410169) | ASSAGO, it |
 
 ---
 
@@ -126,13 +148,14 @@ _none_
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 1
+### Unrecognised location - 2
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
+| Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 
-### Not tech - 156 (showing the first 60)
+### Not tech - 231 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -142,62 +165,62 @@ _none_
 | Thales | [STAGE - Legal M&A - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
 | Airbus | [Stage Peintre Aéro / Opérateur(trice) matériau composite H/F](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249) | Salaunes, JR10438249 |
 | Airbus | [Testia SAS – Stage Comptabilité (H/F) – Toulouse](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292) | Toulouse-Area, JR10437292 |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_saint-claude) | Saint-Claude, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_lure) | Lure, France |
-| Societe Generale | [1 STAGE EN 1 JOUR - Analyste Quantitatif](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-analyste-quantitatif_la-defense_SG_0jJ6rk) | La Défense, France |
-| Societe Generale | [1 STAGE EN 1 JOUR - Assistant Trader](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-assistant-trader_la-defense_SG_LOA6oM6) | La Défense, France |
-| Societe Generale | [1 STAGE EN 1 JOUR - Assistant ou analyste stratégiste](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-assistant-ou-analyste-strategiste_la-defense_SG_Rox6Gd8) | La Défense, France |
-| Societe Generale | [Stage Digital Alerting BAD](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-digital-alerting-bad_fontenay-sous-bois) | Fontenay-Sous-Bois, France |
-| Societe Generale | [Stage Assistant Directeur de Groupe](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-directeur-de-groupe_merignac) | Mérignac, France |
-| Societe Generale | [Stage Conseil Marché de l'entreprise](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-de-l-entreprise_compiegne_SG_GVZqLVy) | Compiègne, France |
-| Societe Generale | [Stage Conseil Marché de l'entreprise](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-de-l-entreprise_arras) | Arras, France |
-| Societe Generale | [Stage Banquier Privé](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_bayonne) | Bayonne, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_champagnole) | Champagnole, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dole) | Dole, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_auxonne) | Auxonne, France |
-| Societe Generale | [Stage - Conseil Marché des Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-des-particuliers_firminy) | Firminy, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_villeurbanne) | Villeurbanne, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_besancon_SG_xzd8Aaw) | Besançon, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_blois) | Blois, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_loches) | Loches, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_joue-les-tours) | Joué-Lès-Tours, France |
-| Societe Generale | [Stage Banquier Privé](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_la-rochelle) | La Rochelle, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_auxerre) | Auxerre, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_avallon) | Avallon, France |
-| Societe Generale | [Stage marché patrimonial](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_le-cannet) | Le Cannet, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_montceau-les-mines) | Montceau-Les-Mines, France |
-| Societe Generale | [Stage Conseil Marché des professionnels](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-des-professionnels_cannes_SG_9zMqaWq) | Cannes, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_chalon-sur-saone) | Chalon-Sur-Saône, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dijon_SG_2eqyjmz) | Dijon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_belfort) | Belfort, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_le-creusot) | Le Creusot, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_besancon) | Besançon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dijon) | Dijon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_saint-remy) | Saint-Remy, France |
-| Societe Generale | [Stage - Conseiller Clientèle professionnels](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-professionnels_besancon) | Besançon, France |
-| Societe Generale | [Aviation Advisory Intern](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/aviation-advisory-intern_la-defense) | La Défense, France |
-| Societe Generale | [Stage Marché des professionnels](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-des-professionnels_saint-martin-du-var) | Saint-Martin-Du-Var, France |
-| Societe Generale | [Stage Marché des Particuliers](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-des-particuliers_nice_SG_37GKOwX) | Nice, France |
-| Societe Generale | [Stage Banquier Privé](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_biarritz) | Biarritz, France |
-| Societe Generale | [Stage Assistant Directeur d'Agence](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-directeur-d-agence_le-bouscat) | Le Bouscat, France |
-| Societe Generale | [STAGE Chargé d'Affaires Entreprises](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-charge-d-affaires-entreprises_chalon-sur-saone_SG_AKMxNZo) | Chalon-Sur-Saône, France |
-| Societe Generale | [STAGE Chargé d'Affaires Entreprises](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-charge-d-affaires-entreprises_dijon) | Dijon, France |
-| Societe Generale | [Stage Animateur Marketing](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-animateur-marketing_andrezieux-boutheon) | Andrézieux-Bouthéon, France |
-| Societe Generale | [Stage Assistant Banquier Privé](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-banquier-prive_talence) | Talence, France |
-| Societe Generale | [Stage marché patrimonial](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_menton) | Menton, France |
-| Societe Generale | [Stagiaire Animation Commerciale & Supports Stratégiques](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stagiaire-animation-commerciale-supports-strategiques_paris) | Paris, France |
-| BNP Paribas | [Stage - Analyste Transactions Immobilières  F/H](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-transactions-immobilieres-f-h_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage- Assistant pôle SOFICA - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-pole-sofica-h-f_paris) | Paris, France |
-| BNP Paribas | [STAGE - PROJECT MANAGEMENT OFFICER - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-project-management-officer-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Analyste Coverage Banques France & Luxembourg - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-coverage-banques-france-luxembourg-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Chargé de Communication Interne -  H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-communication-interne-h-f_levallois) | Levallois, France |
-| BNP Paribas | [STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS  - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-business-analyst-ultra-hight-net-worth-clients-h-f_paris_BP_j5Xr67l) | Paris, France |
-| BNP Paribas | [Stage – Contrôleur de gestion ALM Treasury – H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-controleur-de-gestion-alm-treasury-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - ESG Analyst F/H](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-esg-analyst-f-h_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Analyste risques opérationnels H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-risques-operationnels-h-f_paris_BP_dRgLraV) | Paris, France |
-| BNP Paribas | [Stage - Analyste Conformité AML/CFT H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris) | Paris, France |
+| Societe Generale | [Juriste Conseil juridique et ingénierie patrimoniale](https://careers.societegenerale.com/offres-d-emploi/juriste-conseil-juridique-et-ingenierie-patrimoniale-260009UX-fr) | La Defense, France |
+| Societe Generale | [Auditeur Interne - Banque de Détail, Banque Privée et Assurance en France](https://careers.societegenerale.com/offres-d-emploi/auditeur-interne-banque-de-detail-banque-privee-et-assurance-en-france-26000HQH-fr) | La Defense, France |
+| Societe Generale | [Analyste Private Equity](https://careers.societegenerale.com/offres-d-emploi/analyste-private-equity-26000JAG-fr) | France |
+| Societe Generale | [Chargé(e) de recouvrement - Juriste](https://careers.societegenerale.com/offres-d-emploi/chargee-de-recouvrement-juriste-26000J2A-fr) | Bordeaux, France |
+| Societe Generale | [Analyste risques suivi d'activité de marché](https://careers.societegenerale.com/offres-d-emploi/analyste-risques-suivi-dactivite-de-marche-26000JBR-fr) | La Defense, France |
+| Societe Generale | [Conseiller fusion et acquisition](https://careers.societegenerale.com/offres-d-emploi/conseiller-fusion-et-acquisition-26000JA1-fr) | Lyon, France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGE-fr) | Ardres, France |
+| Societe Generale | [Stage marché des particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-marche-des-particuliers-26000JGF-fr) | Nice, France |
+| Societe Generale | [Assistant d'études RH](https://careers.societegenerale.com/offres-d-emploi/assistant-detudes-rh-26000JBU-fr) | Courbevoie, France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000J9Y-fr) | St-Claude, France |
+| Societe Generale | [Fiscaliste](https://careers.societegenerale.com/offres-d-emploi/fiscaliste-26000B95-fr) | La Defense, France |
+| Societe Generale | [Chargés d’étude – Ingénierie patrimoniale](https://careers.societegenerale.com/offres-d-emploi/charges-detude-ingenierie-patrimoniale-26000E9Z-fr) | France |
+| Societe Generale | [Chef de projet RH IA & Copilot](https://careers.societegenerale.com/offres-d-emploi/chef-de-projet-rh-ia-copilot-26000HIZ-fr) | La Defense, France |
+| Societe Generale | [Data Analytics/Data Science au sein de l’Audit Interne en Système d’information](https://careers.societegenerale.com/offres-d-emploi/data-analytics-data-science-au-sein-de-laudit-interne-en-systeme-dinformation-26000H93-fr) | La Defense, France |
+| Societe Generale | [Chargé de mission Conformité Sanctions Internationales et Embargos](https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-sanctions-internationales-et-embargos-26000GZZ-fr) | Puteaux, France |
+| Societe Generale | [Chargé de financement commerce international matières premières](https://careers.societegenerale.com/offres-d-emploi/charge-de-financement-commerce-international-matieres-premieres-26000J2M-fr) | La Defense, France |
+| Societe Generale | [Chargé de projets culturels et de relations publiques](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-culturels-et-de-relations-publiques-26000HDI-fr) | La Defense, France |
+| Societe Generale | [Chargé de mission conformité](https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-26000DDU-fr) | La Defense, France |
+| Societe Generale | [Chef de projets](https://careers.societegenerale.com/offres-d-emploi/chef-de-projets-26000J0D-fr) | La Defense, France |
+| Societe Generale | [Analyste risques de marché](https://careers.societegenerale.com/offres-d-emploi/analyste-risques-de-marche-26000HQS-fr) | La Defense, France |
+| Societe Generale | [1 STAGE EN 1 JOUR - Assistant Trader](https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-trader-26000IMH-fr) | La Defense, France |
+| Societe Generale | [1 STAGE EN 1 JOUR – Assistant ou analyste stratégiste](https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-ou-analyste-strategiste-26000IML-fr) | La Defense, France |
+| Societe Generale | [1 STAGE EN 1 JOUR - Analyste Quantitatif](https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-analyste-quantitatif-26000IMP-fr) | La Defense, France |
+| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000IXW-fr) | Compiegne, France |
+| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000GSA-fr) | Arras, France |
+| Societe Generale | [Assistant risque opérationnel](https://careers.societegenerale.com/offres-d-emploi/assistant-risque-operationnel-26000IPA-fr) | La Defense, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IPY-fr) | Auxonne, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IL5-fr) | Champagnole, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IM2-fr) | Dole, France |
+| Societe Generale | [Assistant Analyste reporting réglementaire/pilotage](https://careers.societegenerale.com/offres-d-emploi/assistant-analyste-reporting-reglementaire-pilotage-26000HWE-fr) | La Defense, France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IJH-fr) | Villeurbanne, France |
+| Societe Generale | [Assistant Chef de projet  - Filière Finance](https://careers.societegenerale.com/offres-d-emploi/assistant-chef-de-projet-filiere-finance-26000HLM-fr) | La Defense, France |
+| Societe Generale | [Stage Banquier Privé](https://careers.societegenerale.com/offres-d-emploi/stage-banquier-prive-26000IFR-fr) | La-Rochelle, France |
+| Societe Generale | [Assistant Chargé d'Opérations Garanties](https://careers.societegenerale.com/offres-d-emploi/assistant-charge-doperations-garanties-26000I8Z-fr) | La Defense, France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ5-fr) | Avallon, France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ4-fr) | Auxerre, France |
+| Societe Generale | [Analyste Risques Structurels - Reportings Prudentiels](https://careers.societegenerale.com/offres-d-emploi/analyste-risques-structurels-reportings-prudentiels-26000HJR-fr) | La Defense, France |
+| Societe Generale | [Chargé de Mission Gestion de Crise](https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-gestion-de-crise-26000HRD-fr) | La Defense, France |
+| Societe Generale | [Assistance Animateur Marketing](https://careers.societegenerale.com/offres-d-emploi/assistance-animateur-marketing-26000I0B-fr) | Cesson-Sevigne, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRK-fr) | Le-Creusot, France |
+| Societe Generale | [Stage - Conseiller Clientèle professionnels](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-professionnels-26000HTA-fr) | Besancon, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSS-fr) | Besancon, France |
+| Societe Generale | [Stage Conseil Marché des professionnels](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-des-professionnels-26000HUX-fr) | Cannes, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPW-fr) | Belfort, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT3-fr) | Dijon, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT4-fr) | Besancon, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HTE-fr) | Dijon, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQG-fr) | Chalon-Sur-Saone, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPY-fr) | Lure, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQ2-fr) | Saint-Remy, France |
+| Societe Generale | [Stage marché patrimonial](https://careers.societegenerale.com/offres-d-emploi/stage-marche-patrimonial-26000HUZ-fr) | Le-Cannet, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRR-fr) | Montceau-Les-Mines, France |
+| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr) | Besancon, France |
+| Societe Generale | [Chargé de projets RH](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr) | La Defense, France |
 
-### Outside France - 132 (sample below)
+### Outside France - 439 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

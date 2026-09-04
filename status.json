@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T19:56:43.062969+02:00",
+      "generated": "2026-09-04T21:20:36.800734+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -21,194 +21,301 @@
         {
           "company": "Criteo",
           "first_seen": "2026-09-02",
+          "location": "Paris, France",
           "title": "Software Engineer Intern - Front-End or Fullstack",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Software-Engineer-Intern---Front-End-or-Fullstack_r16311"
         },
         {
           "company": "Criteo",
           "first_seen": "2026-09-02",
+          "location": "Paris, France",
           "title": "Product Data Scientist Intern",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Scientist-Intern_r15715-1"
         },
         {
           "company": "Scaleway",
           "first_seen": "2026-09-03",
+          "location": "Paris",
           "title": "IT Workplace - Internship",
           "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
         }
       ],
       "recent_roles_total": 3,
-      "scanned": 3680,
+      "scanned": 3681,
       "stamp": "2026-09-04",
       "unsure": 4
     },
     "board2.html": {
-      "also_new": [
-        {
-          "company": "Back Market",
-          "kind": "other",
-          "title": "Legal Intern / Juriste Droit des Affaires (Paris)"
-        },
-        {
-          "company": "Back Market",
-          "kind": "other",
-          "title": "Sustainability and Public Affairs Intern (Paris )"
-        }
-      ],
-      "also_new_total": 2,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
       "closed_total": 0,
-      "companies": 20,
+      "companies": 25,
       "failed": 0,
       "failed_names": [],
-      "filtered": 28,
-      "generated": "2026-09-04T19:56:57.653886+02:00",
+      "filtered": 48,
+      "generated": "2026-09-04T21:21:09.106521+02:00",
       "incomplete": [],
-      "live": 4,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
+      "live": 66,
+      "new": 2,
+      "new_roles": [
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage Business Analyst - Maintenance - Aéroline - Ile-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258950"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257370"
+        }
+      ],
+      "new_roles_total": 2,
       "recent_roles": [
         {
           "company": "Alan",
           "first_seen": "2026-09-02",
+          "location": "Paris",
           "title": "Software Engineer Internship (6 months)",
           "url": "https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671"
         },
         {
           "company": "Mistral AI",
           "first_seen": "2026-09-03",
+          "location": "Paris",
           "title": "Applied AI, Forward Deployed Machine Learning Engineer - (Internship)",
           "url": "https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b"
         },
         {
           "company": "Mistral AI",
           "first_seen": "2026-09-03",
+          "location": "Paris London",
           "title": "Applied Scientist  (Internship)",
           "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e"
         },
         {
           "company": "Shift Technology",
           "first_seen": "2026-09-02",
+          "location": "France - Remote",
           "title": "Data Science internship - Spanish speaker (6months)",
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Colomiers, fr",
+          "title": "Stage - Analyste Cybersécurité - Investigation - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147550118"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage - Analyste VOC - Cybersécurité - Île-De-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147506608"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Colomiers, fr",
+          "title": "Stage - Analyste VOC - Cybersécurité - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147506149"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Colomiers, fr",
+          "title": "Stage - Analyste Cybersécurité - Response - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147473198"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Limonest, fr",
+          "title": "Stage - Développeur/euse Java - Lyon",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147265919"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage Consultant/e - SAP - Aéroline - Ile-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147264089"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Montreuil, fr",
+          "title": "Stage – Ingénieur(e) technique Cybersécurité – Défense & Sécurité – Île-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257367"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage - Développeur Fullstack – Défense & Sécurité – Île-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258410"
         }
       ],
-      "recent_roles_total": 4,
-      "scanned": 916,
+      "recent_roles_total": 66,
+      "scanned": 4856,
       "stamp": "2026-09-04",
       "unsure": 0
     },
     "board3.html": {
-      "also_new": [
-        {
-          "company": "Thales",
-          "kind": "other",
-          "title": "STAGE -  Chargé de Projets RH - F/H"
-        }
-      ],
-      "also_new_total": 1,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
           "company": "Thales",
           "title": "STAGE– Ingénieur Tests fonctionnels système - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
+        },
+        {
+          "company": "Societe Generale",
+          "title": "1 STAGE EN 1 JOUR - Ingénieur produits structurés",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-ingenieur-produits-structures_la-defense_SG_Ql529dP"
         }
       ],
-      "closed_today_total": 1,
-      "closed_total": 1,
-      "companies": 9,
+      "closed_today_total": 2,
+      "closed_total": 2,
+      "companies": 12,
       "failed": 0,
       "failed_names": [],
-      "filtered": 156,
-      "generated": "2026-09-04T19:57:14.469131+02:00",
+      "filtered": 231,
+      "generated": "2026-09-04T21:22:21.181769+02:00",
       "incomplete": [],
-      "live": 35,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
+      "live": 59,
+      "new": 4,
+      "new_roles": [
+        {
+          "company": "Societe Generale",
+          "first_seen": "2026-09-04",
+          "location": "Fontenay-Sous-Bois, France",
+          "title": "Agile Business Analyst",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/agile-business-analyst-26000GRL-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "first_seen": "2026-09-04",
+          "location": "La Defense, France",
+          "title": "Business Analyst & Gestion de Projets - Flux et Transactions Internationales",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/business-analyst-gestion-de-projets-flux-et-transactions-internationales-26000CJ7-fr"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Paris, Île-de-France, France",
+          "title": "STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS - H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-business-analyst-ultra-hight-net-worth-clients-h-f-1"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Montreuil, Île-de-France, France",
+          "title": "STAGE - Business Analyst H/F - 6 mois",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-business-analyst-h-f-6-mois-1"
+        }
+      ],
+      "new_roles_total": 4,
       "recent_roles": [
         {
           "company": "Thales",
           "first_seen": "2026-09-03",
+          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0330328; 10 - INDUSTRY; Thales Avs France Sas",
           "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "1 STAGE EN 1 JOUR - Ingénieur produits structurés",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-ingenieur-produits-structures_la-defense_SG_Ql529dP"
+          "location": "La Defense, France",
+          "title": "Chargé de formation et développement des compétences",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-formation-et-developpement-des-competences-26000IZJ-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage - Private Equity Infrastructure F/H",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-infrastructure-equity-h-f_puteaux_BP_OXkdOVj"
+          "location": "Nanterre, France",
+          "title": "Chargé de Transformation, Engagement collaborateur et acculturation IA",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-transformation-engagement-collaborateur-et-acculturation-ia-26000HQ0-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-economiste-data-visualisation-h-f-4-a-6-mois_paris"
+          "location": "La Defense, France",
+          "title": "Customer Success - Crypto et Blockchain",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/customer-success-crypto-et-blockchain-26000DO8-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-chief-data-officer-h-f_paris"
+          "location": "La Defense, France",
+          "title": "1 STAGE EN 1 JOUR – Ingénieur produits structurés",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-ingenieur-produits-structures-26000IMI-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Portzamparc-Stage de Développement Commerciale (H/F) à Nantes",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/portzamparc-stage-de-developpement-commerciale-h-f-a-nantes_nantes"
+          "location": "France",
+          "title": "Assistant ingénieur patrimonial",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-ingenieur-patrimonial-26000IT9-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage - Acheteur Hardware Telecom H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-hardware-telecom-h-f_pantin"
+          "location": "La Defense, France",
+          "title": "Data & Analytics – Amélioration de la qualité des données et transformation",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/data-analytics-amelioration-de-la-qualite-des-donnees-et-transformation-26000HOR-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage – Chargé de conformité Sécurité financière KYC H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-conformite-securite-financiere-kyc-h-f_paris"
+          "location": "Nantes, France",
+          "title": "Développeur Front React",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/developpeur-front-react-26000HBM-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage - Assistant risques sécurité / sûreté International H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-risques-securite-surete-international-h-f_montreuil"
+          "location": "La Defense, France",
+          "title": "Développeur Front React",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/developpeur-front-react-26000HBN-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois_paris"
+          "location": "La Defense, France",
+          "title": "Auditeur IT",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/auditeur-it-26000F55-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage - Acheteur IT software Junior H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-it-software-junior-h-f-6-mois_pantin"
+          "location": "Fontenay-Sous-Bois, France",
+          "title": "Agile Business Analyst",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/agile-business-analyst-26000GRL-fr"
         },
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "title": "Stage – Developpeur fullstack Java / Angular (F/H) – 6 mois",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-developpeur-fullstack-java-angular-f-h-6-mois_montreuil"
+          "location": "Courbevoie, France",
+          "title": "TRACKING ET WEBANALYTICS",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
         }
       ],
-      "recent_roles_total": 35,
-      "scanned": 1914,
+      "recent_roles_total": 59,
+      "scanned": 2842,
       "stamp": "2026-09-04",
-      "unsure": 1
+      "unsure": 2
     }
   },
-  "generated": "2026-09-04T19:57:14.469131+02:00"
+  "generated": "2026-09-04T21:22:21.181769+02:00"
 }

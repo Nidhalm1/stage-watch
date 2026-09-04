@@ -1,0 +1,24 @@
+name: Probe HTML job boards
+
+# Manual only, same reason as probe.yml: the Claude sandbox's egress proxy
+# answers 403 to CONNECT for every one of these hosts, so the shape of these
+# pages can only be read from a runner. Run this, read the log, then write the
+# fetcher against what it printed.
+on:
+  workflow_dispatch:
+    inputs:
+      sources:
+        description: "Space-separated source names, or blank for all"
+        required: false
+        default: ""
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe
+        run: python probe_html.py ${{ inputs.sources }}
