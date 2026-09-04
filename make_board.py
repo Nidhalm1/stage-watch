@@ -1173,8 +1173,11 @@ def render(results, prev):
             u = h["url"]
             h["first_seen"] = prev_posts.get(u, {}).get("first_seen", TODAY)
             h["is_new"] = (u not in prev_posts) and bool(prev_posts)
+            # location included: the nightly ping reads only status.json, and
+            # "Software developper" is a different decision in Lille than in
+            # La Defense. STATUS_ROWS still caps the list, so this cannot grow.
             entry = {"title": h["title"], "company": r["name"], "url": u,
-                     "first_seen": h["first_seen"]}
+                     "location": h["location"], "first_seen": h["first_seen"]}
             if h["is_new"]:
                 new_ct += 1
                 new_roles.append(entry)
