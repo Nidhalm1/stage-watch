@@ -5,8 +5,8 @@ Three independent nightly job watches sharing one codebase.
 | Board | File | Roster | Artifact |
 |---|---|---|---|
 | Stage Watch | `board.html` | `COMPANIES` - 20 observability / infra / dev-tools | 92513aa1 |
-| French Tech Watch | `board2.html` | `COMPANIES2` - 24 French tech / fintech / ESN / scale-ups | 277bfba8 |
-| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 9 defence / aerospace / trading / banks | 8f9b34a1 |
+| French Tech Watch | `board2.html` | `COMPANIES2` - 25 French tech / fintech / ESN / scale-ups | 277bfba8 |
+| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 12 defence / aerospace / trading / banks | 8f9b34a1 |
 
 Each board has its own hidden state block, so NEW / closed detection is per-board.
 They never share results. `make_board.py --roster 2` selects the second roster;
@@ -157,7 +157,27 @@ so `totalFound > 0` is the real test.
 
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 `greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`,
-`teamtailor`, `dassault`, `wttj`, `sgcareers`.
+`teamtailor`, `dassault`, `wttj`, `sgcareers`, `bnp`, `talentsoft`, `icims`,
+`gestmax`.
+
+The last four read HTML rather than JSON, which is strictly worse and is treated
+that way: each pages until a page adds nothing new, and a page ceiling marks the
+company partial so nothing of theirs can be closed. **Every selector in them was
+read off a live page by `probe_html.py`** - run that from the *Stage Watch sweep*
+Action (`probe_html` input; it skips the sweep) and write the fetcher against
+what it prints. Do not guess one: a wrong selector returns zero rows and looks
+exactly like a company with no openings.
+
+`bnp` needs the full browser navigation header set. Measured from a runner: no
+headers, a plain UA, a browser UA, and a browser UA with `Accept: */*` all get
+403 Access Denied; adding `Referer`, `Upgrade-Insecure-Requests` and the
+`Sec-Fetch-*` set gets 200 and the real listing. So it is a header check, not the
+IP block the old note assumed, and not Akamai gating the path. A 403 later on
+would be rate limiting - lengthen the sleep, do not add headers. It filters
+server-side to `form[type][]=28` (Trainee / Internship), which turns 380 pages of
+3787 offers into ~37 of 362. Paging past the last page **silently drops the
+filter and serves the unfiltered board**, so each card's own `.offer-type` is
+re-checked; that also ends the loop, since an overrun page contributes nothing.
 
 `sgcareers` is Societe Generale's own board, and it replaced a WTTJ feed that
 was showing **95** of SG's **1083** postings - an 11x under-report. Two calls:

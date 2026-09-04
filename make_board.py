@@ -183,12 +183,14 @@ COMPANIES3 = [
     # no searchjobs call; careers.societegenerale.com has a JSON API of its own.
     {"name": "Societe Generale", "ats": "sgcareers",
      "careers": "https://careers.societegenerale.com/rechercher"},
-    # The three remaining banks are reached through Welcome to the Jungle, not
-    # their own systems: BNP's careers site 403s a datacenter IP, and Credit
-    # Agricole and Natixis have no public feed at all. Confirmed 2026-09-04,
-    # BNP returning a real stage - "Stage - Economiste / Data visualisation".
-    {"name": "BNP Paribas",     "ats": "wttj", "slug": "bnp-paribas",
-     "careers": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs"},
+    # BNP reads its own board too - see f_bnp. The old note here said its careers
+    # site 403s a datacenter IP; that was measured against the wrong thing. The
+    # 403 is a missing-header check on the public board, and the applicant portal
+    # (bwelcome.hr.bnpparibas) is the auth-gated host that has no way in.
+    {"name": "BNP Paribas",     "ats": "bnp", "pages": 45,
+     "careers": "https://group.bnpparibas/en/careers/all-job-offers"},
+    # Credit Agricole and Natixis stay on Welcome to the Jungle: neither has a
+    # public feed of its own. Confirmed 2026-09-04, both returning real stages.
     # groupe-credit-agricole covers the group including CIB. jobs.ca-cib.com has
     # a working stage-filtered RSS feed, but it is capped at 20 items and carries
     # no location, so a role dropping off the end would look closed - see NO_API3.
@@ -995,13 +997,14 @@ _STRIP = re.compile(r"(?is)<(script|style)\b.*?</\1\s*>")
 _TAG   = re.compile(r"<[^>]+>")
 
 
-def get_text(url):
+def get_text(url, extra=None):
     """A page as text. Sends a browser Accept - UA's JSON Accept gets a 406 or a
     different rendering out of several of these hosts."""
     req = urllib.request.Request(url, headers={
         "User-Agent": UA["User-Agent"],
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8"})
+        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+        **(extra or {})})
     with urllib.request.urlopen(req, timeout=45) as r:
         return r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
 
@@ -1020,12 +1023,12 @@ def _blocks(page, open_re):
             for i, st in enumerate(starts)]
 
 
-def _paged(c, url_for, parse, pages):
+def _paged(c, url_for, parse, pages, headers=None):
     """Page a list until a page adds nothing new. parse(page) -> rows keyed by url."""
     out, seen = [], set()
     for p in range(pages):
         try:
-            page = get_text(url_for(p))
+            page = get_text(url_for(p), headers)
         except urllib.error.HTTPError as e:
             if p and e.code in (404, 410):
                 return out                      # ran off the end of the pagination
@@ -1148,11 +1151,82 @@ def f_gestmax(c):
     return _paged(c, lambda p: c["list"] % (p + 1), parse, c.get("pages", 30))
 
 
+# --- BNP Paribas ------------------------------------------------------------
+# group.bnpparibas/en/careers/all-job-offers, server-rendered and complete. What
+# it wants is the FULL browser navigation header set: measured from a runner,
+# no headers / a plain UA / a browser UA / a browser UA with Accept:*/* all get
+# 403 Access Denied, and adding Referer, Upgrade-Insecure-Requests and the
+# Sec-Fetch-* set gets 200 and the real listing. So this is a header check, not
+# the IP block the old note assumed - and NOT Akamai gating the path, though
+# Akamai Bot Manager is on the domain. A 403 appearing later would be rate
+# limiting, and the answer to that is a longer sleep, not more headers.
+#
+# robots.txt disallows only URLs carrying ref, cat, field, key, NumPage or
+# as_url_id. form[type][] and page are none of those.
+#
+# form[type][] ids, read off the page: 2 Permanent - 146 Fixed Term - 28 Trainee
+# / Internship - 33 International Volunteer - 35 Summer Job - 36 Apprenticeship -
+# 2374 Zero Hours - 2134 Graduate Programme. Filtering to 28 turns 380 pages of
+# 3787 offers into ~37 pages of 362, which is the difference between polite and
+# not. Location is NOT filtered server-side; where() does that locally and shows
+# what it cannot place.
+BNP_HOST = "https://group.bnpparibas"
+BNP_INTERNSHIP = "28"       # form[type][] id for "Trainee / Internship"
+BNP_QUERY = urllib.parse.urlencode({"form[type][]": BNP_INTERNSHIP})
+
+
+def _bnp_url(page):
+    """page is 0-based. Built here rather than kept as a %-template: the query
+    percent-escapes to form%5Btype%5D%5B%5D, which a later %-format would then
+    try to read as a conversion and blow up on."""
+    return "%s/en/careers/all-job-offers?%s&page=%d" % (BNP_HOST, BNP_QUERY, page)
+BNP_HEADERS = {
+    "Referer": BNP_HOST + "/en/careers",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin", "Sec-Fetch-User": "?1",
+    "Connection": "keep-alive"}
+
+_BNP_CARD  = re.compile(r'<article[^>]*class="[^"]*card-offer[^"]*"', re.I)
+_BNP_LINK  = re.compile(r'<a[^>]*href="([^"]*/job-offer/[^"]*)"', re.I)
+_BNP_TITLE = re.compile(r'<h3[^>]*class="[^"]*title-4[^"]*"[^>]*>(.*?)</h3>', re.I | re.S)
+_BNP_TYPE  = re.compile(r'<div[^>]*class="offer-type"[^>]*>(.*?)</div>', re.I | re.S)
+_BNP_LOC   = re.compile(r'<div[^>]*class="offer-location"[^>]*>(.*?)</div>', re.I | re.S)
+
+
+def f_bnp(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _BNP_CARD):
+            link = _BNP_LINK.search(card)
+            ttl  = _BNP_TITLE.search(card)
+            if not link or not ttl:
+                continue
+            kt = _BNP_TYPE.search(card)
+            kind = _contract(_plain(kt.group(1)) if kt else "")
+            # Paging past the last page silently drops the filter and serves the
+            # unfiltered board, so the card's OWN offer-type is checked rather
+            # than trusted. Everything past the end reads "Permanent" and is
+            # dropped here, which also ends the loop: _paged stops when a page
+            # contributes nothing.
+            if kind != "intern":
+                continue
+            lm = _BNP_LOC.search(card)
+            loc = _plain(lm.group(1)) if lm else ""
+            rows.append((_plain(ttl.group(1)), loc,
+                         urllib.parse.urljoin(BNP_HOST, html.unescape(link.group(1))),
+                         loc, kind))
+        return rows
+
+    return _paged(c, _bnp_url, parse, c.get("pages", 45), BNP_HEADERS)
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
          "dassault": f_dassault, "wttj": f_wttj, "sgcareers": f_sgcareers,
-         "talentsoft": f_talentsoft, "icims": f_icims, "gestmax": f_gestmax}
+         "talentsoft": f_talentsoft, "icims": f_icims, "gestmax": f_gestmax,
+         "bnp": f_bnp}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -1168,6 +1242,7 @@ ENDPOINT = {
     "talentsoft":      lambda c: (c["list"] % 1).split("?")[0].replace("https://", ""),
     "icims":           lambda c: (c["list"] % 0).split("?")[0].replace("https://", ""),
     "gestmax":         lambda c: (c["list"] % 1).replace("https://", ""),
+    "bnp":             lambda c: "group.bnpparibas/en/careers/all-job-offers (form[type][]=28)",
 }
 
 
