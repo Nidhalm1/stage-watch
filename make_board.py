@@ -327,6 +327,7 @@ _FR_CITIES = (
     # is a real site of theirs that where() was answering "unknown" for
     "le plessis[- ]robinson|plessis[- ]robinson|selles[- ]saint[- ]denis|bourges|"
     "biarritz|anglet|martignas|martignas[- ]sur[- ]jalle|seclin|argonay|cazaux|"
+    "saint[- ]vulbas|"
     "chateauroux|ch[âa]?teaudun|deols|saint-cloud|le plessis|fontenay-sous-bois|"
     "fontenay|courbevoie|la garenne|bois-colombes|villepinte|noisy-le-grand|"
     "champs-sur-marne|torcy|bussy|serris|coignieres|maurepas|elancourt|voisins"
@@ -386,6 +387,9 @@ _NOT_FR = (
     "[ée]gypte|cairo|le caire|morocco|maroc|casablanca|rabat|tunisia|tunisie|tunis|algeria|"
     "alg[ée]rie|alger|"
     "united arab emirates|dubai|duba[ïi]|abu dhabi|saudi|arabie|riyadh|qatar|doha|"
+    # from the audit: 22 of board 3's 23 unplaced roles were these
+    "luxembourg|kirchberg|howald|jersey|guernsey|st helier|saint helier|senegal|"
+    "s[ée]n[ée]gal|dakar|"
     # US and Canadian metros that show up without a country
     "new york|nyc|brooklyn|san francisco|bay area|palo alto|mountain view|sunnyvale|san jose|"
     "santa clara|seattle|bellevue|portland|austin|dallas|houston|atlanta|chicago|boston|"
@@ -403,6 +407,10 @@ NOT_FR = re.compile(r"\b(" + _NOT_FR + r")\b", re.I)
 # 'me' is Maine - matching those case-insensitively turns "Remote in Europe" into
 # a US role. A state code only counts after a comma, which is how every board
 # writes it.
+_FOREIGN_ISO = ("it|nl|de|es|pt|be|lu|ch|at|pl|cz|sk|hu|ro|bg|hr|si|ee|lv|lt|gr|"
+                "se|no|dk|fi|ie|uk|gb|us|ca|br|mx|ar|cl|co|pe|in|cn|jp|kr|sg|hk|tw|"
+                "au|nz|za|ma|tn|dz|sn|eg|ae|qa|sa|il|tr|ua|vn|th|my|id|ph")
+NOT_FR_ISO = re.compile(r",\s*(?:%s)\s*$" % _FOREIGN_ISO, re.I)
 NOT_FR_CS = re.compile(r",\s*(A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|"
                        r"N[CDEHJMVY]|O[HKR]|P[AR]|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\b"
                        r"|\b(US|USA|U\.S\.|UK|EMEA|APAC|LATAM|NAMER|AMER|ANZ|DACH|BENELUX|MENA)\b")
@@ -413,7 +421,7 @@ def where(blob):
     Paris and London is a Paris posting as far as this board is concerned."""
     if LOC.search(blob):
         return "fr"
-    if NOT_FR.search(blob) or NOT_FR_CS.search(blob):
+    if NOT_FR.search(blob) or NOT_FR_CS.search(blob) or NOT_FR_ISO.search(blob.strip()):
         return "foreign"
     return "unknown"
 
@@ -435,7 +443,8 @@ TECH   = re.compile(
     r"t[ée]l[ée]com|robot|automatis|automation|simulation|mod[ée]lisation|\bqa\b|\btest\b|validation|"
     r"\bit\b|\bweb\b|mobile|android|\bios\b|python|javascript|typescript|\bjava\b|\bc\+\+|"
     r"architect|compilateur|compiler|database|base de donn[ée]es|\bsql\b|linux|\bsap\b|"
-    r"observabilit|monitoring|blockchain|cryptograph|statistiq|analytics)", re.I)
+    r"observabilit|monitoring|blockchain|cryptograph|statistiq|analytics|"
+    r"business analyst|analyste m[ée]tier)", re.I)
 
 # A title can match TECH incidentally - 'Legal Intern - Product & AI' hits ai.
 # These business-function words veto a tech match.
@@ -1064,6 +1073,8 @@ _TS_LINK = re.compile(r'<a[^>]*href="([^"]*/offre-de-emploi/emploi[^"]*\.aspx[^"
 _TS_DESC = re.compile(r'<ul[^>]*class="[^"]*ts-offer-list-item__description[^"]*"[^>]*>(.*?)</ul>',
                       re.I | re.S)
 _LI      = re.compile(r"<li[^>]*>(.*?)</li>", re.I | re.S)
+# a reference or a date is never the town
+_TS_NOISE = re.compile(r"^\s*(?:r[ée]f\.?\s*:|\d{1,2}/\d{1,2}/\d{2,4}\s*$|\d{4}-\d+\s*$)", re.I)
 
 
 def f_talentsoft(c):
@@ -1081,9 +1092,21 @@ def f_talentsoft(c):
             d = _TS_DESC.search(card)
             fields = [_plain(x) for x in _LI.findall(d.group(1))] if d else []
             fields = [f for f in fields if f]
-            ct = next((k for k in (_contract(f) for f in fields) if k), None)
-            # last field is the town on both tenants; the whole list is the blob
-            rows.append((title, fields[-1] if fields else "",
+            ct, ct_at = None, -1
+            for n, f in enumerate(fields):
+                k = _contract(f)
+                if k:
+                    ct, ct_at = k, n
+                    break
+            # The town is the last field on both tenants - but skip the contract,
+            # the reference and the date, or a card that carries no location at
+            # all comes out located "Stage" or "04/09/2026". A card with nothing
+            # left shows blank, which the board renders as "no location given":
+            # honest, and it lands in the unrecognised-location box where it can
+            # be seen rather than being quietly mislabelled.
+            shown = [f for n, f in enumerate(fields)
+                     if n != ct_at and not _TS_NOISE.match(f)]
+            rows.append((title, shown[-1] if shown else "",
                          urllib.parse.urljoin(base, html.unescape(m.group(1))),
                          " ".join(fields), ct))
         return rows
