@@ -18,14 +18,11 @@ mistake (a French site being read as foreign).
 
 `board.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 7
+### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400) | In-Office |
-| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407) | In-Office |
-| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
@@ -42,7 +39,7 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 
-### Outside France - 25 (sample below)
+### Outside France - 24 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -51,12 +48,12 @@ mistake (a French site being read as foreign).
 | Doctolib | [Business Development Representative Intern - Milano (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7800808003) | Milano, Milan, Italy |
 | Doctolib | [SEO & AI Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7824240003) | Milano, Milan, Italy |
 | Doctolib | [SEO & AI Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7864184003) | Milano, Milan, Italy |
+| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
 | Criteo | [Account Strategist Intern - Retail Media Benelux & Nordics](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739) | Amsterdam, Netherlands |
 | Criteo | [Account Strategist Intern - French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern_r20801) | Barcelona, Spain |
 | Criteo | [Account Strategist Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Account-Strategist-Intern--6-month--German-Speaker-_r20959) | Munich, Germany |
 | Criteo | [Account Strategist (Intern)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979) | Barcelona, Spain |
 | Criteo | [Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802) | Barcelona, Spain |
-| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
 | Criteo | [Campaign Manager Intern, Performance Media - Spanish & Italian Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Campaign-Manager-Intern---Spanish---Italian-Speaker_r20908) | Barcelona, Spain |
 | Criteo | [Sales Operations Data Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Operations-Data-Analyst-Intern_r20723) | Barcelona, Spain |
 | Criteo | [People Operations Internship – French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/People-Operations-Intern--French-Speaker_r20828) | Barcelona, Spain |
@@ -72,7 +69,7 @@ mistake (a French site being read as foreign).
 
 _none_
 
-### Not tech - 26
+### Not tech - 28
 
 | Company | Title | Location |
 |---|---|---|
@@ -88,6 +85,8 @@ _none_
 | Aircall | [Sales Intern - Iberia market - 6 months](https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc) | Paris Office |
 | Aircall | [Sales Partner Manager Intern](https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b) | Paris Office |
 | Aircall | [Strategy & Operations Intern — Office of the General Manager, Small Business](https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df) | Paris Office |
+| Back Market | [Legal Intern / Juriste Droit des Affaires (Paris)](https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5) | Paris |
+| Back Market | [Sustainability and Public Affairs Intern (Paris )](https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7) | Paris |
 | Alan | [CTO Founder Associate - internship](https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0) | Paris, France |
 | Alan | [CEO Founder Associate - Internship](https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9) | Paris, France |
 | Alan | [Insurance Legal - Internship](https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd) | Paris, France |
@@ -115,7 +114,7 @@ _none_
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
 | Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003) | Mexico - Mexico City |
-| Amadeus | [Intern - Finance and Accounting (Source to Pay and Travel Management Expense)](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Finance-and-Accounting--Source-to-Pay-and-Travel-Management-Expense-_R36823) | Taguig-Metro-Manila, R36823 |
+| Amadeus | [Intern - Customer Management Operations](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Customer-Management-Operations_R37261) | Taguig-Metro-Manila, R37261 |
 | Amadeus | [Cybersecurity Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Cybersecurity-Intern_R31596) | Taguig-Metro-Manila, R31596 |
 | Amadeus | [Software Developer Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590) | Taguig-Metro-Manila, R31590 |
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
@@ -133,10 +132,11 @@ _none_
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
 
-### Not tech - 158 (showing the first 60)
+### Not tech - 156 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [STAGE -  Chargé de Projets RH - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----Charg-de-Projets-RH---F-H_R0339361) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339361; 12 - HUMAN RESOURCES; Thales |
 | Thales | [STAGE - Contrôleur de gestion Offres et Projets - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Contrleur-de-gestion-Offres-et-Projets---H-F_R0334380-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0334380; 11 - FINANCE; Thales Avs France Sas |
 | Thales | [STAGE - Project Support for Contract Management Transformation - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0326789; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
 | Thales | [STAGE - Legal M&A - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
@@ -196,9 +196,8 @@ _none_
 | BNP Paribas | [Stage - ESG Analyst F/H](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-esg-analyst-f-h_puteaux) | Puteaux, France |
 | BNP Paribas | [Stage - Analyste risques opérationnels H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-risques-operationnels-h-f_paris_BP_dRgLraV) | Paris, France |
 | BNP Paribas | [Stage - Analyste Conformité AML/CFT H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage – Chargé de relations média – H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-relations-media-h-f_paris) | Paris, France |
 
-### Outside France - 113 (sample below)
+### Outside France - 132 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

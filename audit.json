@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 25,
+      "foreign_count": 24,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -36,6 +36,12 @@
         },
         {
           "company": "Criteo",
+          "location": "Munich, Germany",
+          "title": "Customer Success Intern, 6-month (German-Speaker)",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965"
+        },
+        {
+          "company": "Criteo",
           "location": "Amsterdam, Netherlands",
           "title": "Account Strategist Intern - Retail Media Benelux & Nordics",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739"
@@ -63,12 +69,6 @@
           "location": "Barcelona, Spain",
           "title": "Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802"
-        },
-        {
-          "company": "Criteo",
-          "location": "Munich, Germany",
-          "title": "Customer Success Intern, 6-month (German-Speaker)",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965"
         },
         {
           "company": "Criteo",
@@ -160,27 +160,6 @@
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
-          "title": "Research Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400"
-        },
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
-          "title": "Research Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407"
-        },
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
-          "title": "Research Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379"
-        },
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
         },
@@ -199,7 +178,7 @@
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785"
         }
       ],
-      "unknown_location_total": 7
+      "unknown_location_total": 4
     },
     "board2.html": {
       "board": "French Tech Watch",
@@ -255,9 +234,9 @@
         },
         {
           "company": "Amadeus",
-          "location": "Taguig-Metro-Manila, R36823",
-          "title": "Intern - Finance and Accounting (Source to Pay and Travel Management Expense)",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Finance-and-Accounting--Source-to-Pay-and-Travel-Management-Expense-_R36823"
+          "location": "Taguig-Metro-Manila, R37261",
+          "title": "Intern - Customer Management Operations",
+          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Intern---Customer-Management-Operations_R37261"
         },
         {
           "company": "Amadeus",
@@ -370,6 +349,20 @@
           "url": "https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df"
         },
         {
+          "company": "Back Market",
+          "is_new": true,
+          "location": "Paris",
+          "title": "Legal Intern / Juriste Droit des Affaires (Paris)",
+          "url": "https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5"
+        },
+        {
+          "company": "Back Market",
+          "is_new": true,
+          "location": "Paris",
+          "title": "Sustainability and Public Affairs Intern (Paris )",
+          "url": "https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7"
+        },
+        {
           "company": "Alan",
           "is_new": false,
           "location": "Paris, France",
@@ -468,14 +461,14 @@
           "url": "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d"
         }
       ],
-      "non_tech_total": 26,
+      "non_tech_total": 28,
       "stamp": "2026-09-04",
       "unknown_location": [],
       "unknown_location_total": 0
     },
     "board3.html": {
       "board": "Defence & Finance Watch",
-      "foreign_count": 113,
+      "foreign_count": 132,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -569,6 +562,13 @@
         }
       ],
       "non_tech": [
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339361; 12 - HUMAN RESOURCES; Thales",
+          "title": "STAGE -  Chargé de Projets RH - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----Charg-de-Projets-RH---F-H_R0339361"
+        },
         {
           "company": "Thales",
           "is_new": false,
@@ -981,16 +981,9 @@
           "location": "Paris, France",
           "title": "Stage - Analyste Conformité AML/CFT H/F",
           "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stage – Chargé de relations média – H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-relations-media-h-f_paris"
         }
       ],
-      "non_tech_total": 158,
+      "non_tech_total": 156,
       "stamp": "2026-09-04",
       "unknown_location": [
         {
@@ -1004,5 +997,5 @@
       "unknown_location_total": 1
     }
   },
-  "generated": "2026-09-04T08:46:57.848846+02:00"
+  "generated": "2026-09-04T19:57:14.469131+02:00"
 }

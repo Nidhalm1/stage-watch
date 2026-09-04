@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T08:46:20.312944+02:00",
+      "generated": "2026-09-04T19:56:43.062969+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -38,13 +38,24 @@
         }
       ],
       "recent_roles_total": 3,
-      "scanned": 3677,
+      "scanned": 3680,
       "stamp": "2026-09-04",
-      "unsure": 7
+      "unsure": 4
     },
     "board2.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "Back Market",
+          "kind": "other",
+          "title": "Legal Intern / Juriste Droit des Affaires (Paris)"
+        },
+        {
+          "company": "Back Market",
+          "kind": "other",
+          "title": "Sustainability and Public Affairs Intern (Paris )"
+        }
+      ],
+      "also_new_total": 2,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
@@ -52,8 +63,8 @@
       "companies": 20,
       "failed": 0,
       "failed_names": [],
-      "filtered": 26,
-      "generated": "2026-09-04T08:46:38.091715+02:00",
+      "filtered": 28,
+      "generated": "2026-09-04T19:56:57.653886+02:00",
       "incomplete": [],
       "live": 4,
       "new": 0,
@@ -86,36 +97,40 @@
         }
       ],
       "recent_roles_total": 4,
-      "scanned": 917,
+      "scanned": 916,
       "stamp": "2026-09-04",
       "unsure": 0
     },
     "board3.html": {
-      "also_new": [],
-      "also_new_total": 0,
-      "board": "Defence & Finance Watch",
-      "closed_today": [],
-      "closed_today_total": 0,
-      "closed_total": 0,
-      "companies": 9,
-      "failed": 1,
-      "failed_names": [
-        "Dassault Systemes"
+      "also_new": [
+        {
+          "company": "Thales",
+          "kind": "other",
+          "title": "STAGE -  Chargé de Projets RH - F/H"
+        }
       ],
-      "filtered": 158,
-      "generated": "2026-09-04T08:46:57.848846+02:00",
+      "also_new_total": 1,
+      "board": "Defence & Finance Watch",
+      "closed_today": [
+        {
+          "company": "Thales",
+          "title": "STAGE– Ingénieur Tests fonctionnels système - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
+        }
+      ],
+      "closed_today_total": 1,
+      "closed_total": 1,
+      "companies": 9,
+      "failed": 0,
+      "failed_names": [],
+      "filtered": 156,
+      "generated": "2026-09-04T19:57:14.469131+02:00",
       "incomplete": [],
-      "live": 36,
+      "live": 35,
       "new": 0,
       "new_roles": [],
       "new_roles_total": 0,
       "recent_roles": [
-        {
-          "company": "Thales",
-          "first_seen": "2026-09-03",
-          "title": "STAGE– Ingénieur Tests fonctionnels système - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
-        },
         {
           "company": "Thales",
           "first_seen": "2026-09-03",
@@ -181,13 +196,19 @@
           "first_seen": "2026-09-04",
           "title": "Stage - Acheteur IT software Junior H/F",
           "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-it-software-junior-h-f-6-mois_pantin"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Developpeur fullstack Java / Angular (F/H) – 6 mois",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-developpeur-fullstack-java-angular-f-h-6-mois_montreuil"
         }
       ],
-      "recent_roles_total": 36,
-      "scanned": 1522,
+      "recent_roles_total": 35,
+      "scanned": 1914,
       "stamp": "2026-09-04",
       "unsure": 1
     }
   },
-  "generated": "2026-09-04T08:46:57.848846+02:00"
+  "generated": "2026-09-04T19:57:14.469131+02:00"
 }
