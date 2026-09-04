@@ -145,7 +145,20 @@ so `totalFound > 0` is the real test.
 
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 `greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`,
-`teamtailor`, `dassault`, `wttj`.
+`teamtailor`, `dassault`, `wttj`, `bnp`.
+
+`bnp` reads BNP Paribas' own listing instead of WTTJ, because they publish there
+first and the lead time is the point of a watch. That host sits behind Akamai
+Bot Manager, diagnosed 2026-09-04 by a ladder run: browser headers on a
+persistent session got 403, httpx on HTTP/2 *and* HTTP/1.1 with identical
+headers got 403, and only a Chrome TLS fingerprint got 200 - so the
+discriminator is the TLS fingerprint, not the IP and not the headers. It needs
+`curl_cffi`, installed by the sweep workflow. robots.txt is re-read every run
+rather than trusted from the day it was checked, and a disallow aborts the fetch.
+It takes the four tech category paths plus the newest three pages of all
+internships, so a tech role filed under an unlisted category is still seen. BNP
+is deliberately NOT also on WTTJ: the same role under two URLs would be reported,
+and pinged, twice.
 
 `wttj` is the odd one out: an aggregator rather than an ATS, and the only way
 in to the French banks, whose own systems are vendor-locked or refuse a

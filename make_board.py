@@ -170,8 +170,11 @@ COMPANIES3 = [
     # Taleo PORTAL_ID is captured and SG is read from source.
     {"name": "Societe Generale", "ats": "wttj", "slug": "societe-generale", "partial": True,
      "careers": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs"},
-    {"name": "BNP Paribas",     "ats": "wttj", "slug": "bnp-paribas",
-     "careers": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs"},
+    # Read from BNP's own listing rather than WTTJ: they publish here first, and
+    # the lead time is the reason this watch exists. NOT tracked twice - the same
+    # role under two URLs would be reported, and pinged, twice.
+    {"name": "BNP Paribas",     "ats": "bnp", "slug": "bnp-paribas",
+     "careers": "https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage"},
     # groupe-credit-agricole covers the group including CIB. jobs.ca-cib.com has
     # a working stage-filtered RSS feed, but it is capped at 20 items and carries
     # no location, so a role dropping off the end would look closed - see NO_API3.
@@ -741,6 +744,93 @@ def f_wttj(c):
     return out
 
 
+# --- BNP Paribas, read from their own listing -------------------------------
+# Diagnosed 2026-09-04 (see NO_API3): group.bnpparibas sits behind Akamai Bot
+# Manager, which discriminates on the TLS fingerprint - not the IP, not the
+# headers, not the HTTP version. curl_cffi is what gets a 200. Adopted on an
+# explicit decision: BNP publish here before the listing reaches Welcome to the
+# Jungle, and on a watch that lead time is the whole point.
+#
+# robots.txt is re-read every run rather than trusted from the day it was
+# checked. It currently disallows only query-string patterns, none of which
+# match these paths, but a fetcher that assumes a months-old reading is the same
+# stale assumption this file keeps being burned by.
+BNP_HOST  = "https://group.bnpparibas"
+BNP_LIST  = BNP_HOST + "/emploi-carriere/toutes-offres-emploi/"
+# Depth in the categories a tech student actually wants...
+BNP_PATHS = ("stage/informatique", "stage/technologie", "stage/digital-it", "stage/data-analytics")
+BNP_PAGES = 5
+# ...plus the newest few pages of ALL internships, because a tech role filed
+# under a category not listed above would otherwise be invisible. The listing is
+# newest-first, so this is also the part that delivers the lead time.
+BNP_BROAD, BNP_BROAD_PAGES = "stage", 3
+
+BNP_CARD = re.compile(
+    r'<a href="(/emploi-carriere/offre-emploi/[^"?#]+)"[^>]*class="card-link".*?'
+    r'<div class="offer-type">\s*(.*?)\s*</div>.*?'
+    r'<h3[^>]*>\s*(.*?)\s*</h3>.*?'
+    r'<div class="offer-location">\s*(.*?)\s*</div>', re.S)
+_BNP_ROBOTS = {}
+
+
+def _bnp_fetch(url):
+    from curl_cffi import requests as creq          # absent -> error, never a silent 0
+    r = creq.get(url, impersonate="chrome", timeout=40, headers={
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+        "Referer": BNP_HOST + "/emploi-carriere"})
+    if r.status_code >= 400:
+        raise RuntimeError("HTTP %s from %s" % (r.status_code, url))
+    return r.text
+
+
+def _bnp_allowed(url):
+    if "rp" not in _BNP_ROBOTS:
+        import urllib.robotparser
+        rp = urllib.robotparser.RobotFileParser()
+        try:
+            rp.parse(_bnp_fetch(BNP_HOST + "/robots.txt").splitlines())
+        except Exception as e:
+            raise RuntimeError("could not read robots.txt (%s); refusing to fetch" % e)
+        _BNP_ROBOTS["rp"] = rp
+    return _BNP_ROBOTS["rp"].can_fetch("*", url)
+
+
+def f_bnp(c):
+    out, seen, capped = [], set(), False
+    plans = [(p, BNP_PAGES) for p in BNP_PATHS] + [(BNP_BROAD, BNP_BROAD_PAGES)]
+    for path, maxpage in plans:
+        for page in range(1, maxpage + 1):
+            url = BNP_LIST + path + ("" if page == 1 else "?page=%d" % page)
+            if not _bnp_allowed(url):
+                raise RuntimeError("robots.txt disallows %s" % url)
+            cards = BNP_CARD.findall(_bnp_fetch(url))
+            fresh = 0
+            for href, kind, title, loc in cards:
+                full = BNP_HOST + href
+                if full in seen:
+                    continue
+                seen.add(full)
+                fresh += 1
+                loc = html.unescape(re.sub(r"<[^>]+>", " ", loc))
+                loc = " ".join(loc.split())
+                title = html.unescape(re.sub(r"<[^>]+>", " ", title))
+                title = " ".join(title.split())
+                # the listing is global - Madrid and Milan sit on page 1 - so the
+                # usual where() does the France call, exactly as everywhere else
+                out.append((title, loc, full, loc))
+            if len(cards) < 10:
+                break
+            if page == maxpage and fresh:
+                capped = True
+            time.sleep(0.4)
+    if capped:
+        # a paging ceiling hides the tail; never close a role off a partial read
+        PARTIAL.add(c["name"])
+        print("  %s: hit the BNP page ceiling; treated as incomplete" % c["name"], file=sys.stderr)
+    return out
+
+
 def _verify(url):
     """'ok' | 'gone' | 'blocked'.
 
@@ -763,7 +853,7 @@ def _verify(url):
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
-         "dassault": f_dassault, "wttj": f_wttj}
+         "dassault": f_dassault, "wttj": f_wttj, "bnp": f_bnp}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -775,6 +865,7 @@ ENDPOINT = {
     "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
     "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
     "wttj":            lambda c: "csekhvms53-dsn.algolia.net wk_cms_jobs_production (org %s)" % c["slug"],
+    "bnp":             lambda c: "group.bnpparibas/emploi-carriere/toutes-offres-emploi (4 tech paths + newest)",
 }
 
 

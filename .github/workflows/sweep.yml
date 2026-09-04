@@ -34,6 +34,14 @@ jobs:
       # empty board) the step aborted, boards 2 and 3 were never built, and the
       # commit step never ran - three watches taken out by one bad roster. The
       # gate step at the end still turns the run red so a failure is visible.
+      # BNP Paribas is read from their own listing, which sits behind Akamai Bot
+      # Manager and only answers a browser TLS fingerprint. Not continue-on-error:
+      # if this install fails the BNP fetch raises ImportError and shows up as a
+      # failed company on the board, which is visible - far better than a silent
+      # zero that would look like BNP having no internships.
+      - name: Install curl_cffi (BNP fetcher)
+        run: pip install curl_cffi
+
       - name: Batch 1 - Stage Watch
         id: b1
         continue-on-error: true
