@@ -48,8 +48,20 @@ SOURCES = {
 }
 
 
+# The BNP ladder settled this: rungs 1-4 (no headers, plain UA, browser UA,
+# browser UA + Accept */*) all got 403 Access Denied from the runner, and the
+# FULL browser header set got 200 and the real listing. So it is a header check,
+# not an IP block - and every probe sends the full set from here on.
+BROWSER = dict(UA, **{
+    "Referer": "https://group.bnpparibas/en/careers",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document", "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin", "Sec-Fetch-User": "?1",
+    "Connection": "keep-alive"})
+
+
 def fetch(url):
-    req = urllib.request.Request(url, headers={**UA, "Accept-Encoding": "gzip"})
+    req = urllib.request.Request(url, headers={**BROWSER, "Accept-Encoding": "gzip"})
     with urllib.request.urlopen(req, timeout=60) as r:
         raw = r.read()
         if "gzip" in (r.headers.get("Content-Encoding") or "").lower():
