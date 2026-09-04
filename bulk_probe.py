@@ -198,6 +198,33 @@ def t_wttj(slug):
     return []
 
 
+def t_wttj_filter(spec):
+    """Settle the three things a fetcher cannot guess: does a server-side filter
+    on organization.slug AND contract_type actually narrow, how many hits exist
+    behind the 100-per-page cap, and how many of them are duplicates.
+
+    Every one of those, guessed wrong, produces a company that looks empty or a
+    board that reports the same role twice."""
+    slug = spec
+    f = 'organization.slug:"%s" AND contract_type:"INTERNSHIP"' % slug
+    d = _algolia(WTTJ_JOBS, "hitsPerPage=100&page=0&filters=" + urllib.parse.quote(f))
+    hits = d.get("hits") or []
+    kinds = {}
+    for h in hits:
+        kinds[h.get("contract_type", "?")] = kinds.get(h.get("contract_type", "?"), 0) + 1
+    orgs = {(h.get("organization") or {}).get("slug") for h in hits}
+    slugs = [h.get("slug") for h in hits]
+    uniq = len({s for s in slugs if s})
+    print("      %-26s nbHits=%-5s nbPages=%-3s returned=%-3d unique-slug=%-3d contract=%s org=%s"
+          % (slug, d.get("nbHits"), d.get("nbPages"), len(hits), uniq, kinds, sorted(o for o in orgs if o)))
+    if hits:
+        h = hits[0]
+        print("      url parts: org=%s job-slug=%s  office=%s"
+              % ((h.get("organization") or {}).get("slug"), h.get("slug"),
+                 json.dumps(h.get("office"), ensure_ascii=False)[:120]))
+    return [(h.get("name", ""), ((h.get("office") or {}) or {}).get("city", "")) for h in hits[:6]]
+
+
 def t_wttj_org(slug):
     o = get("https://api.welcometothejungle.com/api/v1/organizations/%s" % slug)
     org = o.get("organization") or o
@@ -260,6 +287,7 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 # Re-enable only alongside something that can present as a browser.
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
          "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
+         "wttjfilter": t_wttj_filter,
          "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 
 
