@@ -23,8 +23,8 @@ mistake (a French site being read as foreign).
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
 ### Not tech - 7
@@ -163,18 +163,35 @@ mistake (a French site being read as foreign).
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 6
+### Unrecognised location - 23
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
+| BNP Paribas | [Stage - RH Gestionnaire Administratif (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-rh-gestionnaire-administratif-h-f-1) | Luxembourg City, Luxembourg |
+| BNP Paribas | [Stage - Transformation digitale (M/F)](https://group.bnpparibas/en/careers/job-offer/stage-transformation-digitale-m-f-1) | Kirchberg, Luxembourg, Luxembourg |
+| BNP Paribas | [Front Office Support Trainee (M/F)](https://group.bnpparibas/en/careers/job-offer/front-office-support-trainee-m-f-1) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire - IT Security Officer (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-it-security-officer-h-f-1) | Luxembourg City, Luxembourg |
+| BNP Paribas | [Stagiaire Crédit Contracting Officer (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-credit-contracting-officer-h-f-2) | Luxembourg City, Luxembourg |
+| BNP Paribas | [Stagiaire AML KYC Expert & Review H/F](https://group.bnpparibas/en/careers/job-offer/stagiaire-aml-kyc-expert-review-h-f-1) | Howald, Luxembourg, Luxembourg |
+| BNP Paribas | [Alternance - Performance Management (H/F)](https://group.bnpparibas/en/careers/job-offer/alternance-performance-management-h-f) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Securities Services Student Placement - Jersey](https://group.bnpparibas/en/careers/job-offer/securities-services-student-placement-jersey) | Saint Helier, St Helier, Jersey |
+| BNP Paribas | [Stage - Standardiste (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-standardiste-h-f-1) | Howald, Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire - Finance Sourcing Solutions (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-finance-sourcing-solutions-h-f-1) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire Opérations Documentaires (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-operations-documentaires-h-f) | Kirchberg, Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire en alternance - Investment Compliance – Pôle Banques dépositaires (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-en-alternance-investment-compliance-pole-banques-depositaires-h-f-2) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage Compliance (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-compliance-h-f-2) | Luxembourg City, Luxembourg |
+| BNP Paribas | [Stagiaire - KYC Officer (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-kyc-officer-h-f) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Internship - Business Manager Assistant (M/F)](https://group.bnpparibas/en/careers/job-offer/internship-business-manager-assistant) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage Advisory Desk Assistant – desk Investment Advisory Wealth Management (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-advisory-desk-assistant-desk-investment-advisory-wealth-management-h-f-2) | Luxembourg City, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage - Data visualization - PMO IT (h/f)](https://group.bnpparibas/en/careers/job-offer/stage-data-visualization-pmo-it-h-f) | Luxembourg City, Luxembourg, Luxembourg |
 | Amundi | [Stage - Fund Distributor Operations Officer – Trailer Fees H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-fund-distributor-operations-officer-trailer-fees-h-f_100414.aspx) | Luxembourg |
 | Amundi | [Stage - Fund Manager Operations Officer (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-fund-manager-operations-officer-6-12-months-h-f_114757.aspx) | Luxembourg |
 | Amundi | [FC - Stage Fund Dealing Support (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-fc-stage-fund-dealing-support-6-12-months-h-f_113088.aspx) | Luxembourg |
 | Amundi | [Stage - Contrôleur financier (6/12 mois) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-controleur-financier-6-12-mois-h-f_114098.aspx) | Luxembourg |
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | Stage |
 
-### Not tech - 193 (showing the first 60)
+### Not tech - 235 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -239,7 +256,7 @@ mistake (a French site being read as foreign).
 | Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr) | Besancon, France |
 | Societe Generale | [Chargé de projets RH](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr) | La Defense, France |
 
-### Outside France - 134 (sample below)
+### Outside France - 418 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

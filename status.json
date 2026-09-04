@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T21:05:59.300433+02:00",
+      "generated": "2026-09-04T21:13:32.270387+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -56,7 +56,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 49,
-      "generated": "2026-09-04T21:06:16.204910+02:00",
+      "generated": "2026-09-04T21:13:51.478886+02:00",
       "incomplete": [],
       "live": 64,
       "new": 0,
@@ -154,8 +154,69 @@
       "unsure": 13
     },
     "board3.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Analyste Transactions Immobilières F/H"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Analyste risques opérationnels H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "STAGE - PROJECT MANAGEMENT OFFICER - H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Analyste Conformité AML/CFT H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Chargé de Conformité Protection des intérêts clients H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Chargé de projet média - H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage- Assistant pôle SOFICA - H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Sustainable Transaction Banking Analyst - H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage – Chargé de relations média – H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stagiaire « Chargé(e) de marketing » H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Assistant chef de projet H/F"
+        },
+        {
+          "company": "BNP Paribas",
+          "kind": "other",
+          "title": "Stage - Chargé de projets communication RH - H/F"
+        }
+      ],
+      "also_new_total": 44,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
@@ -174,23 +235,98 @@
       "companies": 12,
       "failed": 0,
       "failed_names": [],
-      "filtered": 193,
-      "generated": "2026-09-04T21:07:30.555144+02:00",
-      "incomplete": [
-        "BNP Paribas (empty)"
-      ],
-      "live": 36,
-      "new": 1,
+      "filtered": 235,
+      "generated": "2026-09-04T21:14:57.445424+02:00",
+      "incomplete": [],
+      "live": 55,
+      "new": 19,
       "new_roles": [
         {
-          "company": "MBDA",
+          "company": "BNP Paribas",
           "first_seen": "2026-09-04",
-          "location": "Le Plessis Robinson (92)",
-          "title": "Stage Navigation : Etude du Guidage d'un Système Spatial Réactif F/H",
-          "url": "https://mbda.gestmax.fr/19408/1/stage-navigation-etude-du-guidage-d-un-systeme-spatial-reactif-f-h?backlink=search"
+          "location": "Puteaux, Île-de-France, France",
+          "title": "Stage - Private Equity Infrastructure F/H",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-analyste-infrastructure-equity-h-f-1"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Puteaux, Île-de-France, France",
+          "title": "Stage - Private Equity Infrastructure F/H",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-private-equity-infrastructure-f-h"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Pantin, Île-de-France, France",
+          "title": "Stage - Acheteur Hardware Telecom H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-acheteur-hardware-telecom-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Montreuil, Île-de-France, France",
+          "title": "Stage - Assistant risques sécurité / sûreté International H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-assistant-risques-securite-surete-international-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage – Chargé de conformité Sécurité financière KYC H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-charge-de-conformite-securite-financiere-kyc-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Pantin, Île-de-France, France",
+          "title": "Stage - Acheteur IT software Junior H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-acheteur-it-software-junior-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Pantin, Île-de-France, France",
+          "title": "Stage - Lead Buyer Market Data H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-lead-buyer-market-data-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Pantin, Île-de-France, France",
+          "title": "Stage - Acheteur IT Junior H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-acheteur-it-junior-h-f-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-assistant-e-chief-data-officer-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-economiste-data-visualisation-h-f-4-a-6-mois"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "location": "Nantes, Pays de la Loire, France",
+          "title": "Portzamparc-Stage-Management des systèmes d'informations Comptable (H/F) à Nantes",
+          "url": "https://group.bnpparibas/en/careers/job-offer/portzamparc-stage-management-des-systemes-d-informations-comptable-h-f-a-nantes"
         }
       ],
-      "new_roles_total": 1,
+      "new_roles_total": 19,
       "recent_roles": [
         {
           "company": "Thales",
@@ -277,10 +413,10 @@
           "url": "https://careers.societegenerale.com/offres-d-emploi/software-developper-26000AA7-fr"
         }
       ],
-      "recent_roles_total": 36,
-      "scanned": 2480,
+      "recent_roles_total": 55,
+      "scanned": 2842,
       "stamp": "2026-09-04",
-      "unsure": 6
+      "unsure": 23
     },
     "t3.html": {
       "also_new": [],
@@ -313,5 +449,5 @@
       "unsure": 0
     }
   },
-  "generated": "2026-09-04T21:07:30.555144+02:00"
+  "generated": "2026-09-04T21:14:57.445424+02:00"
 }
