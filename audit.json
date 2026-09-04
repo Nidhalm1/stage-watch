@@ -161,13 +161,6 @@
           "is_new": false,
           "location": "In-Office",
           "title": "Research Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407"
-        },
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
-          "title": "Research Engineer Intern (Fall 2026)",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379"
         },
         {
@@ -181,8 +174,8 @@
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
-          "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
+          "title": "Research Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407"
         },
         {
           "company": "Cloudflare",
@@ -190,6 +183,13 @@
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Software Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
         },
         {
           "company": "Cloudflare",
@@ -371,14 +371,14 @@
         },
         {
           "company": "Back Market",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Legal Intern / Juriste Droit des Affaires (Paris)",
           "url": "https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5"
         },
         {
           "company": "Back Market",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Sustainability and Public Affairs Intern (Paris )",
           "url": "https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7"
@@ -489,7 +489,7 @@
     },
     "board3.html": {
       "board": "Defence & Finance Watch",
-      "foreign_count": 156,
+      "foreign_count": 309,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -928,83 +928,83 @@
         },
         {
           "company": "BNP Paribas",
-          "is_new": true,
-          "location": "Montreuil, Île-de-France, France",
-          "title": "STAGE - Business Analyst H/F - 6 mois",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-business-analyst-h-f-6-mois-1"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": true,
-          "location": "Puteaux, Île-de-France, France",
-          "title": "Stage - Contrôleur Financier Listed Real Assets H/F",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-controleur-financier-listed-real-assets-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": true,
-          "location": "Levallois-Perret, Île-de-France, France",
-          "title": "Stage -Analyste quantitatif - H/F",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-quantitatif-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": true,
-          "location": "Puteaux, Île-de-France, France",
-          "title": "Stage - Analyste Quantitatif RIESG H/F",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-quantitatif-riesg-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": true,
+          "is_new": false,
           "location": "Puteaux, Île-de-France, France",
           "title": "Stage - Analyste Transactions Immobilières F/H",
           "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-transactions-immobilieres-f-h"
         },
         {
           "company": "BNP Paribas",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, Île-de-France, France",
           "title": "Stage - Analyste risques opérationnels H/F",
           "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-risques-operationnels-h-f"
         },
         {
-          "company": "Credit Agricole",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "STAGE ASSISTANT COORDINATION OPERATIONNELLE ET ADMINISTRATIVE H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-coordination-operationnelle-et-administrative-h-f_paris"
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "STAGE - PROJECT MANAGEMENT OFFICER - H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-project-management-officer-h-f"
         },
         {
-          "company": "Credit Agricole",
-          "is_new": false,
-          "location": "Montrouge, France",
-          "title": "Stage - Depositary Control Assistant H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-depositary-control-assistant-h-f_montrouge"
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage - Analyste Conformité AML/CFT H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-conformite-aml-cft-h-f"
         },
         {
-          "company": "Credit Agricole",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "STAGE - Product Owner H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-product-owner-h-f_paris"
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage - Chargé de Conformité Protection des intérêts clients H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-conformite-protection-des-interets-clients-h-f"
         },
         {
-          "company": "Credit Agricole",
-          "is_new": false,
-          "location": "Guyancourt, France",
-          "title": "STAGE - Chargé de communication IT H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-community-manager-it-h-f_guyancourt"
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage - Chargé de projet média - H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-projet-media-h-f-1"
         },
         {
-          "company": "Credit Agricole",
-          "is_new": false,
-          "location": "Montrouge, France",
-          "title": "Stage Gestionnaire back office FDS H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-gestionnaire-back-office-fds-h-f_montrouge_GCA_94Pa71m"
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage- Assistant pôle SOFICA - H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-assistant-pole-sofica-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage - Sustainable Transaction Banking Analyst - H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-sustainable-transaction-banking-analyst-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage – Chargé de relations média – H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-relations-media-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Boulogne-Billancourt, Île-de-France, France",
+          "title": "Stagiaire « Chargé(e) de marketing » H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-charge-e-de-marketing-h-f-1"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage - Assistant chef de projet H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-assistant-chef-de-projet-h-f-1"
         }
       ],
-      "non_tech_total": 117,
+      "non_tech_total": 153,
       "stamp": "2026-09-04",
       "unknown_location": [
         {
@@ -1016,21 +1016,21 @@
         },
         {
           "company": "BNP Paribas",
-          "is_new": true,
+          "is_new": false,
           "location": "Luxembourg, Luxembourg",
-          "title": "Stagiaire - IT Security Officer (H/F)",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-it-security-officer-h-f-1"
+          "title": "Stage - RH Gestionnaire Administratif (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-rh-gestionnaire-administratif-h-f-1"
         },
         {
           "company": "BNP Paribas",
-          "is_new": true,
-          "location": "Luxembourg, Luxembourg, Luxembourg",
-          "title": "Stage - Data visualization - PMO IT (h/f)",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-visualization-pmo-it-h-f"
+          "is_new": false,
+          "location": "Kirchberg, Luxembourg, Luxembourg",
+          "title": "Stage - Transformation digitale (M/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-transformation-digitale-m-f-1"
         },
         {
           "company": "BNP Paribas",
-          "is_new": true,
+          "is_new": false,
           "location": "Jersey City, New Jersey, États-Unis",
           "title": "2027 – Summer Assistant Vice President Internship - Corporate Functions, Analytics Lab (Machine Learning Engineer)",
           "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-assistant-vice-president-internship-corporate-functions-analytics-lab-machine-learning-engineer"
@@ -1039,26 +1039,103 @@
           "company": "BNP Paribas",
           "is_new": true,
           "location": "Jersey City, New Jersey, États-Unis",
+          "title": "2027 - Summer Assistant Vice President Internship - Corporate Functions, Strategy & Transformation (Internal Consulting)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-assistant-vice-president-internship-corporate-functions-strategy-transformation-internal-consulting"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Luxembourg, Luxembourg",
+          "title": "Stagiaire - IT Security Officer (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-it-security-officer-h-f-1"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Luxembourg, Luxembourg",
+          "title": "Stagiaire Crédit Contracting Officer (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-credit-contracting-officer-h-f-2"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Howald, Luxembourg, Luxembourg",
+          "title": "Stagiaire AML KYC Expert & Review H/F",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-aml-kyc-expert-review-h-f-1"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Howald, Luxembourg, Luxembourg",
+          "title": "Stage - Standardiste (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-standardiste-h-f-1"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Jersey City, New Jersey, États-Unis",
+          "title": "2027 – Summer Analyst Internship - Corporate Functions, Operations",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-analyst-internship-corporate-functions-operations"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Jersey City, New Jersey, États-Unis",
           "title": "2027 – Summer Analyst Internship - Corporate Functions, Technology",
           "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-analyst-internship-corporate-functions-technology"
         },
         {
           "company": "BNP Paribas",
           "is_new": true,
-          "location": "Luxembourg, Luxembourg",
-          "title": "Stage - RH Gestionnaire Administratif (H/F)",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-rh-gestionnaire-administratif-h-f-1"
+          "location": "Luxembourg, Luxembourg, Luxembourg",
+          "title": "Stagiaire - Finance Sourcing Solutions (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-finance-sourcing-solutions-h-f-1"
         },
         {
           "company": "BNP Paribas",
           "is_new": true,
           "location": "Kirchberg, Luxembourg, Luxembourg",
-          "title": "Stage - Transformation digitale (M/F)",
-          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-transformation-digitale-m-f-1"
+          "title": "Stagiaire Opérations Documentaires (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-operations-documentaires-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Luxembourg, Luxembourg",
+          "title": "Stage Compliance (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-compliance-h-f-2"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Luxembourg, Luxembourg, Luxembourg",
+          "title": "Stagiaire - KYC Officer (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-kyc-officer-h-f"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Luxembourg, Luxembourg, Luxembourg",
+          "title": "Internship - Business Manager Assistant (M/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/internship-business-manager-assistant"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": true,
+          "location": "Luxembourg, Luxembourg, Luxembourg",
+          "title": "Stage Advisory Desk Assistant – desk Investment Advisory Wealth Management (H/F)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-advisory-desk-assistant-desk-investment-advisory-wealth-management-h-f-2"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Luxembourg, Luxembourg, Luxembourg",
+          "title": "Stage - Data visualization - PMO IT (h/f)",
+          "url": "https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-visualization-pmo-it-h-f"
         }
       ],
-      "unknown_location_total": 7
+      "unknown_location_total": 18
     }
   },
-  "generated": "2026-09-04T16:56:01.870607+02:00"
+  "generated": "2026-09-04T17:05:10.127597+02:00"
 }

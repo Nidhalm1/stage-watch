@@ -23,11 +23,11 @@ mistake (a French site being read as foreign).
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407) | In-Office |
 | Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379) | In-Office |
 | Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
+| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
 ### Not tech - 7
@@ -129,19 +129,30 @@ _none_
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 7
+### Unrecognised location - 18
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
-| BNP Paribas | [Stagiaire - IT Security Officer (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-it-security-officer-h-f-1) | Luxembourg, Luxembourg |
-| BNP Paribas | [Stage - Data visualization - PMO IT (h/f)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-visualization-pmo-it-h-f) | Luxembourg, Luxembourg, Luxembourg |
-| BNP Paribas | [2027 – Summer Assistant Vice President Internship - Corporate Functions, Analytics Lab (Machine Learning Engineer)](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-assistant-vice-president-internship-corporate-functions-analytics-lab-machine-learning-engineer) | Jersey City, New Jersey, États-Unis |
-| BNP Paribas | [2027 – Summer Analyst Internship - Corporate Functions, Technology](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-analyst-internship-corporate-functions-technology) | Jersey City, New Jersey, États-Unis |
 | BNP Paribas | [Stage - RH Gestionnaire Administratif (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-rh-gestionnaire-administratif-h-f-1) | Luxembourg, Luxembourg |
 | BNP Paribas | [Stage - Transformation digitale (M/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-transformation-digitale-m-f-1) | Kirchberg, Luxembourg, Luxembourg |
+| BNP Paribas | [2027 – Summer Assistant Vice President Internship - Corporate Functions, Analytics Lab (Machine Learning Engineer)](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-assistant-vice-president-internship-corporate-functions-analytics-lab-machine-learning-engineer) | Jersey City, New Jersey, États-Unis |
+| BNP Paribas | [2027 - Summer Assistant Vice President Internship - Corporate Functions, Strategy & Transformation (Internal Consulting)](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-assistant-vice-president-internship-corporate-functions-strategy-transformation-internal-consulting) | Jersey City, New Jersey, États-Unis |
+| BNP Paribas | [Stagiaire - IT Security Officer (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-it-security-officer-h-f-1) | Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire Crédit Contracting Officer (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-credit-contracting-officer-h-f-2) | Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire AML KYC Expert & Review H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-aml-kyc-expert-review-h-f-1) | Howald, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage - Standardiste (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-standardiste-h-f-1) | Howald, Luxembourg, Luxembourg |
+| BNP Paribas | [2027 – Summer Analyst Internship - Corporate Functions, Operations](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-analyst-internship-corporate-functions-operations) | Jersey City, New Jersey, États-Unis |
+| BNP Paribas | [2027 – Summer Analyst Internship - Corporate Functions, Technology](https://group.bnpparibas/emploi-carriere/offre-emploi/2027-summer-analyst-internship-corporate-functions-technology) | Jersey City, New Jersey, États-Unis |
+| BNP Paribas | [Stagiaire - Finance Sourcing Solutions (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-finance-sourcing-solutions-h-f-1) | Luxembourg, Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire Opérations Documentaires (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-operations-documentaires-h-f) | Kirchberg, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage Compliance (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-compliance-h-f-2) | Luxembourg, Luxembourg |
+| BNP Paribas | [Stagiaire - KYC Officer (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-kyc-officer-h-f) | Luxembourg, Luxembourg, Luxembourg |
+| BNP Paribas | [Internship - Business Manager Assistant (M/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/internship-business-manager-assistant) | Luxembourg, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage Advisory Desk Assistant – desk Investment Advisory Wealth Management (H/F)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-advisory-desk-assistant-desk-investment-advisory-wealth-management-h-f-2) | Luxembourg, Luxembourg, Luxembourg |
+| BNP Paribas | [Stage - Data visualization - PMO IT (h/f)](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-data-visualization-pmo-it-h-f) | Luxembourg, Luxembourg, Luxembourg |
 
-### Not tech - 117 (showing the first 60)
+### Not tech - 153 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -194,19 +205,19 @@ _none_
 | Societe Generale | [Stage Assistant Banquier Privé](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-banquier-prive_talence) | Talence, France |
 | Societe Generale | [Stage marché patrimonial](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_menton) | Menton, France |
 | Societe Generale | [Stagiaire Animation Commerciale & Supports Stratégiques](https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stagiaire-animation-commerciale-supports-strategiques_paris) | Paris, France |
-| BNP Paribas | [STAGE - Business Analyst H/F - 6 mois](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-business-analyst-h-f-6-mois-1) | Montreuil, Île-de-France, France |
-| BNP Paribas | [Stage - Contrôleur Financier Listed Real Assets H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-controleur-financier-listed-real-assets-h-f) | Puteaux, Île-de-France, France |
-| BNP Paribas | [Stage -Analyste quantitatif - H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-quantitatif-h-f) | Levallois-Perret, Île-de-France, France |
-| BNP Paribas | [Stage - Analyste Quantitatif RIESG H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-quantitatif-riesg-h-f) | Puteaux, Île-de-France, France |
 | BNP Paribas | [Stage - Analyste Transactions Immobilières F/H](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-transactions-immobilieres-f-h) | Puteaux, Île-de-France, France |
 | BNP Paribas | [Stage - Analyste risques opérationnels H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-risques-operationnels-h-f) | Paris, Île-de-France, France |
-| Credit Agricole | [STAGE ASSISTANT COORDINATION OPERATIONNELLE ET ADMINISTRATIVE H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-coordination-operationnelle-et-administrative-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - Depositary Control Assistant H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-depositary-control-assistant-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [STAGE - Product Owner H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-product-owner-h-f_paris) | Paris, France |
-| Credit Agricole | [STAGE - Chargé de communication IT H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-community-manager-it-h-f_guyancourt) | Guyancourt, France |
-| Credit Agricole | [Stage Gestionnaire back office FDS H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-gestionnaire-back-office-fds-h-f_montrouge_GCA_94Pa71m) | Montrouge, France |
+| BNP Paribas | [STAGE - PROJECT MANAGEMENT OFFICER - H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-project-management-officer-h-f) | Paris, Île-de-France, France |
+| BNP Paribas | [Stage - Analyste Conformité AML/CFT H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-analyste-conformite-aml-cft-h-f) | Paris, Île-de-France, France |
+| BNP Paribas | [Stage - Chargé de Conformité Protection des intérêts clients H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-conformite-protection-des-interets-clients-h-f) | Paris, Île-de-France, France |
+| BNP Paribas | [Stage - Chargé de projet média - H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-projet-media-h-f-1) | Paris, Île-de-France, France |
+| BNP Paribas | [Stage- Assistant pôle SOFICA - H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-assistant-pole-sofica-h-f) | Paris, Île-de-France, France |
+| BNP Paribas | [Stage - Sustainable Transaction Banking Analyst - H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-sustainable-transaction-banking-analyst-h-f) | Paris, Île-de-France, France |
+| BNP Paribas | [Stage – Chargé de relations média – H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-charge-de-relations-media-h-f) | Paris, Île-de-France, France |
+| BNP Paribas | [Stagiaire « Chargé(e) de marketing » H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stagiaire-charge-e-de-marketing-h-f-1) | Boulogne-Billancourt, Île-de-France, France |
+| BNP Paribas | [Stage - Assistant chef de projet H/F](https://group.bnpparibas/emploi-carriere/offre-emploi/stage-assistant-chef-de-projet-h-f-1) | Paris, Île-de-France, France |
 
-### Outside France - 156 (sample below)
+### Outside France - 309 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
