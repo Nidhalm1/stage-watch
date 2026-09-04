@@ -23,8 +23,8 @@ mistake (a French site being read as foreign).
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
 ### Not tech - 7
@@ -65,25 +65,11 @@ mistake (a French site being read as foreign).
 
 `board2.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 13
+### Unrecognised location - 0
 
-| Company | Title | Location |
-|---|---|---|
-| Sopra Steria | [Stage Business Analyst – Reporting & Controlling](https://jobs.smartrecruiters.com/SopraSteria1/744000146410169) | ASSAGO, it |
-| Sopra Steria | [DevSecOps Stage](https://jobs.smartrecruiters.com/SopraSteria1/744000141930724) | Pozzuoli, it |
-| Sopra Steria | [Stage Java Developer - Microservizi](https://jobs.smartrecruiters.com/SopraSteria1/744000140658859) | Pozzuoli, it |
-| Sopra Steria | [Stage HR](https://jobs.smartrecruiters.com/SopraSteria1/744000135933841) | Nieuwegein, nl |
-| Sopra Steria | [Stage interne communicatie](https://jobs.smartrecruiters.com/SopraSteria1/744000133571869) | Nieuwegein, nl |
-| Sopra Steria | [Stage HR & Employer Branding](https://jobs.smartrecruiters.com/SopraSteria1/744000133569464) | Nieuwegein, nl |
-| Sopra Steria | [Stage Salesforce Data Cloud](https://jobs.smartrecruiters.com/SopraSteria1/744000124001250) | Assago, it |
-| Sopra Steria | [Stage Data Engineer  — Ambito Retail Fashion & Industry](https://jobs.smartrecruiters.com/SopraSteria1/744000113222417) | ASSAGO, it |
-| Alten | [Consultant Support FAI avec expertise N1](https://jobs.smartrecruiters.com/alten/744000146801393) | Dakar, sn |
-| Alten | [Consultant Support FAI avec expertise N1](https://jobs.smartrecruiters.com/alten/744000130671229) | Dakar, sn |
-| Alten | [Senior Packaging Engineer Pharma (all gender)](https://jobs.smartrecruiters.com/alten/744000127815530) | Mannheim, de |
-| Alten | [Consultant Support FAI avec expertise N1](https://jobs.smartrecruiters.com/alten/744000117911430) | Dakar, sn |
-| Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c) | Saint Vulbas |
+_none_
 
-### Not tech - 49
+### Not tech - 48
 
 | Company | Title | Location |
 |---|---|---|
@@ -117,8 +103,6 @@ mistake (a French site being read as foreign).
 | Deezer | [Legal & Business Affairs - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d) | Paris, FR |
 | Sopra Steria | [Stage Consultant(e) - Transformation digitale - People&Change - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000147559756) | Courbevoie, fr |
 | Sopra Steria | [Stage - Chef/fe de Projet - Services Publics - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000147258373) | Courbevoie, fr |
-| Sopra Steria | [Stage Business Analyst - Maintenance - Aéroline - Ile-de-France](https://jobs.smartrecruiters.com/SopraSteria1/744000147258950) | Courbevoie, fr |
-| Sopra Steria | [Stage - Business Analyst - Agile - Transport  - Île-de-France](https://jobs.smartrecruiters.com/SopraSteria1/744000147257370) | Courbevoie, fr |
 | Sopra Steria | [Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie](https://jobs.smartrecruiters.com/SopraSteria1/744000145930048) | Courbevoie, fr |
 | Sopra Steria | [Stage PPI - Juriste en droit social](https://jobs.smartrecruiters.com/SopraSteria1/744000143852928) | Paris, fr |
 | Sopra Steria | [Stage Consultant(e) fonctionnel(le) - Aéronautique - Bordeaux](https://jobs.smartrecruiters.com/SopraSteria1/744000140908198) | Mérignac, fr |
@@ -135,9 +119,10 @@ mistake (a French site being read as foreign).
 | Ubisoft | [Internship 6 months - Technical Designer (F/M/NB) [AAA Project]](https://jobs.smartrecruiters.com/Ubisoft2/744000147274629) | Annecy, fr |
 | Ubisoft | [Assistant(e) Chef(fe) de Projet Communication & Evènementiel - Stage 6 mois - (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000147273141) | Annecy, fr |
 | Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/6c32487d-4531-49ea-b5fc-b1facc8de206) | Saint-Denis |
+| Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c) | Saint Vulbas |
 | Veepee | [Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)](https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2) | Saint-Denis |
 
-### Outside France - 27 (sample below)
+### Outside France - 39 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -155,7 +140,7 @@ mistake (a French site being read as foreign).
 | Amadeus | [Software Developer Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590) | Taguig-Metro-Manila, R31590 |
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
 | Murex | [Murex Internship](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beijing/Murex-Internship_JR101126-1) | Beijing, JR101126; Intern |
-| Sopra Steria | [Sommerjobb 2027 - Design](https://jobs.smartrecruiters.com/SopraSteria1/744000145673069) | Oslo, no |
+| Sopra Steria | [Stage Business Analyst – Reporting & Controlling](https://jobs.smartrecruiters.com/SopraSteria1/744000146410169) | ASSAGO, it |
 
 ---
 
@@ -163,35 +148,14 @@ mistake (a French site being read as foreign).
 
 `board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 23
+### Unrecognised location - 2
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
-| BNP Paribas | [Stage - RH Gestionnaire Administratif (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-rh-gestionnaire-administratif-h-f-1) | Luxembourg City, Luxembourg |
-| BNP Paribas | [Stage - Transformation digitale (M/F)](https://group.bnpparibas/en/careers/job-offer/stage-transformation-digitale-m-f-1) | Kirchberg, Luxembourg, Luxembourg |
-| BNP Paribas | [Front Office Support Trainee (M/F)](https://group.bnpparibas/en/careers/job-offer/front-office-support-trainee-m-f-1) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Stagiaire - IT Security Officer (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-it-security-officer-h-f-1) | Luxembourg City, Luxembourg |
-| BNP Paribas | [Stagiaire Crédit Contracting Officer (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-credit-contracting-officer-h-f-2) | Luxembourg City, Luxembourg |
-| BNP Paribas | [Stagiaire AML KYC Expert & Review H/F](https://group.bnpparibas/en/careers/job-offer/stagiaire-aml-kyc-expert-review-h-f-1) | Howald, Luxembourg, Luxembourg |
-| BNP Paribas | [Alternance - Performance Management (H/F)](https://group.bnpparibas/en/careers/job-offer/alternance-performance-management-h-f) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Securities Services Student Placement - Jersey](https://group.bnpparibas/en/careers/job-offer/securities-services-student-placement-jersey) | Saint Helier, St Helier, Jersey |
-| BNP Paribas | [Stage - Standardiste (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-standardiste-h-f-1) | Howald, Luxembourg, Luxembourg |
-| BNP Paribas | [Stagiaire - Finance Sourcing Solutions (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-finance-sourcing-solutions-h-f-1) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Stagiaire Opérations Documentaires (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-operations-documentaires-h-f) | Kirchberg, Luxembourg, Luxembourg |
-| BNP Paribas | [Stagiaire en alternance - Investment Compliance – Pôle Banques dépositaires (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-en-alternance-investment-compliance-pole-banques-depositaires-h-f-2) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Stage Compliance (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-compliance-h-f-2) | Luxembourg City, Luxembourg |
-| BNP Paribas | [Stagiaire - KYC Officer (H/F)](https://group.bnpparibas/en/careers/job-offer/stagiaire-kyc-officer-h-f) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Internship - Business Manager Assistant (M/F)](https://group.bnpparibas/en/careers/job-offer/internship-business-manager-assistant) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Stage Advisory Desk Assistant – desk Investment Advisory Wealth Management (H/F)](https://group.bnpparibas/en/careers/job-offer/stage-advisory-desk-assistant-desk-investment-advisory-wealth-management-h-f-2) | Luxembourg City, Luxembourg, Luxembourg |
-| BNP Paribas | [Stage - Data visualization - PMO IT (h/f)](https://group.bnpparibas/en/careers/job-offer/stage-data-visualization-pmo-it-h-f) | Luxembourg City, Luxembourg, Luxembourg |
-| Amundi | [Stage - Fund Distributor Operations Officer – Trailer Fees H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-fund-distributor-operations-officer-trailer-fees-h-f_100414.aspx) | Luxembourg |
-| Amundi | [Stage - Fund Manager Operations Officer (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-fund-manager-operations-officer-6-12-months-h-f_114757.aspx) | Luxembourg |
-| Amundi | [FC - Stage Fund Dealing Support (6/12 months) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-fc-stage-fund-dealing-support-6-12-months-h-f_113088.aspx) | Luxembourg |
-| Amundi | [Stage - Contrôleur financier (6/12 mois) H/F](https://jobs.amundi.com/offre-de-emploi/emploi-stage-controleur-financier-6-12-mois-h-f_114098.aspx) | Luxembourg |
-| Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | Stage |
+| Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 
-### Not tech - 235 (showing the first 60)
+### Not tech - 231 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -256,7 +220,7 @@ mistake (a French site being read as foreign).
 | Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr) | Besancon, France |
 | Societe Generale | [Chargé de projets RH](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr) | La Defense, France |
 
-### Outside France - 418 (sample below)
+### Outside France - 439 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T21:13:32.270387+02:00",
+      "generated": "2026-09-04T21:20:36.800734+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -55,13 +55,28 @@
       "companies": 25,
       "failed": 0,
       "failed_names": [],
-      "filtered": 49,
-      "generated": "2026-09-04T21:13:51.478886+02:00",
+      "filtered": 48,
+      "generated": "2026-09-04T21:21:09.106521+02:00",
       "incomplete": [],
-      "live": 64,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
+      "live": 66,
+      "new": 2,
+      "new_roles": [
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage Business Analyst - Maintenance - Aéroline - Ile-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258950"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257370"
+        }
+      ],
+      "new_roles_total": 2,
       "recent_roles": [
         {
           "company": "Alan",
@@ -148,75 +163,14 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258410"
         }
       ],
-      "recent_roles_total": 64,
+      "recent_roles_total": 66,
       "scanned": 4856,
       "stamp": "2026-09-04",
-      "unsure": 13
+      "unsure": 0
     },
     "board3.html": {
-      "also_new": [
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Analyste Transactions Immobilières F/H"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Analyste risques opérationnels H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "STAGE - PROJECT MANAGEMENT OFFICER - H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Analyste Conformité AML/CFT H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Chargé de Conformité Protection des intérêts clients H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Chargé de projet média - H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage- Assistant pôle SOFICA - H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Sustainable Transaction Banking Analyst - H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage – Chargé de relations média – H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stagiaire « Chargé(e) de marketing » H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Assistant chef de projet H/F"
-        },
-        {
-          "company": "BNP Paribas",
-          "kind": "other",
-          "title": "Stage - Chargé de projets communication RH - H/F"
-        }
-      ],
-      "also_new_total": 44,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
@@ -235,98 +189,42 @@
       "companies": 12,
       "failed": 0,
       "failed_names": [],
-      "filtered": 235,
-      "generated": "2026-09-04T21:14:57.445424+02:00",
+      "filtered": 231,
+      "generated": "2026-09-04T21:22:21.181769+02:00",
       "incomplete": [],
-      "live": 55,
-      "new": 19,
+      "live": 59,
+      "new": 4,
       "new_roles": [
         {
-          "company": "BNP Paribas",
+          "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "location": "Puteaux, Île-de-France, France",
-          "title": "Stage - Private Equity Infrastructure F/H",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-analyste-infrastructure-equity-h-f-1"
+          "location": "Fontenay-Sous-Bois, France",
+          "title": "Agile Business Analyst",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/agile-business-analyst-26000GRL-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "first_seen": "2026-09-04",
+          "location": "La Defense, France",
+          "title": "Business Analyst & Gestion de Projets - Flux et Transactions Internationales",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/business-analyst-gestion-de-projets-flux-et-transactions-internationales-26000CJ7-fr"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
-          "location": "Puteaux, Île-de-France, France",
-          "title": "Stage - Private Equity Infrastructure F/H",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-private-equity-infrastructure-f-h"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Pantin, Île-de-France, France",
-          "title": "Stage - Acheteur Hardware Telecom H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-acheteur-hardware-telecom-h-f"
+          "location": "Paris, Île-de-France, France",
+          "title": "STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS - H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-business-analyst-ultra-hight-net-worth-clients-h-f-1"
         },
         {
           "company": "BNP Paribas",
           "first_seen": "2026-09-04",
           "location": "Montreuil, Île-de-France, France",
-          "title": "Stage - Assistant risques sécurité / sûreté International H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-assistant-risques-securite-surete-international-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Paris, Île-de-France, France",
-          "title": "Stage – Chargé de conformité Sécurité financière KYC H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-charge-de-conformite-securite-financiere-kyc-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Pantin, Île-de-France, France",
-          "title": "Stage - Acheteur IT software Junior H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-acheteur-it-software-junior-h-f-6-mois"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Pantin, Île-de-France, France",
-          "title": "Stage - Lead Buyer Market Data H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-lead-buyer-market-data-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Paris, Île-de-France, France",
-          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Pantin, Île-de-France, France",
-          "title": "Stage - Acheteur IT Junior H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-acheteur-it-junior-h-f-6-mois"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Paris, Île-de-France, France",
-          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-assistant-e-chief-data-officer-h-f"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Paris, Île-de-France, France",
-          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-economiste-data-visualisation-h-f-4-a-6-mois"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Nantes, Pays de la Loire, France",
-          "title": "Portzamparc-Stage-Management des systèmes d'informations Comptable (H/F) à Nantes",
-          "url": "https://group.bnpparibas/en/careers/job-offer/portzamparc-stage-management-des-systemes-d-informations-comptable-h-f-a-nantes"
+          "title": "STAGE - Business Analyst H/F - 6 mois",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-business-analyst-h-f-6-mois-1"
         }
       ],
-      "new_roles_total": 19,
+      "new_roles_total": 4,
       "recent_roles": [
         {
           "company": "Thales",
@@ -401,22 +299,22 @@
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "location": "Courbevoie, France",
-          "title": "TRACKING ET WEBANALYTICS",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
+          "location": "Fontenay-Sous-Bois, France",
+          "title": "Agile Business Analyst",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/agile-business-analyst-26000GRL-fr"
         },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
-          "location": "Fontenay-Sous-Bois, France",
-          "title": "Software developper",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/software-developper-26000AA7-fr"
+          "location": "Courbevoie, France",
+          "title": "TRACKING ET WEBANALYTICS",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
         }
       ],
-      "recent_roles_total": 55,
+      "recent_roles_total": 59,
       "scanned": 2842,
       "stamp": "2026-09-04",
-      "unsure": 23
+      "unsure": 2
     },
     "t3.html": {
       "also_new": [],
@@ -449,5 +347,5 @@
       "unsure": 0
     }
   },
-  "generated": "2026-09-04T21:14:57.445424+02:00"
+  "generated": "2026-09-04T21:22:21.181769+02:00"
 }
