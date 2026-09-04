@@ -133,7 +133,7 @@ _none_
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
 
-### Not tech - 158
+### Not tech - 158 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -197,106 +197,8 @@ _none_
 | BNP Paribas | [Stage - Analyste risques opérationnels H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-risques-operationnels-h-f_paris_BP_dRgLraV) | Paris, France |
 | BNP Paribas | [Stage - Analyste Conformité AML/CFT H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris) | Paris, France |
 | BNP Paribas | [Stage – Chargé de relations média – H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-relations-media-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Analyste Conseil et Crédit H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conseil-et-credit-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Assistant chef de projet H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-chef-de-projet-h-f_paris_BP_NZGrRLV) | Paris, France |
-| BNP Paribas | [STAGE - CHARGE DE MISSION ENGAGEMENT D'ENTREPRISE (RSE / ESG) - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-mission-engagement-d-entreprise-h-f_paris) | Paris, France |
-| BNP Paribas | [Portfolio Analyst Intern - FMCG](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/portfolio-analyst-intern-fmcg_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage -Analyste quantitatif - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-quantitatif-h-f_levallois) | Levallois, France |
-| BNP Paribas | [Stage - Client Service Intern H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-client-service-intern-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Strategic Partnership Office H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-strategic-partnership-office-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Chargé de Conformité Protection des intérêts clients H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-conformite-protection-des-interets-clients-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Credit and Compliance Executive Advisory - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-credit-and-compliance-executive-advisory-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Chargé de recrutement Campus H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/campus-specialist-intern-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Assistant Gérant Solution Portfolio Management H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-gerant-solution-portfolio-management-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Analyste Quantitatif RIESG H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-quantitatif-riesg-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Chargé de projets communication RH - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-projets-communication-rh-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Juriste Droit des Contrats H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/juriste-droit-des-contrats-h-f_paris_BP_zy456OL) | Paris, France |
-| BNP Paribas | [Stage – Chargé d’appui gestion commerciale - 6 Mois - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-d-appui-gestion-commerciale-6-mois-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Chef de Projet Animation de communautés Junior - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-chef-de-projet-junior-h-f_pantin) | Pantin, France |
-| BNP Paribas | [Comptable - Stage H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/comptable-stage-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Assistant(e) Chef de projet - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-chef-de-projet-h-f_paris_BP_gNegexw) | Paris, France |
-| BNP Paribas | [STAGE - Business Analyst H/F - 6 mois](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-business-analyst-h-f-6-mois_montreuil_BP_NZQ73OP) | Montreuil, France |
-| BNP Paribas | [Intern - Product Manager H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/intern-product-manager-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage – Chargé de Relation Client Banque Privée (H/F) – 6 mois – ILE-DE-FRANCE](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-relation-client-banque-privee-h-f-6-mois-ile-de-france_paris_BP_qdeKbYj) | Paris, France |
-| BNP Paribas | [Stage - Product Pricing](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-product-pricing_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Contrôleur Financier Listed Real Assets H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-controleur-financier-listed-real-assets-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [STAGE – Assistant communication H/F - 6 mois](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-communication-h-f-6-mois_montreuil) | Montreuil, France |
-| BNP Paribas | [STAGE - Rédacteur - Garanties Internationales (F/H) - 6 mois](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-redacteur-garanties-internationales-f-h-6-mois_pantin) | Pantin, France |
-| BNP Paribas | [Stage - Chargé de projet média - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-projet-media-h-f_paris_BP_06AXXkx) | Paris, France |
-| BNP Paribas | [Stage Analyste Financier H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-financier-h-f_puteaux) | Puteaux, France |
-| BNP Paribas | [Stage - Sustainable Transaction Banking Analyst - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-sustainable-transaction-banking-analyst-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Chargé de Comptes Multi-Activités H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-comptes-multi-activites-h-f-6-mois_pantin_BP_JAWVa4V) | Pantin, France |
-| BNP Paribas | [Stage - Chargé de comptabilité et de reportings financiers H/F - 6 mois](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-comptabilite-et-de-reporting-financiers-h-f-6-mois_pantin) | Pantin, France |
-| BNP Paribas | [STAGE – Talent commercial pour l’agence Châtelet](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-talent-commercial-pour-l-agence-chatelet_chatelet_BP_pW9lpXW) | Châtelet, France |
-| BNP Paribas | [Stage - Gestion des risques opérationnels - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-gestion-des-risques-operationnels-h-f_paris) | Paris, France |
-| BNP Paribas | [Stage - Chargé de communication - H/F](https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-communication-responsable-developpement-de-competences-h-f_levallois) | Paris, France |
-| Credit Agricole | [Stage - Suivi de valorisation des produits dérivés et amélioration des contrôles H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-suivi-de-valorisation-des-produits-derives-et-amelioration-des-controles-h-f_paris_CA_8Ve9xJx) | Paris, France |
-| Credit Agricole | [STAGE - Product Owner H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-product-owner-h-f_paris) | Paris, France |
-| Credit Agricole | [STAGE - Chargé de communication IT H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-community-manager-it-h-f_guyancourt) | Guyancourt, France |
-| Credit Agricole | [Stage Gestionnaire back office FDS H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-gestionnaire-back-office-fds-h-f_montrouge_GCA_94Pa71m) | Montrouge, France |
-| Credit Agricole | [Stage - ESG Analyst Intern H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-esg-analyst-intern-h-f_paris_CA_Z9WQD6q) | Paris, France |
-| Credit Agricole | [Stage - Chargé de conformité H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-conformite-h-f_paris_CA_Yx5pPxl) | Paris, France |
-| Credit Agricole | [Stage Juriste Contrats financiers H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-juriste-contrats-financiers-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage - Assistant Marketing Stratégique H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-marketing-strategique-h-f_paris) | Paris, France |
-| Credit Agricole | [STAGE - INSPECTEUR BANQUE « DIGITAL ASSETS » H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-inspecteur-banque-digital-assets-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage - Client Relationship Manager H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-client-relationship-manager-h-f_montrouge_CA_NPgdp8V) | Montrouge, France |
-| Credit Agricole | [Stage - Assistant(e) Sales Front Office - Securities Finance et Repo H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-sales-front-office-securities-finance-et-repo-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [STAGE - Politique Jeunes et recrutement H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-politique-jeunes-et-recrutement-h-f_villejuif_CA_eZxYJVq) | Villejuif, France |
-| Credit Agricole | [Stage Back Office Amundi Finance H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-back-office-amundi-finance-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - Chargé(e) de projets ESG/Immobilier Durable H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-projets-esg-immobilier-durable-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage  - Gestionnaire d'Opérations Clientèle  - Actif (PERES) H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-gestionnaire-d-operations-clientele-actif-peres-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage - Business Coordinateur H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-business-coordinateur-h-f_montrouge_GCA_e7M9pYK) | Montrouge, France |
-| Credit Agricole | [Stagiaire Analyste Risque Réglementaire International H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stagiaire-analyste-risque-reglementaire-international-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage Assistant(e) Responsable de Projets Immobiliers H/F H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-responsable-de-projets-immobiliers-h-f-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage - Communication visuelle – Formation en Epargne Salariale et Retraite  H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-communication-visuelle-formation-en-epargne-salariale-et-retraite-h-f_paris) | Paris, France |
-| Credit Agricole | [STAGE - Talent Acquisition & Campus Manager H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-hr-campus-manager-h-f_montrouge_GCA_W32LzjV) | Montrouge, France |
-| Credit Agricole | [Stage - Assistant(e) Responsable d'Opérations Immobilières](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-responsable-d-operations-immobilieres_annecy) | Annecy, France |
-| Credit Agricole | [STAGE - Fiscaliste H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-fiscaliste-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - Chargé d'appels d'offres H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-d-appels-d-offres-h-f_paris_CA_oDXWOYQ) | Paris, France |
-| Credit Agricole | [Stage Assistant Juridique Private Equity H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-juridique-private-equity-h-f_montrouge_CA_ww4oxkd) | Montrouge, France |
-| Credit Agricole | [Stagiaire – Transformation Digitale & Collaboration Microsoft 365 H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stagiaire-transformation-digitale-collaboration-microsoft-365-h-f_guyancourt) | Guyancourt, France |
-| Credit Agricole | [Stage - Chargé de Marketing Digital H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-marketing-digital-h-f_paris_GCA_KGXgO20) | Paris, France |
-| Credit Agricole | [Stage  ALM et Pilotage Financier H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-alm-et-pilotage-financier-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage - Assistant MOA Trading H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-moa-trading-h-f_paris) | Paris, France |
-| Credit Agricole | [STAGE - CHARGE DE COM INTERNE ET EXTERNE H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-com-interne-et-externe-h-f_paris_GCA_goP94x7) | Paris, France |
-| Credit Agricole | [Stage – Talent Acquisition Assistant / Chargé de sourcing talents H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-talent-acquisition-assistant-charge-de-sourcing-talents-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - Projet RGPD RH H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-projet-rgpd-rh-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - CLIENT OPERATIONS OFFICER – INVESTOR SERVICES (PERES) H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-client-operations-officer-investor-services-peres-h-f_montrouge_GCA_8pjZ4QV) | Montrouge, France |
-| Credit Agricole | [STAGE - Assistant(e) Consolideur H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-consolideur-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage - Juriste Droit Social H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-juriste-droit-social-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage Assistant Chef de Projet Digital H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-chef-de-projet-digital-h-f_montrouge) | Montrouge, France |
-| Credit Agricole | [Stage -  Chargé Marketing Financier H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-marketing-financier-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - Inside Sales - Data-as-a-Service H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-inside-sales-data-as-a-service-h-f_paris) | Paris, France |
-| Credit Agricole | [STAGE ASSISTANT COORDINATION OPERATIONNELLE ET ADMINISTRATIVE H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-assistant-coordination-operationnelle-et-administrative-h-f_paris) | Paris, France |
-| Credit Agricole | [Stage - Depositary Control Assistant H/F](https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-depositary-control-assistant-h-f_montrouge) | Montrouge, France |
-| Natixis | [Stage - 6 mois - Alternative Credit Structuring  F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-alternative-credit-structuring-f-h_paris_NATIX_L9a54l3) | Paris, France |
-| Natixis | [Stage - 3 mois - Compliance Officer (Conformité Centrale) F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-3-mois-compliance-officer-conformite-centrale-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Analyste Fonds Investissement Immobiliers F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-analyste-fonds-investissement-immobiliers-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Chargé(e) de projets RH F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-charge-de-projets-rh-f-h_paris_NATIX_NPOkYPL) | Paris, France |
-| Natixis | [Stage - 6 mois - Communication et Engagement Solidaire F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-charge-de-mission-communication-et-mecenat-f-h_paris) | Paris, France |
-| Natixis | [Internship - 6 months - Research Vote ESG Engagement F/M](https://www.welcometothejungle.com/fr/companies/natixis/jobs/internship-6-months-research-vote-esg-engagement-f-m_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Gestionnaire Fixed Income and Commodities-F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-gestionnaire-fixed-income-and-commodities-f-h_charenton-le-pont) | Charenton-Le-Pont, France |
-| Natixis | [Stage - 6 mois - Analyste Financier Fixed Income F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-analyste-financier-fixed-income-f-h_paris_NATIX_x9rY25M) | Paris, France |
-| Natixis | [Stage - 6 mois - Analyste Quantitatif F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-analyste-quantitatif-f-h_paris_NATIX_aZxZD26) | Paris, France |
-| Natixis | [Stage - 6 mois - Chargé de Reporting Réglementaire - F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-charge-de-reporting-reglementaire-f-h_charenton-le-pont) | Charenton-Le-Pont, France |
-| Natixis | [Stage - 6 mois - Assistant commercial F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-assistant-commercial-f-h_paris_NATIX_KmLbLxR) | Paris, France |
-| Natixis | [Stage - 6 mois - BA/Support Fonctionnel Applicatif F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-ba-support-fonctionnel-applicatif-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Affaires Publiques F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-affaires-publiques-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Valuation Risk Analyst F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-valuation-risk-analyst-f-h_paris_NATIX_yYkq72O) | Paris, France |
-| Natixis | [Stage - 6 mois - Assistant Product Specialist F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-assistant-product-specialist-f-h_paris-13e-arrondissement) | Paris-13e-Arrondissement, France |
-| Natixis | [Stage -  6 mois - Risk ESG Analyst F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-risk-esg-analyst-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Assistant Analyste Risques de Crédit F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-assistant-analyste-risques-de-credit-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Business Management - F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-business-management-f-h_charenton-le-pont) | Charenton-Le-Pont, France |
-| Natixis | [Stage-6mois-Paramétrage controle Settlement Instructions-F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6mois-parametrage-controle-settlement-instructions-f-h_charenton-le-pont) | Charenton-Le-Pont, France |
-| Natixis | [Stage - Gestionnaire Middle Office Working Capital - F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-gestionnaire-middle-office-working-capital-f-h_paris-13e-arrondissement) | Paris-13e-Arrondissement, France |
-| Natixis | [Stage - 6 mois - Restructuring et Droit bancaire F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-restructuring-et-droit-bancaire-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Digital Solutions Trade Finance - F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-digital-solutions-trade-finance-f-h_charenton-le-pont) | Charenton-Le-Pont, France |
-| Natixis | [Stage - 6 mois - Treasury Forecast & Intraday Liquidity - F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-treasury-forecast-intraday-liquidity-f-h_charenton-le-pont) | Charenton-Le-Pont, France |
-| Natixis | [Stage - 6 mois - Assistant.e contrôleur financier H/F](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-assistant-e-controleur-financier-h-f_paris) | Paris, France |
-| Natixis | [Stage-6 mois-Juriste-réglementation bancaire financière F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-juriste-reglementation-bancaire-financiere-f-h_paris) | Paris, France |
-| Natixis | [Stage - 6 mois - Chargé de Projets ISR F/H](https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-charge-de-projets-isr-f-h_paris) | Paris, France |
 
-### Outside France - 132 (sample below)
+### Outside France - 113 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
