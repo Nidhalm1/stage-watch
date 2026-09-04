@@ -325,8 +325,8 @@ _FR_CITIES = (
     "salaunes|salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse|"
     # added with MBDA, Dassault Aviation, Amundi and Expleo - every one of these
     # is a real site of theirs that where() was answering "unknown" for
-    "le plessis-robinson|plessis-robinson|selles-saint-denis|bourges|biarritz|anglet|"
-    "martignas|martignas-sur-jalle|seclin|argonay|cazaux|"
+    "le plessis[- ]robinson|plessis[- ]robinson|selles[- ]saint[- ]denis|bourges|"
+    "biarritz|anglet|martignas|martignas[- ]sur[- ]jalle|seclin|argonay|cazaux|"
     "chateauroux|ch[âa]?teaudun|deols|saint-cloud|le plessis|fontenay-sous-bois|"
     "fontenay|courbevoie|la garenne|bois-colombes|villepinte|noisy-le-grand|"
     "champs-sur-marne|torcy|bussy|serris|coignieres|maurepas|elancourt|voisins"
@@ -1129,23 +1129,36 @@ def f_icims(c):
 
 
 # --- Gestmax / Kioskemploi (MBDA) -------------------------------------------
-# A sortable table, one row per offer: the offer link, then the sector and the
-# location in the following cells. No contract column, so the title decides.
-_GX_LINK = re.compile(r'<a[^>]*href="(https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*)"[^>]*>(.*?)</a>',
-                      re.I | re.S)
+# A sortable table, one <tr class="... vacancy-id-N"> per offer, with the title,
+# date, sector and location each in a <td headers="..."> cell.
+#
+# EVERY cell is wrapped in its own copy of the same offer link. Reading the text
+# between one link and the next therefore yields nothing at all, which is why the
+# first version of this parsed 472 of MBDA's 475 offers and placed 0 of them in
+# France. Parse the row and read the cells by name.
+_GX_ROW  = re.compile(r'<tr[^>]*class="[^"]*vacancy-id-\d+[^"]*"', re.I)
+_GX_CELL = re.compile(r'<td[^>]*headers="([a-z_]+)"[^>]*>(.*?)</td>', re.I | re.S)
+_GX_HREF = re.compile(r'href="(https?://[a-z0-9.-]*gestmax\.fr/\d+/\d+/[^"]*)"', re.I)
+# Gestmax writes the town as "Le Plessis Robinson (92)" - no hyphens, and with
+# the French department number. The number is the reliable signal: it places
+# every French town whatever the city list happens to spell, and cannot match a
+# foreign site, which is written "Stevenage (UK)".
+_GX_DEPT = re.compile(r"\(\s*(?:0[1-9]|[1-8]\d|9[0-8]|2[AB]|97[1-6])\s*\)")
 
 
 def f_gestmax(c):
     def parse(page):
-        rows, hits = [], list(_GX_LINK.finditer(page))
-        for i, m in enumerate(hits):
-            title = _plain(m.group(2))
-            if not title:
+        rows = []
+        for row in _blocks(page, _GX_ROW):
+            row = row.split("</tr>")[0]
+            cells = {k: _plain(v) for k, v in _GX_CELL.findall(row)}
+            href  = _GX_HREF.search(row)
+            title = cells.get("vacancy_title", "")
+            if not href or not title:
                 continue
-            end = hits[i + 1].start() if i + 1 < len(hits) else len(page)
-            cells = _plain(page[m.end():min(end, m.end() + 1500)])
-            rows.append((title, (cells[:90] + "\u2026") if len(cells) > 90 else cells,
-                         html.unescape(m.group(1)), cells))
+            loc = cells.get("vac_localisation", "")
+            blob = ("%s France" % loc) if _GX_DEPT.search(loc) else loc
+            rows.append((title, loc, html.unescape(href.group(1)), blob))
         return rows
 
     return _paged(c, lambda p: c["list"] % (p + 1), parse, c.get("pages", 30))
