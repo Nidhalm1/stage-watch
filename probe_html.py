@@ -44,6 +44,9 @@ SOURCES = {
     # no cookie warming and no sensor replay; a later 403 would be rate limiting,
     # and the answer to that is a sleep between pages.
     "bnp":         ("https://group.bnpparibas/en/careers/all-job-offers", "FORM", 2),
+    # The facet VALUES, not just the control names: paging all 380 pages daily to
+    # find 362 internships is the wrong trade when the board can be asked.
+    "bnp-facets":  ("https://group.bnpparibas/en/careers/all-job-offers", "FACETS", 0),
     "bnp-p2":      ("https://group.bnpparibas/en/careers/all-job-offers?page=1", "FORM", 1),
 }
 
@@ -86,6 +89,28 @@ def probe(name):
     for m in re.finditer(r"(\d[\d\s ]{0,6})\s*(offres?|r[ée]sultats?|postes?)", page, re.I):
         print("  count-hint: %r" % m.group(0).strip()[:60])
         break
+
+    if container == "FACETS":
+        for m in re.finditer(r'<input\b[^>]*name="(form\[(?:type|schedule|domain|experience|study_level|international)\]\[?\]?)"[^>]*>',
+                             page, re.I):
+            tag = m.group(0)
+            val = re.search(r'value="([^"]*)"', tag)
+            idd = re.search(r'\bid="([^"]*)"', tag)
+            label = ""
+            if idd:
+                lm = re.search(r'<label[^>]*for="%s"[^>]*>(.*?)</label>' % re.escape(idd.group(1)),
+                               page, re.I | re.S)
+                if lm:
+                    label = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", lm.group(1))).strip()
+            print("  %-26s value=%-10s label=%s"
+                  % (m.group(1), val.group(1) if val else "?", label[:60]))
+        for pat in (r"[\d\s ]{1,9}\s*job offers", r'data-count="[^"]*"'):
+            for hit in sorted(set(re.findall(pat, page, re.I)))[:6]:
+                print("  count: %r" % hit.strip())
+        # every distinct offer-type actually rendered, so the labels can be mapped
+        types = sorted(set(re.findall(r'<div class="offer-type"\s*>([^<]*)</div>', page, re.I)))
+        print("  offer-type values on page 1: %s" % [t.strip() for t in types])
+        return
 
     if container == "FORM":
         # What are the filters actually called? Print the controls, every class

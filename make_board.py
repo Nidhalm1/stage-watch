@@ -320,7 +320,14 @@ _FR_CITIES = (
     "puteaux|malakoff|vanves|clichy|saint-cloud|s[èe]?vres|chatou|rueil|antony|orsay|gif-sur-yvette|"
     "marcoussis|les ulis|corbeil|villebon|ivry|alfortville|charenton|montreuil|pantin|aubervilliers|"
     "le bourget|villaroche|melun|compi[èe]?gne|beauvais|chartres|blois|bourg-en-bresse|roanne|vienne|"
-    "salaunes|salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse"
+    "salaunes|salon-de-provence|la ciotat|sainte-tulle|manosque|cadarache|le barp|biscarrosse|"
+    # added with MBDA, Dassault Aviation, Amundi and Expleo - every one of these
+    # is a real site of theirs that where() was answering "unknown" for
+    "le plessis-robinson|plessis-robinson|selles-saint-denis|bourges|biarritz|anglet|"
+    "martignas|martignas-sur-jalle|seclin|argonay|cazaux|"
+    "chateauroux|ch[âa]?teaudun|deols|saint-cloud|le plessis|fontenay-sous-bois|"
+    "fontenay|courbevoie|la garenne|bois-colombes|villepinte|noisy-le-grand|"
+    "champs-sur-marne|torcy|bussy|serris|coignieres|maurepas|elancourt|voisins"
 )
 # Workday and some Taleo fronts show only the region or the department.
 _FR_REGIONS = (
