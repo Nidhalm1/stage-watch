@@ -8,7 +8,7 @@
 Self-contained on purpose: the nightly cloud run has no access to any other
 file, so config + fetchers + template all live here.
 """
-import json, os, re, sys, html, urllib.request, time
+import json, os, re, sys, html, urllib.error, urllib.parse, urllib.request, time
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------- config ----
@@ -159,6 +159,23 @@ COMPANIES3 = [
      "site": "Airbus", "big": True, "careers": "https://www.airbus.com/en/careers"},
     {"name": "Dassault Systemes", "ats": "dassault", "slug": "3ds",
      "careers": "https://www.3ds.com/careers/jobs"},
+    # The four French banks below are reached through Welcome to the Jungle, not
+    # their own systems: BNP's careers site 403s a datacenter IP, Societe
+    # Generale's Taleo layer needs a PORTAL_ID that is not in the page source,
+    # and Credit Agricole and Natixis have no public feed at all. Confirmed
+    # 2026-09-04, each returning real stages - "Software developper" (Lille) at
+    # SocGen, "Stage - Economiste / Data visualisation" (Paris) at BNP.
+    {"name": "Societe Generale", "ats": "wttj", "slug": "societe-generale",
+     "careers": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs"},
+    {"name": "BNP Paribas",     "ats": "wttj", "slug": "bnp-paribas",
+     "careers": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs"},
+    # groupe-credit-agricole covers the group including CIB. jobs.ca-cib.com has
+    # a working stage-filtered RSS feed, but it is capped at 20 items and carries
+    # no location, so a role dropping off the end would look closed - see NO_API3.
+    {"name": "Credit Agricole", "ats": "wttj", "slug": "groupe-credit-agricole",
+     "careers": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs"},
+    {"name": "Natixis",         "ats": "wttj", "slug": "natixis",
+     "careers": "https://www.welcometothejungle.com/fr/companies/natixis/jobs"},
     # Jane Street and IMC have working boards but no French office, so they will
     # normally show 0. Kept because a Paris desk would appear here immediately.
     {"name": "Jane Street", "ats": "greenhouse", "slug": "janestreet",
@@ -167,6 +184,17 @@ COMPANIES3 = [
      "careers": "https://careers.imc.com/"},
 ]
 
+# Sources probed 2026-09-04 and deliberately NOT adopted, with the reason - so the
+# next person does not spend a morning rediscovering them:
+#   jobs.ca-cib.com RSS  Talentsoft, stage-filtered, works. Capped at 20 items and
+#                        carries no location; the JobCountry=79 facet is ignored.
+#                        A capped feed makes a role falling off the end look
+#                        CLOSED, and Credit Agricole is covered via WTTJ anyway.
+#   group.bnpparibas     server-rendered and complete, but 403s a datacenter IP.
+#                        Works from a browser, not from the runner. BNP via WTTJ.
+#   socgen.taleo.net     real ATS layer, but searchjobs needs a PORTAL_ID that is
+#                        not in the page source; a regex pass over jobsearch.ftl
+#                        found none. Needs a browser network-tab pass. SG via WTTJ.
 NO_API3 = [
     ("Capgemini",          "Phenom People; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                            The eightfold probe 404d, so that endpoint is unverified"),
     ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
@@ -175,11 +203,7 @@ NO_API3 = [
     ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic\n                            entries), not the real board; no French office; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("Optiver",            "bespoke careers system, no ATS; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("Millennium",         "Eightfold; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. The eightfold API probe\n                            404d on every domain tried, so that path is unverified, not ruled out"),
-    ("BNP Paribas",        "Avature; careers site 403s to non-browser clients; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative,\n                            4 slug variants"),
-    ("Societe Generale",   "Oracle Taleo; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
-    ("Credit Agricole",    "Oracle Taleo; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
     ("Groupe BPCE",        "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
-    ("Natixis",            "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 2 slug variants"),
     ("Banque Populaire",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("Caisse d'Epargne",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 variants"),
     ("Credit Mutuel",      "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
@@ -616,10 +640,86 @@ def f_dassault(c):
             return out
 
 
+# Welcome to the Jungle. Not an ATS - an aggregator - and the only way in to the
+# French banks, whose own systems are all vendor-locked (Avature, Taleo, Phenom)
+# or refuse a datacenter IP. The site drives itself from this public Algolia
+# index; the application id and search-only key below are the pair WTTJ ships in
+# its own frontend JS, visible in any browser. This is the request the public
+# site makes. The api.welcometothejungle.com host is a different thing and 403s
+# from a runner, so do not "simplify" this to that.
+#
+# Probed 2026-09-04: the server-side filter really does narrow to internships,
+# and the index returns each posting more than once, so both the filter and the
+# de-duplication below are load-bearing.
+WTTJ_APP   = "CSEKHVMS53"
+WTTJ_KEY   = "4bd8f6215d0cc52b26430765769e65a0"
+WTTJ_URL   = "https://csekhvms53-dsn.algolia.net/1/indexes/*/queries"
+WTTJ_JOBS  = "wk_cms_jobs_production"
+WTTJ_PAGES = 6              # 100 per page; Algolia caps any one query at 1000
+
+
+def f_wttj(c):
+    slug = c["slug"]
+    flt = 'organization.slug:"%s" AND contract_type:"INTERNSHIP"' % slug
+    out, seen, unverified = [], set(), 0
+    for page in range(WTTJ_PAGES):
+        params = "hitsPerPage=100&page=%d&filters=%s" % (page, urllib.parse.quote(flt))
+        body = json.dumps({"requests": [{"indexName": WTTJ_JOBS, "params": params}]}).encode()
+        req = urllib.request.Request(WTTJ_URL, data=body, headers={
+            # JSON body under a form content-type: Algolia's documented CORS quirk
+            "content-type": "application/x-www-form-urlencoded",
+            "x-algolia-application-id": WTTJ_APP,
+            "x-algolia-api-key": WTTJ_KEY,
+            "origin": "https://www.welcometothejungle.com",
+            "User-Agent": UA["User-Agent"]})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            d = json.load(r)["results"][0]
+        hits = d.get("hits") or []
+        for h in hits:
+            org, job = (h.get("organization") or {}).get("slug"), h.get("slug")
+            # The filter is server-side, so check it held. A filter that quietly
+            # stopped narrowing would put another company's roles on this board.
+            if org != slug or not job:
+                continue
+            url = "https://www.welcometothejungle.com/fr/companies/%s/jobs/%s" % (org, job)
+            if url in seen:
+                continue
+            seen.add(url)
+            off = h.get("office") if isinstance(h.get("office"), dict) else {}
+            loc = ", ".join(x for x in [off.get("city"), off.get("country")] if x)
+            # This URL is built from two API fields rather than returned whole, so
+            # it is checked before it is recorded - the board's promise is that
+            # every link came back live, and a constructed link has to earn that.
+            if not _head_ok(url):
+                unverified += 1
+                continue
+            out.append((h.get("name", ""), loc, url, _fr(loc, off.get("country"))))
+        if len(hits) < 100 or page + 1 >= (d.get("nbPages") or 1):
+            break
+        time.sleep(0.2)
+    if unverified:
+        # Never silently lose a role: a URL that would not resolve means this
+        # fetch is incomplete, so nothing of this company's may be marked closed.
+        PARTIAL.add(c["name"])
+        print("  %s: %d WTTJ url(s) failed verification" % (c["name"], unverified), file=sys.stderr)
+    return out
+
+
+def _head_ok(url):
+    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA["User-Agent"]})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return r.status < 400
+    except urllib.error.HTTPError as e:
+        return e.code < 400
+    except Exception:
+        return False
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
-         "dassault": f_dassault}
+         "dassault": f_dassault, "wttj": f_wttj}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -630,6 +730,7 @@ ENDPOINT = {
     "ashby":           lambda c: "api.ashbyhq.com/posting-api/job-board/%s" % c["slug"],
     "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
     "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
+    "wttj":            lambda c: "csekhvms53-dsn.algolia.net wk_cms_jobs_production (org %s)" % c["slug"],
 }
 
 
