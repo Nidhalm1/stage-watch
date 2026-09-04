@@ -5,7 +5,7 @@ Three independent nightly job watches sharing one codebase.
 | Board | File | Roster | Artifact |
 |---|---|---|---|
 | Stage Watch | `board.html` | `COMPANIES` - 20 observability / infra / dev-tools | 92513aa1 |
-| French Tech Watch | `board2.html` | `COMPANIES2` - 20 French tech / fintech / scale-ups | 277bfba8 |
+| French Tech Watch | `board2.html` | `COMPANIES2` - 24 French tech / fintech / ESN / scale-ups | 277bfba8 |
 | Defence & Finance Watch | `board3.html` | `COMPANIES3` - 9 defence / aerospace / trading / banks | 8f9b34a1 |
 
 Each board has its own hidden state block, so NEW / closed detection is per-board.
@@ -72,9 +72,21 @@ both.
 
 ## Filters
 
-A role is kept when its title says stage / stagiaire / PFE / intern / internship /
-fin d'etudes / cesure, its title does *not* say alternance or apprentissage, its
-location is in France, and `is_tech(title)` is true.
+A role is kept when it reads as an internship, its location is in France, and
+`is_tech(title)` is true.
+
+"Reads as an internship" is the title test - it says stage / stagiaire / PFE /
+intern / internship / fin d'etudes / cesure and does *not* say alternance or
+apprentissage - **unless the board told us what the posting is**. Where an ATS
+exposes its own contract field (`sourcestr8` at Societe Generale,
+`typeOfEmployment` on SmartRecruiters, `categories.commitment` on Lever), a
+fetcher passes it through as a fifth element of its row and it overrides the
+title outright. It has to override rather than merely add, because the title is
+wrong in both directions: SG files "Software developper" and "Developpeur Front
+React" under INTERNSHIP with nothing in the title to say so - 3 of its 5 live
+tech stages - while Thales titles an apprenticeship "STAGE - ...". A contract
+label the mapping does not recognise means "the board did not say", and the
+title test runs as before, so a new label costs nothing.
 
 **Only the first of those four can delete a role.** The other two put it in a
 collapsed box on its company card instead:
@@ -145,7 +157,23 @@ so `totalFound > 0` is the real test.
 
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 `greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`,
-`teamtailor`, `dassault`, `wttj`.
+`teamtailor`, `dassault`, `wttj`, `sgcareers`.
+
+`sgcareers` is Societe Generale's own board, and it replaced a WTTJ feed that
+was showing **95** of SG's **1083** postings - an 11x under-report. Two calls:
+`/rechercher` for a session cookie and the CSRF token out of its `drupalSettings`
+blob, `/sg-careers-offers/get-token` for a ~600s JWT, then `/search-proxy.php`,
+a passthrough that moves `X-Proxy-URL` into the real request URL and takes the
+JWT in `Authorization-API`. Both paths are permitted by
+`careers.societegenerale.com/robots.txt`, which disallows only `/search/` and
+`/search?` and sets no crawl-delay; the robots block people hit is on
+`m.careers.societegenerale.com`, a different host this code never touches. The
+old "Taleo needs a PORTAL_ID" lead was a dead end - there is no `searchjobs` call
+to make - and is closed.
+
+`probe_html.py` (run from the *Probe HTML job boards* Action, never locally -
+same egress reason as `bulk_probe.py`) prints the shape of the HTML-only boards
+so a fetcher can be written against real markup instead of a guessed regex.
 
 `wttj` is the odd one out: an aggregator rather than an ATS, and the only way
 in to the French banks, whose own systems are vendor-locked or refuse a

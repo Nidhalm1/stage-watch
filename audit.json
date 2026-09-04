@@ -995,7 +995,32 @@
         }
       ],
       "unknown_location_total": 1
+    },
+    "t3.html": {
+      "board": "Defence & Finance Watch",
+      "foreign_count": 1,
+      "foreign_sample": [
+        {
+          "company": "Societe Generale",
+          "location": "Bruxelles",
+          "title": "Data ing",
+          "url": "https://careers.societegenerale.com/o/3"
+        }
+      ],
+      "non_tech": [
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "La Defense",
+          "title": "Chef de projet",
+          "url": "https://careers.societegenerale.com/o/2"
+        }
+      ],
+      "non_tech_total": 1,
+      "stamp": "2026-09-04",
+      "unknown_location": [],
+      "unknown_location_total": 0
     }
   },
-  "generated": "2026-09-04T19:57:14.469131+02:00"
+  "generated": "2026-09-04T20:36:27.867447+02:00"
 }

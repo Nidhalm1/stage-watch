@@ -217,3 +217,25 @@ _none_
 | Thales | [Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671) | Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A. |
 | Thales | [Technical Consultant Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
 
+---
+
+## Defence & Finance Watch
+
+`t3.html` &middot; sweep of 2026-09-04
+
+### Unrecognised location - 0
+
+_none_
+
+### Not tech - 1
+
+| Company | Title | Location |
+|---|---|---|
+| Societe Generale | [Chef de projet](https://careers.societegenerale.com/o/2) | La Defense |
+
+### Outside France - 1 (sample below)
+
+| Company | Title | Location |
+|---|---|---|
+| Societe Generale | [Data ing](https://careers.societegenerale.com/o/3) | Bruxelles |
+
