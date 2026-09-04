@@ -325,6 +325,43 @@ def _report(label, sent, status, body, headers):
           % (len(full), bool(m), ("  -> %s" % m.group(0).strip()) if m else ""))
 
 
+def t_bnpcards(spec):
+    """Dump the real card markup around a job link, and prove pagination works.
+
+    A parser written against guessed markup is how a fetcher ends up silently
+    returning nothing - the failure mode this repo keeps hitting. So look at the
+    HTML before writing the regex, not after."""
+    try:
+        from curl_cffi import requests as creq
+    except ImportError:
+        print("      curl_cffi not installed"); return []
+    base = "https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/" + spec
+    prev_links = None
+    for page in (1, 2):
+        u = base if page == 1 else base + "?page=%d" % page
+        r = creq.get(u, impersonate="chrome", timeout=30)
+        links = re.findall(r'href="([^"]*/offre-emploi/[^"?#]+)"', r.text)
+        uniq = sorted(set(links))
+        print("      %-58s HTTP %s  %d bytes  %d links (%d unique)"
+              % (u[-58:], r.status_code, len(r.text), len(links), len(uniq)))
+        if prev_links is not None:
+            print("      page2 differs from page1: %s" % (set(uniq) != set(prev_links)))
+        prev_links = uniq
+        for pat in (r"([0-9]+)\s*(?:offres?|r[ée]sultats?)", r'"totalResults"\s*:\s*([0-9]+)'):
+            m = re.search(pat, r.text, re.I)
+            if m:
+                print("      count marker %r -> %s" % (pat, m.group(0)[:40]))
+                break
+        if page == 1 and uniq:
+            for href in uniq[:3]:
+                i = r.text.find('href="%s"' % href)
+                lo, hi = max(0, i - 700), min(len(r.text), i + 700)
+                win = re.sub(r"\s+", " ", r.text[lo:hi])
+                print("      ---- markup window around %s" % href[-46:])
+                print("      %s" % win[:1200])
+    return [("bnpcards done", spec)]
+
+
 def t_robots3(url):
     """robots.txt read with the only client the host answers. Reading it matters
     more than reaching the listing: an automated fetcher has no business on a
@@ -495,7 +532,7 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
          "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
          "wttjfilter": t_wttj_filter, "wttjhead": t_wttj_head,
-         "robots": t_robots, "robots3": t_robots3, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
+         "robots": t_robots, "robots3": t_robots3, "bnpcards": t_bnpcards, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
          "sgtaleo": t_sgtaleo,
          "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 

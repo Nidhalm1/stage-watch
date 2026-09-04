@@ -1,8 +1,4 @@
 {
-  "BNP robots via curl_cffi": [
-    "robots3:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"
-  ],
-  "BNP step3 recheck": [
-    "bnp3:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"
-  ]
+  "BNP cards stage+informatique": ["bnpcards:stage/informatique"],
+  "BNP cards stage": ["bnpcards:stage"]
 }
