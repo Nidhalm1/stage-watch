@@ -165,7 +165,10 @@ COMPANIES3 = [
     # and Credit Agricole and Natixis have no public feed at all. Confirmed
     # 2026-09-04, each returning real stages - "Software developper" (Lille) at
     # SocGen, "Stage - Economiste / Data visualisation" (Paris) at BNP.
-    {"name": "Societe Generale", "ats": "wttj", "slug": "societe-generale",
+    # partial on purpose: WTTJ is a second-hand view of SG's own Taleo board, so
+    # its absence from WTTJ is not evidence a role closed. Drop the flag once the
+    # Taleo PORTAL_ID is captured and SG is read from source.
+    {"name": "Societe Generale", "ats": "wttj", "slug": "societe-generale", "partial": True,
      "careers": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs"},
     {"name": "BNP Paribas",     "ats": "wttj", "slug": "bnp-paribas",
      "careers": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs"},
@@ -190,11 +193,34 @@ COMPANIES3 = [
 #                        carries no location; the JobCountry=79 facet is ignored.
 #                        A capped feed makes a role falling off the end look
 #                        CLOSED, and Credit Agricole is covered via WTTJ anyway.
-#   group.bnpparibas     server-rendered and complete, but 403s a datacenter IP.
-#                        Works from a browser, not from the runner. BNP via WTTJ.
-#   socgen.taleo.net     real ATS layer, but searchjobs needs a PORTAL_ID that is
-#                        not in the page source; a regex pass over jobsearch.ftl
-#                        found none. Needs a browser network-tab pass. SG via WTTJ.
+#   group.bnpparibas     NOT an IP block - that was my wrong call, corrected by a
+#                        ladder run on 2026-09-04. Diagnosed properly:
+#                          step 1  browser headers, referer page first, cookie jar
+#                                  kept              -> 403, Server: AkamaiGHost
+#                          step 2  httpx, same headers, HTTP/2 AND HTTP/1.1
+#                                                    -> 403, Server: AkamaiGHost
+#                          step 3  curl_cffi impersonate=chrome
+#                                                    -> 200, real page, 10 job links
+#                        403 body is Akamai "Access Denied", Reference #18.6f6c3817
+#                        ..., errors.edgesuite.net; sets ak_bot. The 200 sets _abck.
+#                        So the discriminator is the TLS fingerprint, i.e. Akamai
+#                        Bot Manager - not the IP, not the headers, not HTTP/2.
+#                        robots.txt (read with the same client, HTTP 200) disallows
+#                        only query-string patterns - ?q=, ?domain=, ?study= and
+#                        friends - none of which match the target path.
+#                        NOT adopted anyway: reaching it means impersonating a
+#                        browser TLS fingerprint to defeat a bot-detection control
+#                        the operator deliberately deployed, and BNP is already
+#                        covered via WTTJ. Revisit only on an explicit decision.
+#   socgen.taleo.net     real ATS layer. The earlier "PORTAL_ID not in the page
+#                        source" was the WRONG TEST, not a finding: the id is a
+#                        query parameter on the XHR the page fires, so a regex over
+#                        jobsearch.ftl could never have found it. Probed 2026-09-04
+#                        with the portal parameter omitted entirely, as some Taleo
+#                        tenants allow: HTTP 200 but requisitionList=0 and
+#                        totalCount=null. So this tenant needs the real id, from a
+#                        browser network-tab capture. SG stays on WTTJ and is
+#                        flagged partial there.
 NO_API3 = [
     ("Capgemini",          "Phenom People; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                            The eightfold probe 404d, so that endpoint is unverified"),
     ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
@@ -785,7 +811,9 @@ def scan():
         # so the company looks healthy while being invisible. Treated like a
         # partial fetch below - shown, but never a reason to close anything.
         row["zero"]    = len(jobs) == 0
-        row["partial"] = c["name"] in PARTIAL
+        # "partial": True in the config marks a company whose feed is known to be
+        # incomplete, so nothing of its own is ever marked closed off it.
+        row["partial"] = c["name"] in PARTIAL or bool(c.get("partial"))
         results.append(row)
     return results
 
@@ -901,6 +929,19 @@ h1{
   padding:.15rem .4rem;border-radius:3px;
 }
 .chip.new{background:var(--new-soft);color:var(--new)}
+/* Hide control. Deliberately quiet until you hover the row - it is a convenience,
+   not the point of the page - and never destructive: hiding is per-browser
+   display state, the role stays in the data and can always be brought back. */
+.hide-btn{float:right;margin:-.1rem 0 0 .6rem;border:0;background:none;cursor:pointer;
+  color:var(--muted);font-size:1rem;line-height:1;padding:0 .15rem;opacity:0;
+  transition:opacity .12s,color .12s}
+li:hover>.hide-btn,.hide-btn:focus{opacity:1}
+.hide-btn:hover{color:var(--closed)}
+li.dimmed{opacity:.45}
+.hidebar{margin:.55rem 0 0;font-size:.78rem;color:var(--muted);
+  font-family:"JetBrains Mono",ui-monospace,monospace}
+.hidebar button{border:0;background:none;padding:0;margin-left:.5rem;cursor:pointer;
+  color:var(--accent);font:inherit;text-decoration:underline}
 .chip.gone{background:var(--closed-soft);color:var(--closed)}
 .none{margin:0;padding:.95rem 1.25rem;color:var(--muted);font-size:.9rem}
 .err{margin:0;padding:.95rem 1.25rem;color:var(--closed);font-size:.85rem;
@@ -1008,7 +1049,9 @@ def render(results, prev):
     p.append("<span><b>%d</b> roles scanned</span>" % total)
     p.append("<span><b>%d</b> compan%s</span>" % (len(results), "y" if len(results) == 1 else "ies"))
     p.append("<span>run %s %s</span>" % (esc(NOW.strftime("%a %d %b %Y, %H:%M")), TZLABEL))
-    p.append("</p></header>")
+    p.append("</p>")
+    p.append('<p class="hidebar" id="hidebar"></p>')
+    p.append("</header>")
 
     p.append('<div class="cards">')
     for r in results:
@@ -1026,9 +1069,13 @@ def render(results, prev):
             p.append('<ul class="jobs">')
             for h in r["hits"]:
                 chip = '<span class="chip new">New</span>' if h["is_new"] else ""
-                p.append('<li class="job"><a href="%s" target="_blank" rel="noopener">%s</a>'
+                p.append('<li class="job" data-u="%s" data-live="1">'
+                         '<button class="hide-btn" type="button" title="Not interested - hide this"'
+                         ' aria-label="Hide this role">&times;</button>'
+                         '<a href="%s" target="_blank" rel="noopener">%s</a>'
                          '<div class="meta"><span>%s</span>%s<span>seen since %s</span></div></li>'
-                         % (esc(h["url"]), esc(h["title"]), esc(h["location"]), chip, esc(h["first_seen"])))
+                         % (esc(h["url"]), esc(h["url"]), esc(h["title"]), esc(h["location"]),
+                            chip, esc(h["first_seen"])))
             p.append("</ul>")
         else:
             p.append('<p class="none">No tech internships open in France right now.</p>')
@@ -1040,8 +1087,10 @@ def render(results, prev):
             # Anything new is listed first, so a cap can never hide the one entry
             # that is actually news.
             for o in sorted(r["other"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
-                p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
-                         % (esc(o["url"]), esc(o["title"]), esc(o["location"]),
+                p.append('<li data-u="%s"><button class="hide-btn" type="button"'
+                         ' title="Not interested - hide this" aria-label="Hide">&times;</button>'
+                         '<a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
+                         % (esc(o["url"]), esc(o["url"]), esc(o["title"]), esc(o["location"]),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
             if len(r["other"]) > BOX_ROWS:
                 p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
@@ -1057,8 +1106,11 @@ def render(results, prev):
                      % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
                         len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
             for o in sorted(r["unsure"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
-                p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
-                         % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
+                p.append('<li data-u="%s"><button class="hide-btn" type="button"'
+                         ' title="Not interested - hide this" aria-label="Hide">&times;</button>'
+                         '<a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
+                         % (esc(o["url"]), esc(o["url"]), esc(o["title"]),
+                            esc(o["location"] or "no location given"),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
             if len(r["unsure"]) > BOX_ROWS:
                 p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
@@ -1108,6 +1160,61 @@ def render(results, prev):
 
     closed_today = [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
                     for c in closed if c["closed_on"] == TODAY]
+    # Hide-what-you-do-not-want, kept deliberately simple: it is per-browser
+    # display state in localStorage, never a change to the data. The sweep still
+    # tracks a hidden role, so it is never re-announced as new and never
+    # mistakenly marked closed - and "restore all" always brings everything back.
+    # localStorage is keyed per artifact origin and survives the nightly
+    # republish to the same URL, which is what makes this work at all.
+    p.append("""<script>
+(function () {
+  var KEY = "stage-watch-hidden:" + (document.title || "board");
+  function read() { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); }
+                    catch (e) { return []; } }
+  function write(v) { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} }
+  var hidden = read(), reveal = false, bar = document.getElementById("hidebar");
+  function apply() {
+    var rows = document.querySelectorAll("li[data-u]"), n = 0;
+    for (var i = 0; i < rows.length; i++) {
+      var li = rows[i], off = hidden.indexOf(li.getAttribute("data-u")) !== -1;
+      if (off) { n++; }
+      li.hidden = off && !reveal;
+      li.classList.toggle("dimmed", off && reveal);
+    }
+    if (!bar) { return; }
+    bar.textContent = "";
+    if (!n) { return; }
+    bar.appendChild(document.createTextNode(n + " hidden as not interested"));
+    var t = document.createElement("button");
+    t.type = "button";
+    t.textContent = reveal ? "collapse again" : "show them";
+    t.onclick = function () { reveal = !reveal; apply(); };
+    bar.appendChild(t);
+    var r = document.createElement("button");
+    r.type = "button";
+    r.textContent = "restore all";
+    r.onclick = function () { hidden = []; write(hidden); reveal = false; apply(); };
+    bar.appendChild(r);
+  }
+  document.addEventListener("click", function (ev) {
+    var el = ev.target;
+    while (el && el !== document && !(el.classList && el.classList.contains("hide-btn"))) {
+      el = el.parentNode;
+    }
+    if (!el || el === document) { return; }
+    ev.preventDefault();
+    var li = el.parentNode;
+    while (li && li.tagName !== "LI") { li = li.parentNode; }
+    if (!li) { return; }
+    var u = li.getAttribute("data-u"), at = hidden.indexOf(u);
+    if (at === -1) { hidden.push(u); } else { hidden.splice(at, 1); }
+    write(hidden);
+    apply();
+  });
+  apply();
+})();
+</script>""")
+
     state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed, "watch": watch}
     p.append('<script type="application/json" id="state">%s</script>'
              % json.dumps(state, ensure_ascii=False).replace("</", "<\\/"))
