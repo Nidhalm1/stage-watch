@@ -182,8 +182,14 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 13,
+      "foreign_count": 27,
       "foreign_sample": [
+        {
+          "company": "Qonto",
+          "location": "Berlin",
+          "title": "Social Media Werkstudent (m/w/d)",
+          "url": "https://jobs.lever.co/qonto/cb2053c9-938e-4b73-a3c8-d8d42243b301"
+        },
         {
           "company": "Aircall",
           "location": "San Francisco Office",
@@ -261,6 +267,12 @@
           "location": "Beijing, JR101126; Intern",
           "title": "Murex Internship",
           "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beijing/Murex-Internship_JR101126-1"
+        },
+        {
+          "company": "Sopra Steria",
+          "location": "Oslo, no",
+          "title": "Sommerjobb 2027 - Design ",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000145673069"
         }
       ],
       "non_tech": [
@@ -350,14 +362,14 @@
         },
         {
           "company": "Back Market",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Legal Intern / Juriste Droit des Affaires (Paris)",
           "url": "https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5"
         },
         {
           "company": "Back Market",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Sustainability and Public Affairs Intern (Paris )",
           "url": "https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7"
@@ -459,16 +471,255 @@
           "location": "Paris, FR",
           "title": "Legal & Business Affairs - Intern (m/f/d)",
           "url": "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage Consultant(e) - Transformation digitale - People&Change - Ile de France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147559756"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage - Chef/fe de Projet - Services Publics - Ile de France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258373"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage Business Analyst - Maintenance - Aéroline - Ile-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258950"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257370"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000145930048"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Stage PPI - Juriste en droit social",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000143852928"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Mérignac, fr",
+          "title": "Stage Consultant(e) fonctionnel(le) - Aéronautique - Bordeaux",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000140908198"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage Conseil - Transformation Digitale - Energie - IDF",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000138715890"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage PPI - Juriste droit social France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000135956173"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Stage - Chargé(e) de projet Solidarités & Engagement citoyen",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000135648124"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage de fin d'études - Consultant(e) en Transformation digitale – Services Publics - IDF",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000128533061"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Colomiers, fr",
+          "title": "Stage - Consultant PLM et Sustainability : ACV, DPP et CSRD - Colomiers",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000111047098"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage de fin d'études - Consultant en transformation digitale",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000104203669"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000099047104"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Colomiers, fr",
+          "title": "Stage - Chargé (e)  de Recrutement ",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000091562029"
+        },
+        {
+          "company": "Alten",
+          "is_new": true,
+          "location": "Vitrolles, fr",
+          "title": "STAGE - Chargé de projet qualité",
+          "url": "https://jobs.smartrecruiters.com/alten/744000146498239"
+        },
+        {
+          "company": "Alten",
+          "is_new": true,
+          "location": "Toulouse, fr",
+          "title": "Internship Offer – Product Owner (Project Management Tool)",
+          "url": "https://jobs.smartrecruiters.com/alten/744000131167400"
+        },
+        {
+          "company": "Ubisoft",
+          "is_new": true,
+          "location": "Annecy, fr",
+          "title": "Internship 6 months - Technical Designer (F/M/NB) [AAA Project]",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000147274629"
+        },
+        {
+          "company": "Ubisoft",
+          "is_new": true,
+          "location": "Annecy, fr",
+          "title": "Assistant(e) Chef(fe) de Projet Communication & Evènementiel - Stage 6 mois - (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000147273141"
+        },
+        {
+          "company": "Veepee",
+          "is_new": true,
+          "location": "Saint-Denis",
+          "title": "Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)",
+          "url": "https://jobs.lever.co/veepee/6c32487d-4531-49ea-b5fc-b1facc8de206"
+        },
+        {
+          "company": "Veepee",
+          "is_new": true,
+          "location": "Saint-Denis",
+          "title": "Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)",
+          "url": "https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2"
         }
       ],
-      "non_tech_total": 28,
+      "non_tech_total": 49,
       "stamp": "2026-09-04",
-      "unknown_location": [],
-      "unknown_location_total": 0
+      "unknown_location": [
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "ASSAGO, it",
+          "title": "Stage Business Analyst – Reporting & Controlling",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000146410169"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Pozzuoli, it",
+          "title": "DevSecOps Stage",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000141930724"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Pozzuoli, it",
+          "title": "Stage Java Developer - Microservizi",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000140658859"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Nieuwegein, nl",
+          "title": "Stage HR",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000135933841"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Nieuwegein, nl",
+          "title": "Stage interne communicatie ",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000133571869"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Nieuwegein, nl",
+          "title": "Stage HR & Employer Branding ",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000133569464"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Assago, it",
+          "title": "Stage Salesforce Data Cloud",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000124001250"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "ASSAGO, it",
+          "title": "Stage Data Engineer  — Ambito Retail Fashion & Industry",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000113222417"
+        },
+        {
+          "company": "Alten",
+          "is_new": true,
+          "location": "Dakar, sn",
+          "title": "Consultant Support FAI avec expertise N1",
+          "url": "https://jobs.smartrecruiters.com/alten/744000146801393"
+        },
+        {
+          "company": "Alten",
+          "is_new": true,
+          "location": "Dakar, sn",
+          "title": "Consultant Support FAI avec expertise N1",
+          "url": "https://jobs.smartrecruiters.com/alten/744000130671229"
+        },
+        {
+          "company": "Alten",
+          "is_new": true,
+          "location": "Mannheim, de",
+          "title": "Senior Packaging Engineer Pharma (all gender)",
+          "url": "https://jobs.smartrecruiters.com/alten/744000127815530"
+        },
+        {
+          "company": "Alten",
+          "is_new": true,
+          "location": "Dakar, sn",
+          "title": "Consultant Support FAI avec expertise N1",
+          "url": "https://jobs.smartrecruiters.com/alten/744000117911430"
+        },
+        {
+          "company": "Veepee",
+          "is_new": true,
+          "location": "Saint Vulbas",
+          "title": "Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)",
+          "url": "https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c"
+        }
+      ],
+      "unknown_location_total": 13
     },
     "board3.html": {
       "board": "Defence & Finance Watch",
-      "foreign_count": 132,
+      "foreign_count": 131,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -564,7 +815,7 @@
       "non_tech": [
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339361; 12 - HUMAN RESOURCES; Thales",
           "title": "STAGE -  Chargé de Projets RH - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----Charg-de-Projets-RH---F-H_R0339361"
@@ -606,384 +857,384 @@
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Saint-Claude, France",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Juriste Conseil juridique et ingénierie patrimoniale",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/juriste-conseil-juridique-et-ingenierie-patrimoniale-260009UX-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Auditeur Interne - Banque de Détail, Banque Privée et Assurance en France",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/auditeur-interne-banque-de-detail-banque-privee-et-assurance-en-france-26000HQH-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "France",
+          "title": "Analyste Private Equity",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-private-equity-26000JAG-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Bordeaux, France",
+          "title": "Chargé(e) de recouvrement - Juriste",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/chargee-de-recouvrement-juriste-26000J2A-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Analyste risques suivi d'activité de marché",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-risques-suivi-dactivite-de-marche-26000JBR-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Lyon, France",
+          "title": "Conseiller fusion et acquisition",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/conseiller-fusion-et-acquisition-26000JA1-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Ardres, France",
           "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_saint-claude"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGE-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Lure, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_lure"
+          "is_new": true,
+          "location": "Nice, France",
+          "title": "Stage marché des particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-marche-des-particuliers-26000JGF-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Défense, France",
-          "title": "1 STAGE EN 1 JOUR - Analyste Quantitatif",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-analyste-quantitatif_la-defense_SG_0jJ6rk"
+          "is_new": true,
+          "location": "Courbevoie, France",
+          "title": "Assistant d'études RH",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-detudes-rh-26000JBU-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Défense, France",
+          "is_new": true,
+          "location": "St-Claude, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000J9Y-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Fiscaliste",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/fiscaliste-26000B95-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "France",
+          "title": "Chargés d’étude – Ingénierie patrimoniale",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charges-detude-ingenierie-patrimoniale-26000E9Z-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chef de projet RH IA & Copilot",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/chef-de-projet-rh-ia-copilot-26000HIZ-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Data Analytics/Data Science au sein de l’Audit Interne en Système d’information",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/data-analytics-data-science-au-sein-de-laudit-interne-en-systeme-dinformation-26000H93-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Puteaux, France",
+          "title": "Chargé de mission Conformité Sanctions Internationales et Embargos",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-sanctions-internationales-et-embargos-26000GZZ-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chargé de financement commerce international matières premières",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-financement-commerce-international-matieres-premieres-26000J2M-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chargé de projets culturels et de relations publiques",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-culturels-et-de-relations-publiques-26000HDI-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chargé de mission conformité",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-26000DDU-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chef de projets",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/chef-de-projets-26000J0D-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Analyste risques de marché",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-risques-de-marche-26000HQS-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
           "title": "1 STAGE EN 1 JOUR - Assistant Trader",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-assistant-trader_la-defense_SG_LOA6oM6"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-trader-26000IMH-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Défense, France",
-          "title": "1 STAGE EN 1 JOUR - Assistant ou analyste stratégiste",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-assistant-ou-analyste-strategiste_la-defense_SG_Rox6Gd8"
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "1 STAGE EN 1 JOUR – Assistant ou analyste stratégiste",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-ou-analyste-strategiste-26000IML-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Fontenay-Sous-Bois, France",
-          "title": "Stage Digital Alerting BAD",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-digital-alerting-bad_fontenay-sous-bois"
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "1 STAGE EN 1 JOUR - Analyste Quantitatif",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-analyste-quantitatif-26000IMP-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Mérignac, France",
-          "title": "Stage Assistant Directeur de Groupe",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-directeur-de-groupe_merignac"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Compiègne, France",
+          "is_new": true,
+          "location": "Compiegne, France",
           "title": "Stage Conseil Marché de l'entreprise",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-de-l-entreprise_compiegne_SG_GVZqLVy"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000IXW-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
           "location": "Arras, France",
           "title": "Stage Conseil Marché de l'entreprise",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-de-l-entreprise_arras"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000GSA-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Bayonne, France",
-          "title": "Stage Banquier Privé",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_bayonne"
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Assistant risque opérationnel",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-risque-operationnel-26000IPA-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Champagnole, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_champagnole"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Dole, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dole"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
           "location": "Auxonne, France",
           "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_auxonne"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IPY-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Firminy, France",
-          "title": "Stage - Conseil Marché des Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-des-particuliers_firminy"
+          "is_new": true,
+          "location": "Champagnole, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IL5-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
+          "location": "Dole, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IM2-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Assistant Analyste reporting réglementaire/pilotage",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-analyste-reporting-reglementaire-pilotage-26000HWE-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
           "location": "Villeurbanne, France",
           "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_villeurbanne"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IJH-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besançon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_besancon_SG_xzd8Aaw"
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Assistant Chef de projet  - Filière Finance",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-chef-de-projet-filiere-finance-26000HLM-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Blois, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_blois"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Loches, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_loches"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Joué-Lès-Tours, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_joue-les-tours"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Rochelle, France",
+          "is_new": true,
+          "location": "La-Rochelle, France",
           "title": "Stage Banquier Privé",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_la-rochelle"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-banquier-prive-26000IFR-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Auxerre, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_auxerre"
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Assistant Chargé d'Opérations Garanties",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-charge-doperations-garanties-26000I8Z-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
           "location": "Avallon, France",
           "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_avallon"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ5-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Le Cannet, France",
-          "title": "Stage marché patrimonial",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_le-cannet"
+          "is_new": true,
+          "location": "Auxerre, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ4-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Montceau-Les-Mines, France",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Analyste Risques Structurels - Reportings Prudentiels",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-risques-structurels-reportings-prudentiels-26000HJR-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chargé de Mission Gestion de Crise",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-gestion-de-crise-26000HRD-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Cesson-Sevigne, France",
+          "title": "Assistance Animateur Marketing",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistance-animateur-marketing-26000I0B-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Le-Creusot, France",
           "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_montceau-les-mines"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRK-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
+          "location": "Besancon, France",
+          "title": "Stage - Conseiller Clientèle professionnels",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-professionnels-26000HTA-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Besancon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSS-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
           "location": "Cannes, France",
           "title": "Stage Conseil Marché des professionnels",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-des-professionnels_cannes_SG_9zMqaWq"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-des-professionnels-26000HUX-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Chalon-Sur-Saône, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_chalon-sur-saone"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Dijon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dijon_SG_2eqyjmz"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
           "location": "Belfort, France",
           "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_belfort"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPW-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Le Creusot, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_le-creusot"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besançon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_besancon"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
           "location": "Dijon, France",
           "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dijon"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT3-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
+          "is_new": true,
+          "location": "Besancon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT4-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Dijon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HTE-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Chalon-Sur-Saone, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQG-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Lure, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPY-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
           "location": "Saint-Remy, France",
           "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_saint-remy"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQ2-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besançon, France",
-          "title": "Stage - Conseiller Clientèle professionnels",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-professionnels_besancon"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Défense, France",
-          "title": "Aviation Advisory Intern",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/aviation-advisory-intern_la-defense"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Saint-Martin-Du-Var, France",
-          "title": "Stage Marché des professionnels",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-des-professionnels_saint-martin-du-var"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Nice, France",
-          "title": "Stage Marché des Particuliers",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-des-particuliers_nice_SG_37GKOwX"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Biarritz, France",
-          "title": "Stage Banquier Privé",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_biarritz"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Le Bouscat, France",
-          "title": "Stage Assistant Directeur d'Agence",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-directeur-d-agence_le-bouscat"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Chalon-Sur-Saône, France",
-          "title": "STAGE Chargé d'Affaires Entreprises",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-charge-d-affaires-entreprises_chalon-sur-saone_SG_AKMxNZo"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Dijon, France",
-          "title": "STAGE Chargé d'Affaires Entreprises",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-charge-d-affaires-entreprises_dijon"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Andrézieux-Bouthéon, France",
-          "title": "Stage Animateur Marketing",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-animateur-marketing_andrezieux-boutheon"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Talence, France",
-          "title": "Stage Assistant Banquier Privé",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-banquier-prive_talence"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Menton, France",
+          "is_new": true,
+          "location": "Le-Cannet, France",
           "title": "Stage marché patrimonial",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_menton"
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-marche-patrimonial-26000HUZ-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stagiaire Animation Commerciale & Supports Stratégiques",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stagiaire-animation-commerciale-supports-strategiques_paris"
+          "is_new": true,
+          "location": "Montceau-Les-Mines, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRR-fr"
         },
         {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Puteaux, France",
-          "title": "Stage - Analyste Transactions Immobilières  F/H",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-transactions-immobilieres-f-h_puteaux"
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Besancon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr"
         },
         {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stage- Assistant pôle SOFICA - H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-pole-sofica-h-f_paris"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "STAGE - PROJECT MANAGEMENT OFFICER - H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-project-management-officer-h-f_paris"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stage - Analyste Coverage Banques France & Luxembourg - H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-coverage-banques-france-luxembourg-h-f_paris"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Levallois, France",
-          "title": "Stage - Chargé de Communication Interne -  H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-communication-interne-h-f_levallois"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS  - H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-business-analyst-ultra-hight-net-worth-clients-h-f_paris_BP_j5Xr67l"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stage – Contrôleur de gestion ALM Treasury – H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-controleur-de-gestion-alm-treasury-h-f_paris"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Puteaux, France",
-          "title": "Stage - ESG Analyst F/H",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-esg-analyst-f-h_puteaux"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stage - Analyste risques opérationnels H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-risques-operationnels-h-f_paris_BP_dRgLraV"
-        },
-        {
-          "company": "BNP Paribas",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Stage - Analyste Conformité AML/CFT H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris"
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Chargé de projets RH",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr"
         }
       ],
-      "non_tech_total": 156,
+      "non_tech_total": 216,
       "stamp": "2026-09-04",
       "unknown_location": [
         {
@@ -1022,5 +1273,5 @@
       "unknown_location_total": 0
     }
   },
-  "generated": "2026-09-04T20:36:27.867447+02:00"
+  "generated": "2026-09-04T20:38:39.125540+02:00"
 }
