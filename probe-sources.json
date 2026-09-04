@@ -1,6 +1,7 @@
 {
-  "WTTJ head check": [
-    "wttjhead:natixis",
-    "wttjhead:bnp-paribas"
-  ]
+  "BNP robots.txt":  ["robots:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"],
+  "BNP step1 headers+session": ["bnp1:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"],
+  "BNP step2 http2":  ["bnp2:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"],
+  "BNP step3 tls":    ["bnp3:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"],
+  "SG taleo noportal":["sgtaleo:noportal"]
 }

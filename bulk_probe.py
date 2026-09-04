@@ -289,6 +289,161 @@ def t_html(url):
     return out
 
 
+# --- diagnostics ------------------------------------------------------------
+# "403" is a symptom. Closing a source needs the request that was sent, the
+# status, the body and the response headers that name the WAF. Everything below
+# prints all four so a verdict can be checked instead of taken on trust.
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+                  " (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8",
+    "Referer": "https://group.bnpparibas/emploi-carriere",
+}
+DIAG_HEADERS = ("server", "set-cookie", "cf-ray", "x-iinfo", "akamai-grn", "x-akamai-request-id",
+                "x-akamai-transformed", "content-type", "x-cache", "via", "x-powered-by",
+                "x-served-by", "x-request-id")
+
+
+def _report(label, sent, status, body, headers):
+    print("      ===== %s" % label)
+    print("      REQUEST HEADERS SENT:")
+    for k, v in sent.items():
+        print("        %s: %s" % (k, v))
+    print("      STATUS: %s" % status)
+    seen = False
+    for hk, hv in headers:
+        if hk.lower() in DIAG_HEADERS:
+            seen = True
+            print("      RESP %-22s %s" % (hk + ":", str(hv)[:150]))
+    if not seen:
+        print("      RESP (none of the diagnostic headers present)")
+    body = (body or "")[:500].replace("\n", " ").replace("\r", " ")
+    print("      BODY[:500]: %s" % body)
+    hit = "Nous avons" in (body or "")
+    print("      contains 'Nous avons': %s" % hit)
+
+
+def t_robots(url):
+    """On the record before any automated fetching: what the site itself asks for."""
+    from urllib.parse import urlsplit
+    s = urlsplit(url)
+    r_url = "%s://%s/robots.txt" % (s.scheme, s.netloc)
+    req = urllib.request.Request(r_url, headers=BROWSER_HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            txt = r.read().decode("utf-8", "replace")
+        print("      robots.txt from %s (%d bytes):" % (r_url, len(txt)))
+        for line in txt.splitlines()[:40]:
+            print("        %s" % line[:120])
+    except Exception as e:
+        print("      robots.txt fetch failed: %s" % e)
+    return [("robots.txt fetched", r_url)]
+
+
+def t_bnp1(url):
+    """Step 1: browser headers on a persistent session - cookie jar kept, referer
+    page fetched first, then the target, exactly as a browser would arrive."""
+    import http.cookiejar
+    jar = http.cookiejar.CookieJar()
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
+    for stage, target in (("warm-up (referer page)", BROWSER_HEADERS["Referer"]), ("target", url)):
+        req = urllib.request.Request(target, headers=BROWSER_HEADERS)
+        try:
+            with op.open(req, timeout=30) as r:
+                body = r.read().decode("utf-8", "replace")
+                _report("step1 urllib+session %s" % stage, BROWSER_HEADERS, r.status, body,
+                        r.headers.items())
+        except urllib.error.HTTPError as e:
+            _report("step1 urllib+session %s" % stage, BROWSER_HEADERS, e.code,
+                    e.read().decode("utf-8", "replace"), e.headers.items())
+        except Exception as e:
+            print("      step1 %s: %s: %s" % (stage, type(e).__name__, e))
+    print("      cookies held after session: %s" % [c.name for c in jar])
+    return [("step1 done", "see diagnostics above")]
+
+
+def t_bnp2(url):
+    """Step 2: HTTP/2. urllib only speaks HTTP/1.1, and a WAF fingerprinting the
+    protocol version alone would explain a 403 that a browser never sees."""
+    try:
+        import httpx
+    except ImportError:
+        print("      httpx not installed - step 2 not run")
+        return []
+    for h2 in (True, False):
+        try:
+            with httpx.Client(http2=h2, headers=BROWSER_HEADERS, timeout=30,
+                              follow_redirects=True) as cl:
+                r = cl.get(url)
+                _report("step2 httpx http2=%s (negotiated %s)" % (h2, r.http_version),
+                        dict(r.request.headers), r.status_code, r.text, list(r.headers.items()))
+        except Exception as e:
+            print("      step2 http2=%s: %s: %s" % (h2, type(e).__name__, e))
+    return [("step2 done", "see diagnostics above")]
+
+
+def t_bnp3(url):
+    """Step 3: TLS fingerprint. curl_cffi impersonates Chrome's JA3, which is the
+    last thing left if headers and HTTP/2 are not the discriminator."""
+    try:
+        from curl_cffi import requests as creq
+    except ImportError:
+        print("      curl_cffi not installed - step 3 not run")
+        return []
+    try:
+        r = creq.get(url, impersonate="chrome", timeout=30)
+        _report("step3 curl_cffi impersonate=chrome", BROWSER_HEADERS, r.status_code,
+                r.text, list(r.headers.items()))
+        if r.status_code == 200:
+            links = set(re.findall(r'href="([^"]*/offre-emploi/[^"?#]+)"', r.text))
+            print("      job links found: %d" % len(links))
+            for l in sorted(links)[:5]:
+                print("        %s" % l[:110])
+    except Exception as e:
+        print("      step3: %s: %s" % (type(e).__name__, e))
+    return [("step3 done", "see diagnostics above")]
+
+
+def t_sgtaleo(spec):
+    """Societe Generale without the portal parameter. The portal id is a query
+    param on the XHR the search page fires, not a string in the HTML, so the
+    earlier regex over jobsearch.ftl could never have found it. Some Taleo
+    tenants accept the call with no portal at all - one request settles it."""
+    url = "https://socgen.taleo.net/careersection/rest/jobboard/searchjobs?lang=fr"
+    if spec and spec != "noportal":
+        url += "&portal=%s" % spec
+    body = json.dumps({"multilineEnabled": False,
+                       "sortingSelection": {"sortBySelectionParam": "1",
+                                            "ascendingSortingOrder": "false"},
+                       "fieldData": {"fields": {"KEYWORD": "", "LOCATION": "", "CATEGORY": ""},
+                                     "valid": True},
+                       "pageNo": 1}).encode()
+    hdrs = {"Content-Type": "application/json", "X-Requested-With": "XMLHttpRequest",
+            "Referer": "https://socgen.taleo.net/careersection/sgcareers/jobsearch.ftl",
+            "User-Agent": BROWSER_HEADERS["User-Agent"]}
+    req = urllib.request.Request(url, data=body, headers=hdrs)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            d = json.loads(r.read().decode("utf-8", "replace"))
+    except urllib.error.HTTPError as e:
+        txt = e.read().decode("utf-8", "replace")
+        print("      %s -> HTTP %s  body[:300]: %s" % (url, e.code, txt[:300].replace("\n", " ")))
+        return []
+    except Exception as e:
+        print("      %s -> %s: %s" % (url, type(e).__name__, e))
+        return []
+    reqs = (d.get("requisitionList") or [])
+    total = (d.get("pagingData") or {}).get("totalCount")
+    print("      %s -> requisitionList=%d totalCount=%s" % (url, len(reqs), total))
+    out = []
+    for j in reqs[:6]:
+        col = {c.get("columnName"): c.get("value") for c in (j.get("column") or [])
+               if isinstance(c, dict)}
+        out.append((col.get("jobtitle") or j.get("jobId") or "?", col.get("location") or ""))
+    return out
+
+
 def t_taleoportal(url):
     """Read Societe Generale's missing PORTAL_ID off the page that uses it,
     rather than leaving that source blocked on an unknown value."""
@@ -314,6 +469,8 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
          "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
          "wttjfilter": t_wttj_filter, "wttjhead": t_wttj_head,
+         "robots": t_robots, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
+         "sgtaleo": t_sgtaleo,
          "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 
 

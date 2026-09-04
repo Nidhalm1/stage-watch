@@ -19,5 +19,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # Steps 2 and 3 of the BNP ladder need a real HTTP/2 client and a TLS
+      # impersonator. Best-effort: if either fails to install the probe still
+      # runs and simply reports that step as not run, rather than the whole
+      # diagnostic dying over a dependency.
+      - name: Install optional probe clients
+        continue-on-error: true
+        run: pip install "httpx[http2]" curl_cffi
+
       - name: Probe
         run: python bulk_probe.py "${{ inputs.candidates }}"
