@@ -1,0 +1,19 @@
+{
+  "WTTJ index shape":     ["wttjshape:stage"],
+  "WTTJ per-org":         ["wttj:deezer", "wttj:qonto", "wttj:doctolib",
+                           "wttj:groupe-credit-agricole", "wttj:societe-generale",
+                           "wttj:bnp-paribas", "wttj:natixis", "wttj:bpifrance",
+                           "wttj:dailymotion"],
+  "WTTJ org endpoint":    ["wttjorg:groupe-credit-agricole", "wttjorg:societe-generale",
+                           "wttjorg:bnp-paribas", "wttjorg:natixis", "wttjorg:bpifrance"],
+
+  "CA-CIB rss":           ["rss:https://jobs.ca-cib.com/handlers/offerRss.ashx?lcid=1036&Rss_JobDescription_Contract=579"],
+  "CA-CIB rss index":     ["url:https://jobs.ca-cib.com/offre-de-emploi/tous-les-flux-rss.aspx"],
+
+  "BNP all offers":       ["html:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi"],
+  "BNP stage":            ["html:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage"],
+  "BNP stage+info":       ["html:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/informatique"],
+  "BNP stage+digital":    ["html:https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage/digital-it"],
+
+  "SG portal id":         ["taleoportal:https://socgen.taleo.net/careersection/sgcareers/jobsearch.ftl"]
+}

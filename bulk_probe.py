@@ -15,7 +15,7 @@ financial advisory firm, not Kestra.io. So a candidate only counts as confirmed
 if the response carries jobs, and sample titles are printed for every hit so the
 company can be identified before the slug is trusted.
 """
-import json, random, re, sys, time, urllib.request, urllib.error
+import json, random, re, sys, time, urllib.parse, urllib.request, urllib.error
 from concurrent.futures import ThreadPoolExecutor
 
 UA = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
@@ -136,6 +136,120 @@ def t_url(u):
     return out
 
 
+# --- non-slug sources -------------------------------------------------------
+# Welcome to the Jungle drives its own site from a public Algolia index. The
+# application id and search-only key below are the ones WTTJ ships in its own
+# frontend JS, visible to any browser - this is the same request the public site
+# makes, not the api.welcometothejungle.com path that 403s from a runner.
+WTTJ_APP  = "CSEKHVMS53"
+WTTJ_KEY  = "4bd8f6215d0cc52b26430765769e65a0"
+WTTJ_URL  = "https://%s-dsn.algolia.net/1/indexes/*/queries" % WTTJ_APP.lower()
+WTTJ_JOBS = "wk_cms_jobs_production"
+
+
+def _algolia(index, params):
+    body = json.dumps({"requests": [{"indexName": index, "params": params}]}).encode()
+    req = urllib.request.Request(WTTJ_URL, data=body, headers={
+        # JSON body despite the form content-type - Algolia's documented CORS quirk
+        "content-type": "application/x-www-form-urlencoded",
+        "x-algolia-application-id": WTTJ_APP,
+        "x-algolia-api-key": WTTJ_KEY,
+        "origin": "https://www.welcometothejungle.com",
+        "User-Agent": UA["User-Agent"]})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)["results"][0]
+
+
+def t_wttj_shape(query):
+    """Discovery only: dump nbHits and the REAL field names of a hit. The field
+    list for this index has not been smoke-tested, and guessing a schema is how a
+    fetcher ends up silently returning nothing."""
+    d = _algolia(WTTJ_JOBS, "hitsPerPage=3&page=0&query=%s" % urllib.parse.quote(query))
+    hits = d.get("hits") or []
+    print("      nbHits=%s  keys=%s" % (d.get("nbHits"), sorted(hits[0].keys()) if hits else "NO HITS"))
+    for h in hits[:2]:
+        print("      sample: %s" % json.dumps(h, ensure_ascii=False)[:700])
+    return [(h.get("name", ""), str(h.get("office") or h.get("offices") or "")) for h in hits]
+
+
+def t_wttj(slug):
+    """One organisation's postings. Server-side filter first, client-side filter
+    as a fallback, so an unfilterable attribute degrades instead of silently
+    returning an empty board."""
+    attempts = [
+        "hitsPerPage=100&page=0&filters=" + urllib.parse.quote('organization.slug:"%s"' % slug),
+        "hitsPerPage=100&page=0&facetFilters=" + urllib.parse.quote(json.dumps([["organization.slug:%s" % slug]])),
+        "hitsPerPage=100&page=0&query=" + urllib.parse.quote(slug),
+    ]
+    for params in attempts:
+        try:
+            d = _algolia(WTTJ_JOBS, params)
+        except Exception:
+            continue
+        hits = [h for h in (d.get("hits") or [])
+                if (h.get("organization") or {}).get("slug") == slug]
+        if hits:
+            out = []
+            for h in hits:
+                off = h.get("office") or {}
+                city = off.get("city", "") if isinstance(off, dict) else ""
+                out.append(("%s [%s]" % (h.get("name", ""), h.get("contract_type", "")), city))
+            return out
+    return []
+
+
+def t_wttj_org(slug):
+    o = get("https://api.welcometothejungle.com/api/v1/organizations/%s" % slug)
+    org = o.get("organization") or o
+    return [("ORG RESOLVES: %s" % org.get("name", "?"), org.get("slug", ""))]
+
+
+def t_rss(url):
+    import xml.etree.ElementTree as ET
+    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+        root = ET.fromstring(r.read())
+    out = []
+    for item in root.iter("item"):
+        desc = re.sub(r"<[^>]+>", " ", item.findtext("description") or "")
+        out.append(((item.findtext("title") or "").strip(),
+                    "%s | %s" % (" ".join(desc.split())[:80], (item.findtext("link") or "")[-38:])))
+    return out
+
+
+JOB_HREF = re.compile(r'href="([^"]*/offre-emploi/[^"?#]+)"[^>]*>(?:\s*<[^>]*>)*\s*([^<]{3,120})', re.I)
+
+
+def t_html(url):
+    """A listing that genuinely ships its links in the HTML. Never point this at
+    a JS-rendered page - it would report zero and look like an empty board."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA["User-Agent"],
+                                               "Accept": "text/html"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        page = r.read().decode("utf-8", "replace")
+    seen, out = set(), []
+    for href, text in JOB_HREF.findall(page):
+        if href not in seen:
+            seen.add(href)
+            out.append((" ".join(text.split()), href[-58:]))
+    if not out:
+        print("      no job links matched in %d bytes of HTML" % len(page))
+    return out
+
+
+def t_taleoportal(url):
+    """Read Societe Generale's missing PORTAL_ID off the page that uses it,
+    rather than leaving that source blocked on an unknown value."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA["User-Agent"],
+                                               "Accept": "text/html"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        page = r.read().decode("utf-8", "replace")
+    found = set()
+    for pat in (r"[?&]portal=(\d{4,})", r"portalId[\"'=:\s]{1,4}(\d{4,})", r"portal[\"'=:\s]{1,4}(\d{6,})"):
+        found.update(re.findall(pat, page, re.I))
+    print("      page=%d bytes  PORTAL_ID candidates: %s" % (len(page), sorted(found) or "NONE"))
+    return [("PORTAL_ID candidate %s" % f, "") for f in sorted(found)]
+
+
 SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_workable),
               ("smartrecruiters", t_smartrecruiters), ("ashby", t_ashby),
               ("recruitee", t_recruitee), ("teamtailor", t_teamtailor)]
@@ -144,7 +258,9 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 # companies, which are demonstrably on WTTJ. It blocks non-browser clients, so
 # every "miss" it produces is meaningless and it only burns request budget.
 # Re-enable only alongside something that can present as a browser.
-TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url}
+TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
+         "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
+         "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 
 
 def probe(job):
