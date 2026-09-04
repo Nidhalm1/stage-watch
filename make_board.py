@@ -61,15 +61,28 @@ COMPANIES = [
      "site": "jobs", "careers": "https://www.redhat.com/en/jobs"},
 ]
 
-# Probed on 2026-09-02 and confirmed to have NO supported public API. Listed so
-# nobody wastes time re-probing them; check these by hand or via their own alerts.
+# Probed and confirmed to have NO supported public API. Listed so nobody wastes
+# time re-probing them; check these by hand or via their own alerts.
+#
+# "clean negative" below means the probe workflow got a REAL answer - a 404, or
+# SmartRecruiters' documented 200-with-empty-content - from every one of those
+# six ATSs. It is not a claim that the company is unreachable by any means: a
+# vendor-locked system (Avature, Taleo, Phenom, SuccessFactors, iCIMS) or a
+# Workday site whose name has to be read off the careers page looks exactly the
+# same from here. Where a path is untested rather than ruled out, it says so.
+#
+# Two caveats on the negatives, both from the probe's own per-tester tally:
+#   - recruitee has never once answered across any run and had no control
+#     company, so "not on recruitee" is unproven rather than established.
+#   - Welcome to the Jungle is excluded entirely: it 403s every request from a
+#     runner, including companies known to be on it. See bulk_probe.py.
 NO_API = [
-    ("Dynatrace",    "custom Coveo search endpoint, not a standard ATS"),
-    ("OVHcloud",     "SAP SuccessFactors"),
-    ("GitHub",       "iCIMS"),
-    ("HashiCorp",    "acquired by IBM; careers now redirect to IBM Careers"),
-    ("Clever Cloud", "no careers site found; /careers/ redirects to a product page"),
-    ("Tsuga",        "no job board found"),
+    ("Dynatrace",    "custom Coveo search endpoint; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. Three guessed\n                      Workday sites all returned 422, so Workday is untested rather than ruled\n                      out - it needs the real site name off the careers page"),
+    ("OVHcloud",     "SAP SuccessFactors; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                      Guessed Workday sites returned 422, so untested"),
+    ("GitHub",       "iCIMS; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
+    ("HashiCorp",    "acquired by IBM, careers redirect to IBM Careers; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
+    ("Clever Cloud", "/careers/ redirects to a product page; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("Tsuga",        "no job board found; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
 ]
 
 
@@ -128,10 +141,10 @@ COMPANIES2 = [
 ]
 
 NO_API2 = [
-    ("Kayrros",    "careers page returns 404"),
-    ("INRIA",      "custom public-research portal (jobs.inria.fr)"),
-    ("CEA",        "custom public-research portal"),
-    ("CNRS",       "custom public-research portal (emploi.cnrs.fr)"),
+    ("Kayrros",    "careers page 404s; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("INRIA",      "custom public-research portal (jobs.inria.fr); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                    Three guessed JSON endpoints returned 301 or HTML, so the portal may still\n                    expose a feed - finding it needs a browser, not another guess"),
+    ("CEA",        "custom public-research portal; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
+    ("CNRS",       "custom public-research portal (emploi.cnrs.fr); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
 ]
 
 # Selected by --roster; render() reads BOARD for the page name and blurb.
@@ -155,28 +168,28 @@ COMPANIES3 = [
 ]
 
 NO_API3 = [
-    ("Capgemini",          "Phenom People"),
-    ("Atos / Eviden",      "no job board found; listing paths 404"),
+    ("Capgemini",          "Phenom People; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                            The eightfold probe 404d, so that endpoint is unverified"),
+    ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
     ("Safran",             "workable/safrangroup re-probed 2026-09-04: 17 postings, every one in "
                            "Pitstone or Banbury UK = Safran Engineering Services UK Ltd, not the group"),
-    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic entries), not the real board; no French office"),
-    ("Optiver",            "bespoke careers system, no ATS"),
-    ("Millennium",         "Eightfold"),
-    ("BNP Paribas",        "careers site returns 403 to non-browser clients"),
-    ("Societe Generale",   "Oracle Taleo"),
-    ("Credit Agricole",    "Oracle Taleo"),
-    ("Groupe BPCE",        "no public job API found"),
-    ("Natixis",            "no public job API found"),
-    ("Banque Populaire",   "regional BPCE portals, no public API"),
-    ("Caisse d'Epargne",   "regional BPCE portals, no public API"),
-    ("Credit Mutuel",      "no public job API found"),
+    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic\n                            entries), not the real board; no French office; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("Optiver",            "bespoke careers system, no ATS; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("Millennium",         "Eightfold; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. The eightfold API probe\n                            404d on every domain tried, so that path is unverified, not ruled out"),
+    ("BNP Paribas",        "Avature; careers site 403s to non-browser clients; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative,\n                            4 slug variants"),
+    ("Societe Generale",   "Oracle Taleo; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
+    ("Credit Agricole",    "Oracle Taleo; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
+    ("Groupe BPCE",        "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
+    ("Natixis",            "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 2 slug variants"),
+    ("Banque Populaire",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("Caisse d'Epargne",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 variants"),
+    ("Credit Mutuel",      "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("CIC",                "lever/cic re-probed 2026-09-04: 13 postings in Tokyo, Cambridge MA and "
                            "Warsaw = Cambridge Innovation Center, NOT the French bank"),
-    ("Credit Mutuel Arkea","no public job API found"),
-    ("La Banque Postale",  "no public job API found"),
-    ("LCL",                "no public job API found"),
-    ("HSBC / CCF",         "no public job API found"),
-    ("Bpifrance",          "no public job API found"),
+    ("Credit Mutuel Arkea","no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
+    ("La Banque Postale",  "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("LCL",                "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("HSBC / CCF",         "Avature (mycareer.hsbc.com); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("Bpifrance",          "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
 ]
 
 ROSTERS = {
