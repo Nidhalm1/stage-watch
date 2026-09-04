@@ -5,8 +5,8 @@ Three independent nightly job watches sharing one codebase.
 | Board | File | Roster | Artifact |
 |---|---|---|---|
 | Stage Watch | `board.html` | `COMPANIES` - 20 observability / infra / dev-tools | 92513aa1 |
-| French Tech Watch | `board2.html` | `COMPANIES2` - 19 French tech / fintech / scale-ups | 277bfba8 |
-| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 5 defence / aerospace / trading | 8f9b34a1 |
+| French Tech Watch | `board2.html` | `COMPANIES2` - 20 French tech / fintech / scale-ups | 277bfba8 |
+| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 9 defence / aerospace / trading / banks | 8f9b34a1 |
 
 Each board has its own hidden state block, so NEW / closed detection is per-board.
 They never share results. `make_board.py --roster 2` selects the second roster;
@@ -44,6 +44,13 @@ bridge between the two.
 `<script type="application/json" id="state">` block records every posting
 already seen and when it was first seen, so the next run can mark roles NEW and
 detect ones that vanished (= filled or pulled). Git history is the audit trail.
+
+Every list in `status.json` is capped (`STATUS_ROWS`) with its true count kept
+in a matching `_total` field, and the collapsed boxes on the board are capped
+too (`BOX_ROWS`, new entries sorted first so a cap can never hide the news).
+Without that, one roster change put 153 rows in `also_new` and took status.json
+from 4.7 KB to 70 KB - larger than the HTML it exists to avoid reading, which
+defeats the entire point of the file.
 
 `status.json` is the same run summarised per board - counts, run stamp, the new
 roles with titles and URLs, what closed today, which companies failed or came
@@ -138,7 +145,17 @@ so `totalFound > 0` is the real test.
 
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 `greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`,
-`teamtailor`, `dassault`.
+`teamtailor`, `dassault`, `wttj`.
+
+`wttj` is the odd one out: an aggregator rather than an ATS, and the only way
+in to the French banks, whose own systems are vendor-locked or refuse a
+datacenter IP. It reads the public Algolia index the Welcome to the Jungle site
+drives itself from. Two things there are load-bearing and were confirmed by
+probe, not assumed: the server-side `contract_type` filter really does narrow,
+and the index returns each posting more than once, so the de-duplication is not
+optional. Its job URLs are built from two API fields rather than returned whole,
+so each one is HEAD-checked before it is recorded - and a URL that fails marks
+the company partial rather than dropping the role.
 
 Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
 `{"name": "Criteo", "ats": "workday", "tenant": "criteo", "wd": "wd3", "site": "Criteo_Career_Site"}`.

@@ -8,7 +8,7 @@
 Self-contained on purpose: the nightly cloud run has no access to any other
 file, so config + fetchers + template all live here.
 """
-import json, os, re, sys, html, urllib.request, time
+import json, os, re, sys, html, urllib.error, urllib.parse, urllib.request, time
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------- config ----
@@ -61,15 +61,28 @@ COMPANIES = [
      "site": "jobs", "careers": "https://www.redhat.com/en/jobs"},
 ]
 
-# Probed on 2026-09-02 and confirmed to have NO supported public API. Listed so
-# nobody wastes time re-probing them; check these by hand or via their own alerts.
+# Probed and confirmed to have NO supported public API. Listed so nobody wastes
+# time re-probing them; check these by hand or via their own alerts.
+#
+# "clean negative" below means the probe workflow got a REAL answer - a 404, or
+# SmartRecruiters' documented 200-with-empty-content - from every one of those
+# six ATSs. It is not a claim that the company is unreachable by any means: a
+# vendor-locked system (Avature, Taleo, Phenom, SuccessFactors, iCIMS) or a
+# Workday site whose name has to be read off the careers page looks exactly the
+# same from here. Where a path is untested rather than ruled out, it says so.
+#
+# Two caveats on the negatives, both from the probe's own per-tester tally:
+#   - recruitee has never once answered across any run and had no control
+#     company, so "not on recruitee" is unproven rather than established.
+#   - Welcome to the Jungle is excluded entirely: it 403s every request from a
+#     runner, including companies known to be on it. See bulk_probe.py.
 NO_API = [
-    ("Dynatrace",    "custom Coveo search endpoint, not a standard ATS"),
-    ("OVHcloud",     "SAP SuccessFactors"),
-    ("GitHub",       "iCIMS"),
-    ("HashiCorp",    "acquired by IBM; careers now redirect to IBM Careers"),
-    ("Clever Cloud", "no careers site found; /careers/ redirects to a product page"),
-    ("Tsuga",        "no job board found"),
+    ("Dynatrace",    "custom Coveo search endpoint; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. Three guessed\n                      Workday sites all returned 422, so Workday is untested rather than ruled\n                      out - it needs the real site name off the careers page"),
+    ("OVHcloud",     "SAP SuccessFactors; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                      Guessed Workday sites returned 422, so untested"),
+    ("GitHub",       "iCIMS; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
+    ("HashiCorp",    "acquired by IBM, careers redirect to IBM Careers; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
+    ("Clever Cloud", "/careers/ redirects to a product page; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("Tsuga",        "no job board found; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
 ]
 
 
@@ -115,6 +128,12 @@ COMPANIES2 = [
      "careers": "https://apply.workable.com/huggingface/"},
     {"name": "Payfit",           "ats": "teamtailor", "slug": "payfit",
      "careers": "https://payfit.com/careers/"},
+    # Confirmed 2026-09-04 by the probe workflow: 16 postings on teamtailor/deezer,
+    # titles unmistakably Deezer France. The old note said the careers URL
+    # redirected to their investor site, which was true and beside the point -
+    # the ATS feed was there the whole time.
+    {"name": "Deezer",           "ats": "teamtailor", "slug": "deezer",
+     "careers": "https://deezer.teamtailor.com/"},
     {"name": "Amadeus",          "ats": "workday", "tenant": "amadeus", "wd": "wd502",
      "site": "jobs", "careers": "https://careers.amadeus.com/"},
     {"name": "Murex",            "ats": "workday", "tenant": "murex", "wd": "wd3",
@@ -122,11 +141,10 @@ COMPANIES2 = [
 ]
 
 NO_API2 = [
-    ("Deezer",     "careers URL redirects to their investor site; no job board found"),
-    ("Kayrros",    "careers page returns 404"),
-    ("INRIA",      "custom public-research portal (jobs.inria.fr)"),
-    ("CEA",        "custom public-research portal"),
-    ("CNRS",       "custom public-research portal (emploi.cnrs.fr)"),
+    ("Kayrros",    "careers page 404s; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("INRIA",      "custom public-research portal (jobs.inria.fr); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                    Three guessed JSON endpoints returned 301 or HTML, so the portal may still\n                    expose a feed - finding it needs a browser, not another guess"),
+    ("CEA",        "custom public-research portal; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
+    ("CNRS",       "custom public-research portal (emploi.cnrs.fr); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
 ]
 
 # Selected by --roster; render() reads BOARD for the page name and blurb.
@@ -141,6 +159,23 @@ COMPANIES3 = [
      "site": "Airbus", "big": True, "careers": "https://www.airbus.com/en/careers"},
     {"name": "Dassault Systemes", "ats": "dassault", "slug": "3ds",
      "careers": "https://www.3ds.com/careers/jobs"},
+    # The four French banks below are reached through Welcome to the Jungle, not
+    # their own systems: BNP's careers site 403s a datacenter IP, Societe
+    # Generale's Taleo layer needs a PORTAL_ID that is not in the page source,
+    # and Credit Agricole and Natixis have no public feed at all. Confirmed
+    # 2026-09-04, each returning real stages - "Software developper" (Lille) at
+    # SocGen, "Stage - Economiste / Data visualisation" (Paris) at BNP.
+    {"name": "Societe Generale", "ats": "wttj", "slug": "societe-generale",
+     "careers": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs"},
+    {"name": "BNP Paribas",     "ats": "wttj", "slug": "bnp-paribas",
+     "careers": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs"},
+    # groupe-credit-agricole covers the group including CIB. jobs.ca-cib.com has
+    # a working stage-filtered RSS feed, but it is capped at 20 items and carries
+    # no location, so a role dropping off the end would look closed - see NO_API3.
+    {"name": "Credit Agricole", "ats": "wttj", "slug": "groupe-credit-agricole",
+     "careers": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs"},
+    {"name": "Natixis",         "ats": "wttj", "slug": "natixis",
+     "careers": "https://www.welcometothejungle.com/fr/companies/natixis/jobs"},
     # Jane Street and IMC have working boards but no French office, so they will
     # normally show 0. Kept because a Paris desk would appear here immediately.
     {"name": "Jane Street", "ats": "greenhouse", "slug": "janestreet",
@@ -149,27 +184,36 @@ COMPANIES3 = [
      "careers": "https://careers.imc.com/"},
 ]
 
+# Sources probed 2026-09-04 and deliberately NOT adopted, with the reason - so the
+# next person does not spend a morning rediscovering them:
+#   jobs.ca-cib.com RSS  Talentsoft, stage-filtered, works. Capped at 20 items and
+#                        carries no location; the JobCountry=79 facet is ignored.
+#                        A capped feed makes a role falling off the end look
+#                        CLOSED, and Credit Agricole is covered via WTTJ anyway.
+#   group.bnpparibas     server-rendered and complete, but 403s a datacenter IP.
+#                        Works from a browser, not from the runner. BNP via WTTJ.
+#   socgen.taleo.net     real ATS layer, but searchjobs needs a PORTAL_ID that is
+#                        not in the page source; a regex pass over jobsearch.ftl
+#                        found none. Needs a browser network-tab pass. SG via WTTJ.
 NO_API3 = [
-    ("Capgemini",          "Phenom People"),
-    ("Atos / Eviden",      "no job board found; listing paths 404"),
-    ("Safran",             "only workable/safrangroup exists = Safran Engineering Services UK Ltd, a UK subsidiary"),
-    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic entries), not the real board; no French office"),
-    ("Optiver",            "bespoke careers system, no ATS"),
-    ("Millennium",         "Eightfold"),
-    ("BNP Paribas",        "careers site returns 403 to non-browser clients"),
-    ("Societe Generale",   "Oracle Taleo"),
-    ("Credit Agricole",    "Oracle Taleo"),
-    ("Groupe BPCE",        "no public job API found"),
-    ("Natixis",            "no public job API found"),
-    ("Banque Populaire",   "regional BPCE portals, no public API"),
-    ("Caisse d'Epargne",   "regional BPCE portals, no public API"),
-    ("Credit Mutuel",      "no public job API found"),
-    ("CIC",                "lever/cic is Cambridge Innovation Center, NOT the French bank"),
-    ("Credit Mutuel Arkea","no public job API found"),
-    ("La Banque Postale",  "no public job API found"),
-    ("LCL",                "no public job API found"),
-    ("HSBC / CCF",         "no public job API found"),
-    ("Bpifrance",          "no public job API found"),
+    ("Capgemini",          "Phenom People; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                            The eightfold probe 404d, so that endpoint is unverified"),
+    ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
+    ("Safran",             "workable/safrangroup re-probed 2026-09-04: 17 postings, every one in "
+                           "Pitstone or Banbury UK = Safran Engineering Services UK Ltd, not the group"),
+    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic\n                            entries), not the real board; no French office; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("Optiver",            "bespoke careers system, no ATS; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("Millennium",         "Eightfold; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. The eightfold API probe\n                            404d on every domain tried, so that path is unverified, not ruled out"),
+    ("Groupe BPCE",        "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
+    ("Banque Populaire",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("Caisse d'Epargne",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 variants"),
+    ("Credit Mutuel",      "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("CIC",                "lever/cic re-probed 2026-09-04: 13 postings in Tokyo, Cambridge MA and "
+                           "Warsaw = Cambridge Innovation Center, NOT the French bank"),
+    ("Credit Mutuel Arkea","no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
+    ("La Banque Postale",  "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("LCL",                "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
+    ("HSBC / CCF",         "Avature (mycareer.hsbc.com); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("Bpifrance",          "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
 ]
 
 ROSTERS = {
@@ -596,10 +640,104 @@ def f_dassault(c):
             return out
 
 
+# Welcome to the Jungle. Not an ATS - an aggregator - and the only way in to the
+# French banks, whose own systems are all vendor-locked (Avature, Taleo, Phenom)
+# or refuse a datacenter IP. The site drives itself from this public Algolia
+# index; the application id and search-only key below are the pair WTTJ ships in
+# its own frontend JS, visible in any browser. This is the request the public
+# site makes. The api.welcometothejungle.com host is a different thing and 403s
+# from a runner, so do not "simplify" this to that.
+#
+# Probed 2026-09-04: the server-side filter really does narrow to internships,
+# and the index returns each posting more than once, so both the filter and the
+# de-duplication below are load-bearing.
+WTTJ_APP   = "CSEKHVMS53"
+WTTJ_KEY   = "4bd8f6215d0cc52b26430765769e65a0"
+WTTJ_URL   = "https://csekhvms53-dsn.algolia.net/1/indexes/*/queries"
+WTTJ_JOBS  = "wk_cms_jobs_production"
+WTTJ_PAGES = 6              # 100 per page; Algolia caps any one query at 1000
+
+
+def f_wttj(c):
+    slug = c["slug"]
+    flt = 'organization.slug:"%s" AND contract_type:"INTERNSHIP"' % slug
+    out, seen, dropped = [], set(), 0
+    verify, blocked = True, False
+    for page in range(WTTJ_PAGES):
+        params = "hitsPerPage=100&page=%d&filters=%s" % (page, urllib.parse.quote(flt))
+        body = json.dumps({"requests": [{"indexName": WTTJ_JOBS, "params": params}]}).encode()
+        req = urllib.request.Request(WTTJ_URL, data=body, headers={
+            # JSON body under a form content-type: Algolia's documented CORS quirk
+            "content-type": "application/x-www-form-urlencoded",
+            "x-algolia-application-id": WTTJ_APP,
+            "x-algolia-api-key": WTTJ_KEY,
+            "origin": "https://www.welcometothejungle.com",
+            "User-Agent": UA["User-Agent"]})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            d = json.load(r)["results"][0]
+        hits = d.get("hits") or []
+        for h in hits:
+            org, job = (h.get("organization") or {}).get("slug"), h.get("slug")
+            # The filter is server-side, so check it held. A filter that quietly
+            # stopped narrowing would put another company's roles on this board.
+            if org != slug or not job:
+                continue
+            url = "https://www.welcometothejungle.com/fr/companies/%s/jobs/%s" % (org, job)
+            if url in seen:
+                continue
+            seen.add(url)
+            off = h.get("office") if isinstance(h.get("office"), dict) else {}
+            loc = ", ".join(x for x in [off.get("city"), off.get("country")] if x)
+            # This URL is built from two API fields rather than returned whole, so
+            # it is checked before being recorded - the board's promise is that
+            # every link came back live, and a constructed link has to earn that.
+            # But only a 404 disproves a URL. See _verify.
+            if verify:
+                v = _verify(url)
+                if v == "blocked":
+                    verify = False      # the host refuses us; stop spending requests
+                    blocked = True
+                elif v == "gone":
+                    dropped += 1
+                    continue
+            out.append((h.get("name", ""), loc, url, _fr(loc, off.get("country"))))
+        if len(hits) < 100 or page + 1 >= (d.get("nbPages") or 1):
+            break
+        time.sleep(0.2)
+    if dropped:
+        # A real 404 means the URL pattern is not reliable for this company, so
+        # the fetch cannot be trusted to close anything.
+        PARTIAL.add(c["name"])
+        print("  %s: %d WTTJ url(s) 404ed" % (c["name"], dropped), file=sys.stderr)
+    elif blocked:
+        print("  %s: WTTJ blocked link verification (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+def _verify(url):
+    """'ok' | 'gone' | 'blocked'.
+
+    Only a 404/410 disproves a URL. www.welcometothejungle.com answers 403 to a
+    datacenter IP for HEAD and GET alike (measured 2026-09-04), and the first
+    live sweep read that "cannot check" as "does not exist" and dropped every
+    role at all four banks - the exact silent deletion this check exists to
+    prevent, caused by the check itself. So a blocked or failed request leaves
+    the role in place; only a 404 removes it."""
+    req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA["User-Agent"]})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            return "ok" if r.status < 400 else "gone"
+    except urllib.error.HTTPError as e:
+        return "gone" if e.code in (404, 410) else "blocked"
+    except Exception:
+        return "blocked"
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
-         "dassault": f_dassault}
+         "dassault": f_dassault, "wttj": f_wttj}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -610,6 +748,7 @@ ENDPOINT = {
     "ashby":           lambda c: "api.ashbyhq.com/posting-api/job-board/%s" % c["slug"],
     "teamtailor":      lambda c: "%s.teamtailor.com/jobs.json" % c["slug"],
     "dassault":        lambda c: "www.3ds.com/apisearch/card_search_api (career cards)",
+    "wttj":            lambda c: "csekhvms53-dsn.algolia.net wk_cms_jobs_production (org %s)" % c["slug"],
 }
 
 
@@ -831,7 +970,7 @@ def render(results, prev):
             for h in r[kind]:
                 u = h["url"]
                 h["is_new"] = (u not in prev_watch) and bool(prev_watch)
-                entry = {"title": h["title"], "company": r["name"], "url": u, "kind": kind}
+                entry = {"title": h["title"], "company": r["name"], "kind": kind}
                 if h["is_new"] and (kind == "other" or is_tech(h["title"])):
                     also_new.append(entry)
                 watch[u] = {"title": h["title"], "company": r["name"], "kind": kind}
@@ -898,10 +1037,15 @@ def render(results, prev):
             p.append("<details%s><summary>%d non-tech internship%s filtered out</summary><ul>"
                      % (" open" if any(o["is_new"] for o in r["other"]) else "",
                         len(r["other"]), "" if len(r["other"]) == 1 else "s"))
-            for o in r["other"]:
+            # Anything new is listed first, so a cap can never hide the one entry
+            # that is actually news.
+            for o in sorted(r["other"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
                 p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
                          % (esc(o["url"]), esc(o["title"]), esc(o["location"]),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
+            if len(r["other"]) > BOX_ROWS:
+                p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
+                         % (len(r["other"]) - BOX_ROWS))
             p.append("</ul></details>")
 
         # Never silently dropped: a location this build could not place is shown
@@ -912,10 +1056,13 @@ def render(results, prev):
                      "</summary><ul>"
                      % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
                         len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
-            for o in r["unsure"]:
+            for o in sorted(r["unsure"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
                 p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
                          % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
+            if len(r["unsure"]) > BOX_ROWS:
+                p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
+                         % (len(r["unsure"]) - BOX_ROWS))
             p.append("</ul></details>")
         p.append("</article>")
 
@@ -959,6 +1106,8 @@ def render(results, prev):
                                  for r in suspect)))
     p.append("</section></div>")
 
+    closed_today = [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
+                    for c in closed if c["closed_on"] == TODAY]
     state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed, "watch": watch}
     p.append('<script type="application/json" id="state">%s</script>'
              % json.dumps(state, ensure_ascii=False).replace("</", "<\\/"))
@@ -971,18 +1120,21 @@ def render(results, prev):
         "scanned": total,
         "live": live,
         "new": new_ct,
-        "new_roles": new_roles,
-        "recent_roles": recent_roles,
+        "new_roles": new_roles[:STATUS_ROWS],
+        "new_roles_total": len(new_roles),
+        "recent_roles": recent_roles[:STATUS_ROWS],
+        "recent_roles_total": len(recent_roles),
         "failed": len(broken),
         "failed_names": [r["name"] for r in broken],
         "incomplete": ["%s (%s)" % (r["name"], "empty" if r["zero"] else "truncated")
                        for r in results if not r["error"] and (r["zero"] or r["partial"])],
-        "also_new": also_new,
+        "also_new": also_new[:STATUS_ROWS],
+        "also_new_total": len(also_new),
         "unsure": sum(len(r["unsure"]) for r in results),
         "filtered": sum(len(r["other"]) for r in results),
         "closed_total": len(closed),
-        "closed_today": [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
-                         for c in closed if c["closed_on"] == TODAY],
+        "closed_today": closed_today[:STATUS_ROWS],
+        "closed_today_total": len(closed_today),
     }
     return "\n".join(p), stats
 
@@ -1014,6 +1166,21 @@ def write_status(out, stats):
     _merge(STATUS, os.path.basename(out), stats)
 
 
+# status.json is read IN FULL by the publish routine every night, so no list in
+# it may be unbounded. Adding four companies at once put 153 rows in also_new and
+# took the file from 4.7 KB to 70 KB - more than the HTML it exists to avoid
+# reading. Every capped list keeps its full count in a matching _total field, so
+# the number is never lost, only the tail.
+STATUS_ROWS = 12
+
+# Per collapsed box on the board itself. The board is an artifact the routine
+# may have to read back on a refused publish, and 158 filtered rows took board3
+# to 115 KB. New entries sort first so a cap can never hide the news.
+BOX_ROWS = 25
+
+# audit.json is not read by the routine, but it is committed nightly and a human
+# skims it weekly. Same reasoning, looser cap.
+AUDIT_ROWS = 60
 FOREIGN_SAMPLE = 15
 
 
@@ -1025,8 +1192,10 @@ def write_audit(out, results):
     payload = {
         "board": BOARD["name"],
         "stamp": TODAY,
-        "unknown_location": [x for r in results for x in tag(r, r["unsure"])],
-        "non_tech":         [x for r in results for x in tag(r, r["other"])],
+        "unknown_location":       [x for r in results for x in tag(r, r["unsure"])][:AUDIT_ROWS],
+        "unknown_location_total": sum(len(r["unsure"]) for r in results),
+        "non_tech":               [x for r in results for x in tag(r, r["other"])][:AUDIT_ROWS],
+        "non_tech_total":         sum(len(r["other"]) for r in results),
         # nearly always correct, and there can be hundreds - count them and keep
         # a sample rather than committing the whole list every night
         "foreign_count":  len(foreign),
@@ -1066,9 +1235,14 @@ def _render_audit_md(doc):
         b = doc["boards"][name]
         p += ["---", "", "## %s" % b.get("board", name),
               "", "`%s` &middot; sweep of %s" % (name, b.get("stamp", "?")), ""]
-        p += ["### Unrecognised location - %d" % len(b.get("unknown_location") or [])]
+        def _head(key, label):
+            rows = b.get(key) or []
+            tot = b.get(key + "_total", len(rows))
+            extra = " (showing the first %d)" % len(rows) if tot > len(rows) else ""
+            return ["### %s - %d%s" % (label, tot, extra)]
+        p += _head("unknown_location", "Unrecognised location")
         p += _table(b.get("unknown_location") or [])
-        p += ["", "### Not tech - %d" % len(b.get("non_tech") or [])]
+        p += [""] + _head("non_tech", "Not tech")
         p += _table(b.get("non_tech") or [])
         p += ["", "### Outside France - %d (sample below)" % b.get("foreign_count", 0)]
         p += _table(b.get("foreign_sample") or [])

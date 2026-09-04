@@ -26,13 +26,13 @@
           "company": "Doctolib",
           "location": "Milano, Milan, Italy",
           "title": "SEO & AI Intern (x/f/m)",
-          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7864184003"
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7824240003"
         },
         {
           "company": "Doctolib",
           "location": "Milano, Milan, Italy",
           "title": "SEO & AI Intern (x/f/m)",
-          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7824240003"
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7864184003"
         },
         {
           "company": "Criteo",
@@ -146,7 +146,8 @@
           "url": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9"
         }
       ],
-      "stamp": "2026-09-03",
+      "non_tech_total": 7,
+      "stamp": "2026-09-04",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -154,6 +155,13 @@
           "location": "In-Office",
           "title": "EIAM Business Enablement & Operations Intern (Fall 2026) ",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Research Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400"
         },
         {
           "company": "Cloudflare",
@@ -168,13 +176,6 @@
           "location": "In-Office",
           "title": "Research Engineer Intern (Fall 2026)",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379"
-        },
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
-          "title": "Research Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400"
         },
         {
           "company": "Cloudflare",
@@ -197,7 +198,8 @@
           "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785"
         }
-      ]
+      ],
+      "unknown_location_total": 7
     },
     "board2.html": {
       "board": "French Tech Watch",
@@ -422,15 +424,65 @@
           "location": "Paris",
           "title": "Player Experience Intern",
           "url": "https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
+          "title": "Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
+          "title": "Product Marketing Intern (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
+          "title": "Procurement Intern - 6 months (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
+          "title": "Artist Relations France Coordinator - Intern (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
+          "title": "Motion Design - 6 months Internship m/f/d - French speaking mandatory",
+          "url": "https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
+          "title": "Legal & Business Affairs - Intern (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d"
         }
       ],
-      "stamp": "2026-09-03",
-      "unknown_location": []
+      "non_tech_total": 26,
+      "stamp": "2026-09-04",
+      "unknown_location": [],
+      "unknown_location_total": 0
     },
     "board3.html": {
       "board": "Defence & Finance Watch",
-      "foreign_count": 93,
+      "foreign_count": 113,
       "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd.",
+          "title": "Software Development and Integration Engineer (Intern)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158"
+        },
         {
           "company": "Thales",
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
@@ -493,6 +545,12 @@
         },
         {
           "company": "Thales",
+          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
+          "title": "Solution Customer Service Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1"
+        },
+        {
+          "company": "Thales",
           "location": "Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE",
           "title": "Stagiaire Finance",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1"
@@ -505,21 +563,9 @@
         },
         {
           "company": "Thales",
-          "location": "Gorgonzola, CW Intern/Trainee; R0331969; 08 - QUALITY & CUSTOMER SATISFACTION; Thales Italia S.P.A.",
-          "title": "Software Developer Intern (Open also to Protected Categories, Law 68/99)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Software-Developer-Intern--Open-also-to-Protected-Categories--Law-68-99-_R0331969"
-        },
-        {
-          "company": "Thales",
-          "location": "Amersfoort-CDI, Intern/Trainee (Fixed Term) (Trainee); R0331784; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
-          "title": "Internship/Graduation assignment - HBO/WO Marketing operations",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Amersfoort-CDI/Internship-Graduation-assignment---HBO-WO-Marketing-operations_R0331784"
-        },
-        {
-          "company": "Thales",
-          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0330671; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
-          "title": "Internship HSE (Health, Safety & Environment)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Internship-HSE--Health--Safety---Environment-_R0330671"
+          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
+          "title": "Technical Consultant Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1"
         }
       ],
       "non_tech": [
@@ -547,65 +593,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Toulouse-Area, JR10437292",
-          "title": "Testia SAS – Stage Comptabilité (H/F) – Toulouse",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
-        }
-      ],
-      "stamp": "2026-09-03",
-      "unknown_location": [
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
-          "title": "Solution Customer Service Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
-          "title": "Technical Consultant Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Gorgonzola, CW Intern/Trainee; R0332137; 08 - QUALITY & CUSTOMER SATISFACTION",
-          "title": "AI Engineer - Internship (Open also to Protected Categories, Law 68/99)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/AI-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0332137"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0222821; 08 - QUALITY & CUSTOMER SATISFACTION",
-          "title": "Stage-/Afstudeeropdrachten- HBO/WO - computer science, software engineering - Sensor Platform Assignments",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Stage--Afstudeeropdrachten--HBO-WO---computer-science--software-engineering---Sensor-Platform-Assignments_R0222821"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10437411",
-          "title": "ACOLP2 intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLP2-intern_JR10437411"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10438475",
-          "title": "EHS intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/EHS-intern_JR10438475"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10438476",
-          "title": "ACOLH1 trainer Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLH1-trainer-Intern_JR10438476"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Salaunes, JR10438249",
           "title": "Stage Peintre Aéro / Opérateur(trice) matériau composite H/F",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249"
@@ -613,236 +600,409 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Suzhou, JR10435671",
-          "title": "Intern - Software Development",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---Software-Development_JR10435671"
+          "location": "Toulouse-Area, JR10437292",
+          "title": "Testia SAS – Stage Comptabilité (H/F) – Toulouse",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Bremen-Area, JR10426102",
-          "title": "Intern (d/f/m) for Additive Manufacturing (AM) Design of fuel components",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen-Area/Intern--d-f-m--for-Additive-Manufacturing--AM--Design-of-fuel-components_JR10426102"
+          "location": "Saint-Claude, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_saint-claude"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10437414",
-          "title": "Paint Shop Production Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Paint-Shop-Production-Intern_JR10437414"
+          "location": "Lure, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_lure"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Immenstaad-am-Bodensee, JR10433759",
-          "title": "Intern in Space-Software Unit Testing & Migration (d/f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern-in-Space-Software-Unit-Testing---Migration--d-f-m-_JR10433759"
+          "location": "La Défense, France",
+          "title": "1 STAGE EN 1 JOUR - Analyste Quantitatif",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-analyste-quantitatif_la-defense_SG_0jJ6rk"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Immenstaad-am-Bodensee, JR10435898",
-          "title": "Intern (d/f/m) in the field of Space Situational Awareness and Intelligence",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-Situational-Awareness-and-Intelligence_JR10435898"
+          "location": "La Défense, France",
+          "title": "1 STAGE EN 1 JOUR - Assistant Trader",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-assistant-trader_la-defense_SG_LOA6oM6"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Chengdu, JR10437141",
-          "title": "Planning intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Chengdu/Planning-intern_JR10437141"
+          "location": "La Défense, France",
+          "title": "1 STAGE EN 1 JOUR - Assistant ou analyste stratégiste",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-assistant-ou-analyste-strategiste_la-defense_SG_Rox6Gd8"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Bremen, JR10412367",
-          "title": "Surface Technology Internship in Paints & Coatings team (d/f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen/Surface-Technology-Internship-in-Paints---Coatings-team--d-f-m-_JR10412367"
+          "location": "Fontenay-Sous-Bois, France",
+          "title": "Stage Digital Alerting BAD",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-digital-alerting-bad_fontenay-sous-bois"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10436889",
-          "title": "internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/internship_JR10436889"
+          "location": "Mérignac, France",
+          "title": "Stage Assistant Directeur de Groupe",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-directeur-de-groupe_merignac"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10436016",
-          "title": "ACOLJ3 INTERN",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLJ3-INTERN_JR10436016"
+          "location": "Compiègne, France",
+          "title": "Stage Conseil Marché de l'entreprise",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-de-l-entreprise_compiegne_SG_GVZqLVy"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10427106",
-          "title": "Flowline Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flowline-Intern_JR10427106"
+          "location": "Arras, France",
+          "title": "Stage Conseil Marché de l'entreprise",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-de-l-entreprise_arras"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10434127",
-          "title": "ACOLS35 Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434127"
+          "location": "Bayonne, France",
+          "title": "Stage Banquier Privé",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_bayonne"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10434129",
-          "title": "ACOLS35 Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434129"
+          "location": "Champagnole, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_champagnole"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10434130",
-          "title": "ACOLS35 Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434130"
+          "location": "Dole, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dole"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10433763",
-          "title": "Department Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Department-Intern_JR10433763"
+          "location": "Auxonne, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_auxonne"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Manching, JR10433215",
-          "title": "Internship (d/f/m) for Multi-Agent Trajectory Planning",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Manching/Internship--d-f-m--for-Multi-Agent-Trajectory-Planning_JR10433215"
+          "location": "Firminy, France",
+          "title": "Stage - Conseil Marché des Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-des-particuliers_firminy"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Suzhou, JR10433733",
-          "title": "Intern - AIRBUS Suzhou R&D Centre",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---AIRBUS-Suzhou-R-D-Centre_JR10433733"
+          "location": "Villeurbanne, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_villeurbanne"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Donauwrth, JR10418211",
-          "title": "IT Digital Workplace Internship - Workspace Operation Specialist Support (d/f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Donauwrth/IT-Digital-Workplace-Internship---Workspace-Operation-Specialist-Support--d-f-m-_JR10418211-1"
+          "location": "Besançon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_besancon_SG_xzd8Aaw"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10429875",
-          "title": "Flight Test Support Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flight-Test-Support-Intern_JR10429875"
+          "location": "Blois, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_blois"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Lodz, JR10427821",
-          "title": "BHP Intern (f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Lodz/HSE-Intern--f-m-_JR10427821"
+          "location": "Loches, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_loches"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10423757",
-          "title": "ACOLEA Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLEA-Intern_JR10423757"
+          "location": "Joué-Lès-Tours, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_joue-les-tours"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Immenstaad-am-Bodensee, JR10420054",
-          "title": "Intern (d/f/m) in the field of Space-based Intelligence, Surveillance and Reconnaissance",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-based-Intelligence--Surveillance-and-Reconnaissance_JR10420054"
+          "location": "La Rochelle, France",
+          "title": "Stage Banquier Privé",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_la-rochelle"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10415943",
-          "title": "#Discover II 2026-2027 Future Capabilities Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Future-Capabilities-Internship_JR10415943"
+          "location": "Auxerre, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_auxerre"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10412143",
-          "title": "#Discover II 2026-2027/ Business & Product Development / Programme Management Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Business---Product-Development---Programme-Management-Internship_JR10412143"
+          "location": "Avallon, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_avallon"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10411936",
-          "title": "#Discover II 2026-2027/ Internship in Air Power Central Finance (FP&A, Controlling)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Internship-in-Air-Power-Central-Finance--FP-A--Controlling-_JR10411936"
+          "location": "Le Cannet, France",
+          "title": "Stage marché patrimonial",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_le-cannet"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Cadiz-Area, JR10411377",
-          "title": "#Discover II 2026-2027 / RFE Design/Stress Engineer Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Cadiz-Area/XMLNAME--Discover-II-2026-2027---RFE-Design-Stress-Engineer-Internship_JR10411377"
+          "location": "Montceau-Les-Mines, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_montceau-les-mines"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10411087",
-          "title": "#Discover II 2026 2027 / AIRBUS DERIVATIVES STRUCTURAL DESIGN ENGINEERING INTERNSHIP",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---AIRBUS-DERIVATIVES-STRUCTURAL-DESIGN-ENGINEERING-INTERNSHIP_JR10411087"
+          "location": "Cannes, France",
+          "title": "Stage Conseil Marché des professionnels",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseil-marche-des-professionnels_cannes_SG_9zMqaWq"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10411307",
-          "title": "#Discover II 2026-2027 INTERNSHIP Artificial Intelligence for Composite Structural Sizing Process",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-INTERNSHIP-Artificial-Intelligence-for-Composite-Structural-Sizing-Process_JR10411307"
+          "location": "Chalon-Sur-Saône, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_chalon-sur-saone"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10410268",
-          "title": "#Discover II 2026-2027 - MRTT & LTA Flight Operations Support Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---MRTT---LTA-Flight-Operations-Support-Internship_JR10410268"
+          "location": "Dijon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dijon_SG_2eqyjmz"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10409263",
-          "title": "#XPLORER 2027 INTERNSHIP PROGRAMME",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--XPLORER-2027-INTERNSHIP-PROGRAMME_JR10409263"
+          "location": "Belfort, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_belfort"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Tianjin-Area, JR10402686",
-          "title": "ACOLSV Tactical Planner - Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLSV-Tactical-Planner---Internship_JR10402686"
+          "location": "Le Creusot, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_le-creusot"
         },
         {
-          "company": "Airbus",
+          "company": "Societe Generale",
           "is_new": false,
-          "location": "Getafe-Area, JR10394802",
-          "title": "#MMCC 2026-2027 - Internship + Master in Composite Materials",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--MMCC-2026-2027---Internship---Master-in-Composite-Materials_JR10394802"
+          "location": "Besançon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_besancon"
         },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Dijon, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_dijon"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Saint-Remy, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-particuliers_saint-remy"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Besançon, France",
+          "title": "Stage - Conseiller Clientèle professionnels",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-conseiller-clientele-professionnels_besancon"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "La Défense, France",
+          "title": "Aviation Advisory Intern",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/aviation-advisory-intern_la-defense"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Saint-Martin-Du-Var, France",
+          "title": "Stage Marché des professionnels",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-des-professionnels_saint-martin-du-var"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Nice, France",
+          "title": "Stage Marché des Particuliers",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-des-particuliers_nice_SG_37GKOwX"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Biarritz, France",
+          "title": "Stage Banquier Privé",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-banquier-prive_biarritz"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Le Bouscat, France",
+          "title": "Stage Assistant Directeur d'Agence",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-directeur-d-agence_le-bouscat"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Chalon-Sur-Saône, France",
+          "title": "STAGE Chargé d'Affaires Entreprises",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-charge-d-affaires-entreprises_chalon-sur-saone_SG_AKMxNZo"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Dijon, France",
+          "title": "STAGE Chargé d'Affaires Entreprises",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-charge-d-affaires-entreprises_dijon"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Andrézieux-Bouthéon, France",
+          "title": "Stage Animateur Marketing",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-animateur-marketing_andrezieux-boutheon"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Talence, France",
+          "title": "Stage Assistant Banquier Privé",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-assistant-banquier-prive_talence"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Menton, France",
+          "title": "Stage marché patrimonial",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stage-marche-patrimonial_menton"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stagiaire Animation Commerciale & Supports Stratégiques",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/stagiaire-animation-commerciale-supports-strategiques_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Puteaux, France",
+          "title": "Stage - Analyste Transactions Immobilières  F/H",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-transactions-immobilieres-f-h_puteaux"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage- Assistant pôle SOFICA - H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-pole-sofica-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "STAGE - PROJECT MANAGEMENT OFFICER - H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-project-management-officer-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage - Analyste Coverage Banques France & Luxembourg - H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-coverage-banques-france-luxembourg-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Levallois, France",
+          "title": "Stage - Chargé de Communication Interne -  H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-communication-interne-h-f_levallois"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS  - H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-business-analyst-ultra-hight-net-worth-clients-h-f_paris_BP_j5Xr67l"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Contrôleur de gestion ALM Treasury – H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-controleur-de-gestion-alm-treasury-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Puteaux, France",
+          "title": "Stage - ESG Analyst F/H",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-esg-analyst-f-h_puteaux"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage - Analyste risques opérationnels H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-risques-operationnels-h-f_paris_BP_dRgLraV"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage - Analyste Conformité AML/CFT H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-conformite-aml-cft-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Chargé de relations média – H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-relations-media-h-f_paris"
+        }
+      ],
+      "non_tech_total": 158,
+      "stamp": "2026-09-04",
+      "unknown_location": [
         {
           "company": "Airbus",
           "is_new": false,
           "location": "INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca",
           "title": "INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Brasov-30-Hermann, JR10422949",
-          "title": "Tehnolog Productie / Program internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Brasov-30-Hermann/Tehnolog-Productie---Program-internship_JR10422949-1"
         }
-      ]
+      ],
+      "unknown_location_total": 1
     }
   },
-  "generated": "2026-09-03T20:42:31.987947+02:00"
+  "generated": "2026-09-04T08:46:57.848846+02:00"
 }

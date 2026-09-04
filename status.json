@@ -2,31 +2,21 @@
   "boards": {
     "board.html": {
       "also_new": [],
+      "also_new_total": 0,
       "board": "Stage Watch",
-      "closed_today": [
-        {
-          "company": "Scaleway",
-          "title": "Software Engineer IAM - Internship",
-          "url": "https://jobs.lever.co/scaleway/3003efd0-e83f-4de7-8e0e-1bf8f0a8de79"
-        }
-      ],
+      "closed_today": [],
+      "closed_today_total": 0,
       "closed_total": 1,
       "companies": 20,
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-03T20:41:58.650543+02:00",
+      "generated": "2026-09-04T08:46:20.312944+02:00",
       "incomplete": [],
       "live": 3,
-      "new": 1,
-      "new_roles": [
-        {
-          "company": "Scaleway",
-          "first_seen": "2026-09-03",
-          "title": "IT Workplace - Internship",
-          "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
-        }
-      ],
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
         {
           "company": "Criteo",
@@ -47,24 +37,28 @@
           "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
         }
       ],
-      "scanned": 3664,
-      "stamp": "2026-09-03",
+      "recent_roles_total": 3,
+      "scanned": 3677,
+      "stamp": "2026-09-04",
       "unsure": 7
     },
     "board2.html": {
       "also_new": [],
+      "also_new_total": 0,
       "board": "French Tech Watch",
       "closed_today": [],
+      "closed_today_total": 0,
       "closed_total": 0,
-      "companies": 19,
+      "companies": 20,
       "failed": 0,
       "failed_names": [],
-      "filtered": 20,
-      "generated": "2026-09-03T20:42:16.307322+02:00",
+      "filtered": 26,
+      "generated": "2026-09-04T08:46:38.091715+02:00",
       "incomplete": [],
       "live": 4,
       "new": 0,
       "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
         {
           "company": "Alan",
@@ -91,31 +85,30 @@
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003"
         }
       ],
-      "scanned": 902,
-      "stamp": "2026-09-03",
+      "recent_roles_total": 4,
+      "scanned": 917,
+      "stamp": "2026-09-04",
       "unsure": 0
     },
     "board3.html": {
       "also_new": [],
+      "also_new_total": 0,
       "board": "Defence & Finance Watch",
       "closed_today": [],
+      "closed_today_total": 0,
       "closed_total": 0,
-      "companies": 5,
-      "failed": 0,
-      "failed_names": [],
-      "filtered": 4,
-      "generated": "2026-09-03T20:42:31.987947+02:00",
-      "incomplete": [],
-      "live": 2,
-      "new": 1,
-      "new_roles": [
-        {
-          "company": "Thales",
-          "first_seen": "2026-09-03",
-          "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
-        }
+      "companies": 9,
+      "failed": 1,
+      "failed_names": [
+        "Dassault Systemes"
       ],
+      "filtered": 158,
+      "generated": "2026-09-04T08:46:57.848846+02:00",
+      "incomplete": [],
+      "live": 36,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
         {
           "company": "Thales",
@@ -128,12 +121,73 @@
           "first_seen": "2026-09-03",
           "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
+        },
+        {
+          "company": "Societe Generale",
+          "first_seen": "2026-09-04",
+          "title": "1 STAGE EN 1 JOUR - Ingénieur produits structurés",
+          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-ingenieur-produits-structures_la-defense_SG_Ql529dP"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Private Equity Infrastructure F/H",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-analyste-infrastructure-equity-h-f_puteaux_BP_OXkdOVj"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Économiste / Data visualisation H/F - 4 à 6 mois",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-economiste-data-visualisation-h-f-4-a-6-mois_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Assistant(e) Chief Data Officer – H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-chief-data-officer-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Portzamparc-Stage de Développement Commerciale (H/F) à Nantes",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/portzamparc-stage-de-developpement-commerciale-h-f-a-nantes_nantes"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Acheteur Hardware Telecom H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-hardware-telecom-h-f_pantin"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – Chargé de conformité Sécurité financière KYC H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-charge-de-conformite-securite-financiere-kyc-h-f_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Assistant risques sécurité / sûreté International H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-assistant-risques-securite-surete-international-h-f_montreuil"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois_paris"
+        },
+        {
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-04",
+          "title": "Stage - Acheteur IT software Junior H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/bnp-paribas/jobs/stage-acheteur-it-software-junior-h-f-6-mois_pantin"
         }
       ],
-      "scanned": 1684,
-      "stamp": "2026-09-03",
-      "unsure": 41
+      "recent_roles_total": 36,
+      "scanned": 1522,
+      "stamp": "2026-09-04",
+      "unsure": 1
     }
   },
-  "generated": "2026-09-03T20:42:31.987947+02:00"
+  "generated": "2026-09-04T08:46:57.848846+02:00"
 }

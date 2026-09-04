@@ -11,7 +11,7 @@ What changed from the previous version, and why:
   them. That was ~12k tokens a night, most of it re-reading the same CSS.
 - **It no longer reads the artifact's saved HTML.** The `Artifact` read call is
   what makes a republish legal; opening the file it saves adds nothing.
-- **Counts corrected**: the rosters are 20 / 19 / 5 companies, not 20 / 18 / 4.
+- **Counts corrected**: the rosters are 20 / 20 / 9 companies, not 20 / 18 / 4.
 - **The filtered boxes can now ping.** A role that failed the tech filter or
   whose location could not be placed is on the board but was never announced.
   `also_new` carries them, tagged `unsure` (location not placed - could be a real
@@ -33,8 +33,8 @@ fetch job data yourself: the Claude sandbox cannot reach the ATS APIs, which is
 why the sweep runs in GitHub Actions.
 
   board.html   -> https://claude.ai/code/artifact/92513aa1-df91-4640-923b-32555bfbb8c3   "Stage Watch"             (20 observability/infra/dev-tools)
-  board2.html  -> https://claude.ai/code/artifact/277bfba8-ce59-419c-a6df-935e8133a39e   "French Tech Watch"       (19 French tech/fintech/scale-ups)
-  board3.html  -> https://claude.ai/code/artifact/8f9b34a1-cee4-4213-b0d6-cc0b88b55fff   "Defence & Finance Watch" (5 defence/aerospace/trading)
+  board2.html  -> https://claude.ai/code/artifact/277bfba8-ce59-419c-a6df-935e8133a39e   "French Tech Watch"       (20 French tech/fintech/scale-ups)
+  board3.html  -> https://claude.ai/code/artifact/8f9b34a1-cee4-4213-b0d6-cc0b88b55fff   "Defence & Finance Watch" (9 defence/aerospace/trading/banks)
 
 These are SEPARATE watches with separate state. Never publish one board's file to
 another's URL, and never merge or compare their contents. Treat each
@@ -58,6 +58,13 @@ failed, failed_names[], incomplete[], closed_total, closed_today[], and the two
 boxes that are shown on the board but filtered out of the live list: filtered
 (count), unsure (count) and also_new[] (the ones that appeared today, each with
 kind = "unsure" or "other").
+
+Every list in status.json is CAPPED, and each has a matching `_total` field
+carrying the real count: new_roles/new_roles_total, recent_roles/
+recent_roles_total, also_new/also_new_total, closed_today/closed_today_total.
+Report the _total, name roles from the capped list. The cap exists because
+adding four companies at once put 153 rows in also_new and took this file from
+4.7 KB to 70 KB - bigger than the HTML it exists to save you reading.
 
 Treat any field that is absent as zero or empty - an older status.json will not
 have the newer keys.
@@ -86,7 +93,7 @@ notifications:
 For EACH board independently, DO NOT PUBLISH that board if ANY holds:
   (a) its file is missing, or status.json has no entry and the fallback greps
       find nothing
-  (b) failed >= 4  (for board3, only 5 companies, use failed >= 2)
+  (b) failed >= 4  (for board3, 9 companies, use failed >= 3)
   (c) scanned == 0
   (d) stamp is more than 2 days older than today
 In those cases publish NOTHING for that board; the previously published version

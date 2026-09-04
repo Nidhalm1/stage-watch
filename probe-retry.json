@@ -1,0 +1,14 @@
+{
+  "ZZ-CONTROL Qonto":     ["qonto"],
+  "Optiver":              ["optiver", "optiver-1"],
+  "Hudson River Trading": ["hudsonrivertrading", "hrt", "hudson-river-trading"],
+  "Groupe BPCE":          ["bpce", "groupe-bpce", "groupebpce"],
+  "Natixis":              ["natixis", "groupe-natixis"],
+  "Banque Populaire":     ["banquepopulaire", "banque-populaire"],
+  "Caisse d'Epargne":     ["caissedepargne", "caisse-depargne", "caisse-d-epargne"],
+  "Credit Mutuel":        ["creditmutuel", "credit-mutuel"],
+  "Credit Mutuel Arkea":  ["arkea", "credit-mutuel-arkea", "creditmutuelarkea"],
+  "La Banque Postale":    ["labanquepostale", "la-banque-postale"],
+  "LCL":                  ["lcl", "lcl-banque"],
+  "Bpifrance":            ["bpifrance", "bpi-france"]
+}
