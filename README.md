@@ -88,7 +88,7 @@ tech stages - while Thales titles an apprenticeship "STAGE - ...". A contract
 label the mapping does not recognise means "the board did not say", and the
 title test runs as before, so a new label costs nothing.
 
-**Only the first of those four can delete a role.** The other two put it in a
+**Only the internship test can delete a role.** The other two put it in a
 collapsed box on its company card instead:
 
 | Box | What is in it |
