@@ -1189,10 +1189,16 @@ BNP_QUERY = urllib.parse.urlencode({"form[type][]": BNP_INTERNSHIP})
 
 
 def _bnp_url(page):
-    """page is 0-based. Built here rather than kept as a %-template: the query
-    percent-escapes to form%5Btype%5D%5B%5D, which a later %-format would then
-    try to read as a conversion and blow up on."""
-    return "%s/en/careers/all-job-offers?%s&page=%d" % (BNP_HOST, BNP_QUERY, page)
+    """page counts from 0 here and is sent 1-BASED, because ?page=0 returns a
+    page with zero cards on it. Measured: ?page=0 -> 0 cards, ?page=1 -> 10,
+    ?page=2 -> 10. Sending 0 made the first page look empty and ended the loop
+    before it started, which is how this fetched nothing at all while answering
+    200. Also measured: form[type] without the [] is ignored and the board comes
+    back unfiltered, and type[] is a 400 - only form[type][] filters.
+
+    Built here rather than kept as a %-template: the query percent-escapes to
+    form%5Btype%5D%5B%5D, which a later %-format reads as a conversion."""
+    return "%s/en/careers/all-job-offers?%s&page=%d" % (BNP_HOST, BNP_QUERY, page + 1)
 BNP_HEADERS = {
     # The bare "Mozilla/5.0" in UA is a bot signature and 403s here: the ladder
     # rung that got 200 sent a full Chrome string, so send exactly that.
