@@ -318,10 +318,36 @@ def _report(label, sent, status, body, headers):
             print("      RESP %-22s %s" % (hk + ":", str(hv)[:150]))
     if not seen:
         print("      RESP (none of the diagnostic headers present)")
-    body = (body or "")[:500].replace("\n", " ").replace("\r", " ")
-    print("      BODY[:500]: %s" % body)
-    hit = "Nous avons" in (body or "")
-    print("      contains 'Nous avons': %s" % hit)
+    full = body or ""
+    print("      BODY[:500]: %s" % full[:500].replace("\n", " ").replace("\r", " "))
+    m = re.search(r"Nous avons\s*([0-9\s]+)\s*offres?", full)
+    print("      body length %d  |  'Nous avons' in FULL body: %s%s"
+          % (len(full), bool(m), ("  -> %s" % m.group(0).strip()) if m else ""))
+
+
+def t_robots3(url):
+    """robots.txt read with the only client the host answers. Reading it matters
+    more than reaching the listing: an automated fetcher has no business on a
+    path the operator disallows, whatever the fetch technique."""
+    try:
+        from curl_cffi import requests as creq
+    except ImportError:
+        print("      curl_cffi not installed"); return []
+    from urllib.parse import urlsplit
+    sp = urlsplit(url)
+    r = creq.get("%s://%s/robots.txt" % (sp.scheme, sp.netloc), impersonate="chrome", timeout=30)
+    print("      robots.txt HTTP %s, %d bytes" % (r.status_code, len(r.text)))
+    path = sp.path or "/"
+    print("      --- lines mentioning the target path or a blanket rule:")
+    for line in r.text.splitlines():
+        L = line.strip()
+        if not L or L.startswith("#"):
+            continue
+        low = L.lower()
+        if low.startswith(("user-agent", "disallow", "allow", "crawl-delay", "sitemap")):
+            print("        %s" % L[:150])
+    print("      --- target path: %s" % path)
+    return [("robots.txt read", "HTTP %s" % r.status_code)]
 
 
 def t_robots(url):
@@ -469,7 +495,7 @@ SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_w
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url,
          "wttjshape": t_wttj_shape, "wttj": t_wttj, "wttjorg": t_wttj_org,
          "wttjfilter": t_wttj_filter, "wttjhead": t_wttj_head,
-         "robots": t_robots, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
+         "robots": t_robots, "robots3": t_robots3, "bnp1": t_bnp1, "bnp2": t_bnp2, "bnp3": t_bnp3,
          "sgtaleo": t_sgtaleo,
          "rss": t_rss, "html": t_html, "taleoportal": t_taleoportal}
 
