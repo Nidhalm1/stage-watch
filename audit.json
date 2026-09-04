@@ -146,7 +146,7 @@
           "url": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9"
         }
       ],
-      "stamp": "2026-09-03",
+      "stamp": "2026-09-04",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -154,6 +154,13 @@
           "location": "In-Office",
           "title": "EIAM Business Enablement & Operations Intern (Fall 2026) ",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
+          "title": "Research Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400"
         },
         {
           "company": "Cloudflare",
@@ -173,8 +180,8 @@
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
-          "title": "Research Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400"
+          "title": "Software Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
         },
         {
           "company": "Cloudflare",
@@ -182,13 +189,6 @@
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
-        },
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
-          "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
         },
         {
           "company": "Cloudflare",
@@ -422,15 +422,63 @@
           "location": "Paris",
           "title": "Player Experience Intern",
           "url": "https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Product Marketing Intern (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Procurement Intern - 6 months (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Artist Relations France Coordinator - Intern (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Motion Design - 6 months Internship m/f/d - French speaking mandatory",
+          "url": "https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Legal & Business Affairs - Intern (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d"
         }
       ],
-      "stamp": "2026-09-03",
+      "stamp": "2026-09-04",
       "unknown_location": []
     },
     "board3.html": {
       "board": "Defence & Finance Watch",
-      "foreign_count": 93,
+      "foreign_count": 131,
       "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd.",
+          "title": "Software Development and Integration Engineer (Intern)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158"
+        },
         {
           "company": "Thales",
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
@@ -493,6 +541,12 @@
         },
         {
           "company": "Thales",
+          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
+          "title": "Solution Customer Service Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1"
+        },
+        {
+          "company": "Thales",
           "location": "Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE",
           "title": "Stagiaire Finance",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1"
@@ -505,21 +559,9 @@
         },
         {
           "company": "Thales",
-          "location": "Gorgonzola, CW Intern/Trainee; R0331969; 08 - QUALITY & CUSTOMER SATISFACTION; Thales Italia S.P.A.",
-          "title": "Software Developer Intern (Open also to Protected Categories, Law 68/99)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Software-Developer-Intern--Open-also-to-Protected-Categories--Law-68-99-_R0331969"
-        },
-        {
-          "company": "Thales",
-          "location": "Amersfoort-CDI, Intern/Trainee (Fixed Term) (Trainee); R0331784; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
-          "title": "Internship/Graduation assignment - HBO/WO Marketing operations",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Amersfoort-CDI/Internship-Graduation-assignment---HBO-WO-Marketing-operations_R0331784"
-        },
-        {
-          "company": "Thales",
-          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0330671; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
-          "title": "Internship HSE (Health, Safety & Environment)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Internship-HSE--Health--Safety---Environment-_R0330671"
+          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
+          "title": "Technical Consultant Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1"
         }
       ],
       "non_tech": [
@@ -547,65 +589,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Toulouse-Area, JR10437292",
-          "title": "Testia SAS – Stage Comptabilité (H/F) – Toulouse",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
-        }
-      ],
-      "stamp": "2026-09-03",
-      "unknown_location": [
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
-          "title": "Solution Customer Service Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
-          "title": "Technical Consultant Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Gorgonzola, CW Intern/Trainee; R0332137; 08 - QUALITY & CUSTOMER SATISFACTION",
-          "title": "AI Engineer - Internship (Open also to Protected Categories, Law 68/99)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/AI-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0332137"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0222821; 08 - QUALITY & CUSTOMER SATISFACTION",
-          "title": "Stage-/Afstudeeropdrachten- HBO/WO - computer science, software engineering - Sensor Platform Assignments",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Stage--Afstudeeropdrachten--HBO-WO---computer-science--software-engineering---Sensor-Platform-Assignments_R0222821"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10437411",
-          "title": "ACOLP2 intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLP2-intern_JR10437411"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10438475",
-          "title": "EHS intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/EHS-intern_JR10438475"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10438476",
-          "title": "ACOLH1 trainer Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLH1-trainer-Intern_JR10438476"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Salaunes, JR10438249",
           "title": "Stage Peintre Aéro / Opérateur(trice) matériau composite H/F",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249"
@@ -613,236 +596,22 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Suzhou, JR10435671",
-          "title": "Intern - Software Development",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---Software-Development_JR10435671"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Bremen-Area, JR10426102",
-          "title": "Intern (d/f/m) for Additive Manufacturing (AM) Design of fuel components",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen-Area/Intern--d-f-m--for-Additive-Manufacturing--AM--Design-of-fuel-components_JR10426102"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10437414",
-          "title": "Paint Shop Production Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Paint-Shop-Production-Intern_JR10437414"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Immenstaad-am-Bodensee, JR10433759",
-          "title": "Intern in Space-Software Unit Testing & Migration (d/f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern-in-Space-Software-Unit-Testing---Migration--d-f-m-_JR10433759"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Immenstaad-am-Bodensee, JR10435898",
-          "title": "Intern (d/f/m) in the field of Space Situational Awareness and Intelligence",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-Situational-Awareness-and-Intelligence_JR10435898"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Chengdu, JR10437141",
-          "title": "Planning intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Chengdu/Planning-intern_JR10437141"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Bremen, JR10412367",
-          "title": "Surface Technology Internship in Paints & Coatings team (d/f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen/Surface-Technology-Internship-in-Paints---Coatings-team--d-f-m-_JR10412367"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10436889",
-          "title": "internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/internship_JR10436889"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10436016",
-          "title": "ACOLJ3 INTERN",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLJ3-INTERN_JR10436016"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10427106",
-          "title": "Flowline Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flowline-Intern_JR10427106"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10434127",
-          "title": "ACOLS35 Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434127"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10434129",
-          "title": "ACOLS35 Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434129"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10434130",
-          "title": "ACOLS35 Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434130"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10433763",
-          "title": "Department Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Department-Intern_JR10433763"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Manching, JR10433215",
-          "title": "Internship (d/f/m) for Multi-Agent Trajectory Planning",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Manching/Internship--d-f-m--for-Multi-Agent-Trajectory-Planning_JR10433215"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Suzhou, JR10433733",
-          "title": "Intern - AIRBUS Suzhou R&D Centre",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---AIRBUS-Suzhou-R-D-Centre_JR10433733"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Donauwrth, JR10418211",
-          "title": "IT Digital Workplace Internship - Workspace Operation Specialist Support (d/f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Donauwrth/IT-Digital-Workplace-Internship---Workspace-Operation-Specialist-Support--d-f-m-_JR10418211-1"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10429875",
-          "title": "Flight Test Support Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flight-Test-Support-Intern_JR10429875"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Lodz, JR10427821",
-          "title": "BHP Intern (f/m)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Lodz/HSE-Intern--f-m-_JR10427821"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10423757",
-          "title": "ACOLEA Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLEA-Intern_JR10423757"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Immenstaad-am-Bodensee, JR10420054",
-          "title": "Intern (d/f/m) in the field of Space-based Intelligence, Surveillance and Reconnaissance",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-based-Intelligence--Surveillance-and-Reconnaissance_JR10420054"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10415943",
-          "title": "#Discover II 2026-2027 Future Capabilities Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Future-Capabilities-Internship_JR10415943"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10412143",
-          "title": "#Discover II 2026-2027/ Business & Product Development / Programme Management Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Business---Product-Development---Programme-Management-Internship_JR10412143"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10411936",
-          "title": "#Discover II 2026-2027/ Internship in Air Power Central Finance (FP&A, Controlling)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Internship-in-Air-Power-Central-Finance--FP-A--Controlling-_JR10411936"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Cadiz-Area, JR10411377",
-          "title": "#Discover II 2026-2027 / RFE Design/Stress Engineer Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Cadiz-Area/XMLNAME--Discover-II-2026-2027---RFE-Design-Stress-Engineer-Internship_JR10411377"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10411087",
-          "title": "#Discover II 2026 2027 / AIRBUS DERIVATIVES STRUCTURAL DESIGN ENGINEERING INTERNSHIP",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---AIRBUS-DERIVATIVES-STRUCTURAL-DESIGN-ENGINEERING-INTERNSHIP_JR10411087"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10411307",
-          "title": "#Discover II 2026-2027 INTERNSHIP Artificial Intelligence for Composite Structural Sizing Process",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-INTERNSHIP-Artificial-Intelligence-for-Composite-Structural-Sizing-Process_JR10411307"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10410268",
-          "title": "#Discover II 2026-2027 - MRTT & LTA Flight Operations Support Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---MRTT---LTA-Flight-Operations-Support-Internship_JR10410268"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10409263",
-          "title": "#XPLORER 2027 INTERNSHIP PROGRAMME",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--XPLORER-2027-INTERNSHIP-PROGRAMME_JR10409263"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Tianjin-Area, JR10402686",
-          "title": "ACOLSV Tactical Planner - Internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLSV-Tactical-Planner---Internship_JR10402686"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Getafe-Area, JR10394802",
-          "title": "#MMCC 2026-2027 - Internship + Master in Composite Materials",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--MMCC-2026-2027---Internship---Master-in-Composite-Materials_JR10394802"
-        },
+          "location": "Toulouse-Area, JR10437292",
+          "title": "Testia SAS – Stage Comptabilité (H/F) – Toulouse",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
+        }
+      ],
+      "stamp": "2026-09-04",
+      "unknown_location": [
         {
           "company": "Airbus",
           "is_new": false,
           "location": "INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca",
           "title": "INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Brasov-30-Hermann, JR10422949",
-          "title": "Tehnolog Productie / Program internship",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Brasov-30-Hermann/Tehnolog-Productie---Program-internship_JR10422949-1"
         }
       ]
     }
   },
-  "generated": "2026-09-03T20:42:31.987947+02:00"
+  "generated": "2026-09-04T08:33:06.419629+02:00"
 }

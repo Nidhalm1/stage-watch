@@ -16,18 +16,18 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-03
+`board.html` &middot; sweep of 2026-09-04
 
 ### Unrecognised location - 7
 
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
+| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400) | In-Office |
 | Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089407?gh_jid=8089407) | In-Office |
 | Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089379?gh_jid=8089379) | In-Office |
-| Cloudflare | [Research Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8089400?gh_jid=8089400) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
 ### Not tech - 7
@@ -66,13 +66,13 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-03
+`board2.html` &middot; sweep of 2026-09-04
 
 ### Unrecognised location - 0
 
 _none_
 
-### Not tech - 20
+### Not tech - 26
 
 | Company | Title | Location |
 |---|---|---|
@@ -96,6 +96,12 @@ _none_
 | Ledger | [Internship - Total Rewards (Compensation & Benefits)](https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2) | Paris, France |
 | Sorare | [Marketing Intern](https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d) | Paris |
 | Sorare | [Player Experience Intern](https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257) | Paris |
+| Deezer | [Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)](https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d) | Paris, FR |
+| Deezer | [Product Marketing Intern (m/f/d)](https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d) | Paris, FR |
+| Deezer | [Procurement Intern - 6 months (m/f/d)](https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d) | Paris, FR |
+| Deezer | [Artist Relations France Coordinator - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d) | Paris, FR |
+| Deezer | [Motion Design - 6 months Internship m/f/d - French speaking mandatory](https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory) | Paris, FR |
+| Deezer | [Legal & Business Affairs - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d) | Paris, FR |
 
 ### Outside France - 13 (sample below)
 
@@ -119,67 +125,29 @@ _none_
 
 ## Defence & Finance Watch
 
-`board3.html` &middot; sweep of 2026-09-03
+`board3.html` &middot; sweep of 2026-09-04
 
-### Unrecognised location - 41
+### Unrecognised location - 1
 
 | Company | Title | Location |
 |---|---|---|
-| Thales | [Solution Customer Service Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
-| Thales | [Technical Consultant Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
-| Thales | [AI Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/AI-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0332137) | Gorgonzola, CW Intern/Trainee; R0332137; 08 - QUALITY & CUSTOMER SATISFACTION |
-| Thales | [Stage-/Afstudeeropdrachten- HBO/WO - computer science, software engineering - Sensor Platform Assignments](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Stage--Afstudeeropdrachten--HBO-WO---computer-science--software-engineering---Sensor-Platform-Assignments_R0222821) | Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0222821; 08 - QUALITY & CUSTOMER SATISFACTION |
-| Airbus | [ACOLP2 intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLP2-intern_JR10437411) | Tianjin-Area, JR10437411 |
-| Airbus | [EHS intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/EHS-intern_JR10438475) | Tianjin-Area, JR10438475 |
-| Airbus | [ACOLH1 trainer Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLH1-trainer-Intern_JR10438476) | Tianjin-Area, JR10438476 |
-| Airbus | [Stage Peintre Aéro / Opérateur(trice) matériau composite H/F](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249) | Salaunes, JR10438249 |
-| Airbus | [Intern - Software Development](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---Software-Development_JR10435671) | Suzhou, JR10435671 |
-| Airbus | [Intern (d/f/m) for Additive Manufacturing (AM) Design of fuel components](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen-Area/Intern--d-f-m--for-Additive-Manufacturing--AM--Design-of-fuel-components_JR10426102) | Bremen-Area, JR10426102 |
-| Airbus | [Paint Shop Production Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Paint-Shop-Production-Intern_JR10437414) | Tianjin-Area, JR10437414 |
-| Airbus | [Intern in Space-Software Unit Testing & Migration (d/f/m)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern-in-Space-Software-Unit-Testing---Migration--d-f-m-_JR10433759) | Immenstaad-am-Bodensee, JR10433759 |
-| Airbus | [Intern (d/f/m) in the field of Space Situational Awareness and Intelligence](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-Situational-Awareness-and-Intelligence_JR10435898) | Immenstaad-am-Bodensee, JR10435898 |
-| Airbus | [Planning intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Chengdu/Planning-intern_JR10437141) | Chengdu, JR10437141 |
-| Airbus | [Surface Technology Internship in Paints & Coatings team (d/f/m)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bremen/Surface-Technology-Internship-in-Paints---Coatings-team--d-f-m-_JR10412367) | Bremen, JR10412367 |
-| Airbus | [internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/internship_JR10436889) | Tianjin-Area, JR10436889 |
-| Airbus | [ACOLJ3 INTERN](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLJ3-INTERN_JR10436016) | Tianjin-Area, JR10436016 |
-| Airbus | [Flowline Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flowline-Intern_JR10427106) | Tianjin-Area, JR10427106 |
-| Airbus | [ACOLS35 Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434127) | Tianjin-Area, JR10434127 |
-| Airbus | [ACOLS35 Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434129) | Tianjin-Area, JR10434129 |
-| Airbus | [ACOLS35 Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLS35-Intern_JR10434130) | Tianjin-Area, JR10434130 |
-| Airbus | [Department Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Department-Intern_JR10433763) | Tianjin-Area, JR10433763 |
-| Airbus | [Internship (d/f/m) for Multi-Agent Trajectory Planning](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Manching/Internship--d-f-m--for-Multi-Agent-Trajectory-Planning_JR10433215) | Manching, JR10433215 |
-| Airbus | [Intern - AIRBUS Suzhou R&D Centre](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Suzhou/Intern---AIRBUS-Suzhou-R-D-Centre_JR10433733) | Suzhou, JR10433733 |
-| Airbus | [IT Digital Workplace Internship - Workspace Operation Specialist Support (d/f/m)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Donauwrth/IT-Digital-Workplace-Internship---Workspace-Operation-Specialist-Support--d-f-m-_JR10418211-1) | Donauwrth, JR10418211 |
-| Airbus | [Flight Test Support Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/Flight-Test-Support-Intern_JR10429875) | Tianjin-Area, JR10429875 |
-| Airbus | [BHP Intern (f/m)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Lodz/HSE-Intern--f-m-_JR10427821) | Lodz, JR10427821 |
-| Airbus | [ACOLEA Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLEA-Intern_JR10423757) | Tianjin-Area, JR10423757 |
-| Airbus | [Intern (d/f/m) in the field of Space-based Intelligence, Surveillance and Reconnaissance](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Immenstaad-am-Bodensee/Intern--d-f-m--in-the-field-of-Space-based-Intelligence--Surveillance-and-Reconnaissance_JR10420054) | Immenstaad-am-Bodensee, JR10420054 |
-| Airbus | [#Discover II 2026-2027 Future Capabilities Internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-Future-Capabilities-Internship_JR10415943) | Getafe-Area, JR10415943 |
-| Airbus | [#Discover II 2026-2027/ Business & Product Development / Programme Management Internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Business---Product-Development---Programme-Management-Internship_JR10412143) | Getafe-Area, JR10412143 |
-| Airbus | [#Discover II 2026-2027/ Internship in Air Power Central Finance (FP&A, Controlling)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027--Internship-in-Air-Power-Central-Finance--FP-A--Controlling-_JR10411936) | Getafe-Area, JR10411936 |
-| Airbus | [#Discover II 2026-2027 / RFE Design/Stress Engineer Internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Cadiz-Area/XMLNAME--Discover-II-2026-2027---RFE-Design-Stress-Engineer-Internship_JR10411377) | Cadiz-Area, JR10411377 |
-| Airbus | [#Discover II 2026 2027 / AIRBUS DERIVATIVES STRUCTURAL DESIGN ENGINEERING INTERNSHIP](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---AIRBUS-DERIVATIVES-STRUCTURAL-DESIGN-ENGINEERING-INTERNSHIP_JR10411087) | Getafe-Area, JR10411087 |
-| Airbus | [#Discover II 2026-2027 INTERNSHIP Artificial Intelligence for Composite Structural Sizing Process](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027-INTERNSHIP-Artificial-Intelligence-for-Composite-Structural-Sizing-Process_JR10411307) | Getafe-Area, JR10411307 |
-| Airbus | [#Discover II 2026-2027 - MRTT & LTA Flight Operations Support Internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--Discover-II-2026-2027---MRTT---LTA-Flight-Operations-Support-Internship_JR10410268) | Getafe-Area, JR10410268 |
-| Airbus | [#XPLORER 2027 INTERNSHIP PROGRAMME](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--XPLORER-2027-INTERNSHIP-PROGRAMME_JR10409263) | Getafe-Area, JR10409263 |
-| Airbus | [ACOLSV Tactical Planner - Internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Tianjin-Area/ACOLSV-Tactical-Planner---Internship_JR10402686) | Tianjin-Area, JR10402686 |
-| Airbus | [#MMCC 2026-2027 - Internship + Master in Composite Materials](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Getafe-Area/XMLNAME--MMCC-2026-2027---Internship---Master-in-Composite-Materials_JR10394802) | Getafe-Area, JR10394802 |
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
-| Airbus | [Tehnolog Productie / Program internship](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Brasov-30-Hermann/Tehnolog-Productie---Program-internship_JR10422949-1) | Brasov-30-Hermann, JR10422949 |
 
-### Not tech - 4
+### Not tech - 5
 
 | Company | Title | Location |
 |---|---|---|
 | Thales | [STAGE - Contrôleur de gestion Offres et Projets - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Contrleur-de-gestion-Offres-et-Projets---H-F_R0334380-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0334380; 11 - FINANCE; Thales Avs France Sas |
 | Thales | [STAGE - Project Support for Contract Management Transformation - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0326789; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
 | Thales | [STAGE - Legal M&A - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
+| Airbus | [Stage Peintre Aéro / Opérateur(trice) matériau composite H/F](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249) | Salaunes, JR10438249 |
 | Airbus | [Testia SAS – Stage Comptabilité (H/F) – Toulouse](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292) | Toulouse-Area, JR10437292 |
 
-### Outside France - 93 (sample below)
+### Outside France - 131 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [Software Development and Integration Engineer (Intern)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Software Engineer Intern - Middleware (IBS)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Internship as Defense System Engineer (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Internship-as-Defense-System-Engineer--Open-also-to-Protected-Categories--Law-68-99-_R0338900) | Firenze, CW Intern/Trainee; R0338900; 18 - SYSTEM; Thales Italia S.P.A. |
 | Thales | [Communications Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Communications-Intern_R0338806) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0338806; 14 - COMMUNICATIONS; Thales Solutions Asia Pte. Ltd. |
@@ -190,9 +158,8 @@ _none_
 | Thales | [Customer Service & Sales Operations Internship](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/Customer-Service---Sales-Operations-Internship_R0334316) | Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0334316; 07 - CUSTOMER SERVICE; Thales DIS Mexico SA de CV |
 | Thales | [Naval Architect Intern/Co op - Halifax](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Halifax---Wilkinson/Naval-Architect-Intern-Co-op---Halifax_R0333841-2) | Halifax---Wilkinson, Student/Work Experience (Fixed Term) (Seasonal); R0333841; 19 - HARDWARE; Thales Canada Inc., Defence and Security |
 | Thales | [Trainee NetSec - (Internship September 2026)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Trainee-NetSec----Internship-September-2026-_R0334747) | Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0334747; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Cyber Solutions Belgium SA |
+| Thales | [Solution Customer Service Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
 | Thales | [Stagiaire Finance](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1) | Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE |
 | Thales | [Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671) | Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A. |
-| Thales | [Software Developer Intern (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Software-Developer-Intern--Open-also-to-Protected-Categories--Law-68-99-_R0331969) | Gorgonzola, CW Intern/Trainee; R0331969; 08 - QUALITY & CUSTOMER SATISFACTION; Thales Italia S.P.A. |
-| Thales | [Internship/Graduation assignment - HBO/WO Marketing operations](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Amersfoort-CDI/Internship-Graduation-assignment---HBO-WO-Marketing-operations_R0331784) | Amersfoort-CDI, Intern/Trainee (Fixed Term) (Trainee); R0331784; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V. |
-| Thales | [Internship HSE (Health, Safety & Environment)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Internship-HSE--Health--Safety---Environment-_R0330671) | Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0330671; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V. |
+| Thales | [Technical Consultant Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
 
