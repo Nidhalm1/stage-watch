@@ -138,8 +138,12 @@ def t_url(u):
 
 SLUG_TESTS = [("greenhouse", t_greenhouse), ("lever", t_lever), ("workable", t_workable),
               ("smartrecruiters", t_smartrecruiters), ("ashby", t_ashby),
-              ("recruitee", t_recruitee), ("teamtailor", t_teamtailor),
-              ("wttj", t_welcometothejungle)]
+              ("recruitee", t_recruitee), ("teamtailor", t_teamtailor)]
+# t_welcometothejungle is deliberately NOT in that list. Probed 2026-09-04: it
+# answers 403 to every request from a runner, including all three control
+# companies, which are demonstrably on WTTJ. It blocks non-browser clients, so
+# every "miss" it produces is meaningless and it only burns request budget.
+# Re-enable only alongside something that can present as a browser.
 TYPED = {"workday": t_workday, "eightfold": t_eightfold, "url": t_url}
 
 
@@ -165,7 +169,7 @@ def main(path):
             else:
                 for ats, fn in SLUG_TESTS:
                     jobs.append((company, ats, fn, spec))
-    with ThreadPoolExecutor(max_workers=5) as ex:
+    with ThreadPoolExecutor(max_workers=4) as ex:
         results = list(ex.map(probe, jobs))
 
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
