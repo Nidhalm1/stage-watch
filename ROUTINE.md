@@ -11,7 +11,9 @@ What changed from the previous version, and why:
   them. That was ~12k tokens a night, most of it re-reading the same CSS.
 - **It no longer reads the artifact's saved HTML.** The `Artifact` read call is
   what makes a republish legal; opening the file it saves adds nothing.
-- **Counts corrected**: the rosters are 20 / 20 / 9 companies, not 20 / 18 / 4.
+- **Counts corrected**: the rosters are 20 / 25 / 12 companies. They grew when
+  Societe Generale and BNP moved onto their own APIs and eight companies were
+  added; if a roster changes again this line and the three below change with it.
 - **The filtered boxes can now ping.** A role that failed the tech filter or
   whose location could not be placed is on the board but was never announced.
   `also_new` carries them, tagged `unsure` (location not placed - could be a real
@@ -33,8 +35,8 @@ fetch job data yourself: the Claude sandbox cannot reach the ATS APIs, which is
 why the sweep runs in GitHub Actions.
 
   board.html   -> https://claude.ai/code/artifact/92513aa1-df91-4640-923b-32555bfbb8c3   "Stage Watch"             (20 observability/infra/dev-tools)
-  board2.html  -> https://claude.ai/code/artifact/277bfba8-ce59-419c-a6df-935e8133a39e   "French Tech Watch"       (20 French tech/fintech/scale-ups)
-  board3.html  -> https://claude.ai/code/artifact/8f9b34a1-cee4-4213-b0d6-cc0b88b55fff   "Defence & Finance Watch" (9 defence/aerospace/trading/banks)
+  board2.html  -> https://claude.ai/code/artifact/277bfba8-ce59-419c-a6df-935e8133a39e   "French Tech Watch"       (25 French tech/fintech/ESN/scale-ups)
+  board3.html  -> https://claude.ai/code/artifact/8f9b34a1-cee4-4213-b0d6-cc0b88b55fff   "Defence & Finance Watch" (12 defence/aerospace/trading/banks)
 
 These are SEPARATE watches with separate state. Never publish one board's file to
 another's URL, and never merge or compare their contents. Treat each
