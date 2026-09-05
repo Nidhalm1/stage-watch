@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-05T21:51:59.412082+02:00",
+      "generated": "2026-09-05T22:09:29.631112+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
@@ -27,7 +27,7 @@
         }
       ],
       "recent_roles_total": 1,
-      "scanned": 3688,
+      "scanned": 3687,
       "stamp": "2026-09-05",
       "unsure": 4
     },
@@ -42,7 +42,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 48,
-      "generated": "2026-09-05T21:52:20.001582+02:00",
+      "generated": "2026-09-05T22:09:44.034153+02:00",
       "incomplete": [],
       "live": 66,
       "new": 0,
@@ -140,19 +140,8 @@
       "unsure": 0
     },
     "board3.html": {
-      "also_new": [
-        {
-          "company": "Credit Agricole",
-          "kind": "other",
-          "title": "Stage - Chargé(e) de conformité H/F"
-        },
-        {
-          "company": "Credit Agricole",
-          "kind": "other",
-          "title": "Stage - Analyste SCPI H/F"
-        }
-      ],
-      "also_new_total": 2,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
@@ -172,34 +161,12 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 231,
-      "generated": "2026-09-05T21:53:45.776516+02:00",
+      "generated": "2026-09-05T22:10:45.665027+02:00",
       "incomplete": [],
       "live": 60,
-      "new": 3,
-      "new_roles": [
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-05",
-          "location": "Montrouge, France",
-          "title": "Stage - Chargé(e) de Sécurité Financière et Prévention de la Fraude H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-securite-financiere-et-prevention-de-la-fraude-h-f_montrouge_CA_2AaWObr"
-        },
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-05",
-          "location": "Montrouge, France",
-          "title": "Stage - Chargé(e) de Sécurité Financière et Prévention de la Fraude H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-securite-financiere-et-prevention-de-la-fraude-h-f_montrouge_CA_mMKaK9q"
-        },
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-05",
-          "location": "Paris, France",
-          "title": "Stagiaire - Data Science & IA H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stagiaire-data-science-ia-h-f_paris"
-        }
-      ],
-      "new_roles_total": 3,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
         {
           "company": "Thales",
@@ -292,5 +259,5 @@
       "unsure": 2
     }
   },
-  "generated": "2026-09-05T21:53:45.776516+02:00"
+  "generated": "2026-09-05T22:10:45.665027+02:00"
 }
