@@ -1472,6 +1472,20 @@ details ul{list-style:none;margin:0;padding:0 1.25rem .85rem;display:flex;flex-d
 details li{font-size:.83rem;color:var(--muted)}
 .gone-list .job a{color:var(--muted);text-decoration-line:line-through}
 
+/* hiding a role you have read and ruled out. .job and details li are flex, and
+   flex beats the user-agent rule for [hidden], so this has to be !important. */
+[hidden]{display:none!important}
+.hide{
+  appearance:none;-webkit-appearance:none;background:none;border:0;padding:0;
+  color:var(--muted);font:inherit;font-size:.72rem;cursor:pointer;
+  text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px;
+}
+.hide:hover{color:var(--closed)}
+.hide:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+details li .hide{margin-left:.4rem}
+.is-hidden{opacity:.42}
+.hidwrap{display:inline-flex;align-items:center;gap:.45rem}
+
 /* provenance */
 .sources{border-top:1px solid var(--line);padding-top:1.5rem;display:flex;flex-direction:column;gap:.75rem}
 .sources h2{font-family:Archivo,sans-serif;font-size:.9rem;font-weight:600;margin:0}
@@ -1564,7 +1578,12 @@ def render(results, prev):
     p.append('<p class="tagline">%s Every link below came back in a live API '
              "response &mdash; none were searched for or guessed.</p>" % BOARD["blurb"])
     p.append('<p class="statusline">')
-    p.append('<span class="live"><b>%d</b> live match%s</span>' % (live, "" if live == 1 else "es"))
+    p.append('<span class="live"><b id="livecount">%d</b> live match%s</span>'
+             % (live, "" if live == 1 else "es"))
+    # Filled in by the hide script; stays invisible until something is hidden.
+    p.append('<span class="hidwrap" id="hidctl" hidden><b id="hidn">0</b> hidden'
+             ' <button type="button" class="hide" id="hidshow">show them</button>'
+             ' <button type="button" class="hide" id="hidreset">restore all</button></span>')
     p.append("<span><b>%d</b> new since last run</span>" % new_ct)
     p.append("<span><b>%d</b> roles scanned</span>" % total)
     p.append("<span><b>%d</b> compan%s</span>" % (len(results), "y" if len(results) == 1 else "ies"))
@@ -1587,22 +1606,29 @@ def render(results, prev):
             p.append('<ul class="jobs">')
             for h in r["hits"]:
                 chip = '<span class="chip new">New</span>' if h["is_new"] else ""
-                p.append('<li class="job"><a href="%s" target="_blank" rel="noopener">%s</a>'
-                         '<div class="meta"><span>%s</span>%s<span>seen since %s</span></div></li>'
-                         % (esc(h["url"]), esc(h["title"]), esc(h["location"]), chip, esc(h["first_seen"])))
+                p.append('<li class="job hit" data-u="%s">'
+                         '<a href="%s" target="_blank" rel="noopener">%s</a>'
+                         '<div class="meta"><span>%s</span>%s<span>seen since %s</span>'
+                         '<button type="button" class="hide">hide</button></div></li>'
+                         % (esc(h["url"]), esc(h["url"]), esc(h["title"]),
+                            esc(h["location"]), chip, esc(h["first_seen"])))
             p.append("</ul>")
+            p.append('<p class="none allhid" hidden>Every role here is hidden. '
+                     "Use <b>show them</b> at the top to bring them back.</p>")
         else:
             p.append('<p class="none">No tech internships open in France right now.</p>')
 
         if r["other"]:
-            p.append("<details%s><summary>%d non-tech internship%s filtered out</summary><ul>"
+            p.append('<details%s><summary>%d non-tech internship%s filtered out'
+                     '<span class="hidbox"></span></summary><ul>'
                      % (" open" if any(o["is_new"] for o in r["other"]) else "",
                         len(r["other"]), "" if len(r["other"]) == 1 else "s"))
             # Anything new is listed first, so a cap can never hide the one entry
             # that is actually news.
             for o in sorted(r["other"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
-                p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
-                         % (esc(o["url"]), esc(o["title"]), esc(o["location"]),
+                p.append('<li data-u="%s"><a href="%s" target="_blank" rel="noopener">%s</a>'
+                         ' &mdash; %s%s<button type="button" class="hide">hide</button></li>'
+                         % (esc(o["url"]), esc(o["url"]), esc(o["title"]), esc(o["location"]),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
             if len(r["other"]) > BOX_ROWS:
                 p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
@@ -1613,13 +1639,15 @@ def render(results, prev):
         # here so a French town missing from the city list is visible instead of
         # costing an application. Anything real in here belongs in _FR_CITIES.
         if r["unsure"]:
-            p.append("<details%s><summary>%d internship%s with an unrecognised location"
-                     "</summary><ul>"
+            p.append('<details%s><summary>%d internship%s with an unrecognised location'
+                     '<span class="hidbox"></span></summary><ul>'
                      % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
                         len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
             for o in sorted(r["unsure"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
-                p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
-                         % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
+                p.append('<li data-u="%s"><a href="%s" target="_blank" rel="noopener">%s</a>'
+                         ' &mdash; %s%s<button type="button" class="hide">hide</button></li>'
+                         % (esc(o["url"]), esc(o["url"]), esc(o["title"]),
+                            esc(o["location"] or "no location given"),
                             '<span class="chip new">New</span>' if o["is_new"] else ""))
             if len(r["unsure"]) > BOX_ROWS:
                 p.append("<li>&hellip; and %d more &mdash; full list in audit.md</li>"
@@ -1632,9 +1660,12 @@ def render(results, prev):
                  '<span class="counts">gone from the board &mdash; filled or pulled</span></header>'
                  '<ul class="jobs gone-list">')
         for c in sorted(closed, key=lambda x: x["closed_on"], reverse=True):
-            p.append('<li class="job"><a href="%s" target="_blank" rel="noopener">%s</a>'
-                     '<div class="meta"><span>%s</span><span class="chip gone">Closed %s</span></div></li>'
-                     % (esc(c["url"]), esc(c["title"]), esc(c.get("company", "")), esc(c["closed_on"])))
+            p.append('<li class="job" data-u="%s">'
+                     '<a href="%s" target="_blank" rel="noopener">%s</a>'
+                     '<div class="meta"><span>%s</span><span class="chip gone">Closed %s</span>'
+                     '<button type="button" class="hide">hide</button></div></li>'
+                     % (esc(c["url"]), esc(c["url"]), esc(c["title"]),
+                        esc(c.get("company", "")), esc(c["closed_on"])))
         p.append("</ul></article>")
     p.append("</div>")
 
@@ -1670,6 +1701,7 @@ def render(results, prev):
     closed_today = [{"title": c["title"], "company": c.get("company", ""), "url": c["url"]}
                     for c in closed if c["closed_on"] == TODAY]
     state = {"generated": NOW.isoformat(), "postings": cur, "closed": closed, "watch": watch}
+    p.append(HIDE_JS % json.dumps(BOARD["name"]))
     p.append('<script type="application/json" id="state">%s</script>'
              % json.dumps(state, ensure_ascii=False).replace("</", "<\\/"))
 
@@ -1737,6 +1769,101 @@ STATUS_ROWS = 12
 # Per collapsed box on the board itself. The board is an artifact the routine
 # may have to read back on a refused publish, and 158 filtered rows took board3
 # to 115 KB. New entries sort first so a cap can never hide the news.
+# Reading the board is triage: you open a role, read the description, decide it
+# is not for you - and without this it is still there tomorrow, and every day
+# after. Each row gets a hide button, and the choice is remembered by URL, so a
+# role you ruled out stays ruled out when the next sweep republishes the board.
+#
+# localStorage, not the state block: this is one reader's opinion, not a fact
+# about the job market, and it must not travel into the artifact or git. Each
+# board is its own artifact and so its own origin, and a republish to the same
+# URL keeps that origin - which is exactly why a hide survives the nightly run.
+# It is per-browser and per-device, and it can throw outright (private windows,
+# blocked site data), so every read and write is wrapped and the page renders
+# correctly with nothing stored.
+HIDE_JS = """
+<script>
+(function () {
+  var KEY = "stagewatch:hidden:" + %s;
+  var hidden = Object.create(null), showing = false;
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY));
+    if (Array.isArray(saved)) saved.forEach(function (u) { hidden[u] = 1; });
+  } catch (e) { /* private window, or site data blocked - carry on with none */ }
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(Object.keys(hidden))); } catch (e) {}
+  }
+  function each(sel, root, fn) {
+    Array.prototype.forEach.call((root || document).querySelectorAll(sel), fn);
+  }
+  function countHidden(nodes) {
+    var n = 0;
+    Array.prototype.forEach.call(nodes, function (el) {
+      if (hidden[el.getAttribute("data-u")]) n++;
+    });
+    return n;
+  }
+
+  var ctl = document.getElementById("hidctl");
+  var ctlN = document.getElementById("hidn");
+  var ctlShow = document.getElementById("hidshow");
+  var liveEl = document.getElementById("livecount");
+  var liveTotal = liveEl ? parseInt(liveEl.textContent, 10) || 0 : 0;
+
+  function paint() {
+    each("[data-u]", null, function (el) {
+      var off = !!hidden[el.getAttribute("data-u")];
+      el.hidden = off && !showing;
+      el.classList.toggle("is-hidden", off);
+      var b = el.querySelector(".hide");
+      if (b) b.textContent = off ? "unhide" : "hide";
+    });
+    each("article.co", null, function (card) {
+      var hits = card.querySelectorAll(".hit");
+      var note = card.querySelector(".allhid");
+      if (note) {
+        note.hidden = !(hits.length && countHidden(hits) === hits.length && !showing);
+      }
+      each("details", card, function (d) {
+        var tag = d.querySelector(".hidbox");
+        if (!tag) return;
+        var n = countHidden(d.querySelectorAll("[data-u]"));
+        tag.textContent = n ? " · " + n + " hidden" : "";
+      });
+    });
+    var gone = countHidden(document.querySelectorAll(".hit"));
+    if (liveEl) liveEl.textContent = String(liveTotal - gone);
+    var all = Object.keys(hidden).length;
+    if (ctl) {
+      ctl.hidden = all === 0;
+      ctlN.textContent = String(all);
+      ctlShow.textContent = showing ? "hide them" : "show them";
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+    var b = e.target && e.target.closest ? e.target.closest(".hide") : null;
+    if (!b) return;
+    e.preventDefault();
+    if (b.id === "hidshow") { showing = !showing; paint(); return; }
+    if (b.id === "hidreset") {
+      hidden = Object.create(null); showing = false; save(); paint(); return;
+    }
+    var row = b.closest("[data-u]");
+    if (!row) return;
+    var u = row.getAttribute("data-u");
+    if (hidden[u]) { delete hidden[u]; } else { hidden[u] = 1; }
+    save();
+    paint();
+  });
+
+  paint();
+})();
+</script>
+"""
+
+
 BOX_ROWS = 25
 
 # audit.json is not read by the routine, but it is committed nightly and a human

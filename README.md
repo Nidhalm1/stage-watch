@@ -70,6 +70,38 @@ posting that is invisible is not the same as a posting that is gone. A role that
 closed and came back is dropped from the closed list rather than being shown in
 both.
 
+## Hiding a role you have ruled out
+
+Reading the board is triage: you open a role, read the description, decide it is
+not for you &mdash; and without somewhere to put that decision it is still there
+tomorrow, and every day after. Every row on the board has a **hide** button: the
+tech matches, both collapsed boxes, and the recently-closed list. The header
+grows an `N hidden` control with **show them** and **restore all**, and the live
+count drops to what is left.
+
+The choice is keyed by **posting URL**, so a role you hid stays hidden when the
+next sweep republishes the board. That is the whole point &mdash; it is the same
+posting.
+
+It lives in `localStorage`, deliberately, not in the state block:
+
+- it is one reader's opinion, not a fact about the job market, so it must not
+  travel into the artifact, into git, or into `status.json`
+- each board is its own artifact and therefore its own origin, and a republish
+  to the same URL keeps that origin, which is exactly why a hide survives the
+  nightly run
+
+Two consequences worth knowing. It is **per browser and per device** &mdash;
+hiding on your laptop does not hide on your phone. And the nightly ping reads
+`status.json`, which is written server-side, so a role you hid can still be
+mentioned as new. Moving the list into an artifact runtime capability would fix
+both; it would also mean the publish routine has to declare that capability, so
+it has not been done.
+
+`localStorage` can throw outright in a private window or with site data blocked.
+Every read and write is wrapped, and the page renders correctly with nothing
+stored &mdash; hiding still works for that session, it just is not remembered.
+
 ## Filters
 
 A role is kept when it reads as an internship, its location is in France, and
