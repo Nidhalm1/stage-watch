@@ -1842,25 +1842,6 @@ HIDE_JS = """
     }
   }
 
-  // Every job link carries target="_blank", and the artifact sandbox silently
-  // blocks that whenever it withholds allow-popups: a left click then does
-  // nothing whatsoever, and the only way to the posting is the browser's own
-  // right-click menu. Measured in Chromium against this very page - sandboxed
-  // without allow-popups, a _blank click opens nothing; with it, exactly one
-  // tab. So drive the navigation instead of trusting the default action, and
-  // fall back until something is allowed: a new tab if popups are permitted,
-  // otherwise this frame, which always is. Modified clicks (ctrl/cmd/shift,
-  // middle button) are left alone so "open in new tab" keeps working.
-  document.addEventListener("click", function (e) {
-    if (e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
-    if (!a) return;
-    e.preventDefault();
-    var opened = null;
-    try { opened = window.open(a.href, "_blank", "noopener"); } catch (_) {}
-    if (!opened) location.href = a.href;
-  });
-
   document.addEventListener("click", function (e) {
     var b = e.target && e.target.closest ? e.target.closest(".hide") : null;
     if (!b) return;

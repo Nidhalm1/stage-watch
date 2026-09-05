@@ -83,22 +83,6 @@ The choice is keyed by **posting URL**, so a role you hid stays hidden when the
 next sweep republishes the board. That is the whole point &mdash; it is the same
 posting.
 
-### Why the links are driven by script
-
-Every job link carries `target="_blank"`, and the artifact sandbox silently
-blocks that whenever it withholds `allow-popups`: a left click then does
-**nothing at all**, and the only route to the posting is the browser's own
-right-click menu. Measured in Chromium against this page - sandboxed without
-`allow-popups` a `_blank` click opens nothing; with it, exactly one tab.
-
-So the page drives the navigation itself rather than trusting the default
-action, falling back until something is permitted: a new tab where popups are
-allowed, otherwise this frame, which always is. Modified clicks - ctrl, cmd,
-shift, middle button - are left alone so "open in new tab" keeps working. Do not
-"simplify" this back to a bare `target="_blank"`; it is dead in the artifact.
-
-### Where the hidden list lives
-
 It lives in `localStorage`, deliberately, not in the state block:
 
 - it is one reader's opinion, not a fact about the job market, so it must not
