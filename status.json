@@ -11,27 +11,13 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 7,
-      "generated": "2026-09-04T21:20:36.800734+02:00",
+      "generated": "2026-09-05T19:02:48.840410+02:00",
       "incomplete": [],
       "live": 3,
       "new": 0,
       "new_roles": [],
       "new_roles_total": 0,
       "recent_roles": [
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-02",
-          "location": "Paris, France",
-          "title": "Software Engineer Intern - Front-End or Fullstack",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Software-Engineer-Intern---Front-End-or-Fullstack_r16311"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-02",
-          "location": "Paris, France",
-          "title": "Product Data Scientist Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Scientist-Intern_r15715-1"
-        },
         {
           "company": "Scaleway",
           "first_seen": "2026-09-03",
@@ -40,9 +26,9 @@
           "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
         }
       ],
-      "recent_roles_total": 3,
-      "scanned": 3681,
-      "stamp": "2026-09-04",
+      "recent_roles_total": 1,
+      "scanned": 3686,
+      "stamp": "2026-09-05",
       "unsure": 4
     },
     "board2.html": {
@@ -56,35 +42,13 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 48,
-      "generated": "2026-09-04T21:21:09.106521+02:00",
+      "generated": "2026-09-05T19:03:04.682788+02:00",
       "incomplete": [],
       "live": 66,
-      "new": 2,
-      "new_roles": [
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "location": "Courbevoie, fr",
-          "title": "Stage Business Analyst - Maintenance - Aéroline - Ile-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258950"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-04",
-          "location": "Courbevoie, fr",
-          "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257370"
-        }
-      ],
-      "new_roles_total": 2,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
-        {
-          "company": "Alan",
-          "first_seen": "2026-09-02",
-          "location": "Paris",
-          "title": "Software Engineer Internship (6 months)",
-          "url": "https://jobs.ashbyhq.com/alan/de4c30ae-698f-43e9-84d1-f458955fd671"
-        },
         {
           "company": "Mistral AI",
           "first_seen": "2026-09-03",
@@ -98,13 +62,6 @@
           "location": "Paris London",
           "title": "Applied Scientist  (Internship)",
           "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e"
-        },
-        {
-          "company": "Shift Technology",
-          "first_seen": "2026-09-02",
-          "location": "France - Remote",
-          "title": "Data Science internship - Spanish speaker (6months)",
-          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7676940003"
         },
         {
           "company": "Sopra Steria",
@@ -161,70 +118,88 @@
           "location": "Courbevoie, fr",
           "title": "Stage - Développeur Fullstack – Défense & Sécurité – Île-de-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258410"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage Business Analyst - Maintenance - Aéroline - Ile-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258950"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257370"
         }
       ],
-      "recent_roles_total": 66,
-      "scanned": 4856,
-      "stamp": "2026-09-04",
+      "recent_roles_total": 64,
+      "scanned": 4854,
+      "stamp": "2026-09-05",
       "unsure": 0
     },
     "board3.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "Credit Agricole",
+          "kind": "other",
+          "title": "Stage - Chargé(e) de conformité H/F"
+        },
+        {
+          "company": "Credit Agricole",
+          "kind": "other",
+          "title": "Stage - Analyste SCPI H/F"
+        }
+      ],
+      "also_new_total": 2,
       "board": "Defence & Finance Watch",
       "closed_today": [
         {
-          "company": "Thales",
-          "title": "STAGE– Ingénieur Tests fonctionnels système - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ingnieur-Tests-fonctionnels-systme---F-H_R0338677"
+          "company": "BNP Paribas",
+          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois"
         },
         {
-          "company": "Societe Generale",
-          "title": "1 STAGE EN 1 JOUR - Ingénieur produits structurés",
-          "url": "https://www.welcometothejungle.com/fr/companies/societe-generale/jobs/1-stage-en-1-jour-ingenieur-produits-structures_la-defense_SG_Ql529dP"
+          "company": "Credit Agricole",
+          "title": "Stage - Data ingénieur H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-data-ingenieur-h-f_paris_CA_kqmPgb2"
         }
       ],
       "closed_today_total": 2,
-      "closed_total": 2,
+      "closed_total": 4,
       "companies": 12,
       "failed": 0,
       "failed_names": [],
       "filtered": 231,
-      "generated": "2026-09-04T21:22:21.181769+02:00",
+      "generated": "2026-09-05T19:04:19.489849+02:00",
       "incomplete": [],
-      "live": 59,
-      "new": 4,
+      "live": 60,
+      "new": 3,
       "new_roles": [
         {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "location": "Fontenay-Sous-Bois, France",
-          "title": "Agile Business Analyst",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/agile-business-analyst-26000GRL-fr"
+          "company": "Credit Agricole",
+          "first_seen": "2026-09-05",
+          "location": "Montrouge, France",
+          "title": "Stage - Chargé(e) de Sécurité Financière et Prévention de la Fraude H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-securite-financiere-et-prevention-de-la-fraude-h-f_montrouge_CA_2AaWObr"
         },
         {
-          "company": "Societe Generale",
-          "first_seen": "2026-09-04",
-          "location": "La Defense, France",
-          "title": "Business Analyst & Gestion de Projets - Flux et Transactions Internationales",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/business-analyst-gestion-de-projets-flux-et-transactions-internationales-26000CJ7-fr"
+          "company": "Credit Agricole",
+          "first_seen": "2026-09-05",
+          "location": "Montrouge, France",
+          "title": "Stage - Chargé(e) de Sécurité Financière et Prévention de la Fraude H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-securite-financiere-et-prevention-de-la-fraude-h-f_montrouge_CA_mMKaK9q"
         },
         {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Paris, Île-de-France, France",
-          "title": "STAGE - BUSINESS ANALYST - ULTRA HIGHT NET WORTH CLIENTS - H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-business-analyst-ultra-hight-net-worth-clients-h-f-1"
-        },
-        {
-          "company": "BNP Paribas",
-          "first_seen": "2026-09-04",
-          "location": "Montreuil, Île-de-France, France",
-          "title": "STAGE - Business Analyst H/F - 6 mois",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-business-analyst-h-f-6-mois-1"
+          "company": "Credit Agricole",
+          "first_seen": "2026-09-05",
+          "location": "Paris, France",
+          "title": "Stagiaire - Data Science & IA H/F",
+          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stagiaire-data-science-ia-h-f_paris"
         }
       ],
-      "new_roles_total": 4,
+      "new_roles_total": 3,
       "recent_roles": [
         {
           "company": "Thales",
@@ -311,11 +286,11 @@
           "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
         }
       ],
-      "recent_roles_total": 59,
-      "scanned": 2842,
-      "stamp": "2026-09-04",
+      "recent_roles_total": 60,
+      "scanned": 2855,
+      "stamp": "2026-09-05",
       "unsure": 2
     }
   },
-  "generated": "2026-09-04T21:22:21.181769+02:00"
+  "generated": "2026-09-05T19:04:19.489849+02:00"
 }
