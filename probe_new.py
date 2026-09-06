@@ -166,6 +166,14 @@ SOURCES = {
     "nokia-joburl2": ("head", "https://jobs.nokia.com/careers/job/40113", {}),
     "qualcomm-joburl": ("head", "https://careers.qualcomm.com/careers/job/446720469345", {}),
     "microsoft-joburl": ("head", "https://apply.careers.microsoft.com/careers/job/1970393556988021", {}),
+    # Morgan Stanley's tenant answered every one of f_eightfold's four searches
+    # with zero positions. Does it answer ANY search, and is the domain right?
+    "ms-empty": ("json", "https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=&location=&start=0&num=5",
+                 {"items": "data.positions", "total": "data.count"}),
+    "ms-analyst": ("json", "https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=analyst&location=&start=0&num=5",
+                   {"items": "data.positions", "total": "data.count"}),
+    "ms-v2": ("json", "https://morganstanley.eightfold.ai/api/apply/v2/jobs?domain=morganstanley.com&start=0&num=5",
+              {"items": "positions", "total": "count"}),
     "gs-joburl": ("head", "https://higher.gs.com/roles/162057", {}),
     "gs-joburl2": ("head", "https://higher.gs.com/roles/162057_GS_EARLY_CAREER", {}),
     "ibm-joburl": ("head", "https://careers.ibm.com/careers/JobDetail?jobId=128675", {}),

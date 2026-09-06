@@ -338,15 +338,21 @@ COMPANIES3 = [
     # here, /api/apply/v2/jobs answers with the board.
     {"name": "Millennium",    "ats": "eightfold_v2", "host": "https://career.mlp.com",
      "domain": "mlp.com", "careers": "https://career.mlp.com/"},
+    # NOT flagged "big". The big path is the intern facet plus four keyword
+    # searches with "intern" deliberately left out (it matches essentially the
+    # whole of Thales, which is what that flag was written for). Measured
+    # 2026-09-06: it found Broadcom 18 rows and no internships at all, because
+    # these boards are small enough to read whole - 595, 1014 and 371 postings
+    # against a WORKDAY_MAX of 1200 - and complete beats clever here.
     {"name": "Intel",         "ats": "workday", "tenant": "intel", "wd": "wd1",
-     "site": "External", "big": True, "careers": "https://jobs.intel.com/"},
+     "site": "External", "careers": "https://jobs.intel.com/"},
     {"name": "NVIDIA",        "ats": "workday", "tenant": "nvidia", "wd": "wd5",
-     "site": "NVIDIAExternalCareerSite", "big": True,
+     "site": "NVIDIAExternalCareerSite",
      "careers": "https://www.nvidia.com/en-us/about-nvidia/careers/"},
     # VMware roles live on this board now - there is no separate VMware feed.
     # The site slug must be External_Career; External and Careers both 404.
     {"name": "Broadcom",      "ats": "workday", "tenant": "broadcom", "wd": "wd1",
-     "site": "External_Career", "big": True, "careers": "https://www.broadcom.com/company/careers"},
+     "site": "External_Career", "careers": "https://www.broadcom.com/company/careers"},
     # amd.wd1.myworkdayjobs.com does not exist - AMD left Workday for Phenom.
     {"name": "AMD",           "ats": "phenom", "api": "https://careers.amd.com/api/jobs",
      "pages": 12, "careers": "https://careers.amd.com/"},
@@ -513,6 +519,9 @@ FR_CODE = re.compile(r"^\s*(fr|fra|france|frankreich)\s*$", re.I)
 # instead of being thrown away. Any real French town that turns up in that box
 # belongs in _FR_CITIES; that is the feedback loop the whitelist never had.
 _NOT_FR = (
+    # written by _country() when a board's own country field named a country
+    # that is not France - see that function
+    "abroad|"
     "united states|u\\.s\\.a?\\.|america|canada|mexico|brazil|br[ée]sil|argentina|chile|colombia|"
     "united kingdom|england|scotland|wales|ireland|irlande|london|londres|manchester|edinburgh|"
     "dublin|cork|belfast|"
@@ -656,6 +665,27 @@ TODAY = NOW.date().isoformat()
 UA    = {"User-Agent": ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                         "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
          "Accept": "application/json,text/plain,*/*"}
+
+
+def _country(blob, *codes):
+    """Like _fr, but it also uses a NEGATIVE answer.
+
+    _fr appends "France" when a structured country field means France and
+    otherwise leaves the blob alone, so a posting in a town no list has ends up
+    "unknown" - which is right when nothing said where it is. But several of the
+    2026-09-06 sources DO say: Amazon's country_code is MEX, Oracle's
+    PrimaryLocationCountry is CA. Leaving those unknown put 48 Amazon roles in
+    the unrecognised-location box in one run, which buries the French ones it
+    exists to surface. So a country field that positively names somewhere else
+    appends "abroad", which _NOT_FR matches - the same evidence standard the box
+    already uses, just applied to a field instead of a town name."""
+    for code in codes:
+        if code and FR_CODE.match(str(code).strip()):
+            return ("%s France" % blob).strip()
+    for code in codes:
+        if code and str(code).strip():
+            return ("%s abroad" % blob).strip()
+    return blob
 
 
 def _fr(blob, *countries):
@@ -1323,7 +1353,7 @@ def f_phenom(c):
                 fresh += _rows_from(
                     seen, out, data.get("title", ""), loc,
                     (data.get("meta_data") or {}).get("canonical_url") or "",
-                    _fr(loc, data.get("country"), data.get("country_code")))
+                    _country(loc, data.get("country"), data.get("country_code")))
             if len(rows) < PHENOM_PAGE or not fresh:
                 break
             if page >= c.get("pages", 12):
@@ -1513,8 +1543,8 @@ def f_oracle_cx(c):
                     if isinstance(sec, dict):
                         where_bits.append(sec.get("Name") or sec.get("LocationName") or "")
                 _rows_from(seen, out, r.get("Title", ""), loc, link,
-                           _fr(" ".join(x for x in where_bits if x),
-                               r.get("PrimaryLocationCountry")),
+                           _country(" ".join(x for x in where_bits if x),
+                                    r.get("PrimaryLocationCountry")),
                            _contract(r.get("WorkerType") or r.get("ContractType")))
             off += ORACLE_PAGE
             total = int(block.get("TotalJobsCount") or 0)
@@ -1555,8 +1585,9 @@ def f_amazon(c):
                 loc = j.get("normalized_location") or j.get("location") or ""
                 _rows_from(seen, out, j.get("title", ""), loc,
                            urllib.parse.urljoin(AMAZON_HOST, path) if path else "",
-                           " ".join(x for x in [loc, j.get("city"), j.get("state"),
-                                                j.get("country_code")] if x))
+                           _country(" ".join(x for x in [loc, j.get("city"),
+                                                         j.get("state")] if x),
+                                    j.get("country_code")))
             off += AMAZON_LIMIT
             if len(jobs) < AMAZON_LIMIT or off >= int(d.get("hits") or 0):
                 break
