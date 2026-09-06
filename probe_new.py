@@ -394,11 +394,20 @@ def fetchers(only):
             print("%-15s %-14s fetching..." % (c["name"], c["ats"]), flush=True)
             try:
                 mb._budget_start()
+                if mb._HAS_ALARM:
+                    import signal
+                    signal.signal(signal.SIGALRM, mb._alarm)
+                    signal.alarm(mb.COMPANY_BUDGET + 30)
                 rows = mb.FETCH[c["ats"]](c)
             except Exception as e:
-                print("%-15s %-14s FAILED  %s: %s"
-                      % (c["name"], c["ats"], type(e).__name__, str(e)[:120]), flush=True)
+                print("%-15s %-14s FAILED  %s: %s  (%.0fs)"
+                      % (c["name"], c["ats"], type(e).__name__, str(e)[:100],
+                         time.time() - t0), flush=True)
                 continue
+            finally:
+                if mb._HAS_ALARM:
+                    import signal
+                    signal.alarm(0)
             itn = [r for r in rows if mb._is_intern(r)]
             hits = [r for r in itn if mb.where(r[3]) == "fr" and mb.is_tech(r[0])]
             other = [r for r in itn if mb.where(r[3]) == "fr" and not mb.is_tech(r[0])]

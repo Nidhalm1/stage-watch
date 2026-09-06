@@ -8,7 +8,7 @@
 Self-contained on purpose: the nightly cloud run has no access to any other
 file, so config + fetchers + template all live here.
 """
-import json, os, re, sys, html, http.cookiejar, urllib.error, urllib.parse, urllib.request, time
+import json, os, re, signal, sys, html, http.cookiejar, urllib.error, urllib.parse, urllib.request, time
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------- config ----
@@ -1179,8 +1179,16 @@ COMPANY_BUDGET = 90         # seconds
 _DEADLINE = [None]
 
 
+class FetchBudget(Exception):
+    """A fetch that ran past COMPANY_BUDGET and had to be cut off."""
+
+
 def _budget_start():
     _DEADLINE[0] = time.time() + COMPANY_BUDGET
+
+
+def _alarm(_sig, _frame):
+    raise FetchBudget("fetch ran past the %ds budget" % COMPANY_BUDGET)
 
 
 def _out_of_time(name):
@@ -1190,6 +1198,17 @@ def _out_of_time(name):
               % (name, COMPANY_BUDGET), file=sys.stderr)
         return True
     return False
+
+
+# The check above is cooperative - it runs between requests, so a fetcher that
+# is looping politely stops with the rows it already has. It cannot help against
+# a single request that never returns, and a server that dribbles bytes forever
+# does exactly that: urlopen's timeout is per socket operation, not for the
+# whole transfer. So the budget is also armed as a SIGALRM, which interrupts the
+# fetch wherever it is. Its rows are lost, and the company is reported as a
+# failed fetch - which, like any other error here, means nothing of theirs may
+# be marked closed.
+_HAS_ALARM = hasattr(signal, "SIGALRM")
 
 
 # How many built URLs to HEAD-check per company. The point of the check is to
@@ -2140,11 +2159,17 @@ def scan():
                "unsure": [], "foreign": []}
         try:
             _budget_start()
+            if _HAS_ALARM:
+                signal.signal(signal.SIGALRM, _alarm)
+                signal.alarm(COMPANY_BUDGET + 30)
             jobs = FETCH[c["ats"]](c)
         except Exception as e:
             row["error"] = "%s: %s" % (type(e).__name__, e)
             results.append(row)
             continue
+        finally:
+            if _HAS_ALARM:
+                signal.alarm(0)
         placed = [(j, where(j[3])) for j in jobs]
         row["total"]  = len(jobs)
         row["france"] = sum(1 for _, w in placed if w == "fr")
