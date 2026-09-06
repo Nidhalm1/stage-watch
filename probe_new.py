@@ -142,6 +142,17 @@ SOURCES = {
     "hsbc": ("html", "https://mycareer.hsbc.com/en_GB/external/SearchJobs/intern?listFilterMode=1&pipelineRecordsPerPage=10",
              {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
     "clevercloud": ("html", "https://www.clever.cloud/jobs/", {"want": 0}),
+
+    # --- do the URLs a fetcher would have to BUILD actually exist? ----------
+    # Oracle CX and Eightfold pcsx return an id or a relative path, not a link,
+    # so a fetcher has to construct one - and this repo only shows links that
+    # came back live. These check the construction before it is written down:
+    # status + <title> for a job id read off the probe above.
+    "dell-joburl": ("head", "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/CX_1/job/295136/", {}),
+    "nokia-joburl": ("head", "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40113/", {}),
+    "nokia-joburl2": ("head", "https://jobs.nokia.com/careers/job/40113", {}),
+    "qualcomm-joburl": ("head", "https://careers.qualcomm.com/careers/job/446720469345", {}),
+    "microsoft-joburl": ("head", "https://apply.careers.microsoft.com/careers/job/1970393556988021", {}),
     "siemens-fr": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/stage?listFilterMode=1",
                    {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
     "ovh-page2": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
@@ -226,7 +237,7 @@ def probe(name):
     elif kind == "form":
         headers["Content-Type"] = "application/x-www-form-urlencoded"
         data = extra["form"].encode()
-    elif kind == "html":
+    elif kind in ("html", "head"):
         headers = dict(HTML_HDR)
     try:
         status, final, body = fetch(url, headers, data)
@@ -239,6 +250,11 @@ def probe(name):
         return
     print("  status %s  %d bytes%s" % (status, len(body),
                                        "  -> %s" % final[:120] if final != url else ""))
+
+    if kind == "head":
+        m = re.search(r"<title[^>]*>(.{0,120}?)</title>", body, re.I | re.S)
+        print("  title: %s" % (re.sub(r"\s+", " ", m.group(1)).strip() if m else "-"))
+        return
 
     if kind == "html":
         card = extra.get("card")
