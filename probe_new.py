@@ -243,6 +243,18 @@ def probe(name):
         print("  %d job-ish anchors (first 25):" % len(hrefs))
         for h in hrefs[:12]:
             print("     %s" % h[:150])
+        # Where does this page keep the LOCATION? Every one of these boards
+        # renders it in some labelled element; print the labelled elements
+        # rather than guessing which one it is.
+        loc_hits = []
+        for m in re.finditer(r'<[a-z]+[^>]*class="([^"]*(?:location|city|country|facility|region)[^"]*)"[^>]*>(.{0,110}?)<',
+                             body, re.I | re.S):
+            hit = "%s -> %s" % (m.group(1)[:50], re.sub(r"\s+", " ", m.group(2)).strip()[:70])
+            if hit not in loc_hits:
+                loc_hits.append(hit)
+        print("  %d location-ish elements (first 12):" % len(loc_hits))
+        for h in loc_hits[:12]:
+            print("     %s" % h)
         if card:
             starts = [m.start() for m in re.finditer(card, body, re.I)]
             print("  %d cards matching %s" % (len(starts), card))
