@@ -4,9 +4,9 @@ Three independent nightly job watches sharing one codebase.
 
 | Board | File | Roster | Artifact |
 |---|---|---|---|
-| Stage Watch | `board.html` | `COMPANIES` - 20 observability / infra / dev-tools | 92513aa1 |
-| French Tech Watch | `board2.html` | `COMPANIES2` - 25 French tech / fintech / ESN / scale-ups | 277bfba8 |
-| Defence & Finance Watch | `board3.html` | `COMPANIES3` - 12 defence / aerospace / trading / banks | 8f9b34a1 |
+| Stage Watch | `board.html` | `COMPANIES` - 33 observability / infra / dev-tools / cloud platforms | 92513aa1 |
+| French Tech Watch | `board2.html` | `COMPANIES2` - 29 French tech / fintech / ESN / scale-ups, plus four European groups with large French sites | 277bfba8 |
+| Defence, Finance & Silicon Watch | `board3.html` | `COMPANIES3` - 26 defence / aerospace / trading / banks / semiconductors | 8f9b34a1 |
 
 Each board has its own hidden state block, so NEW / closed detection is per-board.
 They never share results. `make_board.py --roster 2` selects the second roster;
@@ -158,9 +158,11 @@ so `totalFound > 0` is the real test.
 Then add a confirmed entry to `COMPANIES` in `make_board.py`. Supported:
 `greenhouse`, `lever`, `workable`, `smartrecruiters`, `ashby`, `workday`,
 `teamtailor`, `dassault`, `wttj`, `sgcareers`, `bnp`, `talentsoft`, `icims`,
-`gestmax`.
+`gestmax`, and from the 2026-09-06 batch `ibm`, `phenom`, `phenom_widget`,
+`eightfold`, `eightfold_v2`, `oracle_cx`, `amazon`, `gs`, `coveo`, `atlassian`,
+`sfhtml`, `avature`, `radancy`.
 
-The last four read HTML rather than JSON, which is strictly worse and is treated
+`talentsoft`, `icims`, `gestmax`, `bnp`, `sfhtml`, `avature` and `radancy` read HTML rather than JSON, which is strictly worse and is treated
 that way: each pages until a page adds nothing new, and a page ceiling marks the
 company partial so nothing of theirs can be closed. **Every selector in them was
 read off a live page by `probe_html.py`** - run that from the *Stage Watch sweep*
@@ -194,6 +196,9 @@ to make - and is closed.
 `probe_html.py` (run from the *Probe HTML job boards* Action, never locally -
 same egress reason as `bulk_probe.py`) prints the shape of the HTML-only boards
 so a fetcher can be written against real markup instead of a guessed regex.
+`probe_new.py` does the same job for JSON APIs, printing each response as
+flattened `path -> value` lines so the field a fetcher reads is copied rather
+than guessed; run it the same way, with `probe_html` set to `new:<source names>`.
 
 `wttj` is the odd one out: an aggregator rather than an ATS, and the only way
 in to the French banks, whose own systems are vendor-locked or refuse a
@@ -207,6 +212,46 @@ the company partial rather than dropping the role.
 
 Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
 `{"name": "Criteo", "ats": "workday", "tenant": "criteo", "wd": "wd3", "site": "Criteo_Career_Site"}`.
+
+### The 2026-09-06 batch, and search-scoped boards
+
+Thirty-two companies were added on 2026-09-06 across the three rosters. Every one
+of their endpoints was read off a live response by `probe_new.py`, run from the
+*Stage Watch sweep* Action with a `probe_html` input of `new:<names>` - the same
+rule as `probe_html.py` and for the same reason: the Claude sandbox cannot reach
+any of these hosts, so nothing about them may be assumed.
+
+Most of them are far too large to page whole - IBM, Amazon, Microsoft, Oracle,
+Dell, SAP and the Phenom sites are boards of thousands - so each is fetched as
+the **union of a few keyword searches** (`intern`, `internship`, `stage`,
+`stagiaire`), exactly the trade `f_workday` already makes for Thales and Airbus.
+The cost is real and worth stating: a role whose title carries none of those
+words is invisible to us. That is why the French words are in every list, and
+why a company with a small board (GitHub, Atlassian, Optiver) is paged whole
+instead.
+
+Where a location parameter exists it is used as a **narrowing term, not a
+filter** - `location=France` on Eightfold and `loc_query=France` on Amazon are
+fuzzy relevance terms that happily return Mexico City - and `where()` still makes
+the France call locally, so nothing is deleted server-side.
+
+Three of these return an id or a relative path instead of a link, so the URL has
+to be built: Eightfold (`/careers/job/<id>` under the tenant host), Oracle CX
+(`/hcmUI/CandidateExperience/en/sites/CX_1/job/<id>`) and Goldman Sachs
+(`higher.gs.com/roles/<externalSource.sourceId>`, **not** the `roleId`, which
+renders a generic page). Each built URL is HEAD-checked before it is recorded,
+like `wttj`, and a 404 marks the company partial rather than dropping the role
+quietly. All three constructions were verified against real ids on 2026-09-06.
+
+Two notes worth keeping:
+
+- **IBM** needs its `_source` list. Without it the hits come back as
+  `_id`/`_index`/`_score` and nothing else - a fetch that looks like it worked
+  and carries no jobs. HashiCorp is IBM now and its roles are on the same index,
+  which is why `hashicorp` is one of the queries rather than a separate company.
+- **Oracle CX** needs the `expand=requisitionList...`. Without it the response is
+  a `TotalJobsCount` with no `requisitionList` under it - again, a fetch that
+  answers 200 and returns nothing.
 
 ## Audit
 

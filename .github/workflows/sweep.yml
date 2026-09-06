@@ -81,7 +81,7 @@ jobs:
       # Thales and Airbus are 6000+ posting Workday boards, fetched as a union of
       # the intern facet plus keyword searches, so this step takes ~70s longer
       # than the other two.
-      - name: Batch 3 - Defence & Finance Watch
+      - name: Batch 3 - Defence, Finance & Silicon Watch
         id: b3
         if: inputs.probe_html == ''
         continue-on-error: true

@@ -119,12 +119,30 @@ COMPANIES = [
 #   - Welcome to the Jungle is excluded entirely: it 403s every request from a
 #     runner, including companies known to be on it. See bulk_probe.py.
 NO_API = [
-    ("Dynatrace",    "custom Coveo search endpoint; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. Three guessed\n                      Workday sites all returned 422, so Workday is untested rather than ruled\n                      out - it needs the real site name off the careers page"),
-    ("OVHcloud",     "SAP SuccessFactors; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                      Guessed Workday sites returned 422, so untested"),
-    ("GitHub",       "iCIMS; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
-    ("HashiCorp",    "acquired by IBM, careers redirect to IBM Careers; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
-    ("Clever Cloud", "/careers/ redirects to a product page; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    # Dynatrace, GitHub, HashiCorp and OVHcloud came off this list on 2026-09-06:
+    # each has a working public endpoint after all, just not one of the six ATSs
+    # the bulk probe knows how to ask. Dynatrace answers on its own Coveo proxy,
+    # GitHub on Phenom, OVHcloud on a SuccessFactors career site, and HashiCorp's
+    # roles are on IBM's careers index. They are on the boards now; the lesson
+    # kept here is that "clean negative on six ATSs" means the SIX said no, not
+    # that the company has no feed.
+    ("Clever Cloud", "clever.cloud/jobs (the domain moved from clever-cloud.com) answers 200 and is a\n"
+                     "                      plain static page - but it lists no openings: the only job link on it\n"
+                     "                      goes to a single Indeed posting, and the rest is an email address.\n"
+                     "                      Nothing to fetch until they publish a real list. Probed 2026-09-04\n"
+                     "                      against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable:\n"
+                     "                      clean negative, 3 slug variants"),
     ("Tsuga",        "no job board found; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    # Probed 2026-09-06 and NOT adopted - all four need a browser, not a request:
+    ("Google",       "careers.google.com/api/v3/search is gone ({\"detail\":\"Not Found\"}) and the new\n"
+                     "                      site renders through Google's internal batchexecute RPC. No stable\n"
+                     "                      public endpoint"),
+    ("Google DeepMind", "routes into the same Google careers system - same problem"),
+    ("Apple",        "jobs.apple.com/api/v1/search answers 401 'User Unauthorized' without an\n"
+                     "                      X-Apple-CSRF-Token minted by the page, so it needs a browser step per run"),
+    ("ASML",         "Sitecore Search (discover-euc1.sitecorecloud.io) behind a widget query and an API\n"
+                     "                      key the page holds. Fallback if it is ever wanted: parse\n"
+                     "                      www.asml.com/en/careers/find-your-job"),
 ]
 
 
@@ -340,10 +358,6 @@ COMPANIES3 = [
      "body": {"lang": "en_global", "country": "global",
               "all_fields": ["country", "state", "city", "category"]},
      "careers": "https://jobs.cisco.com/jobs/SearchJobs"},
-    {"name": "HSBC / CCF",    "ats": "avature", "pages": 8,
-     "base": "https://mycareer.hsbc.com",
-     "list": "https://mycareer.hsbc.com/en_GB/external/SearchJobs/%s?listFilterMode=1&page=%d",
-     "careers": "https://mycareer.hsbc.com/en_GB/external/SearchJobs"},
 ]
 
 # Sources probed 2026-09-04 and deliberately NOT adopted, with the reason - so the
@@ -369,9 +383,15 @@ NO_API3 = [
     ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
     ("Safran",             "workable/safrangroup re-probed 2026-09-04: 17 postings, every one in "
                            "Pitstone or Banbury UK = Safran Engineering Services UK Ltd, not the group"),
-    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic\n                            entries), not the real board; no French office; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
-    ("Optiver",            "bespoke careers system, no ATS; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
-    ("Millennium",         "Eightfold; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. The eightfold API probe\n                            404d on every domain tried, so that path is unverified, not ruled out"),
+    ("Hudson River Trading","its own WordPress endpoint (admin-ajax.php, action=get_hrt_jobs_handler) is the\n"
+                            "                            real board, but it answered HTTP 500 when probed on 2026-09-06 - a\n"
+                            "                            broken plugin, not a block. greenhouse/hrttalentcommunity is a\n"
+                            "                            3-entry talent-community stub, not the board. No French office either,\n"
+                            "                            so this is worth revisiting only if the endpoint comes back"),
+    # Optiver and Millennium moved ONTO the board on 2026-09-06 - see COMPANIES3.
+     # Optiver is on Greenhouse after all (boards-api.greenhouse.io/v1/boards/optiver)
+     # and Millennium answers on the older Eightfold API, /api/apply/v2/jobs.
+
     ("Groupe BPCE",        "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
     ("Banque Populaire",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("Caisse d'Epargne",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 variants"),
@@ -381,7 +401,12 @@ NO_API3 = [
     ("Credit Mutuel Arkea","no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
     ("La Banque Postale",  "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("LCL",                "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
-    ("HSBC / CCF",         "Avature (mycareer.hsbc.com); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("HSBC / CCF",         "Avature (mycareer.hsbc.com) and readable - the search page renders fine from a\n"
+                           "                            runner. Left off anyway after probing it on 2026-09-06: an 'intern' search\n"
+                           "                            there returns PipelineDetail cards (talent pools, not postings) and those\n"
+                           "                            cards carry no location element at all, so every row would land in the\n"
+                           "                            unrecognised-location box. Siemens is on the same ATS and does carry\n"
+                           "                            list-item-jobCity/jobState/jobCountry, which is why it is on batch 2"),
     ("Bpifrance",          "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     # These two are NOT "no API found" - both were located and answered. They are
     # excluded because they have no French office, which is the same test that
@@ -408,12 +433,15 @@ ROSTERS = {
           "blurb": "Tech internships and PFE in France at observability, infrastructure and "
                    "developer-tools companies, read straight from each company&rsquo;s "
                    "applicant-tracking API."},
-    "3": {"name": "Defence & Finance Watch", "companies": COMPANIES3,
-          "blurb": "Tech internships and PFE in France at defence, aerospace and trading "
-                   "firms, read straight from each company&rsquo;s applicant-tracking API."},
+    "3": {"name": "Defence, Finance & Silicon Watch", "companies": COMPANIES3,
+          "blurb": "Tech internships and PFE in France at defence, aerospace, trading and "
+                   "semiconductor firms, read straight from each company&rsquo;s "
+                   "applicant-tracking API."},
     "2": {"name": "French Tech Watch", "companies": COMPANIES2,
           "blurb": "Tech internships and PFE in France at French tech, fintech and scale-up "
-                   "companies, read straight from each company&rsquo;s applicant-tracking API."},
+                   "companies - plus the French engineering sites of OVHcloud, Nokia, "
+                   "Ericsson and Siemens - read straight from each company&rsquo;s "
+                   "applicant-tracking API."},
 }
 
 BOARD = ROSTERS["1"]
@@ -1803,12 +1831,168 @@ def f_bnp(c):
     return _paged(c, _bnp_url, parse, c.get("pages", 45), BNP_HEADERS)
 
 
+# --- SAP SuccessFactors career sites (SAP, OVHcloud) ------------------------
+# One <li class="job-tile" data-url="/job/<CITY>-<Title>-<postcode>/<id>/"> per
+# posting, the title inside an <a class="jobTitle-link">, and on the tenants that
+# show it a "Type de contrat" custom field reading Stage or Alternance, which
+# _contract turns into the label that beats the title.
+#
+# These sites carry the town in the data-url slug and, on OVHcloud, nowhere else
+# on the card. The slug is <City>-<Title words>-<postcode>, and the city can
+# itself contain hyphens (Levallois-Perret), so the split is done by finding
+# where the TITLE starts inside the slug rather than by counting hyphens.
+#
+# Both are read as a keyword search rather than paged whole: jobs.sap.com is a
+# global board of thousands, and the same trade is already made for Thales and
+# Airbus in f_workday. A role whose title carries none of the keywords is
+# invisible to us - which is why the list has the French words in it too.
+_SF_CARD  = re.compile(r'<li[^>]*class="[^"]*job-tile[^"]*"', re.I)
+_SF_URL   = re.compile(r'data-url="([^"]+)"', re.I)
+_SF_LINK  = re.compile(r'<a[^>]*class="[^"]*jobTitle-link[^"]*"[^>]*>(.*?)</a>', re.I | re.S)
+_SF_FIELD = re.compile(r'<div[^>]*id="[^"]*-value"[^>]*>(.*?)</div>', re.I | re.S)
+_SF_ROWS  = 25             # the page size both tenants use
+
+
+def _sf_city(slug, title):
+    """The town out of "TOULOUSE-Stage-Data-Scientist-31000".
+
+    The slug is <city>-<title>-<postcode> and the city may contain hyphens, so
+    cut it where the title begins rather than at the first hyphen."""
+    words = [w for w in re.split(r"[-_]+", slug) if w]
+    first = (re.split(r"[^0-9A-Za-zÀ-ÿ]+", title.strip()) or [""])[0].lower()
+    for i, w in enumerate(words):
+        if first and w.lower() == first and i:
+            return " ".join(words[:i])
+    return words[0] if words else ""
+
+
+def f_sfhtml(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _SF_CARD):
+            u, t = _SF_URL.search(card), _SF_LINK.search(card)
+            if not u or not t:
+                continue
+            title = _plain(t.group(1))
+            if not title:
+                continue
+            path = html.unescape(u.group(1))
+            slug = path.split("/job/")[-1].rsplit("/", 2)[0]
+            city = _sf_city(slug, title)
+            ct = None
+            for f in [_plain(v) for v in _SF_FIELD.findall(card)]:
+                ct = ct or _contract(f)
+            rows.append((title, city, urllib.parse.urljoin(c["base"], path),
+                         "%s %s" % (city, slug.replace("-", " ")), ct))
+        return rows
+
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        for row in _paged(c, lambda p, kw=kw: c["list"] % (urllib.parse.quote(kw), p * _SF_ROWS),
+                          parse, c.get("pages", 10)):
+            _rows_from(seen, out, *row)
+    return out
+
+
+# --- Avature (Siemens) ------------------------------------------------------
+# <article class="article article--result"> per posting: the title in an
+# <a class="link" href=".../JobDetail/<id>">, and the town in a run of
+# <span class="list-item-jobCity|jobState|jobCountry"> spans. The keyword goes in
+# the PATH, not in a query parameter.
+_AV_CARD = re.compile(r'<article[^>]*class="[^"]*article--result[^"]*"', re.I)
+_AV_LINK = re.compile(r'<a[^>]*href="([^"]*/JobDetail/\d+)"[^>]*>(.*?)</a>', re.I | re.S)
+_AV_BIT  = re.compile(r'<span[^>]*class="list-item-(?:jobCity|jobState|jobCountry)"[^>]*>(.*?)</span>',
+                      re.I | re.S)
+
+
+AVATURE_ROWS = 6            # results a search page renders
+
+
+def f_avature(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _AV_CARD):
+            m = _AV_LINK.search(card)
+            if not m:
+                continue
+            title = _plain(m.group(2))
+            if not title:
+                continue
+            bits = [_plain(b) for b in _AV_BIT.findall(card)]
+            loc = ", ".join(b for b in bits if b)
+            rows.append((title, loc, html.unescape(m.group(1)), loc))
+        return rows
+
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        rows = _paged(c, lambda p, kw=kw: c["list"] % (urllib.parse.quote(kw), p + 1),
+                      parse, c.get("pages", 8))
+        # A search that filled its first page and then stopped adding rows is
+        # ambiguous: either the board really has that many, or the page
+        # parameter is being ignored and everything past row six is invisible.
+        # Either way nothing of this company's may be treated as closed.
+        if len(rows) and len(rows) % AVATURE_ROWS == 0:
+            PARTIAL.add(c["name"])
+        for row in rows:
+            _rows_from(seen, out, *row)
+    return out
+
+
+# --- Radancy (Arm) ----------------------------------------------------------
+# A JSON envelope whose "results" is a slab of HTML: one <li class="job-card">
+# per posting, with the title link, a <span class="location"> that frequently
+# says only "Multiple locations", and a <span class="category">. The href is
+# /job/<town>/<slug>/<org>/<id>, so the town is read off the href as well - that
+# is the only place it appears for a multi-location posting.
+_RAD_CARD = re.compile(r'<li[^>]*class="[^"]*job-card[^"]*"', re.I)
+_RAD_LINK = re.compile(r'<a[^>]*class="[^"]*job-card__title[^"]*"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
+                       re.I | re.S)
+_RAD_LOC  = re.compile(r'<span[^>]*class="[^"]*\blocation\b[^"]*"[^>]*>(.*?)</span>', re.I | re.S)
+RADANCY_ROWS = 50
+
+
+def f_radancy(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "graduate")):
+        for page in range(1, c.get("pages", 8) + 1):
+            url = ("%s/search-jobs/results?ActiveFacetID=0&CurrentPage=%d&RecordsPerPage=%d"
+                   "&Distance=50&RadiusUnitType=0&Keywords=%s&Location=&ShowRadius=False"
+                   "&IsPagination=False&CustomFacetName=&FacetTerm=&FacetType=0"
+                   "&SearchResultsModuleName=Search+Results&SearchFiltersModuleName=Search+Filters"
+                   "&SortCriteria=0&SortDirection=0&SearchType=5"
+                   % (c["base"], page, RADANCY_ROWS, urllib.parse.quote(kw)))
+            frag = (get(url) or {}).get("results") or ""
+            fresh = 0
+            for card in _blocks(frag, _RAD_CARD):
+                m = _RAD_LINK.search(card)
+                if not m:
+                    continue
+                lm = _RAD_LOC.search(card)
+                loc = _plain(lm.group(1)) if lm else ""
+                href = html.unescape(m.group(1))
+                # /job/<town>/<title-slug>/<org id>/<job id>
+                town = " ".join(href.strip("/").split("/")[1:2]).replace("-", " ")
+                fresh += _rows_from(seen, out, _plain(m.group(2)), loc or town,
+                                    urllib.parse.urljoin(c["base"], href),
+                                    "%s %s" % (loc, town))
+            if not fresh:
+                break
+            time.sleep(0.3)
+    return out
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
          "dassault": f_dassault, "wttj": f_wttj, "sgcareers": f_sgcareers,
          "talentsoft": f_talentsoft, "icims": f_icims, "gestmax": f_gestmax,
-         "bnp": f_bnp}
+         "bnp": f_bnp,
+         # the 2026-09-06 batch
+         "ibm": f_ibm, "phenom": f_phenom, "phenom_widget": f_phenom_widget,
+         "eightfold": f_eightfold, "eightfold_v2": f_eightfold_v2,
+         "oracle_cx": f_oracle_cx, "amazon": f_amazon, "gs": f_gs,
+         "coveo": f_coveo, "atlassian": f_atlassian, "sfhtml": f_sfhtml,
+         "avature": f_avature, "radancy": f_radancy}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -1825,6 +2009,19 @@ ENDPOINT = {
     "icims":           lambda c: (c["list"] % 0).split("?")[0].replace("https://", ""),
     "gestmax":         lambda c: (c["list"] % 1).replace("https://", ""),
     "bnp":             lambda c: "group.bnpparibas/en/careers/all-job-offers (form[type][]=28)",
+    "ibm":             lambda c: "www-api.ibm.com/search/api/v2 (careers2 scope)",
+    "phenom":          lambda c: c["api"].replace("https://", ""),
+    "phenom_widget":   lambda c: c["api"].replace("https://", ""),
+    "eightfold":       lambda c: "%s/api/pcsx/search (domain %s)" % (c["host"].replace("https://", ""), c["domain"]),
+    "eightfold_v2":    lambda c: "%s/api/apply/v2/jobs (domain %s)" % (c["host"].replace("https://", ""), c["domain"]),
+    "oracle_cx":       lambda c: "%s/hcmRestApi/.../recruitingCEJobRequisitions" % c["host"].replace("https://", ""),
+    "amazon":          lambda c: "www.amazon.jobs/en/search.json",
+    "gs":              lambda c: "api-higher.gs.com/gateway/api/v1/graphql (GetRoles)",
+    "coveo":           lambda c: c["api"].replace("https://", ""),
+    "atlassian":       lambda c: "www.atlassian.com/endpoint/careers/listings",
+    "sfhtml":          lambda c: c["list"].split("?")[0].replace("https://", ""),
+    "avature":         lambda c: c["list"].split("?")[0].replace("https://", "") % "<keyword>",
+    "radancy":         lambda c: "%s/search-jobs/results" % c["base"].replace("https://", ""),
 }
 
 

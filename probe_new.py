@@ -352,8 +352,59 @@ def probe(name):
                     print("   %-44s %s" % (k[:44], v))
 
 
+# --- run the real fetchers --------------------------------------------------
+# The step after reading a payload is checking that the fetcher written against
+# it works, and that is not something the sandbox can do either. "fetchers" runs
+# make_board's own FETCH entry for every company added on 2026-09-06 and prints
+# what each one came back with, without building or committing a board.
+NEW_NAMES = [
+    "GitHub", "Atlassian", "Dynatrace", "OpenAI", "Anthropic", "Stripe",
+    "Palantir", "ServiceNow", "IBM", "Oracle", "SAP", "Microsoft", "Amazon / AWS",
+    "OVHcloud", "Nokia", "Ericsson", "Siemens",
+    "Goldman Sachs", "Morgan Stanley", "J.P. Morgan", "Millennium", "Optiver",
+    "Intel", "NVIDIA", "Broadcom", "AMD", "Qualcomm", "Arm", "Dell", "HPE", "Cisco",
+]
+
+
+def fetchers(only):
+    import make_board as mb
+    wanted = [n.lower() for n in (only or NEW_NAMES)]
+    for roster in ("1", "2", "3"):
+        for c in mb.ROSTERS[roster]["companies"]:
+            if c["name"].lower() not in wanted:
+                continue
+            t0 = time.time()
+            try:
+                rows = mb.FETCH[c["ats"]](c)
+            except Exception as e:
+                print("%-15s %-14s FAILED  %s: %s"
+                      % (c["name"], c["ats"], type(e).__name__, str(e)[:120]))
+                continue
+            itn = [r for r in rows if mb._is_intern(r)]
+            hits = [r for r in itn if mb.where(r[3]) == "fr" and mb.is_tech(r[0])]
+            other = [r for r in itn if mb.where(r[3]) == "fr" and not mb.is_tech(r[0])]
+            unsure = [r for r in itn if mb.where(r[3]) == "unknown"]
+            print("%-15s %-14s %5d rows %4d intern %3d FR-tech %3d FR-other %3d unsure "
+                  "%6.1fs%s"
+                  % (c["name"], c["ats"], len(rows), len(itn), len(hits), len(other),
+                     len(unsure), time.time() - t0,
+                     "  PARTIAL" if c["name"] in mb.PARTIAL else ""))
+            for r in (hits or [])[:3]:
+                print("    + %-52s | %-26s | %s" % (r[0][:52], str(r[1])[:26], r[2][:70]))
+            for r in (unsure or [])[:2]:
+                print("    ? %-52s | %-26s | %s" % (r[0][:52], str(r[1])[:26], r[2][:70]))
+            if not rows:
+                print("    (nothing came back)")
+            elif not hits:
+                print("    . %-52s | %-26s | %s"
+                      % (rows[0][0][:52], str(rows[0][1])[:26], rows[0][2][:70]))
+
+
 if __name__ == "__main__":
     names = sys.argv[1:] or list(SOURCES)
+    if names and names[0] == "fetchers":
+        fetchers(names[1:])
+        raise SystemExit(0)
     for n in names:
         if n not in SOURCES:
             print("unknown source %r; known: %s" % (n, " ".join(SOURCES)))
