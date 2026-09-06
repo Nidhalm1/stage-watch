@@ -136,11 +136,11 @@ SOURCES = {
     "sap": ("html", "https://jobs.sap.com/tile-search-results/?q=intern&locationsearch=France&startrow=0",
             {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 2}),
     "ovh": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=0",
-            {"card": r'<tr[^>]*class="[^"]*(?:data-row|job)[^"]*"|<li[^>]*class="[^"]*job-tile[^"]*"', "want": 2}),
+            {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 1, "cap": 7000}),
     "siemens": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1",
-                {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
+                {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
     "hsbc": ("html", "https://mycareer.hsbc.com/en_GB/external/SearchJobs/intern?listFilterMode=1&pipelineRecordsPerPage=10",
-             {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
+             {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
     "clevercloud": ("html", "https://www.clever.cloud/jobs/", {"want": 0}),
 
     # --- do the URLs a fetcher would have to BUILD actually exist? ----------
@@ -157,7 +157,7 @@ SOURCES = {
     "gs-joburl2": ("head", "https://higher.gs.com/roles/162057_GS_EARLY_CAREER", {}),
     "ibm-joburl": ("head", "https://careers.ibm.com/careers/JobDetail?jobId=128675", {}),
     "siemens-fr": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/stage?listFilterMode=1",
-                   {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
+                   {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
     "ovh-page2": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
                   {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 1}),
 }
@@ -288,7 +288,7 @@ def probe(name):
             for i, st in enumerate(starts[:want]):
                 end = starts[i + 1] if i + 1 < len(starts) else min(len(body), st + 3000)
                 print("  --- card %d verbatim ---" % (i + 1))
-                print(body[st:end][:2500])
+                print(body[st:end][:extra.get("cap", 2500)])
         return
 
     if "raw" in extra and "html_in" not in extra:

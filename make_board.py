@@ -492,7 +492,12 @@ def _paris_now():
 NOW   = _paris_now()
 TZLABEL = "CEST" if NOW.utcoffset().total_seconds() == 7200 else "CET"
 TODAY = NOW.date().isoformat()
-UA    = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+# A bare "Mozilla/5.0" is a bot signature: BNP 403s it outright, and several
+# of the 2026-09-06 batch (Arm, Amazon, the Phenom sites) were only ever probed
+# with a full browser string. Send the same one everywhere.
+UA    = {"User-Agent": ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+         "Accept": "application/json,text/plain,*/*"}
 
 
 def _fr(blob, *countries):
@@ -992,6 +997,418 @@ def f_sgcareers(c):
     else:
         # Ran out of pages before running out of results: shown, nothing closed.
         PARTIAL.add(c["name"])
+    return out
+
+
+# ------------------------------------------- the 2026-09-06 batch ----------
+# Nine more ATSs. Every field name below was read off a live payload by
+# probe_new.py on 2026-09-06 - run that from Actions before changing any of
+# them, exactly as with the HTML boards. The pattern to watch for here is the
+# SEARCH-SCOPED board: IBM, Phenom, Eightfold, Oracle CX and Amazon are all far
+# too large to page whole, so each is fetched as the union of a few keyword
+# searches. That is the same trade Thales and Airbus already make in f_workday:
+# a role whose title carries none of the keywords is invisible to us, which is
+# why the keyword lists below include the French words as well as the English.
+
+
+def _rows_from(seen, out, title, loc, url, blob, contract=None):
+    """Append one row, de-duplicated by url. Every fetcher below merges several
+    searches, and the same posting comes back under more than one of them."""
+    if not title or not url or url in seen:
+        return 0
+    seen.add(url)
+    out.append((title, loc, url, blob, contract))
+    return 1
+
+
+# --- IBM (custom Elasticsearch behind www-api.ibm.com) ----------------------
+# POST with an Elasticsearch query. Two things are load-bearing and neither is
+# guessable: the _source list (with no _source the hits come back as
+# _id/_index/_score and nothing else) and appId/scopes, which select the careers
+# index. _source.url is the posting's own link, so nothing is constructed.
+#   field_keyword_05  country          field_keyword_19  "Chicago, US"
+#   field_keyword_18  contract label   field_keyword_08  job family
+# HashiCorp is IBM now and its roles are on this same index, which is why
+# "hashicorp" is one of the queries rather than a separate company.
+IBM_URL = "https://www-api.ibm.com/search/api/v2"
+IBM_SOURCE = ["_id", "title", "url", "field_keyword_05", "field_keyword_08",
+              "field_keyword_17", "field_keyword_18", "field_keyword_19",
+              "field_text_01"]
+IBM_PAGE = 50
+IBM_MAX = 400
+
+
+def f_ibm(c):
+    out, seen = [], set()
+    for query in c.get("queries", ("intern", "internship", "stage", "stagiaire",
+                                   "apprentice france", "hashicorp")):
+        frm = 0
+        while frm < IBM_MAX:
+            body = {"appId": "careers", "scopes": ["careers2"],
+                    "size": IBM_PAGE, "from": frm, "sort": [{"_score": "desc"}],
+                    "_source": IBM_SOURCE,
+                    "query": {"bool": {"must": [{"simple_query_string": {
+                        "query": query,
+                        "fields": ["keywords^1", "body^1", "url^2", "description^2",
+                                   "title^3", "field_text_01"]}}]}}}
+            d = get(IBM_URL, body)
+            hits = ((d.get("hits") or {}).get("hits")) or []
+            for h in hits:
+                s = h.get("_source") or {}
+                loc = s.get("field_keyword_19") or s.get("field_keyword_05") or ""
+                _rows_from(seen, out, s.get("title", ""), loc, s.get("url", ""),
+                           " ".join(x for x in [loc, s.get("field_keyword_05")] if x),
+                           _contract(s.get("field_keyword_18")))
+            frm += IBM_PAGE
+            total = (((d.get("hits") or {}).get("total")) or {}).get("value") or 0
+            if len(hits) < IBM_PAGE or frm >= total:
+                break
+            time.sleep(0.2)
+    return out
+
+
+# --- Phenom People, the /api/jobs flavour (AMD, GitHub) ---------------------
+# jobs[] is a list of {"data": {...}} envelopes, 10 to a page. The link to show
+# is data.meta_data.canonical_url: data.apply_url points at the ATS behind the
+# site (iCIMS for both of these), which is a login page, not a posting.
+# A company with an empty keyword in its list is paged whole - github.careers
+# answered keywords=intern with totalCount 0 while carrying a real board, so on
+# a small board asking for everything is both safer and cheaper.
+PHENOM_PAGE = 10
+
+
+def f_phenom(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        for page in range(1, c.get("pages", 12) + 1):
+            d = get("%s?page=%d%s&sortBy=relevance&descending=false&internal=false"
+                    % (c["api"], page,
+                       "&keywords=%s" % urllib.parse.quote(kw) if kw else ""))
+            rows = d.get("jobs") or []
+            fresh = 0
+            for j in rows:
+                data = j.get("data") if isinstance(j.get("data"), dict) else j
+                loc = (data.get("full_location") or data.get("short_location")
+                       or data.get("location_name") or "")
+                fresh += _rows_from(
+                    seen, out, data.get("title", ""), loc,
+                    (data.get("meta_data") or {}).get("canonical_url") or "",
+                    _fr(loc, data.get("country"), data.get("country_code")))
+            if len(rows) < PHENOM_PAGE or not fresh:
+                break
+            time.sleep(0.3)
+    return out
+
+
+# --- Phenom People, the /widgets flavour (HPE, Cisco) -----------------------
+# Same vendor, different door: /api/jobs answers 500 on these two and /widgets
+# is what their own pages call. The body is the site's own refineSearch payload;
+# lang/country/all_fields differ per tenant, so each company carries its own
+# overrides. applyUrl is returned by the API (it points into the tenant's
+# Workday), so again nothing is constructed.
+PHENOM_WIDGET_BODY = {
+    "lang": "en_us", "deviceType": "desktop", "country": "us",
+    "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "",
+    "subsearch": "", "from": 0, "jobs": True, "counts": True,
+    "all_fields": ["category", "country", "state", "city", "type"], "size": 20,
+    "clearAll": False, "jdsource": "facets", "isSliderEnable": False,
+    "pageId": "page11", "siteType": "external", "keywords": "", "global": True,
+    "selected_fields": {}, "locationData": {}}
+WIDGET_MAX = 300
+
+
+def f_phenom_widget(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        frm = 0
+        while frm < WIDGET_MAX:
+            body = dict(PHENOM_WIDGET_BODY, **c.get("body", {}))
+            body.update({"keywords": kw, "from": frm, "size": 20})
+            d = get(c["api"], body)
+            rs = d.get("refineSearch") or {}
+            rows = ((rs.get("data") or {}).get("jobs")) or []
+            for j in rows:
+                loc = j.get("cityStateCountry") or j.get("location") or ""
+                more = [x.get("location", "") for x in (j.get("multi_location_array") or [])
+                        if isinstance(x, dict)]
+                _rows_from(seen, out, j.get("title", ""), loc, j.get("applyUrl", ""),
+                           " ".join([x for x in [loc] + more if x]))
+            frm += 20
+            total = int(rs.get("totalHits") or 0)
+            if len(rows) < 20 or frm >= total:
+                break
+            time.sleep(0.3)
+    return out
+
+
+# --- Eightfold, the pcsx flavour (Qualcomm, Microsoft, Morgan Stanley, ...) --
+# positionUrl comes back RELATIVE ("/careers/job/4467...") so the link has to be
+# built from the tenant host - and a built link gets verified before it is shown,
+# the same rule f_wttj follows. location= is a fuzzy relevance term rather than a
+# filter (a France search returns Mexico City), so it narrows without deleting,
+# and where() still makes the real call locally.
+EIGHTFOLD_PAGE = 20
+EIGHTFOLD_MAX = 200
+
+
+def f_eightfold(c):
+    out, seen = [], set()
+    verify, blocked = True, False
+    for query, place in c.get("queries", (("intern", "France"), ("stage", "France"),
+                                          ("stagiaire", ""), ("internship", "France"))):
+        start = 0
+        while start < EIGHTFOLD_MAX:
+            d = get("%s/api/pcsx/search?domain=%s&query=%s&location=%s&start=%d&num=%d"
+                    % (c["host"], c["domain"], urllib.parse.quote(query),
+                       urllib.parse.quote(place), start, EIGHTFOLD_PAGE))
+            positions = ((d.get("data") or {}).get("positions")) or []
+            for p in positions:
+                path = p.get("positionUrl") or ""
+                if not path:
+                    continue
+                url = urllib.parse.urljoin(c["host"], path)
+                if url in seen:
+                    continue
+                if verify:
+                    v = _verify(url)
+                    if v == "blocked":
+                        verify = False          # host refuses us; stop spending requests
+                        blocked = True
+                    elif v == "gone":
+                        PARTIAL.add(c["name"])
+                        continue
+                locs = [x for x in (p.get("locations") or []) if x]
+                std = [x for x in (p.get("standardizedLocations") or []) if x]
+                _rows_from(seen, out, p.get("name", ""), "; ".join(locs) or "; ".join(std),
+                           url, " ".join(locs + std))
+            start += EIGHTFOLD_PAGE
+            count = int(((d.get("data") or {}).get("count")) or 0)
+            if len(positions) < EIGHTFOLD_PAGE or start >= count:
+                break
+            time.sleep(0.3)
+    if blocked:
+        print("  %s: link verification blocked (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+# --- Eightfold, the older apply/v2 flavour (Millennium) ---------------------
+# Same vendor, older API: /api/pcsx/search answers 403 on this tenant. This one
+# returns canonicalPositionUrl whole, so nothing is built, and it pages the board
+# rather than searching it - the query parameter here is a relevance term that
+# returns unrelated roles, not a filter.
+V2_PAGE = 50
+V2_MAX = 600
+
+
+def f_eightfold_v2(c):
+    out, seen, start = [], set(), 0
+    while start < V2_MAX:
+        d = get("%s/api/apply/v2/jobs?domain=%s&start=%d&num=%d"
+                % (c["host"], c["domain"], start, V2_PAGE))
+        positions = d.get("positions") or []
+        for p in positions:
+            locs = [x for x in (p.get("locations") or []) if x] or \
+                   ([p.get("location")] if p.get("location") else [])
+            _rows_from(seen, out, p.get("name", ""), "; ".join(locs),
+                       p.get("canonicalPositionUrl") or "", " ".join(locs))
+        start += V2_PAGE
+        count = int(d.get("count") or 0)
+        if len(positions) < V2_PAGE or start >= count:
+            return out
+        time.sleep(0.3)
+    PARTIAL.add(c["name"])
+    return out
+
+
+# --- Oracle HCM Cloud, candidate-experience API (Dell, Nokia, Oracle, JPM) ---
+# The requisitionList only comes back when the expand names it - without it the
+# response is a TotalJobsCount with nothing under it, which is the shape of a
+# fetch that silently returns nothing. Requisitions carry an Id and no link, so
+# the candidate-experience URL is built on the SAME host that served the API and
+# verified before it is shown.
+ORACLE_PAGE = 25
+ORACLE_MAX = 300
+ORACLE_EXPAND = "requisitionList.workLocation,requisitionList.secondaryLocations"
+
+
+def f_oracle_cx(c):
+    out, seen = [], set()
+    verify, blocked = True, False
+    site = c.get("site", "CX_1")
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        off = 0
+        while off < ORACLE_MAX:
+            url = ("%s/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+                   "?onlyData=true&expand=%s&finder=findReqs;siteNumber=%s,limit=%d,"
+                   "offset=%d,sortBy=POSTING_DATES_DESC,keyword=%s"
+                   % (c["host"], ORACLE_EXPAND, site, ORACLE_PAGE, off,
+                      urllib.parse.quote(kw)))
+            d = get(url)
+            items = d.get("items") or []
+            block = items[0] if items else {}
+            reqs = block.get("requisitionList") or []
+            for r in reqs:
+                rid = str(r.get("Id") or "")
+                if not rid:
+                    continue
+                link = "%s/hcmUI/CandidateExperience/en/sites/%s/job/%s/" % (c["host"], site, rid)
+                if link in seen:
+                    continue
+                if verify:
+                    v = _verify(link)
+                    if v == "blocked":
+                        verify = False
+                        blocked = True
+                    elif v == "gone":
+                        PARTIAL.add(c["name"])
+                        continue
+                loc = r.get("PrimaryLocation") or ""
+                where_bits = [loc, r.get("PrimaryLocationCountry") or ""]
+                for w in (r.get("workLocation") or []):
+                    if isinstance(w, dict):
+                        where_bits += [w.get("TownOrCity") or "", w.get("Country") or "",
+                                       w.get("Region2") or ""]
+                for sec in (r.get("secondaryLocations") or []):
+                    if isinstance(sec, dict):
+                        where_bits.append(sec.get("Name") or sec.get("LocationName") or "")
+                _rows_from(seen, out, r.get("Title", ""), loc, link,
+                           _fr(" ".join(x for x in where_bits if x),
+                               r.get("PrimaryLocationCountry")),
+                           _contract(r.get("WorkerType") or r.get("ContractType")))
+            off += ORACLE_PAGE
+            total = int(block.get("TotalJobsCount") or 0)
+            if len(reqs) < ORACLE_PAGE or off >= total:
+                break
+            time.sleep(0.3)
+    if blocked:
+        print("  %s: link verification blocked (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+# --- Amazon / AWS -----------------------------------------------------------
+# amazon.jobs publishes its own search as JSON. loc_query is a relevance term,
+# not a filter (a France search returns Mexico City), so it is used to narrow the
+# request and where() still decides. job_path is the site's own path; the host is
+# the only part added.
+AMAZON_HOST = "https://www.amazon.jobs"
+AMAZON_LIMIT = 100
+AMAZON_MAX = 400
+
+
+def f_amazon(c):
+    out, seen = [], set()
+    for base, place in c.get("queries", (("intern", "France"), ("stage", "France"),
+                                         ("stagiaire", "France"), ("internship", "France"))):
+        off = 0
+        while off < AMAZON_MAX:
+            d = get("%s/en/search.json?base_query=%s&loc_query=%s&result_limit=%d&offset=%d"
+                    % (AMAZON_HOST, urllib.parse.quote(base), urllib.parse.quote(place),
+                       AMAZON_LIMIT, off))
+            jobs = d.get("jobs") or []
+            for j in jobs:
+                path = j.get("job_path") or ""
+                loc = j.get("normalized_location") or j.get("location") or ""
+                _rows_from(seen, out, j.get("title", ""), loc,
+                           urllib.parse.urljoin(AMAZON_HOST, path) if path else "",
+                           " ".join(x for x in [loc, j.get("city"), j.get("state"),
+                                                j.get("country_code")] if x))
+            off += AMAZON_LIMIT
+            if len(jobs) < AMAZON_LIMIT or off >= int(d.get("hits") or 0):
+                break
+            time.sleep(0.3)
+    return out
+
+
+# --- Goldman Sachs (its own GraphQL gateway) --------------------------------
+# One operation, GetRoles, with an experiences filter. EARLY_CAREER is the whole
+# campus population - internships, analyst programmes and graduate roles - so it
+# is fetched whole and the internship test does the rest. Location has to be a
+# filter here rather than a search term, and the filter values come from a second
+# operation; that is not worth the extra call while the early-career board is
+# this small, so France is decided locally like everywhere else.
+GS_URL = "https://api-higher.gs.com/gateway/api/v1/graphql"
+GS_QUERY = ("query GetRoles($searchQueryInput: RoleSearchQueryInput!){roleSearch"
+            "(searchQueryInput:$searchQueryInput){totalCount items{roleId jobTitle "
+            "division jobFunction locations{primary city country} "
+            "externalSource{sourceId}}}}")
+GS_PAGE = 50
+GS_MAX = 20                 # pages
+
+
+def f_gs(c):
+    out, seen = [], set()
+    verify, blocked = True, False
+    for page in range(GS_MAX):
+        body = {"operationName": "GetRoles", "query": GS_QUERY,
+                "variables": {"searchQueryInput": {
+                    "page": {"pageSize": GS_PAGE, "pageNumber": page},
+                    "sort": {"sortStrategy": "RELEVANCE", "sortOrder": "DESC"},
+                    "filters": [], "experiences": c.get("experiences", ["EARLY_CAREER"]),
+                    "searchTerm": ""}}}
+        d = get(GS_URL, body)
+        search = ((d.get("data") or {}).get("roleSearch")) or {}
+        items = search.get("items") or []
+        for it in items:
+            src = str((it.get("externalSource") or {}).get("sourceId") or "")
+            if not src:
+                continue
+            url = "%s/roles/%s" % (c["site"], src)
+            if url in seen:
+                continue
+            if verify:
+                v = _verify(url)
+                if v == "blocked":
+                    verify = False
+                    blocked = True
+                elif v == "gone":
+                    PARTIAL.add(c["name"])
+                    continue
+            bits = []
+            for L in (it.get("locations") or []):
+                if isinstance(L, dict):
+                    bits.append(", ".join(x for x in [L.get("city"), L.get("country")] if x))
+            loc = "; ".join(x for x in bits if x)
+            _rows_from(seen, out, it.get("jobTitle", ""), loc, url, loc)
+        if len(items) < GS_PAGE or (page + 1) * GS_PAGE >= int(search.get("totalCount") or 0):
+            break
+        time.sleep(0.3)
+    if blocked:
+        print("  %s: link verification blocked (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+# --- Coveo (Dynatrace) ------------------------------------------------------
+# dynatrace.com proxies its Coveo index at /api/coveo/search/. clickUri is the
+# posting's own URL; raw.office_locations and raw.country carry the location.
+def f_coveo(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "student", "werkstudent")):
+        d = get(c["api"], {"q": kw, "numberOfResults": c.get("size", 100)})
+        for r in d.get("results") or []:
+            raw = r.get("raw") or {}
+            offices = [x for x in (raw.get("office_locations") or []) if x]
+            countries = [x for x in (raw.get("country") or []) if x]
+            loc = "; ".join(offices) or "; ".join(countries)
+            _rows_from(seen, out, r.get("title", ""), loc,
+                       r.get("clickUri") or r.get("uri") or "",
+                       " ".join(offices + countries))
+        time.sleep(0.3)
+    return out
+
+
+# --- Atlassian (its own endpoint) -------------------------------------------
+# One call returns the whole board (248 postings), so there is nothing to page
+# and nothing to search. portalJobPost.portalUrl is the posting's own link.
+def f_atlassian(c):
+    d = get("https://www.atlassian.com/endpoint/careers/listings")
+    out, seen = [], set()
+    for j in d if isinstance(d, list) else []:
+        locs = [x for x in (j.get("locations") or []) if x]
+        url = ((j.get("portalJobPost") or {}).get("portalUrl")) or j.get("applyUrl") or ""
+        _rows_from(seen, out, j.get("title", ""), "; ".join(locs), url, " ".join(locs))
     return out
 
 
