@@ -397,7 +397,7 @@ def fetchers(only):
                 if mb._HAS_ALARM:
                     import signal
                     signal.signal(signal.SIGALRM, mb._alarm)
-                    signal.alarm(mb.COMPANY_BUDGET + 30)
+                    signal.alarm(mb.COMPANY_BUDGET + 60)
                 rows = mb.FETCH[c["ats"]](c)
             except Exception as e:
                 print("%-15s %-14s FAILED  %s: %s  (%.0fs)"

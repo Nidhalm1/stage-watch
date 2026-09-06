@@ -1172,13 +1172,16 @@ def f_sgcareers(c):
 # why the keyword lists below include the French words as well as the English.
 
 
-# A single company's fetch may take this long. Several of these boards are
-# search-scoped over four keywords and page slowly - Amazon and the Phenom
-# widgets in particular - and one company grinding for ten minutes would push
-# the sweep past the hour of slack it has before the publish routine runs. When
-# the budget runs out the fetch stops where it is and the company is marked
-# partial, so what was read is shown and nothing of theirs can be closed.
-COMPANY_BUDGET = 90         # seconds
+# A single company's fetch may take this long. This is a guard against a hang,
+# not a speed limit: measured on a runner, the whole 2026-09-06 batch answers in
+# 2-10 seconds a company, but a Workday board fetched the "big" way (Thales,
+# Airbus, Intel, NVIDIA, Broadcom - the intern facet plus four keyword searches,
+# each paged to WORKDAY_MAX) is minutes of legitimate work. A budget tight
+# enough to catch a slow fetcher would kill those, so this is set well above
+# them and exists to stop one company from running until the sweep misses its
+# publish slot. When it runs out the fetch stops where it is and the company is
+# marked partial, so what was read is shown and nothing of theirs can be closed.
+COMPANY_BUDGET = 240        # seconds
 _DEADLINE = [None]
 
 
@@ -2169,7 +2172,7 @@ def scan():
             _budget_start()
             if _HAS_ALARM:
                 signal.signal(signal.SIGALRM, _alarm)
-                signal.alarm(COMPANY_BUDGET + 30)
+                signal.alarm(COMPANY_BUDGET + 60)
             jobs = FETCH[c["ats"]](c)
         except Exception as e:
             row["error"] = "%s: %s" % (type(e).__name__, e)
