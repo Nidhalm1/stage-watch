@@ -1003,7 +1003,7 @@ def f_wttj(c):
     return out
 
 
-def _verify(url):
+def _verify(url, timeout=20):
     """'ok' | 'gone' | 'blocked'.
 
     Only a 404/410 disproves a URL. www.welcometothejungle.com answers 403 to a
@@ -1014,10 +1014,13 @@ def _verify(url):
     the role in place; only a 404 removes it."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA["User-Agent"]})
     try:
-        with urllib.request.urlopen(req, timeout=20) as r:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             return "ok" if r.status < 400 else "gone"
     except urllib.error.HTTPError as e:
         return "gone" if e.code in (404, 410) else "blocked"
+    except FetchBudget:
+        # the company's time is up - do NOT report that as an unreachable link
+        raise
     except Exception:
         return "blocked"
 
@@ -1217,7 +1220,8 @@ _HAS_ALARM = hasattr(signal, "SIGALRM")
 # requisitions a run, and one HEAD each would be both slow and rude. A sample
 # that all answers means the pattern holds; a single 404 in it marks the company
 # partial, so nothing of theirs can be closed on a run whose links are suspect.
-VERIFY_SAMPLE = 5
+VERIFY_SAMPLE = 3
+VERIFY_TIMEOUT = 8          # seconds; these career hosts are slow SPAs
 
 
 def _rows_from(seen, out, title, loc, url, blob, contract=None):
@@ -1399,7 +1403,7 @@ def f_eightfold(c):
                     continue
                 if verify and checked < VERIFY_SAMPLE:
                     checked += 1
-                    v = _verify(url)
+                    v = _verify(url, VERIFY_TIMEOUT)
                     if v == "blocked":
                         verify = False          # host refuses us; stop spending requests
                         blocked = True
@@ -1489,7 +1493,7 @@ def f_oracle_cx(c):
                     continue
                 if verify and checked < VERIFY_SAMPLE:
                     checked += 1
-                    v = _verify(link)
+                    v = _verify(link, VERIFY_TIMEOUT)
                     if v == "blocked":
                         verify = False
                         blocked = True
@@ -1600,7 +1604,7 @@ def f_gs(c):
                 continue
             if verify and checked < VERIFY_SAMPLE:
                 checked += 1
-                v = _verify(url)
+                v = _verify(url, VERIFY_TIMEOUT)
                 if v == "blocked":
                     verify = False
                     blocked = True
