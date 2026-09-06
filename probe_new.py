@@ -142,6 +142,19 @@ SOURCES = {
     "hsbc": ("html", "https://mycareer.hsbc.com/en_GB/external/SearchJobs/intern?listFilterMode=1&pipelineRecordsPerPage=10",
              {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
     "clevercloud": ("html", "https://www.clever.cloud/jobs/", {"want": 0}),
+    # f_sfhtml got a 403 off this exact URL on its first live run while the
+    # q=stage probe above answered 200 - so: is it the keyword, the header set,
+    # or rate limiting?
+    "ovh-intern": ("html", "https://careers.ovhcloud.com/search/?q=intern&locale=fr_FR&startrow=0",
+                   {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "ovh-nokw": ("html", "https://careers.ovhcloud.com/search/?locale=fr_FR&startrow=0",
+                 {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    # greenhouse/optiver answered with an EMPTY jobs list on the first live run,
+    # which is the failure mode this repo treats as a dead slug.
+    "optiver": ("json", "https://boards-api.greenhouse.io/v1/boards/optiver/jobs?content=false",
+                {"items": "jobs", "total": "meta.total"}),
+    "optiver2": ("json", "https://boards-api.greenhouse.io/v1/boards/optiver/jobs",
+                 {"items": "jobs", "total": "meta.total"}),
 
     # --- do the URLs a fetcher would have to BUILD actually exist? ----------
     # Oracle CX and Eightfold pcsx return an id or a relative path, not a link,
