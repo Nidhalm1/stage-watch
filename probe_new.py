@@ -368,10 +368,12 @@ NEW_NAMES = [
 
 def fetchers(only):
     import make_board as mb
+    # Matched as substrings: the names arrive as shell words, so "Goldman" has
+    # to find "Goldman Sachs" and "AWS" has to find "Amazon / AWS".
     wanted = [n.lower() for n in (only or NEW_NAMES)]
     for roster in ("1", "2", "3"):
         for c in mb.ROSTERS[roster]["companies"]:
-            if c["name"].lower() not in wanted:
+            if not any(w in c["name"].lower() for w in wanted):
                 continue
             t0 = time.time()
             try:
