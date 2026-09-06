@@ -2489,8 +2489,9 @@ def render(results, prev):
             p.append('<p class="none">No tech internships open in France right now.</p>')
 
         if r["other"]:
-            p.append("<details open><summary>%d non-tech internship%s filtered out</summary><ul>"
-                     % (len(r["other"]), "" if len(r["other"]) == 1 else "s"))
+            p.append("<details%s><summary>%d non-tech internship%s filtered out</summary><ul>"
+                     % (" open" if any(o["is_new"] for o in r["other"]) else "",
+                        len(r["other"]), "" if len(r["other"]) == 1 else "s"))
             # Anything new is listed first, so a cap can never hide the one entry
             # that is actually news.
             for o in sorted(r["other"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
@@ -2506,9 +2507,10 @@ def render(results, prev):
         # here so a French town missing from the city list is visible instead of
         # costing an application. Anything real in here belongs in _FR_CITIES.
         if r["unsure"]:
-            p.append("<details open><summary>%d internship%s with an unrecognised location"
+            p.append("<details%s><summary>%d internship%s with an unrecognised location"
                      "</summary><ul>"
-                     % (len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
+                     % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
+                        len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
             for o in sorted(r["unsure"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
                 p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
                          % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
@@ -2544,7 +2546,7 @@ def render(results, prev):
     p.append("<p>Filter: title contains stage / stagiaire / PFE / intern / fin d&rsquo;&eacute;tudes "
              "&middot; excludes alternance and apprentissage &middot; location in France &middot; "
              "engineering, data, infra, SRE or security role. The last two steps do not delete "
-             "anything: a role that fails them is in the box on its company card, either as "
+             "anything: a role that fails them is in the collapsed box on its company, either as "
              "non-tech or as an unrecognised location.</p>")
     if broken:
         p.append('<p class="warn">%d compan%s failed to fetch this run, so its roles may be stale. '
@@ -2626,7 +2628,7 @@ def write_status(out, stats):
 # the number is never lost, only the tail.
 STATUS_ROWS = 12
 
-# Per box on the board itself. The board is an artifact the routine
+# Per collapsed box on the board itself. The board is an artifact the routine
 # may have to read back on a refused publish, and 158 filtered rows took board3
 # to 115 KB. New entries sort first so a cap can never hide the news.
 BOX_ROWS = 25
