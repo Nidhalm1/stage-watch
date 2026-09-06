@@ -92,7 +92,7 @@ COMPANIES = [
     {"name": "Oracle",       "ats": "oracle_cx",
      "host": "https://eeho.fa.us2.oraclecloud.com",
      "careers": "https://careers.oracle.com/jobs/"},
-    {"name": "SAP",          "ats": "sfhtml", "pages": 12,
+    {"name": "SAP",          "ats": "sfhtml", "pages": 6,
      "base": "https://jobs.sap.com",
      "list": "https://jobs.sap.com/tile-search-results/?q=%s&locationsearch=France&startrow=%d",
      "careers": "https://jobs.sap.com/"},
@@ -1184,6 +1184,7 @@ def _rows_from(seen, out, title, loc, url, blob, contract=None):
 # index. _source.url is the posting's own link, so nothing is constructed.
 #   field_keyword_05  country          field_keyword_19  "Chicago, US"
 #   field_keyword_18  contract label   field_keyword_08  job family
+# - but see below for why field_keyword_18 is read and then not used.
 # HashiCorp is IBM now and its roles are on this same index, which is why
 # "hashicorp" is one of the queries rather than a separate company.
 IBM_URL = "https://www-api.ibm.com/search/api/v2"
@@ -1191,7 +1192,7 @@ IBM_SOURCE = ["_id", "title", "url", "field_keyword_05", "field_keyword_08",
               "field_keyword_17", "field_keyword_18", "field_keyword_19",
               "field_text_01"]
 IBM_PAGE = 50
-IBM_MAX = 400
+IBM_MAX = 200               # per query; a ceiling hit marks the company partial
 
 
 def f_ibm(c):
@@ -1212,12 +1213,23 @@ def f_ibm(c):
             for h in hits:
                 s = h.get("_source") or {}
                 loc = s.get("field_keyword_19") or s.get("field_keyword_05") or ""
+                # field_keyword_18 is IBM's contract label and it is NOT passed
+                # through as one. Measured on the first live run: IBM files its
+                # French apprenticeships under "Internship", so the label sent
+                # "Apprenti.e Account Manager - Automation - IBM France" to the
+                # board as an internship - the exact mislabelling _contract
+                # exists to correct, running the wrong way. The title test is
+                # right about these, so let it decide.
                 _rows_from(seen, out, s.get("title", ""), loc, s.get("url", ""),
-                           " ".join(x for x in [loc, s.get("field_keyword_05")] if x),
-                           _contract(s.get("field_keyword_18")))
+                           " ".join(x for x in [loc, s.get("field_keyword_05")] if x))
             frm += IBM_PAGE
             total = (((d.get("hits") or {}).get("total")) or {}).get("value") or 0
             if len(hits) < IBM_PAGE or frm >= total:
+                break
+            if frm >= IBM_MAX:
+                # more results exist than we are willing to read: shown, but
+                # nothing of this company's may be treated as closed
+                PARTIAL.add(c["name"])
                 break
             time.sleep(0.2)
     return out
@@ -1252,6 +1264,8 @@ def f_phenom(c):
                     _fr(loc, data.get("country"), data.get("country_code")))
             if len(rows) < PHENOM_PAGE or not fresh:
                 break
+            if page >= c.get("pages", 12):
+                PARTIAL.add(c["name"])
             time.sleep(0.3)
     return out
 
@@ -1270,7 +1284,7 @@ PHENOM_WIDGET_BODY = {
     "clearAll": False, "jdsource": "facets", "isSliderEnable": False,
     "pageId": "page11", "siteType": "external", "keywords": "", "global": True,
     "selected_fields": {}, "locationData": {}}
-WIDGET_MAX = 300
+WIDGET_MAX = 200            # per keyword; a ceiling hit marks the company partial
 
 
 def f_phenom_widget(c):
@@ -1293,6 +1307,9 @@ def f_phenom_widget(c):
             total = int(rs.get("totalHits") or 0)
             if len(rows) < 20 or frm >= total:
                 break
+            if frm >= WIDGET_MAX:
+                PARTIAL.add(c["name"])
+                break
             time.sleep(0.3)
     return out
 
@@ -1304,7 +1321,7 @@ def f_phenom_widget(c):
 # filter (a France search returns Mexico City), so it narrows without deleting,
 # and where() still makes the real call locally.
 EIGHTFOLD_PAGE = 20
-EIGHTFOLD_MAX = 200
+EIGHTFOLD_MAX = 100         # per query; a ceiling hit marks the company partial
 
 
 def f_eightfold(c):
@@ -1341,6 +1358,9 @@ def f_eightfold(c):
             start += EIGHTFOLD_PAGE
             count = int(((d.get("data") or {}).get("count")) or 0)
             if len(positions) < EIGHTFOLD_PAGE or start >= count:
+                break
+            if start >= EIGHTFOLD_MAX:
+                PARTIAL.add(c["name"])
                 break
             time.sleep(0.3)
     if blocked:
@@ -1385,7 +1405,7 @@ def f_eightfold_v2(c):
 # the candidate-experience URL is built on the SAME host that served the API and
 # verified before it is shown.
 ORACLE_PAGE = 25
-ORACLE_MAX = 300
+ORACLE_MAX = 150            # per keyword; a ceiling hit marks the company partial
 ORACLE_EXPAND = "requisitionList.workLocation,requisitionList.secondaryLocations"
 
 
@@ -1438,6 +1458,9 @@ def f_oracle_cx(c):
             total = int(block.get("TotalJobsCount") or 0)
             if len(reqs) < ORACLE_PAGE or off >= total:
                 break
+            if off >= ORACLE_MAX:
+                PARTIAL.add(c["name"])
+                break
             time.sleep(0.3)
     if blocked:
         print("  %s: link verification blocked (403); links unverified this run"
@@ -1452,7 +1475,7 @@ def f_oracle_cx(c):
 # the only part added.
 AMAZON_HOST = "https://www.amazon.jobs"
 AMAZON_LIMIT = 100
-AMAZON_MAX = 400
+AMAZON_MAX = 200            # per query; a ceiling hit marks the company partial
 
 
 def f_amazon(c):
@@ -1474,6 +1497,9 @@ def f_amazon(c):
                                                 j.get("country_code")] if x))
             off += AMAZON_LIMIT
             if len(jobs) < AMAZON_LIMIT or off >= int(d.get("hits") or 0):
+                break
+            if off >= AMAZON_MAX:
+                PARTIAL.add(c["name"])
                 break
             time.sleep(0.3)
     return out
@@ -1531,6 +1557,9 @@ def f_gs(c):
             loc = "; ".join(x for x in bits if x)
             _rows_from(seen, out, it.get("jobTitle", ""), loc, url, loc)
         if len(items) < GS_PAGE or (page + 1) * GS_PAGE >= int(search.get("totalCount") or 0):
+            break
+        if page + 1 >= GS_MAX:
+            PARTIAL.add(c["name"])
             break
         time.sleep(0.3)
     if blocked:
