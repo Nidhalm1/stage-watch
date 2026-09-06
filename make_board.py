@@ -1197,7 +1197,7 @@ IBM_MAX = 400
 def f_ibm(c):
     out, seen = [], set()
     for query in c.get("queries", ("intern", "internship", "stage", "stagiaire",
-                                   "apprentice france", "hashicorp")):
+                                   "hashicorp")):
         frm = 0
         while frm < IBM_MAX:
             body = {"appId": "careers", "scopes": ["careers2"],
