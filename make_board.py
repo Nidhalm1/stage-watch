@@ -329,8 +329,16 @@ COMPANIES3 = [
     # have made one board twice the size of the other two.
     {"name": "Goldman Sachs", "ats": "gs", "site": "https://higher.gs.com",
      "careers": "https://higher.gs.com/roles"},
+    # Its own words, not ours: probed 2026-09-06, "intern", "internship",
+    # "stage" and "stagiaire" all answer 200 with zero positions on this tenant,
+    # while "analyst" returns a board full of them - Morgan Stanley calls the
+    # internship a Summer Analyst or an Off-Cycle Analyst. A search that finds
+    # nothing looks exactly like a company with nothing open, which is the
+    # failure this repo keeps having to design around.
     {"name": "Morgan Stanley", "ats": "eightfold",
      "host": "https://morganstanley.eightfold.ai", "domain": "morganstanley.com",
+     "queries": (("summer analyst", "France"), ("off-cycle analyst", "France"),
+                 ("analyst", "Paris"), ("intern", "France"), ("stage", "France")),
      "careers": "https://morganstanley.eightfold.ai/careers"},
     {"name": "J.P. Morgan",   "ats": "oracle_cx", "host": "https://jpmc.fa.oraclecloud.com",
      "careers": "https://careers.jpmorgan.com/global/en/students/programs"},
