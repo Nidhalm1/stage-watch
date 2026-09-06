@@ -121,12 +121,16 @@ SOURCES = {
     "sap": ("html", "https://jobs.sap.com/tile-search-results/?q=intern&locationsearch=France&startrow=0",
             {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 2}),
     "ovh": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=0",
-            {"card": r'<tr[^>]*class="[^"]*data-row[^"]*"', "want": 3}),
+            {"card": r'<tr[^>]*class="[^"]*(?:data-row|job)[^"]*"|<li[^>]*class="[^"]*job-tile[^"]*"', "want": 2}),
     "siemens": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1",
-                {"card": r'<li[^>]*class="[^"]*(?:job|list-item)[^"]*"', "want": 3}),
+                {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
     "hsbc": ("html", "https://mycareer.hsbc.com/en_GB/external/SearchJobs/intern?listFilterMode=1&pipelineRecordsPerPage=10",
-             {"card": r'<li[^>]*class="[^"]*(?:job|list-item)[^"]*"', "want": 3}),
+             {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
     "clevercloud": ("html", "https://www.clever.cloud/jobs/", {"want": 0}),
+    "siemens-fr": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/stage?listFilterMode=1",
+                   {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
+    "ovh-page2": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
+                  {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 1}),
 }
 
 
@@ -155,9 +159,35 @@ def fetch(url, headers, data=None):
         return r.status, r.geturl(), raw.decode(r.headers.get_content_charset() or "utf-8", "replace")
 
 
-def show(obj, cap=1400):
-    text = json.dumps(obj, ensure_ascii=False, indent=1, default=str)
-    print(text[:cap] + (" ...[cut]" if len(text) > cap else ""))
+def flat(obj, prefix="", out=None, depth=0):
+    """Every scalar in an item as path -> value, values clipped hard.
+
+    A verbatim dump of one job posting is 2-4 KB of description HTML, and the
+    only thing a fetcher needs off it is which FIELD holds the title, the URL
+    and the location. So print the shape, not the prose."""
+    out = {} if out is None else out
+    if depth > 3:
+        return out
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            flat(v, "%s.%s" % (prefix, k) if prefix else k, out, depth + 1)
+    elif isinstance(obj, list):
+        if not obj:
+            out[prefix] = "[]"
+        else:
+            for i, v in enumerate(obj[:2]):
+                flat(v, "%s[%d]" % (prefix, i), out, depth + 1)
+            if len(obj) > 2:
+                out[prefix + "[...]"] = "%d items" % len(obj)
+    else:
+        text = re.sub(r"\s+", " ", str(obj))
+        out[prefix] = (text[:90] + "..") if len(text) > 90 else text
+    return out
+
+
+def show(obj, cap=None):
+    for k, v in flat(obj).items():
+        print("   %-44s %s" % (k[:44], v))
 
 
 def probe(name):
@@ -195,7 +225,7 @@ def probe(name):
                 seen.add(h)
                 hrefs.append(h)
         print("  %d job-ish anchors (first 25):" % len(hrefs))
-        for h in hrefs[:25]:
+        for h in hrefs[:12]:
             print("     %s" % h[:150])
         if card:
             starts = [m.start() for m in re.finditer(card, body, re.I)]
@@ -203,7 +233,7 @@ def probe(name):
             for i, st in enumerate(starts[:want]):
                 end = starts[i + 1] if i + 1 < len(starts) else min(len(body), st + 3000)
                 print("  --- card %d verbatim ---" % (i + 1))
-                print(body[st:end][:3000])
+                print(body[st:end][:2500])
         return
 
     if "raw" in extra:
@@ -227,11 +257,14 @@ def probe(name):
     if isinstance(items, list) and items:
         if isinstance(items[0], dict):
             print("  item keys: %s" % sorted(items[0])[:60])
-        print("  --- item 1 ---")
+        print("  --- item 1 flattened ---")
         show(items[0])
         if len(items) > 1:
-            print("  --- item 2 (trimmed) ---")
-            show(items[1], 700)
+            print("  --- item 2: fields that DIFFER from item 1 ---")
+            a, b = flat(items[0]), flat(items[1])
+            for k, v in b.items():
+                if a.get(k) != v:
+                    print("   %-44s %s" % (k[:44], v))
 
 
 if __name__ == "__main__":
