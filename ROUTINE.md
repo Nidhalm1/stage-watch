@@ -12,7 +12,7 @@ What changed from the previous version, and why:
 - **It no longer reads the artifact's saved HTML.** The `Artifact` read call is
   what makes a republish legal; opening the file it saves adds nothing.
 - **Counts corrected**: the rosters are 33 / 29 / 25 companies as of 2026-09-06
-  (they were 20 / 20 / 9). Thirty-one companies were added that day and board 3
+  (they were 20 / 20 / 9). Thirty companies were added that day and board 3
   was renamed "Defence, Finance & Silicon Watch".
 - **The filtered boxes can now ping.** A role that failed the tech filter or
   whose location could not be placed is on the board but was never announced.

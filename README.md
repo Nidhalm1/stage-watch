@@ -215,7 +215,7 @@ Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
 
 ### The 2026-09-06 batch, and search-scoped boards
 
-Thirty-one companies were added on 2026-09-06 across the three rosters. Every one
+Thirty companies were added on 2026-09-06 across the three rosters. Every one
 of their endpoints was read off a live response by `probe_new.py`, run from the
 *Stage Watch sweep* Action with a `probe_html` input of `new:<names>` - the same
 rule as `probe_html.py` and for the same reason: the Claude sandbox cannot reach
