@@ -8,7 +8,7 @@
 Self-contained on purpose: the nightly cloud run has no access to any other
 file, so config + fetchers + template all live here.
 """
-import json, os, re, sys, html, http.cookiejar, urllib.error, urllib.parse, urllib.request, time
+import json, os, re, signal, sys, html, http.cookiejar, urllib.error, urllib.parse, urllib.request, time
 from datetime import datetime, timezone, timedelta
 
 # ---------------------------------------------------------------- config ----
@@ -59,6 +59,48 @@ COMPANIES = [
      "careers": "https://www.databricks.com/company/careers"},
     {"name": "Red Hat",      "ats": "workday", "tenant": "redhat", "wd": "wd5",
      "site": "jobs", "careers": "https://www.redhat.com/en/jobs"},
+    # --- added 2026-09-06. Every endpoint below was read off a live response by
+    # probe_new.py on a runner that day; see that file for the exact request and
+    # NEW-SOURCES.md for what each one answered with. The rule has not changed:
+    # nothing goes in this list that has not been probed.
+    {"name": "GitHub",       "ats": "phenom",
+     "api": "https://www.github.careers/api/jobs", "keywords": ("",), "pages": 40,
+     "careers": "https://www.github.careers/"},
+    # This replaces the "GitHub: iCIMS, no public API" note that used to sit in
+    # NO_API. It IS iCIMS underneath - data.ats_code says so - but Phenom sits in
+    # front of it with a JSON board. keywords="" pages the whole thing: a
+    # keywords=intern search answered 200 with totalCount 0 while the board was
+    # live, so on a board this small asking for everything is safer and cheaper.
+    {"name": "Atlassian",    "ats": "atlassian",
+     "careers": "https://www.atlassian.com/company/careers/all-jobs"},
+    {"name": "Dynatrace",    "ats": "coveo",
+     "api": "https://www.dynatrace.com/api/coveo/search/",
+     "careers": "https://careers.dynatrace.com/"},
+    {"name": "OpenAI",       "ats": "ashby", "slug": "openai",
+     "careers": "https://openai.com/careers/search/"},
+    {"name": "Anthropic",    "ats": "greenhouse", "slug": "anthropic",
+     "careers": "https://www.anthropic.com/careers"},
+    {"name": "Stripe",       "ats": "greenhouse", "slug": "stripe",
+     "careers": "https://stripe.com/jobs/search"},
+    {"name": "Palantir",     "ats": "lever", "slug": "palantir",
+     "careers": "https://www.palantir.com/careers/"},
+    # The capital N is part of the SmartRecruiters slug, like SopraSteria1.
+    {"name": "ServiceNow",   "ats": "smartrecruiters", "slug": "ServiceNow",
+     "careers": "https://careers.servicenow.com/"},
+    {"name": "IBM",          "ats": "ibm",
+     "careers": "https://www.ibm.com/careers/search"},
+    {"name": "Oracle",       "ats": "oracle_cx",
+     "host": "https://eeho.fa.us2.oraclecloud.com",
+     "careers": "https://careers.oracle.com/jobs/"},
+    {"name": "SAP",          "ats": "sfhtml", "pages": 6,
+     "base": "https://jobs.sap.com",
+     "list": "https://jobs.sap.com/tile-search-results/?q=%s&locationsearch=France&startrow=%d",
+     "careers": "https://jobs.sap.com/"},
+    {"name": "Microsoft",    "ats": "eightfold",
+     "host": "https://apply.careers.microsoft.com", "domain": "microsoft.com",
+     "careers": "https://careers.microsoft.com/"},
+    {"name": "Amazon / AWS", "ats": "amazon",
+     "careers": "https://www.amazon.jobs/en/search?base_query=intern&loc_query=France"},
 ]
 
 # Probed and confirmed to have NO supported public API. Listed so nobody wastes
@@ -77,12 +119,30 @@ COMPANIES = [
 #   - Welcome to the Jungle is excluded entirely: it 403s every request from a
 #     runner, including companies known to be on it. See bulk_probe.py.
 NO_API = [
-    ("Dynatrace",    "custom Coveo search endpoint; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. Three guessed\n                      Workday sites all returned 422, so Workday is untested rather than ruled\n                      out - it needs the real site name off the careers page"),
-    ("OVHcloud",     "SAP SuccessFactors; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative.\n                      Guessed Workday sites returned 422, so untested"),
-    ("GitHub",       "iCIMS; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
-    ("HashiCorp",    "acquired by IBM, careers redirect to IBM Careers; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative"),
-    ("Clever Cloud", "/careers/ redirects to a product page; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    # Dynatrace, GitHub, HashiCorp and OVHcloud came off this list on 2026-09-06:
+    # each has a working public endpoint after all, just not one of the six ATSs
+    # the bulk probe knows how to ask. Dynatrace answers on its own Coveo proxy,
+    # GitHub on Phenom, OVHcloud on a SuccessFactors career site, and HashiCorp's
+    # roles are on IBM's careers index. They are on the boards now; the lesson
+    # kept here is that "clean negative on six ATSs" means the SIX said no, not
+    # that the company has no feed.
+    ("Clever Cloud", "clever.cloud/jobs (the domain moved from clever-cloud.com) answers 200 and is a\n"
+                     "                      plain static page - but it lists no openings: the only job link on it\n"
+                     "                      goes to a single Indeed posting, and the rest is an email address.\n"
+                     "                      Nothing to fetch until they publish a real list. Probed 2026-09-04\n"
+                     "                      against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable:\n"
+                     "                      clean negative, 3 slug variants"),
     ("Tsuga",        "no job board found; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    # Probed 2026-09-06 and NOT adopted - all four need a browser, not a request:
+    ("Google",       "careers.google.com/api/v3/search is gone ({\"detail\":\"Not Found\"}) and the new\n"
+                     "                      site renders through Google's internal batchexecute RPC. No stable\n"
+                     "                      public endpoint"),
+    ("Google DeepMind", "routes into the same Google careers system - same problem"),
+    ("Apple",        "jobs.apple.com/api/v1/search answers 401 'User Unauthorized' without an\n"
+                     "                      X-Apple-CSRF-Token minted by the page, so it needs a browser step per run"),
+    ("ASML",         "Sitecore Search (discover-euc1.sitecorecloud.io) behind a widget query and an API\n"
+                     "                      key the page holds. Fallback if it is ever wanted: parse\n"
+                     "                      www.asml.com/en/careers/find-your-job"),
 ]
 
 
@@ -155,6 +215,41 @@ COMPANIES2 = [
     {"name": "Expleo",           "ats": "icims", "pages": 35,
      "list": "https://expleo-jobs-fr-fr.icims.com/jobs/search?pr=%d&in_iframe=1",
      "careers": "https://expleo-jobs-fr-fr.icims.com/jobs/search?in_iframe=1"},
+    # --- added 2026-09-06, probed live by probe_new.py. These four are not
+    # French companies, but each runs a large French engineering site - OVHcloud
+    # is Roubaix/Croix/Toulouse outright, Nokia is Paris-Saclay and Lannion,
+    # Ericsson is Massy, Siemens is Saint-Denis - so they belong with the French
+    # market rather than on the defence/silicon board.
+    {"name": "OVHcloud",         "ats": "sfhtml", "pages": 4,
+     "base": "https://careers.ovhcloud.com",
+     # This instance has no /tile-search-results/ (404) - the /search/ page
+     # carries the same job-tile markup, so the fetcher reads that instead.
+     "list": "https://careers.ovhcloud.com/search/?q=%s&locale=fr_FR&startrow=%d",
+     # ONE keyword, not four. Measured 2026-09-06: this host answered 200 for the
+     # first few requests of the day and then 403d everything from the same
+     # runner - including the exact URL that had just worked, and including a
+     # request with no keyword at all. That is rate limiting, not a header
+     # check (the BNP ladder shape is absent: no header set gets past it once it
+     # trips). The board is French-language, so "stage" alone finds the
+     # internships, and a 403 shows up honestly as a failed fetch rather than as
+     # a company with nothing open.
+     "keywords": ("stage",),
+     "careers": "https://careers.ovhcloud.com/search/"},
+    {"name": "Nokia",            "ats": "oracle_cx",
+     "host": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com",
+     # jobs.nokia.com/hcmRestApi/... serves the SPA shell, not the API; the
+     # oraclecloud host is the one that answers.
+     "careers": "https://jobs.nokia.com/"},
+    {"name": "Ericsson",         "ats": "eightfold",
+     "host": "https://jobs.ericsson.com", "domain": "ericsson.com",
+     # jobs.ericsson.com/search/ (the old SuccessFactors board) now redirects to
+     # a Microsoft login - do not go back to it.
+     "careers": "https://jobs.ericsson.com/"},
+    {"name": "Siemens",          "ats": "avature", "pages": 8,
+     "base": "https://jobs.siemens.com",
+     # Avature puts the keyword in the PATH, not in a query parameter.
+     "list": "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/%s?listFilterMode=1&page=%d",
+     "careers": "https://jobs.siemens.com/en_US/externaljobs/SearchJobs"},
 ]
 
 NO_API2 = [
@@ -225,6 +320,65 @@ COMPANIES3 = [
      "careers": "https://www.janestreet.com/join-jane-street/"},
     {"name": "IMC",         "ats": "greenhouse", "slug": "imc",
      "careers": "https://careers.imc.com/"},
+    # --- added 2026-09-06, probed live by probe_new.py ----------------------
+    # Two groups arrive here at once. The trading floors and banks are the
+    # obvious fit; the silicon and enterprise-hardware companies are here
+    # because they are the same kind of employer as the defence and aerospace
+    # firms this board already carries - large engineering sites, long
+    # internships - and because putting sixteen more companies on batch 1 would
+    # have made one board twice the size of the other two.
+    {"name": "Goldman Sachs", "ats": "gs", "site": "https://higher.gs.com",
+     "careers": "https://higher.gs.com/roles"},
+    # Its own words, not ours: probed 2026-09-06, "intern", "internship",
+    # "stage" and "stagiaire" all answer 200 with zero positions on this tenant,
+    # while "analyst" returns a board full of them - Morgan Stanley calls the
+    # internship a Summer Analyst or an Off-Cycle Analyst. A search that finds
+    # nothing looks exactly like a company with nothing open, which is the
+    # failure this repo keeps having to design around.
+    {"name": "Morgan Stanley", "ats": "eightfold",
+     "host": "https://morganstanley.eightfold.ai", "domain": "morganstanley.com",
+     "queries": (("summer analyst", "France"), ("off-cycle analyst", "France"),
+                 ("analyst", "Paris"), ("intern", "France"), ("stage", "France")),
+     "careers": "https://morganstanley.eightfold.ai/careers"},
+    {"name": "J.P. Morgan",   "ats": "oracle_cx", "host": "https://jpmc.fa.oraclecloud.com",
+     "careers": "https://careers.jpmorgan.com/global/en/students/programs"},
+    # This tenant is on the OLDER Eightfold API: /api/pcsx/search answers 403
+    # here, /api/apply/v2/jobs answers with the board.
+    {"name": "Millennium",    "ats": "eightfold_v2", "host": "https://career.mlp.com",
+     "domain": "mlp.com", "careers": "https://career.mlp.com/"},
+    # NOT flagged "big". The big path is the intern facet plus four keyword
+    # searches with "intern" deliberately left out (it matches essentially the
+    # whole of Thales, which is what that flag was written for). Measured
+    # 2026-09-06: it found Broadcom 18 rows and no internships at all, because
+    # these boards are small enough to read whole - 595, 1014 and 371 postings
+    # against a WORKDAY_MAX of 1200 - and complete beats clever here.
+    {"name": "Intel",         "ats": "workday", "tenant": "intel", "wd": "wd1",
+     "site": "External", "careers": "https://jobs.intel.com/"},
+    {"name": "NVIDIA",        "ats": "workday", "tenant": "nvidia", "wd": "wd5",
+     "site": "NVIDIAExternalCareerSite",
+     "careers": "https://www.nvidia.com/en-us/about-nvidia/careers/"},
+    # VMware roles live on this board now - there is no separate VMware feed.
+    # The site slug must be External_Career; External and Careers both 404.
+    {"name": "Broadcom",      "ats": "workday", "tenant": "broadcom", "wd": "wd1",
+     "site": "External_Career", "careers": "https://www.broadcom.com/company/careers"},
+    # amd.wd1.myworkdayjobs.com does not exist - AMD left Workday for Phenom.
+    {"name": "AMD",           "ats": "phenom", "api": "https://careers.amd.com/api/jobs",
+     "pages": 12, "careers": "https://careers.amd.com/"},
+    {"name": "Qualcomm",      "ats": "eightfold", "host": "https://careers.qualcomm.com",
+     "domain": "qualcomm.com", "careers": "https://careers.qualcomm.com/careers"},
+    {"name": "Arm",           "ats": "radancy", "pages": 8,
+     "base": "https://careers.arm.com",
+     "careers": "https://careers.arm.com/search-jobs"},
+    {"name": "Dell",          "ats": "oracle_cx",
+     "host": "https://enterpriseplatform.dell.com", "careers": "https://jobs.dell.com/"},
+    # /api/jobs answers 500 on these two; /widgets is the door their own pages
+    # use. Each tenant needs its own lang/country in the body.
+    {"name": "HPE",           "ats": "phenom_widget", "api": "https://careers.hpe.com/widgets",
+     "careers": "https://careers.hpe.com/us/en/search-results"},
+    {"name": "Cisco",         "ats": "phenom_widget", "api": "https://careers.cisco.com/widgets",
+     "body": {"lang": "en_global", "country": "global",
+              "all_fields": ["country", "state", "city", "category"]},
+     "careers": "https://jobs.cisco.com/jobs/SearchJobs"},
 ]
 
 # Sources probed 2026-09-04 and deliberately NOT adopted, with the reason - so the
@@ -250,9 +404,19 @@ NO_API3 = [
     ("Atos / Eviden",      "SAP SuccessFactors (jobs.atos.net); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 4 slug variants"),
     ("Safran",             "workable/safrangroup re-probed 2026-09-04: 17 postings, every one in "
                            "Pitstone or Banbury UK = Safran Engineering Services UK Ltd, not the group"),
-    ("Hudson River Trading","greenhouse/hrttalentcommunity is a talent-community stub (3 generic\n                            entries), not the real board; no French office; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
-    ("Optiver",            "bespoke careers system, no ATS; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
-    ("Millennium",         "Eightfold; probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative. The eightfold API probe\n                            404d on every domain tried, so that path is unverified, not ruled out"),
+    ("Hudson River Trading","its own WordPress endpoint (admin-ajax.php, action=get_hrt_jobs_handler) is the\n"
+                            "                            real board, but it answered HTTP 500 when probed on 2026-09-06 - a\n"
+                            "                            broken plugin, not a block. greenhouse/hrttalentcommunity is a\n"
+                            "                            3-entry talent-community stub, not the board. No French office either,\n"
+                            "                            so this is worth revisiting only if the endpoint comes back"),
+    # Millennium moved ONTO the board on 2026-09-06 - see COMPANIES3. It answers
+     # on the OLDER Eightfold API, /api/apply/v2/jobs; /api/pcsx/search 403s there.
+    ("Optiver",            "boards-api.greenhouse.io/v1/boards/optiver answers 200 with {\"jobs\":[],\n"
+                           "                            \"meta\":{\"total\":0}} - measured twice on 2026-09-06, with and without\n"
+                           "                            content=false. The slug exists and the board is empty, which is exactly\n"
+                           "                            the dead-slug case this repo refuses to carry: it would sit on the board\n"
+                           "                            looking watched while showing nothing. Recheck it another day"),
+
     ("Groupe BPCE",        "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
     ("Banque Populaire",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("Caisse d'Epargne",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 variants"),
@@ -262,7 +426,12 @@ NO_API3 = [
     ("Credit Mutuel Arkea","no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
     ("La Banque Postale",  "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     ("LCL",                "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
-    ("HSBC / CCF",         "Avature (mycareer.hsbc.com); probed 2026-09-04 against greenhouse/lever/ashby/smartrecruiters/teamtailor/workable: clean negative, 3 slug variants"),
+    ("HSBC / CCF",         "Avature (mycareer.hsbc.com) and readable - the search page renders fine from a\n"
+                           "                            runner. Left off anyway after probing it on 2026-09-06: an 'intern' search\n"
+                           "                            there returns PipelineDetail cards (talent pools, not postings) and those\n"
+                           "                            cards carry no location element at all, so every row would land in the\n"
+                           "                            unrecognised-location box. Siemens is on the same ATS and does carry\n"
+                           "                            list-item-jobCity/jobState/jobCountry, which is why it is on batch 2"),
     ("Bpifrance",          "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
     # These two are NOT "no API found" - both were located and answered. They are
     # excluded because they have no French office, which is the same test that
@@ -289,12 +458,15 @@ ROSTERS = {
           "blurb": "Tech internships and PFE in France at observability, infrastructure and "
                    "developer-tools companies, read straight from each company&rsquo;s "
                    "applicant-tracking API."},
-    "3": {"name": "Defence & Finance Watch", "companies": COMPANIES3,
-          "blurb": "Tech internships and PFE in France at defence, aerospace and trading "
-                   "firms, read straight from each company&rsquo;s applicant-tracking API."},
+    "3": {"name": "Defence, Finance & Silicon Watch", "companies": COMPANIES3,
+          "blurb": "Tech internships and PFE in France at defence, aerospace, trading and "
+                   "semiconductor firms, read straight from each company&rsquo;s "
+                   "applicant-tracking API."},
     "2": {"name": "French Tech Watch", "companies": COMPANIES2,
           "blurb": "Tech internships and PFE in France at French tech, fintech and scale-up "
-                   "companies, read straight from each company&rsquo;s applicant-tracking API."},
+                   "companies - plus the French engineering sites of OVHcloud, Nokia, "
+                   "Ericsson and Siemens - read straight from each company&rsquo;s "
+                   "applicant-tracking API."},
 }
 
 BOARD = ROSTERS["1"]
@@ -355,6 +527,9 @@ FR_CODE = re.compile(r"^\s*(fr|fra|france|frankreich)\s*$", re.I)
 # instead of being thrown away. Any real French town that turns up in that box
 # belongs in _FR_CITIES; that is the feedback loop the whitelist never had.
 _NOT_FR = (
+    # written by _country() when a board's own country field named a country
+    # that is not France - see that function
+    "abroad|"
     "united states|u\\.s\\.a?\\.|america|canada|mexico|brazil|br[ée]sil|argentina|chile|colombia|"
     "united kingdom|england|scotland|wales|ireland|irlande|london|londres|manchester|edinburgh|"
     "dublin|cork|belfast|"
@@ -492,7 +667,33 @@ def _paris_now():
 NOW   = _paris_now()
 TZLABEL = "CEST" if NOW.utcoffset().total_seconds() == 7200 else "CET"
 TODAY = NOW.date().isoformat()
-UA    = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+# A bare "Mozilla/5.0" is a bot signature: BNP 403s it outright, and several
+# of the 2026-09-06 batch (Arm, Amazon, the Phenom sites) were only ever probed
+# with a full browser string. Send the same one everywhere.
+UA    = {"User-Agent": ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+         "Accept": "application/json,text/plain,*/*"}
+
+
+def _country(blob, *codes):
+    """Like _fr, but it also uses a NEGATIVE answer.
+
+    _fr appends "France" when a structured country field means France and
+    otherwise leaves the blob alone, so a posting in a town no list has ends up
+    "unknown" - which is right when nothing said where it is. But several of the
+    2026-09-06 sources DO say: Amazon's country_code is MEX, Oracle's
+    PrimaryLocationCountry is CA. Leaving those unknown put 48 Amazon roles in
+    the unrecognised-location box in one run, which buries the French ones it
+    exists to surface. So a country field that positively names somewhere else
+    appends "abroad", which _NOT_FR matches - the same evidence standard the box
+    already uses, just applied to a field instead of a town name."""
+    for code in codes:
+        if code and FR_CODE.match(str(code).strip()):
+            return ("%s France" % blob).strip()
+    for code in codes:
+        if code and str(code).strip():
+            return ("%s abroad" % blob).strip()
+    return blob
 
 
 def _fr(blob, *countries):
@@ -840,7 +1041,7 @@ def f_wttj(c):
     return out
 
 
-def _verify(url):
+def _verify(url, timeout=20):
     """'ok' | 'gone' | 'blocked'.
 
     Only a 404/410 disproves a URL. www.welcometothejungle.com answers 403 to a
@@ -851,10 +1052,13 @@ def _verify(url):
     the role in place; only a 404 removes it."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": UA["User-Agent"]})
     try:
-        with urllib.request.urlopen(req, timeout=20) as r:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
             return "ok" if r.status < 400 else "gone"
     except urllib.error.HTTPError as e:
         return "gone" if e.code in (404, 410) else "blocked"
+    except FetchBudget:
+        # the company's time is up - do NOT report that as an unreachable link
+        raise
     except Exception:
         return "blocked"
 
@@ -992,6 +1196,512 @@ def f_sgcareers(c):
     else:
         # Ran out of pages before running out of results: shown, nothing closed.
         PARTIAL.add(c["name"])
+    return out
+
+
+# ------------------------------------------- the 2026-09-06 batch ----------
+# Nine more ATSs. Every field name below was read off a live payload by
+# probe_new.py on 2026-09-06 - run that from Actions before changing any of
+# them, exactly as with the HTML boards. The pattern to watch for here is the
+# SEARCH-SCOPED board: IBM, Phenom, Eightfold, Oracle CX and Amazon are all far
+# too large to page whole, so each is fetched as the union of a few keyword
+# searches. That is the same trade Thales and Airbus already make in f_workday:
+# a role whose title carries none of the keywords is invisible to us, which is
+# why the keyword lists below include the French words as well as the English.
+
+
+# A single company's fetch may take this long. This is a guard against a hang,
+# not a speed limit: measured on a runner, the whole 2026-09-06 batch answers in
+# 2-10 seconds a company, but a Workday board fetched the "big" way (Thales,
+# Airbus, Intel, NVIDIA, Broadcom - the intern facet plus four keyword searches,
+# each paged to WORKDAY_MAX) is minutes of legitimate work. A budget tight
+# enough to catch a slow fetcher would kill those, so this is set well above
+# them and exists to stop one company from running until the sweep misses its
+# publish slot. When it runs out the fetch stops where it is and the company is
+# marked partial, so what was read is shown and nothing of theirs can be closed.
+COMPANY_BUDGET = 240        # seconds
+_DEADLINE = [None]
+
+
+class FetchBudget(Exception):
+    """A fetch that ran past COMPANY_BUDGET and had to be cut off."""
+
+
+def _budget_start():
+    _DEADLINE[0] = time.time() + COMPANY_BUDGET
+
+
+def _alarm(_sig, _frame):
+    raise FetchBudget("fetch ran past the %ds budget" % COMPANY_BUDGET)
+
+
+def _out_of_time(name):
+    if _DEADLINE[0] and time.time() > _DEADLINE[0]:
+        PARTIAL.add(name)
+        print("  %s: hit the %ds fetch budget; shown, nothing closed"
+              % (name, COMPANY_BUDGET), file=sys.stderr)
+        return True
+    return False
+
+
+# The check above is cooperative - it runs between requests, so a fetcher that
+# is looping politely stops with the rows it already has. It cannot help against
+# a single request that never returns, and a server that dribbles bytes forever
+# does exactly that: urlopen's timeout is per socket operation, not for the
+# whole transfer. So the budget is also armed as a SIGALRM, which interrupts the
+# fetch wherever it is. Its rows are lost, and the company is reported as a
+# failed fetch - which, like any other error here, means nothing of theirs may
+# be marked closed.
+_HAS_ALARM = hasattr(signal, "SIGALRM")
+
+
+# How many built URLs to HEAD-check per company. The point of the check is to
+# prove the CONSTRUCTION - "/careers/job/<id>" under this host is really where a
+# posting lives - not to re-verify every row: Dell and Oracle return hundreds of
+# requisitions a run, and one HEAD each would be both slow and rude. A sample
+# that all answers means the pattern holds; a single 404 in it marks the company
+# partial, so nothing of theirs can be closed on a run whose links are suspect.
+VERIFY_SAMPLE = 3
+VERIFY_TIMEOUT = 8          # seconds; these career hosts are slow SPAs
+
+
+def _rows_from(seen, out, title, loc, url, blob, contract=None):
+    """Append one row, de-duplicated by url. Every fetcher below merges several
+    searches, and the same posting comes back under more than one of them."""
+    if not title or not url or url in seen:
+        return 0
+    seen.add(url)
+    out.append((title, loc, url, blob, contract))
+    return 1
+
+
+# --- IBM (custom Elasticsearch behind www-api.ibm.com) ----------------------
+# POST with an Elasticsearch query. Two things are load-bearing and neither is
+# guessable: the _source list (with no _source the hits come back as
+# _id/_index/_score and nothing else) and appId/scopes, which select the careers
+# index. _source.url is the posting's own link, so nothing is constructed.
+#   field_keyword_05  country          field_keyword_19  "Chicago, US"
+#   field_keyword_18  contract label   field_keyword_08  job family
+# - but see below for why field_keyword_18 is read and then not used.
+# HashiCorp is IBM now and its roles are on this same index, which is why
+# "hashicorp" is one of the queries rather than a separate company.
+IBM_URL = "https://www-api.ibm.com/search/api/v2"
+IBM_SOURCE = ["_id", "title", "url", "field_keyword_05", "field_keyword_08",
+              "field_keyword_17", "field_keyword_18", "field_keyword_19",
+              "field_text_01"]
+IBM_PAGE = 50
+IBM_MAX = 200               # per query; a ceiling hit marks the company partial
+
+
+def f_ibm(c):
+    out, seen = [], set()
+    for query in c.get("queries", ("intern", "internship", "stage", "stagiaire",
+                                   "hashicorp")):
+        frm = 0
+        while frm < IBM_MAX and not _out_of_time(c["name"]):
+            body = {"appId": "careers", "scopes": ["careers2"],
+                    "size": IBM_PAGE, "from": frm, "sort": [{"_score": "desc"}],
+                    "_source": IBM_SOURCE,
+                    "query": {"bool": {"must": [{"simple_query_string": {
+                        "query": query,
+                        "fields": ["keywords^1", "body^1", "url^2", "description^2",
+                                   "title^3", "field_text_01"]}}]}}}
+            d = get(IBM_URL, body)
+            hits = ((d.get("hits") or {}).get("hits")) or []
+            for h in hits:
+                s = h.get("_source") or {}
+                loc = s.get("field_keyword_19") or s.get("field_keyword_05") or ""
+                # field_keyword_18 is IBM's contract label and it is NOT passed
+                # through as one. Measured on the first live run: IBM files its
+                # French apprenticeships under "Internship", so the label sent
+                # "Apprenti.e Account Manager - Automation - IBM France" to the
+                # board as an internship - the exact mislabelling _contract
+                # exists to correct, running the wrong way. The title test is
+                # right about these, so let it decide.
+                _rows_from(seen, out, s.get("title", ""), loc, s.get("url", ""),
+                           " ".join(x for x in [loc, s.get("field_keyword_05")] if x))
+            frm += IBM_PAGE
+            total = (((d.get("hits") or {}).get("total")) or {}).get("value") or 0
+            if len(hits) < IBM_PAGE or frm >= total:
+                break
+            if frm >= IBM_MAX:
+                # more results exist than we are willing to read: shown, but
+                # nothing of this company's may be treated as closed
+                PARTIAL.add(c["name"])
+                break
+            time.sleep(0.2)
+    return out
+
+
+# --- Phenom People, the /api/jobs flavour (AMD, GitHub) ---------------------
+# jobs[] is a list of {"data": {...}} envelopes, 10 to a page. The link to show
+# is data.meta_data.canonical_url: data.apply_url points at the ATS behind the
+# site (iCIMS for both of these), which is a login page, not a posting.
+# A company with an empty keyword in its list is paged whole - github.careers
+# answered keywords=intern with totalCount 0 while carrying a real board, so on
+# a small board asking for everything is both safer and cheaper.
+PHENOM_PAGE = 10
+
+
+def f_phenom(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        for page in range(1, c.get("pages", 12) + 1):
+            if _out_of_time(c["name"]):
+                return out
+            d = get("%s?page=%d%s&sortBy=relevance&descending=false&internal=false"
+                    % (c["api"], page,
+                       "&keywords=%s" % urllib.parse.quote(kw) if kw else ""))
+            rows = d.get("jobs") or []
+            fresh = 0
+            for j in rows:
+                data = j.get("data") if isinstance(j.get("data"), dict) else j
+                loc = (data.get("full_location") or data.get("short_location")
+                       or data.get("location_name") or "")
+                fresh += _rows_from(
+                    seen, out, data.get("title", ""), loc,
+                    (data.get("meta_data") or {}).get("canonical_url") or "",
+                    _country(loc, data.get("country"), data.get("country_code")))
+            if len(rows) < PHENOM_PAGE or not fresh:
+                break
+            if page >= c.get("pages", 12):
+                PARTIAL.add(c["name"])
+            time.sleep(0.3)
+    return out
+
+
+# --- Phenom People, the /widgets flavour (HPE, Cisco) -----------------------
+# Same vendor, different door: /api/jobs answers 500 on these two and /widgets
+# is what their own pages call. The body is the site's own refineSearch payload;
+# lang/country/all_fields differ per tenant, so each company carries its own
+# overrides. applyUrl is returned by the API (it points into the tenant's
+# Workday), so again nothing is constructed.
+PHENOM_WIDGET_BODY = {
+    "lang": "en_us", "deviceType": "desktop", "country": "us",
+    "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "",
+    "subsearch": "", "from": 0, "jobs": True, "counts": True,
+    "all_fields": ["category", "country", "state", "city", "type"], "size": 20,
+    "clearAll": False, "jdsource": "facets", "isSliderEnable": False,
+    "pageId": "page11", "siteType": "external", "keywords": "", "global": True,
+    "selected_fields": {}, "locationData": {}}
+WIDGET_MAX = 200            # per keyword; a ceiling hit marks the company partial
+
+
+def f_phenom_widget(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        frm = 0
+        while frm < WIDGET_MAX and not _out_of_time(c["name"]):
+            body = dict(PHENOM_WIDGET_BODY, **c.get("body", {}))
+            body.update({"keywords": kw, "from": frm, "size": 20})
+            d = get(c["api"], body)
+            rs = d.get("refineSearch") or {}
+            rows = ((rs.get("data") or {}).get("jobs")) or []
+            for j in rows:
+                loc = j.get("cityStateCountry") or j.get("location") or ""
+                more = [x.get("location", "") for x in (j.get("multi_location_array") or [])
+                        if isinstance(x, dict)]
+                _rows_from(seen, out, j.get("title", ""), loc, j.get("applyUrl", ""),
+                           " ".join([x for x in [loc] + more if x]))
+            frm += 20
+            total = int(rs.get("totalHits") or 0)
+            if len(rows) < 20 or frm >= total:
+                break
+            if frm >= WIDGET_MAX:
+                PARTIAL.add(c["name"])
+                break
+            time.sleep(0.3)
+    return out
+
+
+# --- Eightfold, the pcsx flavour (Qualcomm, Microsoft, Morgan Stanley, ...) --
+# positionUrl comes back RELATIVE ("/careers/job/4467...") so the link has to be
+# built from the tenant host - and a built link gets verified before it is shown,
+# the same rule f_wttj follows. location= is a fuzzy relevance term rather than a
+# filter (a France search returns Mexico City), so it narrows without deleting,
+# and where() still makes the real call locally.
+EIGHTFOLD_PAGE = 20
+EIGHTFOLD_MAX = 100         # per query; a ceiling hit marks the company partial
+
+
+def f_eightfold(c):
+    out, seen = [], set()
+    verify, blocked, checked = True, False, 0
+    for query, place in c.get("queries", (("intern", "France"), ("stage", "France"),
+                                          ("stagiaire", ""), ("internship", "France"))):
+        start = 0
+        while start < EIGHTFOLD_MAX and not _out_of_time(c["name"]):
+            d = get("%s/api/pcsx/search?domain=%s&query=%s&location=%s&start=%d&num=%d"
+                    % (c["host"], c["domain"], urllib.parse.quote(query),
+                       urllib.parse.quote(place), start, EIGHTFOLD_PAGE))
+            positions = ((d.get("data") or {}).get("positions")) or []
+            for p in positions:
+                path = p.get("positionUrl") or ""
+                if not path:
+                    continue
+                url = urllib.parse.urljoin(c["host"], path)
+                if url in seen:
+                    continue
+                if verify and checked < VERIFY_SAMPLE:
+                    checked += 1
+                    v = _verify(url, VERIFY_TIMEOUT)
+                    if v == "blocked":
+                        verify = False          # host refuses us; stop spending requests
+                        blocked = True
+                    elif v == "gone":
+                        PARTIAL.add(c["name"])
+                        continue
+                locs = [x for x in (p.get("locations") or []) if x]
+                std = [x for x in (p.get("standardizedLocations") or []) if x]
+                _rows_from(seen, out, p.get("name", ""), "; ".join(locs) or "; ".join(std),
+                           url, " ".join(locs + std))
+            start += EIGHTFOLD_PAGE
+            count = int(((d.get("data") or {}).get("count")) or 0)
+            if len(positions) < EIGHTFOLD_PAGE or start >= count:
+                break
+            if start >= EIGHTFOLD_MAX:
+                PARTIAL.add(c["name"])
+                break
+            time.sleep(0.3)
+    if blocked:
+        print("  %s: link verification blocked (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+# --- Eightfold, the older apply/v2 flavour (Millennium) ---------------------
+# Same vendor, older API: /api/pcsx/search answers 403 on this tenant. This one
+# returns canonicalPositionUrl whole, so nothing is built, and it pages the board
+# rather than searching it - the query parameter here is a relevance term that
+# returns unrelated roles, not a filter.
+V2_PAGE = 50
+V2_MAX = 600
+
+
+def f_eightfold_v2(c):
+    out, seen, start = [], set(), 0
+    while start < V2_MAX and not _out_of_time(c["name"]):
+        d = get("%s/api/apply/v2/jobs?domain=%s&start=%d&num=%d"
+                % (c["host"], c["domain"], start, V2_PAGE))
+        positions = d.get("positions") or []
+        for p in positions:
+            locs = [x for x in (p.get("locations") or []) if x] or \
+                   ([p.get("location")] if p.get("location") else [])
+            _rows_from(seen, out, p.get("name", ""), "; ".join(locs),
+                       p.get("canonicalPositionUrl") or "", " ".join(locs))
+        start += V2_PAGE
+        count = int(d.get("count") or 0)
+        if len(positions) < V2_PAGE or start >= count:
+            return out
+        time.sleep(0.3)
+    PARTIAL.add(c["name"])
+    return out
+
+
+# --- Oracle HCM Cloud, candidate-experience API (Dell, Nokia, Oracle, JPM) ---
+# The requisitionList only comes back when the expand names it - without it the
+# response is a TotalJobsCount with nothing under it, which is the shape of a
+# fetch that silently returns nothing. Requisitions carry an Id and no link, so
+# the candidate-experience URL is built on the SAME host that served the API and
+# verified before it is shown.
+ORACLE_PAGE = 25
+ORACLE_MAX = 150            # per keyword; a ceiling hit marks the company partial
+ORACLE_EXPAND = "requisitionList.workLocation,requisitionList.secondaryLocations"
+
+
+def f_oracle_cx(c):
+    out, seen = [], set()
+    verify, blocked, checked = True, False, 0
+    site = c.get("site", "CX_1")
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        off = 0
+        while off < ORACLE_MAX and not _out_of_time(c["name"]):
+            url = ("%s/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+                   "?onlyData=true&expand=%s&finder=findReqs;siteNumber=%s,limit=%d,"
+                   "offset=%d,sortBy=POSTING_DATES_DESC,keyword=%s"
+                   % (c["host"], ORACLE_EXPAND, site, ORACLE_PAGE, off,
+                      urllib.parse.quote(kw)))
+            d = get(url)
+            items = d.get("items") or []
+            block = items[0] if items else {}
+            reqs = block.get("requisitionList") or []
+            for r in reqs:
+                rid = str(r.get("Id") or "")
+                if not rid:
+                    continue
+                link = "%s/hcmUI/CandidateExperience/en/sites/%s/job/%s/" % (c["host"], site, rid)
+                if link in seen:
+                    continue
+                if verify and checked < VERIFY_SAMPLE:
+                    checked += 1
+                    v = _verify(link, VERIFY_TIMEOUT)
+                    if v == "blocked":
+                        verify = False
+                        blocked = True
+                    elif v == "gone":
+                        PARTIAL.add(c["name"])
+                        continue
+                loc = r.get("PrimaryLocation") or ""
+                where_bits = [loc, r.get("PrimaryLocationCountry") or ""]
+                for w in (r.get("workLocation") or []):
+                    if isinstance(w, dict):
+                        where_bits += [w.get("TownOrCity") or "", w.get("Country") or "",
+                                       w.get("Region2") or ""]
+                for sec in (r.get("secondaryLocations") or []):
+                    if isinstance(sec, dict):
+                        where_bits.append(sec.get("Name") or sec.get("LocationName") or "")
+                _rows_from(seen, out, r.get("Title", ""), loc, link,
+                           _country(" ".join(x for x in where_bits if x),
+                                    r.get("PrimaryLocationCountry")),
+                           _contract(r.get("WorkerType") or r.get("ContractType")))
+            off += ORACLE_PAGE
+            total = int(block.get("TotalJobsCount") or 0)
+            if len(reqs) < ORACLE_PAGE or off >= total:
+                break
+            if off >= ORACLE_MAX:
+                PARTIAL.add(c["name"])
+                break
+            time.sleep(0.3)
+    if blocked:
+        print("  %s: link verification blocked (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+# --- Amazon / AWS -----------------------------------------------------------
+# amazon.jobs publishes its own search as JSON. loc_query is a relevance term,
+# not a filter (a France search returns Mexico City), so it is used to narrow the
+# request and where() still decides. job_path is the site's own path; the host is
+# the only part added.
+AMAZON_HOST = "https://www.amazon.jobs"
+AMAZON_LIMIT = 100
+AMAZON_MAX = 200            # per query; a ceiling hit marks the company partial
+
+
+def f_amazon(c):
+    out, seen = [], set()
+    for base, place in c.get("queries", (("intern", "France"), ("stage", "France"),
+                                         ("stagiaire", "France"), ("internship", "France"))):
+        off = 0
+        while off < AMAZON_MAX and not _out_of_time(c["name"]):
+            d = get("%s/en/search.json?base_query=%s&loc_query=%s&result_limit=%d&offset=%d"
+                    % (AMAZON_HOST, urllib.parse.quote(base), urllib.parse.quote(place),
+                       AMAZON_LIMIT, off))
+            jobs = d.get("jobs") or []
+            for j in jobs:
+                path = j.get("job_path") or ""
+                loc = j.get("normalized_location") or j.get("location") or ""
+                _rows_from(seen, out, j.get("title", ""), loc,
+                           urllib.parse.urljoin(AMAZON_HOST, path) if path else "",
+                           _country(" ".join(x for x in [loc, j.get("city"),
+                                                         j.get("state")] if x),
+                                    j.get("country_code")))
+            off += AMAZON_LIMIT
+            if len(jobs) < AMAZON_LIMIT or off >= int(d.get("hits") or 0):
+                break
+            if off >= AMAZON_MAX:
+                PARTIAL.add(c["name"])
+                break
+            time.sleep(0.3)
+    return out
+
+
+# --- Goldman Sachs (its own GraphQL gateway) --------------------------------
+# One operation, GetRoles, with an experiences filter. EARLY_CAREER is the whole
+# campus population - internships, analyst programmes and graduate roles - so it
+# is fetched whole and the internship test does the rest. Location has to be a
+# filter here rather than a search term, and the filter values come from a second
+# operation; that is not worth the extra call while the early-career board is
+# this small, so France is decided locally like everywhere else.
+GS_URL = "https://api-higher.gs.com/gateway/api/v1/graphql"
+GS_QUERY = ("query GetRoles($searchQueryInput: RoleSearchQueryInput!){roleSearch"
+            "(searchQueryInput:$searchQueryInput){totalCount items{roleId jobTitle "
+            "division jobFunction locations{primary city country} "
+            "externalSource{sourceId}}}}")
+GS_PAGE = 50
+GS_MAX = 20                 # pages
+
+
+def f_gs(c):
+    out, seen = [], set()
+    verify, blocked, checked = True, False, 0
+    for page in range(GS_MAX):
+        if _out_of_time(c["name"]):
+            break
+        body = {"operationName": "GetRoles", "query": GS_QUERY,
+                "variables": {"searchQueryInput": {
+                    "page": {"pageSize": GS_PAGE, "pageNumber": page},
+                    "sort": {"sortStrategy": "RELEVANCE", "sortOrder": "DESC"},
+                    "filters": [], "experiences": c.get("experiences", ["EARLY_CAREER"]),
+                    "searchTerm": ""}}}
+        d = get(GS_URL, body)
+        search = ((d.get("data") or {}).get("roleSearch")) or {}
+        items = search.get("items") or []
+        for it in items:
+            src = str((it.get("externalSource") or {}).get("sourceId") or "")
+            if not src:
+                continue
+            url = "%s/roles/%s" % (c["site"], src)
+            if url in seen:
+                continue
+            if verify and checked < VERIFY_SAMPLE:
+                checked += 1
+                v = _verify(url, VERIFY_TIMEOUT)
+                if v == "blocked":
+                    verify = False
+                    blocked = True
+                elif v == "gone":
+                    PARTIAL.add(c["name"])
+                    continue
+            bits = []
+            for L in (it.get("locations") or []):
+                if isinstance(L, dict):
+                    bits.append(", ".join(x for x in [L.get("city"), L.get("country")] if x))
+            loc = "; ".join(x for x in bits if x)
+            _rows_from(seen, out, it.get("jobTitle", ""), loc, url, loc)
+        if len(items) < GS_PAGE or (page + 1) * GS_PAGE >= int(search.get("totalCount") or 0):
+            break
+        if page + 1 >= GS_MAX:
+            PARTIAL.add(c["name"])
+            break
+        time.sleep(0.3)
+    if blocked:
+        print("  %s: link verification blocked (403); links unverified this run"
+              % c["name"], file=sys.stderr)
+    return out
+
+
+# --- Coveo (Dynatrace) ------------------------------------------------------
+# dynatrace.com proxies its Coveo index at /api/coveo/search/. clickUri is the
+# posting's own URL; raw.office_locations and raw.country carry the location.
+def f_coveo(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "student", "werkstudent")):
+        if _out_of_time(c["name"]):
+            break
+        d = get(c["api"], {"q": kw, "numberOfResults": c.get("size", 100)})
+        for r in d.get("results") or []:
+            raw = r.get("raw") or {}
+            offices = [x for x in (raw.get("office_locations") or []) if x]
+            countries = [x for x in (raw.get("country") or []) if x]
+            loc = "; ".join(offices) or "; ".join(countries)
+            _rows_from(seen, out, r.get("title", ""), loc,
+                       r.get("clickUri") or r.get("uri") or "",
+                       " ".join(offices + countries))
+        time.sleep(0.3)
+    return out
+
+
+# --- Atlassian (its own endpoint) -------------------------------------------
+# One call returns the whole board (248 postings), so there is nothing to page
+# and nothing to search. portalJobPost.portalUrl is the posting's own link.
+def f_atlassian(c):
+    d = get("https://www.atlassian.com/endpoint/careers/listings")
+    out, seen = [], set()
+    for j in d if isinstance(d, list) else []:
+        locs = [x for x in (j.get("locations") or []) if x]
+        url = ((j.get("portalJobPost") or {}).get("portalUrl")) or j.get("applyUrl") or ""
+        _rows_from(seen, out, j.get("title", ""), "; ".join(locs), url, " ".join(locs))
     return out
 
 
@@ -1267,12 +1977,178 @@ def f_bnp(c):
     return _paged(c, _bnp_url, parse, c.get("pages", 45), BNP_HEADERS)
 
 
+# --- SAP SuccessFactors career sites (SAP, OVHcloud) ------------------------
+# One <li class="job-tile" data-url="/job/<CITY>-<Title>-<postcode>/<id>/"> per
+# posting, the title inside an <a class="jobTitle-link">, and on the tenants that
+# show it a "Type de contrat" custom field reading Stage or Alternance, which
+# _contract turns into the label that beats the title.
+#
+# These sites carry the town in the data-url slug and, on OVHcloud, nowhere else
+# on the card. The slug is <City>-<Title words>-<postcode>, and the city can
+# itself contain hyphens (Levallois-Perret), so the split is done by finding
+# where the TITLE starts inside the slug rather than by counting hyphens.
+#
+# Both are read as a keyword search rather than paged whole: jobs.sap.com is a
+# global board of thousands, and the same trade is already made for Thales and
+# Airbus in f_workday. A role whose title carries none of the keywords is
+# invisible to us - which is why the list has the French words in it too.
+_SF_CARD  = re.compile(r'<li[^>]*class="[^"]*job-tile[^"]*"', re.I)
+_SF_URL   = re.compile(r'data-url="([^"]+)"', re.I)
+_SF_LINK  = re.compile(r'<a[^>]*class="[^"]*jobTitle-link[^"]*"[^>]*>(.*?)</a>', re.I | re.S)
+_SF_FIELD = re.compile(r'<div[^>]*id="[^"]*-value"[^>]*>(.*?)</div>', re.I | re.S)
+_SF_ROWS  = 25             # the page size both tenants use
+
+
+def _sf_city(slug, title):
+    """The town out of "TOULOUSE-Stage-Data-Scientist-31000".
+
+    The slug is <city>-<title>-<postcode> and the city may contain hyphens, so
+    cut it where the title begins rather than at the first hyphen."""
+    words = [w for w in re.split(r"[-_]+", slug) if w]
+    first = (re.split(r"[^0-9A-Za-zÀ-ÿ]+", title.strip()) or [""])[0].lower()
+    for i, w in enumerate(words):
+        if first and w.lower() == first and i:
+            return " ".join(words[:i])
+    return words[0] if words else ""
+
+
+def f_sfhtml(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _SF_CARD):
+            u, t = _SF_URL.search(card), _SF_LINK.search(card)
+            if not u or not t:
+                continue
+            title = _plain(t.group(1))
+            if not title:
+                continue
+            path = html.unescape(u.group(1))
+            slug = path.split("/job/")[-1].rsplit("/", 2)[0]
+            city = _sf_city(slug, title)
+            ct = None
+            for f in [_plain(v) for v in _SF_FIELD.findall(card)]:
+                ct = ct or _contract(f)
+            rows.append((title, city, urllib.parse.urljoin(c["base"], path),
+                         "%s %s" % (city, slug.replace("-", " ")), ct))
+        return rows
+
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        if _out_of_time(c["name"]):
+            break
+        for row in _paged(c, lambda p, kw=kw: c["list"] % (urllib.parse.quote(kw), p * _SF_ROWS),
+                          parse, c.get("pages", 10)):
+            _rows_from(seen, out, *row)
+    return out
+
+
+# --- Avature (Siemens) ------------------------------------------------------
+# <article class="article article--result"> per posting: the title in an
+# <a class="link" href=".../JobDetail/<id>">, and the town in a run of
+# <span class="list-item-jobCity|jobState|jobCountry"> spans. The keyword goes in
+# the PATH, not in a query parameter.
+_AV_CARD = re.compile(r'<article[^>]*class="[^"]*article--result[^"]*"', re.I)
+_AV_LINK = re.compile(r'<a[^>]*href="([^"]*/JobDetail/\d+)"[^>]*>(.*?)</a>', re.I | re.S)
+_AV_BIT  = re.compile(r'<span[^>]*class="list-item-(?:jobCity|jobState|jobCountry)"[^>]*>(.*?)</span>',
+                      re.I | re.S)
+
+
+AVATURE_ROWS = 6            # results a search page renders
+
+
+def f_avature(c):
+    def parse(page):
+        rows = []
+        for card in _blocks(page, _AV_CARD):
+            m = _AV_LINK.search(card)
+            if not m:
+                continue
+            title = _plain(m.group(2))
+            if not title:
+                continue
+            bits = [_plain(b) for b in _AV_BIT.findall(card)]
+            loc = ", ".join(b for b in bits if b)
+            rows.append((title, loc, html.unescape(m.group(1)), loc))
+        return rows
+
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        if _out_of_time(c["name"]):
+            break
+        rows = _paged(c, lambda p, kw=kw: c["list"] % (urllib.parse.quote(kw), p + 1),
+                      parse, c.get("pages", 8))
+        # A search that filled its first page and then stopped adding rows is
+        # ambiguous: either the board really has that many, or the page
+        # parameter is being ignored and everything past row six is invisible.
+        # Either way nothing of this company's may be treated as closed.
+        if len(rows) and len(rows) % AVATURE_ROWS == 0:
+            PARTIAL.add(c["name"])
+        for row in rows:
+            _rows_from(seen, out, *row)
+    return out
+
+
+# --- Radancy (Arm) ----------------------------------------------------------
+# A JSON envelope whose "results" is a slab of HTML: one <li class="job-card">
+# per posting, with the title link, a <span class="location"> that frequently
+# says only "Multiple locations", and a <span class="category">. The href is
+# /job/<town>/<slug>/<org>/<id>, so the town is read off the href as well - that
+# is the only place it appears for a multi-location posting.
+_RAD_CARD = re.compile(r'<li[^>]*class="[^"]*job-card[^"]*"', re.I)
+_RAD_LINK = re.compile(r'<a[^>]*class="[^"]*job-card__title[^"]*"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
+                       re.I | re.S)
+_RAD_LOC  = re.compile(r'<span[^>]*class="[^"]*\blocation\b[^"]*"[^>]*>(.*?)</span>', re.I | re.S)
+RADANCY_ROWS = 50
+
+
+def f_radancy(c):
+    out, seen = [], set()
+    for kw in c.get("keywords", ("intern", "internship", "stage", "graduate")):
+        for page in range(1, c.get("pages", 8) + 1):
+            if _out_of_time(c["name"]):
+                return out
+            url = ("%s/search-jobs/results?ActiveFacetID=0&CurrentPage=%d&RecordsPerPage=%d"
+                   "&Distance=50&RadiusUnitType=0&Keywords=%s&Location=&ShowRadius=False"
+                   "&IsPagination=False&CustomFacetName=&FacetTerm=&FacetType=0"
+                   "&SearchResultsModuleName=Search+Results&SearchFiltersModuleName=Search+Filters"
+                   "&SortCriteria=0&SortDirection=0&SearchType=5"
+                   % (c["base"], page, RADANCY_ROWS, urllib.parse.quote(kw)))
+            frag = (get(url) or {}).get("results") or ""
+            fresh = 0
+            for card in _blocks(frag, _RAD_CARD):
+                m = _RAD_LINK.search(card)
+                if not m:
+                    continue
+                lm = _RAD_LOC.search(card)
+                loc = _plain(lm.group(1)) if lm else ""
+                href = html.unescape(m.group(1))
+                # The results carry marketing cards alongside postings - an Arm
+                # Ireland page and an intern's blog post both render as job-cards
+                # - and only a real posting is under /job/<town>/<slug>/<org>/<id>.
+                if "/job/" not in href:
+                    continue
+                town = " ".join(href.strip("/").split("/")[1:2]).replace("-", " ")
+                fresh += _rows_from(seen, out, _plain(m.group(2)), loc or town,
+                                    urllib.parse.urljoin(c["base"], href),
+                                    "%s %s" % (loc, town))
+            if not fresh:
+                break
+            time.sleep(0.3)
+    return out
+
+
 FETCH = {"greenhouse": f_greenhouse, "lever": f_lever, "workable": f_workable,
          "smartrecruiters": f_smartrecruiters, "workday": f_workday,
          "ashby": f_ashby, "teamtailor": f_teamtailor,
          "dassault": f_dassault, "wttj": f_wttj, "sgcareers": f_sgcareers,
          "talentsoft": f_talentsoft, "icims": f_icims, "gestmax": f_gestmax,
-         "bnp": f_bnp}
+         "bnp": f_bnp,
+         # the 2026-09-06 batch
+         "ibm": f_ibm, "phenom": f_phenom, "phenom_widget": f_phenom_widget,
+         "eightfold": f_eightfold, "eightfold_v2": f_eightfold_v2,
+         "oracle_cx": f_oracle_cx, "amazon": f_amazon, "gs": f_gs,
+         "coveo": f_coveo, "atlassian": f_atlassian, "sfhtml": f_sfhtml,
+         "avature": f_avature, "radancy": f_radancy}
 
 ENDPOINT = {
     "greenhouse":      lambda c: "boards-api.greenhouse.io/v1/boards/%s/jobs" % c["slug"],
@@ -1289,6 +2165,19 @@ ENDPOINT = {
     "icims":           lambda c: (c["list"] % 0).split("?")[0].replace("https://", ""),
     "gestmax":         lambda c: (c["list"] % 1).replace("https://", ""),
     "bnp":             lambda c: "group.bnpparibas/en/careers/all-job-offers (form[type][]=28)",
+    "ibm":             lambda c: "www-api.ibm.com/search/api/v2 (careers2 scope)",
+    "phenom":          lambda c: c["api"].replace("https://", ""),
+    "phenom_widget":   lambda c: c["api"].replace("https://", ""),
+    "eightfold":       lambda c: "%s/api/pcsx/search (domain %s)" % (c["host"].replace("https://", ""), c["domain"]),
+    "eightfold_v2":    lambda c: "%s/api/apply/v2/jobs (domain %s)" % (c["host"].replace("https://", ""), c["domain"]),
+    "oracle_cx":       lambda c: "%s/hcmRestApi/.../recruitingCEJobRequisitions" % c["host"].replace("https://", ""),
+    "amazon":          lambda c: "www.amazon.jobs/en/search.json",
+    "gs":              lambda c: "api-higher.gs.com/gateway/api/v1/graphql (GetRoles)",
+    "coveo":           lambda c: c["api"].replace("https://", ""),
+    "atlassian":       lambda c: "www.atlassian.com/endpoint/careers/listings",
+    "sfhtml":          lambda c: c["list"].split("?")[0].replace("https://", ""),
+    "avature":         lambda c: c["list"].split("?")[0].replace("https://", "") % "<keyword>",
+    "radancy":         lambda c: "%s/search-jobs/results" % c["base"].replace("https://", ""),
 }
 
 
@@ -1319,11 +2208,18 @@ def scan():
                "partial": False, "total": 0, "france": 0, "hits": [], "other": [],
                "unsure": [], "foreign": []}
         try:
+            _budget_start()
+            if _HAS_ALARM:
+                signal.signal(signal.SIGALRM, _alarm)
+                signal.alarm(COMPANY_BUDGET + 60)
             jobs = FETCH[c["ats"]](c)
         except Exception as e:
             row["error"] = "%s: %s" % (type(e).__name__, e)
             results.append(row)
             continue
+        finally:
+            if _HAS_ALARM:
+                signal.alarm(0)
         placed = [(j, where(j[3])) for j in jobs]
         row["total"]  = len(jobs)
         row["france"] = sum(1 for _, w in placed if w == "fr")

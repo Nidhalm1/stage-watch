@@ -11,7 +11,9 @@ What changed from the previous version, and why:
   them. That was ~12k tokens a night, most of it re-reading the same CSS.
 - **It no longer reads the artifact's saved HTML.** The `Artifact` read call is
   what makes a republish legal; opening the file it saves adds nothing.
-- **Counts corrected**: the rosters are 20 / 20 / 9 companies, not 20 / 18 / 4.
+- **Counts corrected**: the rosters are 33 / 29 / 25 companies as of 2026-09-06
+  (they were 20 / 20 / 9). Thirty companies were added that day and board 3
+  was renamed "Defence, Finance & Silicon Watch".
 - **The filtered boxes can now ping.** A role that failed the tech filter or
   whose location could not be placed is on the board but was never announced.
   `also_new` carries them, tagged `unsure` (location not placed - could be a real
@@ -32,9 +34,13 @@ board to its own artifact - republishing is what notifies the user. You never
 fetch job data yourself: the Claude sandbox cannot reach the ATS APIs, which is
 why the sweep runs in GitHub Actions.
 
-  board.html   -> https://claude.ai/code/artifact/92513aa1-df91-4640-923b-32555bfbb8c3   "Stage Watch"             (20 observability/infra/dev-tools)
-  board2.html  -> https://claude.ai/code/artifact/277bfba8-ce59-419c-a6df-935e8133a39e   "French Tech Watch"       (20 French tech/fintech/scale-ups)
-  board3.html  -> https://claude.ai/code/artifact/8f9b34a1-cee4-4213-b0d6-cc0b88b55fff   "Defence & Finance Watch" (9 defence/aerospace/trading/banks)
+  board.html   -> https://claude.ai/code/artifact/92513aa1-df91-4640-923b-32555bfbb8c3   "Stage Watch"                      (33 observability/infra/dev-tools/cloud)
+  board2.html  -> https://claude.ai/code/artifact/277bfba8-ce59-419c-a6df-935e8133a39e   "French Tech Watch"                (29 French tech/fintech/scale-ups)
+  board3.html  -> https://claude.ai/code/artifact/8f9b34a1-cee4-4213-b0d6-cc0b88b55fff   "Defence, Finance & Silicon Watch" (25 defence/aerospace/trading/banks/semiconductors)
+
+Board 3 was renamed on 2026-09-06 (it was "Defence & Finance Watch") when the
+semiconductor and enterprise-hardware companies joined it. Same file, same
+artifact URL - only the name on the page changed.
 
 These are SEPARATE watches with separate state. Never publish one board's file to
 another's URL, and never merge or compare their contents. Treat each
@@ -93,7 +99,8 @@ notifications:
 For EACH board independently, DO NOT PUBLISH that board if ANY holds:
   (a) its file is missing, or status.json has no entry and the fallback greps
       find nothing
-  (b) failed >= 4  (for board3, 9 companies, use failed >= 3)
+  (b) failed >= 5  (the rosters are 33 / 29 / 25 companies since 2026-09-06;
+      before that it was 4, and 3 for board3)
   (c) scanned == 0
   (d) stamp is more than 2 days older than today
 In those cases publish NOTHING for that board; the previously published version

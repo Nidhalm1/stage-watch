@@ -1,0 +1,449 @@
+#!/usr/bin/env python3
+"""Probe the 2026-09-06 batch of candidate job APIs and print their shape.
+
+    python probe_new.py [name ...]        # blank = every source
+
+Same reason this exists as probe_html.py and bulk_probe.py: the Claude sandbox's
+egress proxy answers 403 to CONNECT for every ATS host, so a response body can
+only be read from a runner. Run it from Actions, read the log, then write the
+fetcher against what it printed. Nothing in make_board.py may be guessed.
+
+Every request below is exactly the one that was reported working on 2026-09-06;
+this prints what it answers with, so the field names a fetcher reads are copied
+off a live payload rather than assumed.
+"""
+import gzip, json, re, sys, time, urllib.error, urllib.parse, urllib.request
+
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+JSON_HDR = {"User-Agent": UA, "Accept": "application/json,text/plain,*/*"}
+HTML_HDR = {"User-Agent": UA,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.8"}
+
+IBM_BODY = {
+    "appId": "careers", "scopes": ["careers2"], "size": 5, "from": 0,
+    "sort": [{"_score": "desc"}],
+    # Probed 2026-09-06: with no _source the hits come back as _id/_index/_score
+    # and nothing else, so the field list is what makes this endpoint useful.
+    # Asking for the whole keyword range to find which one carries the location.
+    "_source": ["_id", "title", "url", "field_keyword_01", "field_keyword_02",
+                "field_keyword_03", "field_keyword_04", "field_keyword_05",
+                "field_keyword_06", "field_keyword_07", "field_keyword_08",
+                "field_keyword_09", "field_keyword_17", "field_keyword_18",
+                "field_keyword_19", "field_text_01"],
+    "query": {"bool": {"must": [{"simple_query_string": {
+        "query": "intern",
+        "fields": ["keywords^1", "body^1", "url^2", "description^2", "title^3", "field_text_01"]}}]}},
+}
+
+PHENOM_WIDGET = {
+    "lang": "en_us", "deviceType": "desktop", "country": "us",
+    "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "",
+    "subsearch": "", "from": 0, "jobs": True, "counts": True,
+    "all_fields": ["category", "country", "state", "city", "type"], "size": 5,
+    "clearAll": False, "jdsource": "facets", "isSliderEnable": False,
+    "pageId": "page11", "siteType": "external", "keywords": "intern",
+    "global": True, "selected_fields": {}, "locationData": {}}
+
+GS_BODY = {
+    "operationName": "GetRoles",
+    "variables": {"searchQueryInput": {
+        "page": {"pageSize": 5, "pageNumber": 0},
+        "sort": {"sortStrategy": "RELEVANCE", "sortOrder": "DESC"},
+        "filters": [], "experiences": ["EARLY_CAREER"], "searchTerm": ""}},
+    "query": ("query GetRoles($searchQueryInput: RoleSearchQueryInput!){roleSearch"
+              "(searchQueryInput:$searchQueryInput){totalCount items{roleId jobTitle "
+              "division jobFunction locations{primary city country} externalSource{sourceId}}}}")}
+
+# name -> (kind, url, extra). kind: json | form | html
+#   json  GET when extra has no "body", POST of extra["body"] when it does
+#   form  POST of extra["form"] as x-www-form-urlencoded
+#   html  GET, dump cards matching extra["card"] (or every anchor when absent)
+SOURCES = {
+    # --- Elasticsearch / custom -------------------------------------------
+    "ibm": ("json", "https://www-api.ibm.com/search/api/v2",
+            {"body": IBM_BODY, "items": "hits.hits", "total": "hits.total.value"}),
+
+    # --- Workday (already supported; probed only to confirm the site slugs) --
+    "intel": ("json", "https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs",
+              {"body": {"appliedFacets": {}, "limit": 5, "offset": 0, "searchText": "intern"},
+               "items": "jobPostings", "total": "total"}),
+    "broadcom": ("json", "https://broadcom.wd1.myworkdayjobs.com/wday/cxs/broadcom/External_Career/jobs",
+                 {"body": {"appliedFacets": {}, "limit": 5, "offset": 0, "searchText": "intern"},
+                  "items": "jobPostings", "total": "total"}),
+    "nvidia": ("json", "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs",
+               {"body": {"appliedFacets": {}, "limit": 5, "offset": 0, "searchText": "intern"},
+                "items": "jobPostings", "total": "total"}),
+
+    # --- Phenom People ------------------------------------------------------
+    "amd": ("json", "https://careers.amd.com/api/jobs?keywords=intern&page=1&sortBy=relevance&descending=false&internal=false",
+            {"items": "jobs", "total": "totalCount"}),
+    "githubcareers": ("json", "https://www.github.careers/api/jobs?keywords=intern&page=1&sortBy=relevance&descending=false&internal=false",
+                      {"items": "jobs", "total": "totalCount"}),
+    # keywords=intern answered 200 with totalCount 0 on 2026-09-06, so the board
+    # is either empty of interns or the keyword is not matched the way AMD's is.
+    # Ask for the whole board - GitHub's is small - and count what comes back.
+    "githubcareers2": ("json", "https://www.github.careers/api/jobs?page=1&sortBy=relevance&descending=false&internal=false",
+                       {"items": "jobs", "total": "totalCount"}),
+    "amd-page2": ("json", "https://careers.amd.com/api/jobs?keywords=intern&page=2&sortBy=relevance&descending=false&internal=false",
+                  {"items": "jobs", "total": "totalCount"}),
+    "hpe": ("json", "https://careers.hpe.com/widgets",
+            {"body": PHENOM_WIDGET, "items": "refineSearch.data.jobs",
+             "total": "refineSearch.totalHits"}),
+    "cisco": ("json", "https://careers.cisco.com/widgets",
+              {"body": dict(PHENOM_WIDGET, lang="en_global", country="global",
+                            all_fields=["country", "state", "city", "category"]),
+               "items": "refineSearch.data.jobs", "total": "refineSearch.totalHits"}),
+
+    # --- Eightfold ----------------------------------------------------------
+    "qualcomm": ("json", "https://careers.qualcomm.com/api/pcsx/search?domain=qualcomm.com&query=intern&location=France&start=0&num=5",
+                 {"items": "data.positions", "total": "data.count"}),
+    "microsoft": ("json", "https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=intern&location=France&start=0&num=5",
+                  {"items": "data.positions", "total": "data.count"}),
+    "morganstanley": ("json", "https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=intern&location=France&start=0&num=5",
+                      {"items": "data.positions", "total": "data.count"}),
+    "ericsson": ("json", "https://jobs.ericsson.com/api/pcsx/search?domain=ericsson.com&query=intern&location=France&start=0&num=5",
+                 {"items": "data.positions", "total": "data.count"}),
+    "millennium": ("json", "https://career.mlp.com/api/apply/v2/jobs?domain=mlp.com&start=0&num=5&query=intern",
+                   {"items": "positions", "total": "count"}),
+
+    # --- Oracle HCM Cloud (CX) ---------------------------------------------
+    "dell": ("json", "https://enterpriseplatform.dell.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations,flexFieldsFacet.values&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
+             {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
+    "nokia": ("json", "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,keyword=intern,sortBy=POSTING_DATES_DESC",
+              {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
+    "oracle": ("json", "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
+               {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
+    "jpmorgan": ("json", "https://jpmc.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
+                 {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
+
+    # --- one-offs -----------------------------------------------------------
+    "arm": ("json", "https://careers.arm.com/search-jobs/results?ActiveFacetID=0&CurrentPage=1&RecordsPerPage=15&Distance=50&RadiusUnitType=0&Keywords=intern&Location=&ShowRadius=False&IsPagination=False&CustomFacetName=&FacetTerm=&FacetType=0&SearchResultsModuleName=Search+Results&SearchFiltersModuleName=Search+Filters&SortCriteria=0&SortDirection=0&SearchType=5",
+            {"html_in": "results", "raw": 3000}),
+    "amazon": ("json", "https://www.amazon.jobs/en/search.json?base_query=intern&loc_query=France&result_limit=5",
+               {"items": "jobs", "total": "hits"}),
+    "goldman": ("json", "https://api-higher.gs.com/gateway/api/v1/graphql",
+                {"body": GS_BODY, "items": "data.roleSearch.items",
+                 "total": "data.roleSearch.totalCount"}),
+    "hrt": ("form", "https://www.hudsonrivertrading.com/wp-admin/admin-ajax.php",
+            {"form": "action=get_hrt_jobs_handler&data[search]=", "items": ""}),
+    "dynatrace": ("json", "https://www.dynatrace.com/api/coveo/search/",
+                  {"body": {"q": "intern", "numberOfResults": 5},
+                   "items": "results", "total": "totalCount"}),
+    "atlassian": ("json", "https://www.atlassian.com/endpoint/careers/listings", {"items": ""}),
+
+    # --- HTML only ----------------------------------------------------------
+    "sap": ("html", "https://jobs.sap.com/tile-search-results/?q=intern&locationsearch=France&startrow=0",
+            {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 2}),
+    "ovh": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=0",
+            {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 1, "cap": 7000}),
+    "siemens": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1",
+                {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
+    "hsbc": ("html", "https://mycareer.hsbc.com/en_GB/external/SearchJobs/intern?listFilterMode=1&pipelineRecordsPerPage=10",
+             {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
+    "clevercloud": ("html", "https://www.clever.cloud/jobs/", {"want": 0}),
+    # f_sfhtml got a 403 off this exact URL on its first live run while the
+    # q=stage probe above answered 200 - so: is it the keyword, the header set,
+    # or rate limiting?
+    "ovh-intern": ("html", "https://careers.ovhcloud.com/search/?q=intern&locale=fr_FR&startrow=0",
+                   {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "ovh-nokw": ("html", "https://careers.ovhcloud.com/search/?locale=fr_FR&startrow=0",
+                 {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    # greenhouse/optiver answered with an EMPTY jobs list on the first live run,
+    # which is the failure mode this repo treats as a dead slug.
+    "optiver": ("json", "https://boards-api.greenhouse.io/v1/boards/optiver/jobs?content=false",
+                {"items": "jobs", "total": "meta.total"}),
+    "optiver2": ("json", "https://boards-api.greenhouse.io/v1/boards/optiver/jobs",
+                 {"items": "jobs", "total": "meta.total"}),
+
+    # --- do the URLs a fetcher would have to BUILD actually exist? ----------
+    # Oracle CX and Eightfold pcsx return an id or a relative path, not a link,
+    # so a fetcher has to construct one - and this repo only shows links that
+    # came back live. These check the construction before it is written down:
+    # status + <title> for a job id read off the probe above.
+    "dell-joburl": ("head", "https://enterpriseplatform.dell.com/hcmUI/CandidateExperience/en/sites/CX_1/job/295136/", {}),
+    "nokia-joburl": ("head", "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40113/", {}),
+    "nokia-joburl2": ("head", "https://jobs.nokia.com/careers/job/40113", {}),
+    "qualcomm-joburl": ("head", "https://careers.qualcomm.com/careers/job/446720469345", {}),
+    "microsoft-joburl": ("head", "https://apply.careers.microsoft.com/careers/job/1970393556988021", {}),
+    # Morgan Stanley's tenant answered every one of f_eightfold's four searches
+    # with zero positions. Does it answer ANY search, and is the domain right?
+    "ms-empty": ("json", "https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=&location=&start=0&num=5",
+                 {"items": "data.positions", "total": "data.count"}),
+    "ms-analyst": ("json", "https://morganstanley.eightfold.ai/api/pcsx/search?domain=morganstanley.com&query=analyst&location=&start=0&num=5",
+                   {"items": "data.positions", "total": "data.count"}),
+    "ms-v2": ("json", "https://morganstanley.eightfold.ai/api/apply/v2/jobs?domain=morganstanley.com&start=0&num=5",
+              {"items": "positions", "total": "count"}),
+    "gs-joburl": ("head", "https://higher.gs.com/roles/162057", {}),
+    "gs-joburl2": ("head", "https://higher.gs.com/roles/162057_GS_EARLY_CAREER", {}),
+    "ibm-joburl": ("head", "https://careers.ibm.com/careers/JobDetail?jobId=128675", {}),
+    # Does this board paginate at all? Same search, three candidate page
+    # parameters: if the first job id is identical on all of them, the parameter
+    # is ignored and a fetcher must not treat page 1 as the whole board.
+    "siemens-p2": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1&page=2",
+                   {"want": 0, "idpat": r"JobDetail/(\d+)"}),
+    "siemens-p2b": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1&jobOffset=10",
+                    {"want": 0, "idpat": r"JobDetail/(\d+)"}),
+    "siemens-p1": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1",
+                   {"want": 0, "idpat": r"JobDetail/(\d+)"}),
+    "sap-p2": ("html", "https://jobs.sap.com/tile-search-results/?q=intern&locationsearch=France&startrow=25",
+               {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "ovh-p2b": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
+                {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "ovh-p1": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=0",
+               {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "siemens-fr": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/stage?listFilterMode=1",
+                   {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
+    "ovh-page2": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
+                  {"card": r'<li[^>]*class="[^"]*job-tile[^"]*"', "want": 1}),
+}
+
+
+def dig(d, path):
+    cur = d
+    for part in (path.split(".") if path else []):
+        if isinstance(cur, list):
+            try:
+                cur = cur[int(part)]
+            except (ValueError, IndexError):
+                return None
+        elif isinstance(cur, dict):
+            cur = cur.get(part)
+        else:
+            return None
+    return cur
+
+
+def fetch(url, headers, data=None):
+    req = urllib.request.Request(url, data=data,
+                                 headers={**headers, "Accept-Encoding": "gzip"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        raw = r.read()
+        if "gzip" in (r.headers.get("Content-Encoding") or "").lower():
+            raw = gzip.decompress(raw)
+        return r.status, r.geturl(), raw.decode(r.headers.get_content_charset() or "utf-8", "replace")
+
+
+def flat(obj, prefix="", out=None, depth=0):
+    """Every scalar in an item as path -> value, values clipped hard.
+
+    A verbatim dump of one job posting is 2-4 KB of description HTML, and the
+    only thing a fetcher needs off it is which FIELD holds the title, the URL
+    and the location. So print the shape, not the prose."""
+    out = {} if out is None else out
+    if depth > 3:
+        return out
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            flat(v, "%s.%s" % (prefix, k) if prefix else k, out, depth + 1)
+    elif isinstance(obj, list):
+        if not obj:
+            out[prefix] = "[]"
+        else:
+            for i, v in enumerate(obj[:2]):
+                flat(v, "%s[%d]" % (prefix, i), out, depth + 1)
+            if len(obj) > 2:
+                out[prefix + "[...]"] = "%d items" % len(obj)
+    else:
+        text = re.sub(r"\s+", " ", str(obj))
+        out[prefix] = (text[:90] + "..") if len(text) > 90 else text
+    return out
+
+
+# Prose and machine-learned padding: a fetcher never reads these, and printing
+# them pushed the fields it DOES read off the end of the runner log.
+NOISE = re.compile(r"description|responsibilit|qualificat|body|content|excerpt|"
+                   r"summary|ml_|tags\d|highlight|logo|benefit|salary|compensation",
+                   re.I)
+
+
+def show(obj, cap=None):
+    for k, v in flat(obj).items():
+        if NOISE.search(k):
+            continue
+        print("   %-44s %s" % (k[:44], v))
+
+
+def probe(name):
+    kind, url, extra = SOURCES[name]
+    print("=" * 78)
+    print("%-14s %s %s" % (name, kind.upper(), url[:150]))
+    headers = dict(JSON_HDR)
+    data = None
+    if kind == "json" and "body" in extra:
+        headers["Content-Type"] = "application/json"
+        data = json.dumps(extra["body"]).encode()
+    elif kind == "form":
+        headers["Content-Type"] = "application/x-www-form-urlencoded"
+        data = extra["form"].encode()
+    elif kind in ("html", "head"):
+        headers = dict(HTML_HDR)
+    try:
+        status, final, body = fetch(url, headers, data)
+    except urllib.error.HTTPError as e:
+        snippet = e.read(300).decode("utf-8", "replace").replace("\n", " ")
+        print("  HTTP %s %s  %s" % (e.code, e.reason, snippet[:250]))
+        return
+    except Exception as e:
+        print("  %s: %s" % (type(e).__name__, e))
+        return
+    print("  status %s  %d bytes%s" % (status, len(body),
+                                       "  -> %s" % final[:120] if final != url else ""))
+
+    if kind == "head":
+        m = re.search(r"<title[^>]*>(.{0,120}?)</title>", body, re.I | re.S)
+        print("  title: %s" % (re.sub(r"\s+", " ", m.group(1)).strip() if m else "-"))
+        return
+
+    if kind == "html":
+        card = extra.get("card")
+        want = extra.get("want", 2)
+        hrefs, seen = [], set()
+        for h in re.findall(r'<a\b[^>]*href="([^"]+)"', body, re.I):
+            if h not in seen and re.search(r"job|offre|career|emploi", h, re.I):
+                seen.add(h)
+                hrefs.append(h)
+        print("  %d job-ish anchors (first 25):" % len(hrefs))
+        for h in hrefs[:12]:
+            print("     %s" % h[:150])
+        # Where does this page keep the LOCATION? Every one of these boards
+        # renders it in some labelled element; print the labelled elements
+        # rather than guessing which one it is.
+        loc_hits = []
+        for m in re.finditer(r'<[a-z]+[^>]*class="([^"]*(?:location|city|country|facility|region)[^"]*)"[^>]*>(.{0,110}?)<',
+                             body, re.I | re.S):
+            hit = "%s -> %s" % (m.group(1)[:50], re.sub(r"\s+", " ", m.group(2)).strip()[:70])
+            if hit not in loc_hits:
+                loc_hits.append(hit)
+        print("  %d location-ish elements (first 12):" % len(loc_hits))
+        for h in loc_hits[:12]:
+            print("     %s" % h)
+        if extra.get("idpat"):
+            ids = []
+            for m in re.finditer(extra["idpat"], body):
+                if m.group(1) not in ids:
+                    ids.append(m.group(1))
+            print("  first 8 ids for %s: %s" % (extra["idpat"], ids[:8]))
+        if card:
+            starts = [m.start() for m in re.finditer(card, body, re.I)]
+            print("  %d cards matching %s" % (len(starts), card))
+            for i, st in enumerate(starts[:want]):
+                end = starts[i + 1] if i + 1 < len(starts) else min(len(body), st + 3000)
+                print("  --- card %d verbatim ---" % (i + 1))
+                print(body[st:end][:extra.get("cap", 2500)])
+        return
+
+    if "raw" in extra and "html_in" not in extra:
+        print("  --- first %d chars verbatim ---" % extra["raw"])
+        print(body[:extra["raw"]])
+        return
+
+    try:
+        d = json.loads(body)
+    except Exception as e:
+        print("  not JSON (%s); first 400 chars:" % e)
+        print(body[:400])
+        return
+    if isinstance(d, dict):
+        print("  top-level keys: %s" % list(d)[:20])
+    if extra.get("html_in"):
+        # a JSON envelope whose payload is a slab of HTML (Radancy does this)
+        frag = d.get(extra["html_in"]) or ""
+        print("  %r holds %d chars of HTML; from its first job link:"
+              % (extra["html_in"], len(frag)))
+        m = re.search(r"<li\b", frag)
+        print(frag[m.start():m.start() + extra.get("raw", 3000)] if m
+              else frag[:extra.get("raw", 3000)])
+        return
+    items = d if extra.get("items") == "" else dig(d, extra["items"])
+    total = dig(d, extra["total"]) if extra.get("total") else None
+    print("  items at %r: %s   total at %r: %s"
+          % (extra.get("items"), len(items) if isinstance(items, list) else type(items).__name__,
+             extra.get("total"), total))
+    if isinstance(items, list) and items:
+        if isinstance(items[0], dict):
+            print("  item keys: %s" % sorted(items[0])[:60])
+        print("  --- item 1 flattened ---")
+        show(items[0])
+        if len(items) > 1:
+            print("  --- item 2: fields that DIFFER from item 1 ---")
+            a, b = flat(items[0]), flat(items[1])
+            for k, v in b.items():
+                if a.get(k) != v and not NOISE.search(k):
+                    print("   %-44s %s" % (k[:44], v))
+
+
+# --- run the real fetchers --------------------------------------------------
+# The step after reading a payload is checking that the fetcher written against
+# it works, and that is not something the sandbox can do either. "fetchers" runs
+# make_board's own FETCH entry for every company added on 2026-09-06 and prints
+# what each one came back with, without building or committing a board.
+NEW_NAMES = [
+    "GitHub", "Atlassian", "Dynatrace", "OpenAI", "Anthropic", "Stripe",
+    "Palantir", "ServiceNow", "IBM", "Oracle", "SAP", "Microsoft", "Amazon / AWS",
+    "OVHcloud", "Nokia", "Ericsson", "Siemens",
+    "Goldman Sachs", "Morgan Stanley", "J.P. Morgan", "Millennium",
+    "Intel", "NVIDIA", "Broadcom", "AMD", "Qualcomm", "Arm", "Dell", "HPE", "Cisco",
+]
+
+
+def fetchers(only):
+    import make_board as mb
+    # Matched as substrings: the names arrive as shell words, so "Goldman" has
+    # to find "Goldman Sachs" and "AWS" has to find "Amazon / AWS".
+    wanted = [n.lower() for n in (only or NEW_NAMES)]
+    for roster in ("1", "2", "3"):
+        for c in mb.ROSTERS[roster]["companies"]:
+            if not any(w in c["name"].lower() for w in wanted):
+                continue
+            t0 = time.time()
+            # flushed, and printed BEFORE the fetch: stdout is a pipe here, so a
+            # company that hangs would otherwise take its own name down with it
+            print("%-15s %-14s fetching..." % (c["name"], c["ats"]), flush=True)
+            try:
+                mb._budget_start()
+                if mb._HAS_ALARM:
+                    import signal
+                    signal.signal(signal.SIGALRM, mb._alarm)
+                    signal.alarm(mb.COMPANY_BUDGET + 60)
+                rows = mb.FETCH[c["ats"]](c)
+            except Exception as e:
+                print("%-15s %-14s FAILED  %s: %s  (%.0fs)"
+                      % (c["name"], c["ats"], type(e).__name__, str(e)[:100],
+                         time.time() - t0), flush=True)
+                continue
+            finally:
+                if mb._HAS_ALARM:
+                    import signal
+                    signal.alarm(0)
+            itn = [r for r in rows if mb._is_intern(r)]
+            hits = [r for r in itn if mb.where(r[3]) == "fr" and mb.is_tech(r[0])]
+            other = [r for r in itn if mb.where(r[3]) == "fr" and not mb.is_tech(r[0])]
+            unsure = [r for r in itn if mb.where(r[3]) == "unknown"]
+            print("%-15s %-14s %5d rows %4d intern %3d FR-tech %3d FR-other %3d unsure "
+                  "%6.1fs%s"
+                  % (c["name"], c["ats"], len(rows), len(itn), len(hits), len(other),
+                     len(unsure), time.time() - t0,
+                     "  PARTIAL" if c["name"] in mb.PARTIAL else ""))
+            for r in (hits or [])[:3]:
+                print("    + %-52s | %-26s | %s" % (r[0][:52], str(r[1])[:26], r[2][:70]))
+            for r in (unsure or [])[:2]:
+                print("    ? %-52s | %-26s | %s" % (r[0][:52], str(r[1])[:26], r[2][:70]))
+            if not rows:
+                print("    (nothing came back)")
+            elif not hits:
+                print("    . %-52s | %-26s | %s"
+                      % (rows[0][0][:52], str(rows[0][1])[:26], rows[0][2][:70]))
+
+
+if __name__ == "__main__":
+    names = sys.argv[1:] or list(SOURCES)
+    if names and names[0] == "fetchers":
+        fetchers(names[1:])
+        raise SystemExit(0)
+    for n in names:
+        if n not in SOURCES:
+            print("unknown source %r; known: %s" % (n, " ".join(SOURCES)))
+            continue
+        probe(n)
+        time.sleep(1)
