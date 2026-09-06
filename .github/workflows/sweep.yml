@@ -45,9 +45,20 @@ jobs:
       # So the HTML-board probe rides along here until it can live on its own.
       # Blank input = skipped, which is what every scheduled run does.
       - name: Probe HTML job boards
-        if: inputs.probe_html != ''
+        if: inputs.probe_html != '' && !startsWith(inputs.probe_html, 'new:')
         continue-on-error: true
         run: python probe_html.py ${{ inputs.probe_html }}
+
+      # Same rider, for the 2026-09-06 batch of candidate APIs: a value of
+      # "new:ibm amd sap" runs probe_new.py on those sources instead. It shares
+      # the probe_html input because workflow_dispatch only offers the INPUTS
+      # defined on the default branch, while the STEPS come from this branch.
+      - name: Probe candidate APIs
+        if: startsWith(inputs.probe_html, 'new:')
+        continue-on-error: true
+        env:
+          PROBE_NEW: ${{ inputs.probe_html }}
+        run: python probe_new.py ${PROBE_NEW#new:}
 
       - name: Batch 1 - Stage Watch
         id: b1
