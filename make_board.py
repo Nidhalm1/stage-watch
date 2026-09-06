@@ -1158,6 +1158,15 @@ def f_sgcareers(c):
 # why the keyword lists below include the French words as well as the English.
 
 
+# How many built URLs to HEAD-check per company. The point of the check is to
+# prove the CONSTRUCTION - "/careers/job/<id>" under this host is really where a
+# posting lives - not to re-verify every row: Dell and Oracle return hundreds of
+# requisitions a run, and one HEAD each would be both slow and rude. A sample
+# that all answers means the pattern holds; a single 404 in it marks the company
+# partial, so nothing of theirs can be closed on a run whose links are suspect.
+VERIFY_SAMPLE = 5
+
+
 def _rows_from(seen, out, title, loc, url, blob, contract=None):
     """Append one row, de-duplicated by url. Every fetcher below merges several
     searches, and the same posting comes back under more than one of them."""
@@ -1300,7 +1309,7 @@ EIGHTFOLD_MAX = 200
 
 def f_eightfold(c):
     out, seen = [], set()
-    verify, blocked = True, False
+    verify, blocked, checked = True, False, 0
     for query, place in c.get("queries", (("intern", "France"), ("stage", "France"),
                                           ("stagiaire", ""), ("internship", "France"))):
         start = 0
@@ -1316,7 +1325,8 @@ def f_eightfold(c):
                 url = urllib.parse.urljoin(c["host"], path)
                 if url in seen:
                     continue
-                if verify:
+                if verify and checked < VERIFY_SAMPLE:
+                    checked += 1
                     v = _verify(url)
                     if v == "blocked":
                         verify = False          # host refuses us; stop spending requests
@@ -1381,7 +1391,7 @@ ORACLE_EXPAND = "requisitionList.workLocation,requisitionList.secondaryLocations
 
 def f_oracle_cx(c):
     out, seen = [], set()
-    verify, blocked = True, False
+    verify, blocked, checked = True, False, 0
     site = c.get("site", "CX_1")
     for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
         off = 0
@@ -1402,7 +1412,8 @@ def f_oracle_cx(c):
                 link = "%s/hcmUI/CandidateExperience/en/sites/%s/job/%s/" % (c["host"], site, rid)
                 if link in seen:
                     continue
-                if verify:
+                if verify and checked < VERIFY_SAMPLE:
+                    checked += 1
                     v = _verify(link)
                     if v == "blocked":
                         verify = False
@@ -1486,7 +1497,7 @@ GS_MAX = 20                 # pages
 
 def f_gs(c):
     out, seen = [], set()
-    verify, blocked = True, False
+    verify, blocked, checked = True, False, 0
     for page in range(GS_MAX):
         body = {"operationName": "GetRoles", "query": GS_QUERY,
                 "variables": {"searchQueryInput": {
@@ -1504,7 +1515,8 @@ def f_gs(c):
             url = "%s/roles/%s" % (c["site"], src)
             if url in seen:
                 continue
-            if verify:
+            if verify and checked < VERIFY_SAMPLE:
+                checked += 1
                 v = _verify(url)
                 if v == "blocked":
                     verify = False
