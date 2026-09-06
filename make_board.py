@@ -59,6 +59,48 @@ COMPANIES = [
      "careers": "https://www.databricks.com/company/careers"},
     {"name": "Red Hat",      "ats": "workday", "tenant": "redhat", "wd": "wd5",
      "site": "jobs", "careers": "https://www.redhat.com/en/jobs"},
+    # --- added 2026-09-06. Every endpoint below was read off a live response by
+    # probe_new.py on a runner that day; see that file for the exact request and
+    # NEW-SOURCES.md for what each one answered with. The rule has not changed:
+    # nothing goes in this list that has not been probed.
+    {"name": "GitHub",       "ats": "phenom",
+     "api": "https://www.github.careers/api/jobs", "keywords": ("",), "pages": 40,
+     "careers": "https://www.github.careers/"},
+    # This replaces the "GitHub: iCIMS, no public API" note that used to sit in
+    # NO_API. It IS iCIMS underneath - data.ats_code says so - but Phenom sits in
+    # front of it with a JSON board. keywords="" pages the whole thing: a
+    # keywords=intern search answered 200 with totalCount 0 while the board was
+    # live, so on a board this small asking for everything is safer and cheaper.
+    {"name": "Atlassian",    "ats": "atlassian",
+     "careers": "https://www.atlassian.com/company/careers/all-jobs"},
+    {"name": "Dynatrace",    "ats": "coveo",
+     "api": "https://www.dynatrace.com/api/coveo/search/",
+     "careers": "https://careers.dynatrace.com/"},
+    {"name": "OpenAI",       "ats": "ashby", "slug": "openai",
+     "careers": "https://openai.com/careers/search/"},
+    {"name": "Anthropic",    "ats": "greenhouse", "slug": "anthropic",
+     "careers": "https://www.anthropic.com/careers"},
+    {"name": "Stripe",       "ats": "greenhouse", "slug": "stripe",
+     "careers": "https://stripe.com/jobs/search"},
+    {"name": "Palantir",     "ats": "lever", "slug": "palantir",
+     "careers": "https://www.palantir.com/careers/"},
+    # The capital N is part of the SmartRecruiters slug, like SopraSteria1.
+    {"name": "ServiceNow",   "ats": "smartrecruiters", "slug": "ServiceNow",
+     "careers": "https://careers.servicenow.com/"},
+    {"name": "IBM",          "ats": "ibm",
+     "careers": "https://www.ibm.com/careers/search"},
+    {"name": "Oracle",       "ats": "oracle_cx",
+     "host": "https://eeho.fa.us2.oraclecloud.com",
+     "careers": "https://careers.oracle.com/jobs/"},
+    {"name": "SAP",          "ats": "sfhtml", "pages": 12,
+     "base": "https://jobs.sap.com",
+     "list": "https://jobs.sap.com/tile-search-results/?q=%s&locationsearch=France&startrow=%d",
+     "careers": "https://jobs.sap.com/"},
+    {"name": "Microsoft",    "ats": "eightfold",
+     "host": "https://apply.careers.microsoft.com", "domain": "microsoft.com",
+     "careers": "https://careers.microsoft.com/"},
+    {"name": "Amazon / AWS", "ats": "amazon",
+     "careers": "https://www.amazon.jobs/en/search?base_query=intern&loc_query=France"},
 ]
 
 # Probed and confirmed to have NO supported public API. Listed so nobody wastes
@@ -155,6 +197,32 @@ COMPANIES2 = [
     {"name": "Expleo",           "ats": "icims", "pages": 35,
      "list": "https://expleo-jobs-fr-fr.icims.com/jobs/search?pr=%d&in_iframe=1",
      "careers": "https://expleo-jobs-fr-fr.icims.com/jobs/search?in_iframe=1"},
+    # --- added 2026-09-06, probed live by probe_new.py. These four are not
+    # French companies, but each runs a large French engineering site - OVHcloud
+    # is Roubaix/Croix/Toulouse outright, Nokia is Paris-Saclay and Lannion,
+    # Ericsson is Massy, Siemens is Saint-Denis - so they belong with the French
+    # market rather than on the defence/silicon board.
+    {"name": "OVHcloud",         "ats": "sfhtml", "pages": 10,
+     "base": "https://careers.ovhcloud.com",
+     # This instance has no /tile-search-results/ (404) - the /search/ page
+     # carries the same job-tile markup, so the fetcher reads that instead.
+     "list": "https://careers.ovhcloud.com/search/?q=%s&locale=fr_FR&startrow=%d",
+     "careers": "https://careers.ovhcloud.com/search/"},
+    {"name": "Nokia",            "ats": "oracle_cx",
+     "host": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com",
+     # jobs.nokia.com/hcmRestApi/... serves the SPA shell, not the API; the
+     # oraclecloud host is the one that answers.
+     "careers": "https://jobs.nokia.com/"},
+    {"name": "Ericsson",         "ats": "eightfold",
+     "host": "https://jobs.ericsson.com", "domain": "ericsson.com",
+     # jobs.ericsson.com/search/ (the old SuccessFactors board) now redirects to
+     # a Microsoft login - do not go back to it.
+     "careers": "https://jobs.ericsson.com/"},
+    {"name": "Siemens",          "ats": "avature", "pages": 8,
+     "base": "https://jobs.siemens.com",
+     # Avature puts the keyword in the PATH, not in a query parameter.
+     "list": "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/%s?listFilterMode=1&page=%d",
+     "careers": "https://jobs.siemens.com/en_US/externaljobs/SearchJobs"},
 ]
 
 NO_API2 = [
@@ -225,6 +293,57 @@ COMPANIES3 = [
      "careers": "https://www.janestreet.com/join-jane-street/"},
     {"name": "IMC",         "ats": "greenhouse", "slug": "imc",
      "careers": "https://careers.imc.com/"},
+    # --- added 2026-09-06, probed live by probe_new.py ----------------------
+    # Two groups arrive here at once. The trading floors and banks are the
+    # obvious fit; the silicon and enterprise-hardware companies are here
+    # because they are the same kind of employer as the defence and aerospace
+    # firms this board already carries - large engineering sites, long
+    # internships - and because putting sixteen more companies on batch 1 would
+    # have made one board twice the size of the other two.
+    {"name": "Goldman Sachs", "ats": "gs", "site": "https://higher.gs.com",
+     "careers": "https://higher.gs.com/roles"},
+    {"name": "Morgan Stanley", "ats": "eightfold",
+     "host": "https://morganstanley.eightfold.ai", "domain": "morganstanley.com",
+     "careers": "https://morganstanley.eightfold.ai/careers"},
+    {"name": "J.P. Morgan",   "ats": "oracle_cx", "host": "https://jpmc.fa.oraclecloud.com",
+     "careers": "https://careers.jpmorgan.com/global/en/students/programs"},
+    # This tenant is on the OLDER Eightfold API: /api/pcsx/search answers 403
+    # here, /api/apply/v2/jobs answers with the board.
+    {"name": "Millennium",    "ats": "eightfold_v2", "host": "https://career.mlp.com",
+     "domain": "mlp.com", "careers": "https://career.mlp.com/"},
+    {"name": "Optiver",       "ats": "greenhouse", "slug": "optiver",
+     "careers": "https://optiver.com/working-at-optiver/career-opportunities/"},
+    {"name": "Intel",         "ats": "workday", "tenant": "intel", "wd": "wd1",
+     "site": "External", "big": True, "careers": "https://jobs.intel.com/"},
+    {"name": "NVIDIA",        "ats": "workday", "tenant": "nvidia", "wd": "wd5",
+     "site": "NVIDIAExternalCareerSite", "big": True,
+     "careers": "https://www.nvidia.com/en-us/about-nvidia/careers/"},
+    # VMware roles live on this board now - there is no separate VMware feed.
+    # The site slug must be External_Career; External and Careers both 404.
+    {"name": "Broadcom",      "ats": "workday", "tenant": "broadcom", "wd": "wd1",
+     "site": "External_Career", "big": True, "careers": "https://www.broadcom.com/company/careers"},
+    # amd.wd1.myworkdayjobs.com does not exist - AMD left Workday for Phenom.
+    {"name": "AMD",           "ats": "phenom", "api": "https://careers.amd.com/api/jobs",
+     "pages": 12, "careers": "https://careers.amd.com/"},
+    {"name": "Qualcomm",      "ats": "eightfold", "host": "https://careers.qualcomm.com",
+     "domain": "qualcomm.com", "careers": "https://careers.qualcomm.com/careers"},
+    {"name": "Arm",           "ats": "radancy", "pages": 8,
+     "base": "https://careers.arm.com",
+     "careers": "https://careers.arm.com/search-jobs"},
+    {"name": "Dell",          "ats": "oracle_cx",
+     "host": "https://enterpriseplatform.dell.com", "careers": "https://jobs.dell.com/"},
+    # /api/jobs answers 500 on these two; /widgets is the door their own pages
+    # use. Each tenant needs its own lang/country in the body.
+    {"name": "HPE",           "ats": "phenom_widget", "api": "https://careers.hpe.com/widgets",
+     "careers": "https://careers.hpe.com/us/en/search-results"},
+    {"name": "Cisco",         "ats": "phenom_widget", "api": "https://careers.cisco.com/widgets",
+     "body": {"lang": "en_global", "country": "global",
+              "all_fields": ["country", "state", "city", "category"]},
+     "careers": "https://jobs.cisco.com/jobs/SearchJobs"},
+    {"name": "HSBC / CCF",    "ats": "avature", "pages": 8,
+     "base": "https://mycareer.hsbc.com",
+     "list": "https://mycareer.hsbc.com/en_GB/external/SearchJobs/%s?listFilterMode=1&page=%d",
+     "careers": "https://mycareer.hsbc.com/en_GB/external/SearchJobs"},
 ]
 
 # Sources probed 2026-09-04 and deliberately NOT adopted, with the reason - so the

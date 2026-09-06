@@ -156,6 +156,21 @@ SOURCES = {
     "gs-joburl": ("head", "https://higher.gs.com/roles/162057", {}),
     "gs-joburl2": ("head", "https://higher.gs.com/roles/162057_GS_EARLY_CAREER", {}),
     "ibm-joburl": ("head", "https://careers.ibm.com/careers/JobDetail?jobId=128675", {}),
+    # Does this board paginate at all? Same search, three candidate page
+    # parameters: if the first job id is identical on all of them, the parameter
+    # is ignored and a fetcher must not treat page 1 as the whole board.
+    "siemens-p2": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1&page=2",
+                   {"want": 0, "idpat": r"JobDetail/(\d+)"}),
+    "siemens-p2b": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1&jobOffset=10",
+                    {"want": 0, "idpat": r"JobDetail/(\d+)"}),
+    "siemens-p1": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/intern?listFilterMode=1",
+                   {"want": 0, "idpat": r"JobDetail/(\d+)"}),
+    "sap-p2": ("html", "https://jobs.sap.com/tile-search-results/?q=intern&locationsearch=France&startrow=25",
+               {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "ovh-p2b": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
+                {"want": 0, "idpat": r'data-url="([^"]+)"'}),
+    "ovh-p1": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=0",
+               {"want": 0, "idpat": r'data-url="([^"]+)"'}),
     "siemens-fr": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/stage?listFilterMode=1",
                    {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 1, "cap": 5000}),
     "ovh-page2": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
@@ -282,6 +297,12 @@ def probe(name):
         print("  %d location-ish elements (first 12):" % len(loc_hits))
         for h in loc_hits[:12]:
             print("     %s" % h)
+        if extra.get("idpat"):
+            ids = []
+            for m in re.finditer(extra["idpat"], body):
+                if m.group(1) not in ids:
+                    ids.append(m.group(1))
+            print("  first 8 ids for %s: %s" % (extra["idpat"], ids[:8]))
         if card:
             starts = [m.start() for m in re.finditer(card, body, re.I)]
             print("  %d cards matching %s" % (len(starts), card))
