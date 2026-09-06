@@ -6,7 +6,7 @@ Three independent nightly job watches sharing one codebase.
 |---|---|---|---|
 | Stage Watch | `board.html` | `COMPANIES` - 33 observability / infra / dev-tools / cloud platforms | 92513aa1 |
 | French Tech Watch | `board2.html` | `COMPANIES2` - 29 French tech / fintech / ESN / scale-ups, plus four European groups with large French sites | 277bfba8 |
-| Defence, Finance & Silicon Watch | `board3.html` | `COMPANIES3` - 26 defence / aerospace / trading / banks / semiconductors | 8f9b34a1 |
+| Defence, Finance & Silicon Watch | `board3.html` | `COMPANIES3` - 25 defence / aerospace / trading / banks / semiconductors | 8f9b34a1 |
 
 Each board has its own hidden state block, so NEW / closed detection is per-board.
 They never share results. `make_board.py --roster 2` selects the second roster;
@@ -215,7 +215,7 @@ Workday needs `tenant`, `wd` and `site` instead of `slug`, e.g.
 
 ### The 2026-09-06 batch, and search-scoped boards
 
-Thirty-two companies were added on 2026-09-06 across the three rosters. Every one
+Thirty-one companies were added on 2026-09-06 across the three rosters. Every one
 of their endpoints was read off a live response by `probe_new.py`, run from the
 *Stage Watch sweep* Action with a `probe_html` input of `new:<names>` - the same
 rule as `probe_html.py` and for the same reason: the Claude sandbox cannot reach

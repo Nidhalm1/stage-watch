@@ -374,7 +374,7 @@ NEW_NAMES = [
     "GitHub", "Atlassian", "Dynatrace", "OpenAI", "Anthropic", "Stripe",
     "Palantir", "ServiceNow", "IBM", "Oracle", "SAP", "Microsoft", "Amazon / AWS",
     "OVHcloud", "Nokia", "Ericsson", "Siemens",
-    "Goldman Sachs", "Morgan Stanley", "J.P. Morgan", "Millennium", "Optiver",
+    "Goldman Sachs", "Morgan Stanley", "J.P. Morgan", "Millennium",
     "Intel", "NVIDIA", "Broadcom", "AMD", "Qualcomm", "Arm", "Dell", "HPE", "Cisco",
 ]
 

@@ -220,11 +220,20 @@ COMPANIES2 = [
     # is Roubaix/Croix/Toulouse outright, Nokia is Paris-Saclay and Lannion,
     # Ericsson is Massy, Siemens is Saint-Denis - so they belong with the French
     # market rather than on the defence/silicon board.
-    {"name": "OVHcloud",         "ats": "sfhtml", "pages": 10,
+    {"name": "OVHcloud",         "ats": "sfhtml", "pages": 4,
      "base": "https://careers.ovhcloud.com",
      # This instance has no /tile-search-results/ (404) - the /search/ page
      # carries the same job-tile markup, so the fetcher reads that instead.
      "list": "https://careers.ovhcloud.com/search/?q=%s&locale=fr_FR&startrow=%d",
+     # ONE keyword, not four. Measured 2026-09-06: this host answered 200 for the
+     # first few requests of the day and then 403d everything from the same
+     # runner - including the exact URL that had just worked, and including a
+     # request with no keyword at all. That is rate limiting, not a header
+     # check (the BNP ladder shape is absent: no header set gets past it once it
+     # trips). The board is French-language, so "stage" alone finds the
+     # internships, and a 403 shows up honestly as a failed fetch rather than as
+     # a company with nothing open.
+     "keywords": ("stage",),
      "careers": "https://careers.ovhcloud.com/search/"},
     {"name": "Nokia",            "ats": "oracle_cx",
      "host": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com",
@@ -329,8 +338,6 @@ COMPANIES3 = [
     # here, /api/apply/v2/jobs answers with the board.
     {"name": "Millennium",    "ats": "eightfold_v2", "host": "https://career.mlp.com",
      "domain": "mlp.com", "careers": "https://career.mlp.com/"},
-    {"name": "Optiver",       "ats": "greenhouse", "slug": "optiver",
-     "careers": "https://optiver.com/working-at-optiver/career-opportunities/"},
     {"name": "Intel",         "ats": "workday", "tenant": "intel", "wd": "wd1",
      "site": "External", "big": True, "careers": "https://jobs.intel.com/"},
     {"name": "NVIDIA",        "ats": "workday", "tenant": "nvidia", "wd": "wd5",
@@ -388,9 +395,13 @@ NO_API3 = [
                             "                            broken plugin, not a block. greenhouse/hrttalentcommunity is a\n"
                             "                            3-entry talent-community stub, not the board. No French office either,\n"
                             "                            so this is worth revisiting only if the endpoint comes back"),
-    # Optiver and Millennium moved ONTO the board on 2026-09-06 - see COMPANIES3.
-     # Optiver is on Greenhouse after all (boards-api.greenhouse.io/v1/boards/optiver)
-     # and Millennium answers on the older Eightfold API, /api/apply/v2/jobs.
+    # Millennium moved ONTO the board on 2026-09-06 - see COMPANIES3. It answers
+     # on the OLDER Eightfold API, /api/apply/v2/jobs; /api/pcsx/search 403s there.
+    ("Optiver",            "boards-api.greenhouse.io/v1/boards/optiver answers 200 with {\"jobs\":[],\n"
+                           "                            \"meta\":{\"total\":0}} - measured twice on 2026-09-06, with and without\n"
+                           "                            content=false. The slug exists and the board is empty, which is exactly\n"
+                           "                            the dead-slug case this repo refuses to carry: it would sit on the board\n"
+                           "                            looking watched while showing nothing. Recheck it another day"),
 
     ("Groupe BPCE",        "no public job API found; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs, 3 slug variants"),
     ("Banque Populaire",   "regional BPCE portals, no public API; re-probed 2026-09-04 in a small run with no rate limiting: clean negative on all seven ATSs"),
