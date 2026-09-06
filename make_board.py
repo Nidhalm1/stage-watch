@@ -1282,7 +1282,6 @@ def _rows_from(seen, out, title, loc, url, blob, contract=None):
 # index. _source.url is the posting's own link, so nothing is constructed.
 #   field_keyword_05  country          field_keyword_19  "Chicago, US"
 #   field_keyword_18  contract label   field_keyword_08  job family
-# - but see below for why field_keyword_18 is read and then not used.
 # HashiCorp is IBM now and its roles are on this same index, which is why
 # "hashicorp" is one of the queries rather than a separate company.
 IBM_URL = "https://www-api.ibm.com/search/api/v2"
@@ -1311,15 +1310,14 @@ def f_ibm(c):
             for h in hits:
                 s = h.get("_source") or {}
                 loc = s.get("field_keyword_19") or s.get("field_keyword_05") or ""
-                # field_keyword_18 is IBM's contract label and it is NOT passed
-                # through as one. Measured on the first live run: IBM files its
-                # French apprenticeships under "Internship", so the label sent
-                # "Apprenti.e Account Manager - Automation - IBM France" to the
-                # board as an internship - the exact mislabelling _contract
-                # exists to correct, running the wrong way. The title test is
-                # right about these, so let it decide.
+                # field_keyword_18 is IBM's own contract type and it wins over
+                # the title, like every other board that publishes one. A
+                # posting titled "Apprenti.e Account Manager" but filed under
+                # Internship stays: the title is the thing that lies, and a
+                # dropped offer costs more than one extra row to glance at.
                 _rows_from(seen, out, s.get("title", ""), loc, s.get("url", ""),
-                           " ".join(x for x in [loc, s.get("field_keyword_05")] if x))
+                           " ".join(x for x in [loc, s.get("field_keyword_05")] if x),
+                           _contract(s.get("field_keyword_18")))
             frm += IBM_PAGE
             total = (((d.get("hits") or {}).get("total")) or {}).get("value") or 0
             if len(hits) < IBM_PAGE or frm >= total:
@@ -2491,9 +2489,8 @@ def render(results, prev):
             p.append('<p class="none">No tech internships open in France right now.</p>')
 
         if r["other"]:
-            p.append("<details%s><summary>%d non-tech internship%s filtered out</summary><ul>"
-                     % (" open" if any(o["is_new"] for o in r["other"]) else "",
-                        len(r["other"]), "" if len(r["other"]) == 1 else "s"))
+            p.append("<details open><summary>%d non-tech internship%s filtered out</summary><ul>"
+                     % (len(r["other"]), "" if len(r["other"]) == 1 else "s"))
             # Anything new is listed first, so a cap can never hide the one entry
             # that is actually news.
             for o in sorted(r["other"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
@@ -2509,10 +2506,9 @@ def render(results, prev):
         # here so a French town missing from the city list is visible instead of
         # costing an application. Anything real in here belongs in _FR_CITIES.
         if r["unsure"]:
-            p.append("<details%s><summary>%d internship%s with an unrecognised location"
+            p.append("<details open><summary>%d internship%s with an unrecognised location"
                      "</summary><ul>"
-                     % (" open" if any(o["is_new"] for o in r["unsure"]) else "",
-                        len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
+                     % (len(r["unsure"]), "" if len(r["unsure"]) == 1 else "s"))
             for o in sorted(r["unsure"], key=lambda x: not x["is_new"])[:BOX_ROWS]:
                 p.append('<li><a href="%s" target="_blank" rel="noopener">%s</a> &mdash; %s%s</li>'
                          % (esc(o["url"]), esc(o["title"]), esc(o["location"] or "no location given"),
@@ -2548,7 +2544,7 @@ def render(results, prev):
     p.append("<p>Filter: title contains stage / stagiaire / PFE / intern / fin d&rsquo;&eacute;tudes "
              "&middot; excludes alternance and apprentissage &middot; location in France &middot; "
              "engineering, data, infra, SRE or security role. The last two steps do not delete "
-             "anything: a role that fails them is in the collapsed box on its company, either as "
+             "anything: a role that fails them is in the box on its company card, either as "
              "non-tech or as an unrecognised location.</p>")
     if broken:
         p.append('<p class="warn">%d compan%s failed to fetch this run, so its roles may be stale. '
@@ -2630,7 +2626,7 @@ def write_status(out, stats):
 # the number is never lost, only the tail.
 STATUS_ROWS = 12
 
-# Per collapsed box on the board itself. The board is an artifact the routine
+# Per box on the board itself. The board is an artifact the routine
 # may have to read back on a refused publish, and 158 filtered rows took board3
 # to 115 KB. New entries sort first so a cap can never hide the news.
 BOX_ROWS = 25

@@ -46,7 +46,7 @@ already seen and when it was first seen, so the next run can mark roles NEW and
 detect ones that vanished (= filled or pulled). Git history is the audit trail.
 
 Every list in `status.json` is capped (`STATUS_ROWS`) with its true count kept
-in a matching `_total` field, and the collapsed boxes on the board are capped
+in a matching `_total` field, and the boxes on the board are capped
 too (`BOX_ROWS`, new entries sorted first so a cap can never hide the news).
 Without that, one roster change put 153 rows in `also_new` and took status.json
 from 4.7 KB to 70 KB - larger than the HTML it exists to avoid reading, which
@@ -89,7 +89,7 @@ label the mapping does not recognise means "the board did not say", and the
 title test runs as before, so a new label costs nothing.
 
 **Only the internship test can delete a role.** The other two put it in a
-collapsed box on its company card instead:
+box on its company card instead, open, not hidden behind a toggle:
 
 | Box | What is in it |
 |---|---|
