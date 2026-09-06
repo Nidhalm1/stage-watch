@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 24,
+      "foreign_count": 512,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -144,10 +144,59 @@
           "location": "FR-Paris",
           "title": "Partner Marketing Intern - Paris (French Speaking ",
           "url": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9"
+        },
+        {
+          "company": "Palantir",
+          "is_new": true,
+          "location": "Paris, France",
+          "title": "Deployment Strategist, Internship",
+          "url": "https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": true,
+          "location": "France, Paris, Paris",
+          "title": "National Technology Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": true,
+          "location": "Toulouse, Occitanie, FRA",
+          "title": "Operations Intern - Région Sud - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": true,
+          "location": "Lille, Hauts-de-France, FRA",
+          "title": "Operations Intern - Région Nord - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": true,
+          "location": "Paris, Ile-de-France, FRA",
+          "title": "Operations Intern - Île de France - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": true,
+          "location": "Clichy, Ile-de-France, FRA",
+          "title": "Stagiaire service juridique",
+          "url": "https://www.amazon.jobs/en/jobs/10518434/stagiaire-service-juridique"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": true,
+          "location": "Clichy, Ile-de-France, FRA",
+          "title": "Stagiaire service juridique",
+          "url": "https://www.amazon.jobs/en/jobs/10470003/stagiaire-service-juridique"
         }
       ],
-      "non_tech_total": 7,
-      "stamp": "2026-09-05",
+      "non_tech_total": 14,
+      "stamp": "2026-09-06",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -161,14 +210,14 @@
           "is_new": false,
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
         },
         {
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
         },
         {
           "company": "Cloudflare",
@@ -176,13 +225,20 @@
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785"
+        },
+        {
+          "company": "IBM",
+          "is_new": true,
+          "location": "Heredia, CR",
+          "title": "Contractor Fulfillment Specialist Internship",
+          "url": "https://careers.ibm.com/careers/JobDetail?jobId=125523"
         }
       ],
-      "unknown_location_total": 4
+      "unknown_location_total": 5
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 39,
+      "foreign_count": 62,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -611,16 +667,73 @@
           "location": "Saint-Denis",
           "title": "Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)",
           "url": "https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "Haguenau, Grand-Est, France",
+          "title": "Stage - Chaîne logistique et approvisionnements f/h",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514945"
         }
       ],
-      "non_tech_total": 48,
-      "stamp": "2026-09-05",
-      "unknown_location": [],
-      "unknown_location_total": 0
+      "non_tech_total": 49,
+      "stamp": "2026-09-06",
+      "unknown_location": [
+        {
+          "company": "OVHcloud",
+          "is_new": true,
+          "location": "ROUBAIX",
+          "title": "Stage Septembre 2026 - Industrial Lean Officer H/F/N",
+          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Septembre-2026-Industrial-Lean-Officer-HFN-59100/1385526333/"
+        },
+        {
+          "company": "OVHcloud",
+          "is_new": true,
+          "location": "CROIX",
+          "title": "Stage - Chef de projet documentation industrielle H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1385457233/"
+        },
+        {
+          "company": "OVHcloud",
+          "is_new": true,
+          "location": "CROIX",
+          "title": "STAGE septembre 2026 - Ingénieur R&D refroidissement en Datacenter F/H/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-septembre-2026-Ing%C3%A9nieur-R&D-refroidissement-en-Datacenter-FHN-59170/1400775433/"
+        },
+        {
+          "company": "OVHcloud",
+          "is_new": true,
+          "location": "ROUBAIX",
+          "title": "STAGE septembre - Chargé de développement RH et carrières F/H/N",
+          "url": "https://careers.ovhcloud.com/job/ROUBAIX-STAGE-septembre-Charg%C3%A9-de-d%C3%A9veloppement-RH-et-carri%C3%A8res-FHN-59100/1409867933/"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "Muscat, Masqat, Oman",
+          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Market Development Intern",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520020"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
+        }
+      ],
+      "unknown_location_total": 7
     },
     "board3.html": {
-      "board": "Defence & Finance Watch",
-      "foreign_count": 449,
+      "board": "Defence, Finance & Silicon Watch",
+      "foreign_count": 703,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1135,8 +1248,8 @@
           "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr"
         }
       ],
-      "non_tech_total": 231,
-      "stamp": "2026-09-05",
+      "non_tech_total": 236,
+      "stamp": "2026-09-06",
       "unknown_location": [
         {
           "company": "Airbus",
@@ -1151,10 +1264,17 @@
           "location": "",
           "title": "Amélioration continue - Qualité - Stage F/H",
           "url": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx"
+        },
+        {
+          "company": "HPE",
+          "is_new": true,
+          "location": "Heredia, Heredia, Costa Rica",
+          "title": "Contract Administrator (Internship)",
+          "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
         }
       ],
-      "unknown_location_total": 2
+      "unknown_location_total": 3
     }
   },
-  "generated": "2026-09-05T19:04:19.489849+02:00"
+  "generated": "2026-09-06T19:29:34.997285+02:00"
 }

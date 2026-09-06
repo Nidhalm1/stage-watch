@@ -1,68 +1,150 @@
 {
   "boards": {
     "board.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "Palantir",
+          "kind": "other",
+          "title": "Deployment Strategist, Internship"
+        },
+        {
+          "company": "Microsoft",
+          "kind": "other",
+          "title": "National Technology Intern"
+        },
+        {
+          "company": "Amazon / AWS",
+          "kind": "other",
+          "title": "Operations Intern - Région Sud - Start Date 2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "kind": "other",
+          "title": "Operations Intern - Région Nord - Start Date 2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "kind": "other",
+          "title": "Operations Intern - Île de France - Start Date 2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "kind": "other",
+          "title": "Stagiaire service juridique"
+        },
+        {
+          "company": "Amazon / AWS",
+          "kind": "other",
+          "title": "Stagiaire service juridique"
+        }
+      ],
+      "also_new_total": 7,
       "board": "Stage Watch",
       "closed_today": [],
       "closed_today_total": 0,
       "closed_total": 1,
-      "companies": 20,
-      "failed": 0,
-      "failed_names": [],
-      "filtered": 7,
-      "generated": "2026-09-05T19:02:48.840410+02:00",
-      "incomplete": [],
-      "live": 3,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
-      "recent_roles": [
+      "companies": 33,
+      "failed": 1,
+      "failed_names": [
+        "SAP"
+      ],
+      "filtered": 14,
+      "generated": "2026-09-06T19:26:03.388412+02:00",
+      "incomplete": [
+        "IBM (truncated)",
+        "Oracle (truncated)",
+        "Amazon / AWS (truncated)"
+      ],
+      "live": 5,
+      "new": 2,
+      "new_roles": [
         {
-          "company": "Scaleway",
-          "first_seen": "2026-09-03",
-          "location": "Paris",
-          "title": "IT Workplace - Internship",
-          "url": "https://jobs.lever.co/scaleway/4b13be1f-566b-4f47-a270-9a356edce24e"
+          "company": "Palantir",
+          "first_seen": "2026-09-06",
+          "location": "Paris, France",
+          "title": "Forward Deployed Software Engineer, Internship",
+          "url": "https://jobs.lever.co/palantir/1b6f1d82-d459-4dea-8bc2-8d2ffe6f881a"
+        },
+        {
+          "company": "Amazon / AWS",
+          "first_seen": "2026-09-06",
+          "location": "Courbevoie, Ile-de-France, FRA",
+          "title": "Associate Solutions Architect Intern (French Speaker)",
+          "url": "https://www.amazon.jobs/en/jobs/10462189/associate-solutions-architect-intern-french-speaker"
         }
       ],
-      "recent_roles_total": 1,
-      "scanned": 3686,
-      "stamp": "2026-09-05",
-      "unsure": 4
+      "new_roles_total": 2,
+      "recent_roles": [
+        {
+          "company": "Palantir",
+          "first_seen": "2026-09-06",
+          "location": "Paris, France",
+          "title": "Forward Deployed Software Engineer, Internship",
+          "url": "https://jobs.lever.co/palantir/1b6f1d82-d459-4dea-8bc2-8d2ffe6f881a"
+        },
+        {
+          "company": "Amazon / AWS",
+          "first_seen": "2026-09-06",
+          "location": "Courbevoie, Ile-de-France, FRA",
+          "title": "Associate Solutions Architect Intern (French Speaker)",
+          "url": "https://www.amazon.jobs/en/jobs/10462189/associate-solutions-architect-intern-french-speaker"
+        }
+      ],
+      "recent_roles_total": 2,
+      "scanned": 8005,
+      "stamp": "2026-09-06",
+      "unsure": 5
     },
     "board2.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "OVHcloud",
+          "kind": "unsure",
+          "title": "STAGE septembre 2026 - Ingénieur R&D refroidissement en Datacenter F/H/N"
+        },
+        {
+          "company": "Siemens",
+          "kind": "other",
+          "title": "Stage - Chaîne logistique et approvisionnements f/h"
+        },
+        {
+          "company": "Siemens",
+          "kind": "unsure",
+          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman"
+        },
+        {
+          "company": "Siemens",
+          "kind": "unsure",
+          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)"
+        }
+      ],
+      "also_new_total": 4,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
       "closed_total": 0,
-      "companies": 25,
+      "companies": 29,
       "failed": 0,
       "failed_names": [],
-      "filtered": 48,
-      "generated": "2026-09-05T19:03:04.682788+02:00",
-      "incomplete": [],
-      "live": 66,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
+      "filtered": 49,
+      "generated": "2026-09-06T19:27:50.268731+02:00",
+      "incomplete": [
+        "Nokia (truncated)",
+        "Siemens (truncated)"
+      ],
+      "live": 67,
+      "new": 1,
+      "new_roles": [
+        {
+          "company": "OVHcloud",
+          "first_seen": "2026-09-06",
+          "location": "TOULOUSE",
+          "title": "Stage - Data Scientist",
+          "url": "https://careers.ovhcloud.com/job/TOULOUSE-Stage-Data-Scientist-31000/1375709633/"
+        }
+      ],
+      "new_roles_total": 1,
       "recent_roles": [
-        {
-          "company": "Mistral AI",
-          "first_seen": "2026-09-03",
-          "location": "Paris",
-          "title": "Applied AI, Forward Deployed Machine Learning Engineer - (Internship)",
-          "url": "https://jobs.ashbyhq.com/mistral.ai/fcdb8407-20b9-4179-81b6-f2ca2c79a39b"
-        },
-        {
-          "company": "Mistral AI",
-          "first_seen": "2026-09-03",
-          "location": "Paris London",
-          "title": "Applied Scientist  (Internship)",
-          "url": "https://jobs.ashbyhq.com/mistral.ai/de46ba8b-00cb-4618-83df-66e15a78434e"
-        },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-04",
@@ -132,82 +214,88 @@
           "location": "Courbevoie, fr",
           "title": "Stage - Business Analyst - Agile - Transport  - Île-de-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147257370"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Courbevoie, fr",
+          "title": "Stage Développeur/se - Java - Energie & Telecom - Ile-de-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147249360"
+        },
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-09-04",
+          "location": "Cesson-Sévigné, fr",
+          "title": "Stage - Analyste MDR - Detection Cybersécurité - Rennes",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147248678"
         }
       ],
-      "recent_roles_total": 64,
-      "scanned": 4854,
-      "stamp": "2026-09-05",
-      "unsure": 0
+      "recent_roles_total": 63,
+      "scanned": 5056,
+      "stamp": "2026-09-06",
+      "unsure": 7
     },
     "board3.html": {
       "also_new": [
         {
-          "company": "Credit Agricole",
+          "company": "J.P. Morgan",
           "kind": "other",
-          "title": "Stage - Chargé(e) de conformité H/F"
+          "title": "2027 – Sales – Summer Internship - Paris"
         },
         {
-          "company": "Credit Agricole",
+          "company": "J.P. Morgan",
           "kind": "other",
-          "title": "Stage - Analyste SCPI H/F"
+          "title": "2027 – Global Markets – Summer Internship - Paris"
+        },
+        {
+          "company": "J.P. Morgan",
+          "kind": "other",
+          "title": "2027 Global Private Bank - Advisor Summer Internship Program - Paris"
+        },
+        {
+          "company": "Qualcomm",
+          "kind": "other",
+          "title": "FY26 Intern Apprenticeship, 6 months - Issy Les Moulineaux"
+        },
+        {
+          "company": "HPE",
+          "kind": "other",
+          "title": "HPE Labs - EMEA Research Lab Ph.D. Intern"
         }
       ],
-      "also_new_total": 2,
-      "board": "Defence & Finance Watch",
+      "also_new_total": 5,
+      "board": "Defence, Finance & Silicon Watch",
       "closed_today": [
         {
           "company": "BNP Paribas",
-          "title": "Stage – AI Project Officer Junior (PMO & Business Analyst) H/F",
-          "url": "https://group.bnpparibas/en/careers/job-offer/stage-ai-project-officer-junior-pmo-business-analyst-h-f-6-mois"
+          "title": "Stage - Private Equity Infrastructure F/H",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-analyste-infrastructure-equity-h-f-1"
         },
         {
-          "company": "Credit Agricole",
-          "title": "Stage - Data ingénieur H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-data-ingenieur-h-f_paris_CA_kqmPgb2"
+          "company": "BNP Paribas",
+          "title": "Stage - Private Equity Infrastructure F/H",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-private-equity-infrastructure-f-h"
         }
       ],
       "closed_today_total": 2,
-      "closed_total": 4,
-      "companies": 12,
-      "failed": 0,
-      "failed_names": [],
-      "filtered": 231,
-      "generated": "2026-09-05T19:04:19.489849+02:00",
-      "incomplete": [],
-      "live": 60,
-      "new": 3,
-      "new_roles": [
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-05",
-          "location": "Montrouge, France",
-          "title": "Stage - Chargé(e) de Sécurité Financière et Prévention de la Fraude H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-securite-financiere-et-prevention-de-la-fraude-h-f_montrouge_CA_2AaWObr"
-        },
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-05",
-          "location": "Montrouge, France",
-          "title": "Stage - Chargé(e) de Sécurité Financière et Prévention de la Fraude H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-charge-de-securite-financiere-et-prevention-de-la-fraude-h-f_montrouge_CA_mMKaK9q"
-        },
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-05",
-          "location": "Paris, France",
-          "title": "Stagiaire - Data Science & IA H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stagiaire-data-science-ia-h-f_paris"
-        }
+      "closed_total": 6,
+      "companies": 25,
+      "failed": 1,
+      "failed_names": [
+        "Dassault Systemes"
       ],
-      "new_roles_total": 3,
+      "filtered": 236,
+      "generated": "2026-09-06T19:29:34.997285+02:00",
+      "incomplete": [
+        "J.P. Morgan (truncated)",
+        "NVIDIA (truncated)",
+        "AMD (truncated)"
+      ],
+      "live": 58,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
-        {
-          "company": "Thales",
-          "first_seen": "2026-09-03",
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0330328; 10 - INDUSTRY; Thales Avs France Sas",
-          "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
-        },
         {
           "company": "Societe Generale",
           "first_seen": "2026-09-04",
@@ -284,13 +372,20 @@
           "location": "Courbevoie, France",
           "title": "TRACKING ET WEBANALYTICS",
           "url": "https://careers.societegenerale.com/offres-d-emploi/tracking-et-webanalytics-26000GRI-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "first_seen": "2026-09-04",
+          "location": "La Defense, France",
+          "title": "Business Analyst & Gestion de Projets - Flux et Transactions Internationales",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/business-analyst-gestion-de-projets-flux-et-transactions-internationales-26000CJ7-fr"
         }
       ],
-      "recent_roles_total": 60,
-      "scanned": 2855,
-      "stamp": "2026-09-05",
-      "unsure": 2
+      "recent_roles_total": 57,
+      "scanned": 5628,
+      "stamp": "2026-09-06",
+      "unsure": 3
     }
   },
-  "generated": "2026-09-05T19:04:19.489849+02:00"
+  "generated": "2026-09-06T19:29:34.997285+02:00"
 }

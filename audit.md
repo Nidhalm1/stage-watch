@@ -16,18 +16,19 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-05
+`board.html` &middot; sweep of 2026-09-06
 
-### Unrecognised location - 4
+### Unrecognised location - 5
 
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
+| IBM | [Contractor Fulfillment Specialist Internship](https://careers.ibm.com/careers/JobDetail?jobId=125523) | Heredia, CR |
 
-### Not tech - 7
+### Not tech - 14
 
 | Company | Title | Location |
 |---|---|---|
@@ -38,8 +39,15 @@ mistake (a French site being read as foreign).
 | Scaleway | [Approvisionneur - Stage](https://jobs.lever.co/scaleway/c85a7df4-bee6-41c2-9983-06db6a116bb8) | Paris |
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
+| Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
+| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
+| Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
+| Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
+| Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
+| Amazon / AWS | [Stagiaire service juridique](https://www.amazon.jobs/en/jobs/10518434/stagiaire-service-juridique) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Stagiaire service juridique](https://www.amazon.jobs/en/jobs/10470003/stagiaire-service-juridique) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 24 (sample below)
+### Outside France - 512 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -63,13 +71,21 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-05
+`board2.html` &middot; sweep of 2026-09-06
 
-### Unrecognised location - 0
+### Unrecognised location - 7
 
-_none_
+| Company | Title | Location |
+|---|---|---|
+| OVHcloud | [Stage Septembre 2026 - Industrial Lean Officer H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-Septembre-2026-Industrial-Lean-Officer-HFN-59100/1385526333/) | ROUBAIX |
+| OVHcloud | [Stage - Chef de projet documentation industrielle H/F/N](https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1385457233/) | CROIX |
+| OVHcloud | [STAGE septembre 2026 - Ingénieur R&D refroidissement en Datacenter F/H/N](https://careers.ovhcloud.com/job/CROIX-STAGE-septembre-2026-Ing%C3%A9nieur-R&D-refroidissement-en-Datacenter-FHN-59170/1400775433/) | CROIX |
+| OVHcloud | [STAGE septembre - Chargé de développement RH et carrières F/H/N](https://careers.ovhcloud.com/job/ROUBAIX-STAGE-septembre-Charg%C3%A9-de-d%C3%A9veloppement-RH-et-carri%C3%A8res-FHN-59100/1409867933/) | ROUBAIX |
+| Siemens | [Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411) | Muscat, Masqat, Oman |
+| Siemens | [Market Development Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520020) | - |
+| Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
 
-### Not tech - 48
+### Not tech - 49
 
 | Company | Title | Location |
 |---|---|---|
@@ -121,8 +137,9 @@ _none_
 | Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/6c32487d-4531-49ea-b5fc-b1facc8de206) | Saint-Denis |
 | Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c) | Saint Vulbas |
 | Veepee | [Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)](https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2) | Saint-Denis |
+| Siemens | [Stage - Chaîne logistique et approvisionnements f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/514945) | Haguenau, Grand-Est, France |
 
-### Outside France - 39 (sample below)
+### Outside France - 62 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -144,18 +161,19 @@ _none_
 
 ---
 
-## Defence & Finance Watch
+## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-05
+`board3.html` &middot; sweep of 2026-09-06
 
-### Unrecognised location - 2
+### Unrecognised location - 3
 
 | Company | Title | Location |
 |---|---|---|
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
+| HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 231 (showing the first 60)
+### Not tech - 236 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -220,7 +238,7 @@ _none_
 | Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr) | Besancon, France |
 | Societe Generale | [Chargé de projets RH](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr) | La Defense, France |
 
-### Outside France - 449 (sample below)
+### Outside France - 703 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
