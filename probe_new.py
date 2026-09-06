@@ -389,11 +389,15 @@ def fetchers(only):
             if not any(w in c["name"].lower() for w in wanted):
                 continue
             t0 = time.time()
+            # flushed, and printed BEFORE the fetch: stdout is a pipe here, so a
+            # company that hangs would otherwise take its own name down with it
+            print("%-15s %-14s fetching..." % (c["name"], c["ats"]), flush=True)
             try:
+                mb._budget_start()
                 rows = mb.FETCH[c["ats"]](c)
             except Exception as e:
                 print("%-15s %-14s FAILED  %s: %s"
-                      % (c["name"], c["ats"], type(e).__name__, str(e)[:120]))
+                      % (c["name"], c["ats"], type(e).__name__, str(e)[:120]), flush=True)
                 continue
             itn = [r for r in rows if mb._is_intern(r)]
             hits = [r for r in itn if mb.where(r[3]) == "fr" and mb.is_tech(r[0])]

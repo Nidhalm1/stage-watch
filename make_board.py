@@ -1169,6 +1169,29 @@ def f_sgcareers(c):
 # why the keyword lists below include the French words as well as the English.
 
 
+# A single company's fetch may take this long. Several of these boards are
+# search-scoped over four keywords and page slowly - Amazon and the Phenom
+# widgets in particular - and one company grinding for ten minutes would push
+# the sweep past the hour of slack it has before the publish routine runs. When
+# the budget runs out the fetch stops where it is and the company is marked
+# partial, so what was read is shown and nothing of theirs can be closed.
+COMPANY_BUDGET = 90         # seconds
+_DEADLINE = [None]
+
+
+def _budget_start():
+    _DEADLINE[0] = time.time() + COMPANY_BUDGET
+
+
+def _out_of_time(name):
+    if _DEADLINE[0] and time.time() > _DEADLINE[0]:
+        PARTIAL.add(name)
+        print("  %s: hit the %ds fetch budget; shown, nothing closed"
+              % (name, COMPANY_BUDGET), file=sys.stderr)
+        return True
+    return False
+
+
 # How many built URLs to HEAD-check per company. The point of the check is to
 # prove the CONSTRUCTION - "/careers/job/<id>" under this host is really where a
 # posting lives - not to re-verify every row: Dell and Oracle return hundreds of
@@ -1211,7 +1234,7 @@ def f_ibm(c):
     for query in c.get("queries", ("intern", "internship", "stage", "stagiaire",
                                    "hashicorp")):
         frm = 0
-        while frm < IBM_MAX:
+        while frm < IBM_MAX and not _out_of_time(c["name"]):
             body = {"appId": "careers", "scopes": ["careers2"],
                     "size": IBM_PAGE, "from": frm, "sort": [{"_score": "desc"}],
                     "_source": IBM_SOURCE,
@@ -1260,6 +1283,8 @@ def f_phenom(c):
     out, seen = [], set()
     for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
         for page in range(1, c.get("pages", 12) + 1):
+            if _out_of_time(c["name"]):
+                return out
             d = get("%s?page=%d%s&sortBy=relevance&descending=false&internal=false"
                     % (c["api"], page,
                        "&keywords=%s" % urllib.parse.quote(kw) if kw else ""))
@@ -1302,7 +1327,7 @@ def f_phenom_widget(c):
     out, seen = [], set()
     for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
         frm = 0
-        while frm < WIDGET_MAX:
+        while frm < WIDGET_MAX and not _out_of_time(c["name"]):
             body = dict(PHENOM_WIDGET_BODY, **c.get("body", {}))
             body.update({"keywords": kw, "from": frm, "size": 20})
             d = get(c["api"], body)
@@ -1341,7 +1366,7 @@ def f_eightfold(c):
     for query, place in c.get("queries", (("intern", "France"), ("stage", "France"),
                                           ("stagiaire", ""), ("internship", "France"))):
         start = 0
-        while start < EIGHTFOLD_MAX:
+        while start < EIGHTFOLD_MAX and not _out_of_time(c["name"]):
             d = get("%s/api/pcsx/search?domain=%s&query=%s&location=%s&start=%d&num=%d"
                     % (c["host"], c["domain"], urllib.parse.quote(query),
                        urllib.parse.quote(place), start, EIGHTFOLD_PAGE))
@@ -1391,7 +1416,7 @@ V2_MAX = 600
 
 def f_eightfold_v2(c):
     out, seen, start = [], set(), 0
-    while start < V2_MAX:
+    while start < V2_MAX and not _out_of_time(c["name"]):
         d = get("%s/api/apply/v2/jobs?domain=%s&start=%d&num=%d"
                 % (c["host"], c["domain"], start, V2_PAGE))
         positions = d.get("positions") or []
@@ -1426,7 +1451,7 @@ def f_oracle_cx(c):
     site = c.get("site", "CX_1")
     for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
         off = 0
-        while off < ORACLE_MAX:
+        while off < ORACLE_MAX and not _out_of_time(c["name"]):
             url = ("%s/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
                    "?onlyData=true&expand=%s&finder=findReqs;siteNumber=%s,limit=%d,"
                    "offset=%d,sortBy=POSTING_DATES_DESC,keyword=%s"
@@ -1494,7 +1519,7 @@ def f_amazon(c):
     for base, place in c.get("queries", (("intern", "France"), ("stage", "France"),
                                          ("stagiaire", "France"), ("internship", "France"))):
         off = 0
-        while off < AMAZON_MAX:
+        while off < AMAZON_MAX and not _out_of_time(c["name"]):
             d = get("%s/en/search.json?base_query=%s&loc_query=%s&result_limit=%d&offset=%d"
                     % (AMAZON_HOST, urllib.parse.quote(base), urllib.parse.quote(place),
                        AMAZON_LIMIT, off))
@@ -1536,6 +1561,8 @@ def f_gs(c):
     out, seen = [], set()
     verify, blocked, checked = True, False, 0
     for page in range(GS_MAX):
+        if _out_of_time(c["name"]):
+            break
         body = {"operationName": "GetRoles", "query": GS_QUERY,
                 "variables": {"searchQueryInput": {
                     "page": {"pageSize": GS_PAGE, "pageNumber": page},
@@ -1585,6 +1612,8 @@ def f_gs(c):
 def f_coveo(c):
     out, seen = [], set()
     for kw in c.get("keywords", ("intern", "internship", "stage", "student", "werkstudent")):
+        if _out_of_time(c["name"]):
+            break
         d = get(c["api"], {"q": kw, "numberOfResults": c.get("size", 100)})
         for r in d.get("results") or []:
             raw = r.get("raw") or {}
@@ -1940,6 +1969,8 @@ def f_sfhtml(c):
 
     out, seen = [], set()
     for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        if _out_of_time(c["name"]):
+            break
         for row in _paged(c, lambda p, kw=kw: c["list"] % (urllib.parse.quote(kw), p * _SF_ROWS),
                           parse, c.get("pages", 10)):
             _rows_from(seen, out, *row)
@@ -1977,6 +2008,8 @@ def f_avature(c):
 
     out, seen = [], set()
     for kw in c.get("keywords", ("intern", "internship", "stage", "stagiaire")):
+        if _out_of_time(c["name"]):
+            break
         rows = _paged(c, lambda p, kw=kw: c["list"] % (urllib.parse.quote(kw), p + 1),
                       parse, c.get("pages", 8))
         # A search that filled its first page and then stopped adding rows is
@@ -2007,6 +2040,8 @@ def f_radancy(c):
     out, seen = [], set()
     for kw in c.get("keywords", ("intern", "internship", "stage", "graduate")):
         for page in range(1, c.get("pages", 8) + 1):
+            if _out_of_time(c["name"]):
+                return out
             url = ("%s/search-jobs/results?ActiveFacetID=0&CurrentPage=%d&RecordsPerPage=%d"
                    "&Distance=50&RadiusUnitType=0&Keywords=%s&Location=&ShowRadius=False"
                    "&IsPagination=False&CustomFacetName=&FacetTerm=&FacetType=0"
@@ -2104,6 +2139,7 @@ def scan():
                "partial": False, "total": 0, "france": 0, "hits": [], "other": [],
                "unsure": [], "foreign": []}
         try:
+            _budget_start()
             jobs = FETCH[c["ats"]](c)
         except Exception as e:
             row["error"] = "%s: %s" % (type(e).__name__, e)
