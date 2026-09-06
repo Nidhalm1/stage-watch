@@ -192,8 +192,17 @@ def flat(obj, prefix="", out=None, depth=0):
     return out
 
 
+# Prose and machine-learned padding: a fetcher never reads these, and printing
+# them pushed the fields it DOES read off the end of the runner log.
+NOISE = re.compile(r"description|responsibilit|qualificat|body|content|excerpt|"
+                   r"summary|ml_|tags\d|highlight|logo|benefit|salary|compensation",
+                   re.I)
+
+
 def show(obj, cap=None):
     for k, v in flat(obj).items():
+        if NOISE.search(k):
+            continue
         print("   %-44s %s" % (k[:44], v))
 
 
@@ -270,7 +279,7 @@ def probe(name):
             print("  --- item 2: fields that DIFFER from item 1 ---")
             a, b = flat(items[0]), flat(items[1])
             for k, v in b.items():
-                if a.get(k) != v:
+                if a.get(k) != v and not NOISE.search(k):
                     print("   %-44s %s" % (k[:44], v))
 
 
