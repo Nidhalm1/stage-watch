@@ -119,7 +119,7 @@ SOURCES = {
 
     # --- one-offs -----------------------------------------------------------
     "arm": ("json", "https://careers.arm.com/search-jobs/results?ActiveFacetID=0&CurrentPage=1&RecordsPerPage=15&Distance=50&RadiusUnitType=0&Keywords=intern&Location=&ShowRadius=False&IsPagination=False&CustomFacetName=&FacetTerm=&FacetType=0&SearchResultsModuleName=Search+Results&SearchFiltersModuleName=Search+Filters&SortCriteria=0&SortDirection=0&SearchType=5",
-            {"raw": 4000}),
+            {"html_in": "results", "raw": 3000}),
     "amazon": ("json", "https://www.amazon.jobs/en/search.json?base_query=intern&loc_query=France&result_limit=5",
                {"items": "jobs", "total": "hits"}),
     "goldman": ("json", "https://api-higher.gs.com/gateway/api/v1/graphql",
@@ -153,6 +153,9 @@ SOURCES = {
     "nokia-joburl2": ("head", "https://jobs.nokia.com/careers/job/40113", {}),
     "qualcomm-joburl": ("head", "https://careers.qualcomm.com/careers/job/446720469345", {}),
     "microsoft-joburl": ("head", "https://apply.careers.microsoft.com/careers/job/1970393556988021", {}),
+    "gs-joburl": ("head", "https://higher.gs.com/roles/162057", {}),
+    "gs-joburl2": ("head", "https://higher.gs.com/roles/162057_GS_EARLY_CAREER", {}),
+    "ibm-joburl": ("head", "https://careers.ibm.com/careers/JobDetail?jobId=128675", {}),
     "siemens-fr": ("html", "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/stage?listFilterMode=1",
                    {"card": r'<article[^>]*class="[^"]*article--result[^"]*"', "want": 2}),
     "ovh-page2": ("html", "https://careers.ovhcloud.com/search/?q=stage&locale=fr_FR&startrow=25",
@@ -288,7 +291,7 @@ def probe(name):
                 print(body[st:end][:2500])
         return
 
-    if "raw" in extra:
+    if "raw" in extra and "html_in" not in extra:
         print("  --- first %d chars verbatim ---" % extra["raw"])
         print(body[:extra["raw"]])
         return
@@ -301,6 +304,15 @@ def probe(name):
         return
     if isinstance(d, dict):
         print("  top-level keys: %s" % list(d)[:20])
+    if extra.get("html_in"):
+        # a JSON envelope whose payload is a slab of HTML (Radancy does this)
+        frag = d.get(extra["html_in"]) or ""
+        print("  %r holds %d chars of HTML; from its first job link:"
+              % (extra["html_in"], len(frag)))
+        m = re.search(r"<li\b", frag)
+        print(frag[m.start():m.start() + extra.get("raw", 3000)] if m
+              else frag[:extra.get("raw", 3000)])
+        return
     items = d if extra.get("items") == "" else dig(d, extra["items"])
     total = dig(d, extra["total"]) if extra.get("total") else None
     print("  items at %r: %s   total at %r: %s"
