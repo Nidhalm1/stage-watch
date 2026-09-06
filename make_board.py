@@ -2080,7 +2080,11 @@ def f_radancy(c):
                 lm = _RAD_LOC.search(card)
                 loc = _plain(lm.group(1)) if lm else ""
                 href = html.unescape(m.group(1))
-                # /job/<town>/<title-slug>/<org id>/<job id>
+                # The results carry marketing cards alongside postings - an Arm
+                # Ireland page and an intern's blog post both render as job-cards
+                # - and only a real posting is under /job/<town>/<slug>/<org>/<id>.
+                if "/job/" not in href:
+                    continue
                 town = " ".join(href.strip("/").split("/")[1:2]).replace("-", " ")
                 fresh += _rows_from(seen, out, _plain(m.group(2)), loc or town,
                                     urllib.parse.urljoin(c["base"], href),
