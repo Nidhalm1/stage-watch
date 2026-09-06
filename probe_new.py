@@ -72,6 +72,13 @@ SOURCES = {
             {"items": "jobs", "total": "totalCount"}),
     "githubcareers": ("json", "https://www.github.careers/api/jobs?keywords=intern&page=1&sortBy=relevance&descending=false&internal=false",
                       {"items": "jobs", "total": "totalCount"}),
+    # keywords=intern answered 200 with totalCount 0 on 2026-09-06, so the board
+    # is either empty of interns or the keyword is not matched the way AMD's is.
+    # Ask for the whole board - GitHub's is small - and count what comes back.
+    "githubcareers2": ("json", "https://www.github.careers/api/jobs?page=1&sortBy=relevance&descending=false&internal=false",
+                       {"items": "jobs", "total": "totalCount"}),
+    "amd-page2": ("json", "https://careers.amd.com/api/jobs?keywords=intern&page=2&sortBy=relevance&descending=false&internal=false",
+                  {"items": "jobs", "total": "totalCount"}),
     "hpe": ("json", "https://careers.hpe.com/widgets",
             {"body": PHENOM_WIDGET, "items": "refineSearch.data.jobs",
              "total": "refineSearch.totalHits"}),
