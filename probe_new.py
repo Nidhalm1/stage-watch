@@ -23,6 +23,14 @@ HTML_HDR = {"User-Agent": UA,
 IBM_BODY = {
     "appId": "careers", "scopes": ["careers2"], "size": 5, "from": 0,
     "sort": [{"_score": "desc"}],
+    # Probed 2026-09-06: with no _source the hits come back as _id/_index/_score
+    # and nothing else, so the field list is what makes this endpoint useful.
+    # Asking for the whole keyword range to find which one carries the location.
+    "_source": ["_id", "title", "url", "field_keyword_01", "field_keyword_02",
+                "field_keyword_03", "field_keyword_04", "field_keyword_05",
+                "field_keyword_06", "field_keyword_07", "field_keyword_08",
+                "field_keyword_09", "field_keyword_17", "field_keyword_18",
+                "field_keyword_19", "field_text_01"],
     "query": {"bool": {"must": [{"simple_query_string": {
         "query": "intern",
         "fields": ["keywords^1", "body^1", "url^2", "description^2", "title^3", "field_text_01"]}}]}},
@@ -104,9 +112,9 @@ SOURCES = {
              {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
     "nokia": ("json", "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,keyword=intern,sortBy=POSTING_DATES_DESC",
               {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
-    "oracle": ("json", "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
+    "oracle": ("json", "https://eeho.fa.us2.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
                {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
-    "jpmorgan": ("json", "https://jpmc.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
+    "jpmorgan": ("json", "https://jpmc.fa.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation,requisitionList.secondaryLocations&finder=findReqs;siteNumber=CX_1,limit=5,offset=0,sortBy=POSTING_DATES_DESC,keyword=intern",
                  {"items": "items.0.requisitionList", "total": "items.0.TotalJobsCount"}),
 
     # --- one-offs -----------------------------------------------------------
