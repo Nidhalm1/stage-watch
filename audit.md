@@ -16,19 +16,18 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-06
+`board.html` &middot; sweep of 2026-09-07
 
-### Unrecognised location - 5
+### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
-| IBM | [Contractor Fulfillment Specialist Internship](https://careers.ibm.com/careers/JobDetail?jobId=125523) | Heredia, CR |
 
-### Not tech - 14
+### Not tech - 15
 
 | Company | Title | Location |
 |---|---|---|
@@ -40,6 +39,7 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
+| SAP | [Internship: Partner Solution Enablement Associate F/M](https://jobs.sap.com/job/Levallois-Perret-Internship-Partner-Solution-Enablement-Associate-FM-92300/1421057333/) | Levallois Perret |
 | Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
 | Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
@@ -47,7 +47,7 @@ mistake (a French site being read as foreign).
 | Amazon / AWS | [Stagiaire service juridique](https://www.amazon.jobs/en/jobs/10518434/stagiaire-service-juridique) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Stagiaire service juridique](https://www.amazon.jobs/en/jobs/10470003/stagiaire-service-juridique) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 512 (sample below)
+### Outside France - 516 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -71,7 +71,7 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-06
+`board2.html` &middot; sweep of 2026-09-07
 
 ### Unrecognised location - 7
 
@@ -79,13 +79,13 @@ mistake (a French site being read as foreign).
 |---|---|---|
 | OVHcloud | [Stage Septembre 2026 - Industrial Lean Officer H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-Septembre-2026-Industrial-Lean-Officer-HFN-59100/1385526333/) | ROUBAIX |
 | OVHcloud | [Stage - Chef de projet documentation industrielle H/F/N](https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1385457233/) | CROIX |
-| OVHcloud | [STAGE septembre 2026 - Ingénieur R&D refroidissement en Datacenter F/H/N](https://careers.ovhcloud.com/job/CROIX-STAGE-septembre-2026-Ing%C3%A9nieur-R&D-refroidissement-en-Datacenter-FHN-59170/1400775433/) | CROIX |
-| OVHcloud | [STAGE septembre - Chargé de développement RH et carrières F/H/N](https://careers.ovhcloud.com/job/ROUBAIX-STAGE-septembre-Charg%C3%A9-de-d%C3%A9veloppement-RH-et-carri%C3%A8res-FHN-59100/1409867933/) | ROUBAIX |
-| Siemens | [Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411) | Muscat, Masqat, Oman |
 | Siemens | [Market Development Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520020) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
+| Siemens | [Software & AI Adoption Engineering Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651) | - |
+| Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
 
-### Not tech - 49
+### Not tech - 51
 
 | Company | Title | Location |
 |---|---|---|
@@ -101,6 +101,7 @@ mistake (a French site being read as foreign).
 | Aircall | [Sales Intern - Iberia market - 6 months](https://jobs.lever.co/aircall/3a88fe56-9a33-476d-89de-76e4faa38cfc) | Paris Office |
 | Aircall | [Sales Partner Manager Intern](https://jobs.lever.co/aircall/ae78bd4b-a11e-4cb3-8e81-a0f0a4b28b9b) | Paris Office |
 | Aircall | [Strategy & Operations Intern — Office of the General Manager, Small Business](https://jobs.lever.co/aircall/d7f248d3-f16f-4bc7-9f7f-201e180600df) | Paris Office |
+| Back Market | [Financial Planning & Analysis Intern](https://jobs.ashbyhq.com/backmarket/2551ba06-5d98-4441-8919-e20e844cc15a) | Bordeaux |
 | Back Market | [Legal Intern / Juriste Droit des Affaires (Paris)](https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5) | Paris |
 | Back Market | [Sustainability and Public Affairs Intern (Paris )](https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7) | Paris |
 | Alan | [CTO Founder Associate - internship](https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0) | Paris, France |
@@ -108,15 +109,16 @@ mistake (a French site being read as foreign).
 | Alan | [Insurance Legal - Internship](https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd) | Paris, France |
 | Alan | [Talent Associate (internship)](https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d) | Paris, France |
 | Alan | [Brand Associate (Internship)](https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df) | Paris, France |
+| Alan | [People Associate (internship)](https://jobs.ashbyhq.com/alan/71fa3e9d-1f5f-4e3f-a1de-e68b3c85803a) | Paris, France |
 | Ledger | [Internship - Total Rewards (Compensation & Benefits)](https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2) | Paris, France |
-| Sorare | [Marketing Intern](https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d) | Paris |
 | Sorare | [Player Experience Intern](https://jobs.ashbyhq.com/sorare/20495c4a-87d1-411c-a528-6420f0dc4257) | Paris |
 | Deezer | [Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)](https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d) | Paris, FR |
 | Deezer | [Product Marketing Intern (m/f/d)](https://deezer.teamtailor.com/jobs/8149033-product-marketing-intern-m-f-d) | Paris, FR |
 | Deezer | [Procurement Intern - 6 months (m/f/d)](https://deezer.teamtailor.com/jobs/7633290-procurement-intern-6-months-m-f-d) | Paris, FR |
-| Deezer | [Artist Relations France Coordinator - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d) | Paris, FR |
+| Deezer | [Talent acquisition & HR development - 6 months internship (m/f/d)](https://deezer.teamtailor.com/jobs/7632031-talent-acquisition-hr-development-6-months-internship-m-f-d) | Paris, FR |
 | Deezer | [Motion Design - 6 months Internship m/f/d - French speaking mandatory](https://deezer.teamtailor.com/jobs/7632023-motion-design-6-months-internship-m-f-d-french-speaking-mandatory) | Paris, FR |
 | Deezer | [Legal & Business Affairs - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d) | Paris, FR |
+| Sopra Steria | [Stage de fin d'études - Consultant en transformation digitale](https://jobs.smartrecruiters.com/SopraSteria1/744000147879850) | Courbevoie, fr |
 | Sopra Steria | [Stage Consultant(e) - Transformation digitale - People&Change - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000147559756) | Courbevoie, fr |
 | Sopra Steria | [Stage - Chef/fe de Projet - Services Publics - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000147258373) | Courbevoie, fr |
 | Sopra Steria | [Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie](https://jobs.smartrecruiters.com/SopraSteria1/744000145930048) | Courbevoie, fr |
@@ -127,7 +129,6 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage - Chargé(e) de projet Solidarités & Engagement citoyen](https://jobs.smartrecruiters.com/SopraSteria1/744000135648124) | Paris, fr |
 | Sopra Steria | [Stage de fin d'études - Consultant(e) en Transformation digitale – Services Publics - IDF](https://jobs.smartrecruiters.com/SopraSteria1/744000128533061) | Courbevoie, fr |
 | Sopra Steria | [Stage - Consultant PLM et Sustainability : ACV, DPP et CSRD - Colomiers](https://jobs.smartrecruiters.com/SopraSteria1/744000111047098) | Colomiers, fr |
-| Sopra Steria | [Stage de fin d'études - Consultant en transformation digitale](https://jobs.smartrecruiters.com/SopraSteria1/744000104203669) | Courbevoie, fr |
 | Sopra Steria | [Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France](https://jobs.smartrecruiters.com/SopraSteria1/744000099047104) | Paris, fr |
 | Sopra Steria | [Stage - Chargé (e)  de Recrutement](https://jobs.smartrecruiters.com/SopraSteria1/744000091562029) | Colomiers, fr |
 | Alten | [STAGE - Chargé de projet qualité](https://jobs.smartrecruiters.com/alten/744000146498239) | Vitrolles, fr |
@@ -138,8 +139,9 @@ mistake (a French site being read as foreign).
 | Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c) | Saint Vulbas |
 | Veepee | [Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)](https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2) | Saint-Denis |
 | Siemens | [Stage - Chaîne logistique et approvisionnements f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/514945) | Haguenau, Grand-Est, France |
+| Siemens | [Stage - Planificateur de production f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521533) | Haguenau, Grand-Est, France |
 
-### Outside France - 62 (sample below)
+### Outside France - 59 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -163,17 +165,18 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-06
+`board3.html` &middot; sweep of 2026-09-07
 
-### Unrecognised location - 3
+### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
+| Airbus | [Landing Gear Technical Engineering Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645) | Bristol-Area, JR10430645 |
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 236 (showing the first 60)
+### Not tech - 286 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -183,71 +186,71 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - Legal M&A - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
 | Airbus | [Stage Peintre Aéro / Opérateur(trice) matériau composite H/F](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249) | Salaunes, JR10438249 |
 | Airbus | [Testia SAS – Stage Comptabilité (H/F) – Toulouse](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292) | Toulouse-Area, JR10437292 |
+| Dassault Systemes | [STAGE - Chargé de Marketing Operations & Lead Management (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-marketing-operations-lead-management-f-h-549798) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-marketing-f-h-548955) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de Planification Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549108) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Assistant stratégique et communication auprès de la Directrice Générale Adjointe EMEA (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-strategique-et-communication-aupres-de-la-directrice-generale-adjointe-emea-f-h-548943) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de développement commercial (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-developpement-commercial-f-h-548803) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Adoption Utilisateur 3DEXPERIENCE (F/H)](https://www.3ds.com/careers/jobs/stage-adoption-utilisateur-3dexperience-f-h-549115) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Digital Learning (F/H)](https://www.3ds.com/careers/jobs/stage-digital-learning-f-h-549132) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Ingénieur technico-commercial CATIA (F/H) - Aix-en-Provence](https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-catia-f-h-aix-en-provence-549246) | France, Aix en Provence |
+| Dassault Systemes | [STAGE - Assistant Tech-Sales (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-tech-sales-f-h-549411) | France, Paris |
+| Dassault Systemes | [STAGE – Analyste en gestion des risques (F/H)](https://www.3ds.com/careers/jobs/stage-analyste-en-gestion-des-risques-f-h-549514) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de Planification Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549714) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Ingénieur Avant-vente CATIA AI Engineering (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-catia-ai-engineering-f-h-549698) | France, Aix en Provence |
+| Dassault Systemes | [STAGE - Ingénieur Technico-Commercial (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-f-h-549697) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE – Chargé de Communication Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Assistant Marketing Digital (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE – Juriste contrats - nouvelles technologies (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Fiscaliste (F/H)](https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE- Chargé de projet formation (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Communication Marque Employeur (F/H)](https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Manufacturing génératif — Marine & Offshore (F/H)](https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Prix de Transfert (F/H)](https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de missions RH internationales (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Gestionnaire de paie (F/H)](https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Business Developper (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Gestion de la Continuité d'Activité et Résilience Opérationnelle (F/H)](https://www.3ds.com/careers/jobs/stage-gestion-de-la-continuite-d-activite-et-resilience-operationnelle-f-h-549676) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)](https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383) | France, Valbonne |
+| Dassault Systemes | [STAGE – Communication Marque Employeur (F/H)](https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de missions RH internationales (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Charge de projet RH "Management & Leadership" (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-rh-management-leadership-f-h-549329) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé des Ressources Humaines Europe (F/H)](https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE- Chargé de projet formation (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé d'événementiel (F/H)](https://www.3ds.com/careers/jobs/stage-charge-d-evenementiel-f-h-549314) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Manufacturing génératif — Marine & Offshore (F/H)](https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Marketing opérationnel & digital (F/H)](https://www.3ds.com/careers/jobs/stage-marketing-operationnel-digital-f-h-549191) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Assistant Marketing Digital (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Business Developper (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Juriste lutte contre la contrefaçon (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Juriste contrats - nouvelles technologies (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Fiscaliste (F/H)](https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Chargé de Communication Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Chargé de Marketing & Innovation 3DEXPERIENCE Lab (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-marketing-innovation-3dexperience-lab-f-h-549040) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Prix de Transfert (F/H)](https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037) | France, Vélizy-Villacoublay |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH1-fr) | France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGK-fr) | France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH3-fr) | Dunkerque, France |
+| Societe Generale | [Market Performance Analyst](https://careers.societegenerale.com/offres-d-emploi/market-performance-analyst-26000JGZ-fr) | La Defense, France |
+| Societe Generale | [Assistant Chargé de Relations Bancaires](https://careers.societegenerale.com/offres-d-emploi/assistant-charge-de-relations-bancaires-26000JLH-fr) | La Defense, France |
+| Societe Generale | [Chargé(e) de partenariats Marketing](https://careers.societegenerale.com/offres-d-emploi/chargee-de-partenariats-marketing-26000GUP-fr) | Courbevoie, France |
+| Societe Generale | [Pôle finance](https://careers.societegenerale.com/offres-d-emploi/pole-finance-26000JI1-fr) | La Defense, France |
+| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000JJA-fr) | France |
 | Societe Generale | [Juriste Conseil juridique et ingénierie patrimoniale](https://careers.societegenerale.com/offres-d-emploi/juriste-conseil-juridique-et-ingenierie-patrimoniale-260009UX-fr) | La Defense, France |
 | Societe Generale | [Auditeur Interne - Banque de Détail, Banque Privée et Assurance en France](https://careers.societegenerale.com/offres-d-emploi/auditeur-interne-banque-de-detail-banque-privee-et-assurance-en-france-26000HQH-fr) | La Defense, France |
-| Societe Generale | [Analyste Private Equity](https://careers.societegenerale.com/offres-d-emploi/analyste-private-equity-26000JAG-fr) | France |
-| Societe Generale | [Chargé(e) de recouvrement - Juriste](https://careers.societegenerale.com/offres-d-emploi/chargee-de-recouvrement-juriste-26000J2A-fr) | Bordeaux, France |
-| Societe Generale | [Analyste risques suivi d'activité de marché](https://careers.societegenerale.com/offres-d-emploi/analyste-risques-suivi-dactivite-de-marche-26000JBR-fr) | La Defense, France |
-| Societe Generale | [Conseiller fusion et acquisition](https://careers.societegenerale.com/offres-d-emploi/conseiller-fusion-et-acquisition-26000JA1-fr) | Lyon, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGE-fr) | Ardres, France |
-| Societe Generale | [Stage marché des particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-marche-des-particuliers-26000JGF-fr) | Nice, France |
-| Societe Generale | [Assistant d'études RH](https://careers.societegenerale.com/offres-d-emploi/assistant-detudes-rh-26000JBU-fr) | Courbevoie, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000J9Y-fr) | St-Claude, France |
-| Societe Generale | [Fiscaliste](https://careers.societegenerale.com/offres-d-emploi/fiscaliste-26000B95-fr) | La Defense, France |
-| Societe Generale | [Chargés d’étude – Ingénierie patrimoniale](https://careers.societegenerale.com/offres-d-emploi/charges-detude-ingenierie-patrimoniale-26000E9Z-fr) | France |
-| Societe Generale | [Chef de projet RH IA & Copilot](https://careers.societegenerale.com/offres-d-emploi/chef-de-projet-rh-ia-copilot-26000HIZ-fr) | La Defense, France |
-| Societe Generale | [Data Analytics/Data Science au sein de l’Audit Interne en Système d’information](https://careers.societegenerale.com/offres-d-emploi/data-analytics-data-science-au-sein-de-laudit-interne-en-systeme-dinformation-26000H93-fr) | La Defense, France |
-| Societe Generale | [Chargé de mission Conformité Sanctions Internationales et Embargos](https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-sanctions-internationales-et-embargos-26000GZZ-fr) | Puteaux, France |
-| Societe Generale | [Chargé de financement commerce international matières premières](https://careers.societegenerale.com/offres-d-emploi/charge-de-financement-commerce-international-matieres-premieres-26000J2M-fr) | La Defense, France |
-| Societe Generale | [Chargé de projets culturels et de relations publiques](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-culturels-et-de-relations-publiques-26000HDI-fr) | La Defense, France |
-| Societe Generale | [Chargé de mission conformité](https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-26000DDU-fr) | La Defense, France |
-| Societe Generale | [Chef de projets](https://careers.societegenerale.com/offres-d-emploi/chef-de-projets-26000J0D-fr) | La Defense, France |
-| Societe Generale | [Analyste risques de marché](https://careers.societegenerale.com/offres-d-emploi/analyste-risques-de-marche-26000HQS-fr) | La Defense, France |
-| Societe Generale | [1 STAGE EN 1 JOUR - Assistant Trader](https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-trader-26000IMH-fr) | La Defense, France |
-| Societe Generale | [1 STAGE EN 1 JOUR – Assistant ou analyste stratégiste](https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-ou-analyste-strategiste-26000IML-fr) | La Defense, France |
-| Societe Generale | [1 STAGE EN 1 JOUR - Analyste Quantitatif](https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-analyste-quantitatif-26000IMP-fr) | La Defense, France |
-| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000IXW-fr) | Compiegne, France |
-| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000GSA-fr) | Arras, France |
-| Societe Generale | [Assistant risque opérationnel](https://careers.societegenerale.com/offres-d-emploi/assistant-risque-operationnel-26000IPA-fr) | La Defense, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IPY-fr) | Auxonne, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IL5-fr) | Champagnole, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IM2-fr) | Dole, France |
-| Societe Generale | [Assistant Analyste reporting réglementaire/pilotage](https://careers.societegenerale.com/offres-d-emploi/assistant-analyste-reporting-reglementaire-pilotage-26000HWE-fr) | La Defense, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IJH-fr) | Villeurbanne, France |
-| Societe Generale | [Assistant Chef de projet  - Filière Finance](https://careers.societegenerale.com/offres-d-emploi/assistant-chef-de-projet-filiere-finance-26000HLM-fr) | La Defense, France |
-| Societe Generale | [Stage Banquier Privé](https://careers.societegenerale.com/offres-d-emploi/stage-banquier-prive-26000IFR-fr) | La-Rochelle, France |
-| Societe Generale | [Assistant Chargé d'Opérations Garanties](https://careers.societegenerale.com/offres-d-emploi/assistant-charge-doperations-garanties-26000I8Z-fr) | La Defense, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ5-fr) | Avallon, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ4-fr) | Auxerre, France |
-| Societe Generale | [Analyste Risques Structurels - Reportings Prudentiels](https://careers.societegenerale.com/offres-d-emploi/analyste-risques-structurels-reportings-prudentiels-26000HJR-fr) | La Defense, France |
-| Societe Generale | [Chargé de Mission Gestion de Crise](https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-gestion-de-crise-26000HRD-fr) | La Defense, France |
-| Societe Generale | [Assistance Animateur Marketing](https://careers.societegenerale.com/offres-d-emploi/assistance-animateur-marketing-26000I0B-fr) | Cesson-Sevigne, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRK-fr) | Le-Creusot, France |
-| Societe Generale | [Stage - Conseiller Clientèle professionnels](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-professionnels-26000HTA-fr) | Besancon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSS-fr) | Besancon, France |
-| Societe Generale | [Stage Conseil Marché des professionnels](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-des-professionnels-26000HUX-fr) | Cannes, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPW-fr) | Belfort, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT3-fr) | Dijon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT4-fr) | Besancon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HTE-fr) | Dijon, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQG-fr) | Chalon-Sur-Saone, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPY-fr) | Lure, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQ2-fr) | Saint-Remy, France |
-| Societe Generale | [Stage marché patrimonial](https://careers.societegenerale.com/offres-d-emploi/stage-marche-patrimonial-26000HUZ-fr) | Le-Cannet, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRR-fr) | Montceau-Les-Mines, France |
-| Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr) | Besancon, France |
-| Societe Generale | [Chargé de projets RH](https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr) | La Defense, France |
 
-### Outside France - 703 (sample below)
+### Outside France - 734 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [Software Engineering Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Software-Engineering-Intern_R0339364) | Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0339364; 20 - SOFTWARE; Thales Cyber Solutions Belgium SA |
 | Thales | [Software Development and Integration Engineer (Intern)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Software Engineer Intern - Middleware (IBS)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Internship as Defense System Engineer (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Internship-as-Defense-System-Engineer--Open-also-to-Protected-Categories--Law-68-99-_R0338900) | Firenze, CW Intern/Trainee; R0338900; 18 - SYSTEM; Thales Italia S.P.A. |
 | Thales | [Communications Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Communications-Intern_R0338806) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0338806; 14 - COMMUNICATIONS; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Business App Support Intern - 2027 Start](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
-| Thales | [Supply Chain Management Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing-Airport/Supply-Chain-Management-Intern_R0336817) | Beijing-Airport, Intern/Trainee (Fixed Term) (Trainee); R0336817; 07 - CUSTOMER SERVICE; Thales Aerospace (Beijing) Co., Ltd. |
 | Thales | [Junior IVVQ Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Junior-IVVQ-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0337042) | Firenze, Intern/Trainee (Fixed Term) (Trainee); R0337042; 20 - SOFTWARE; Thales Italia S.P.A. |
 | Thales | [Software Engineer Intern (C#)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/SINGAPORE/Software-Engineer-Intern--C--_R0324316) | SINGAPORE, Intern/Trainee (Fixed Term) (Trainee); R0324316; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Customer Service & Sales Operations Internship](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/Customer-Service---Sales-Operations-Internship_R0334316) | Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0334316; 07 - CUSTOMER SERVICE; Thales DIS Mexico SA de CV |

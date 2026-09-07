@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 512,
+      "foreign_count": 516,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -147,56 +147,63 @@
         },
         {
           "company": "Palantir",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Deployment Strategist, Internship",
           "url": "https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0"
         },
         {
-          "company": "Microsoft",
+          "company": "SAP",
           "is_new": true,
+          "location": "Levallois Perret",
+          "title": "Internship: Partner Solution Enablement Associate F/M",
+          "url": "https://jobs.sap.com/job/Levallois-Perret-Internship-Partner-Solution-Enablement-Associate-FM-92300/1421057333/"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": false,
           "location": "France, Paris, Paris",
           "title": "National Technology Intern",
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse, Occitanie, FRA",
           "title": "Operations Intern - Région Sud - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Lille, Hauts-de-France, FRA",
           "title": "Operations Intern - Région Nord - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, Ile-de-France, FRA",
           "title": "Operations Intern - Île de France - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
           "title": "Stagiaire service juridique",
           "url": "https://www.amazon.jobs/en/jobs/10518434/stagiaire-service-juridique"
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
           "title": "Stagiaire service juridique",
           "url": "https://www.amazon.jobs/en/jobs/10470003/stagiaire-service-juridique"
         }
       ],
-      "non_tech_total": 14,
-      "stamp": "2026-09-06",
+      "non_tech_total": 15,
+      "stamp": "2026-09-07",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -210,14 +217,14 @@
           "is_new": false,
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
         },
         {
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855"
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
         },
         {
           "company": "Cloudflare",
@@ -225,20 +232,13 @@
           "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785"
-        },
-        {
-          "company": "IBM",
-          "is_new": true,
-          "location": "Heredia, CR",
-          "title": "Contractor Fulfillment Specialist Internship",
-          "url": "https://careers.ibm.com/careers/JobDetail?jobId=125523"
         }
       ],
-      "unknown_location_total": 5
+      "unknown_location_total": 4
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 62,
+      "foreign_count": 59,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -418,6 +418,13 @@
         },
         {
           "company": "Back Market",
+          "is_new": true,
+          "location": "Bordeaux",
+          "title": "Financial Planning & Analysis Intern ",
+          "url": "https://jobs.ashbyhq.com/backmarket/2551ba06-5d98-4441-8919-e20e844cc15a"
+        },
+        {
+          "company": "Back Market",
           "is_new": false,
           "location": "Paris",
           "title": "Legal Intern / Juriste Droit des Affaires (Paris)",
@@ -466,18 +473,18 @@
           "url": "https://jobs.ashbyhq.com/alan/91af2544-fd3d-49f6-92f1-095cea1580df"
         },
         {
+          "company": "Alan",
+          "is_new": true,
+          "location": "Paris, France",
+          "title": "People Associate (internship)",
+          "url": "https://jobs.ashbyhq.com/alan/71fa3e9d-1f5f-4e3f-a1de-e68b3c85803a"
+        },
+        {
           "company": "Ledger",
           "is_new": false,
           "location": "Paris, France",
           "title": "Internship - Total Rewards (Compensation & Benefits)",
           "url": "https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2"
-        },
-        {
-          "company": "Sorare",
-          "is_new": false,
-          "location": "Paris",
-          "title": "Marketing Intern",
-          "url": "https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d"
         },
         {
           "company": "Sorare",
@@ -509,10 +516,10 @@
         },
         {
           "company": "Deezer",
-          "is_new": false,
+          "is_new": true,
           "location": "Paris, FR",
-          "title": "Artist Relations France Coordinator - Intern (m/f/d)",
-          "url": "https://deezer.teamtailor.com/jobs/7632034-artist-relations-france-coordinator-intern-m-f-d"
+          "title": "Talent acquisition & HR development - 6 months internship (m/f/d)",
+          "url": "https://deezer.teamtailor.com/jobs/7632031-talent-acquisition-hr-development-6-months-internship-m-f-d"
         },
         {
           "company": "Deezer",
@@ -527,6 +534,13 @@
           "location": "Paris, FR",
           "title": "Legal & Business Affairs - Intern (m/f/d)",
           "url": "https://deezer.teamtailor.com/jobs/7632024-legal-business-affairs-intern-m-f-d"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage de fin d'études - Consultant en transformation digitale",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147879850"
         },
         {
           "company": "Sopra Steria",
@@ -601,13 +615,6 @@
         {
           "company": "Sopra Steria",
           "is_new": false,
-          "location": "Courbevoie, fr",
-          "title": "Stage de fin d'études - Consultant en transformation digitale",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000104203669"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
           "location": "Paris, fr",
           "title": "Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000099047104"
@@ -670,53 +677,39 @@
         },
         {
           "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "Haguenau, Grand-Est, France",
           "title": "Stage - Chaîne logistique et approvisionnements f/h",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514945"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "Haguenau, Grand-Est, France",
+          "title": "Stage - Planificateur de production f/h",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521533"
         }
       ],
-      "non_tech_total": 49,
-      "stamp": "2026-09-06",
+      "non_tech_total": 51,
+      "stamp": "2026-09-07",
       "unknown_location": [
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage Septembre 2026 - Industrial Lean Officer H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Septembre-2026-Industrial-Lean-Officer-HFN-59100/1385526333/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "Stage - Chef de projet documentation industrielle H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1385457233/"
         },
         {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE septembre 2026 - Ingénieur R&D refroidissement en Datacenter F/H/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-septembre-2026-Ing%C3%A9nieur-R&D-refroidissement-en-Datacenter-FHN-59170/1400775433/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "ROUBAIX",
-          "title": "STAGE septembre - Chargé de développement RH et carrières F/H/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-STAGE-septembre-Charg%C3%A9-de-d%C3%A9veloppement-RH-et-carri%C3%A8res-FHN-59100/1409867933/"
-        },
-        {
           "company": "Siemens",
-          "is_new": true,
-          "location": "Muscat, Masqat, Oman",
-          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Market Development Intern",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520020"
@@ -724,6 +717,27 @@
         {
           "company": "Siemens",
           "is_new": true,
+          "location": "",
+          "title": "Finance Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Software & AI Adoption Engineering Intern",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
           "location": "",
           "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
@@ -733,8 +747,14 @@
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 703,
+      "foreign_count": 734,
       "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0339364; 20 - SOFTWARE; Thales Cyber Solutions Belgium SA",
+          "title": "Software Engineering Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Software-Engineering-Intern_R0339364"
+        },
         {
           "company": "Thales",
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd.",
@@ -764,12 +784,6 @@
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd.",
           "title": "Business App Support Intern - 2027 Start",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783"
-        },
-        {
-          "company": "Thales",
-          "location": "Beijing-Airport, Intern/Trainee (Fixed Term) (Trainee); R0336817; 07 - CUSTOMER SERVICE; Thales Aerospace (Beijing) Co., Ltd.",
-          "title": "Supply Chain Management Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing-Airport/Supply-Chain-Management-Intern_R0336817"
         },
         {
           "company": "Thales",
@@ -870,6 +884,370 @@
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
         },
         {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de Marketing Operations & Lead Management (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-operations-lead-management-f-h-549798"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de marketing (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-f-h-548955"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de Planification Stratégique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549108"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Assistant stratégique et communication auprès de la Directrice Générale Adjointe EMEA (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-strategique-et-communication-aupres-de-la-directrice-generale-adjointe-emea-f-h-548943"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de développement commercial (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-developpement-commercial-f-h-548803"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Adoption Utilisateur 3DEXPERIENCE (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-adoption-utilisateur-3dexperience-f-h-549115"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Digital Learning (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-digital-learning-f-h-549132"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Aix en Provence",
+          "title": "STAGE - Ingénieur technico-commercial CATIA (F/H) - Aix-en-Provence",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-catia-f-h-aix-en-provence-549246"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Paris",
+          "title": "STAGE - Assistant Tech-Sales (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-tech-sales-f-h-549411"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Analyste en gestion des risques (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-analyste-en-gestion-des-risques-f-h-549514"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de Planification Stratégique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549714"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Aix en Provence",
+          "title": "STAGE - Ingénieur Avant-vente CATIA AI Engineering (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-catia-ai-engineering-f-h-549698"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Ingénieur Technico-Commercial (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-f-h-549697"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Chargé de Communication Stratégique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Assistant Marketing Digital (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Juriste contrats - nouvelles technologies (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Fiscaliste (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE- Chargé de projet formation (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Communication Marque Employeur (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Manufacturing génératif — Marine & Offshore (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Prix de Transfert (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de missions RH internationales (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Gestionnaire de paie (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Business Developper (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Gestion de la Continuité d'Activité et Résilience Opérationnelle (F/H) ",
+          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-la-continuite-d-activite-et-resilience-operationnelle-f-h-549676"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Valbonne",
+          "title": "STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Communication Marque Employeur (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de missions RH internationales (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Charge de projet RH \"Management & Leadership\" (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-rh-management-leadership-f-h-549329"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé des Ressources Humaines Europe (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE- Chargé de projet formation (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Chargé d'événementiel (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-d-evenementiel-f-h-549314"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Manufacturing génératif — Marine & Offshore (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE – Marketing opérationnel & digital (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-marketing-operationnel-digital-f-h-549191"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Assistant Marketing Digital (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Business Developper (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Juriste lutte contre la contrefaçon (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Juriste contrats - nouvelles technologies (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Fiscaliste (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Chargé de Communication Stratégique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Chargé de Marketing & Innovation 3DEXPERIENCE Lab (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-innovation-3dexperience-lab-f-h-549040"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Prix de Transfert (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH1-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGK-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Dunkerque, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH3-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Market Performance Analyst",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/market-performance-analyst-26000JGZ-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Assistant Chargé de Relations Bancaires",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-charge-de-relations-bancaires-26000JLH-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
+          "location": "Courbevoie, France",
+          "title": "Chargé(e) de partenariats Marketing",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/chargee-de-partenariats-marketing-26000GUP-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Pôle finance",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/pole-finance-26000JI1-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "France",
+          "title": "Stage Conseil Marché de l'entreprise",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000JJA-fr"
+        },
+        {
           "company": "Societe Generale",
           "is_new": false,
           "location": "La Defense, France",
@@ -882,375 +1260,18 @@
           "location": "La Defense, France",
           "title": "Auditeur Interne - Banque de Détail, Banque Privée et Assurance en France",
           "url": "https://careers.societegenerale.com/offres-d-emploi/auditeur-interne-banque-de-detail-banque-privee-et-assurance-en-france-26000HQH-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "France",
-          "title": "Analyste Private Equity",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-private-equity-26000JAG-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Bordeaux, France",
-          "title": "Chargé(e) de recouvrement - Juriste",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/chargee-de-recouvrement-juriste-26000J2A-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Analyste risques suivi d'activité de marché",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-risques-suivi-dactivite-de-marche-26000JBR-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Lyon, France",
-          "title": "Conseiller fusion et acquisition",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/conseiller-fusion-et-acquisition-26000JA1-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Ardres, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGE-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Nice, France",
-          "title": "Stage marché des particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-marche-des-particuliers-26000JGF-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Courbevoie, France",
-          "title": "Assistant d'études RH",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-detudes-rh-26000JBU-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "St-Claude, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000J9Y-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Fiscaliste",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/fiscaliste-26000B95-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "France",
-          "title": "Chargés d’étude – Ingénierie patrimoniale",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charges-detude-ingenierie-patrimoniale-26000E9Z-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chef de projet RH IA & Copilot",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/chef-de-projet-rh-ia-copilot-26000HIZ-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Data Analytics/Data Science au sein de l’Audit Interne en Système d’information",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/data-analytics-data-science-au-sein-de-laudit-interne-en-systeme-dinformation-26000H93-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Puteaux, France",
-          "title": "Chargé de mission Conformité Sanctions Internationales et Embargos",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-sanctions-internationales-et-embargos-26000GZZ-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chargé de financement commerce international matières premières",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-financement-commerce-international-matieres-premieres-26000J2M-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chargé de projets culturels et de relations publiques",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-culturels-et-de-relations-publiques-26000HDI-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chargé de mission conformité",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-conformite-26000DDU-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chef de projets",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/chef-de-projets-26000J0D-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Analyste risques de marché",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-risques-de-marche-26000HQS-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "1 STAGE EN 1 JOUR - Assistant Trader",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-trader-26000IMH-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "1 STAGE EN 1 JOUR – Assistant ou analyste stratégiste",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-assistant-ou-analyste-strategiste-26000IML-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "1 STAGE EN 1 JOUR - Analyste Quantitatif",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/1-stage-en-1-jour-analyste-quantitatif-26000IMP-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Compiegne, France",
-          "title": "Stage Conseil Marché de l'entreprise",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000IXW-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Arras, France",
-          "title": "Stage Conseil Marché de l'entreprise",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000GSA-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Assistant risque opérationnel",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-risque-operationnel-26000IPA-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Auxonne, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IPY-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Champagnole, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IL5-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Dole, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IM2-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Assistant Analyste reporting réglementaire/pilotage",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-analyste-reporting-reglementaire-pilotage-26000HWE-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Villeurbanne, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000IJH-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Assistant Chef de projet  - Filière Finance",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-chef-de-projet-filiere-finance-26000HLM-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La-Rochelle, France",
-          "title": "Stage Banquier Privé",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-banquier-prive-26000IFR-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Assistant Chargé d'Opérations Garanties",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-charge-doperations-garanties-26000I8Z-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Avallon, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ5-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Auxerre, France",
-          "title": "Stage Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HZ4-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Analyste Risques Structurels - Reportings Prudentiels",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/analyste-risques-structurels-reportings-prudentiels-26000HJR-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chargé de Mission Gestion de Crise",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-mission-gestion-de-crise-26000HRD-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Cesson-Sevigne, France",
-          "title": "Assistance Animateur Marketing",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/assistance-animateur-marketing-26000I0B-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Le-Creusot, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRK-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besancon, France",
-          "title": "Stage - Conseiller Clientèle professionnels",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-professionnels-26000HTA-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besancon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSS-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Cannes, France",
-          "title": "Stage Conseil Marché des professionnels",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-des-professionnels-26000HUX-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Belfort, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPW-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Dijon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT3-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besancon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HT4-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Dijon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HTE-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Chalon-Sur-Saone, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQG-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Lure, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HPY-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Saint-Remy, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HQ2-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Le-Cannet, France",
-          "title": "Stage marché patrimonial",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-marche-patrimonial-26000HUZ-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Montceau-Les-Mines, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HRR-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "Besancon, France",
-          "title": "Stage - Conseiller Clientèle Particuliers",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000HSV-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Chargé de projets RH",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-projets-rh-26000GHH-fr"
         }
       ],
-      "non_tech_total": 236,
-      "stamp": "2026-09-06",
+      "non_tech_total": 286,
+      "stamp": "2026-09-07",
       "unknown_location": [
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Bristol-Area, JR10430645",
+          "title": "Landing Gear Technical Engineering Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645"
+        },
         {
           "company": "Airbus",
           "is_new": false,
@@ -1267,14 +1288,14 @@
         },
         {
           "company": "HPE",
-          "is_new": true,
+          "is_new": false,
           "location": "Heredia, Heredia, Costa Rica",
           "title": "Contract Administrator (Internship)",
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
         }
       ],
-      "unknown_location_total": 3
+      "unknown_location_total": 4
     }
   },
-  "generated": "2026-09-06T19:29:34.997285+02:00"
+  "generated": "2026-09-07T20:59:22.074271+02:00"
 }
