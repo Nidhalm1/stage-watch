@@ -2,13 +2,25 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 516,
+      "foreign_count": 762,
       "foreign_sample": [
         {
           "company": "Datadog",
           "location": "New York, New York, USA",
           "title": "Product Management Intern",
           "url": "https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241"
+        },
+        {
+          "company": "Datadog",
+          "location": "Madrid, Spain",
+          "title": "Software Engineering Intern",
+          "url": "https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161"
+        },
+        {
+          "company": "Datadog",
+          "location": "Boston, Massachusetts, USA; New York, New York, USA",
+          "title": "Software Engineering Intern (Summer)",
+          "url": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118"
         },
         {
           "company": "Datadog",
@@ -26,13 +38,19 @@
           "company": "Doctolib",
           "location": "Milano, Milan, Italy",
           "title": "SEO & AI Intern (x/f/m)",
-          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7824240003"
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7864184003"
         },
         {
           "company": "Doctolib",
           "location": "Milano, Milan, Italy",
           "title": "SEO & AI Intern (x/f/m)",
-          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7864184003"
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7824240003"
+        },
+        {
+          "company": "Criteo",
+          "location": "Barcelona, Spain",
+          "title": "Account Strategist (Intern)",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979"
         },
         {
           "company": "Criteo",
@@ -61,12 +79,6 @@
         {
           "company": "Criteo",
           "location": "Barcelona, Spain",
-          "title": "Account Strategist (Intern)",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979"
-        },
-        {
-          "company": "Criteo",
-          "location": "Barcelona, Spain",
           "title": "Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802"
         },
@@ -81,21 +93,23 @@
           "location": "Barcelona, Spain",
           "title": "Sales Operations Data Analyst Intern",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Operations-Data-Analyst-Intern_r20723"
-        },
-        {
-          "company": "Criteo",
-          "location": "Barcelona, Spain",
-          "title": "People Operations Internship – French Speaker",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/People-Operations-Intern--French-Speaker_r20828"
-        },
-        {
-          "company": "Criteo",
-          "location": "Gurgaon, India",
-          "title": "Customer Care Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Gurgaon/Customer-Care-Intern_r20805"
         }
       ],
       "non_tech": [
+        {
+          "company": "Datadog",
+          "is_new": true,
+          "location": "Paris, France",
+          "title": "Applied Science Intern",
+          "url": "https://careers.datadoghq.com/detail/8181440/?gh_jid=8181440"
+        },
+        {
+          "company": "Datadog",
+          "is_new": true,
+          "location": "Paris, France",
+          "title": "Product Management Intern",
+          "url": "https://careers.datadoghq.com/detail/8143729/?gh_jid=8143729"
+        },
         {
           "company": "Doctolib",
           "is_new": false,
@@ -125,85 +139,386 @@
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "Scaleway",
-          "is_new": false,
-          "location": "Paris",
-          "title": "Approvisionneur - Stage",
-          "url": "https://jobs.lever.co/scaleway/c85a7df4-bee6-41c2-9983-06db6a116bb8"
-        },
-        {
-          "company": "Scaleway",
-          "is_new": false,
-          "location": "Paris",
-          "title": "Event Operations Intern",
-          "url": "https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7"
-        },
-        {
-          "company": "Snowflake",
-          "is_new": false,
-          "location": "FR-Paris",
-          "title": "Partner Marketing Intern - Paris (French Speaking ",
-          "url": "https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9"
-        },
-        {
-          "company": "Palantir",
+          "company": "Criteo",
           "is_new": false,
           "location": "Paris, France",
-          "title": "Deployment Strategist, Internship",
-          "url": "https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0"
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "SAP",
-          "is_new": true,
-          "location": "Levallois Perret",
-          "title": "Internship: Partner Solution Enablement Associate F/M",
-          "url": "https://jobs.sap.com/job/Levallois-Perret-Internship-Partner-Solution-Enablement-Associate-FM-92300/1421057333/"
-        },
-        {
-          "company": "Microsoft",
+          "company": "Criteo",
           "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "National Technology Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Criteo",
           "is_new": false,
-          "location": "Toulouse, Occitanie, FRA",
-          "title": "Operations Intern - Région Sud - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Criteo",
           "is_new": false,
-          "location": "Lille, Hauts-de-France, FRA",
-          "title": "Operations Intern - Région Nord - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Criteo",
           "is_new": false,
-          "location": "Paris, Ile-de-France, FRA",
-          "title": "Operations Intern - Île de France - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027"
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Criteo",
           "is_new": false,
-          "location": "Clichy, Ile-de-France, FRA",
-          "title": "Stagiaire service juridique",
-          "url": "https://www.amazon.jobs/en/jobs/10518434/stagiaire-service-juridique"
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Criteo",
           "is_new": false,
-          "location": "Clichy, Ile-de-France, FRA",
-          "title": "Stagiaire service juridique",
-          "url": "https://www.amazon.jobs/en/jobs/10470003/stagiaire-service-juridique"
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
+          "location": "Paris, France",
+          "title": "Stage – Campaign Manager Intern | Janvier 2027",
+          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
         }
       ],
-      "non_tech_total": 15,
-      "stamp": "2026-09-07",
+      "non_tech_total": 76,
+      "stamp": "2026-09-08",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -238,7 +553,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 59,
+      "foreign_count": 57,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -418,7 +733,7 @@
         },
         {
           "company": "Back Market",
-          "is_new": true,
+          "is_new": false,
           "location": "Bordeaux",
           "title": "Financial Planning & Analysis Intern ",
           "url": "https://jobs.ashbyhq.com/backmarket/2551ba06-5d98-4441-8919-e20e844cc15a"
@@ -455,13 +770,6 @@
           "company": "Alan",
           "is_new": false,
           "location": "Paris, France",
-          "title": "Insurance Legal - Internship",
-          "url": "https://jobs.ashbyhq.com/alan/0507d0de-823b-4058-bd6e-ec2428d362fd"
-        },
-        {
-          "company": "Alan",
-          "is_new": false,
-          "location": "Paris, France",
           "title": "Talent Associate (internship)",
           "url": "https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d"
         },
@@ -474,7 +782,7 @@
         },
         {
           "company": "Alan",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "People Associate (internship)",
           "url": "https://jobs.ashbyhq.com/alan/71fa3e9d-1f5f-4e3f-a1de-e68b3c85803a"
@@ -516,7 +824,7 @@
         },
         {
           "company": "Deezer",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, FR",
           "title": "Talent acquisition & HR development - 6 months internship (m/f/d)",
           "url": "https://deezer.teamtailor.com/jobs/7632031-talent-acquisition-hr-development-6-months-internship-m-f-d"
@@ -538,6 +846,13 @@
         {
           "company": "Sopra Steria",
           "is_new": true,
+          "location": "Toulouse, fr",
+          "title": "Stage - Consultant(e) - Transformation digitale en Aéronautique -Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148170759"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": false,
           "location": "Courbevoie, fr",
           "title": "Stage de fin d'études - Consultant en transformation digitale",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147879850"
@@ -597,13 +912,6 @@
           "location": "Paris, fr",
           "title": "Stage - Chargé(e) de projet Solidarités & Engagement citoyen",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000135648124"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Courbevoie, fr",
-          "title": "Stage de fin d'études - Consultant(e) en Transformation digitale – Services Publics - IDF",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000128533061"
         },
         {
           "company": "Sopra Steria",
@@ -676,6 +984,41 @@
           "url": "https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2"
         },
         {
+          "company": "Expleo",
+          "is_new": true,
+          "location": "FR-31-Toulouse",
+          "title": "Stage – Inspection Qualité Aéronautique H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56037/stage-%e2%80%93-inspection-qualit%c3%a9-a%c3%a9ronautique-h-f/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "is_new": true,
+          "location": "FR-31-Toulouse",
+          "title": "Stage – Technicien conception structure H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56024/stage-%e2%80%93-technicien-conception-structure-h-f/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "is_new": true,
+          "location": "FR-31-Toulouse",
+          "title": "Stage – Technicien mécanique spatial H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56022/stage-%e2%80%93-technicien-m%c3%a9canique-spatial-h-f/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "is_new": true,
+          "location": "FR-31-Toulouse",
+          "title": "Stage – Technicien communication / marketing H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56021/stage-%e2%80%93-technicien-communication---marketing-h-f/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "is_new": true,
+          "location": "FR-78-Montigny-le-Bretonneux",
+          "title": "Stage – Social Media Listening H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56002/stage-%e2%80%93-social-media-listening-h-f/job?in_iframe=1"
+        },
+        {
           "company": "Siemens",
           "is_new": false,
           "location": "Haguenau, Grand-Est, France",
@@ -684,56 +1027,21 @@
         },
         {
           "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "Haguenau, Grand-Est, France",
           "title": "Stage - Planificateur de production f/h",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521533"
         }
       ],
-      "non_tech_total": 51,
-      "stamp": "2026-09-07",
+      "non_tech_total": 55,
+      "stamp": "2026-09-08",
       "unknown_location": [
         {
-          "company": "OVHcloud",
-          "is_new": false,
-          "location": "ROUBAIX",
-          "title": "Stage Septembre 2026 - Industrial Lean Officer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Septembre-2026-Industrial-Lean-Officer-HFN-59100/1385526333/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": false,
-          "location": "CROIX",
-          "title": "Stage - Chef de projet documentation industrielle H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1385457233/"
-        },
-        {
-          "company": "Siemens",
-          "is_new": false,
-          "location": "",
-          "title": "Market Development Intern",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520020"
-        },
-        {
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Finance Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Software & AI Adoption Engineering Intern",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
+          "title": "Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000"
         },
         {
           "company": "Siemens",
@@ -741,14 +1049,27 @@
           "location": "",
           "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Strategy Internship- Mobility (Summer 2027)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461"
         }
       ],
-      "unknown_location_total": 7
+      "unknown_location_total": 3
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 734,
+      "foreign_count": 740,
       "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Beijing-Airport, Intern/Trainee (Fixed Term) (Trainee); R0336817; 07 - CUSTOMER SERVICE; Thales Aerospace (Beijing) Co., Ltd.",
+          "title": "Supply Chain Management Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing-Airport/Supply-Chain-Management-Intern_R0336817"
+        },
         {
           "company": "Thales",
           "location": "Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0339364; 20 - SOFTWARE; Thales Cyber Solutions Belgium SA",
@@ -832,12 +1153,6 @@
           "location": "Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A.",
           "title": "Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671"
-        },
-        {
-          "company": "Thales",
-          "location": "So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0332382; 20 - SOFTWARE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda.",
-          "title": "Technical Consultant Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/Technical-Consultant-Intern_R0332382-1"
         }
       ],
       "non_tech": [
@@ -871,189 +1186,217 @@
         },
         {
           "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10431673",
+          "title": "STAGE 2027 - Stage analyse de risques HSE A320 (All Gender)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-analyse-de-risques-HSE-A320--All-Gender-_JR10431673"
+        },
+        {
+          "company": "Airbus",
           "is_new": false,
           "location": "Salaunes, JR10438249",
           "title": "Stage Peintre Aéro / Opérateur(trice) matériau composite H/F",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249"
         },
         {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Toulouse-Area, JR10437292",
-          "title": "Testia SAS – Stage Comptabilité (H/F) – Toulouse",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Testia-SAS---Stage-Comptabilit--H-F----Toulouse_JR10437292"
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Assistant Chef de Projet Solutions Industrielles (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-chef-de-projet-solutions-industrielles-f-h-549811"
         },
         {
           "company": "Dassault Systemes",
           "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Analyste Sales Operations & Performance Commerciale EUROWEST (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-analyste-sales-operations-performance-commerciale-eurowest-f-h-549190"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chef de projet marketing digital (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-chef-de-projet-marketing-digital-f-h-549797"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Analyste Business des engagements grands comptes (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-analyste-business-des-engagements-grands-comptes-f-h-549707"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de Marketing Operations & Lead Management (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-operations-lead-management-f-h-549798"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de marketing (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-f-h-548955"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de Planification Stratégique (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549108"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Assistant stratégique et communication auprès de la Directrice Générale Adjointe EMEA (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-assistant-strategique-et-communication-aupres-de-la-directrice-generale-adjointe-emea-f-h-548943"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de développement commercial (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-developpement-commercial-f-h-548803"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Adoption Utilisateur 3DEXPERIENCE (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-adoption-utilisateur-3dexperience-f-h-549115"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Digital Learning (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-digital-learning-f-h-549132"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Aix en Provence",
           "title": "STAGE - Ingénieur technico-commercial CATIA (F/H) - Aix-en-Provence",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-catia-f-h-aix-en-provence-549246"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Paris",
           "title": "STAGE - Assistant Tech-Sales (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-assistant-tech-sales-f-h-549411"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE – Analyste en gestion des risques (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-analyste-en-gestion-des-risques-f-h-549514"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de Planification Stratégique (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549714"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Aix en Provence",
           "title": "STAGE - Ingénieur Avant-vente CATIA AI Engineering (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-catia-ai-engineering-f-h-549698"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Meudon La Foret",
           "title": "STAGE - Ingénieur Technico-Commercial (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-f-h-549697"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE – Chargé de Communication Stratégique (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Meudon La Foret",
           "title": "STAGE - Assistant Marketing Digital (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE – Juriste contrats - nouvelles technologies (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Fiscaliste (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE- Chargé de projet formation (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE – Communication Marque Employeur (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Manufacturing génératif — Marine & Offshore (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE – Prix de Transfert (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé de missions RH internationales (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Gestionnaire de paie (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Meudon La Foret",
           "title": "STAGE - Business Developper (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188"
@@ -1062,124 +1405,68 @@
           "company": "Dassault Systemes",
           "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Gestion de la Continuité d'Activité et Résilience Opérationnelle (F/H) ",
-          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-la-continuite-d-activite-et-resilience-operationnelle-f-h-549676"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Valbonne",
-          "title": "STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383"
+          "title": "STAGE - Continuité d’Activité et Résilience Opérationnelle (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-continuite-d-activite-et-resilience-operationnelle-f-h-549676"
         },
         {
           "company": "Dassault Systemes",
           "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Communication Marque Employeur (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331"
+          "title": "STAGE - Chargé du support RH (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-du-support-rh-f-h-549526"
         },
         {
           "company": "Dassault Systemes",
           "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Chargé de missions RH internationales (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330"
+          "title": "STAGE - R&D Virtual Twin: Créer une expérience de R&D unifiée et interactive (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-r-d-virtual-twin-creer-une-experience-de-r-d-unifiee-et-interactive-f-h-549513"
         },
         {
           "company": "Dassault Systemes",
           "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Charge de projet RH \"Management & Leadership\" (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-rh-management-leadership-f-h-549329"
+          "title": "STAGE – Chargé de communication interne et projets RSE (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-interne-et-projets-rse-f-h-549503"
         },
         {
           "company": "Dassault Systemes",
           "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Chargé des Ressources Humaines Europe (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328"
+          "title": "STAGE - Assistant Chef de Projet – Déploiement d’une Plateforme de Formation(F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-chef-de-projet-deploiement-d-une-plateforme-de-formation-f-h-549502"
         },
         {
           "company": "Dassault Systemes",
           "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE- Chargé de projet formation (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327"
+          "title": "STAGE - Gestion de Projet Champions 3DEXPERIENCE (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-projet-champions-3dexperience-f-h-549494"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Chargé d'événementiel (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-d-evenementiel-f-h-549314"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Manufacturing génératif — Marine & Offshore (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Meudon La Foret",
           "title": "STAGE – Marketing opérationnel & digital (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-marketing-operationnel-digital-f-h-549191"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Charge de projet RH \"Management & Leadership\" (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-rh-management-leadership-f-h-549329"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
           "location": "France, Meudon La Foret",
-          "title": "STAGE - Assistant Marketing Digital (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189"
+          "title": "STAGE - Chargé d'événementiel (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-d-evenementiel-f-h-549314"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Business Developper (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Juriste lutte contre la contrefaçon (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Juriste contrats - nouvelles technologies (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Fiscaliste (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Chargé de Communication Stratégique (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE – Chargé de Marketing & Innovation 3DEXPERIENCE Lab (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-innovation-3dexperience-lab-f-h-549040"
@@ -1187,41 +1474,83 @@
         {
           "company": "Dassault Systemes",
           "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Business Developper Eurowest (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-business-developper-eurowest-f-h-549402"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
+          "location": "France, Valbonne",
+          "title": "STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Prix de Transfert (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037"
+          "title": "STAGE – Juriste lutte contre la contrefaçon (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé des Ressources Humaines Europe (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328"
         },
         {
           "company": "Societe Generale",
           "is_new": true,
+          "location": "Lons-Le-Saunier, France",
+          "title": "Stage - Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000J9W-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "Nimes, France",
+          "title": "Stage Conseiller Clientèle Particuliers",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JKO-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": true,
+          "location": "La Defense, France",
+          "title": "Equity Capital Markets (ECM) - Execution",
+          "url": "https://careers.societegenerale.com/offres-d-emploi/equity-capital-markets-ecm-execution-26000JLW-fr"
+        },
+        {
+          "company": "Societe Generale",
+          "is_new": false,
           "location": "France",
           "title": "Stage Conseiller Clientèle Particuliers",
           "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH1-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": true,
+          "is_new": false,
           "location": "France",
           "title": "Stage Conseiller Clientèle Particuliers",
           "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGK-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": true,
+          "is_new": false,
           "location": "Dunkerque, France",
           "title": "Stage Conseiller Clientèle Particuliers",
           "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH3-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": true,
+          "is_new": false,
           "location": "La Defense, France",
           "title": "Market Performance Analyst",
           "url": "https://careers.societegenerale.com/offres-d-emploi/market-performance-analyst-26000JGZ-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": true,
+          "is_new": false,
           "location": "La Defense, France",
           "title": "Assistant Chargé de Relations Bancaires",
           "url": "https://careers.societegenerale.com/offres-d-emploi/assistant-charge-de-relations-bancaires-26000JLH-fr"
@@ -1235,39 +1564,53 @@
         },
         {
           "company": "Societe Generale",
-          "is_new": true,
+          "is_new": false,
           "location": "La Defense, France",
           "title": "Pôle finance",
           "url": "https://careers.societegenerale.com/offres-d-emploi/pole-finance-26000JI1-fr"
         },
         {
           "company": "Societe Generale",
-          "is_new": true,
+          "is_new": false,
           "location": "France",
           "title": "Stage Conseil Marché de l'entreprise",
           "url": "https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000JJA-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Juriste Conseil juridique et ingénierie patrimoniale",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/juriste-conseil-juridique-et-ingenierie-patrimoniale-260009UX-fr"
-        },
-        {
-          "company": "Societe Generale",
-          "is_new": false,
-          "location": "La Defense, France",
-          "title": "Auditeur Interne - Banque de Détail, Banque Privée et Assurance en France",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/auditeur-interne-banque-de-detail-banque-privee-et-assurance-en-france-26000HQH-fr"
         }
       ],
-      "non_tech_total": 286,
-      "stamp": "2026-09-07",
+      "non_tech_total": 293,
+      "stamp": "2026-09-08",
       "unknown_location": [
         {
           "company": "Airbus",
           "is_new": true,
+          "location": "Santiago-De-Quertaro_Area, JR10439873",
+          "title": "Production Controller Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Santiago-De-Quertaro_Area/Production-Controller-Intern_JR10439873"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Santiago-De-Quertaro_Area, JR10440198",
+          "title": "Buyer Intern",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Santiago-De-Quertaro_Area/Buyer-Intern_JR10440198"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10432177",
+          "title": "STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10431261",
+          "title": "STAGE 2027 - Ressources Humaines : Chargé des relations sociales (All gender)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ressources-Humaines---Charg-des-relations-sociales--All-gender-_JR10431261"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Bristol-Area, JR10430645",
           "title": "Landing Gear Technical Engineering Intern",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645"
@@ -1294,8 +1637,8 @@
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
         }
       ],
-      "unknown_location_total": 4
+      "unknown_location_total": 8
     }
   },
-  "generated": "2026-09-07T20:59:22.074271+02:00"
+  "generated": "2026-09-08T20:18:19.189925+02:00"
 }
