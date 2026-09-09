@@ -3,37 +3,17 @@
     "board.html": {
       "also_new": [
         {
-          "company": "Datadog",
+          "company": "Amazon / AWS",
           "kind": "other",
-          "title": "Applied Science Intern"
+          "title": "Public Policy Manager Intern – Q3 2027, EU Public Policy team "
         },
         {
-          "company": "Datadog",
+          "company": "Amazon / AWS",
           "kind": "other",
-          "title": "Product Management Intern"
-        },
-        {
-          "company": "Microsoft",
-          "kind": "other",
-          "title": "Government Affairs Intern"
-        },
-        {
-          "company": "Microsoft",
-          "kind": "other",
-          "title": "Business Program Management Intern - Retail"
-        },
-        {
-          "company": "Microsoft",
-          "kind": "other",
-          "title": "Legal Counsel Intern"
-        },
-        {
-          "company": "Microsoft",
-          "kind": "other",
-          "title": "Business Program Management Intern - Executive Office"
+          "title": "Public Policy Manager Intern – Q1 2027, EU Public Policy team "
         }
       ],
-      "also_new_total": 6,
+      "also_new_total": 2,
       "board": "Stage Watch",
       "closed_today": [],
       "closed_today_total": 0,
@@ -41,33 +21,17 @@
       "companies": 33,
       "failed": 0,
       "failed_names": [],
-      "filtered": 76,
-      "generated": "2026-09-08T20:12:46.904048+02:00",
+      "filtered": 23,
+      "generated": "2026-09-09T20:12:37.173599+02:00",
       "incomplete": [
-        "Criteo (truncated)",
         "IBM (truncated)",
         "Oracle (truncated)",
         "Amazon / AWS (truncated)"
       ],
-      "live": 62,
-      "new": 2,
-      "new_roles": [
-        {
-          "company": "Datadog",
-          "first_seen": "2026-09-08",
-          "location": "Paris, France",
-          "title": "IT Support Technician Intern",
-          "url": "https://careers.datadoghq.com/detail/8129799/?gh_jid=8129799"
-        },
-        {
-          "company": "Datadog",
-          "first_seen": "2026-09-08",
-          "location": "Paris, France",
-          "title": "Software Engineering Intern",
-          "url": "https://careers.datadoghq.com/detail/8114186/?gh_jid=8114186"
-        }
-      ],
-      "new_roles_total": 2,
+      "live": 7,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
         {
           "company": "Datadog",
@@ -89,226 +53,155 @@
           "location": "Paris, France",
           "title": "Product Data Science & AI Agents Intern",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
-        },
-        {
-          "company": "Criteo",
-          "first_seen": "2026-09-07",
-          "location": "Paris, France",
-          "title": "Product Data Science & AI Agents Intern",
-          "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Product-Data-Science---AI-Agents-Intern_r21132"
         }
       ],
-      "recent_roles_total": 59,
-      "scanned": 9096,
-      "stamp": "2026-09-08",
+      "recent_roles_total": 3,
+      "scanned": 8016,
+      "stamp": "2026-09-09",
       "unsure": 4
     },
     "board2.html": {
       "also_new": [
         {
-          "company": "Sopra Steria",
+          "company": "Qonto",
           "kind": "other",
-          "title": "Stage - Consultant(e) - Transformation digitale en Aéronautique -Toulouse"
+          "title": "Accountant Intern"
+        },
+        {
+          "company": "Qonto",
+          "kind": "other",
+          "title": "Regulatory Reporting Intern"
+        },
+        {
+          "company": "Back Market",
+          "kind": "other",
+          "title": "Fraud and Risk Officer Intern"
         },
         {
           "company": "Expleo",
           "kind": "other",
-          "title": "Stage – Inspection Qualité Aéronautique H/F"
-        },
-        {
-          "company": "Expleo",
-          "kind": "other",
-          "title": "Stage – Technicien conception structure H/F"
-        },
-        {
-          "company": "Expleo",
-          "kind": "other",
-          "title": "Stage – Technicien mécanique spatial H/F"
-        },
-        {
-          "company": "Expleo",
-          "kind": "other",
-          "title": "Stage – Technicien communication / marketing H/F"
-        },
-        {
-          "company": "Expleo",
-          "kind": "other",
-          "title": "Stage – Social Media Listening H/F"
+          "title": "Stage – Technicien Conception Structure H/F"
         },
         {
           "company": "Siemens",
           "kind": "unsure",
-          "title": "Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)"
+          "title": "Smart Infrastructure Electrical Products Operations Leadership Development Program Internship"
+        },
+        {
+          "company": "Siemens",
+          "kind": "unsure",
+          "title": "Building Automation Systems Specialist Internship"
         }
       ],
-      "also_new_total": 7,
+      "also_new_total": 6,
       "board": "French Tech Watch",
       "closed_today": [
         {
-          "company": "Sopra Steria",
-          "title": "Stage - Ingénieur(e) développement Java - Développement Régional - Lille ",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147932509"
+          "company": "Alten",
+          "title": "Stage Innovation : Ingénieur modélisation mathématiques",
+          "url": "https://jobs.smartrecruiters.com/alten/744000146663199"
         }
       ],
       "closed_today_total": 1,
-      "closed_total": 1,
+      "closed_total": 2,
       "companies": 29,
-      "failed": 1,
-      "failed_names": [
-        "OVHcloud"
-      ],
-      "filtered": 55,
-      "generated": "2026-09-08T20:15:09.435020+02:00",
+      "failed": 0,
+      "failed_names": [],
+      "filtered": 56,
+      "generated": "2026-09-09T20:13:49.592433+02:00",
       "incomplete": [
-        "Murex (truncated)",
         "Nokia (truncated)",
         "Siemens (truncated)"
       ],
-      "live": 81,
-      "new": 12,
+      "live": 97,
+      "new": 17,
       "new_roles": [
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-08",
-          "location": "Villeneuve-d'Ascq, fr",
-          "title": "Stage - Ingénieur(e) développement Java - Développement Régional - Lille ",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148270600"
-        },
-        {
-          "company": "Ubisoft",
-          "first_seen": "2026-09-08",
-          "location": "Paris, fr",
-          "title": "Data Strategist Assistant - Stage (6 mois) Octobre 2026 (F/H/NB)",
-          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000148258159"
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur qualité & processus CAMO H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56091/stage-%e2%80%93-ing%c3%a9nieur-qualit%c3%a9-%26-processus-camo-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur supply chain & amélioration continue H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56090/stage-%e2%80%93-ing%c3%a9nieur-supply-chain-%26-am%c3%a9lioration-continue-h-f%e2%80%8b/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur analyst supply chain H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56089/stage-%e2%80%93-ing%c3%a9nieur-analyst-supply-chain-h-f%e2%80%8b/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur analyst supply chain H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56088/stage-%e2%80%93-ing%c3%a9nieur-analyst-supply-chain-h-f%e2%80%8b/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur Lean & Supply Chain H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56086/stage-%e2%80%93-ing%c3%a9nieur-lean-%26-supply-chain-h-f%e2%80%8b/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur qualité & amélioration continue H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56085/stage-%e2%80%93-ing%c3%a9nieur-qualit%c3%a9-%26-am%c3%a9lioration-continue-h-f%e2%80%8b/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur qualité & amélioration continue H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56084/stage-%e2%80%93-ing%c3%a9nieur-qualit%c3%a9-%26-am%c3%a9lioration-continue-h-f%e2%80%8b/job?in_iframe=1"
+        },
+        {
+          "company": "Expleo",
+          "first_seen": "2026-09-09",
           "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur gestion de projet H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56020/stage-%e2%80%93-ing%c3%a9nieur-gestion-de-projet-h-f/job?in_iframe=1"
+          "title": "Stage – Ingénieur Conception Mécanique R/D F/H",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56074/stage-%e2%80%93-ing%c3%a9nieur-conception-m%c3%a9canique-r-d--f-h/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur conception mécanique outillage H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56019/stage-%e2%80%93-ing%c3%a9nieur-conception-m%c3%a9canique-outillage-h-f/job?in_iframe=1"
+          "title": "Stage – Ingénieur Gestion Projet H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56073/stage-%e2%80%93-ing%c3%a9nieur-gestion-projet-h-f/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur conception et dimensionnement de systèmes d'étanchéité aéronautique et prototypage H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56018/stage-%e2%80%93-ing%c3%a9nieur-conception-et-dimensionnement-de-syst%c3%a8mes-d%27%c3%a9tanch%c3%a9it%c3%a9-a%c3%a9ronautique-et-prototypage-h-f/job?in_iframe=1"
+          "title": "Stage – Ingénieur Conception Installation Systèmes Mécaniques Aéronautique H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56071/stage-%e2%80%93-ing%c3%a9nieur-conception-installation-syst%c3%a8mes-m%c3%a9caniques-a%c3%a9ronautique-h-f/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Développeur logiciels systèmes embarqués H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56005/stage-%e2%80%93-d%c3%a9veloppeur-logiciels-syst%c3%a8mes-embarqu%c3%a9s-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Développeur assistant IA H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56003/stage-%e2%80%93-d%c3%a9veloppeur-assistant-ia-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Ingénieur amélioration continue H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56001/stage-%e2%80%93-ing%c3%a9nieur-am%c3%a9lioration-continue-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Ingénieur transformation digitale H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56000/stage-%e2%80%93-ing%c3%a9nieur-transformation-digitale-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur mécanique - tolérancing / géométrical quality management H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/55999/stage-%e2%80%93-ing%c3%a9nieur-m%c3%a9canique---tol%c3%a9rancing---g%c3%a9om%c3%a9trical-quality-management-h-f/job?in_iframe=1"
+          "title": "Stage – Ingénieur Conception Structure H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56069/stage-%e2%80%93-ing%c3%a9nieur-conception-structure-h-f/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur tolérancement H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/55998/stage-%e2%80%93-ing%c3%a9nieur-tol%c3%a9rancement-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Modélisation et Simulation Multiphysique 0D/1D des Circuits de Refroidissement H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/55996/stage-%e2%80%93-mod%c3%a9lisation-et-simulation-multiphysique-0d-1d-des-circuits-de-refroidissement-h-f/job?in_iframe=1"
+          "title": "Stage – Ingénieur Conception System Propulsif H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56062/stage-%e2%80%93-ing%c3%a9nieur-conception-system-propulsif-h-f/job?in_iframe=1"
         }
       ],
-      "new_roles_total": 12,
+      "new_roles_total": 17,
       "recent_roles": [
         {
           "company": "Sopra Steria",
@@ -347,247 +240,246 @@
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur gestion de projet H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56020/stage-%e2%80%93-ing%c3%a9nieur-gestion-de-projet-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur qualité & processus CAMO H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56091/stage-%e2%80%93-ing%c3%a9nieur-qualit%c3%a9-%26-processus-camo-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur conception mécanique outillage H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56019/stage-%e2%80%93-ing%c3%a9nieur-conception-m%c3%a9canique-outillage-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur supply chain & amélioration continue H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56090/stage-%e2%80%93-ing%c3%a9nieur-supply-chain-%26-am%c3%a9lioration-continue-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Ingénieur conception et dimensionnement de systèmes d'étanchéité aéronautique et prototypage H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56018/stage-%e2%80%93-ing%c3%a9nieur-conception-et-dimensionnement-de-syst%c3%a8mes-d%27%c3%a9tanch%c3%a9it%c3%a9-a%c3%a9ronautique-et-prototypage-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur analyst supply chain H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56089/stage-%e2%80%93-ing%c3%a9nieur-analyst-supply-chain-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Développeur logiciels systèmes embarqués H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56005/stage-%e2%80%93-d%c3%a9veloppeur-logiciels-syst%c3%a8mes-embarqu%c3%a9s-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur analyst supply chain H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56088/stage-%e2%80%93-ing%c3%a9nieur-analyst-supply-chain-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Développeur assistant IA H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56003/stage-%e2%80%93-d%c3%a9veloppeur-assistant-ia-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur Lean & Supply Chain H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56086/stage-%e2%80%93-ing%c3%a9nieur-lean-%26-supply-chain-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Ingénieur amélioration continue H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56001/stage-%e2%80%93-ing%c3%a9nieur-am%c3%a9lioration-continue-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur qualité & amélioration continue H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56085/stage-%e2%80%93-ing%c3%a9nieur-qualit%c3%a9-%26-am%c3%a9lioration-continue-h-f%e2%80%8b/job?in_iframe=1"
         },
         {
           "company": "Expleo",
-          "first_seen": "2026-09-08",
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Ingénieur transformation digitale H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56000/stage-%e2%80%93-ing%c3%a9nieur-transformation-digitale-h-f/job?in_iframe=1"
+          "first_seen": "2026-09-09",
+          "location": "FR-13-Vitrolles",
+          "title": "Stage – Ingénieur qualité & amélioration continue H/F​",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56084/stage-%e2%80%93-ing%c3%a9nieur-qualit%c3%a9-%26-am%c3%a9lioration-continue-h-f%e2%80%8b/job?in_iframe=1"
         }
       ],
-      "recent_roles_total": 15,
-      "scanned": 6188,
-      "stamp": "2026-09-08",
-      "unsure": 3
+      "recent_roles_total": 32,
+      "scanned": 5111,
+      "stamp": "2026-09-09",
+      "unsure": 5
     },
     "board3.html": {
       "also_new": [
         {
+          "company": "Thales",
+          "kind": "other",
+          "title": "STAGE - Marketing Stratégique et Développement Commercial - F/H"
+        },
+        {
+          "company": "Thales",
+          "kind": "other",
+          "title": "STAGE - Marketing, Knowledge Management, Change Management & AI - F/H"
+        },
+        {
           "company": "Airbus",
           "kind": "other",
-          "title": "STAGE 2027 - Stage analyse de risques HSE A320 (All Gender)"
+          "title": "STAGE 2027 -  Stage en Ressources Humaines - Compétences & GEPP (All Gender)"
+        },
+        {
+          "company": "Airbus",
+          "kind": "other",
+          "title": "STAGE 2027 - Digitalisation de la gestion de production (ALL GENDER)"
         },
         {
           "company": "Airbus",
           "kind": "unsure",
-          "title": "STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)"
+          "title": "STAGE 2027 – Ingénieur Production (ALL GENDER)"
+        },
+        {
+          "company": "Airbus",
+          "kind": "unsure",
+          "title": "STAGE 2027 – Ingénieur Amélioration Continue en production (ALL GENDER)"
         },
         {
           "company": "Dassault Systemes",
           "kind": "other",
-          "title": "STAGE - Assistant Chef de Projet Solutions Industrielles (F/H)"
+          "title": "STAGE - Marketing Digital (SEO/GEO/SEA & Social media) (F/H)"
         },
         {
           "company": "Dassault Systemes",
           "kind": "other",
-          "title": "STAGE - Analyste Sales Operations & Performance Commerciale EUROWEST (F/H)"
+          "title": "STAGE - MBSE Expert Junior (F/H)"
         },
         {
           "company": "Dassault Systemes",
           "kind": "other",
-          "title": "STAGE - Chef de projet marketing digital (F/H)"
+          "title": "STAGE - Solutions pour l'industrie de la construction (AEC) (F/H)"
         },
         {
           "company": "Dassault Systemes",
           "kind": "other",
-          "title": "STAGE – Analyste Business des engagements grands comptes (F/H)"
+          "title": " STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H) "
         },
         {
           "company": "Dassault Systemes",
           "kind": "other",
-          "title": "STAGE - Continuité d’Activité et Résilience Opérationnelle (F/H)"
+          "title": " STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H) "
         },
         {
-          "company": "Dassault Systemes",
+          "company": "Societe Generale",
           "kind": "other",
-          "title": "STAGE - Chargé du support RH (F/H)"
-        },
-        {
-          "company": "Dassault Systemes",
-          "kind": "other",
-          "title": "STAGE - R&D Virtual Twin: Créer une expérience de R&D unifiée et interactive (F/H)"
-        },
-        {
-          "company": "Dassault Systemes",
-          "kind": "other",
-          "title": "STAGE – Chargé de communication interne et projets RSE (F/H)"
-        },
-        {
-          "company": "Dassault Systemes",
-          "kind": "other",
-          "title": "STAGE - Assistant Chef de Projet – Déploiement d’une Plateforme de Formation(F/H)"
-        },
-        {
-          "company": "Dassault Systemes",
-          "kind": "other",
-          "title": "STAGE - Gestion de Projet Champions 3DEXPERIENCE (F/H)"
+          "title": "Assistant Product Owner Content Supply Chain"
         }
       ],
-      "also_new_total": 28,
+      "also_new_total": 23,
       "board": "Defence, Finance & Silicon Watch",
       "closed_today": [
         {
-          "company": "Societe Generale",
-          "title": "Chargé de Transformation, Engagement collaborateur et acculturation IA",
-          "url": "https://careers.societegenerale.com/offres-d-emploi/charge-de-transformation-engagement-collaborateur-et-acculturation-ia-26000HQ0-fr"
+          "company": "Thales",
+          "title": "STAGE - Gestion de projet - Automatisation & Robotisation F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Gestion-de-projet---Automatisation---Robotisation-F-H_R0330328-1"
         },
         {
-          "company": "Credit Agricole",
-          "title": "Stagiaire - Data Science & IA H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stagiaire-data-science-ia-h-f_paris"
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche en Mathématiques appliquées (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-en-mathematiques-appliquees-f-h-549339"
         },
         {
-          "company": "Natixis",
-          "title": "Stage - 6 mois - Financial Engineer Scarce Resources F/H",
-          "url": "https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-financial-engineer-scarce-resources-f-h_paris"
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche - Prédiction des trajectoires de développement du cerveau (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-prediction-des-trajectoires-de-developpement-du-cerveau-f-h-549335"
         },
         {
-          "company": "Natixis",
-          "title": "Stage - 6 mois - IA Data Analyst F/H",
-          "url": "https://www.welcometothejungle.com/fr/companies/natixis/jobs/stage-6-mois-ia-data-analyst-f-h_paris"
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche – Identification de structures anatomiques à partir d’images médicales (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-identification-de-structures-anatomiques-a-partir-d-images-medicales-f-h-549336"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur en solution ML/IA pour la santé (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-en-solution-ml-ia-pour-la-sante-f-h-549203"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche - Modèle de Fondation pour la Génération d'objets CAD (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-modele-de-fondation-pour-la-generation-d-objets-cad-f-h-549353"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE – Ingénieur logiciel (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-logiciel-f-h-549332"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche – Modélisation mathématique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-modelisation-mathematique-f-h-549360"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur cybersécurité (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-cybersecurite-f-h-549234"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche - Deep Learning appliqué à la simulation anatomique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-deep-learning-applique-a-la-simulation-anatomique-f-h-549340"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur Avant-Ventes - PLM (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-ventes-plm-f-h-549318"
+        },
+        {
+          "company": "Dassault Systemes",
+          "title": "STAGE - Ingénieur.e Recherche Bioinformatique – Simulation anatomique multiphysique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-bioinformatique-simulation-anatomique-multiphysique-f-h-549341"
         }
       ],
-      "closed_today_total": 4,
-      "closed_total": 16,
+      "closed_today_total": 24,
+      "closed_total": 40,
       "companies": 25,
       "failed": 0,
       "failed_names": [],
-      "filtered": 293,
-      "generated": "2026-09-08T20:18:19.189925+02:00",
+      "filtered": 294,
+      "generated": "2026-09-09T20:15:49.292007+02:00",
       "incomplete": [
         "J.P. Morgan (truncated)",
         "NVIDIA (truncated)",
-        "AMD (truncated)"
+        "AMD (truncated)",
+        "Dell (truncated)"
       ],
-      "live": 184,
-      "new": 43,
+      "live": 181,
+      "new": 6,
       "new_roles": [
         {
           "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur DevSecOps IA (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-devsecops-ia-f-h-549630"
+          "title": " STAGE – Analyste Excellence Opérationnelle – Automatisation du Reporting (F/H",
+          "url": "https://www.3ds.com/careers/jobs/stage-analyste-excellence-operationnelle-automatisation-du-reporting-f-h-549490"
         },
         {
           "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur DevOps & Automatisation (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-devops-automatisation-f-h-549582"
+          "title": "STAGE – Ingénieur Développement C++ / JavaScript & UI/UX pour la Visualisation 3D (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-developpement-c-javascript-ui-ux-pour-la-visualisation-3d-f-h-549722"
         },
         {
           "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
+          "first_seen": "2026-09-09",
           "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Ingénieur logiciel en maillage (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-logiciel-en-maillage-f-h-549608"
+          "title": "STAGE - Ingénieur Avant-Ventes – PLM pour l’Énergie (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-ventes-plm-pour-l-energie-f-h-549187"
         },
         {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Développement d’un cockpit et automatisation (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-developpement-d-un-cockpit-et-automatisation-f-h-549648"
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-09",
+          "location": "Puteaux, Île-de-France, France",
+          "title": "Stage - Equity Research Analyst – Infrastructure F/H",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-equity-research-analyst-infrastructure-f-h"
         },
         {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Industry Solutions Architect Consultant (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-industry-solutions-architect-consultant-f-h-549509"
+          "company": "BNP Paribas",
+          "first_seen": "2026-09-09",
+          "location": "Paris, Île-de-France, France",
+          "title": "Stage – AI Business Analyst Conformité H/F",
+          "url": "https://group.bnpparibas/en/careers/job-offer/stage-ai-business-analyst-conformite-h-f"
         },
         {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Stratégie et développement de marché (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-strategie-et-developpement-de-marche-f-h-549808"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur.e Recherche en Bio-informatique et Modélisation (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-en-bio-informatique-et-modelisation-f-h-549386"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Meudon La Foret",
-          "title": "STAGE – Ingénieur Grand Compte Aéronautique & Défense (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-grand-compte-aeronautique-defense-f-h-549192"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur.e Recherche Segmentation Immersive d'Images Médicales Assistée par IA (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-segmentation-immersive-d-images-medicales-assistee-par-ia-f-h-549575"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur.e Recherche Compréhension et reconstitution de scènes dynamiques (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-comprehension-et-reconstitution-de-scenes-dynamiques-f-h-549573"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur.e Recherche - IA générative pour le design CAD (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-ia-generative-pour-le-design-cad-f-h-549571"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Aix en Provence",
-          "title": "STAGE - Ingénieur Développement et IA - Aix-en-Provence (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-developpement-et-ia-aix-en-provence-f-h-549570"
+          "company": "Amundi",
+          "first_seen": "2026-09-09",
+          "location": "Paris 15 éme",
+          "title": "Stage – chargé de contrôle en conformité, pôle Intégrité des Marchés (partie Monitoring) H/F",
+          "url": "https://jobs.amundi.com/offre-de-emploi/emploi-stage-charge-de-controle-en-conformite-pole-integrite-des-marches-partie-monitoring-h-f_111498.aspx"
         }
       ],
-      "new_roles_total": 43,
+      "new_roles_total": 6,
       "recent_roles": [
         {
           "company": "Thales",
@@ -619,6 +511,27 @@
         },
         {
           "company": "Dassault Systemes",
+          "first_seen": "2026-09-09",
+          "location": "France, Vélizy-Villacoublay",
+          "title": " STAGE – Analyste Excellence Opérationnelle – Automatisation du Reporting (F/H",
+          "url": "https://www.3ds.com/careers/jobs/stage-analyste-excellence-operationnelle-automatisation-du-reporting-f-h-549490"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-09-09",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Ingénieur Développement C++ / JavaScript & UI/UX pour la Visualisation 3D (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-developpement-c-javascript-ui-ux-pour-la-visualisation-3d-f-h-549722"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-09-09",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Avant-Ventes – PLM pour l’Énergie (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-ventes-plm-pour-l-energie-f-h-549187"
+        },
+        {
+          "company": "Dassault Systemes",
           "first_seen": "2026-09-08",
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Ingénieur DevSecOps IA (F/H)",
@@ -651,34 +564,13 @@
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Industry Solutions Architect Consultant (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-industry-solutions-architect-consultant-f-h-549509"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Stratégie et développement de marché (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-strategie-et-developpement-de-marche-f-h-549808"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Ingénieur.e Recherche en Bio-informatique et Modélisation (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-en-bio-informatique-et-modelisation-f-h-549386"
-        },
-        {
-          "company": "Dassault Systemes",
-          "first_seen": "2026-09-08",
-          "location": "France, Meudon La Foret",
-          "title": "STAGE – Ingénieur Grand Compte Aéronautique & Défense (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-grand-compte-aeronautique-defense-f-h-549192"
         }
       ],
-      "recent_roles_total": 137,
-      "scanned": 6279,
-      "stamp": "2026-09-08",
-      "unsure": 8
+      "recent_roles_total": 141,
+      "scanned": 6295,
+      "stamp": "2026-09-09",
+      "unsure": 11
     }
   },
-  "generated": "2026-09-08T20:18:19.189925+02:00"
+  "generated": "2026-09-09T20:15:49.292007+02:00"
 }

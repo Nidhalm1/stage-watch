@@ -16,83 +16,46 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-08
+`board.html` &middot; sweep of 2026-09-09
 
 ### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 
-### Not tech - 76 (showing the first 60)
+### Not tech - 23
 
 | Company | Title | Location |
 |---|---|---|
 | Datadog | [Applied Science Intern](https://careers.datadoghq.com/detail/8181440/?gh_jid=8181440) | Paris, France |
 | Datadog | [Product Management Intern](https://careers.datadoghq.com/detail/8143729/?gh_jid=8143729) | Paris, France |
 | Doctolib | [Stage - Community Engagement Associate (x/f/m) - Octobre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7802416003) | Paris, Paris, France |
-| Doctolib | [Stage - Consolidation et Contrôle financier (x/f/m) - Septembre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7610171003) | Paris, Paris, France |
+| Doctolib | [Stage - Consolidation et Contrôle financier (x/f/m) - octobre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7610171003) | Paris, Paris, France |
 | Doctolib | [Stage - Medical Content Associate (x/f/m) - Septembre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7784750003) | Paris, Paris, France |
 | Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
-| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
+| Scaleway | [Approvisionneur - Stage](https://jobs.lever.co/scaleway/c85a7df4-bee6-41c2-9983-06db6a116bb8) | Paris |
+| Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
+| Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
+| Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
+| SAP | [Internship: Partner Solution Enablement Associate F/M](https://jobs.sap.com/job/Levallois-Perret-Internship-Partner-Solution-Enablement-Associate-FM-92300/1421057333/) | Levallois Perret |
+| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
+| Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
+| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
+| Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
+| Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
+| Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
+| Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Stagiaire service juridique](https://www.amazon.jobs/en/jobs/10518434/stagiaire-service-juridique) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Stagiaire service juridique](https://www.amazon.jobs/en/jobs/10470003/stagiaire-service-juridique) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 762 (sample below)
+### Outside France - 537 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -101,38 +64,41 @@ mistake (a French site being read as foreign).
 | Datadog | [Software Engineering Intern (Summer)](https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118) | Boston, Massachusetts, USA; New York, New York, USA |
 | Datadog | [Software Engineering Intern (Winter)](https://careers.datadoghq.com/detail/8052095/?gh_jid=8052095) | Boston, Massachusetts, USA; New York, New York, USA |
 | Doctolib | [Business Development Representative Intern - Milano (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7800808003) | Milano, Milan, Italy |
-| Doctolib | [SEO & AI Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7864184003) | Milano, Milan, Italy |
-| Doctolib | [SEO & AI Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7824240003) | Milano, Milan, Italy |
-| Criteo | [Account Strategist (Intern)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979) | Barcelona, Spain |
-| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
-| Criteo | [Account Strategist Intern - Retail Media Benelux & Nordics](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739) | Amsterdam, Netherlands |
-| Criteo | [Account Strategist Intern - French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern_r20801) | Barcelona, Spain |
-| Criteo | [Account Strategist Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Account-Strategist-Intern--6-month--German-Speaker-_r20959) | Munich, Germany |
 | Criteo | [Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802) | Barcelona, Spain |
-| Criteo | [Campaign Manager Intern, Performance Media - Spanish & Italian Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Campaign-Manager-Intern---Spanish---Italian-Speaker_r20908) | Barcelona, Spain |
 | Criteo | [Sales Operations Data Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Operations-Data-Analyst-Intern_r20723) | Barcelona, Spain |
+| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
+| Criteo | [Account Strategist (Intern)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979) | Barcelona, Spain |
+| Criteo | [Account Strategist Intern Northern Europe](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern-Northern-Europe_r21058) | Barcelona, Spain |
+| Criteo | [Account Strategist Intern - Retail Media Benelux & Nordics](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739) | Amsterdam, Netherlands |
+| Criteo | [Account Strategist Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Account-Strategist-Intern--6-month--German-Speaker-_r20959) | Munich, Germany |
+| Criteo | [Campaign Manager Intern, Performance Media - Spanish & Italian Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Campaign-Manager-Intern---Spanish---Italian-Speaker_r20908) | Barcelona, Spain |
+| Criteo | [People Operations Internship – French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/People-Operations-Intern--French-Speaker_r20828) | Barcelona, Spain |
+| Snowflake | [Software Engineer Intern - Berlin (2026)](https://jobs.ashbyhq.com/snowflake/41e65c6c-a01e-4f40-af14-ae75d3b95e27) | DE-Berlin-Trion Building |
 
 ---
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-08
+`board2.html` &middot; sweep of 2026-09-09
 
-### Unrecognised location - 3
+### Unrecognised location - 5
 
 | Company | Title | Location |
 |---|---|---|
+| Siemens | [Smart Infrastructure Electrical Products Operations Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521212) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521723) | - |
+| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974) | - |
 | Siemens | [Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
-| Siemens | [Strategy Internship- Mobility (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461) | - |
 
-### Not tech - 55
+### Not tech - 56
 
 | Company | Title | Location |
 |---|---|---|
+| Qonto | [Accountant Intern](https://jobs.lever.co/qonto/7db34f3e-7120-4fc5-b1aa-e90ba5dc226f) | Paris |
 | Qonto | [Legal Intern - Commercial](https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392) | Paris |
 | Qonto | [Legal Intern - Product & AI](https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3) | Paris |
-| Qonto | [Product Marketing Manager Intern](https://jobs.lever.co/qonto/05723cc9-e819-4a5c-aea1-15e9a771ffad) | Paris |
+| Qonto | [Regulatory Reporting Intern](https://jobs.lever.co/qonto/70250f3c-3225-4a19-8549-7cad1e01d675) | Paris |
 | BlaBlaCar | [Stagiaire Communication & Relations Publiques (6 mois) - Paris, France](https://jobs.lever.co/blablacar/517fe4e3-2611-4fed-933c-ef0455b46aad) | Paris, France |
 | BlaBlaCar | [Stagiaire Marketing & Réseaux Sociaux France](https://jobs.lever.co/blablacar/f40b93ed-ad63-457f-81de-ec6ec3fbe85e) | Paris, France |
 | Aircall | [GTM Enablement Intern](https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14) | Paris Office |
@@ -145,6 +111,7 @@ mistake (a French site being read as foreign).
 | Back Market | [Financial Planning & Analysis Intern](https://jobs.ashbyhq.com/backmarket/2551ba06-5d98-4441-8919-e20e844cc15a) | Bordeaux |
 | Back Market | [Legal Intern / Juriste Droit des Affaires (Paris)](https://jobs.ashbyhq.com/backmarket/653540bb-f183-4f3e-a4c0-2ff083469eb5) | Paris |
 | Back Market | [Sustainability and Public Affairs Intern (Paris )](https://jobs.ashbyhq.com/backmarket/68d98b54-27d2-468a-9ae2-ace32cbb90d7) | Paris |
+| Back Market | [Fraud and Risk Officer Intern](https://jobs.ashbyhq.com/backmarket/40a80901-b0e4-4bc5-8208-1c396c1c8384) | Paris |
 | Alan | [CTO Founder Associate - internship](https://jobs.ashbyhq.com/alan/d457e0f1-2418-4759-b4ed-e41fdff50bf0) | Paris, France |
 | Alan | [CEO Founder Associate - Internship](https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9) | Paris, France |
 | Alan | [Talent Associate (internship)](https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d) | Paris, France |
@@ -175,16 +142,15 @@ mistake (a French site being read as foreign).
 | Alten | [Internship Offer – Product Owner (Project Management Tool)](https://jobs.smartrecruiters.com/alten/744000131167400) | Toulouse, fr |
 | Ubisoft | [Internship 6 months - Technical Designer (F/M/NB) [AAA Project]](https://jobs.smartrecruiters.com/Ubisoft2/744000147274629) | Annecy, fr |
 | Ubisoft | [Assistant(e) Chef(fe) de Projet Communication & Evènementiel - Stage 6 mois - (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000147273141) | Annecy, fr |
-| Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/6c32487d-4531-49ea-b5fc-b1facc8de206) | Saint-Denis |
-| Veepee | [Stage - Assistant(e) projet SIRH – Paie & Gestion des Temps (H/F/X)](https://jobs.lever.co/veepee/8c0231c4-d2c8-48fc-8752-491b2dd18a4c) | Saint Vulbas |
 | Veepee | [Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)](https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2) | Saint-Denis |
+| Expleo | [Stage – Technicien Conception Structure H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56060/stage-%e2%80%93-technicien-conception-structure-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Inspection Qualité Aéronautique H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56037/stage-%e2%80%93-inspection-qualit%c3%a9-a%c3%a9ronautique-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Technicien conception structure H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56024/stage-%e2%80%93-technicien-conception-structure-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Technicien mécanique spatial H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56022/stage-%e2%80%93-technicien-m%c3%a9canique-spatial-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Technicien communication / marketing H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56021/stage-%e2%80%93-technicien-communication---marketing-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Social Media Listening H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56002/stage-%e2%80%93-social-media-listening-h-f/job?in_iframe=1) | FR-78-Montigny-le-Bretonneux |
-| Siemens | [Stage - Chaîne logistique et approvisionnements f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/514945) | Haguenau, Grand-Est, France |
 | Siemens | [Stage - Planificateur de production f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521533) | Haguenau, Grand-Est, France |
+| Siemens | [Stage - Chaîne logistique et approvisionnements f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/514945) | Haguenau, Grand-Est, France |
 
 ### Outside France - 57 (sample below)
 
@@ -195,7 +161,6 @@ mistake (a French site being read as foreign).
 | Aircall | [Regional Marketing Intern, LATAM (12 months)](https://jobs.lever.co/aircall/0e52ec00-a327-49de-9378-6b8487229f89) | San Francisco Office |
 | Aircall | [Sales Intern - UKI Market](https://jobs.lever.co/aircall/f1d2fb78-a40b-4a33-ab8f-75e573ba9749) | London Office |
 | Aircall | [Sales Partnerships Intern](https://jobs.lever.co/aircall/462b6547-d555-4e5f-b5a2-ea8c2de46101) | Madrid Office |
-| Back Market | [Business Development Intern (HK 6-month Full-Time Internship)](https://jobs.ashbyhq.com/backmarket/1d015812-58ea-4f4e-a2c2-81db4fc40129) | Hong Kong |
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
 | Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003) | Mexico - Mexico City |
@@ -205,19 +170,23 @@ mistake (a French site being read as foreign).
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
 | Murex | [Murex Internship](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beijing/Murex-Internship_JR101126-1) | Beijing, JR101126; Intern |
 | Sopra Steria | [Stage Business Analyst – Reporting & Controlling](https://jobs.smartrecruiters.com/SopraSteria1/744000146410169) | ASSAGO, it |
+| Sopra Steria | [Sommerjobb 2027 - Design](https://jobs.smartrecruiters.com/SopraSteria1/744000145673069) | Oslo, no |
 
 ---
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-08
+`board3.html` &middot; sweep of 2026-09-09
 
-### Unrecognised location - 8
+### Unrecognised location - 11
 
 | Company | Title | Location |
 |---|---|---|
-| Airbus | [Production Controller Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Santiago-De-Quertaro_Area/Production-Controller-Intern_JR10439873) | Santiago-De-Quertaro_Area, JR10439873 |
-| Airbus | [Buyer Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Santiago-De-Quertaro_Area/Buyer-Intern_JR10440198) | Santiago-De-Quertaro_Area, JR10440198 |
+| Airbus | [STAGE 2027 – Ingénieur Production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Production--ALL-GENDER-_JR10436132) | Saint-Nazaire-Area, JR10436132 |
+| Airbus | [STAGE 2027 - Performance Industrielle & Amélioration Continue (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Performance-Industrielle---Amlioration-Continue--ALL-GENDER-_JR10431068) | Maulte-Area, JR10431068 |
+| Airbus | [STAGE 2027 – Ingénieur Amélioration Continue en production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Amlioration-Continue-en-production--ALL-GENDER-_JR10430316) | Rochefort, JR10430316 |
+| Airbus | [STAGE 2027 - Amélioration Gestion de Production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-Gestion-de-Production--ALL-GENDER-_JR10436036) | Rochefort, JR10436036 |
+| Airbus | [STAGE 2027 - Stage en assurance qualité A330 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Stage-en-assurance-qualit-A330--ALL-GENDER-_JR10429778) | Saint-Nazaire-Area, JR10429778 |
 | Airbus | [STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177) | Saint-Nazaire-Area, JR10432177 |
 | Airbus | [STAGE 2027 - Ressources Humaines : Chargé des relations sociales (All gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ressources-Humaines---Charg-des-relations-sociales--All-gender-_JR10431261) | Saint-Nazaire-Area, JR10431261 |
 | Airbus | [Landing Gear Technical Engineering Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645) | Bristol-Area, JR10430645 |
@@ -225,16 +194,23 @@ mistake (a French site being read as foreign).
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 293 (showing the first 60)
+### Not tech - 294 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [STAGE - Marketing Stratégique et Développement Commercial - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Marketing-Stratgique-et-Dveloppement-Commercial---F-H_R0339243-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339243; 02 - STRATEGY, MARKETING, SALES; Thales DIS France SAS |
+| Thales | [STAGE - Marketing, Knowledge Management, Change Management & AI - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Marketing--Knowledge-Management--Change-Management---AI---F-H_R0336311-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0336311; 02 - STRATEGY, MARKETING, SALES; Thales DIS France SAS |
 | Thales | [STAGE -  Chargé de Projets RH - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----Charg-de-Projets-RH---F-H_R0339361) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339361; 12 - HUMAN RESOURCES; Thales |
 | Thales | [STAGE - Contrôleur de gestion Offres et Projets - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Contrleur-de-gestion-Offres-et-Projets---H-F_R0334380-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0334380; 11 - FINANCE; Thales Avs France Sas |
 | Thales | [STAGE - Project Support for Contract Management Transformation - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0326789; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
 | Thales | [STAGE - Legal M&A - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
+| Airbus | [STAGE 2027 -  Stage en Ressources Humaines - Compétences & GEPP (All Gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027----Stage-en-Ressources-Humaines---Comptences---GEPP--All-Gender-_JR10435778) | Nantes-Area, JR10435778 |
+| Airbus | [STAGE 2027 - Digitalisation de la gestion de production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Digitalisation-de-la-gestion-de-production--ALL-GENDER-_JR10429660) | Nantes-Area, JR10429660 |
 | Airbus | [STAGE 2027 - Stage analyse de risques HSE A320 (All Gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-analyse-de-risques-HSE-A320--All-Gender-_JR10431673) | Toulouse-Area, JR10431673 |
 | Airbus | [Stage Peintre Aéro / Opérateur(trice) matériau composite H/F](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249) | Salaunes, JR10438249 |
+| Dassault Systemes | [STAGE - Marketing Digital (SEO/GEO/SEA & Social media) (F/H)](https://www.3ds.com/careers/jobs/stage-marketing-digital-seo-geo-sea-social-media-f-h-549856) | France, Limonest |
+| Dassault Systemes | [STAGE - MBSE Expert Junior (F/H)](https://www.3ds.com/careers/jobs/stage-mbse-expert-junior-f-h-549831) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Solutions pour l'industrie de la construction (AEC) (F/H)](https://www.3ds.com/careers/jobs/stage-solutions-pour-l-industrie-de-la-construction-aec-f-h-549733) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Assistant Chef de Projet Solutions Industrielles (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-chef-de-projet-solutions-industrielles-f-h-549811) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Analyste Sales Operations & Performance Commerciale EUROWEST (F/H)](https://www.3ds.com/careers/jobs/stage-analyste-sales-operations-performance-commerciale-eurowest-f-h-549190) | France, Meudon La Foret |
 | Dassault Systemes | [STAGE - Chef de projet marketing digital (F/H)](https://www.3ds.com/careers/jobs/stage-chef-de-projet-marketing-digital-f-h-549797) | France, Vélizy-Villacoublay |
@@ -252,11 +228,9 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Chargé de Planification Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549714) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Ingénieur Avant-vente CATIA AI Engineering (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-catia-ai-engineering-f-h-549698) | France, Aix en Provence |
 | Dassault Systemes | [STAGE - Ingénieur Technico-Commercial (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-f-h-549697) | France, Meudon La Foret |
-| Dassault Systemes | [STAGE – Chargé de Communication Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Assistant Marketing Digital (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189) | France, Meudon La Foret |
-| Dassault Systemes | [STAGE – Juriste contrats - nouvelles technologies (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Fiscaliste (F/H)](https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-directeur-de-projets-3dexperience-f-h-549232) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Gestionnaire de paie (F/H)](https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Continuité d’Activité et Résilience Opérationnelle (F/H)](https://www.3ds.com/careers/jobs/stage-continuite-d-activite-et-resilience-operationnelle-f-h-549676) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE- Chargé de projet formation (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE – Communication Marque Employeur (F/H)](https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Manufacturing génératif — Marine & Offshore (F/H)](https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194) | France, Vélizy-Villacoublay |
@@ -264,6 +238,7 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Chargé de missions RH internationales (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Gestionnaire de paie (F/H)](https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Business Developper (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-directeur-de-projets-3dexperience-f-h-549232) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Continuité d’Activité et Résilience Opérationnelle (F/H)](https://www.3ds.com/careers/jobs/stage-continuite-d-activite-et-resilience-operationnelle-f-h-549676) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Chargé du support RH (F/H)](https://www.3ds.com/careers/jobs/stage-charge-du-support-rh-f-h-549526) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - R&D Virtual Twin: Créer une expérience de R&D unifiée et interactive (F/H)](https://www.3ds.com/careers/jobs/stage-r-d-virtual-twin-creer-une-experience-de-r-d-unifiee-et-interactive-f-h-549513) | France, Vélizy-Villacoublay |
@@ -276,24 +251,19 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE – Chargé de Marketing & Innovation 3DEXPERIENCE Lab (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-marketing-innovation-3dexperience-lab-f-h-549040) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Business Developper Eurowest (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-eurowest-f-h-549402) | France, Meudon La Foret |
 | Dassault Systemes | [STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)](https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383) | France, Valbonne |
-| Dassault Systemes | [STAGE – Juriste lutte contre la contrefaçon (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Chargé des Ressources Humaines Europe (F/H)](https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Prix de Transfert (F/H)](https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037) | France, Vélizy-Villacoublay |
+| Societe Generale | [Assistant Product Owner Content Supply Chain](https://careers.societegenerale.com/offres-d-emploi/assistant-product-owner-content-supply-chain-2600065S-fr) | La Defense, France |
+| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000IXY-fr) | Lille, France |
+| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JR8-fr) | La-Grande-Motte, France |
+| Societe Generale | [Chargé de Middle Office](https://careers.societegenerale.com/offres-d-emploi/charge-de-middle-office-26000JO4-fr) | La Defense, France |
+| Societe Generale | [Juriste recouvrement contentieux](https://careers.societegenerale.com/offres-d-emploi/juriste-recouvrement-contentieux-26000JIZ-fr) | La Defense, France |
 | Societe Generale | [Stage - Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000J9W-fr) | Lons-Le-Saunier, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JKO-fr) | Nimes, France |
-| Societe Generale | [Equity Capital Markets (ECM) - Execution](https://careers.societegenerale.com/offres-d-emploi/equity-capital-markets-ecm-execution-26000JLW-fr) | La Defense, France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH1-fr) | France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JGK-fr) | France |
-| Societe Generale | [Stage Conseiller Clientèle Particuliers](https://careers.societegenerale.com/offres-d-emploi/stage-conseiller-clientele-particuliers-26000JH3-fr) | Dunkerque, France |
-| Societe Generale | [Market Performance Analyst](https://careers.societegenerale.com/offres-d-emploi/market-performance-analyst-26000JGZ-fr) | La Defense, France |
-| Societe Generale | [Assistant Chargé de Relations Bancaires](https://careers.societegenerale.com/offres-d-emploi/assistant-charge-de-relations-bancaires-26000JLH-fr) | La Defense, France |
-| Societe Generale | [Chargé(e) de partenariats Marketing](https://careers.societegenerale.com/offres-d-emploi/chargee-de-partenariats-marketing-26000GUP-fr) | Courbevoie, France |
-| Societe Generale | [Pôle finance](https://careers.societegenerale.com/offres-d-emploi/pole-finance-26000JI1-fr) | La Defense, France |
-| Societe Generale | [Stage Conseil Marché de l'entreprise](https://careers.societegenerale.com/offres-d-emploi/stage-conseil-marche-de-lentreprise-26000JJA-fr) | France |
 
-### Outside France - 740 (sample below)
+### Outside France - 746 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [Software Engineer Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern_R0339658) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339658; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Supply Chain Management Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing-Airport/Supply-Chain-Management-Intern_R0336817) | Beijing-Airport, Intern/Trainee (Fixed Term) (Trainee); R0336817; 07 - CUSTOMER SERVICE; Thales Aerospace (Beijing) Co., Ltd. |
 | Thales | [Software Engineering Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Software-Engineering-Intern_R0339364) | Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0339364; 20 - SOFTWARE; Thales Cyber Solutions Belgium SA |
 | Thales | [Software Development and Integration Engineer (Intern)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
@@ -303,7 +273,6 @@ mistake (a French site being read as foreign).
 | Thales | [Business App Support Intern - 2027 Start](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Junior IVVQ Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Junior-IVVQ-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0337042) | Firenze, Intern/Trainee (Fixed Term) (Trainee); R0337042; 20 - SOFTWARE; Thales Italia S.P.A. |
 | Thales | [Software Engineer Intern (C#)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/SINGAPORE/Software-Engineer-Intern--C--_R0324316) | SINGAPORE, Intern/Trainee (Fixed Term) (Trainee); R0324316; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
-| Thales | [Customer Service & Sales Operations Internship](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/Customer-Service---Sales-Operations-Internship_R0334316) | Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0334316; 07 - CUSTOMER SERVICE; Thales DIS Mexico SA de CV |
 | Thales | [Naval Architect Intern/Co op - Halifax](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Halifax---Wilkinson/Naval-Architect-Intern-Co-op---Halifax_R0333841-2) | Halifax---Wilkinson, Student/Work Experience (Fixed Term) (Seasonal); R0333841; 19 - HARDWARE; Thales Canada Inc., Defence and Security |
 | Thales | [Trainee NetSec - (Internship September 2026)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Trainee-NetSec----Internship-September-2026-_R0334747) | Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0334747; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Cyber Solutions Belgium SA |
 | Thales | [Solution Customer Service Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
