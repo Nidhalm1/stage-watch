@@ -16,18 +16,18 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-10
+`board.html` &middot; sweep of 2026-09-11
 
 ### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
-| Cloudflare | [EIAM Business Enablement & Operations Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8068479?gh_jid=8068479) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
+| IBM | [Contractor Fulfillment Specialist - Internship](https://careers.ibm.com/careers/JobDetail?jobId=132425) | Heredia, CR |
 
-### Not tech - 14
+### Not tech - 22
 
 | Company | Title | Location |
 |---|---|---|
@@ -36,17 +36,25 @@ mistake (a French site being read as foreign).
 | Doctolib | [Stage - Community Engagement Associate (x/f/m) - Octobre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7802416003) | Paris, Paris, France |
 | Doctolib | [Stage - Consolidation et Contrôle financier (x/f/m) - octobre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7610171003) | Paris, Paris, France |
 | Doctolib | [Stage - Medical Content Associate (x/f/m) - Septembre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7784750003) | Paris, Paris, France |
+| Doctolib | [Stage - Sales Development Representative (x/f/m) - décembre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7988665003) | Paris, Paris, France |
+| Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
 | Scaleway | [Approvisionneur - Stage](https://jobs.lever.co/scaleway/c85a7df4-bee6-41c2-9983-06db6a116bb8) | Paris |
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
+| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
+| Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
+| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
+| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
 | Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 539 (sample below)
+### Outside France - 541 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -55,35 +63,35 @@ mistake (a French site being read as foreign).
 | Datadog | [Software Engineering Intern (Summer)](https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118) | Boston, Massachusetts, USA; New York, New York, USA |
 | Datadog | [Software Engineering Intern (Winter)](https://careers.datadoghq.com/detail/8052095/?gh_jid=8052095) | Boston, Massachusetts, USA; New York, New York, USA |
 | Doctolib | [Business Development Representative Intern - Milano (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7800808003) | Milano, Milan, Italy |
+| Criteo | [Account Strategic Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Sao-Paulo/Account-Strategic-Intern_r20968-1) | Sao-Paulo, Brazil |
+| Criteo | [Account Strategist Intern Northern Europe- start date January 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern-Northern-Europe_r21058) | Barcelona, Spain |
+| Criteo | [Account Strategist Intern - Retail Media Benelux & Nordics](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Amsterdam/Account-Strategist-Intern---Retail-Media-Benelux---Nordics_r20739) | Amsterdam, Netherlands |
+| Criteo | [People Operations Internship – French Speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/People-Operations-Intern--French-Speaker_r20828) | Barcelona, Spain |
+| Criteo | [Account Strategist Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Account-Strategist-Intern--6-month--German-Speaker-_r20959) | Munich, Germany |
+| Criteo | [Business Development & Lead Generation Intern - Independent Agency Team (France, UK & DACH)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Agency-Sales-Intern_r20802) | Barcelona, Spain |
+| Criteo | [Sales Operations Data Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Operations-Data-Analyst-Intern_r20723) | Barcelona, Spain |
+| Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
+| Criteo | [Account Strategist (Intern)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979) | Barcelona, Spain |
 | Sentry | [Software Engineer, Intern (Summer 2027)](https://jobs.ashbyhq.com/sentry/fa522ac5-fc9f-4ce1-a191-842496a235a2) | Vienna, Austria |
-| Snowflake | [Software Engineer Intern - Berlin (2026)](https://jobs.ashbyhq.com/snowflake/41e65c6c-a01e-4f40-af14-ae75d3b95e27) | DE-Berlin-Trion Building |
-| Snowflake | [SDR Intern - Munich](https://jobs.ashbyhq.com/snowflake/a4753822-7581-4cf3-8fcc-856f54d684b0) | Fins Only-DE-Munich-MSO |
-| Snowflake | [SDR Intern - London](https://jobs.ashbyhq.com/snowflake/b9bd62f1-ad91-423a-a680-cf9366960976) | GB-London |
-| Snowflake | [Software Engineer Intern - Warsaw Security](https://jobs.ashbyhq.com/snowflake/fc1923c1-b151-4458-a792-40d58331a5be) | PL-Warsaw-Lixa C |
-| Snowflake | [Strategic Events Intern - London](https://jobs.ashbyhq.com/snowflake/3ceff86f-2cae-4def-9504-d8d182b91eb4) | GB-London |
-| Snowflake | [Applied AI Intern - Warsaw](https://jobs.ashbyhq.com/snowflake/90190b16-fd27-4366-8c10-9c4896157681) | PL-Warsaw-Lixa C |
-| Databricks | [PhD GenAI Research Scientist Intern](https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002) | San Francisco, California |
-| Databricks | [Product Management Intern (Summer 2027)](https://databricks.com/company/careers/open-positions/job?gh_jid=6883068002) | Bellevue, Washington; Mountain View, California; San Francisco, California |
-| Databricks | [Software Engineering Intern (2027 Start) - Winter](https://databricks.com/company/careers/open-positions/job?gh_jid=8732364002) | Bellevue, Washington; Mountain View, California; San Francisco, California |
 
 ---
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-10
+`board2.html` &middot; sweep of 2026-09-11
 
 ### Unrecognised location - 6
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Undergraduate-Internship-Program-2027_JR103127) | Undergraduate-Internship-Program-2027_JR103127, JR103127; Intern |
-| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
-| Siemens | [Market Development Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520020) | - |
 | Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
-| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522138) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521723) | - |
+| Siemens | [Strategy Internship- Mobility (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461) | - |
 
-### Not tech - 61 (showing the first 60)
+### Not tech - 63 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -133,6 +141,7 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage - Consultant PLM et Sustainability : ACV, DPP et CSRD - Colomiers](https://jobs.smartrecruiters.com/SopraSteria1/744000111047098) | Colomiers, fr |
 | Sopra Steria | [Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France](https://jobs.smartrecruiters.com/SopraSteria1/744000099047104) | Paris, fr |
 | Sopra Steria | [Stage - Chargé (e)  de Recrutement](https://jobs.smartrecruiters.com/SopraSteria1/744000091562029) | Colomiers, fr |
+| Alten | [STAGE - Chargé d'Affaires Outillages/Machines (H/F)](https://jobs.smartrecruiters.com/alten/744000148974879) | Nantes, fr |
 | Alten | [STAGE - Chargé de projet qualité](https://jobs.smartrecruiters.com/alten/744000146498239) | Vitrolles, fr |
 | Alten | [Internship Offer – Product Owner (Project Management Tool)](https://jobs.smartrecruiters.com/alten/744000131167400) | Toulouse, fr |
 | Ubisoft | [Internship 6 months - Technical Designer (F/M/NB) [AAA Project]](https://jobs.smartrecruiters.com/Ubisoft2/744000147274629) | Annecy, fr |
@@ -146,9 +155,8 @@ mistake (a French site being read as foreign).
 | Expleo | [Stage – Technicien mécanique spatial H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56022/stage-%e2%80%93-technicien-m%c3%a9canique-spatial-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Technicien communication / marketing H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56021/stage-%e2%80%93-technicien-communication---marketing-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Social Media Listening H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56002/stage-%e2%80%93-social-media-listening-h-f/job?in_iframe=1) | FR-78-Montigny-le-Bretonneux |
-| Siemens | [Stage - Planificateur de production f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521533) | Haguenau, Grand-Est, France |
 
-### Outside France - 49 (sample below)
+### Outside France - 54 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -172,7 +180,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-10
+`board3.html` &middot; sweep of 2026-09-11
 
 ### Unrecognised location - 13
 
@@ -182,17 +190,17 @@ mistake (a French site being read as foreign).
 | Airbus | [STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177) | Saint-Nazaire-Area, JR10432177 |
 | Airbus | [STAGE 2027 - Amélioration Continue en Production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-Continue-en-Production--ALL-GENDER-_JR10432323) | Rochefort, JR10432323 |
 | Airbus | [STAGE 2027 - Assistant en optimisation des processus industriels (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-en-optimisation-des-processus-industriels--ALL-GENDER-_JR10427888) | Saint-Nazaire-Area, JR10427888 |
-| Airbus | [STAGE 2027 – Ingénieur Production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Production--ALL-GENDER-_JR10436132) | Saint-Nazaire-Area, JR10436132 |
 | Airbus | [STAGE 2027 - Performance Industrielle & Amélioration Continue (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Performance-Industrielle---Amlioration-Continue--ALL-GENDER-_JR10431068) | Maulte-Area, JR10431068 |
-| Airbus | [STAGE 2027 – Ingénieur Amélioration Continue en production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Amlioration-Continue-en-production--ALL-GENDER-_JR10430316) | Rochefort, JR10430316 |
 | Airbus | [STAGE 2027 - Amélioration Gestion de Production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-Gestion-de-Production--ALL-GENDER-_JR10436036) | Rochefort, JR10436036 |
 | Airbus | [STAGE 2027 - Ressources Humaines : Chargé des relations sociales (All gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ressources-Humaines---Charg-des-relations-sociales--All-gender-_JR10431261) | Saint-Nazaire-Area, JR10431261 |
 | Airbus | [Landing Gear Technical Engineering Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645) | Bristol-Area, JR10430645 |
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
+| Dassault Aviation | [Analyseur de messages de pannes au banc d'intégration (IA & Data Science) F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-analyseur-de-messages-de-pannes-au-banc-d-integration-ia-data-science-f-h_15707.aspx) | - |
+| Dassault Aviation | [Evaluation de solutions d'exploitation graphique de données temporelles massives F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-evaluation-de-solutions-d-exploitation-graphique-de-donnees-temporelles-massives-f-h_15708.aspx) | - |
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 319 (showing the first 60)
+### Not tech - 321 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -205,12 +213,14 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - Contrôleur de gestion Offres et Projets - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Contrleur-de-gestion-Offres-et-Projets---H-F_R0334380-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0334380; 11 - FINANCE; Thales Avs France Sas |
 | Thales | [STAGE - Project Support for Contract Management Transformation - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0326789; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
 | Thales | [STAGE - Legal M&A - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
+| Airbus | [STAGE 2027 - Gestionnaire RH (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gestionnaire-RH--h-f-_JR10439032) | Marseille-Area, JR10439032 |
 | Airbus | [STAGE 2027  en conception de structure d’hélicoptère (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027--Stage-en-conception-de-structure-d-hlicoptre--F-H--_JR10437799) | Marseille-Area, JR10437799 |
 | Airbus | [STAGE 2027 - Gouvernance RH & Amélioration Continue (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gouvernance-RH---Amlioration-Continue--h-f-_JR10439008) | Marseille-Area, JR10439008 |
 | Airbus | [STAGE 2027 -  Stage en Ressources Humaines - Compétences, GEPP & Digitalisation (All Gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027----Stage-en-Ressources-Humaines---Comptences---GEPP--All-Gender-_JR10435778) | Nantes-Area, JR10435778 |
 | Airbus | [STAGE 2027 - Digitalisation de la gestion de production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Digitalisation-de-la-gestion-de-production--ALL-GENDER-_JR10429660) | Nantes-Area, JR10429660 |
 | Airbus | [STAGE 2027 - Stage analyse de risques HSE A320 (All Gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-analyse-de-risques-HSE-A320--All-Gender-_JR10431673) | Toulouse-Area, JR10431673 |
 | Airbus | [Stage Peintre Aéro / Opérateur(trice) matériau composite H/F](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Salaunes/Stage-Peintre-Aro---Oprateur-trice--matriau-composite-H-F_JR10438249) | Salaunes, JR10438249 |
+| Dassault Systemes | [STAGE - Ingénieur Avant-Vente - Automobile (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-automobile-f-h-549909) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Charge d'affaires publiques et réglementaires (F/H)](https://www.3ds.com/careers/jobs/stage-charge-d-affaires-publiques-et-reglementaires-f-h-549907) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Marketing Digital (SEO/GEO/SEA & Social media) (F/H)](https://www.3ds.com/careers/jobs/stage-marketing-digital-seo-geo-sea-social-media-f-h-549856) | France, Limonest |
 | Dassault Systemes | [STAGE - MBSE Expert Junior (F/H)](https://www.3ds.com/careers/jobs/stage-mbse-expert-junior-f-h-549831) | France, Vélizy-Villacoublay |
@@ -232,32 +242,30 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Chargé de Planification Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-planification-strategique-f-h-549714) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Ingénieur Avant-vente CATIA AI Engineering (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-catia-ai-engineering-f-h-549698) | France, Aix en Provence |
 | Dassault Systemes | [STAGE - Ingénieur Technico-Commercial (F/H)](https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-f-h-549697) | France, Meudon La Foret |
-| Dassault Systemes | [STAGE – Chargé de Communication Stratégique (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Assistant Marketing Digital (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189) | France, Meudon La Foret |
-| Dassault Systemes | [STAGE – Juriste contrats - nouvelles technologies (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Fiscaliste (F/H)](https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE- Chargé de projet formation (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE – Communication Marque Employeur (F/H)](https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Manufacturing génératif — Marine & Offshore (F/H)](https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE – Prix de Transfert (F/H)](https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Chargé de missions RH internationales (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Gestionnaire de paie (F/H)](https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE - Business Developper (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188) | France, Meudon La Foret |
 | Dassault Systemes | [STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-directeur-de-projets-3dexperience-f-h-549232) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Gestionnaire de paie (F/H)](https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Continuité d’Activité et Résilience Opérationnelle (F/H)](https://www.3ds.com/careers/jobs/stage-continuite-d-activite-et-resilience-operationnelle-f-h-549676) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Chargé du support RH (F/H)](https://www.3ds.com/careers/jobs/stage-charge-du-support-rh-f-h-549526) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - R&D Virtual Twin: Créer une expérience de R&D unifiée et interactive (F/H)](https://www.3ds.com/careers/jobs/stage-r-d-virtual-twin-creer-une-experience-de-r-d-unifiee-et-interactive-f-h-549513) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE – Chargé de communication interne et projets RSE (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-communication-interne-et-projets-rse-f-h-549503) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Assistant Chef de Projet – Déploiement d’une Plateforme de Formation(F/H)](https://www.3ds.com/careers/jobs/stage-assistant-chef-de-projet-deploiement-d-une-plateforme-de-formation-f-h-549502) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Gestion de Projet Champions 3DEXPERIENCE (F/H)](https://www.3ds.com/careers/jobs/stage-gestion-de-projet-champions-3dexperience-f-h-549494) | France, Vélizy-Villacoublay |
-| Dassault Systemes | [STAGE – Marketing opérationnel & digital (F/H)](https://www.3ds.com/careers/jobs/stage-marketing-operationnel-digital-f-h-549191) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Business Developper Eurowest (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-eurowest-f-h-549402) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)](https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383) | France, Valbonne |
+| Dassault Systemes | [STAGE – Communication Marque Employeur (F/H)](https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé de missions RH internationales (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Charge de projet RH "Management & Leadership" (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-rh-management-leadership-f-h-549329) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE - Chargé des Ressources Humaines Europe (F/H)](https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE- Chargé de projet formation (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Chargé d'événementiel (F/H)](https://www.3ds.com/careers/jobs/stage-charge-d-evenementiel-f-h-549314) | France, Meudon La Foret |
-| Dassault Systemes | [STAGE – Chargé de Marketing & Innovation 3DEXPERIENCE Lab (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-marketing-innovation-3dexperience-lab-f-h-549040) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE - Manufacturing génératif — Marine & Offshore (F/H)](https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Marketing opérationnel & digital (F/H)](https://www.3ds.com/careers/jobs/stage-marketing-operationnel-digital-f-h-549191) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Assistant Marketing Digital (F/H)](https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Business Developper (F/H)](https://www.3ds.com/careers/jobs/stage-business-developper-f-h-549188) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
+| Dassault Systemes | [STAGE – Juriste lutte contre la contrefaçon (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103) | France, Vélizy-Villacoublay |
 
-### Outside France - 746 (sample below)
+### Outside France - 768 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
