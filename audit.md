@@ -16,14 +16,14 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-11
+`board.html` &middot; sweep of 2026-09-12
 
 ### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
-| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118855?gh_jid=8118855) | In-Office |
+| Cloudflare | [Software Engineer Intern (Fall 2026)](https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845) | In-Office |
 | Cloudflare | [Software Engineer Intern (Fall 2026) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785) | In-Office |
 | IBM | [Contractor Fulfillment Specialist - Internship](https://careers.ibm.com/careers/JobDetail?jobId=132425) | Heredia, CR |
 
@@ -42,26 +42,25 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
+| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
 | Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
 | Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
-| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
-| Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
+| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
+| Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 541 (sample below)
+### Outside France - 540 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
 | Datadog | [Product Management Intern](https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241) | New York, New York, USA |
 | Datadog | [Software Engineering Intern](https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161) | Madrid, Spain |
 | Datadog | [Software Engineering Intern (Summer)](https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118) | Boston, Massachusetts, USA; New York, New York, USA |
-| Datadog | [Software Engineering Intern (Winter)](https://careers.datadoghq.com/detail/8052095/?gh_jid=8052095) | Boston, Massachusetts, USA; New York, New York, USA |
 | Doctolib | [Business Development Representative Intern - Milano (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7800808003) | Milano, Milan, Italy |
 | Criteo | [Account Strategic Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Sao-Paulo/Account-Strategic-Intern_r20968-1) | Sao-Paulo, Brazil |
 | Criteo | [Account Strategist Intern Northern Europe- start date January 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern-Northern-Europe_r21058) | Barcelona, Spain |
@@ -73,23 +72,26 @@ mistake (a French site being read as foreign).
 | Criteo | [Customer Success Intern, 6-month (German-Speaker)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Munich/Customer-Success-Intern--6-month--German-Speaker-_r20965) | Munich, Germany |
 | Criteo | [Account Strategist (Intern)](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist--Intern-_r20979) | Barcelona, Spain |
 | Sentry | [Software Engineer, Intern (Summer 2027)](https://jobs.ashbyhq.com/sentry/fa522ac5-fc9f-4ce1-a191-842496a235a2) | Vienna, Austria |
+| Snowflake | [Software Engineer Intern - Berlin (2026)](https://jobs.ashbyhq.com/snowflake/41e65c6c-a01e-4f40-af14-ae75d3b95e27) | DE-Berlin-Trion Building |
 
 ---
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-11
+`board2.html` &middot; sweep of 2026-09-12
 
-### Unrecognised location - 6
+### Unrecognised location - 8
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Undergraduate-Internship-Program-2027_JR103127) | Undergraduate-Internship-Program-2027_JR103127, JR103127; Intern |
+| Siemens | [Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411) | Muscat, Masqat, Oman |
+| Siemens | [Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261) | - |
+| Siemens | [Data Analysis Internship- Customer Service (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/517739) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
 | Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
-| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
-| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521723) | - |
-| Siemens | [Strategy Internship- Mobility (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461) | - |
+| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974) | - |
 
 ### Not tech - 63 (showing the first 60)
 
@@ -180,7 +182,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-11
+`board3.html` &middot; sweep of 2026-09-12
 
 ### Unrecognised location - 13
 
@@ -200,7 +202,7 @@ mistake (a French site being read as foreign).
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 321 (showing the first 60)
+### Not tech - 319 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -265,7 +267,7 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE – Juriste lutte contre la contrefaçon (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103) | France, Vélizy-Villacoublay |
 
-### Outside France - 768 (sample below)
+### Outside France - 779 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 541,
+      "foreign_count": 540,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -21,12 +21,6 @@
           "location": "Boston, Massachusetts, USA; New York, New York, USA",
           "title": "Software Engineering Intern (Summer)",
           "url": "https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118"
-        },
-        {
-          "company": "Datadog",
-          "location": "Boston, Massachusetts, USA; New York, New York, USA",
-          "title": "Software Engineering Intern (Winter)",
-          "url": "https://careers.datadoghq.com/detail/8052095/?gh_jid=8052095"
         },
         {
           "company": "Doctolib",
@@ -93,6 +87,12 @@
           "location": "Vienna, Austria",
           "title": "Software Engineer, Intern (Summer 2027)",
           "url": "https://jobs.ashbyhq.com/sentry/fa522ac5-fc9f-4ce1-a191-842496a235a2"
+        },
+        {
+          "company": "Snowflake",
+          "location": "DE-Berlin-Trion Building",
+          "title": "Software Engineer Intern - Berlin (2026)",
+          "url": "https://jobs.ashbyhq.com/snowflake/41e65c6c-a01e-4f40-af14-ae75d3b95e27"
         }
       ],
       "non_tech": [
@@ -133,14 +133,14 @@
         },
         {
           "company": "Doctolib",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, Paris, France",
           "title": "Stage - Sales Development Representative (x/f/m) - décembre 2026",
           "url": "https://job-boards.greenhouse.io/doctolib/jobs/7988665003"
         },
         {
           "company": "Criteo",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Stage – Campaign Manager Intern | Janvier 2027",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855"
@@ -175,52 +175,45 @@
         },
         {
           "company": "Microsoft",
-          "is_new": true,
-          "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - AIBS",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": true,
-          "location": "France, Paris, Paris",
-          "title": "Government Affairs Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990662"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": true,
-          "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Paris, Paris",
           "title": "National Technology Intern",
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
         },
         {
           "company": "Microsoft",
-          "is_new": true,
+          "is_new": false,
+          "location": "France, Paris, Paris",
+          "title": "Government Affairs Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990662"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": false,
+          "location": "France, Paris, Paris",
+          "title": "Legal Counsel Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": false,
           "location": "France, Paris, Paris",
           "title": "Business Program Management Intern - Retail",
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
         },
         {
           "company": "Microsoft",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Paris, Paris",
           "title": "Business Program Management Intern - Executive Office",
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556990789"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Microsoft",
           "is_new": false,
-          "location": "Toulouse, Occitanie, FRA",
-          "title": "Operations Intern - Région Sud - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+          "location": "France, Paris, Paris",
+          "title": "Business Program Management Intern - AIBS",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
         },
         {
           "company": "Amazon / AWS",
@@ -228,6 +221,13 @@
           "location": "Lille, Hauts-de-France, FRA",
           "title": "Operations Intern - Région Nord - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
+          "location": "Toulouse, Occitanie, FRA",
+          "title": "Operations Intern - Région Sud - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -252,15 +252,8 @@
         }
       ],
       "non_tech_total": 22,
-      "stamp": "2026-09-11",
+      "stamp": "2026-09-12",
       "unknown_location": [
-        {
-          "company": "Cloudflare",
-          "is_new": false,
-          "location": "In-Office",
-          "title": "Software Engineer Intern (Fall 2026)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
-        },
         {
           "company": "Cloudflare",
           "is_new": false,
@@ -272,12 +265,19 @@
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
+          "title": "Software Engineer Intern (Fall 2026)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8118845?gh_jid=8118845"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": false,
+          "location": "In-Office",
           "title": "Software Engineer Intern (Fall 2026) - Austin, TX",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785"
         },
         {
           "company": "IBM",
-          "is_new": true,
+          "is_new": false,
           "location": "Heredia, CR",
           "title": "Contractor Fulfillment Specialist - Internship",
           "url": "https://careers.ibm.com/careers/JobDetail?jobId=132425"
@@ -705,7 +705,7 @@
         },
         {
           "company": "Alten",
-          "is_new": true,
+          "is_new": false,
           "location": "Nantes, fr",
           "title": "STAGE - Chargé d'Affaires Outillages/Machines (H/F)",
           "url": "https://jobs.smartrecruiters.com/alten/744000148974879"
@@ -803,7 +803,7 @@
         }
       ],
       "non_tech_total": 63,
-      "stamp": "2026-09-11",
+      "stamp": "2026-09-12",
       "unknown_location": [
         {
           "company": "Murex",
@@ -811,6 +811,34 @@
           "location": "Undergraduate-Internship-Program-2027_JR103127, JR103127; Intern",
           "title": "Undergraduate Internship Program 2027",
           "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "Muscat, Masqat, Oman",
+          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Data Analysis Internship- Customer Service (Summer 2027)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/517739"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
+          "location": "",
+          "title": "Finance Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
         },
         {
           "company": "Siemens",
@@ -828,31 +856,17 @@
         },
         {
           "company": "Siemens",
-          "is_new": false,
-          "location": "",
-          "title": "Finance Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
-        },
-        {
-          "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Finance Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521723"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Strategy Internship- Mobility (Summer 2027)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461"
+          "title": "Building Automation Systems Specialist Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974"
         }
       ],
-      "unknown_location_total": 6
+      "unknown_location_total": 8
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 768,
+      "foreign_count": 779,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1011,7 +1025,7 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Marseille-Area, JR10439032",
           "title": "STAGE 2027 - Gestionnaire RH (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gestionnaire-RH--h-f-_JR10439032"
@@ -1060,7 +1074,7 @@
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": " STAGE - Ingénieur Avant-Vente - Automobile (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-automobile-f-h-549909"
@@ -1270,14 +1284,14 @@
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Meudon La Foret",
           "title": "STAGE - Business Developper Eurowest (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-business-developper-eurowest-f-h-549402"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Valbonne",
           "title": "STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383"
@@ -1305,7 +1319,7 @@
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chargé des Ressources Humaines Europe (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-charge-des-ressources-humaines-europe-f-h-549328"
@@ -1367,8 +1381,8 @@
           "url": "https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103"
         }
       ],
-      "non_tech_total": 321,
-      "stamp": "2026-09-11",
+      "non_tech_total": 319,
+      "stamp": "2026-09-12",
       "unknown_location": [
         {
           "company": "Airbus",
@@ -1435,14 +1449,14 @@
         },
         {
           "company": "Dassault Aviation",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Analyseur de messages de pannes au banc d'intégration (IA & Data Science) F/H",
           "url": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-analyseur-de-messages-de-pannes-au-banc-d-integration-ia-data-science-f-h_15707.aspx"
         },
         {
           "company": "Dassault Aviation",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Evaluation de solutions d'exploitation graphique de données temporelles massives F/H",
           "url": "https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-evaluation-de-solutions-d-exploitation-graphique-de-donnees-temporelles-massives-f-h_15708.aspx"
@@ -1465,5 +1479,5 @@
       "unknown_location_total": 13
     }
   },
-  "generated": "2026-09-11T20:07:04.129490+02:00"
+  "generated": "2026-09-12T19:37:54.262076+02:00"
 }
