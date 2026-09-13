@@ -16,7 +16,7 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-12
+`board.html` &middot; sweep of 2026-09-13
 
 ### Unrecognised location - 4
 
@@ -42,19 +42,19 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
 | Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
-| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
-| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
+| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
+| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 540 (sample below)
+### Outside France - 542 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -78,20 +78,18 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-12
+`board2.html` &middot; sweep of 2026-09-13
 
-### Unrecognised location - 8
+### Unrecognised location - 6
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Undergraduate-Internship-Program-2027_JR103127) | Undergraduate-Internship-Program-2027_JR103127, JR103127; Intern |
-| Siemens | [Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411) | Muscat, Masqat, Oman |
-| Siemens | [Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261) | - |
-| Siemens | [Data Analysis Internship- Customer Service (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/517739) | - |
 | Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
+| Siemens | [Finance Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520034) | Ho Chi Minh City, Ho Chi Minh, Viet Nam |
+| Siemens | [Quality Support - Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520140) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
-| Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
-| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974) | - |
+| Siemens | [Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261) | - |
 
 ### Not tech - 63 (showing the first 60)
 
@@ -158,7 +156,7 @@ mistake (a French site being read as foreign).
 | Expleo | [Stage – Technicien communication / marketing H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56021/stage-%e2%80%93-technicien-communication---marketing-h-f/job?in_iframe=1) | FR-31-Toulouse |
 | Expleo | [Stage – Social Media Listening H/F](https://expleo-jobs-fr-fr.icims.com/jobs/56002/stage-%e2%80%93-social-media-listening-h-f/job?in_iframe=1) | FR-78-Montigny-le-Bretonneux |
 
-### Outside France - 54 (sample below)
+### Outside France - 56 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -182,7 +180,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-12
+`board3.html` &middot; sweep of 2026-09-13
 
 ### Unrecognised location - 13
 
@@ -202,7 +200,7 @@ mistake (a French site being read as foreign).
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 319 (showing the first 60)
+### Not tech - 317 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -267,7 +265,7 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)](https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138) | France, Vélizy-Villacoublay |
 | Dassault Systemes | [STAGE – Juriste lutte contre la contrefaçon (F/H)](https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103) | France, Vélizy-Villacoublay |
 
-### Outside France - 779 (sample below)
+### Outside France - 783 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

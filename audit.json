@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 540,
+      "foreign_count": 542,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -177,8 +177,8 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "National Technology Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
+          "title": "Business Program Management Intern - AIBS",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
         },
         {
           "company": "Microsoft",
@@ -186,13 +186,6 @@
           "location": "France, Paris, Paris",
           "title": "Government Affairs Intern",
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556990662"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
         },
         {
           "company": "Microsoft",
@@ -212,8 +205,15 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - AIBS",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
+          "title": "Legal Counsel Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": false,
+          "location": "France, Paris, Paris",
+          "title": "National Technology Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
         },
         {
           "company": "Amazon / AWS",
@@ -252,7 +252,7 @@
         }
       ],
       "non_tech_total": 22,
-      "stamp": "2026-09-12",
+      "stamp": "2026-09-13",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -287,7 +287,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 54,
+      "foreign_count": 56,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -803,7 +803,7 @@
         }
       ],
       "non_tech_total": 63,
-      "stamp": "2026-09-12",
+      "stamp": "2026-09-13",
       "unknown_location": [
         {
           "company": "Murex",
@@ -814,31 +814,24 @@
         },
         {
           "company": "Siemens",
-          "is_new": true,
-          "location": "Muscat, Masqat, Oman",
-          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Data Analysis Internship- Customer Service (Summer 2027)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/517739"
-        },
-        {
-          "company": "Siemens",
           "is_new": false,
           "location": "",
           "title": "Finance Leadership Development Program Internship",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "Ho Chi Minh City, Ho Chi Minh, Viet Nam",
+          "title": "Finance Intern",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520034"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Quality Support - Intern",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520140"
         },
         {
           "company": "Siemens",
@@ -851,22 +844,15 @@
           "company": "Siemens",
           "is_new": false,
           "location": "",
-          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974"
+          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261"
         }
       ],
-      "unknown_location_total": 8
+      "unknown_location_total": 6
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 779,
+      "foreign_count": 783,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1381,8 +1367,8 @@
           "url": "https://www.3ds.com/careers/jobs/stage-juriste-lutte-contre-la-contrefacon-f-h-549103"
         }
       ],
-      "non_tech_total": 319,
-      "stamp": "2026-09-12",
+      "non_tech_total": 317,
+      "stamp": "2026-09-13",
       "unknown_location": [
         {
           "company": "Airbus",
@@ -1479,5 +1465,5 @@
       "unknown_location_total": 13
     }
   },
-  "generated": "2026-09-12T19:37:54.262076+02:00"
+  "generated": "2026-09-13T19:51:36.471511+02:00"
 }

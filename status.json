@@ -11,7 +11,7 @@
       "failed": 0,
       "failed_names": [],
       "filtered": 22,
-      "generated": "2026-09-12T19:34:30.303619+02:00",
+      "generated": "2026-09-13T19:48:30.183758+02:00",
       "incomplete": [
         "IBM (truncated)",
         "Oracle (truncated)",
@@ -45,34 +45,13 @@
         }
       ],
       "recent_roles_total": 3,
-      "scanned": 8100,
-      "stamp": "2026-09-12",
+      "scanned": 8094,
+      "stamp": "2026-09-13",
       "unsure": 4
     },
     "board2.html": {
-      "also_new": [
-        {
-          "company": "Siemens",
-          "kind": "unsure",
-          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman"
-        },
-        {
-          "company": "Siemens",
-          "kind": "unsure",
-          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)"
-        },
-        {
-          "company": "Siemens",
-          "kind": "unsure",
-          "title": "Data Analysis Internship- Customer Service (Summer 2027)"
-        },
-        {
-          "company": "Siemens",
-          "kind": "unsure",
-          "title": "Building Automation Systems Specialist Internship"
-        }
-      ],
-      "also_new_total": 4,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
@@ -83,7 +62,7 @@
         "OVHcloud"
       ],
       "filtered": 63,
-      "generated": "2026-09-12T19:35:57.612675+02:00",
+      "generated": "2026-09-13T19:49:37.526996+02:00",
       "incomplete": [
         "Nokia (truncated)",
         "Siemens (truncated)"
@@ -93,41 +72,6 @@
       "new_roles": [],
       "new_roles_total": 0,
       "recent_roles": [
-        {
-          "company": "Amadeus",
-          "first_seen": "2026-09-10",
-          "location": "Nice, R37336",
-          "title": "Internship - Security engineer",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Nice/Internship---Security-engineer_R37336"
-        },
-        {
-          "company": "Amadeus",
-          "first_seen": "2026-09-10",
-          "location": "Nice, R37332",
-          "title": "Internship - DevOps Engineer",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Nice/Internship---DevOps-Engineer_R37332"
-        },
-        {
-          "company": "Amadeus",
-          "first_seen": "2026-09-10",
-          "location": "Nice, R37333",
-          "title": "Internship - Data scientist",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Nice/Internship---Data-scientist_R37333"
-        },
-        {
-          "company": "Amadeus",
-          "first_seen": "2026-09-10",
-          "location": "Nice, R37334",
-          "title": "Internship - Data engineer",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Nice/Internship---Data-engineer_R37334"
-        },
-        {
-          "company": "Amadeus",
-          "first_seen": "2026-09-10",
-          "location": "Nice, R37331",
-          "title": "Internship - Software Engineer",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Nice/Internship---Software-Engineer_R37331"
-        },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-09-11",
@@ -143,60 +87,21 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149014518"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-10",
-          "location": "Bessines, fr",
-          "title": "Stage - Développeur(se) Java Fullstack – Services Financiers – Niort",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148788969"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-10",
-          "location": "Orléans, fr",
-          "title": "Stage - Développeur(se) Java  - Services Financiers - Orléans",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148785984"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-10",
-          "location": "Tours, fr",
-          "title": "Stage - Développeur(se) Java Fullstack – Services Financiers – Tours",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148784818"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-10",
-          "location": "Toulouse, fr",
-          "title": "Stage - Ingénieur(e) logiciel de Vol Spatial - Spatial - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148781179"
-        },
-        {
-          "company": "Sopra Steria",
-          "first_seen": "2026-09-10",
-          "location": "Limonest, fr",
-          "title": "Stage - Développeur/euse Java - Lyon",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000148777253"
+          "company": "Expleo",
+          "first_seen": "2026-09-11",
+          "location": "FR-31-Toulouse",
+          "title": "Stage – Ingénieur Conception Mécanique R/D H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56074/stage-%e2%80%93-ing%c3%a9nieur-conception-m%c3%a9canique-r-d--h-f/job?in_iframe=1"
         }
       ],
-      "recent_roles_total": 23,
-      "scanned": 5146,
-      "stamp": "2026-09-12",
-      "unsure": 8
+      "recent_roles_total": 3,
+      "scanned": 5143,
+      "stamp": "2026-09-13",
+      "unsure": 6
     },
     "board3.html": {
-      "also_new": [
-        {
-          "company": "Credit Agricole",
-          "kind": "other",
-          "title": "Stagiaire – Business Advisory - Compliance H/F"
-        },
-        {
-          "company": "Credit Agricole",
-          "kind": "other",
-          "title": "Stage - Assistant(e) Capital Markets ETF H/F "
-        }
-      ],
-      "also_new_total": 2,
+      "also_new": [],
+      "also_new_total": 0,
       "board": "Defence, Finance & Silicon Watch",
       "closed_today": [],
       "closed_today_total": 0,
@@ -204,8 +109,8 @@
       "companies": 25,
       "failed": 0,
       "failed_names": [],
-      "filtered": 319,
-      "generated": "2026-09-12T19:37:54.262076+02:00",
+      "filtered": 317,
+      "generated": "2026-09-13T19:51:36.471511+02:00",
       "incomplete": [
         "J.P. Morgan (truncated)",
         "NVIDIA (truncated)",
@@ -213,25 +118,10 @@
         "Dell (truncated)"
       ],
       "live": 195,
-      "new": 1,
-      "new_roles": [
-        {
-          "company": "Credit Agricole",
-          "first_seen": "2026-09-12",
-          "location": "Paris, France",
-          "title": "Stage Data Science H/F",
-          "url": "https://www.welcometothejungle.com/fr/companies/groupe-credit-agricole/jobs/stage-data-science-h-f_paris"
-        }
-      ],
-      "new_roles_total": 1,
+      "new": 0,
+      "new_roles": [],
+      "new_roles_total": 0,
       "recent_roles": [
-        {
-          "company": "Thales",
-          "first_seen": "2026-09-10",
-          "location": "Lyon, Intern/Trainee (Fixed Term) (Trainee); R0339473; 16 - IS-IT; Thales Services Numériques Sas",
-          "title": "STAGE - Développeur .Net full stack, secteur énergies renouvelables - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Lyon/STAGE---Dveloppeur-Net-full-stack--secteur-nergies-renouvelables---F-H_R0339473-1"
-        },
         {
           "company": "Airbus",
           "first_seen": "2026-09-11",
@@ -259,13 +149,6 @@
           "location": "Marseille-Area, JR10437970",
           "title": "STAGE 2027 - Ingénieur logiciel embarqué (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Ingnieur-logiciel-embarqu--F-H-_JR10437970"
-        },
-        {
-          "company": "Airbus",
-          "first_seen": "2026-09-10",
-          "location": "Marseille-Area, JR10437614",
-          "title": "STAGE 2027 en Ergonomie et Modélisation 3D de cockpits (H/F)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027-en-Ergonomie-et-Modlisation-3D-de-cockpits--H-F-_JR10437614"
         },
         {
           "company": "Dassault Systemes",
@@ -304,17 +187,31 @@
         },
         {
           "company": "Dassault Systemes",
-          "first_seen": "2026-09-10",
-          "location": "France, Plouzane",
-          "title": "STAGE – Développeur Full Stack – Refonte d’une plateforme de services clients (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-developpeur-full-stack-refonte-d-une-plateforme-de-services-clients-f-h-549677"
+          "first_seen": "2026-09-11",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Développement tests automatiques (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-developpement-tests-automatiques-f-h-549408"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-09-11",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingenieur IA Qualite pour la creation et lorchestration de donnees scientifiques (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-ia-qualite-pour-la-creation-et-lorchestration-de-donnees-scientifiques-f-h-549399"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-09-11",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingenieur Logiciel - Migration Architecture Services (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-logiciel-migration-architecture-services-f-h-549398"
         }
       ],
-      "recent_roles_total": 50,
-      "scanned": 6404,
-      "stamp": "2026-09-12",
+      "recent_roles_total": 28,
+      "scanned": 6393,
+      "stamp": "2026-09-13",
       "unsure": 13
     }
   },
-  "generated": "2026-09-12T19:37:54.262076+02:00"
+  "generated": "2026-09-13T19:51:36.471511+02:00"
 }
