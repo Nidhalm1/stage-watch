@@ -2,13 +2,19 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 558,
+      "foreign_count": 564,
       "foreign_sample": [
         {
           "company": "Datadog",
           "location": "New York, New York, USA",
           "title": "Product Management Intern",
           "url": "https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241"
+        },
+        {
+          "company": "Datadog",
+          "location": "New York, New York, USA; Pittsburgh, Pennsylvania, USA",
+          "title": "Research Science Intern (PhD)",
+          "url": "https://careers.datadoghq.com/detail/8203657/?gh_jid=8203657"
         },
         {
           "company": "Datadog",
@@ -87,12 +93,6 @@
           "location": "Vienna, Austria",
           "title": "Software Engineer, Intern (Summer 2027)",
           "url": "https://jobs.ashbyhq.com/sentry/fa522ac5-fc9f-4ce1-a191-842496a235a2"
-        },
-        {
-          "company": "Snowflake",
-          "location": "DE-Berlin-Trion Building",
-          "title": "Software Engineer Intern - Berlin (2026)",
-          "url": "https://jobs.ashbyhq.com/snowflake/41e65c6c-a01e-4f40-af14-ae75d3b95e27"
         }
       ],
       "non_tech": [
@@ -139,8 +139,15 @@
           "url": "https://job-boards.greenhouse.io/doctolib/jobs/7988665003"
         },
         {
-          "company": "Criteo",
+          "company": "Doctolib",
           "is_new": true,
+          "location": "Nantes",
+          "title": "Stage - Salesforce Support Associate (x/f/m)",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7994049003"
+        },
+        {
+          "company": "Criteo",
+          "is_new": false,
           "location": "Barcelona, Spain",
           "title": "Account Strategist France Intern",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-France-Intern_r21128"
@@ -184,8 +191,15 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - AIBS",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
+          "title": "National Technology Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": false,
+          "location": "France, Paris, Paris",
+          "title": "Legal Counsel Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
         },
         {
           "company": "Microsoft",
@@ -212,15 +226,8 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "National Technology Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
+          "title": "Business Program Management Intern - AIBS",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
         },
         {
           "company": "Amazon / AWS",
@@ -247,19 +254,19 @@
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Public Policy Manager Intern – Q3 2027, EU Public Policy team ",
-          "url": "https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team"
+          "title": "Public Policy Manager Intern – Q1 2027, EU Public Policy team ",
+          "url": "https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Public Policy Manager Intern – Q1 2027, EU Public Policy team ",
-          "url": "https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team"
+          "title": "Public Policy Manager Intern – Q3 2027, EU Public Policy team ",
+          "url": "https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team"
         }
       ],
-      "non_tech_total": 23,
-      "stamp": "2026-09-14",
+      "non_tech_total": 24,
+      "stamp": "2026-09-15",
       "unknown_location": [
         {
           "company": "IBM",
@@ -273,7 +280,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 54,
+      "foreign_count": 63,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -367,13 +374,6 @@
         }
       ],
       "non_tech": [
-        {
-          "company": "Qonto",
-          "is_new": false,
-          "location": "Paris",
-          "title": "Accountant Intern 🇫🇷",
-          "url": "https://jobs.lever.co/qonto/7db34f3e-7120-4fc5-b1aa-e90ba5dc226f"
-        },
         {
           "company": "Qonto",
           "is_new": false,
@@ -485,6 +485,13 @@
           "location": "Paris",
           "title": "Fraud and Risk Officer Intern",
           "url": "https://jobs.ashbyhq.com/backmarket/40a80901-b0e4-4bc5-8208-1c396c1c8384"
+        },
+        {
+          "company": "Back Market",
+          "is_new": true,
+          "location": "Paris",
+          "title": "Payment Performance Analyst Intern",
+          "url": "https://jobs.ashbyhq.com/backmarket/793ce50e-870e-48d0-9c47-a79b08158ce7"
         },
         {
           "company": "Alan",
@@ -601,20 +608,62 @@
         {
           "company": "Sopra Steria",
           "is_new": true,
+          "location": "Colomiers, fr",
+          "title": "Stage - Géomaticien(e) - Aeroline - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149619418"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Internship/Stage – VC Marketing operations",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149603918"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Stage – Chef/Cheffe de projet Marketing & Communication (Services Financiers)",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149548469"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Stage – Chef/Cheffe de Projets Europe : Offres et Innovations",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149547735"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Internship/Stage - VC Analyst",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149533944"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Stage PPI - Juriste en droit social",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149526278"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": false,
           "location": "Toulouse, fr",
           "title": "Stage - Consultant(e) - Transformation digitale en Aéronautique -Toulouse",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149301199"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Courbevoie, fr",
           "title": "Stage de fin d'études - Consultant(e) en transformation digitale",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149297788"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Courbevoie, fr",
           "title": "Stage Conseil - Transformation Digitale - Energie - IDF",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149294559"
@@ -639,13 +688,6 @@
           "location": "Courbevoie, fr",
           "title": "Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000145930048"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Paris, fr",
-          "title": "Stage PPI - Juriste en droit social",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000143852928"
         },
         {
           "company": "Sopra Steria",
@@ -712,6 +754,20 @@
         },
         {
           "company": "Ubisoft",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Food Event Planner Assistant – Stage (6 mois) Janvier 2027 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000149604699"
+        },
+        {
+          "company": "Ubisoft",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Campus & Talent Acquisition Assistant – Stage (6 mois) Janvier 2027 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000149585699"
+        },
+        {
+          "company": "Ubisoft",
           "is_new": false,
           "location": "Annecy, fr",
           "title": "Internship 6 months - Technical Designer (F/M/NB) [AAA Project]",
@@ -726,77 +782,42 @@
         },
         {
           "company": "Veepee",
+          "is_new": true,
+          "location": "Saint-Denis",
+          "title": "Stage - Chargé(e) de Communication Interne & Projets Collaborateurs / Engagement - H/F/X (octobre 2026)",
+          "url": "https://jobs.lever.co/veepee/5ef7e5cc-b131-4f8f-aed2-796413f207dd"
+        },
+        {
+          "company": "Veepee",
           "is_new": false,
           "location": "Saint-Denis",
           "title": "Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)",
           "url": "https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Quality Conformance Manager H/F​",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56147/stage-%e2%80%93-quality-conformance-manager-h-f%e2%80%8b/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-06-Cannes",
-          "title": "Stage – Technicien en conception mécanique H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56138/stage-%e2%80%93-technicien-en-conception-m%c3%a9canique-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Technicien Conception Structure H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56060/stage-%e2%80%93-technicien-conception-structure-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Inspection Qualité Aéronautique H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56037/stage-%e2%80%93-inspection-qualit%c3%a9-a%c3%a9ronautique-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Technicien conception structure H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56024/stage-%e2%80%93-technicien-conception-structure-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Technicien mécanique spatial H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56022/stage-%e2%80%93-technicien-m%c3%a9canique-spatial-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-31-Toulouse",
-          "title": "Stage – Technicien communication / marketing H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56021/stage-%e2%80%93-technicien-communication---marketing-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "Expleo",
-          "is_new": false,
-          "location": "FR-78-Montigny-le-Bretonneux",
-          "title": "Stage – Social Media Listening H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56002/stage-%e2%80%93-social-media-listening-h-f/job?in_iframe=1"
         }
       ],
-      "non_tech_total": 62,
-      "stamp": "2026-09-14",
+      "non_tech_total": 71,
+      "stamp": "2026-09-15",
       "unknown_location": [
         {
           "company": "Murex",
-          "is_new": false,
-          "location": "Undergraduate-Internship-Program-2027_JR103127, JR103127; Intern",
+          "is_new": true,
+          "location": "Beirut, JR103127; Intern",
           "title": "Undergraduate Internship Program 2027",
-          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Undergraduate-Internship-Program-2027_JR103127"
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Digital Industries Automation Internship Program - Sales Track",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522657"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
         },
         {
           "company": "Siemens",
@@ -809,36 +830,15 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522497"
-        },
-        {
-          "company": "Siemens",
-          "is_new": false,
-          "location": "",
-          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Strategic Student Program: Cross-Domain Electronics Systems Engineering Intern (T&I, Spring 2027)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519896"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Smart Infrastructure Electrical Products Operations Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521212"
+          "title": "Strategic Student Program: Marketing & Field Execution Internship (Spring 2027, CMMK)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520128"
         }
       ],
-      "unknown_location_total": 6
+      "unknown_location_total": 5
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 801,
+      "foreign_count": 808,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -902,12 +902,6 @@
         },
         {
           "company": "Thales",
-          "location": "Halifax---Wilkinson, Student/Work Experience (Fixed Term) (Seasonal); R0333841; 19 - HARDWARE; Thales Canada Inc., Defence and Security",
-          "title": "Naval Architect Intern/Co op - Halifax",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Halifax---Wilkinson/Naval-Architect-Intern-Co-op---Halifax_R0333841-2"
-        },
-        {
-          "company": "Thales",
           "location": "Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0334747; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Cyber Solutions Belgium SA",
           "title": "Trainee NetSec - (Internship September 2026)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Trainee-NetSec----Internship-September-2026-_R0334747"
@@ -929,9 +923,22 @@
           "location": "Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A.",
           "title": "Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671"
+        },
+        {
+          "company": "Thales",
+          "location": "Gorgonzola, CW Intern/Trainee; R0332137; 08 - QUALITY & CUSTOMER SATISFACTION",
+          "title": "AI Engineer - Internship (Open also to Protected Categories, Law 68/99)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/AI-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0332137"
         }
       ],
       "non_tech": [
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339898; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales",
+          "title": "STAGE- Direction juridique RSE- H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE--Direction-juridique-RSE--H-F_R0339898-1"
+        },
         {
           "company": "Thales",
           "is_new": false,
@@ -989,15 +996,43 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1"
         },
         {
-          "company": "Thales",
+          "company": "Airbus",
           "is_new": false,
-          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0321910; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales",
-          "title": "STAGE - Legal M&A - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Legal-M-A---F-H_R0321910-1"
+          "location": "Marseille-Area, JR10439032",
+          "title": "STAGE 2027 - Chargé(e) de processus RH et digitalisation  (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gestionnaire-RH--h-f-_JR10439032"
         },
         {
           "company": "Airbus",
           "is_new": true,
+          "location": "Toulouse-Area, JR10439473",
+          "title": "STAGE 2027 - Stagiaire en Management de la communication ou de la création (F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stagiaire-en-Management-de-la-communication-ou-de-la-cration--F-H-_JR10439473"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10433433",
+          "title": "STAGE 2027 - Stage en Ressources Humaines / Développement RH (F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-en-Ressources-Humaines---Dveloppement-RH--F-H-_JR10433433"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Marseille-Area, JR10440209",
+          "title": "STAGE 2027 - Stage en bureau d’études équipement de mission (H/F)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Stage-en-bureau-d-tudes-quipement-de-mission--H-F-_JR10440209"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Marseille-Area, JR10440554",
+          "title": "STAGE 2027 - Bureau d'études - design et aménagment intérieur (f/h)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Bureau-d-tudes---design-et-amnagment-intrieur--f-h-_JR10440554"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Toulouse-Area, JR10441649",
           "title": "Airbus UpNext Internship 2026 - Project Management Officer (m/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Airbus-UpNext-Internship-2026---Project-Management-Officer--m-f-_JR10441649"
@@ -1005,23 +1040,9 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Marseille-Area, JR10439032",
-          "title": "STAGE 2027 - Digitalisation en RH  (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gestionnaire-RH--h-f-_JR10439032"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
           "location": "Toulouse-Area, JR10438377",
           "title": "STAGE 2027 Stage en communication pour programmes militaires France (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-Stage-en-communication-pour-programmes-militaires-France--h-f-_JR10438377"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
-          "location": "Toulouse-Area, JR10436414",
-          "title": "Stage 2027 - Gestion de projet en production (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Gestion-de-projet-en-production--ALL-GENDER-_JR10436414"
         },
         {
           "company": "Airbus",
@@ -1040,13 +1061,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Nantes-Area, JR10429660",
-          "title": "STAGE 2027 - Digitalisation de la gestion de production (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Digitalisation-de-la-gestion-de-production--ALL-GENDER-_JR10429660"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Toulouse-Area, JR10431673",
           "title": "STAGE 2027 - Stage analyse de risques HSE A320 (All Gender)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-analyse-de-risques-HSE-A320--All-Gender-_JR10431673"
@@ -1061,6 +1075,48 @@
         {
           "company": "Dassault Systemes",
           "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Gestion de projet - Excellence Opérationnelle (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-projet-excellence-operationnelle-f-h-549773"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Consultant (F/H) - Avant-vente/ Après-vente (Systems Engineering)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-consultant-f-h-avant-vente-apres-vente-systems-engineering-549960"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Consultant (F/H) - Avant-vente/ Après-vente (Ingénierie Mecanique)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-consultant-f-h-avant-vente-apres-vente-ingenierie-mecanique-549962"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Consultant (F/H) - Avant-vente/ Après-vente (CATIA, VR)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-consultant-f-h-avant-vente-apres-vente-catia-vr-549961"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Digital Learning (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-digital-learning-f-h-549931"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chef de projet junior (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-chef-de-projet-junior-f-h-549919"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
           "location": "France, Meudon La Foret",
           "title": "STAGE - Analyse & Performance des Ventes (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-analyse-performance-des-ventes-f-h-549904"
@@ -1221,10 +1277,73 @@
         },
         {
           "company": "Dassault Systemes",
-          "is_new": false,
+          "is_new": true,
           "location": "France, Vélizy-Villacoublay",
-          "title": " STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H) ",
-          "url": "https://www.3ds.com/careers/jobs/stage-assistant-directeur-de-projets-3dexperience-f-h-549232"
+          "title": "STAGE – Chargé de Communication Stratégique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Assistant Marketing Digital (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Juriste contrats - nouvelles technologies (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Fiscaliste (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE- Chargé de projet formation (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Communication Marque Employeur (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Manufacturing génératif — Marine & Offshore (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE – Prix de Transfert (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Chargé de missions RH internationales (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330"
         },
         {
           "company": "Dassault Systemes",
@@ -1232,143 +1351,24 @@
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Gestionnaire de paie (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Continuité d’Activité et Résilience Opérationnelle (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-continuite-d-activite-et-resilience-operationnelle-f-h-549676"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Chargé du support RH (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-du-support-rh-f-h-549526"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - R&D Virtual Twin: Créer une expérience de R&D unifiée et interactive (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-r-d-virtual-twin-creer-une-experience-de-r-d-unifiee-et-interactive-f-h-549513"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Chargé de communication interne et projets RSE (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-interne-et-projets-rse-f-h-549503"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Assistant Chef de Projet – Déploiement d’une Plateforme de Formation(F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-assistant-chef-de-projet-deploiement-d-une-plateforme-de-formation-f-h-549502"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Gestion de Projet Champions 3DEXPERIENCE (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-projet-champions-3dexperience-f-h-549494"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Business Developper Eurowest (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-business-developper-eurowest-f-h-549402"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Valbonne",
-          "title": "STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Chargé de communication interne et projets RSE (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-interne-et-projets-rse-f-h-549503"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Assistant Chef de Projet – Déploiement d’une Plateforme de Formation(F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-assistant-chef-de-projet-deploiement-d-une-plateforme-de-formation-f-h-549502"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Gestion de Projet Champions 3DEXPERIENCE (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-projet-champions-3dexperience-f-h-549494"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE – Marketing opérationnel & digital (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-marketing-operationnel-digital-f-h-549191"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Charge de projet RH \"Management & Leadership\" (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-rh-management-leadership-f-h-549329"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Chargé d'événementiel (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-d-evenementiel-f-h-549314"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Chargé de Marketing & Innovation 3DEXPERIENCE Lab (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-marketing-innovation-3dexperience-lab-f-h-549040"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Business Developper Eurowest (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-business-developper-eurowest-f-h-549402"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Valbonne",
-          "title": "STAGE - Construction d’un modèle de décision médicale partagée en intégrant le jumeau numérique/virtuel du patient (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-construction-d-un-modele-de-decision-medicale-partagee-en-integrant-le-jumeau-numerique-virtuel-du-patient-f-h-549383"
         }
       ],
-      "non_tech_total": 300,
-      "stamp": "2026-09-14",
+      "non_tech_total": 342,
+      "stamp": "2026-09-15",
       "unknown_location": [
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0338229; 16 - IS-IT; Junghans T2M Sas",
           "title": "STAGE - Ingénieur développement électronique numérique F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Ingnieur-dveloppement-lectronique-numrique-F-H_R0338229-1"
         },
         {
           "company": "Airbus",
-          "is_new": true,
-          "location": "Rochefort, JR10436391",
-          "title": "STAGE 2027 - Stage en Assurance Qualité A320 (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Stage-en-Assurance-Qualit-A320--ALL-GENDER-_JR10436391"
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10432177",
+          "title": "STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
         },
         {
           "company": "Airbus",
@@ -1379,17 +1379,38 @@
         },
         {
           "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10427888",
-          "title": "STAGE 2027 - Assistant en optimisation des processus industriels (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-en-optimisation-des-processus-industriels--ALL-GENDER-_JR10427888"
+          "is_new": true,
+          "location": "Rochefort, JR10438445",
+          "title": "STAGE 2027 – Projets méthodes industrialisation (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Projets-mthodes-industrialisation--ALL-GENDER-_JR10438445"
         },
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10432177",
-          "title": "STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
+          "location": "Rochefort, JR10436391",
+          "title": "STAGE 2027 - Stage en Assurance Qualité A320 (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Stage-en-Assurance-Qualit-A320--ALL-GENDER-_JR10436391"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10436801",
+          "title": "STAGE 2027 - Stage Ingénieur de production (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Stage-Ingnieur-de-production--ALL-GENDER-_JR10436801"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10435785",
+          "title": "STAGE 2027 - Assistant chef de projets et organisation (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-chef-de-projets-et-organisation--ALL-GENDER-_JR10435785"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10427888",
+          "title": "STAGE 2027 - Assistant en optimisation des processus industriels (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-en-optimisation-des-processus-industriels--ALL-GENDER-_JR10427888"
         },
         {
           "company": "Airbus",
@@ -1462,8 +1483,8 @@
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
         }
       ],
-      "unknown_location_total": 15
+      "unknown_location_total": 18
     }
   },
-  "generated": "2026-09-14T21:44:36.413369+02:00"
+  "generated": "2026-09-15T20:41:07.516672+02:00"
 }
