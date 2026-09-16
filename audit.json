@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 564,
+      "foreign_count": 577,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -112,6 +112,13 @@
         },
         {
           "company": "Doctolib",
+          "is_new": true,
+          "location": "Nantes",
+          "title": "Performance projects analyst Intern (x/f/m)",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7995384003"
+        },
+        {
+          "company": "Doctolib",
           "is_new": false,
           "location": "Paris, Paris, France",
           "title": "Stage - Community Engagement Associate (x/f/m) - Octobre 2026",
@@ -140,7 +147,7 @@
         },
         {
           "company": "Doctolib",
-          "is_new": true,
+          "is_new": false,
           "location": "Nantes",
           "title": "Stage - Salesforce Support Associate (x/f/m)",
           "url": "https://job-boards.greenhouse.io/doctolib/jobs/7994049003"
@@ -188,46 +195,11 @@
           "url": "https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0"
         },
         {
-          "company": "Microsoft",
+          "company": "Amazon / AWS",
           "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "National Technology Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Retail",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Executive Office",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990789"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Government Affairs Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990662"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - AIBS",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
+          "location": "Lille, Hauts-de-France, FRA",
+          "title": "Operations Intern - Région Nord - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -235,13 +207,6 @@
           "location": "Toulouse, Occitanie, FRA",
           "title": "Operations Intern - Région Sud - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
-          "location": "Lille, Hauts-de-France, FRA",
-          "title": "Operations Intern - Région Nord - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -265,8 +230,8 @@
           "url": "https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team"
         }
       ],
-      "non_tech_total": 24,
-      "stamp": "2026-09-15",
+      "non_tech_total": 19,
+      "stamp": "2026-09-16",
       "unknown_location": [
         {
           "company": "IBM",
@@ -280,7 +245,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 63,
+      "foreign_count": 64,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -374,20 +339,6 @@
         }
       ],
       "non_tech": [
-        {
-          "company": "Qonto",
-          "is_new": false,
-          "location": "Paris",
-          "title": "Legal Intern - Commercial",
-          "url": "https://jobs.lever.co/qonto/ba688ab4-66b1-4d6a-9aa7-537e191ea392"
-        },
-        {
-          "company": "Qonto",
-          "is_new": false,
-          "location": "Paris",
-          "title": "Legal Intern - Product & AI",
-          "url": "https://jobs.lever.co/qonto/354fa50e-2741-4936-82f5-0d1ce5fb8be3"
-        },
         {
           "company": "Qonto",
           "is_new": false,
@@ -488,10 +439,31 @@
         },
         {
           "company": "Back Market",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Payment Performance Analyst Intern",
           "url": "https://jobs.ashbyhq.com/backmarket/793ce50e-870e-48d0-9c47-a79b08158ce7"
+        },
+        {
+          "company": "Back Market",
+          "is_new": true,
+          "location": "Paris",
+          "title": "UX Content Designer Intern (UX copywriter)",
+          "url": "https://jobs.ashbyhq.com/backmarket/9cbdc249-81a5-476d-a365-4f457efc4a8c"
+        },
+        {
+          "company": "Back Market",
+          "is_new": true,
+          "location": "Paris",
+          "title": "CRM Engagement Intern",
+          "url": "https://jobs.ashbyhq.com/backmarket/d26936dd-15ad-4932-94eb-9d07995aa0d6"
+        },
+        {
+          "company": "Back Market",
+          "is_new": true,
+          "location": "Paris",
+          "title": "Seller Onboarding and Support Intern ",
+          "url": "https://jobs.ashbyhq.com/backmarket/a2d647bf-ab8d-48c5-8fa5-25d11fe55f54"
         },
         {
           "company": "Alan",
@@ -506,13 +478,6 @@
           "location": "Paris, France",
           "title": "CEO Founder Associate - Internship",
           "url": "https://jobs.ashbyhq.com/alan/9c4eb7ab-2297-4981-ac31-ef57a349f9c9"
-        },
-        {
-          "company": "Alan",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Talent Associate (internship)",
-          "url": "https://jobs.ashbyhq.com/alan/332f9cc1-9d40-4bf0-bfca-279b1650814d"
         },
         {
           "company": "Alan",
@@ -608,79 +573,86 @@
         {
           "company": "Sopra Steria",
           "is_new": true,
-          "location": "Colomiers, fr",
-          "title": "Stage - Géomaticien(e) - Aeroline - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149619418"
+          "location": "Toulouse, fr",
+          "title": "Stage - Consultant(e) - Transformation digitale en Aéronautique -Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149835099"
         },
         {
           "company": "Sopra Steria",
           "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage Consultant(e) - Transformation digitale - People&Change - Ile de France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149833263"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Toulouse, fr",
+          "title": "Stage Consultant(e) – Transformation digitale RH – People&Change - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149833879"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage de fin d'études - Consultant(e) en transformation digitale",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149824358"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Courbevoie, fr",
+          "title": "Stage Conseil - Transformation Digitale - Energie - IDF",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149817260"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Colomiers, fr",
+          "title": "Stage - Assistant(e) Commerce Marketing - Air Traffic Management - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149791158"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": true,
+          "location": "Colomiers, fr",
+          "title": "Stage - Géomaticien(e) - Aeroline - Toulouse",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149786796"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Internship/Stage – VC Marketing operations",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149603918"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Stage – Chef/Cheffe de projet Marketing & Communication (Services Financiers)",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149548469"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Stage – Chef/Cheffe de Projets Europe : Offres et Innovations",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149547735"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Internship/Stage - VC Analyst",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149533944"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Stage PPI - Juriste en droit social",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149526278"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Toulouse, fr",
-          "title": "Stage - Consultant(e) - Transformation digitale en Aéronautique -Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149301199"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Courbevoie, fr",
-          "title": "Stage de fin d'études - Consultant(e) en transformation digitale",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149297788"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Courbevoie, fr",
-          "title": "Stage Conseil - Transformation Digitale - Energie - IDF",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149294559"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Courbevoie, fr",
-          "title": "Stage Consultant(e) - Transformation digitale - People&Change - Ile de France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147559756"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Courbevoie, fr",
-          "title": "Stage - Chef/fe de Projet - Services Publics - Ile de France",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000147258373"
         },
         {
           "company": "Sopra Steria",
@@ -756,12 +728,26 @@
           "company": "Ubisoft",
           "is_new": true,
           "location": "Paris, fr",
+          "title": "Treasury Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000149911011"
+        },
+        {
+          "company": "Ubisoft",
+          "is_new": true,
+          "location": "Paris, fr",
+          "title": "Financial Planning Analyst Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000149912099"
+        },
+        {
+          "company": "Ubisoft",
+          "is_new": false,
+          "location": "Paris, fr",
           "title": "Food Event Planner Assistant – Stage (6 mois) Janvier 2027 (F/H/NB)",
           "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000149604699"
         },
         {
           "company": "Ubisoft",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Campus & Talent Acquisition Assistant – Stage (6 mois) Janvier 2027 (F/H/NB)",
           "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000149585699"
@@ -772,74 +758,444 @@
           "location": "Annecy, fr",
           "title": "Internship 6 months - Technical Designer (F/M/NB) [AAA Project]",
           "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000147274629"
-        },
-        {
-          "company": "Ubisoft",
-          "is_new": false,
-          "location": "Annecy, fr",
-          "title": "Assistant(e) Chef(fe) de Projet Communication & Evènementiel - Stage 6 mois - (F/H/NB)",
-          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000147273141"
-        },
-        {
-          "company": "Veepee",
-          "is_new": true,
-          "location": "Saint-Denis",
-          "title": "Stage - Chargé(e) de Communication Interne & Projets Collaborateurs / Engagement - H/F/X (octobre 2026)",
-          "url": "https://jobs.lever.co/veepee/5ef7e5cc-b131-4f8f-aed2-796413f207dd"
-        },
-        {
-          "company": "Veepee",
-          "is_new": false,
-          "location": "Saint-Denis",
-          "title": "Stage - Chargé(e) de recrutement H/F/X (Septembre 2026)",
-          "url": "https://jobs.lever.co/veepee/71bfb72b-ab2e-410e-8db4-4dadaaa264b2"
         }
       ],
-      "non_tech_total": 71,
-      "stamp": "2026-09-15",
+      "non_tech_total": 74,
+      "stamp": "2026-09-16",
       "unknown_location": [
         {
           "company": "Murex",
           "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
           "location": "Beirut, JR103127; Intern",
           "title": "Undergraduate Internship Program 2027",
           "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
         },
         {
-          "company": "Siemens",
+          "company": "Murex",
           "is_new": true,
-          "location": "",
-          "title": "Digital Industries Automation Internship Program - Sales Track",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522657"
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
         },
         {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
-        },
-        {
-          "company": "Siemens",
+          "company": "Murex",
           "is_new": false,
-          "location": "",
-          "title": "Finance Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
         },
         {
-          "company": "Siemens",
+          "company": "Murex",
           "is_new": true,
-          "location": "",
-          "title": "Strategic Student Program: Marketing & Field Execution Internship (Spring 2027, CMMK)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520128"
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
+        },
+        {
+          "company": "Murex",
+          "is_new": true,
+          "location": "Santiago, JR102706; Intern",
+          "title": "Trading Consultant Intern",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706"
+        },
+        {
+          "company": "Murex",
+          "is_new": false,
+          "location": "Beirut, JR103127; Intern",
+          "title": "Undergraduate Internship Program 2027",
+          "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
         }
       ],
-      "unknown_location_total": 5
+      "unknown_location_total": 119
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 808,
+      "foreign_count": 792,
       "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Ottawa, Student/Work Experience (Fixed Term) (Seasonal); R0338755; 07 - CUSTOMER SERVICE; Thales Canada Inc., Defence and Security",
+          "title": "Condition Based Monitoring Co-Op/Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Ottawa/Condition-Based-Monitoring-Co-Op-Intern_R0338755-1"
+        },
         {
           "company": "Thales",
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339956; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
@@ -875,12 +1231,6 @@
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
           "title": "Software Engineer Intern - Middleware (IBS)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782"
-        },
-        {
-          "company": "Thales",
-          "location": "Firenze, CW Intern/Trainee; R0338900; 18 - SYSTEM; Thales Italia S.P.A.",
-          "title": "Internship as Defense System Engineer (Open also to Protected Categories, Law 68/99)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Firenze/Internship-as-Defense-System-Engineer--Open-also-to-Protected-Categories--Law-68-99-_R0338900"
         },
         {
           "company": "Thales",
@@ -935,6 +1285,20 @@
         {
           "company": "Thales",
           "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0340455; 11 - FINANCE; Thales",
+          "title": "Stage - Gestionnaire Risque de Change - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stage---Gestionnaire-Risque-de-Change---F-H_R0340455-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0340452; 14 - COMMUNICATIONS; Thales",
+          "title": "STAGE - Communication Groupe - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Communication-Groupe---F-H_R0340452-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
           "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339898; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales",
           "title": "STAGE- Direction juridique RSE- H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE--Direction-juridique-RSE--H-F_R0339898-1"
@@ -997,6 +1361,83 @@
         },
         {
           "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10439522",
+          "title": "STAGE 2027 - Stagiaire Prévention Ethique et Conformité Resources Humaines/HR Intern – Ethics and Compliance Prevention (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stagiaire-Prvention-Ethique-et-Conformit-Resources-Humaines-HR-Intern---Ethics-and-Compliance-Prevention--h-f-_JR10439522"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10433305",
+          "title": "STAGE 2027 - Conseiller(ére) en Ressources  Humaines/Human Resources Advisor (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Conseiller-re--en-Ressources6Human-Resources-Advisor-Humaines--h-f-_JR10433305"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10439911",
+          "title": "Stage 2027 - Amélioration de la performance des postes de production (All Gender)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Amlioration-de-la-performance-des-postes-de-production--All-Gender-_JR10439911"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10437152",
+          "title": "Stage 2027  - Projets RH Transnationaux (F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027----Projets-RH-Transnationaux--F-H-_JR10437152"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Nantes-Area, JR10435778",
+          "title": "STAGE 2027 - Ressources Humaines - Compétences, GEPP & Digitalisation (All Gender)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027----Stage-en-Ressources-Humaines---Comptences---GEPP--All-Gender-_JR10435778"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10440126",
+          "title": "Stage 2027 - Stage en Learning Marketing et Communication ( F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Stage-en-Learning-Marketing-et-Communication---F-H-_JR10440126"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Marseille-Area, JR10439008",
+          "title": "STAGE 2027 - Gouvernance RH & Amélioration Continue (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gouvernance-RH---Amlioration-Continue--h-f-_JR10439008"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Marseille-Area, JR10437799",
+          "title": "STAGE 2027  en Conception de structure d’hélicoptère (F/H) ",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027--Stage-en-conception-de-structure-d-hlicoptre--F-H--_JR10437799"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Le-Bourget---Dugny, JR10440310",
+          "title": "STAGE 2027 - Evaluation du comportement de propagation des fissures sur pièces composite Rotor (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Le-Bourget---Dugny/STAGE-2027---Evaluation-du-comportement-de-propagation-des-fissures-sur-pices-composite-Rotor--h-f-_JR10440310"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10431503",
+          "title": "STAGE 2027 - Projets formation et innovation pédagogique (all gender)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Projets-formation-et-innovation-pdagogique--all-gender-_JR10431503"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10433458",
+          "title": "Stage 2027 - Stage en IA & Data Analytics - Finance Transformation (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Stage-en-IA---Data-Analytics---Finance-Transformation--h-f-_JR10433458"
+        },
+        {
+          "company": "Airbus",
           "is_new": false,
           "location": "Marseille-Area, JR10439032",
           "title": "STAGE 2027 - Chargé(e) de processus RH et digitalisation  (h/f)",
@@ -1004,28 +1445,21 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10439473",
           "title": "STAGE 2027 - Stagiaire en Management de la communication ou de la création (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stagiaire-en-Management-de-la-communication-ou-de-la-cration--F-H-_JR10439473"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10433433",
           "title": "STAGE 2027 - Stage en Ressources Humaines / Développement RH (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-en-Ressources-Humaines---Dveloppement-RH--F-H-_JR10433433"
         },
         {
           "company": "Airbus",
-          "is_new": true,
-          "location": "Marseille-Area, JR10440209",
-          "title": "STAGE 2027 - Stage en bureau d’études équipement de mission (H/F)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Stage-en-bureau-d-tudes-quipement-de-mission--H-F-_JR10440209"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Marseille-Area, JR10440554",
           "title": "STAGE 2027 - Bureau d'études - design et aménagment intérieur (f/h)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Bureau-d-tudes---design-et-amnagment-intrieur--f-h-_JR10440554"
@@ -1047,20 +1481,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Nantes-Area, JR10435778",
-          "title": "STAGE 2027 -  Stage en Ressources Humaines - Compétences, GEPP & Digitalisation (All Gender)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027----Stage-en-Ressources-Humaines---Comptences---GEPP--All-Gender-_JR10435778"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Marseille-Area, JR10439008",
-          "title": "STAGE 2027 - Gouvernance RH & Amélioration Continue (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Gouvernance-RH---Amlioration-Continue--h-f-_JR10439008"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Toulouse-Area, JR10431673",
           "title": "STAGE 2027 - Stage analyse de risques HSE A320 (All Gender)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-analyse-de-risques-HSE-A320--All-Gender-_JR10431673"
@@ -1075,41 +1495,55 @@
         {
           "company": "Dassault Systemes",
           "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE - Business Consultant (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-business-consultant-f-h-549901"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": true,
+          "location": "France, Meudon La Foret",
+          "title": "STAGE – Commercial Sédentaire – Responsable de comptes stratégiques (F/H) ",
+          "url": "https://www.3ds.com/careers/jobs/stage-commercial-sedentaire-responsable-de-comptes-strategiques-f-h-549902"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Gestion de projet - Excellence Opérationnelle (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-projet-excellence-operationnelle-f-h-549773"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Ingénieur Consultant (F/H) - Avant-vente/ Après-vente (Systems Engineering)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-consultant-f-h-avant-vente-apres-vente-systems-engineering-549960"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Ingénieur Consultant (F/H) - Avant-vente/ Après-vente (Ingénierie Mecanique)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-consultant-f-h-avant-vente-apres-vente-ingenierie-mecanique-549962"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Ingénieur Consultant (F/H) - Avant-vente/ Après-vente (CATIA, VR)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-consultant-f-h-avant-vente-apres-vente-catia-vr-549961"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Digital Learning (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-digital-learning-f-h-549931"
         },
         {
           "company": "Dassault Systemes",
-          "is_new": true,
+          "is_new": false,
           "location": "France, Vélizy-Villacoublay",
           "title": "STAGE - Chef de projet junior (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-chef-de-projet-junior-f-h-549919"
@@ -1267,94 +1701,10 @@
           "location": "France, Aix en Provence",
           "title": "STAGE - Ingénieur Avant-vente CATIA AI Engineering (F/H)",
           "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-avant-vente-catia-ai-engineering-f-h-549698"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Ingénieur Technico-Commercial (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-technico-commercial-f-h-549697"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Chargé de Communication Stratégique (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-communication-strategique-f-h-549041"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Chargé de missions RH Brands, Industry & Marketing (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-brands-industry-marketing-f-h-549138"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Meudon La Foret",
-          "title": "STAGE - Assistant Marketing Digital (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-assistant-marketing-digital-f-h-549189"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Juriste contrats - nouvelles technologies (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-juriste-contrats-nouvelles-technologies-f-h-549099"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Fiscaliste (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-fiscaliste-f-h-549045"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE- Chargé de projet formation (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-projet-formation-f-h-549327"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Communication Marque Employeur (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-communication-marque-employeur-f-h-549331"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Manufacturing génératif — Marine & Offshore (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-manufacturing-generatif-—-marine-offshore-f-h-549194"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE – Prix de Transfert (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-prix-de-transfert-f-h-549037"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": true,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Chargé de missions RH internationales (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-charge-de-missions-rh-internationales-f-h-549330"
-        },
-        {
-          "company": "Dassault Systemes",
-          "is_new": false,
-          "location": "France, Vélizy-Villacoublay",
-          "title": "STAGE - Gestionnaire de paie (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-gestionnaire-de-paie-f-h-549718"
         }
       ],
-      "non_tech_total": 342,
-      "stamp": "2026-09-15",
+      "non_tech_total": 356,
+      "stamp": "2026-09-16",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1367,8 +1717,57 @@
           "company": "Airbus",
           "is_new": false,
           "location": "Saint-Nazaire-Area, JR10432177",
-          "title": "STAGE 2027 - Assistant Chef de Projet IA & Innovation Qualité   (ALL GENDER)",
+          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité   (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Rochefort, JR10436539",
+          "title": "STAGE 2027 - Gestion de la Performance de la Supply Chain Rechange Cabin Interior  (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Gestion-de-la-Performance-de-la-Supply-Chain-Rechange-Cabin-Interior---ALL-GENDER-_JR10436539"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Rochefort, JR10438049",
+          "title": "STAGE 2027 - Ingénieur en innovation digitale (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-en-innovation-digitale--ALL-GENDER-_JR10438049"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10438192",
+          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (H/F)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Le-Billone, JR10439563",
+          "title": "STAGE 2027 - Ingénieur Amélioration continue (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Le-Billone/STAGE-2027---Ingnieur-Amlioration-continue--h-f-_JR10439563"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10429215",
+          "title": "STAGE 2027 - Stagiaire Qualité Supply Chain (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Stagiaire-Qualit-Supply-Chain--ALL-GENDER-_JR10429215"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10436835",
+          "title": "STAGE 2027 - Pilotage de flux d'information en atelier de production (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Pilotage-de-flux-d-information-en-atelier-de-production--ALL-GENDER-_JR10436835"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Rochefort, JR10436391",
+          "title": "STAGE 2027 - Stage en Assurance Qualité A320 (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Stage-en-Assurance-Qualit-A320--ALL-GENDER-_JR10436391"
         },
         {
           "company": "Airbus",
@@ -1380,6 +1779,20 @@
         {
           "company": "Airbus",
           "is_new": true,
+          "location": "Illescas, JR10433208",
+          "title": "#Explorer 2027 Performance  & Improvement internship  Illescas Plant",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Illescas/XMLNAME--Explorer-2027-Performance----Improvement-internship--Illescas-Plant_JR10433208"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10436132",
+          "title": "STAGE 2027 – Ingénieur Production (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Production--ALL-GENDER-_JR10436132"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Rochefort, JR10438445",
           "title": "STAGE 2027 – Projets méthodes industrialisation (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Projets-mthodes-industrialisation--ALL-GENDER-_JR10438445"
@@ -1387,20 +1800,13 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Rochefort, JR10436391",
-          "title": "STAGE 2027 - Stage en Assurance Qualité A320 (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Stage-en-Assurance-Qualit-A320--ALL-GENDER-_JR10436391"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
           "location": "Saint-Nazaire-Area, JR10436801",
           "title": "STAGE 2027 - Stage Ingénieur de production (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Stage-Ingnieur-de-production--ALL-GENDER-_JR10436801"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10435785",
           "title": "STAGE 2027 - Assistant chef de projets et organisation (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-chef-de-projets-et-organisation--ALL-GENDER-_JR10435785"
@@ -1418,13 +1824,6 @@
           "location": "Saint-Nazaire-Area, JR10431261",
           "title": "STAGE 2027 - Ressources Humaines : Chargé des relations sociales (All gender)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ressources-Humaines---Charg-des-relations-sociales--All-gender-_JR10431261"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10432323",
-          "title": "STAGE 2027 - Amélioration Continue en Production (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-Continue-en-Production--ALL-GENDER-_JR10432323"
         },
         {
           "company": "Airbus",
@@ -1483,8 +1882,8 @@
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
         }
       ],
-      "unknown_location_total": 18
+      "unknown_location_total": 25
     }
   },
-  "generated": "2026-09-15T20:41:07.516672+02:00"
+  "generated": "2026-09-16T20:39:31.247519+02:00"
 }
