@@ -16,7 +16,7 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-18
+`board.html` &middot; sweep of 2026-09-19
 
 ### Unrecognised location - 1
 
@@ -68,20 +68,20 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
-| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
-| Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
-| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
-| Amazon / AWS | [Construction Manager Intern (6 months) - 2027](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027) | Clichy, Ile-de-France, FRA |
+| Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
+| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
+| Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
 | Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
+| Amazon / AWS | [Construction Manager Intern (6 months) - 2027](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
-| Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 594 (sample below)
+### Outside France - 606 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -105,15 +105,17 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-18
+`board2.html` &middot; sweep of 2026-09-19
 
-### Unrecognised location - 4
+### Unrecognised location - 6
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Trading Consultant Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706) | Santiago, JR102706; Intern |
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
-| Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
+| Siemens | [Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261) | - |
+| Siemens | [Strategic Student Program: Customer Support & Marketing Internship (Spring 2027, EDAGS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520403) | - |
 | Siemens | [Digital Industries Automation Internship Program - Technical Consulting Track](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522197) | - |
 
 ### Not tech - 81 (showing the first 60)
@@ -181,7 +183,7 @@ mistake (a French site being read as foreign).
 | Ubisoft | [Esports Communication Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150161671) | Paris, fr |
 | Ubisoft | [Partnership Projects Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150156432) | Paris, fr |
 
-### Outside France - 65 (sample below)
+### Outside France - 64 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -190,6 +192,7 @@ mistake (a French site being read as foreign).
 | Aircall | [Regional Marketing Intern, LATAM (12 months)](https://jobs.lever.co/aircall/0e52ec00-a327-49de-9378-6b8487229f89) | San Francisco Office |
 | Aircall | [Sales Intern - UKI Market](https://jobs.lever.co/aircall/f1d2fb78-a40b-4a33-ab8f-75e573ba9749) | London Office |
 | Aircall | [Sales Partnerships Intern](https://jobs.lever.co/aircall/462b6547-d555-4e5f-b5a2-ea8c2de46101) | Madrid Office |
+| Mistral AI | [Applied Scientist (Internship in Paris or London)](https://jobs.ashbyhq.com/mistral.ai/60ab6a5e-9b02-4ae7-a0fb-4c7d9ec0fdf8) | Seoul |
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
 | Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003) | Mexico - Mexico City |
@@ -199,13 +202,12 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Internship Application (Katowice)](https://jobs.smartrecruiters.com/SopraSteria1/744000150290339) | Katowice, pl |
 | Sopra Steria | [Stage Business Analyst – Reporting & Controlling](https://jobs.smartrecruiters.com/SopraSteria1/744000146410169) | ASSAGO, it |
 | Sopra Steria | [Sommerjobb 2027 - Design](https://jobs.smartrecruiters.com/SopraSteria1/744000145673069) | Oslo, no |
-| Sopra Steria | [HR Recruiter Intern](https://jobs.smartrecruiters.com/SopraSteria1/744000145670589) | Singapore, sg |
 
 ---
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-18
+`board3.html` &middot; sweep of 2026-09-19
 
 ### Unrecognised location - 32
 
@@ -244,7 +246,7 @@ mistake (a French site being read as foreign).
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 379 (showing the first 60)
+### Not tech - 375 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -309,7 +311,7 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Business Consultant (F/H)](https://www.3ds.com/careers/jobs/stage-business-consultant-f-h-549901) | France, Meudon La Foret |
 | Dassault Systemes | [STAGE – Commercial Sédentaire – Responsable de comptes stratégiques (F/H)](https://www.3ds.com/careers/jobs/stage-commercial-sedentaire-responsable-de-comptes-strategiques-f-h-549902) | France, Meudon La Foret |
 
-### Outside France - 814 (sample below)
+### Outside France - 816 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
