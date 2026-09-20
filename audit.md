@@ -16,7 +16,7 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-19
+`board.html` &middot; sweep of 2026-09-20
 
 ### Unrecognised location - 1
 
@@ -68,20 +68,20 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Snowflake | [Partner Marketing Intern - Paris (French Speaking](https://jobs.ashbyhq.com/snowflake/54c27993-5827-4a03-80c8-cc5f02b960f9) | FR-Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
-| Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
 | Microsoft | [Government Affairs Intern](https://apply.careers.microsoft.com/careers/job/1970393556990662) | France, Paris, Paris |
 | Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
-| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Executive Office](https://apply.careers.microsoft.com/careers/job/1970393556990789) | France, Paris, Paris |
 | Microsoft | [National Technology Intern](https://apply.careers.microsoft.com/careers/job/1970393556988021) | France, Paris, Paris |
-| Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
+| Microsoft | [Business Program Management Intern - AIBS](https://apply.careers.microsoft.com/careers/job/1970393556995134) | France, Paris, Paris |
 | Amazon / AWS | [Construction Manager Intern (6 months) - 2027](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
-| Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Public Policy Manager Intern – Q1 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [Public Policy Manager Intern – Q3 2027, EU Public Policy team](https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 606 (sample below)
+### Outside France - 605 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -105,7 +105,7 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-19
+`board2.html` &middot; sweep of 2026-09-20
 
 ### Unrecognised location - 6
 
@@ -113,12 +113,12 @@ mistake (a French site being read as foreign).
 |---|---|---|
 | Murex | [Trading Consultant Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706) | Santiago, JR102706; Intern |
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
+| Siemens | [Finance Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520034) | Ho Chi Minh City, Ho Chi Minh, Viet Nam |
+| Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
 | Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
-| Siemens | [Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261) | - |
-| Siemens | [Strategic Student Program: Customer Support & Marketing Internship (Spring 2027, EDAGS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520403) | - |
-| Siemens | [Digital Industries Automation Internship Program - Technical Consulting Track](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522197) | - |
+| Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
 
-### Not tech - 81 (showing the first 60)
+### Not tech - 80 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -175,15 +175,15 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage - Consultant PLM et Sustainability : ACV, DPP et CSRD - Colomiers](https://jobs.smartrecruiters.com/SopraSteria1/744000111047098) | Colomiers, fr |
 | Sopra Steria | [Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France](https://jobs.smartrecruiters.com/SopraSteria1/744000099047104) | Paris, fr |
 | Sopra Steria | [Stage - Chargé (e)  de Recrutement](https://jobs.smartrecruiters.com/SopraSteria1/744000091562029) | Colomiers, fr |
-| Alten | [STAGE - Chargé de projet qualité](https://jobs.smartrecruiters.com/alten/744000146498239) | Vitrolles, fr |
 | Alten | [Internship Offer – Product Owner (Project Management Tool)](https://jobs.smartrecruiters.com/alten/744000131167400) | Toulouse, fr |
 | Ubisoft | [Project Manager Assistant – Internship (6-month) January 2027 (W/M/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150318681) | Paris, fr |
 | Ubisoft | [Project Manager Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150320639) | Paris, fr |
 | Ubisoft | [Esports Communication Assistant – Internship (6-month) January 2027 (W/M/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150164374) | Paris, fr |
 | Ubisoft | [Esports Communication Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150161671) | Paris, fr |
 | Ubisoft | [Partnership Projects Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150156432) | Paris, fr |
+| Ubisoft | [Music Marketing Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)](https://jobs.smartrecruiters.com/Ubisoft2/744000150150840) | Paris, fr |
 
-### Outside France - 64 (sample below)
+### Outside France - 62 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -207,7 +207,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-19
+`board3.html` &middot; sweep of 2026-09-20
 
 ### Unrecognised location - 32
 
@@ -246,7 +246,7 @@ mistake (a French site being read as foreign).
 | Dassault Aviation | [Amélioration continue - Qualité - Stage F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-amelioration-continue-qualite-stage-f-h_15028.aspx) | - |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 375 (showing the first 60)
+### Not tech - 369 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -273,7 +273,6 @@ mistake (a French site being read as foreign).
 | Airbus | [STAGE 2027 - Etude de l’impact des marges en stabilité statique et dynamique de l’avion naturel sur les marges en stabilité des lois de pilotage (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Etude-de-l-impact-des-marges-en-stabilit-statique-et-dynamique-de-l-avion-naturel-sur-les-marges-en-stabilit-des-lois-de-pilotage--F-H-_JR10436111) | Toulouse-Area, JR10436111 |
 | Airbus | [STAGE 2027 - Technologies d'assemblage (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Technologies-d-assemblage--H-F-_JR10441824) | Marseille-Area, JR10441824 |
 | Airbus | [STAGE 2027 - Industrial Sourcing Officer (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Paris-Area/STAGE-2027---Industrial-Sourcing-Officer--H-F-_JR10437343) | Paris-Area, JR10437343 |
-| Airbus | [Stage 2027 - Stage en IA & Data Analytics - Finance Transformation (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Stage-en-IA---Data-Analytics---Finance-Transformation--h-f-_JR10433458) | Toulouse-Area, JR10433458 |
 | Airbus | [Stage 2027 - Facteurs Humains et Ergonomie (f/h)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Facteurs-Humains-et-Ergonomie--f-h-_JR10440080) | Toulouse-Area, JR10440080 |
 | Airbus | [Stage 1er semestre 2027-Assistant(e) de manager en affaires gouvernementales internationales (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Paris-Area/Stage-2027---Assistant-e--de-Manager-en-Affaires-Gouvernementales-Internationales--F-H-_JR10432801) | Paris-Area, JR10432801 |
 | Airbus | [Stage 2e semestre 2027-Assistant(e) de manager en affaires gouvernementales internationales (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Paris-Area/Stage-2027---Assistant-e--de-Manager-en-Affaires-Gouvernementales-Internationales--F-H-_JR10432804) | Paris-Area, JR10432804 |
@@ -310,6 +309,7 @@ mistake (a French site being read as foreign).
 | Dassault Systemes | [STAGE - Commercial Junior - Automobile (F/H)](https://www.3ds.com/careers/jobs/stage-commercial-junior-automobile-f-h-550062) | France, Meudon La Foret |
 | Dassault Systemes | [STAGE - Business Consultant (F/H)](https://www.3ds.com/careers/jobs/stage-business-consultant-f-h-549901) | France, Meudon La Foret |
 | Dassault Systemes | [STAGE – Commercial Sédentaire – Responsable de comptes stratégiques (F/H)](https://www.3ds.com/careers/jobs/stage-commercial-sedentaire-responsable-de-comptes-strategiques-f-h-549902) | France, Meudon La Foret |
+| Dassault Systemes | [STAGE - Gestion de projet - Excellence Opérationnelle (F/H)](https://www.3ds.com/careers/jobs/stage-gestion-de-projet-excellence-operationnelle-f-h-549773) | France, Vélizy-Villacoublay |
 
 ### Outside France - 816 (sample below)
 

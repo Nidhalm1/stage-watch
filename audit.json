@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 606,
+      "foreign_count": 605,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -380,20 +380,6 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Retail",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Executive Office",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990789"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
           "title": "Government Affairs Intern",
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556990662"
         },
@@ -408,8 +394,15 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - AIBS",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
+          "title": "Business Program Management Intern - Retail",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
+        },
+        {
+          "company": "Microsoft",
+          "is_new": false,
+          "location": "France, Paris, Paris",
+          "title": "Business Program Management Intern - Executive Office",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990789"
         },
         {
           "company": "Microsoft",
@@ -419,11 +412,11 @@
           "url": "https://apply.careers.microsoft.com/careers/job/1970393556988021"
         },
         {
-          "company": "Amazon / AWS",
+          "company": "Microsoft",
           "is_new": false,
-          "location": "Toulouse, Occitanie, FRA",
-          "title": "Operations Intern - Région Sud - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+          "location": "France, Paris, Paris",
+          "title": "Business Program Management Intern - AIBS",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556995134"
         },
         {
           "company": "Amazon / AWS",
@@ -431,6 +424,13 @@
           "location": "Clichy, Ile-de-France, FRA",
           "title": "Construction Manager Intern (6 months) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
+          "location": "Toulouse, Occitanie, FRA",
+          "title": "Operations Intern - Région Sud - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -450,19 +450,19 @@
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Public Policy Manager Intern – Q3 2027, EU Public Policy team ",
-          "url": "https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team"
+          "title": "Public Policy Manager Intern – Q1 2027, EU Public Policy team ",
+          "url": "https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Public Policy Manager Intern – Q1 2027, EU Public Policy team ",
-          "url": "https://www.amazon.jobs/en/jobs/10533926/public-policy-manager-intern-q1-2027-eu-public-policy-team"
+          "title": "Public Policy Manager Intern – Q3 2027, EU Public Policy team ",
+          "url": "https://www.amazon.jobs/en/jobs/10533927/public-policy-manager-intern-q3-2027-eu-public-policy-team"
         }
       ],
       "non_tech_total": 52,
-      "stamp": "2026-09-19",
+      "stamp": "2026-09-20",
       "unknown_location": [
         {
           "company": "IBM",
@@ -476,7 +476,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 64,
+      "foreign_count": 62,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -944,13 +944,6 @@
         {
           "company": "Alten",
           "is_new": false,
-          "location": "Vitrolles, fr",
-          "title": "STAGE - Chargé de projet qualité",
-          "url": "https://jobs.smartrecruiters.com/alten/744000146498239"
-        },
-        {
-          "company": "Alten",
-          "is_new": false,
           "location": "Toulouse, fr",
           "title": "Internship Offer – Product Owner (Project Management Tool)",
           "url": "https://jobs.smartrecruiters.com/alten/744000131167400"
@@ -989,10 +982,17 @@
           "location": "Paris, fr",
           "title": "Partnership Projects Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)",
           "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000150156432"
+        },
+        {
+          "company": "Ubisoft",
+          "is_new": false,
+          "location": "Paris, fr",
+          "title": "Music Marketing Assistant - Stage (6 mois) Janvier 2027 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000150150840"
         }
       ],
-      "non_tech_total": 81,
-      "stamp": "2026-09-19",
+      "non_tech_total": 80,
+      "stamp": "2026-09-20",
       "unknown_location": [
         {
           "company": "Murex",
@@ -1011,6 +1011,20 @@
         {
           "company": "Siemens",
           "is_new": true,
+          "location": "Ho Chi Minh City, Ho Chi Minh, Viet Nam",
+          "title": "Finance Intern",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520034"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
           "location": "",
           "title": "Finance Leadership Development Program Internship",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
@@ -1019,22 +1033,8 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Strategic Student Program: Customer Support & Marketing Internship (Spring 2027, EDAGS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520403"
-        },
-        {
-          "company": "Siemens",
-          "is_new": false,
-          "location": "",
-          "title": "Digital Industries Automation Internship Program - Technical Consulting Track",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522197"
+          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
         }
       ],
       "unknown_location_total": 6
@@ -1299,13 +1299,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Toulouse-Area, JR10433458",
-          "title": "Stage 2027 - Stage en IA & Data Analytics - Finance Transformation (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Stage-en-IA---Data-Analytics---Finance-Transformation--h-f-_JR10433458"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Toulouse-Area, JR10440080",
           "title": "Stage 2027 - Facteurs Humains et Ergonomie (f/h)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Facteurs-Humains-et-Ergonomie--f-h-_JR10440080"
@@ -1554,10 +1547,17 @@
           "location": "France, Meudon La Foret",
           "title": "STAGE – Commercial Sédentaire – Responsable de comptes stratégiques (F/H) ",
           "url": "https://www.3ds.com/careers/jobs/stage-commercial-sedentaire-responsable-de-comptes-strategiques-f-h-549902"
+        },
+        {
+          "company": "Dassault Systemes",
+          "is_new": false,
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Gestion de projet - Excellence Opérationnelle (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-gestion-de-projet-excellence-operationnelle-f-h-549773"
         }
       ],
-      "non_tech_total": 375,
-      "stamp": "2026-09-19",
+      "non_tech_total": 369,
+      "stamp": "2026-09-20",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1787,5 +1787,5 @@
       "unknown_location_total": 32
     }
   },
-  "generated": "2026-09-19T19:40:38.109395+02:00"
+  "generated": "2026-09-20T19:52:23.153726+02:00"
 }
