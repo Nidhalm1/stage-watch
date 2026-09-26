@@ -16,11 +16,13 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-25
+`board.html` &middot; sweep of 2026-09-26
 
-### Unrecognised location - 0
+### Unrecognised location - 1
 
-_none_
+| Company | Title | Location |
+|---|---|---|
+| IBM | [Technology Lifecycle Services Internship](https://careers.ibm.com/careers/JobDetail?jobId=134596) | Heredia, CR |
 
 ### Not tech - 46
 
@@ -63,8 +65,8 @@ _none_
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Scaleway | [Sales Enablement Intern](https://jobs.lever.co/scaleway/b21b7af6-f7f7-42db-9a87-9cc6932a73fc) | Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
 | Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
+| Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
 | Amazon / AWS | [General Marketing Manager Intern- 2027](https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Process Improvement Specialist Intern - 2027](https://www.amazon.jobs/en/jobs/10554429/process-improvement-specialist-intern-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Account Representative Intern, Early Career - 2027](https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027) | Clichy, Ile-de-France, FRA |
@@ -73,7 +75,7 @@ _none_
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 
-### Outside France - 677 (sample below)
+### Outside France - 672 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -97,18 +99,21 @@ _none_
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-25
+`board2.html` &middot; sweep of 2026-09-26
 
-### Unrecognised location - 7
+### Unrecognised location - 10
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Trading Consultant Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706) | Santiago, JR102706; Intern |
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
-| Siemens | [Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261) | - |
-| Siemens | [Energy Business Advisory Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522346) | - |
+| Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
+| Siemens | [Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411) | Muscat, Masqat, Oman |
+| Siemens | [Fresh Graduate Engineer - Internship @Siemens Mobility Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447) | - |
+| Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
+| Siemens | [Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000) | - |
 | Siemens | [Strategic Student Program: Customer Support & Marketing Internship (Spring 2027, EDAGS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520403) | - |
-| Siemens | [Smart Infrastructure Electrical Products Operations Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521212) | - |
 | Siemens | [Stage 6 mois- Ingénieur de données f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292) | - |
 
 ### Not tech - 102 (showing the first 60)
@@ -176,7 +181,7 @@ _none_
 | Sopra Steria | [Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France](https://jobs.smartrecruiters.com/SopraSteria1/744000099047104) | Paris, fr |
 | Alten | [[STAGE] Chargé de recrutement - Business Partner (H/F)](https://jobs.smartrecruiters.com/alten/744000150985860) | Lyon, fr |
 
-### Outside France - 64 (sample below)
+### Outside France - 61 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -200,7 +205,7 @@ _none_
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-25
+`board3.html` &middot; sweep of 2026-09-26
 
 ### Unrecognised location - 55
 
@@ -262,7 +267,7 @@ _none_
 | HPE | [Cloud Developer Intern](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Aguadilla-Puerto-Rico-Puerto-Rico/Cloud-Developer-Intern_1215274-1/apply) | Aguadilla, Puerto Rico |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 446 (showing the first 60)
+### Not tech - 444 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -327,7 +332,7 @@ _none_
 | Airbus | [STAGE 2027 - Projets formation et innovation pédagogique (all gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Projets-formation-et-innovation-pdagogique--all-gender-_JR10431503) | Toulouse-Area, JR10431503 |
 | Airbus | [STAGE 2027 - Support to Commodity Manager](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Support-to-Commodity-Manager_JR10437953) | Toulouse-Area, JR10437953 |
 
-### Outside France - 825 (sample below)
+### Outside France - 824 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -338,7 +343,6 @@ _none_
 | Thales | [Talent Acquisition Intern (Jan 2027 intake)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Talent-Acquisition-Intern--Jan-2027-intake-_R0339956) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339956; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Software Engineer Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern_R0339658) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339658; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Supply Chain Management Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing-Airport/Supply-Chain-Management-Intern_R0336817) | Beijing-Airport, Intern/Trainee (Fixed Term) (Trainee); R0336817; 07 - CUSTOMER SERVICE; Thales Aerospace (Beijing) Co., Ltd. |
-| Thales | [Software Engineering Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Zaventem_EXC/Software-Engineering-Intern_R0339364) | Zaventem_EXC, Intern/Trainee (Fixed Term) (Trainee); R0339364; 20 - SOFTWARE; Thales Cyber Solutions Belgium SA |
 | Thales | [Software Development and Integration Engineer (Intern)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339158) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339158; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Software Engineer Intern - Middleware (IBS)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Business App Support Intern - 2027 Start](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
@@ -346,4 +350,5 @@ _none_
 | Thales | [Solution Customer Service Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
 | Thales | [Stagiaire Finance](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1) | Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE |
 | Thales | [Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671) | Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A. |
+| Thales | [AI Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/AI-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0332137) | Gorgonzola, CW Intern/Trainee; R0332137; 08 - QUALITY & CUSTOMER SATISFACTION |
 
