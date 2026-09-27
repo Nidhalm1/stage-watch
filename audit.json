@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 672,
+      "foreign_count": 669,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -36,15 +36,15 @@
         },
         {
           "company": "Doctolib",
-          "location": "Berlin, Berlin, Germany",
-          "title": "Medical Data Intern (x/f/m)",
-          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7996918003"
-        },
-        {
-          "company": "Doctolib",
           "location": "Milano, Milan, Italy",
           "title": "Medical Data Intern (x/f/m)",
           "url": "https://job-boards.greenhouse.io/doctolib/jobs/7996919003"
+        },
+        {
+          "company": "Doctolib",
+          "location": "Berlin, Berlin, Germany",
+          "title": "Medical Data Intern (x/f/m)",
+          "url": "https://job-boards.greenhouse.io/doctolib/jobs/7996918003"
         },
         {
           "company": "Criteo",
@@ -359,22 +359,15 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
+          "title": "Business Program Management Intern - Retail",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
         },
         {
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Retail",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
-          "location": "Clichy, Ile-de-France, FRA",
-          "title": "General Marketing Manager Intern- 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
+          "title": "Legal Counsel Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
         },
         {
           "company": "Amazon / AWS",
@@ -382,6 +375,13 @@
           "location": "Clichy, Ile-de-France, FRA",
           "title": "Process Improvement Specialist Intern - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10554429/process-improvement-specialist-intern-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
+          "location": "Clichy, Ile-de-France, FRA",
+          "title": "General Marketing Manager Intern- 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -420,11 +420,11 @@
         }
       ],
       "non_tech_total": 46,
-      "stamp": "2026-09-26",
+      "stamp": "2026-09-27",
       "unknown_location": [
         {
           "company": "IBM",
-          "is_new": true,
+          "is_new": false,
           "location": "Heredia, CR",
           "title": "Technology Lifecycle Services Internship",
           "url": "https://careers.ibm.com/careers/JobDetail?jobId=134596"
@@ -434,7 +434,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 61,
+      "foreign_count": 64,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -492,15 +492,15 @@
         },
         {
           "company": "Shift Technology",
-          "location": "Brazil - Sao Paulo",
-          "title": "Data Scientist Intern (English Speaker)",
-          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003"
-        },
-        {
-          "company": "Shift Technology",
           "location": "Mexico - Mexico City",
           "title": "Data Scientist Intern (English Speaker)",
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003"
+        },
+        {
+          "company": "Shift Technology",
+          "location": "Brazil - Sao Paulo",
+          "title": "Data Scientist Intern (English Speaker)",
+          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003"
         },
         {
           "company": "Amadeus",
@@ -950,7 +950,7 @@
         }
       ],
       "non_tech_total": 102,
-      "stamp": "2026-09-26",
+      "stamp": "2026-09-27",
       "unknown_location": [
         {
           "company": "Murex",
@@ -968,14 +968,7 @@
         },
         {
           "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Finance Leadership Development Program Internship",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
@@ -983,20 +976,13 @@
         {
           "company": "Siemens",
           "is_new": true,
-          "location": "Muscat, Masqat, Oman",
-          "title": "Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
           "location": "",
-          "title": "Fresh Graduate Engineer - Internship @Siemens Mobility Oman",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
+          "title": "Sales Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522491"
         },
         {
           "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
@@ -1005,15 +991,15 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000"
+          "title": "Building Automation Systems Specialist Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522381"
         },
         {
           "company": "Siemens",
-          "is_new": false,
+          "is_new": true,
           "location": "",
-          "title": "Strategic Student Program: Customer Support & Marketing Internship (Spring 2027, EDAGS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520403"
+          "title": "Building Automation Systems Specialist Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522135"
         },
         {
           "company": "Siemens",
@@ -1023,11 +1009,11 @@
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292"
         }
       ],
-      "unknown_location_total": 10
+      "unknown_location_total": 8
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 824,
+      "foreign_count": 820,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1404,13 +1390,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Toulouse-Area, JR10442383",
-          "title": "STAGE 2027 - Gestion du Trafic Aérien : Assistance aux pilotes pour la phase de roulage sur les aéroports (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Gestion-du-Trafic-Arien---Assistance-aux-pilotes-pour-la-phase-de-roulage-sur-les-aroports--h-f-_JR10442383"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Paris-Area, JR10432804",
           "title": "Stage 2e semestre 2027-Assistant(e) de manager en affaires gouvernementales internationales (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Paris-Area/Stage-2027---Assistant-e--de-Manager-en-Affaires-Gouvernementales-Internationales--F-H-_JR10432804"
@@ -1540,10 +1519,17 @@
           "location": "Toulouse-Area, JR10437953",
           "title": "STAGE 2027 - Support to Commodity Manager",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Support-to-Commodity-Manager_JR10437953"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Toulouse-Area, JR10442633",
+          "title": "STAGE 2027 - Résolution de problèmes Qualité FAL A330-A350 (F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Rsolution-de-problmes-Qualit-FAL-A330-A350--F-H-_JR10442633"
         }
       ],
-      "non_tech_total": 444,
-      "stamp": "2026-09-26",
+      "non_tech_total": 442,
+      "stamp": "2026-09-27",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1863,13 +1849,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Bristol-Area, JR10430645",
-          "title": "Landing Gear Technical Engineering Intern",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca",
           "title": "INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906"
@@ -1931,8 +1910,8 @@
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
         }
       ],
-      "unknown_location_total": 55
+      "unknown_location_total": 54
     }
   },
-  "generated": "2026-09-26T20:14:29.377461+02:00"
+  "generated": "2026-09-27T20:51:19.475633+02:00"
 }

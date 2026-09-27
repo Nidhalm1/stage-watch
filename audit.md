@@ -16,7 +16,7 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-09-26
+`board.html` &middot; sweep of 2026-09-27
 
 ### Unrecognised location - 1
 
@@ -65,17 +65,17 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Scaleway | [Sales Enablement Intern](https://jobs.lever.co/scaleway/b21b7af6-f7f7-42db-9a87-9cc6932a73fc) | Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
-| Amazon / AWS | [General Marketing Manager Intern- 2027](https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027) | Clichy, Ile-de-France, FRA |
+| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
 | Amazon / AWS | [Process Improvement Specialist Intern - 2027](https://www.amazon.jobs/en/jobs/10554429/process-improvement-specialist-intern-2027) | Clichy, Ile-de-France, FRA |
+| Amazon / AWS | [General Marketing Manager Intern- 2027](https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Account Representative Intern, Early Career - 2027](https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Construction Manager Intern (6 months) - 2027](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
 | Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 
-### Outside France - 672 (sample below)
+### Outside France - 669 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -84,8 +84,8 @@ mistake (a French site being read as foreign).
 | Datadog | [Software Engineering Intern](https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161) | Madrid, Spain |
 | Datadog | [Software Engineering Intern (Summer)](https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118) | Boston, Massachusetts, USA; New York, New York, USA |
 | Doctolib | [Business Development Representative Intern - Milano (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7800808003) | Milano, Milan, Italy |
-| Doctolib | [Medical Data Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7996918003) | Berlin, Berlin, Germany |
 | Doctolib | [Medical Data Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7996919003) | Milano, Milan, Italy |
+| Doctolib | [Medical Data Intern (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7996918003) | Berlin, Berlin, Germany |
 | Criteo | [BI Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/BI-Analyst-Intern_r21147) | Barcelona, Spain |
 | Criteo | [AdOps Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Gurgaon/AdOps-Intern_r21155) | Gurgaon, India |
 | Criteo | [Business Development Intern France](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Business-Development-Intern-France_r21153) | Barcelona, Spain |
@@ -99,21 +99,19 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-09-26
+`board2.html` &middot; sweep of 2026-09-27
 
-### Unrecognised location - 10
+### Unrecognised location - 8
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Trading Consultant Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706) | Santiago, JR102706; Intern |
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
-| Siemens | [Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912) | - |
 | Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
-| Siemens | [Customer Services Intern (Fresh Engineering Graduate) - Muscat, Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520411) | Muscat, Masqat, Oman |
-| Siemens | [Fresh Graduate Engineer - Internship @Siemens Mobility Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447) | - |
+| Siemens | [Sales Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522491) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
-| Siemens | [Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000) | - |
-| Siemens | [Strategic Student Program: Customer Support & Marketing Internship (Spring 2027, EDAGS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520403) | - |
+| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522381) | - |
+| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522135) | - |
 | Siemens | [Stage 6 mois- Ingénieur de données f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292) | - |
 
 ### Not tech - 102 (showing the first 60)
@@ -181,7 +179,7 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage Chargé(e) de Recrutement - Services Financiers - Ile-De-France](https://jobs.smartrecruiters.com/SopraSteria1/744000099047104) | Paris, fr |
 | Alten | [[STAGE] Chargé de recrutement - Business Partner (H/F)](https://jobs.smartrecruiters.com/alten/744000150985860) | Lyon, fr |
 
-### Outside France - 61 (sample below)
+### Outside France - 64 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -194,8 +192,8 @@ mistake (a French site being read as foreign).
 | Mistral AI | [Applied Scientist (Internship in Paris or London)](https://jobs.ashbyhq.com/mistral.ai/60ab6a5e-9b02-4ae7-a0fb-4c7d9ec0fdf8) | Seoul |
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
-| Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003) | Brazil - Sao Paulo |
 | Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003) | Mexico - Mexico City |
+| Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003) | Brazil - Sao Paulo |
 | Amadeus | [Cybersecurity Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Cybersecurity-Intern_R31596) | Taguig-Metro-Manila, R31596 |
 | Amadeus | [Software Developer Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590) | Taguig-Metro-Manila, R31590 |
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
@@ -205,9 +203,9 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-09-26
+`board3.html` &middot; sweep of 2026-09-27
 
-### Unrecognised location - 55
+### Unrecognised location - 54
 
 | Company | Title | Location |
 |---|---|---|
@@ -256,7 +254,6 @@ mistake (a French site being read as foreign).
 | Airbus | [#Explorer 2027 Performance  & Improvement internship  Illescas Plant](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Illescas/XMLNAME--Explorer-2027-Performance----Improvement-internship--Illescas-Plant_JR10433208) | Illescas, JR10433208 |
 | Airbus | [STAGE 2027 - Assistant chef de projets et organisation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-chef-de-projets-et-organisation--ALL-GENDER-_JR10435785) | Saint-Nazaire-Area, JR10435785 |
 | Airbus | [STAGE 2027 - Assistant en optimisation des processus industriels (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-en-optimisation-des-processus-industriels--ALL-GENDER-_JR10427888) | Saint-Nazaire-Area, JR10427888 |
-| Airbus | [Landing Gear Technical Engineering Intern](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Bristol-Area/Landing-Gear-Technical-Engineering-Intern_JR10430645) | Bristol-Area, JR10430645 |
 | Airbus | [INTERNSHIP + MASTER ON COMPOSITE MATERIALS 2021 - 11th Edition](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906) | INTERNSHIP---MASTER-ON-COMPOSITE-MATERIALS-2021---11th-Edition_JR10069906, JR10069906; Internship / Stage / Praktikum / Beca |
 | Dassault Aviation | [Définition d'indicateur pour l'analyse acoustique des essais en vol F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-definition-d-indicateur-pour-l-analyse-acoustique-des-essais-en-vol-f-h_15710.aspx) | - |
 | Dassault Aviation | [Evaluation de solutions d'exploitation graphique de données temporelles massives F/H](https://dassault-aviation-cand.talent-soft.com/offre-de-emploi/emploi-evaluation-de-solutions-d-exploitation-graphique-de-donnees-temporelles-massives-f-h_15708.aspx) | - |
@@ -267,7 +264,7 @@ mistake (a French site being read as foreign).
 | HPE | [Cloud Developer Intern](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Aguadilla-Puerto-Rico-Puerto-Rico/Cloud-Developer-Intern_1215274-1/apply) | Aguadilla, Puerto Rico |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 444 (showing the first 60)
+### Not tech - 442 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -311,7 +308,6 @@ mistake (a French site being read as foreign).
 | Airbus | [Stage 2027 - Technicien Amélioration Continue A350 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/XMLNAME--Stage-2027---Technicien-Amlioration-Continue-A350--ALL-GENDER-_JR10436244) | Nantes-Area, JR10436244 |
 | Airbus | [STAGE 2027 - HSE : Formations Habilitation Électrique & Laser (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---HSE---Formations-Habilitation-lectrique---Laser--F-H-_JR10443048) | Toulouse-Area, JR10443048 |
 | Airbus | [STAGE 2027 - Evaluation du comportement de propagation des fissures sur pièces composite Rotor (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Le-Bourget---Dugny/STAGE-2027---Evaluation-du-comportement-de-propagation-des-fissures-sur-pices-composite-Rotor--h-f-_JR10440310) | Le-Bourget---Dugny, JR10440310 |
-| Airbus | [STAGE 2027 - Gestion du Trafic Aérien : Assistance aux pilotes pour la phase de roulage sur les aéroports (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Gestion-du-Trafic-Arien---Assistance-aux-pilotes-pour-la-phase-de-roulage-sur-les-aroports--h-f-_JR10442383) | Toulouse-Area, JR10442383 |
 | Airbus | [Stage 2e semestre 2027-Assistant(e) de manager en affaires gouvernementales internationales (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Paris-Area/Stage-2027---Assistant-e--de-Manager-en-Affaires-Gouvernementales-Internationales--F-H-_JR10432804) | Paris-Area, JR10432804 |
 | Airbus | [STAGE 2027 - Development of an On Board SW module for VIGIL Science satellite (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Development-of-an-On-Board-SW-module-for-VIGIL-Science-satellite--h-f-_JR10441640) | Toulouse-Area, JR10441640 |
 | Airbus | [Stage 2027 - Audit Interne (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/Stage-2027---Audit-Interne--h-f-_JR10442348) | Marseille-Area, JR10442348 |
@@ -331,8 +327,9 @@ mistake (a French site being read as foreign).
 | Airbus | [STAGE 2027 - Ressources Humaines - Compétences, GEPP & Digitalisation (All Gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027----Stage-en-Ressources-Humaines---Comptences---GEPP--All-Gender-_JR10435778) | Nantes-Area, JR10435778 |
 | Airbus | [STAGE 2027 - Projets formation et innovation pédagogique (all gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Projets-formation-et-innovation-pdagogique--all-gender-_JR10431503) | Toulouse-Area, JR10431503 |
 | Airbus | [STAGE 2027 - Support to Commodity Manager](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Support-to-Commodity-Manager_JR10437953) | Toulouse-Area, JR10437953 |
+| Airbus | [STAGE 2027 - Résolution de problèmes Qualité FAL A330-A350 (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Rsolution-de-problmes-Qualit-FAL-A330-A350--F-H-_JR10442633) | Toulouse-Area, JR10442633 |
 
-### Outside France - 824 (sample below)
+### Outside France - 820 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
