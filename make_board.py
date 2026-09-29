@@ -2415,6 +2415,18 @@ def render(results, prev):
             cur[u] = {"title": h["title"], "company": r["name"],
                       "location": h["location"], "first_seen": h["first_seen"]}
 
+    # Newest first inside every company card. Until now the rows came out in
+    # whatever order the ATS returned them, which is relevance for some boards
+    # and insertion order for others - so on a 175-role card the one posting
+    # that turned up yesterday could sit anywhere. first_seen is the date each
+    # row already shows, and it is the only date this pipeline has: no ATS date
+    # is captured, so this is "newest to the sweep", not the ATS posting date.
+    # Two stable passes rather than one reversed key, so same-day rows stay in
+    # title order instead of reverse-alphabetical.
+    for r in results:
+        r["hits"].sort(key=lambda h: h["title"].lower())
+        r["hits"].sort(key=lambda h: h["first_seen"], reverse=True)
+
     # The filtered-out and unrecognised-location boxes were untracked: a role
     # landing in one got no chip and no ping, so a filter mistake cost the job
     # even though the role was sitting on the page. They are tracked here in

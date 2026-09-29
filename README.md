@@ -45,9 +45,14 @@ bridge between the two.
 already seen and when it was first seen, so the next run can mark roles NEW and
 detect ones that vanished (= filled or pulled). Git history is the audit trail.
 
+That date is also the board's sort order: inside each company card the roles run
+newest `first_seen` first, same-day ties in title order. It is the date the
+sweep first saw the role, not the ATS posting date - no fetcher captures one.
+
 Every list in `status.json` is capped (`STATUS_ROWS`) with its true count kept
 in a matching `_total` field, and the collapsed boxes on the board are capped
 too (`BOX_ROWS`, new entries sorted first so a cap can never hide the news).
+Those boxes carry no date, so they stay new-first rather than date-sorted.
 Without that, one roster change put 153 rows in `also_new` and took status.json
 from 4.7 KB to 70 KB - larger than the HTML it exists to avoid reading, which
 defeats the entire point of the file.
