@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 673,
+      "foreign_count": 694,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -322,7 +322,7 @@
         },
         {
           "company": "Scaleway",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Customer Success Management Low-Touch & Startup - Internship",
           "url": "https://jobs.lever.co/scaleway/b1cf9bef-bcd4-41b7-bae5-424f8f713674"
@@ -359,15 +359,15 @@
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
+          "title": "Business Program Management Intern - Retail",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
         },
         {
           "company": "Microsoft",
           "is_new": false,
           "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Retail",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
+          "title": "Legal Counsel Intern",
+          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
         },
         {
           "company": "Amazon / AWS",
@@ -434,7 +434,7 @@
         }
       ],
       "non_tech_total": 48,
-      "stamp": "2026-10-02",
+      "stamp": "2026-10-03",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -462,7 +462,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 75,
+      "foreign_count": 74,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -526,15 +526,15 @@
         },
         {
           "company": "Shift Technology",
-          "location": "Brazil - Sao Paulo",
-          "title": "Data Scientist Intern (English Speaker)",
-          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003"
-        },
-        {
-          "company": "Shift Technology",
           "location": "Mexico - Mexico City",
           "title": "Data Scientist Intern (English Speaker)",
           "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003"
+        },
+        {
+          "company": "Shift Technology",
+          "location": "Brazil - Sao Paulo",
+          "title": "Data Scientist Intern (English Speaker)",
+          "url": "https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003"
         },
         {
           "company": "Amadeus",
@@ -740,7 +740,7 @@
         },
         {
           "company": "Ledger",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Internship - Compensation & Benefits",
           "url": "https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2"
@@ -754,14 +754,14 @@
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Business Consultant Intern ",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/6211789004"
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Business Consultant Intern (B2B)",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/6211779004"
@@ -775,14 +775,14 @@
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Business Value Consultant Intern",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/5661348004"
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Customer Success Intern – Mirakl Ads, Paris",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/6211777004"
@@ -796,7 +796,7 @@
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Finance Analyst intern",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/5131573004"
@@ -817,7 +817,7 @@
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "​​Privacy Legal Intern",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/5490504004"
@@ -977,8 +977,8 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149833263"
         }
       ],
-      "non_tech_total": 127,
-      "stamp": "2026-10-02",
+      "non_tech_total": 128,
+      "stamp": "2026-10-03",
       "unknown_location": [
         {
           "company": "Murex",
@@ -998,15 +998,8 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Customer Relationship Management Intern | GBS Mexico",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522532"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Strategic Student Program: Marketing & Field Execution Internship (Spring 2027, CMMK)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520128"
+          "title": "Software & AI Adoption Engineering Intern (Barcelona & Madrid)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651"
         },
         {
           "company": "Siemens",
@@ -1017,17 +1010,17 @@
         },
         {
           "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974"
-        },
-        {
-          "company": "Siemens",
           "is_new": false,
           "location": "",
           "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000"
         },
         {
           "company": "Siemens",
@@ -1037,12 +1030,18 @@
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292"
         }
       ],
-      "unknown_location_total": 8
+      "unknown_location_total": 7
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 812,
+      "foreign_count": 811,
       "foreign_sample": [
+        {
+          "company": "Thales",
+          "location": "Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0338766; 11 - FINANCE; Thales DIS Mexico SA de CV",
+          "title": "Intern Customer Experience",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/PAY-CS---Technical-undergraduate-intern-Customer-Experience_R0338766"
+        },
         {
           "company": "Thales",
           "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0338806; 14 - COMMUNICATIONS; Thales Solutions Asia Pte. Ltd.",
@@ -1126,25 +1125,19 @@
           "location": "Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE",
           "title": "Stagiaire Finance",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1"
-        },
-        {
-          "company": "Thales",
-          "location": "Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A.",
-          "title": "Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671"
         }
       ],
       "non_tech": [
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0342199; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales Global Services Sas",
           "title": "STAGE - Direction juridique & Contrats – H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Direction-juridique---Contrats---H-F_R0342199-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0341877; 09 - PROCUREMENT; Thales Global Services Sas",
           "title": "STAGE – Change Management – H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Change-Management---H-F_R0341877"
@@ -1327,30 +1320,37 @@
         {
           "company": "Airbus",
           "is_new": true,
+          "location": "Toulouse-Area, JR10444078",
+          "title": "STAGE 2027 - Chargé(e) d'Amélioration Numérique & Innovation RH (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Charg-e--d-Amlioration-Numrique---Innovation-RH--h-f-_JR10444078"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Toulouse-Area, JR10443979",
+          "title": "Stage 2027 - Contrôle de gestion des filiales (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Contrle-de-gestion-des-filiales--h-f-_JR10443979"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Toulouse-Area, JR10444541",
           "title": "Stage 2027 - Non Linear Analyse DFEM - comparaison Nastran /Abaqus (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Non-Linear-Analyse--DFEM-en-utilisent-Nastran-ou-Abaqus--h-f-_JR10444541"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10442622",
           "title": "STAGE 2027 - Amélioration d’un banc de calibration pour des capteurs de pression (f/h)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Amlioration-d-un-banc-de-calibration-pour-des-capteurs-de-pression--f-h-_JR10442622"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10440941",
           "title": "STAGE 2027 Etude et conception de sous-ensembles d’une chaîne RF pour applications spatiales (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-Etude-et-conception-de-sous-ensembles-d-une-chane-RF-pour-applications-spatiales--h-f-_JR10440941"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Nantes-Area, JR10444847",
-          "title": "STAGE 2027 - Quantification de la résistance à la corrosion d'un alliage d'aluminium protégé  (F/H)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Quantification-de-la-rsistance--la-corrosion-d-un-alliage-d-aluminium-protg---F-H-_JR10444847"
         },
         {
           "company": "Airbus",
@@ -1368,21 +1368,21 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10443549",
           "title": "STAGE 2027 Amélioration des Essais en Production / Support FTE (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-Amlioration-des-Essais-en-Production---Support-FTE--h-f-_JR10443549"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Marseille-Area, JR10443594",
           "title": "STAGE 2027 - Communication Interne et accompagnement du changement (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Communication-Interne-et-accompagnement-du-changement--h-f-_JR10443594"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Marseille-Area, JR10441977",
           "title": "STAGE 2027 - Standardisation et FOD (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Standardisation-et-FOD--H-F-_JR10441977"
@@ -1396,7 +1396,7 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10441949",
           "title": "STAGE 2027 - Logistique , Support clients, gestion de projet et amélioration continue (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Logistique---Support-clients--gestion-de-projet-et-amlioration-continue--F-H-_JR10441949"
@@ -1410,14 +1410,14 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Marseille-Area, JR10443530",
           "title": "STAGE 2027 - Conduit au Changement ERP & Industrialisation (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Conduit-au-Changement-ERP---Industrialisation--h-f-_JR10443530"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Nantes-Area, JR10443507",
           "title": "STAGE 2027 - Formulation et caractérisation de peinture aéronautique (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Formulation-et-caractrisation-de-peinture-aronautique--F-H-_JR10443507"
@@ -1431,70 +1431,70 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10444902",
           "title": "Stage 2027 Stage Legal Fusions & Acquisitions et Affaires Corporate (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027-Stage-Legal-Fusions---Acquisitions-et-Affaires-Corporate--h-f-_JR10444902"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris-Area, JR10447653",
           "title": "Stage 2027 - Chargé de communauté Résilience (All Gender)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Paris-Area/Stage-2027---Charg-de-communaut-Rsilience--All-Gender-_JR10447653"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10447633",
           "title": "Stage 2027 - Proxy PO/Testeur (All Gender)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Proxy-PO-Testeur--All-Gender-_JR10447633"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Nantes-Area, JR10440707",
           "title": "STAGE 2027 - Préparateur pièces composites (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Prparateur-pices-composites--ALL-GENDER-_JR10440707"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10442546",
           "title": "STAGE 2027 en QUALITE : Amélioration du processus de gestion métrologie (F/H)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-en-QUALITE---Amlioration-du-processus-de-gestion-mtrologie--F-H-_JR10442546"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10444738",
           "title": "STAGE 2027 - Stagiaire Technicien Génie Électrique ou Mécanique",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stagiaire-Technicien-Gnie-lectrique-ou-Mcanique_JR10444738"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10447557",
           "title": "Stage 2027 - Juriste en Droit Social (All Gender)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Juriste-en-Droit-Social--All-Gender-_JR10447557"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10445392",
           "title": "STAGE 2027 Design Studio - Creative Designer",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-Design-Studio---Creative-Designer_JR10445392"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10444402",
           "title": "STAGE 2027 - Stage en Amélioration continue Service Opérations d’Approvisionnement « PICPL Procurement Operations » (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-en-Amlioration-continue-Service-Oprations-d-Approvisionnement---PICPL-Procurement-Operations----h-f-_JR10444402"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10441898",
           "title": "Stage 2027– Support à la transformation Cabin & Cargo (MAP) (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027--Support--la-transformation-Cabin---Cargo--MAP---H-F-_JR10441898"
@@ -1547,17 +1547,10 @@
           "location": "Toulouse-Area, JR10444517",
           "title": "STAGE 2027 - Amélioration continue de la chaîne d'approvisionnement et de la qualité (f/h)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-amlioration-continue-de-la-Supply-Chain-et-de-la-qualit--H-F-_JR10444517"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Toulouse-Area, JR10444988",
-          "title": "STAGE 2027 - Procurement Digitalisation (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Procurement-Digitalisation--h-f-_JR10444988"
         }
       ],
-      "non_tech_total": 536,
-      "stamp": "2026-10-02",
+      "non_tech_total": 535,
+      "stamp": "2026-10-03",
       "unknown_location": [
         {
           "company": "Airbus",
@@ -1568,14 +1561,14 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Maulte-Area, JR10444506",
           "title": "STAGE 2027 - Ingénieur Amélioration continue (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Amlioration-continue--ALL-GENDER-_JR10444506"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Maulte-Area, JR10441657",
           "title": "STAGE 2027 - Ingénieur Formation Technique et Culture Qualité (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Formation-Technique-et-Culture-Qualit--ALL-GENDER-_JR10441657"
@@ -1603,7 +1596,7 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10439688",
           "title": "STAGE 2027 -  Ingénieur Structuration Données Techniques (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027----Ingnieur-Structuration-Donnes-Techniques--ALL-GENDER-_JR10439688"
@@ -1617,21 +1610,21 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Rochefort, JR10443678",
           "title": "STAGE 2027 - Ingénieur amélioration continue (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-amlioration-continue--ALL-GENDER-_JR10443678"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Maulte-Area, JR10444317",
           "title": "Stage 2027 - Ingénieur Amélioration Continue Supply Chain (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/Stage-2027---Ingnieur-Amlioration-Continue-Supply-Chain--ALL-GENDER-_JR10444317"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10441732",
           "title": "STAGE 2027 - Gestion de Projets Chaîne d'Approvisionnement (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projets-Chane-d-Approvisionnement--ALL-GENDER-_JR10441732"
@@ -1645,7 +1638,7 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Maulte-Area, JR10444567",
           "title": "STAGE 2027 - Ingénieur Recherche et Technologie Matériaux Composites (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Recherche-et-Technologie-Matriaux-Composites--ALL-GENDER-_JR10444567"
@@ -1955,13 +1948,6 @@
           "company": "HPE",
           "is_new": false,
           "location": "Heredia, Heredia, Costa Rica",
-          "title": "VLSI Engineer Internship",
-          "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/VLSI-Engineer-Internship_1214036/apply"
-        },
-        {
-          "company": "HPE",
-          "is_new": false,
-          "location": "Heredia, Heredia, Costa Rica",
           "title": "Switching Technical Support Engineer Intern | Switching Support – EX Products",
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Switching-Technical-Support-Engineer-Intern---Switching-Support---EX-Products_1214133/apply"
         },
@@ -1978,10 +1964,17 @@
           "location": "Heredia, Heredia, Costa Rica",
           "title": "Contract Administrator (Internship)",
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
+        },
+        {
+          "company": "HPE",
+          "is_new": false,
+          "location": "Heredia, Heredia, Costa Rica",
+          "title": "VLSI Engineer Internship",
+          "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/VLSI-Engineer-Internship_1214036/apply"
         }
       ],
       "unknown_location_total": 60
     }
   },
-  "generated": "2026-10-02T21:45:23.444626+02:00"
+  "generated": "2026-10-03T20:30:03.007588+02:00"
 }

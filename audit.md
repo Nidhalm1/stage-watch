@@ -16,7 +16,7 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-10-02
+`board.html` &middot; sweep of 2026-10-03
 
 ### Unrecognised location - 3
 
@@ -67,8 +67,8 @@ mistake (a French site being read as foreign).
 | Scaleway | [Event Operations Intern](https://jobs.lever.co/scaleway/b4c5c7b1-162c-442e-bc9f-e4b1d621d1a7) | Paris |
 | Scaleway | [Sales Enablement Intern](https://jobs.lever.co/scaleway/b21b7af6-f7f7-42db-9a87-9cc6932a73fc) | Paris |
 | Palantir | [Deployment Strategist, Internship](https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0) | Paris, France |
-| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
 | Microsoft | [Business Program Management Intern - Retail](https://apply.careers.microsoft.com/careers/job/1970393556990763) | France, Paris, Paris |
+| Microsoft | [Legal Counsel Intern](https://apply.careers.microsoft.com/careers/job/1970393556990723) | France, Paris, Paris |
 | Amazon / AWS | [Financial Analyst Intern 2027](https://www.amazon.jobs/en/jobs/10553540/financial-analyst-intern-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [General Marketing Manager Intern- 2027](https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Program Manager Intern FRANCE 2027](https://www.amazon.jobs/en/jobs/10561659/program-manager-intern-france-2027) | Clichy, Ile-de-France, FRA |
@@ -79,7 +79,7 @@ mistake (a French site being read as foreign).
 | Amazon / AWS | [Programme de stage « Pathways » 2027 pour les étudiants en MBA ou en Master d'Ingénierie](https://www.amazon.jobs/en/jobs/10544450/programme-de-stage-pathways-2027-pour-les-etudiants-en-mba-ou-en-master-d-ingenierie) | Orleans, Centre-Val de Loire, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 
-### Outside France - 673 (sample below)
+### Outside France - 694 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -103,22 +103,21 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-10-02
+`board2.html` &middot; sweep of 2026-10-03
 
-### Unrecognised location - 8
+### Unrecognised location - 7
 
 | Company | Title | Location |
 |---|---|---|
 | Murex | [Trading Consultant Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706) | Santiago, JR102706; Intern |
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
-| Siemens | [Customer Relationship Management Intern \| GBS Mexico](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522532) | - |
-| Siemens | [Strategic Student Program: Marketing & Field Execution Internship (Spring 2027, CMMK)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520128) | - |
+| Siemens | [Software & AI Adoption Engineering Intern (Barcelona & Madrid)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651) | - |
 | Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
-| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974) | - |
 | Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
+| Siemens | [Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000) | - |
 | Siemens | [Stage 6 mois- Ingénieur de données f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292) | - |
 
-### Not tech - 127 (showing the first 60)
+### Not tech - 128 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -183,7 +182,7 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage - Consultant(e) - Transformation digitale en Aéronautique -Toulouse](https://jobs.smartrecruiters.com/SopraSteria1/744000149835099) | Toulouse, fr |
 | Sopra Steria | [Stage Consultant(e) - Transformation digitale - People&Change - Ile de France](https://jobs.smartrecruiters.com/SopraSteria1/744000149833263) | Courbevoie, fr |
 
-### Outside France - 75 (sample below)
+### Outside France - 74 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -197,8 +196,8 @@ mistake (a French site being read as foreign).
 | Mirakl | [Business Consultant Intern, Barcelona](https://job-boards.greenhouse.io/mirakl/jobs/6211805004) | Barcelona, Barcelona, Spain |
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
-| Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003) | Brazil - Sao Paulo |
 | Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7652429003) | Mexico - Mexico City |
+| Shift Technology | [Data Scientist Intern (English Speaker)](https://job-boards.greenhouse.io/shifttechnology/jobs/7794260003) | Brazil - Sao Paulo |
 | Amadeus | [Cybersecurity Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Cybersecurity-Intern_R31596) | Taguig-Metro-Manila, R31596 |
 | Amadeus | [Software Developer Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Taguig-Metro-Manila/Software-Developer-Intern_R31590) | Taguig-Metro-Manila, R31590 |
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
@@ -207,7 +206,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-10-02
+`board3.html` &middot; sweep of 2026-10-03
 
 ### Unrecognised location - 60
 
@@ -269,12 +268,12 @@ mistake (a French site being read as foreign).
 | HPE | [Software Intern](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Aguadilla-Puerto-Rico-Puerto-Rico/Software-Intern_1215275-1/apply) | Aguadilla, Puerto Rico |
 | HPE | [Cloud Developer Intern](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Aguadilla-Puerto-Rico-Puerto-Rico/Cloud-Developer-Intern_1215274-1/apply) | Aguadilla, Puerto Rico |
 | HPE | [Technical Support Engineer Intern – Wireless Technologies](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Technical-Support-Engineer-Intern---Wireless-Technologies_1214131/apply) | Heredia, Heredia, Costa Rica |
-| HPE | [VLSI Engineer Internship](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/VLSI-Engineer-Internship_1214036/apply) | Heredia, Heredia, Costa Rica |
 | HPE | [Switching Technical Support Engineer Intern \| Switching Support – EX Products](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Switching-Technical-Support-Engineer-Intern---Switching-Support---EX-Products_1214133/apply) | Heredia, Heredia, Costa Rica |
 | HPE | [Embedded Software Engineer Internship](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Embedded-Software-Engineer-Internship_1214117/apply) | Heredia, Heredia, Costa Rica |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
+| HPE | [VLSI Engineer Internship](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/VLSI-Engineer-Internship_1214036/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 536 (showing the first 60)
+### Not tech - 535 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -305,10 +304,11 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - Chargé de Projet Transformation Marketing & Sales - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Charg-de-Projet-Transformation-Marketing---Sales---F-H_R0338961-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0338961; 02 - STRATEGY, MARKETING, SALES; Thales |
 | Thales | [STAGE -  Chargé de Projets RH - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----Charg-de-Projets-RH---F-H_R0339361) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339361; 12 - HUMAN RESOURCES; Thales |
 | Thales | [STAGE - Project Support for Contract Management Transformation - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Contract-Management---PMO_R0326789-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0326789; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales |
+| Airbus | [STAGE 2027 - Chargé(e) d'Amélioration Numérique & Innovation RH (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Charg-e--d-Amlioration-Numrique---Innovation-RH--h-f-_JR10444078) | Toulouse-Area, JR10444078 |
+| Airbus | [Stage 2027 - Contrôle de gestion des filiales (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Contrle-de-gestion-des-filiales--h-f-_JR10443979) | Toulouse-Area, JR10443979 |
 | Airbus | [Stage 2027 - Non Linear Analyse DFEM - comparaison Nastran /Abaqus (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Non-Linear-Analyse--DFEM-en-utilisent-Nastran-ou-Abaqus--h-f-_JR10444541) | Toulouse-Area, JR10444541 |
 | Airbus | [STAGE 2027 - Amélioration d’un banc de calibration pour des capteurs de pression (f/h)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Amlioration-d-un-banc-de-calibration-pour-des-capteurs-de-pression--f-h-_JR10442622) | Toulouse-Area, JR10442622 |
 | Airbus | [STAGE 2027 Etude et conception de sous-ensembles d’une chaîne RF pour applications spatiales (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-Etude-et-conception-de-sous-ensembles-d-une-chane-RF-pour-applications-spatiales--h-f-_JR10440941) | Toulouse-Area, JR10440941 |
-| Airbus | [STAGE 2027 - Quantification de la résistance à la corrosion d'un alliage d'aluminium protégé  (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Quantification-de-la-rsistance--la-corrosion-d-un-alliage-d-aluminium-protg---F-H-_JR10444847) | Nantes-Area, JR10444847 |
 | Airbus | [Stage 2027 - Stage en Tolérancement Géométrique et Métrologie (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/Stage-2027---Stage-en-Tolrancement-Gomtrique-et-Mtrologie--H-F-_JR10440151) | Nantes-Area, JR10440151 |
 | Airbus | [STAGE 2027 -  Mise en œuvre d’une solution de gestion des identités et des accès (IAM) (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027----Mise-en-uvre-d-une-solution-de-gestion-des-identits-et-des-accs--IAM---h-f-_JR10434926) | Toulouse-Area, JR10434926 |
 | Airbus | [STAGE 2027 Amélioration des Essais en Production / Support FTE (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-Amlioration-des-Essais-en-Production---Support-FTE--h-f-_JR10443549) | Toulouse-Area, JR10443549 |
@@ -337,12 +337,12 @@ mistake (a French site being read as foreign).
 | Airbus | [Stage 2027 - Chargé·e de mission RSE, Transition Écologique & Impact Sociétal (All Gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/tage-2027---Charge-de-mission-RSE--Transition-cologique---Impact-Socital--All-Gender-_JR10447383) | Toulouse-Area, JR10447383 |
 | Airbus | [Stage 2027 en Contrôle de gestion et consolidation des coûts de fonction (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/Stage-2027-en-Contrle-de-gestion-et-consolidation-des-cots-de-fonction--h-f-_JR10443308) | Marseille-Area, JR10443308 |
 | Airbus | [STAGE 2027 - Amélioration continue de la chaîne d'approvisionnement et de la qualité (f/h)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-amlioration-continue-de-la-Supply-Chain-et-de-la-qualit--H-F-_JR10444517) | Toulouse-Area, JR10444517 |
-| Airbus | [STAGE 2027 - Procurement Digitalisation (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Procurement-Digitalisation--h-f-_JR10444988) | Toulouse-Area, JR10444988 |
 
-### Outside France - 812 (sample below)
+### Outside France - 811 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [Intern Customer Experience](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/PAY-CS---Technical-undergraduate-intern-Customer-Experience_R0338766) | Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0338766; 11 - FINANCE; Thales DIS Mexico SA de CV |
 | Thales | [Communications Intern (Jan 2027 Intake)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Communications-Intern_R0338806) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0338806; 14 - COMMUNICATIONS; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Business App Support Intern - 2027 Start](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
 | Thales | [Software Engineer Intern (C#)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/SINGAPORE/Software-Engineer-Intern--C--_R0324316) | SINGAPORE, Intern/Trainee (Fixed Term) (Trainee); R0324316; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
@@ -357,5 +357,4 @@ mistake (a French site being read as foreign).
 | Thales | [Software Engineer Intern - Middleware (IBS)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Engineer-Intern---Middleware--IBS-_R0334782) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0334782; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Solution Customer Service Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/So-Paulo/TUI-Solution-Customer-Service_R0333139-1) | So-Paulo, Intern/Trainee (Fixed Term) (Trainee); R0333139; 07 - CUSTOMER SERVICE; Thales DIS Brasil Cartoes E Solucoes De Tecnologia Ltda. |
 | Thales | [Stagiaire Finance](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rabat/Stagiaire-Finance_R0334044-1) | Rabat, CW Intern/Trainee; R0334044; 11 - FINANCE |
-| Thales | [Hardware Obsolescence Engineer - Internship (Open also to Protected Categories, Law 68/99)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gorgonzola/Hardware-Obsolescence-Engineer---Internship--Open-also-to-Protected-Categories--Law-68-99-_R0333671) | Gorgonzola, CW Intern/Trainee; R0333671; 07 - CUSTOMER SERVICE; Thales Italia S.P.A. |
 
