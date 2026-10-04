@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 694,
+      "foreign_count": 693,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -356,20 +356,6 @@
           "url": "https://jobs.lever.co/palantir/774cf5c9-bf6a-4d77-bf60-d50ef1beb1a0"
         },
         {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Business Program Management Intern - Retail",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990763"
-        },
-        {
-          "company": "Microsoft",
-          "is_new": false,
-          "location": "France, Paris, Paris",
-          "title": "Legal Counsel Intern",
-          "url": "https://apply.careers.microsoft.com/careers/job/1970393556990723"
-        },
-        {
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
@@ -433,8 +419,8 @@
           "url": "https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027"
         }
       ],
-      "non_tech_total": 48,
-      "stamp": "2026-10-03",
+      "non_tech_total": 46,
+      "stamp": "2026-10-04",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -452,17 +438,24 @@
         },
         {
           "company": "IBM",
+          "is_new": true,
+          "location": "Heredia, CR",
+          "title": "Technology Lifecycle Services - Programmer (IBMi) Intern",
+          "url": "https://careers.ibm.com/careers/JobDetail?jobId=134965"
+        },
+        {
+          "company": "IBM",
           "is_new": false,
           "location": "Heredia, CR",
           "title": "Technology Lifecycle Services Internship",
           "url": "https://careers.ibm.com/careers/JobDetail?jobId=134596"
         }
       ],
-      "unknown_location_total": 3
+      "unknown_location_total": 4
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 74,
+      "foreign_count": 72,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -978,7 +971,7 @@
         }
       ],
       "non_tech_total": 128,
-      "stamp": "2026-10-03",
+      "stamp": "2026-10-04",
       "unknown_location": [
         {
           "company": "Murex",
@@ -998,15 +991,8 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Software & AI Adoption Engineering Intern (Barcelona & Madrid)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651"
-        },
-        {
-          "company": "Siemens",
-          "is_new": false,
-          "location": "",
-          "title": "Finance Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+          "title": "Fresh Graduate Engineer - Internship @Siemens Mobility Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
         },
         {
           "company": "Siemens",
@@ -1018,9 +1004,30 @@
         {
           "company": "Siemens",
           "is_new": true,
+          "location": "Muscat, Masqat, Oman",
+          "title": "Proposal Management Intern (Fresh Engineering Graduate)- Muscat, Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522912"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
           "location": "",
-          "title": "Strategic Student Program: Digital Thread & Systems Engineering Internship (Spring 2027, GSCS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521000"
+          "title": "Finance Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Strategic Student Program: Thermo-Mechanical Product Engineering Internship (Spring 2027, SIM STS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521261"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Digital Industries Automation Internship Program - Technical Consulting Track",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522197"
         },
         {
           "company": "Siemens",
@@ -1030,11 +1037,11 @@
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292"
         }
       ],
-      "unknown_location_total": 7
+      "unknown_location_total": 9
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 811,
+      "foreign_count": 796,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1320,13 +1327,20 @@
         {
           "company": "Airbus",
           "is_new": true,
+          "location": "Marseille-Area, JR10435943",
+          "title": "Stage 2027 - Lean Management / Amélioration Continue (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/Stage-2027---Responsable-qualit-rseau-et-amlioration-continue--h-f-_JR10435943"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Toulouse-Area, JR10444078",
           "title": "STAGE 2027 - Chargé(e) d'Amélioration Numérique & Innovation RH (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Charg-e--d-Amlioration-Numrique---Innovation-RH--h-f-_JR10444078"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse-Area, JR10443979",
           "title": "Stage 2027 - Contrôle de gestion des filiales (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Contrle-de-gestion-des-filiales--h-f-_JR10443979"
@@ -1488,13 +1502,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Toulouse-Area, JR10444402",
-          "title": "STAGE 2027 - Stage en Amélioration continue Service Opérations d’Approvisionnement « PICPL Procurement Operations » (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-en-Amlioration-continue-Service-Oprations-d-Approvisionnement---PICPL-Procurement-Operations----h-f-_JR10444402"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Toulouse-Area, JR10441898",
           "title": "Stage 2027– Support à la transformation Cabin & Cargo (MAP) (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027--Support--la-transformation-Cabin---Cargo--MAP---H-F-_JR10441898"
@@ -1549,9 +1556,23 @@
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-amlioration-continue-de-la-Supply-Chain-et-de-la-qualit--H-F-_JR10444517"
         }
       ],
-      "non_tech_total": 535,
-      "stamp": "2026-10-03",
+      "non_tech_total": 527,
+      "stamp": "2026-10-04",
       "unknown_location": [
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10432177",
+          "title": "STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10437937",
+          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité - Structure A350 (H/F)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit---Structure-A350--ALL-GENDER-_JR10437937"
+        },
         {
           "company": "Airbus",
           "is_new": false,
@@ -1576,23 +1597,9 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10437937",
-          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité - Structure A350 (H/F)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit---Structure-A350--ALL-GENDER-_JR10437937"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10438192",
           "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10432177",
-          "title": "STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
         },
         {
           "company": "Airbus",
@@ -1948,6 +1955,13 @@
           "company": "HPE",
           "is_new": false,
           "location": "Heredia, Heredia, Costa Rica",
+          "title": "VLSI Engineer Internship",
+          "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/VLSI-Engineer-Internship_1214036/apply"
+        },
+        {
+          "company": "HPE",
+          "is_new": false,
+          "location": "Heredia, Heredia, Costa Rica",
           "title": "Switching Technical Support Engineer Intern | Switching Support – EX Products",
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Switching-Technical-Support-Engineer-Intern---Switching-Support---EX-Products_1214133/apply"
         },
@@ -1964,17 +1978,10 @@
           "location": "Heredia, Heredia, Costa Rica",
           "title": "Contract Administrator (Internship)",
           "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply"
-        },
-        {
-          "company": "HPE",
-          "is_new": false,
-          "location": "Heredia, Heredia, Costa Rica",
-          "title": "VLSI Engineer Internship",
-          "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/VLSI-Engineer-Internship_1214036/apply"
         }
       ],
       "unknown_location_total": 60
     }
   },
-  "generated": "2026-10-03T20:30:03.007588+02:00"
+  "generated": "2026-10-04T20:31:24.453754+02:00"
 }
