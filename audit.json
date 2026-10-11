@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 716,
+      "foreign_count": 715,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -406,7 +406,7 @@
         }
       ],
       "non_tech_total": 44,
-      "stamp": "2026-10-10",
+      "stamp": "2026-10-11",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -441,7 +441,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 78,
+      "foreign_count": 71,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -956,8 +956,8 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000152932039"
         }
       ],
-      "non_tech_total": 156,
-      "stamp": "2026-10-10",
+      "non_tech_total": 158,
+      "stamp": "2026-10-11",
       "unknown_location": [
         {
           "company": "Murex",
@@ -989,17 +989,17 @@
         },
         {
           "company": "Siemens",
-          "is_new": false,
+          "is_new": true,
           "location": "",
-          "title": "Finance Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+          "title": "Software & AI Adoption Engineering Intern (Barcelona & Madrid)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651"
         },
         {
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Sales Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522491"
+          "title": "Smart Infrastructure Electrical Products Operations Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521212"
         },
         {
           "company": "Siemens",
@@ -1012,6 +1012,34 @@
           "company": "Siemens",
           "is_new": false,
           "location": "",
+          "title": "Finance Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Fresh Graduate Engineer - Internship @Siemens Mobility Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
+          "location": "",
+          "title": "Sales Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522491"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Strategy Internship- Mobility (Summer 2027)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
+          "location": "",
           "title": "Stage en Business Intelligence et Analyse (BI/BA) h/f",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525003"
         },
@@ -1019,15 +1047,15 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Stage Assistant commercial service f/h",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/524930"
+          "title": "Stage 6 mois- Ingénieur de données f/h",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292"
         }
       ],
-      "unknown_location_total": 9
+      "unknown_location_total": 13
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 879,
+      "foreign_count": 877,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1121,6 +1149,34 @@
         }
       ],
       "non_tech": [
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0341211; 19 - HARDWARE; Thales Las France Sas",
+          "title": "STAGE -  Implantation et mise en fonctionnement de techniques d’analyse F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---STAGE---Mise-en-place-et-validation-d-un-rhomtre-pour-la-caractrisation-des-matriaux-F-H_R0341211-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Orlans, Intern/Trainee (Fixed Term) (Trainee); R0342684; 19 - HARDWARE; Thales Las France Sas",
+          "title": "STAGE - Chargé d'études mécanique et électrotechnique F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Charg-d-tudes-mcanique-et-lectrotechnique-F-H_R0342684-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Orlans, Intern/Trainee (Fixed Term) (Trainee); R0342627; 19 - HARDWARE; Thales Las France Sas",
+          "title": "STAGE - Chargé d'études mécanique F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Charg-d-tudes-mcanique-F-H_R0342627-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Orlans, Intern/Trainee (Fixed Term) (Trainee); R0341668; 10 - INDUSTRY; Thales Las France Sas",
+          "title": "STAGE - Mise en place d'une GMAO F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Mise-en-place-d-une-GMAO-F-H_R0341668-1"
+        },
         {
           "company": "Thales",
           "is_new": false,
@@ -1512,38 +1568,10 @@
           "location": "Toulouse-Area, JR10445395",
           "title": "STAGE 2027 - Chef de projet Conseillé Numérique (f/h)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Chef-de-projet-Conseill-Numrique--f-h-_JR10445395"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Toulouse-Area, JR10445579",
-          "title": "STAGE 2027 -   Expert en Analyse de données pour la cabine d'achat après-vente (F/H)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-----Expert-en-Analyse-de-donnes-pour-la-cabine-d-achat-aprs-vente--F-H-_JR10445579"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Toulouse-Area, JR10444714",
-          "title": "STAGE 2027 - Contrôle des exportations (F/H)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Contrle-des-exportations--F-H-_JR10444714"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Toulouse-Area, JR10444786",
-          "title": "STAGE 2027 — Bureau d'Études A350 : Optimisation Structure & Gestion des Interfaces (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Bureau-d-tudes-A350---Optimisation-Structure---Gestion-des-Interfaces--ALL-GENDER-_JR10444786"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Toulouse-Area, JR10441627",
-          "title": "STAGE 2027 - Stage en Dynamique du Vol - Suivi en vol des flottes Pleiades NEO et CO3D (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-en-Dynamique-du-Vol---Suivi-en-vol-des-flottes-Pleiades-NEO-et-CO3D--h-f-_JR10441627"
         }
       ],
-      "non_tech_total": 635,
-      "stamp": "2026-10-10",
+      "non_tech_total": 633,
+      "stamp": "2026-10-11",
       "unknown_location": [
         {
           "company": "Airbus",
@@ -1969,5 +1997,5 @@
       "unknown_location_total": 64
     }
   },
-  "generated": "2026-10-10T21:07:09.806805+02:00"
+  "generated": "2026-10-11T21:19:37.437131+02:00"
 }

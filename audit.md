@@ -16,7 +16,7 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-10-10
+`board.html` &middot; sweep of 2026-10-11
 
 ### Unrecognised location - 4
 
@@ -76,7 +76,7 @@ mistake (a French site being read as foreign).
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 | Amazon / AWS | [Construction Manager Intern (6 months) - 2027 (H/F)](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027-h-f) | Clichy, Ile-de-France, FRA |
 
-### Outside France - 716 (sample below)
+### Outside France - 715 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -100,9 +100,9 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-10-10
+`board2.html` &middot; sweep of 2026-10-11
 
-### Unrecognised location - 9
+### Unrecognised location - 13
 
 | Company | Title | Location |
 |---|---|---|
@@ -110,13 +110,17 @@ mistake (a French site being read as foreign).
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
 | OVHcloud | [STAGE (3-6 mois) - BIM Modeleur H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/) | CROIX |
 | OVHcloud | [STAGE fin d'études - Ingénieur Qualité H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/) | CROIX |
-| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
-| Siemens | [Sales Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522491) | - |
+| Siemens | [Software & AI Adoption Engineering Intern (Barcelona & Madrid)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651) | - |
+| Siemens | [Smart Infrastructure Electrical Products Operations Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521212) | - |
 | Siemens | [Strategic Student Program: Marketing & Field Execution Internship (Spring 2027, CMMK)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/520128) | - |
+| Siemens | [Finance Leadership Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/516238) | - |
+| Siemens | [Fresh Graduate Engineer - Internship @Siemens Mobility Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447) | - |
+| Siemens | [Sales Development Program Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522491) | - |
+| Siemens | [Strategy Internship- Mobility (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/521461) | - |
 | Siemens | [Stage en Business Intelligence et Analyse (BI/BA) h/f](https://jobs.siemens.com/en_US/externaljobs/JobDetail/525003) | - |
-| Siemens | [Stage Assistant commercial service f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/524930) | - |
+| Siemens | [Stage 6 mois- Ingénieur de données f/h](https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292) | - |
 
-### Not tech - 156 (showing the first 60)
+### Not tech - 158 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -181,7 +185,7 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage – Chef/Cheffe de projet Marketing & Communication Fintech](https://jobs.smartrecruiters.com/SopraSteria1/744000152932488) | Paris, fr |
 | Sopra Steria | [Stage – Chef/Cheffe de Projets Europe : Offres et Innovations (Fintech)](https://jobs.smartrecruiters.com/SopraSteria1/744000152932039) | Paris, fr |
 
-### Outside France - 78 (sample below)
+### Outside France - 71 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -205,7 +209,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-10-10
+`board3.html` &middot; sweep of 2026-10-11
 
 ### Unrecognised location - 64 (showing the first 60)
 
@@ -272,10 +276,14 @@ mistake (a French site being read as foreign).
 | HPE | [Embedded Software Engineer Internship](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Embedded-Software-Engineer-Internship_1214117/apply) | Heredia, Heredia, Costa Rica |
 | HPE | [Contract Administrator (Internship)](https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Heredia-Heredia-Costa-Rica/Contract-Administrator--Internship-_1213007/apply) | Heredia, Heredia, Costa Rica |
 
-### Not tech - 635 (showing the first 60)
+### Not tech - 633 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [STAGE -  Implantation et mise en fonctionnement de techniques d’analyse F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---STAGE---Mise-en-place-et-validation-d-un-rhomtre-pour-la-caractrisation-des-matriaux-F-H_R0341211-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0341211; 19 - HARDWARE; Thales Las France Sas |
+| Thales | [STAGE - Chargé d'études mécanique et électrotechnique F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Charg-d-tudes-mcanique-et-lectrotechnique-F-H_R0342684-1) | Orlans, Intern/Trainee (Fixed Term) (Trainee); R0342684; 19 - HARDWARE; Thales Las France Sas |
+| Thales | [STAGE - Chargé d'études mécanique F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Charg-d-tudes-mcanique-F-H_R0342627-1) | Orlans, Intern/Trainee (Fixed Term) (Trainee); R0342627; 19 - HARDWARE; Thales Las France Sas |
+| Thales | [STAGE - Mise en place d'une GMAO F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Mise-en-place-d-une-GMAO-F-H_R0341668-1) | Orlans, Intern/Trainee (Fixed Term) (Trainee); R0341668; 10 - INDUSTRY; Thales Las France Sas |
 | Thales | [STAGE - Technicien Méthodes logistiques - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Chatellerault/STAGE---Technicien-Mthodes-logistiques---F-H_R0342742-1) | Chatellerault, Intern/Trainee (Fixed Term) (Trainee); R0342742; 07 - CUSTOMER SERVICE; Thales Avs France Sas |
 | Thales | [STAGE - Eco-conception et Analyse de Cycle de Vie Produit - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Eco-conception-et-Analyse-de-Cycle-de-Vie-Produit---F-H_R0342306) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0342306; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Las France Sas |
 | Thales | [STAGE - Stagiaire HSE (F/H)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/STAGE---Stagiaire-HSE--F-H-_R0341146-1) | Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0341146; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales SIX GTS France S.A.S. |
@@ -332,12 +340,8 @@ mistake (a French site being read as foreign).
 | Airbus | [Stages 2027 :Stage en Qualité Support Client & Digitalisation (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stages-2027--Stage-en-Qualit-Support-Client---Digitalisation--h-f-_JR10445728) | Toulouse-Area, JR10445728 |
 | Airbus | [Stage 2027- Support au Management de l'Innovation](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027--Support-au-Management-de-l-Innovation_JR10444418) | Toulouse-Area, JR10444418 |
 | Airbus | [STAGE 2027 - Chef de projet Conseillé Numérique (f/h)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Chef-de-projet-Conseill-Numrique--f-h-_JR10445395) | Toulouse-Area, JR10445395 |
-| Airbus | [STAGE 2027 -   Expert en Analyse de données pour la cabine d'achat après-vente (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027-----Expert-en-Analyse-de-donnes-pour-la-cabine-d-achat-aprs-vente--F-H-_JR10445579) | Toulouse-Area, JR10445579 |
-| Airbus | [STAGE 2027 - Contrôle des exportations (F/H)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Contrle-des-exportations--F-H-_JR10444714) | Toulouse-Area, JR10444714 |
-| Airbus | [STAGE 2027 — Bureau d'Études A350 : Optimisation Structure & Gestion des Interfaces (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Bureau-d-tudes-A350---Optimisation-Structure---Gestion-des-Interfaces--ALL-GENDER-_JR10444786) | Toulouse-Area, JR10444786 |
-| Airbus | [STAGE 2027 - Stage en Dynamique du Vol - Suivi en vol des flottes Pleiades NEO et CO3D (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/STAGE-2027---Stage-en-Dynamique-du-Vol---Suivi-en-vol-des-flottes-Pleiades-NEO-et-CO3D--h-f-_JR10441627) | Toulouse-Area, JR10441627 |
 
-### Outside France - 879 (sample below)
+### Outside France - 877 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
