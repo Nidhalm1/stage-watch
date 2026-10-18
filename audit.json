@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 739,
+      "foreign_count": 742,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -303,15 +303,15 @@
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Financial Analyst Intern 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10553540/financial-analyst-intern-2027"
+          "title": "General Marketing Manager Intern- 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "General Marketing Manager Intern- 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
+          "title": "Financial Analyst Intern 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10553540/financial-analyst-intern-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -323,6 +323,13 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
+          "location": "Clichy, Ile-de-France, FRA",
+          "title": "Account Representative Intern, Early Career - 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
           "location": "Toulouse, Occitanie, FRA",
           "title": "Operations Intern - Région Sud - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
@@ -330,9 +337,9 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Clichy, Ile-de-France, FRA",
-          "title": "Account Representative Intern, Early Career - 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027"
+          "location": "Lille, Hauts-de-France, FRA",
+          "title": "Operations Intern - Région Nord - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -347,6 +354,13 @@
           "location": "Augny, Grand Est, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10575617/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
+          "location": "Senlis, Hauts-de-France, FRA",
+          "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10575605/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -372,13 +386,6 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Senlis, Hauts-de-France, FRA",
-          "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10575605/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
           "location": "Sevrey, Bourgogne-Franche-Comte, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10575611/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
@@ -389,13 +396,6 @@
           "location": "Beauchamp, Ile-de-France, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10574522/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
-          "location": "Lille, Hauts-de-France, FRA",
-          "title": "Operations Intern - Région Nord - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -413,7 +413,7 @@
         }
       ],
       "non_tech_total": 45,
-      "stamp": "2026-10-17",
+      "stamp": "2026-10-18",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -448,7 +448,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 89,
+      "foreign_count": 88,
       "foreign_sample": [
         {
           "company": "Qonto",
@@ -963,8 +963,8 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000154460369"
         }
       ],
-      "non_tech_total": 179,
-      "stamp": "2026-10-17",
+      "non_tech_total": 180,
+      "stamp": "2026-10-18",
       "unknown_location": [
         {
           "company": "Murex",
@@ -1003,45 +1003,45 @@
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE fin d'études - Ingénieur Qualité H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-en-simulation-thermique-HFN-59170/1448173333/"
         },
         {
+          "company": "OVHcloud",
+          "is_new": false,
+          "location": "CROIX",
+          "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/"
+        },
+        {
           "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
-          "title": "Engineering Intern – Service Operations & Performance",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/524273"
+          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
         },
         {
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
+          "title": "Stage en Business Intelligence et Analyse (BI/BA) h/f",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525003"
         },
         {
           "company": "Siemens",
@@ -1055,7 +1055,7 @@
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 986,
+      "foreign_count": 980,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1570,8 +1570,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Chef-de-projet-Junior--F-H-_R0340512-1"
         }
       ],
-      "non_tech_total": 752,
-      "stamp": "2026-10-17",
+      "non_tech_total": 744,
+      "stamp": "2026-10-18",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1582,6 +1582,13 @@
         },
         {
           "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10446994",
+          "title": "STAGE 2027 - Animateur Qualité - Structure A350 (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Animateur-Qualit---Structure-A350--ALL-GENDER-_JR10446994"
+        },
+        {
+          "company": "Airbus",
           "is_new": false,
           "location": "Maulte-Area, JR10446977",
           "title": "STAGE 2027 - Digitalisation des méthodes de Fabrication et programmation (ALL GENDER)",
@@ -1589,7 +1596,7 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10432177",
           "title": "STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
@@ -1754,13 +1761,6 @@
           "location": "Rochefort, JR10443384",
           "title": "STAGE 2027 - Ingénieur qualité des exigences fournisseurs (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Optimisation-qualit-des-exigences-fournisseurs--ALL-GENDER-_JR10443384"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Le-Billone, JR10439563",
-          "title": "STAGE 2027 - Ingénieur Amélioration continue (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Le-Billone/STAGE-2027---Ingnieur-Amlioration-continue--h-f-_JR10439563"
         },
         {
           "company": "Airbus",
@@ -1997,5 +1997,5 @@
       "unknown_location_total": 98
     }
   },
-  "generated": "2026-10-17T19:42:24.876486+02:00"
+  "generated": "2026-10-18T19:44:41.118358+02:00"
 }
