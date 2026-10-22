@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 736,
+      "foreign_count": 726,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -149,7 +149,7 @@
           "company": "Doctolib",
           "is_new": false,
           "location": "Paris, Paris, France",
-          "title": "Stage - Consultant en Déploiement Grands Comptes (x/f/m) - janvier et mars 2027",
+          "title": "Stage - Consultant en Déploiement Grands Comptes (x/f/m) - mars 2027",
           "url": "https://job-boards.greenhouse.io/doctolib/jobs/7994230003"
         },
         {
@@ -268,15 +268,15 @@
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "General Marketing Manager Intern- 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
+          "title": "Program Manager Intern FRANCE 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10561659/program-manager-intern-france-2027"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Program Manager Intern FRANCE 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10561659/program-manager-intern-france-2027"
+          "title": "General Marketing Manager Intern- 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -371,7 +371,7 @@
         }
       ],
       "non_tech_total": 39,
-      "stamp": "2026-10-21",
+      "stamp": "2026-10-22",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -406,13 +406,19 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 85,
+      "foreign_count": 82,
       "foreign_sample": [
         {
           "company": "Qonto",
           "location": "Berlin",
           "title": "Social Media Werkstudent (m/w/d)",
           "url": "https://jobs.lever.co/qonto/cb2053c9-938e-4b73-a3c8-d8d42243b301"
+        },
+        {
+          "company": "Qonto",
+          "location": "Barcelona",
+          "title": "Web Engineer Intern",
+          "url": "https://jobs.lever.co/qonto/c3816b19-780d-4f60-b63b-796867d87c6e"
         },
         {
           "company": "Aircall",
@@ -437,12 +443,6 @@
           "location": "Madrid Office",
           "title": "Sales Partnerships Intern",
           "url": "https://jobs.lever.co/aircall/462b6547-d555-4e5f-b5a2-ea8c2de46101"
-        },
-        {
-          "company": "Mistral AI",
-          "location": "Seoul",
-          "title": "Applied Scientist (Internship in Paris or London)",
-          "url": "https://jobs.ashbyhq.com/mistral.ai/60ab6a5e-9b02-4ae7-a0fb-4c7d9ec0fdf8"
         },
         {
           "company": "Mirakl",
@@ -500,6 +500,13 @@
         }
       ],
       "non_tech": [
+        {
+          "company": "Qonto",
+          "is_new": true,
+          "location": "Paris",
+          "title": "Sales Development Representative - Comptabilité (Internship)",
+          "url": "https://jobs.lever.co/qonto/57e46c26-8a23-49a6-8b9d-889891b37993"
+        },
         {
           "company": "BlaBlaCar",
           "is_new": false,
@@ -683,13 +690,6 @@
           "url": "https://jobs.ashbyhq.com/mistral.ai/e3fef906-5874-4ff0-b9a6-faa053e2c961"
         },
         {
-          "company": "Ledger",
-          "is_new": false,
-          "location": "Paris, France",
-          "title": "Internship - Compensation & Benefits",
-          "url": "https://jobs.ashbyhq.com/ledger/6dcd473c-804a-4d0e-b477-4f2a4e318cf2"
-        },
-        {
           "company": "Mirakl",
           "is_new": false,
           "location": "Paris, France",
@@ -770,6 +770,20 @@
           "company": "Deezer",
           "is_new": true,
           "location": "Paris, FR",
+          "title": "Market Research Intern",
+          "url": "https://deezer.teamtailor.com/jobs/8587949-market-research-intern"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Event Production Internship",
+          "url": "https://deezer.teamtailor.com/jobs/8584295-event-production-internship"
+        },
+        {
+          "company": "Deezer",
+          "is_new": false,
+          "location": "Paris, FR",
           "title": "Accounts Payable Accountant - 6 months internship (m/f/d)",
           "url": "https://deezer.teamtailor.com/jobs/8570812-accounts-payable-accountant-6-months-internship-m-f-d"
         },
@@ -782,14 +796,14 @@
         },
         {
           "company": "Deezer",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, FR",
           "title": "Music Operations Assistant - 6 months Internship (m/f/d)",
           "url": "https://deezer.teamtailor.com/jobs/8569908-music-operations-assistant-6-months-internship-m-f-d"
         },
         {
           "company": "Deezer",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, FR",
           "title": "SEO / GEO Intern",
           "url": "https://deezer.teamtailor.com/jobs/8545959-seo-geo-intern"
@@ -888,41 +902,27 @@
         {
           "company": "Sopra Steria",
           "is_new": true,
-          "location": "Cesson-Sévigné, fr",
-          "title": "Stage - Consultant(e) ERP - QAD - Industrie - Rennes",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000156796115"
+          "location": "Courbevoie, fr",
+          "title": "Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157135658"
         },
         {
           "company": "Sopra Steria",
           "is_new": true,
-          "location": "Colomiers, fr",
-          "title": "Stage - Consultant Digital Product Passport - Colomiers",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000156749314"
+          "location": "Paris, fr",
+          "title": "Stage Che(fe) de projets SI - DSI - Ile de france",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157083929"
         },
         {
           "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Paris, fr",
-          "title": "Internship/Stage – VC Marketing operations",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000155950688"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Paris, fr",
-          "title": "Stage – Chef/Cheffe de Projets Europe : Offres et Innovations (Fintech)",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000155751092"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Paris, fr",
-          "title": "Stage - Internal Communication Specialist",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000155524278"
+          "is_new": true,
+          "location": "Aix-en-Provence, fr",
+          "title": "Stagiaire PMO - Transport - Aix-en-Provence",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157054690"
         }
       ],
-      "non_tech_total": 176,
-      "stamp": "2026-10-21",
+      "non_tech_total": 182,
+      "stamp": "2026-10-22",
       "unknown_location": [
         {
           "company": "Murex",
@@ -961,28 +961,28 @@
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur Qualité H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage - AI Engineer H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-AI-Engineer-HFN-59100/1449970033/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
+          "location": "CROIX",
+          "title": "STAGE fin d'études - Ingénieur Qualité H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/"
+        },
+        {
+          "company": "OVHcloud",
+          "is_new": false,
           "location": "CROIX",
           "title": "Stage - Chef de projet documentation industrielle H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1449283133/"
@@ -990,50 +990,62 @@
         {
           "company": "OVHcloud",
           "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-en-simulation-thermique-HFN-59170/1448173333/"
+          "location": "ROUBAIX",
+          "title": "Stage - Développeur FullStack & IA appliquée au test F/H/N",
+          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-D%C3%A9veloppeur-FullStack-&-IA-appliqu%C3%A9e-au-test-FHN-59100/1450224733/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
+          "location": "CROIX",
+          "title": "STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-en-simulation-thermique-HFN-59170/1448173333/"
+        },
+        {
+          "company": "OVHcloud",
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Industrial Lean Officer H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Industrial-Lean-Officer-HFN-59100/1449308133/"
         },
         {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "K%C3%96LN",
-          "title": "Internship HR/Office Manager (m/f/x) - 3 Monate",
-          "url": "https://careers.ovhcloud.com/job/K%C3%96LN-Internship-HROffice-Manager-%28mfx%29-3-Monate-50825/1398232533/"
-        },
-        {
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Stage 6 mois- Ingénieur de données f/h",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292"
+          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
         }
       ],
       "unknown_location_total": 14
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 930,
+      "foreign_count": 928,
       "foreign_sample": [
         {
           "company": "Thales",
-          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339159; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd.",
-          "title": "Software Development and Integration Engineer (Intern)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Software-Development-and-Integration-Engineer--Intern-_R0339159"
+          "location": "Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0339389; 20 - SOFTWARE; Thales DIS Mexico SA de CV",
+          "title": "AI Intern - Business Efficiency - Mobile Connectivity Solutions",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/AI-Intern---Business-Efficiency---Mobile-Connectivity-Solutions_R0339389"
+        },
+        {
+          "company": "Thales",
+          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0345544; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
+          "title": "Internship/graduation assignment - VSM Portal",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Internship-graduation-assignment---VSM-Portal_R0345544"
+        },
+        {
+          "company": "Thales",
+          "location": "Hengelo, Intern/Trainee (Fixed Term) (Trainee); R0345542; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Nederland B.V.",
+          "title": "Internship/graduation assignment - VSM Portal",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Hengelo/Internship-graduation-assignment---VSM-Portal_R0345542"
         },
         {
           "company": "Thales",
@@ -1106,52 +1118,159 @@
           "location": "Gmenos, Intern/Trainee (Fixed Term) (Trainee); R0342135; 09 - PROCUREMENT; Thales Global Services Sas",
           "title": "Stage -  C9x empreinte carbonne F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gmenos/Stage----C9x-empreinte-carbonne-F-H_R0342135-1"
-        },
-        {
-          "company": "Thales",
-          "location": "Singapore, Intern/Trainee (Fixed Term) (Trainee); R0339956; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd.",
-          "title": "Talent Acquisition Intern (Jan 2027 intake)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Talent-Acquisition-Intern--Jan-2027-intake-_R0339956"
-        },
-        {
-          "company": "Thales",
-          "location": "Noida, Intern/Trainee (Fixed Term) (Trainee); R0342443; 20 - SOFTWARE; THALES DIS TECHNOLOGY INDIA PRIVATE LIMITED",
-          "title": "Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Noida/Intern_R0342443"
         }
       ],
       "non_tech": [
         {
           "company": "Thales",
           "is_new": true,
+          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344097; 12 - HUMAN RESOURCES; Thales Las France Sas",
+          "title": "STAGE - Talent Acquisition Partner - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Talent-Acquisition-Partner---F-H_R0344097-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0344604; 07 - CUSTOMER SERVICE; Thales Dms France Sas",
+          "title": "STAGE - Technicien méthodes – Rédaction de Fiches d’Instructions H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-mthodes---Rdaction-de-Fiches-d-Instructions-H-F_R0344604-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0345489; 20 - SOFTWARE; Thales SIX GTS France S.A.S.",
+          "title": "Stage-Portage de traitement multi-voies sur RFSoc-F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/Stage-Portage-de-traitement-multi-voies-sur-RFSoc-F-H_R0345489-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Valence, Intern/Trainee (Fixed Term) (Trainee); R0343507; 10 - INDUSTRY; Thales Avs France Sas",
+          "title": "STAGE - Amélioration continue en Supply Chain - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Valence/STAGE---Amlioration-continue-en-Supply-Chain---F-H_R0343507-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0344760; 19 - HARDWARE; Thales Las France Sas",
+          "title": "STAGE - Etude du comportement des matériaux F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Etude-des-proprits-des-matriaux-sous-sollicitation-dynamique-F-H_R0344760-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0345106; 16 - IS-IT; Thales Global Services Sas",
+          "title": "STAGE - Support fonctionnel Enterprise Content Management – H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Support-fonctionnel-Enterprise-Content-Management---H-F_R0345106-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0344615; 19 - HARDWARE; Thales Alenia Space France Sas",
+          "title": "STAGE - Évaluation des solutions de contrôle non destructif pour les technologies Flip-Chip et SiP - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---valuation-des-solutions-de-contrle-non-destructif-pour-les-technologies-Flip-Chip-et-SiP---F-H_R0344615"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Meyreuil, Intern/Trainee (Fixed Term) (Trainee); R0344525; 19 - HARDWARE; Thales DIS France SAS",
+          "title": "Stage - Orchestration des outils d'évaluation side-channel de composants sécurisés F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meyreuil/Stage---Orchestration-des-outils-d-valuation-side-channel-de-composants-scuriss-F-H_R0344525-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Limours, Intern/Trainee (Fixed Term) (Trainee); R0343733; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas",
+          "title": "Stage PMO - GMR - H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/Stage-PMO---GMR---H-F_R0343733"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0343883; 18 - SYSTEM; Thales SIX GTS France S.A.S.",
+          "title": "STAGE - Suivi de la qualification environnementale d'une baie aéronautique -  F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/STAGE---Suivi-de-la-qualification-environnementale-d-une-baie-aronautique----F-H_R0343883-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Cergy, Intern/Trainee (Fixed Term) (Trainee); R0342352; 07 - CUSTOMER SERVICE; Thales Avs France Sas",
+          "title": "STAGE - Management Industriel, Projets et Supply Chain F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cergy/STAGE---Management-Industriel--Projets-et-Supply-Chain-F-H_R0342352-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0341956; 10 - INDUSTRY; Thales Global Services Sas",
+          "title": "STAGE - Digital Supply Chain – H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Digital-Supply-Chain---H-F_R0341956-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Orlans, Intern/Trainee (Fixed Term) (Trainee); R0343778; 20 - SOFTWARE; Thales Las France Sas",
+          "title": "STAGE - Amélioration UX-UI d’une IHM d’analyse - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Amlioration-UX-UI-d-une-IHM-d-analyse---F-H_R0343778-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Orlans, Intern/Trainee (Fixed Term) (Trainee); R0345022; 10 - INDUSTRY; Thales Las France Sas",
+          "title": "STAGE - Charger d'amélioration Supply Chain  - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Charger-d-amlioration-Supply-Chain----F-H_R0345022"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
+          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0343683; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas",
+          "title": "STAGE - Navigation Automatique aidée par la vision - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Navigation-Automatique-aide-par-la-vision---F-H_R0343683-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0344280; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Las France Sas",
+          "title": "STAGE - HSE Radioprotection F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---HSE-Radioprotection-F-H_R0344280-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Cergy, Intern/Trainee (Fixed Term) (Trainee); R0341974; 11 - FINANCE; Thales Avs France Sas",
+          "title": "STAGE - Amélioration d’une méthode de tuning de pilote automatique pour simulateurs d’entraînement haute-fidélité d’hélicoptère F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cergy/STAGE---Amlioration-d-une-mthode-de-tuning-de-pilote-automatique-pour-simulateurs-d-entranement-haute-fidlit-d-hlicoptre-F-H_R0341974-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
           "location": "Sophia-Antipolis, Intern/Trainee (Fixed Term) (Trainee); R0344577; 07 - CUSTOMER SERVICE; Thales Dms France Sas",
           "title": "Stage - Service Delivery Manager Interventions H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Sophia-Antipolis/Stage---Service-Delivery-Manager-Interventions-H-F_R0344577"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0342957; 10 - INDUSTRY; Thales Avs France Sas",
           "title": "STAGE - Chargé d'amélioration Continue - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-Amlioration-Continue---F-H_R0342957-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345187; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas",
           "title": "STAGE – Project Management Officer – F / H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Project-Management-Officer---F---H_R0345187-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Cannes, Intern/Trainee (Fixed Term) (Trainee); R0344947; 18 - SYSTEM; Thales Alenia Space France Sas",
           "title": "Stage – Mise en œuvre et caractérisation d’un micro-bolomètre pour des missions spatiales – (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Mise-en-uvre-et-caractrisation-d-un-micro-bolomtre-pour-des-missions-spatiales----H-F-_R0344947-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Sophia-Antipolis, Intern/Trainee (Fixed Term) (Trainee); R0344196; 19 - HARDWARE; Thales Dms France Sas",
           "title": "Stage – Technicien Mise en place d'un moyen de mesure de jauges de contrainte – (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Sophia-Antipolis/Stage---Technicien-Mise-en-place-d-un-moyen-de-mesure-de-jauges-de-contrainte----H-F-_R0344196-1"
@@ -1165,42 +1284,35 @@
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Orlans, Intern/Trainee (Fixed Term) (Trainee); R0343763; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas",
           "title": "STAGE – Assistant Project Manager Officer - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Assistant-Project-Manager-Officer---F-H_R0343763-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344888; 03 - BID & PROJECT MANAGEMENT; Thales Services Numériques Sas",
           "title": "STAGE - Project Management Officer - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Project-Management-Officer---F-H_R0344888-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0345117; 20 - SOFTWARE; Thales Dms France Sas",
           "title": "Stage -  Evaluation des stratégies de migration JIRA (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/Stage----Evaluation-des-stratgies-de-migration-JIRA--H-F-_R0345117-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Sophia-Antipolis, Intern/Trainee (Fixed Term) (Trainee); R0343613; 07 - CUSTOMER SERVICE; Thales Services Numériques Sas",
           "title": "Stage – Ingénieur Customer Success Manager – (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Sophia-Antipolis/Stage---Ingnieur-Customer-Success-Manager----H-F-_R0343613-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
-          "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0344760; 19 - HARDWARE; Thales Las France Sas",
-          "title": "STAGE - Etude des propriétés des matériaux sous sollicitation dynamique F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Etude-des-proprits-des-matriaux-sous-sollicitation-dynamique-F-H_R0344760-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0345068; 17 - ENGINEERING AND TECHNICAL MANAGEMENT; Thales Dms France Sas",
           "title": "Stage - Community Manager Transformation IA de l’Ingénierie (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/Stage---Community-Manager-Transformation-IA-de-l-Ingnierie--H-F-_R0345068"
@@ -1218,20 +1330,6 @@
           "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0339361; 12 - HUMAN RESOURCES; Thales",
           "title": "STAGE -  Chargé de Projets RH - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----Charg-de-Projets-RH---F-H_R0339361"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0344986; 10 - INDUSTRY; Thales Dms France Sas",
-          "title": "STAGE - Technicien Méthodes et Industrialisation - H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Technicien-Mthodes-et-Industrialisation---H-F_R0344986-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0343683; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas",
-          "title": "STAGE - Navigation Automatique aidée par la vision - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Navigation-Automatique-aide-par-la-vision---F-H_R0343683-1"
         },
         {
           "company": "Thales",
@@ -1442,112 +1540,21 @@
           "location": "Valence, Intern/Trainee (Fixed Term) (Trainee); R0342847; 19 - HARDWARE; Thales Avs France Sas",
           "title": "STAGE - Technicien - Dessinateur projeteur en bureau d'études mécaniques - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Valence/STAGE---Technicien---Dessinateur-projeteur-en-bureau-d-tudes-mcaniques---F-H_R0342847-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Massy, Intern/Trainee (Fixed Term) (Trainee); R0344077; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas",
-          "title": "STAGE - Assistant Chef de Projet - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Massy/STAGE---Assistant-Chef-de-Projet---F-H_R0344077-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0343569; 02 - STRATEGY, MARKETING, SALES; Thales Services Numériques Sas",
-          "title": "STAGE - Ingénieur commercial - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE--Assistant-commercial---F-H_R0343569"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0343636; 03 - BID & PROJECT MANAGEMENT; Thales Services Numériques Sas",
-          "title": "STAGE - Program Manager Officer Finance et Services  - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---PMO---F-H_R0343636-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0343757; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas",
-          "title": "STAGE - Project Management Office - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Project-Management-Office---F-H_R0343757-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0343517; 20 - SOFTWARE; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Bid manager offres France et Europe- F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/STAGE---Bid-manager-offres-France-et-Europe--F-H_R0343517-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Brive-la-Gaillarde, Intern/Trainee (Fixed Term) (Trainee); R0343777; 07 - CUSTOMER SERVICE; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Assistant logistique et approvisionnement - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Brive-la-Gaillarde/STAGE---Assistant-logistique-et-approvisionnement---F-H_R0343777-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0343425; 20 - SOFTWARE; Thales SIX GTS France S.A.S.",
-          "title": "Stage - Marketing et communication - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/Stage---Marketing-et-communication---F-H_R0343425-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0343713; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Services Numériques Sas",
-          "title": "STAGE - Designer UX - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Designer-UX---F-H_R0343713"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0343434; 03 - BID & PROJECT MANAGEMENT; Thales Global Services Sas",
-          "title": "STAGE – Conception livret de Management de projet – H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Conception-livret-de-Management-de-projet---H-F_R0343434-2"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0343964; 11 - FINANCE; Thales Alenia Space France Sas",
-          "title": "STAGE - Contrôle de Gestion Investissements - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---Contrle-de-Gestion-Investissements---F-H_R0343964-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Massy, Intern/Trainee (Fixed Term) (Trainee); R0343911; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas",
-          "title": "STAGE - Assistant Project Management Office - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Massy/STAGE---Assistant-Project-Management-Office---F-H_R0343911-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Rungis, Intern/Trainee (Fixed Term) (Trainee); R0343695; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Las France Sas",
-          "title": "STAGE - Déploiement de la stratégie environnement et éco-conception sur les équipements de gestion du trafic aérien - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rungis/STAGE---Dploiement-de-la-stratgie-environnement-et-co-conception-sur-les-quipements-de-gestion-du-trafic-arien---F-H_R0343695-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Vendome, Intern/Trainee (Fixed Term) (Trainee); R0343212; 20 - SOFTWARE; Thales Avs France Sas",
-          "title": "STAGE - Optimisation et contrôle du procédé spécial de sertissage filaire - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vendome/STAGE---Optimisation-et-contrle-du-procd-spcial-de-sertissage-filaire---F-H_R0343212-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0319731; 11 - FINANCE; Thales Alenia Space France Sas",
-          "title": "STAGE– Contrôle de Gestion Projet  – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE--Contrle-de-Gestion-Projet----F-H_R0319731-2"
         }
       ],
-      "non_tech_total": 797,
-      "stamp": "2026-10-21",
+      "non_tech_total": 845,
+      "stamp": "2026-10-22",
       "unknown_location": [
         {
           "company": "Thales",
           "is_new": true,
+          "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0344434; 10 - INDUSTRY; Junghans T2M Sas",
+          "title": "STAGE - Ingénieur amélioration continue et performance (F/H)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Ingnieur-amlioration-continue-et-performance--F-H-_R0344434-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
           "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0343603; 10 - INDUSTRY; Junghans T2M Sas",
           "title": "STAGE - Production F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Production-F-H_R0343603-1"
@@ -1583,9 +1590,30 @@
         {
           "company": "Airbus",
           "is_new": true,
-          "location": "Maulte-Area, JR10450573",
-          "title": "STAGE 2027 - Ingénieur Recherche et Technologie Matériaux Composites (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Recherche-et-Technologie-Matriaux-Composites--ALL-GENDER-_JR10450573"
+          "location": "Maulte-Area, JR10450778",
+          "title": "STAGE 2027 - Communication HSE et Prévention des Risques (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Communication-HSE-et-Prvention-des-Risques--ALL-GENDER-_JR10450778"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Saint-Nazaire-Area, JR10446043",
+          "title": "STAGE 2027 - Gestion  de Projet IA & Performance Qualité Client (H/F)(ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion--de-Projet-IA---Performance-Qualit-Client--H-F--ALL-GENDER-_JR10446043"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Antibes-Area, JR10433451",
+          "title": "STAGE 2027 - Stage en développement et industrialisation d'agents d'IA (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Antibes-Area/STAGE-2027---Stage-en-dveloppement-et-industrialisation-d-agents-d-IA--h-f-_JR10433451"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Rochefort, JR10432323",
+          "title": "STAGE 2027 - Amélioration Continue en Production (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-Continue-en-Production--ALL-GENDER-_JR10432323"
         },
         {
           "company": "Airbus",
@@ -1596,7 +1624,7 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Maulte-Area, JR10431251",
           "title": "STAGE 2027 - Amélioration continue et assurance qualité (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Amlioration-continue-et-assurance-qualit--H-F-_JR10431251"
@@ -1604,16 +1632,23 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Rochefort, JR10446170",
-          "title": "STAGE 2027 - Bureau d’études Sièges pilotes - Développement système audio (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Bureau-d-tudes-Siges-pilotes---Dveloppement-systme-audio--ALL-GENDER-_JR10446170"
+          "location": "Saint-Nazaire-Area, JR10438192",
+          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192"
         },
         {
           "company": "Airbus",
-          "is_new": true,
-          "location": "Maulte-Area, JR10450783",
-          "title": "STAGE 2027 - Ingénieur Prévention des Risques Industriels (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Prvention-des-Risques-Industriels--ALL-GENDER-_JR10450783"
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10444465",
+          "title": "STAGE 2027 – Ingénieur Performance Financière et Opérationnelle Qualité (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-du-Pilotage-de-Performance---Digitalisation-Qualit--ALL-GENDER-_JR10444465"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10443276",
+          "title": "STAGE 2027 - Amélioration Produit 350 Structure (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Amlioration-Produit-350-Structure--ALL-GENDER-_JR10443276"
         },
         {
           "company": "Airbus",
@@ -1625,9 +1660,9 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Maulte-Area, JR10446755",
-          "title": "STAGE 2027 - Simulation & robustesse des processus industriels (ALL GENDER) (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Simulation---robustesse-des-processus-industriels--ALL-GENDER---ALL-GENDER-_JR10446755"
+          "location": "Rochefort, JR10446170",
+          "title": "STAGE 2027 - Bureau d’études Sièges pilotes - Développement système audio (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Bureau-d-tudes-Siges-pilotes---Dveloppement-systme-audio--ALL-GENDER-_JR10446170"
         },
         {
           "company": "Airbus",
@@ -1635,6 +1670,13 @@
           "location": "Rochefort, JR10448473",
           "title": "STAGE 2027 - Stage en Contrôle de gestion (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Stage-en-Contrle-de-gestion--ALL-GENDER-_JR10448473"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Maulte-Area, JR10446755",
+          "title": "STAGE 2027 - Simulation & robustesse des processus industriels (ALL GENDER) (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Simulation---robustesse-des-processus-industriels--ALL-GENDER---ALL-GENDER-_JR10446755"
         },
         {
           "company": "Airbus",
@@ -1652,13 +1694,6 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
-          "location": "Saint-Nazaire-Area, JR10445666",
-          "title": "STAGE 2027 - Ingénieur Support Industrialisation Panoplies de Fixations A350 (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Industrialisation-Panoplies-de-Fixations-A350--ALL-GENDER-_JR10445666"
-        },
-        {
-          "company": "Airbus",
           "is_new": false,
           "location": "Saint-Nazaire-Area, JR10442058",
           "title": "STAGE 2027 - Gestion de projet IA et Qualité Industrialisation (ALL GENDER)",
@@ -1666,52 +1701,10 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
-          "location": "Saint-Nazaire-Area, JR10444443",
-          "title": "STAGE 2027 -Automatisation suivi maintenance & obsolescence via Skywise (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Automatisation-suivi-maintenance---obsolescence-via-Skywise--ALL-GENDER-_JR10444443"
-        },
-        {
-          "company": "Airbus",
           "is_new": false,
           "location": "Maulte-Area, JR10445444",
           "title": "STAGE 2027 -  Stage en Assurance Qualité et Métrologie (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027----Stage-en-Assurance-Qualit-et-Mtrologie--ALL-GENDER-_JR10445444"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
-          "location": "Saint-Nazaire-Area, JR10444432",
-          "title": "STAGE 2027 -Ingénieur mécatronique, R&D et Intégration de Systèmes Robotisés (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Ingnieur-mcatronique--R-D-et-Intgration-de-Systmes-Robotiss--ALL-GENDER-_JR10444432"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10439688",
-          "title": "STAGE 2027 -  Ingénieur Structuration Données Techniques (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027----Ingnieur-Structuration-Donnes-Techniques--ALL-GENDER-_JR10439688"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
-          "location": "Saint-Nazaire-Area, JR10445859",
-          "title": "Stage 2027-L’Intelligence artificielle pour amélioration de la Performance Opérationnelle(ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/Stage-2027-L-Intelligence-artificielle-pour-amlioration-de-la-Performance-Oprationnelle-ALL-GENDER-_JR10445859"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10440314",
-          "title": "STAGE 2027 - Ingénieur Projet Performance Supply Chain (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Projet-Performance-Supply-Chain--ALL-GENDER-_JR10440314"
-        },
-        {
-          "company": "Airbus",
-          "is_new": true,
-          "location": "Saint-Nazaire-Area, JR10446011",
-          "title": "STAGE 2027 – Ingenieur Mecanique Productique (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingenieur-Mecanique-Productique--ALL-GENDER-_JR10446011"
         },
         {
           "company": "Airbus",
@@ -1723,9 +1716,30 @@
         {
           "company": "Airbus",
           "is_new": false,
+          "location": "Maulte-Area, JR10450573",
+          "title": "STAGE 2027 - Ingénieur Recherche et Technologie Matériaux Composites (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Recherche-et-Technologie-Matriaux-Composites--ALL-GENDER-_JR10450573"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10439525",
+          "title": "STAGE 2027 - Chargé de Projet SSE en Production & Conduite du Changement (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Sant-Scurit-Environnement-en-production--ALL-GENDER-_JR10439525"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10440793",
           "title": "STAGE 2027 - Intégration & Digitalisation Formation (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Intgration---Digitalisation-Formation--ALL-GENDER-_JR10440793"
+        },
+        {
+          "company": "Airbus",
+          "is_new": true,
+          "location": "Maulte-Area, JR10450070",
+          "title": "STAGE 2027 - Ingénieur en logistique industrielle et optimisation des flux (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-en-logistique-industrielle-et-optimisation-des-flux--ALL-GENDER-_JR10450070"
         },
         {
           "company": "Airbus",
@@ -1744,16 +1758,79 @@
         {
           "company": "Airbus",
           "is_new": true,
-          "location": "Antibes-Area, JR10433762",
-          "title": "STAGE 2027 -  Observabilité & Métriques Cloud : Traitement d’Images Satellitaires (h/f)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Antibes-Area/STAGE-2027----Observability-of-a-cloud-based-satellite-image-processing-application--h-f-_JR10433762"
+          "location": "Maulte-Area, JR10450577",
+          "title": "STAGE 2027 - Ingénieur Recherche et Technologie Matériaux Composites (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Recherche-et-Technologie-Matriaux-Composites--ALL-GENDER-_JR10450577"
         },
         {
           "company": "Airbus",
           "is_new": true,
-          "location": "Saint-Nazaire-Area, JR10439525",
-          "title": "STAGE 2027 - Santé Sécurité Environnement en production (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Sant-Scurit-Environnement-en-production--ALL-GENDER-_JR10439525"
+          "location": "Saint-Nazaire-Area, JR10446757",
+          "title": "STAGE 2027 - Ingénieur en production : industrialisation de pièces élémentaires (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-en-production---industrialisation-de-pices-lmentaires--ALL-GENDER-_JR10446757"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Maulte-Area, JR10450783",
+          "title": "STAGE 2027 - Ingénieur Prévention des Risques Industriels (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Prvention-des-Risques-Industriels--ALL-GENDER-_JR10450783"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10445666",
+          "title": "STAGE 2027 - Ingénieur Support Industrialisation Panoplies de Fixations A350 (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Industrialisation-Panoplies-de-Fixations-A350--ALL-GENDER-_JR10445666"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10444443",
+          "title": "STAGE 2027 -Automatisation suivi maintenance & obsolescence via Skywise (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Automatisation-suivi-maintenance---obsolescence-via-Skywise--ALL-GENDER-_JR10444443"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10444432",
+          "title": "STAGE 2027 -Ingénieur mécatronique, R&D et Intégration de Systèmes Robotisés (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Ingnieur-mcatronique--R-D-et-Intgration-de-Systmes-Robotiss--ALL-GENDER-_JR10444432"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10439688",
+          "title": "STAGE 2027 -  Ingénieur Structuration Données Techniques (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027----Ingnieur-Structuration-Donnes-Techniques--ALL-GENDER-_JR10439688"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10445859",
+          "title": "Stage 2027-L’Intelligence artificielle pour amélioration de la Performance Opérationnelle(ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/Stage-2027-L-Intelligence-artificielle-pour-amlioration-de-la-Performance-Oprationnelle-ALL-GENDER-_JR10445859"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10440314",
+          "title": "STAGE 2027 - Ingénieur Projet Performance Supply Chain (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Projet-Performance-Supply-Chain--ALL-GENDER-_JR10440314"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10446011",
+          "title": "STAGE 2027 – Ingenieur Mecanique Productique (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingenieur-Mecanique-Productique--ALL-GENDER-_JR10446011"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Antibes-Area, JR10433762",
+          "title": "STAGE 2027 -  Observabilité & Métriques Cloud : Traitement d’Images Satellitaires (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Antibes-Area/STAGE-2027----Observability-of-a-cloud-based-satellite-image-processing-application--h-f-_JR10433762"
         },
         {
           "company": "Airbus",
@@ -1772,37 +1849,9 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10438192",
-          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Rochefort, JR10446188",
           "title": "STAGE 2027 - Ingénieur Conception Sièges Pilotes (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Conception-Siges-Pilotes--ALL-GENDER-_JR10446188"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10443276",
-          "title": "STAGE 2027 - Amélioration Produit 350 Structure (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Amlioration-Produit-350-Structure--ALL-GENDER-_JR10443276"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10438445",
-          "title": "STAGE 2027 – Projets méthodes industrialisation (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Projets-mthodes-industrialisation--ALL-GENDER-_JR10438445"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10430316",
-          "title": "STAGE 2027 – Ingénieur Amélioration Continue en production (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Amlioration-Continue-en-production--ALL-GENDER-_JR10430316"
         },
         {
           "company": "Airbus",
@@ -1884,13 +1933,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10444465",
-          "title": "STAGE 2027 – Ingénieur du Pilotage de Performance & Digitalisation Qualité (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-du-Pilotage-de-Performance---Digitalisation-Qualit--ALL-GENDER-_JR10444465"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10446433",
           "title": "STAGE 2027 – Ingénieur des Processus & Gouvernance Outillage de Production (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-des-Processus---Gouvernance-Outillage-de-Production--ALL-GENDER-_JR10446433"
@@ -1922,52 +1964,10 @@
           "location": "Saint-Nazaire-Area, JR10445832",
           "title": "STAGE 2027 - Ingénieur Production (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Production--ALL-GENDER-_JR10445832"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10447006",
-          "title": "STAGE 2027 - Méthode Industrialisation (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Mthode-Industrialisation--ALL-GENDER-_JR10447006"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10443384",
-          "title": "STAGE 2027 - Ingénieur qualité des exigences fournisseurs (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Optimisation-qualit-des-exigences-fournisseurs--ALL-GENDER-_JR10443384"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10445760",
-          "title": "STAGE 2027 - Ingénieur Génie Industriel (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Gnie-Industriel--ALL-GENDER-_JR10445760"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10447103",
-          "title": "STAGE 2027 - Amélioration du pilotage des en-cours de production  (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Amlioration-du-pilotage-des-en-cours-de-production---ALL-GENDER-_JR10447103"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10443686",
-          "title": "STAGE 2027 - Ingénieur Hygiène, Sécurité et Environnement (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Hygine--Scurit-et-Environnement--ALL-GENDER-_JR10443686"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Maulte-Area, JR10440754",
-          "title": "STAGE 2027 - Stagiaire Amélioration Continue (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Stagiaire-Amlioration-Continue--ALL-GENDER-_JR10440754"
         }
       ],
-      "unknown_location_total": 115
+      "unknown_location_total": 121
     }
   },
-  "generated": "2026-10-21T21:06:35.918703+02:00"
+  "generated": "2026-10-22T21:01:34.635089+02:00"
 }
