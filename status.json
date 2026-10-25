@@ -13,7 +13,7 @@
         "SAP"
       ],
       "filtered": 39,
-      "generated": "2026-10-24T19:44:00.785964+02:00",
+      "generated": "2026-10-25T19:00:20.530816+01:00",
       "incomplete": [
         "Confluent (empty)",
         "Red Hat (truncated)",
@@ -27,173 +27,60 @@
       "new_roles_total": 0,
       "recent_roles": [],
       "recent_roles_total": 0,
-      "scanned": 9611,
-      "stamp": "2026-10-24",
+      "scanned": 9603,
+      "stamp": "2026-10-25",
       "unsure": 4
     },
     "board2.html": {
       "also_new": [
         {
-          "company": "OVHcloud",
+          "company": "Siemens",
           "kind": "other",
-          "title": "Stage - Acheteur H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "other",
-          "title": "Stage - Pre-Sales Engineer H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "other",
-          "title": "Stage - Contract Manager H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE fin d'études - Ingénieur Qualité H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "Stage - AI Engineer H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "Stage - Développeur FullStack & IA appliquée au test F/H/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N"
+          "title": "Stage- Chargé de Recrutement et Campus f/h"
         },
         {
           "company": "Siemens",
           "kind": "other",
-          "title": "Stage Contrôle de gestion f/h"
-        },
-        {
-          "company": "Siemens",
-          "kind": "unsure",
-          "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)"
-        },
-        {
-          "company": "Siemens",
-          "kind": "unsure",
-          "title": "Stage 6 mois- Ingénieur de données f/h"
+          "title": "Stagiaire optimisation des flux de commandes f/h"
         }
       ],
-      "also_new_total": 11,
+      "also_new_total": 2,
       "board": "French Tech Watch",
       "closed_today": [],
       "closed_today_total": 0,
-      "closed_total": 111,
+      "closed_total": 110,
       "companies": 29,
-      "failed": 0,
-      "failed_names": [],
-      "filtered": 183,
-      "generated": "2026-10-24T19:45:49.210186+02:00",
+      "failed": 1,
+      "failed_names": [
+        "OVHcloud"
+      ],
+      "filtered": 180,
+      "generated": "2026-10-25T19:02:13.333216+01:00",
       "incomplete": [
         "Qonto (empty)",
         "Dailymotion (empty)",
         "Nokia (truncated)",
         "Siemens (truncated)"
       ],
-      "live": 315,
-      "new": 12,
+      "live": 309,
+      "new": 2,
       "new_roles": [
         {
-          "company": "OVHcloud",
-          "first_seen": "2026-10-24",
-          "location": "BREST",
-          "title": "STAGE fin d'études - ingénieur en conception électronique et système embarqué H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BREST-STAGE-fin-d&apos;%C3%A9tudes-ing%C3%A9nieur-en-conception-%C3%A9lectronique-et-syst%C3%A8me-embarqu%C3%A9-HFN-29200/1450044533/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-10-24",
-          "location": "LYON",
-          "title": "Stage - AI Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/LYON-Stage-AI-Engineer-HFN-69003/1449884033/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-10-24",
-          "location": "BORDEAUX",
-          "title": "Stage - Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BORDEAUX-Stage-Software-Engineer-HFN-33000/1449489233/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-10-24",
-          "location": "BORDEAUX",
-          "title": "Stage - Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BORDEAUX-Stage-Software-Engineer-HFN-33000/1449563833/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-10-24",
-          "location": "BREST",
-          "title": "Stage Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BREST-Stage-Software-Engineer-HFN-29200/1449559333/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-10-24",
-          "location": "BREST",
-          "title": "Stage Software Engineer - H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BREST-Stage-Software-Engineer-HFN-29200/1449551233/"
-        },
-        {
           "company": "Siemens",
-          "first_seen": "2026-10-24",
-          "location": "Haguenau, Grand-Est, France",
-          "title": "Stage ingénieur - Amélioration d'un outil de test controlé par IA h/f",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526075"
-        },
-        {
-          "company": "Siemens",
-          "first_seen": "2026-10-24",
+          "first_seen": "2026-10-25",
           "location": "Chatillon, Île-de-France, France",
-          "title": "Stage développement d'un outil d'analyse de données f/h",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525670"
+          "title": "Stage Ingénieur DevOps / CI-CD pour environnement de développement CBTC H/F",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525479"
         },
         {
           "company": "Siemens",
-          "first_seen": "2026-10-24",
-          "location": "Chatillon, Île-de-France, France",
-          "title": "Stage Ingénieur Développement - Solutions IA F/H",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525630"
-        },
-        {
-          "company": "Siemens",
-          "first_seen": "2026-10-24",
+          "first_seen": "2026-10-25",
           "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
-          "title": "Stage - AI Agent Evaluation for Simcenter Amesim f/m - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525567"
-        },
-        {
-          "company": "Siemens",
-          "first_seen": "2026-10-24",
-          "location": "Haguenau, Grand-Est, France",
-          "title": "Stagiaire - Modélisation et simulation numérique en R&D f/h",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525694"
-        },
-        {
-          "company": "Siemens",
-          "first_seen": "2026-10-24",
-          "location": "Chatillon, Île-de-France, France",
-          "title": "Stagiaire Ingénieur Odométrie Sécuritaire F/H",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/524849"
+          "title": "Stage - Simulation de réseaux et micro-réseaux électriques f/h - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525577"
         }
       ],
-      "new_roles_total": 12,
+      "new_roles_total": 2,
       "recent_roles": [
         {
           "company": "Sopra Steria",
@@ -231,85 +118,109 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157451992"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Colomiers, fr",
-          "title": "Stage - Consultant Développement durable – Adaptation aux changements climatiques  - Colomiers",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157088950"
+          "company": "Alten",
+          "first_seen": "2026-10-23",
+          "location": "Valbonne, fr",
+          "title": "Stage Innovation : Ingénieur DevOps",
+          "url": "https://jobs.smartrecruiters.com/alten/744000157423390"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Colomiers, fr",
-          "title": "Stage - Consultant Développement durable – Impact environnemental & financier de l’IA - Colomiers",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157086484"
+          "company": "Ubisoft",
+          "first_seen": "2026-10-23",
+          "location": "Paris, fr",
+          "title": "Data Governance Project Manager Assistant – Internship (6-month) March 2027 (W/M/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000157499729"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Lyon, fr",
-          "title": "Stage - Développeur/euse Fullstack - Angular Node.js - Transport - Lyon",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157064129"
+          "company": "Ubisoft",
+          "first_seen": "2026-10-23",
+          "location": "Paris, fr",
+          "title": "Data Governance Assistant - Stage (6 mois) Mars 2026 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000157497812"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Lyon, fr",
-          "title": "Stage - Développeur/euse Java augmenté/e par l’IA - Transport - Lyon",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157065838"
+          "company": "Ubisoft",
+          "first_seen": "2026-10-23",
+          "location": "Paris, fr",
+          "title": "Data Operations Assistant - Stage (6 mois) Mars 2026 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000157489749"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Lyon, fr",
-          "title": "Stage - Consultant/e SAP - BL SAP ARA - Lyon",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157064630"
+          "company": "Ubisoft",
+          "first_seen": "2026-10-23",
+          "location": "Paris, fr",
+          "title": "Data Scientist Assistant - Stage (6 mois) Mars 2027 (F/H/NB)",
+          "url": "https://jobs.smartrecruiters.com/Ubisoft2/744000157477860"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Lyon, fr",
-          "title": "Stage - Consultant/e Microsoft 365 & Power Platform - Business Line Développement Régional - Lyon",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157065608"
+          "company": "Siemens",
+          "first_seen": "2026-10-25",
+          "location": "Chatillon, Île-de-France, France",
+          "title": "Stage Ingénieur DevOps / CI-CD pour environnement de développement CBTC H/F",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525479"
         },
         {
-          "company": "Sopra Steria",
-          "first_seen": "2026-10-22",
-          "location": "Annecy, fr",
-          "title": "Stage - Développeur/euse Java - Business Line Développement Régional - Annecy",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157064739"
+          "company": "Siemens",
+          "first_seen": "2026-10-24",
+          "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
+          "title": "Stage - AI Agent Evaluation for Simcenter Amesim f/m - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525567"
         }
       ],
-      "recent_roles_total": 36,
-      "scanned": 5433,
-      "stamp": "2026-10-24",
-      "unsure": 15
+      "recent_roles_total": 16,
+      "scanned": 5396,
+      "stamp": "2026-10-25",
+      "unsure": 7
     },
     "board3.html": {
-      "also_new": [],
-      "also_new_total": 0,
+      "also_new": [
+        {
+          "company": "Dassault Systemes",
+          "kind": "other",
+          "title": " STAGE – Assistant Directeur de Projets 3DEXPERIENCE (F/H) "
+        },
+        {
+          "company": "Credit Agricole",
+          "kind": "other",
+          "title": "STAGE - CHARGE(E) DE PROJETS ET D'ETUDES RH – TALENT MANAGEMENT H/F"
+        },
+        {
+          "company": "Credit Agricole",
+          "kind": "other",
+          "title": "STAGE - Chargé d'Affaires Entreprises Adjoint H/F"
+        }
+      ],
+      "also_new_total": 3,
       "board": "Defence, Finance & Silicon Watch",
       "closed_today": [
         {
-          "company": "Thales",
-          "title": "STAGE - Evaluations de nouveaux outils documentaires à base d’IA Agentique - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Massy/STAGE---Evaluations-de-nouveaux-outils-documentaires--base-d-IA-Agentique---F-H_R0344636-1"
+          "company": "Airbus",
+          "title": "STAGE 2027 - Outil de conception préalable pour drones multi-architecture (Avant-projet) (H/F)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Outil-de-conception-pralable-pour-drones-multi-site--Avant-projet---H-F-_JR10445362"
         },
         {
-          "company": "Thales",
-          "title": "STAGE - IA hybride - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rungis/STAGE---IA-hybride---F-H_R0343314-1"
+          "company": "Airbus",
+          "title": "STAGE 2027 - Optimisation de la certification des modifications systèmes avioniques (h/f)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Optimisation-de-la-certification-des-modifications-systmes-avioniques--h-f-_JR10441355"
+        },
+        {
+          "company": "Airbus",
+          "title": "Stage 2027 - Stagiaire en Développement d'outils IA pour la conception d'écrans de cockpit (F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Stagiaire-en-Dveloppement-d-outils-IA-pour-la-conception-d-crans-de-cockpit--F-H-_JR10443690"
+        },
+        {
+          "company": "Airbus",
+          "title": "Stage 2027 - Stagiaire en Data & Implementation Project Owner A220 MSN Centric (F/H)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027---Stagiaire-en-Data---Implementation-Project-Owner-A220-MSN-Centric--F-H-_JR10442483"
         }
       ],
-      "closed_today_total": 2,
-      "closed_total": 235,
+      "closed_today_total": 4,
+      "closed_total": 230,
       "companies": 25,
-      "failed": 1,
-      "failed_names": [
-        "Qualcomm"
-      ],
-      "filtered": 837,
-      "generated": "2026-10-24T19:47:29.801178+02:00",
+      "failed": 0,
+      "failed_names": [],
+      "filtered": 832,
+      "generated": "2026-10-25T19:04:22.295450+01:00",
       "incomplete": [
         "MBDA (truncated)",
         "J.P. Morgan (truncated)",
@@ -318,25 +229,67 @@
         "Dell (truncated)",
         "HPE (truncated)"
       ],
-      "live": 1168,
-      "new": 2,
+      "live": 1165,
+      "new": 8,
       "new_roles": [
         {
           "company": "Dassault Systemes",
-          "first_seen": "2026-10-24",
-          "location": "France, Aix en Provence",
-          "title": "STAGE - Ingenieur R&D Deep Reinforcement  Learning - Aix-en-Provence (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-r-d-deep-reinforcement-learning-aix-en-provence-f-h-549590"
+          "first_seen": "2026-10-25",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Gestion d'environnements d'intégration de Drops fonctionnels avec de IA agentique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-gestion-d-environnements-d-integration-de-drops-fonctionnels-avec-de-ia-agentique-f-h-549520"
         },
         {
           "company": "Dassault Systemes",
-          "first_seen": "2026-10-24",
+          "first_seen": "2026-10-25",
           "location": "France, Aix en Provence",
-          "title": "STAGE - Ingenieur IA générative axée sur la physique - Aix-en-Provence (F/H)",
-          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-ia-generative-axee-sur-la-physique-aix-en-provence-f-h-549589"
+          "title": "STAGE - Évaluation d'un assistant de codage basé sur l'IA pour les architectures logicielles complexes (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-evaluation-d-un-assistant-de-codage-base-sur-l-ia-pour-les-architectures-logicielles-complexes-f-h-548959"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-10-25",
+          "location": "France, Aix en Provence",
+          "title": "STAGE - Ingénieur Génie Civil / Bâtiment / Construction - Aix-en-Provence (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-genie-civil-batiment-construction-aix-en-provence-f-h-549746"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-10-25",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Logiciel - C++ & IA (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-logiciel-c-ia-f-h-549743"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-10-25",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Ingénieur Continuité d'Activité et Résilience SI (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-continuite-d-activite-et-resilience-si-f-h-549676"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-10-25",
+          "location": "France, Vélizy-Villacoublay",
+          "title": "STAGE - Intelligence Artificielle & Géométrie 3D pour la Simulation Numérique (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-intelligence-artificielle-geometrie-3d-pour-la-simulation-numerique-f-h-549649"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-10-25",
+          "location": "France, Valbonne",
+          "title": "STAGE - Ingénieur.e Recherche - Landscape de compagnons IA dans la santé mentale (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-e-recherche-landscape-de-compagnons-ia-dans-la-sante-mentale-f-h-549611"
+        },
+        {
+          "company": "Dassault Systemes",
+          "first_seen": "2026-10-25",
+          "location": "France, Aix en Provence",
+          "title": "STAGE - Ingénieur R&D Generative IA Surfacique - Aix-en-Provence (F/H)",
+          "url": "https://www.3ds.com/careers/jobs/stage-ingenieur-r-d-generative-ia-surfacique-aix-en-provence-f-h-549591"
         }
       ],
-      "new_roles_total": 2,
+      "new_roles_total": 8,
       "recent_roles": [
         {
           "company": "Thales",
@@ -423,11 +376,11 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Valence/STAGE---Ingnieur---Dveloppement-d-une-IA-de-dtection-de-dfauts-par-analyse-Rayons-X---F-H_R0345069-1"
         }
       ],
-      "recent_roles_total": 137,
-      "scanned": 8534,
-      "stamp": "2026-10-24",
+      "recent_roles_total": 71,
+      "scanned": 8515,
+      "stamp": "2026-10-25",
       "unsure": 120
     }
   },
-  "generated": "2026-10-24T19:47:29.801178+02:00"
+  "generated": "2026-10-25T19:04:22.295450+01:00"
 }

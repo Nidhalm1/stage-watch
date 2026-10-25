@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 688,
+      "foreign_count": 687,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -261,15 +261,15 @@
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "Program Manager Intern FRANCE 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10561659/program-manager-intern-france-2027"
+          "title": "General Marketing Manager Intern- 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
-          "title": "General Marketing Manager Intern- 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10554232/general-marketing-manager-intern-2027"
+          "title": "Program Manager Intern FRANCE 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10561659/program-manager-intern-france-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -284,6 +284,13 @@
           "location": "Toulouse, Occitanie, FRA",
           "title": "Operations Intern - Région Sud - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
+          "location": "Lille, Hauts-de-France, FRA",
+          "title": "Operations Intern - Région Nord - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -344,13 +351,6 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Lille, Hauts-de-France, FRA",
-          "title": "Operations Intern - Région Nord - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
           "location": "Paris, Ile-de-France, FRA",
           "title": "Operations Intern - Île de France - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027"
@@ -371,7 +371,7 @@
         }
       ],
       "non_tech_total": 39,
-      "stamp": "2026-10-24",
+      "stamp": "2026-10-25",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -406,7 +406,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 83,
+      "foreign_count": 81,
       "foreign_sample": [
         {
           "company": "Aircall",
@@ -921,8 +921,8 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000157135658"
         }
       ],
-      "non_tech_total": 183,
-      "stamp": "2026-10-24",
+      "non_tech_total": 180,
+      "stamp": "2026-10-25",
       "unknown_location": [
         {
           "company": "Murex",
@@ -960,81 +960,25 @@
           "url": "https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127"
         },
         {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur Qualité H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "ROUBAIX",
-          "title": "Stage - AI Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-AI-Engineer-HFN-59100/1449970033/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "Stage - Chef de projet documentation industrielle H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1449283133/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "ROUBAIX",
-          "title": "Stage - Développeur FullStack & IA appliquée au test F/H/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-D%C3%A9veloppeur-FullStack-&-IA-appliqu%C3%A9e-au-test-FHN-59100/1450224733/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-en-simulation-thermique-HFN-59170/1448173333/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
-          "location": "ROUBAIX",
-          "title": "Industrial Lean Officer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Industrial-Lean-Officer-HFN-59100/1449308133/"
-        },
-        {
           "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908"
         },
         {
           "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Stage 6 mois- Ingénieur de données f/h",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523292"
         }
       ],
-      "unknown_location_total": 15
+      "unknown_location_total": 7
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 935,
+      "foreign_count": 937,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1549,8 +1493,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cergy/STAGE---Conception-mcanique-F-H_R0342348-1"
         }
       ],
-      "non_tech_total": 837,
-      "stamp": "2026-10-24",
+      "non_tech_total": 832,
+      "stamp": "2026-10-25",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1597,6 +1541,20 @@
         {
           "company": "Airbus",
           "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10438192",
+          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10432177",
+          "title": "STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
           "location": "Maulte-Area, JR10444561",
           "title": "STAGE 2027 -  Digitalisation & Automatisation Atelier R&T Composite (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027----Digitalisation--d-atelier-et-amlioration-continue--ALL-GENDER-_JR10444561"
@@ -1621,20 +1579,6 @@
           "location": "Maulte-Area, JR10431251",
           "title": "STAGE 2027 - Amélioration continue et assurance qualité (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Amlioration-continue-et-assurance-qualit--H-F-_JR10431251"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10432177",
-          "title": "STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10438192",
-          "title": "STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192"
         },
         {
           "company": "Airbus",
@@ -1976,5 +1920,5 @@
       "unknown_location_total": 120
     }
   },
-  "generated": "2026-10-24T19:47:29.801178+02:00"
+  "generated": "2026-10-25T19:04:22.295450+01:00"
 }
