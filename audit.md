@@ -16,22 +16,23 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-10-26
+`board.html` &middot; sweep of 2026-10-27
 
 ### Unrecognised location - 4
 
 | Company | Title | Location |
 |---|---|---|
-| Cloudflare | [Software Engineer Intern (2027)](https://boards.greenhouse.io/cloudflare/jobs/8245211?gh_jid=8245211) | In-Office |
 | Cloudflare | [Software Engineer Intern (2027)](https://boards.greenhouse.io/cloudflare/jobs/8245197?gh_jid=8245197) | In-Office |
+| Cloudflare | [Software Engineer Intern (2027)](https://boards.greenhouse.io/cloudflare/jobs/8245211?gh_jid=8245211) | In-Office |
 | Cloudflare | [Software Engineer Intern (2027) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8199958?gh_jid=8199958) | In-Office |
 | IBM | [AI Engineer Intern](https://careers.ibm.com/careers/JobDetail?jobId=137390) | MONTEVIDEO, UY |
 
-### Not tech - 39
+### Not tech - 41
 
 | Company | Title | Location |
 |---|---|---|
 | Datadog | [Applied Science Intern](https://careers.datadoghq.com/detail/8181440/?gh_jid=8181440) | Paris, France |
+| Doctolib | [Stage - Administrateur des ventes, Grands Comptes (x/f/m) - janvier 2027](https://job-boards.greenhouse.io/doctolib/jobs/8046009003) | Paris, Paris, France |
 | Doctolib | [Stage - Analyste Stratégie Marketing Patient (x/f/m) - janvier 2027](https://job-boards.greenhouse.io/doctolib/jobs/7993899003) | Paris, Paris, France |
 | Doctolib | [Stage - Assistant Commercial (x/f/m) - janvier 2027](https://job-boards.greenhouse.io/doctolib/jobs/7997192003) | Strasbourg |
 | Doctolib | [Stage - Assistant Conformité & Modération de Contenu (x/f/m) - janvier 2027](https://job-boards.greenhouse.io/doctolib/jobs/7999286003) | Paris, Paris, France |
@@ -44,6 +45,7 @@ mistake (a French site being read as foreign).
 | Doctolib | [Stage - Sales Development Representative (x/f/m) - décembre 2026](https://job-boards.greenhouse.io/doctolib/jobs/7988665003) | Paris, Paris, France |
 | Doctolib | [Stage - Salesforce Support Associate (x/f/m)](https://job-boards.greenhouse.io/doctolib/jobs/7994049003) | Nantes |
 | Doctolib | [Stage - Social Media Manager B2C (x/f/m) - janvier 2027](https://job-boards.greenhouse.io/doctolib/jobs/7992550003) | Paris, Paris, France |
+| Doctolib | [Stage - Strategy & Operations (x/f/m) - mars 2027](https://job-boards.greenhouse.io/doctolib/jobs/8045999003) | Paris, Paris, France |
 | Doctolib | [Stage - Talent Acquisition Coordinator (x/f/m) - janvier 2027](https://job-boards.greenhouse.io/doctolib/jobs/7998167003) | Paris, Paris, France |
 | Criteo | [Stage – Campaign Manager Intern \| Janvier 2027](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Agency-Campaign-Manager-Intern--Performance-Media---French-Speaker_r20855) | Paris, France |
 | Criteo | [CSR (Sustainability) Internship](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/CSR--Sustainability--Internship_r21190) | Paris, France |
@@ -58,24 +60,23 @@ mistake (a French site being read as foreign).
 | Amazon / AWS | [Program Manager Intern FRANCE 2027](https://www.amazon.jobs/en/jobs/10561659/program-manager-intern-france-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Account Representative Intern, Early Career - 2027](https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Région Sud - Start Date 2027](https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027) | Toulouse, Occitanie, FRA |
+| Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Programme de stage « Pathways » 2027 pour les étudiants en MBA ou en Master d'Ingénierie](https://www.amazon.jobs/en/jobs/10544450/programme-de-stage-pathways-2027-pour-les-etudiants-en-mba-ou-en-master-d-ingenierie) | Orleans, Centre-Val de Loire, FRA |
 | Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575617/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Augny, Grand Est, FRA |
-| Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575605/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Senlis, Hauts-de-France, FRA |
 | Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575610/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Boves, Hauts-de-France, FRA |
+| Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575605/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Senlis, Hauts-de-France, FRA |
 | Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575606/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Brétigny-sur-Orge, Ile-de-France, FRA |
 | Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575484/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Lauwin-Planque, Hauts-de-France, FRA |
 | Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10575611/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Lyon, Auvergne-Rhone-Alpes, FRA |
 | Amazon / AWS | [Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027](https://www.amazon.jobs/en/jobs/10574522/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027) | Beauchamp, Ile-de-France, FRA |
-| Amazon / AWS | [Operations Intern - Région Nord - Start Date 2027](https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027) | Lille, Hauts-de-France, FRA |
 | Amazon / AWS | [Operations Intern - Île de France - Start Date 2027](https://www.amazon.jobs/en/jobs/10504822/operations-intern-ile-de-france-start-date-2027) | Paris, Ile-de-France, FRA |
 | Amazon / AWS | [Construction Manager Intern (6 months) - 2027 (H/F)](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027-h-f) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [AWS Commercial Sales Internship](https://www.amazon.jobs/en/jobs/10587751/aws-commercial-sales-internship) | Paris, Ile-de-France, FRA |
 
-### Outside France - 682 (sample below)
+### Outside France - 688 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
-| Datadog | [Product Management Intern](https://careers.datadoghq.com/detail/8108241/?gh_jid=8108241) | New York, New York, USA |
 | Datadog | [Research Science Intern (PhD)](https://careers.datadoghq.com/detail/8203657/?gh_jid=8203657) | New York, New York, USA; Pittsburgh, Pennsylvania, USA |
 | Datadog | [Software Engineering Intern](https://careers.datadoghq.com/detail/8114161/?gh_jid=8114161) | Madrid, Spain |
 | Datadog | [Software Engineering Intern (Summer)](https://careers.datadoghq.com/detail/8052118/?gh_jid=8052118) | Boston, Massachusetts, USA; New York, New York, USA |
@@ -84,9 +85,10 @@ mistake (a French site being read as foreign).
 | Doctolib | [Software Engineer Intern - Fullstack (x/f/m) - Amsterdam](https://job-boards.greenhouse.io/doctolib/jobs/8006520003) | Amsterdam, North Holland, Netherlands |
 | Doctolib | [Software Engineer Intern - Fullstack (x/f/m) - Berlin - March 2027](https://job-boards.greenhouse.io/doctolib/jobs/8007923003) | Berlin, Berlin, Germany |
 | Doctolib | [Software Engineer Intern - Fullstack (x/f/m) - Milano](https://job-boards.greenhouse.io/doctolib/jobs/8000653003) | Milano, Milan, Italy |
+| Criteo | [Commercial Intern – SDR & Demand Support](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/London/Commercial-Intern---SDR---Demand-Support_r21216) | London, United Kingdom |
+| Criteo | [APAC Field Marketing Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Singapore/APAC-Field-Marketing-Intern_r21159) | Singapore, Singapore |
 | Criteo | [Sales Excellence Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Sales-Excellence-Intern_r21250) | Barcelona, Spain |
 | Criteo | [Customer Success Intern, Retailer Partnerships](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/London/Customer-Success-Intern--Retailer-Partnerships_r21221-1) | London, United Kingdom |
-| Criteo | [Commercial Intern – SDR & Demand Support](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/London/Commercial-Intern---SDR---Demand-Support_r21216) | London, United Kingdom |
 | Criteo | [Account Strategist Intern Northern Europe - Dutch or Nordic speaker](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/Account-Strategist-Intern-Northern-Europe---Dutch-or-Nordic-speaker_r21059) | Barcelona, Spain |
 | Criteo | [BI Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/BI-Analyst-Intern_r21068) | Barcelona, Spain |
 | Criteo | [BI Analyst Intern](https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Barcelona/BI-Analyst-Intern_r21147) | Barcelona, Spain |
@@ -95,9 +97,9 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-10-26
+`board2.html` &middot; sweep of 2026-10-27
 
-### Unrecognised location - 17
+### Unrecognised location - 8
 
 | Company | Title | Location |
 |---|---|---|
@@ -106,20 +108,11 @@ mistake (a French site being read as foreign).
 | Murex | [Integrations Internship](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Integrations-Internship_JR103327) | Santiago, JR103327; Intern |
 | Murex | [Trading Consultant Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Santiago/Trading-Consultant-Intern_JR102706) | Santiago, JR102706; Intern |
 | Murex | [Undergraduate Internship Program 2027](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Beirut/Undergraduate-Internship-Program-2027_JR103127) | Beirut, JR103127; Intern |
-| OVHcloud | [STAGE (3-6 mois) - BIM Modeleur H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/) | CROIX |
-| OVHcloud | [Stage - AI Engineer H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-AI-Engineer-HFN-59100/1449970033/) | ROUBAIX |
-| OVHcloud | [STAGE fin d'études - Ingénieur Qualité H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/) | CROIX |
-| OVHcloud | [Stage - Office Manager City H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-Office-Manager-City-HFN-59100/1451369233/) | ROUBAIX |
-| OVHcloud | [Stage - Chef de projet documentation industrielle H/F/N](https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1449283133/) | CROIX |
-| OVHcloud | [Stage Software Engineer Backend - H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-Software-Engineer-Backend-HFN-59100/1451171233/) | ROUBAIX |
-| OVHcloud | [Stage - Développeur FullStack & IA appliquée au test F/H/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-D%C3%A9veloppeur-FullStack-&-IA-appliqu%C3%A9e-au-test-FHN-59100/1450224733/) | ROUBAIX |
-| OVHcloud | [STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-en-simulation-thermique-HFN-59170/1448173333/) | CROIX |
-| OVHcloud | [STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/) | CROIX |
-| OVHcloud | [Industrial Lean Officer H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Industrial-Lean-Officer-HFN-59100/1449308133/) | ROUBAIX |
-| Siemens | [Sales Operations Support Intern](https://jobs.siemens.com/en_US/externaljobs/JobDetail/526815) | - |
-| Siemens | [Software & AI Adoption Engineering Intern (Barcelona & Madrid)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/515651) | - |
+| Siemens | [Remote Supply Chain Management Intern (Summer 2027)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/526349) | - |
+| Siemens | [Strategic Student Program: AI & Engineering Data Internship (Spring 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/519908) | - |
+| Siemens | [Stage en Business Intelligence et Analyse (BI/BA) h/f](https://jobs.siemens.com/en_US/externaljobs/JobDetail/525003) | - |
 
-### Not tech - 184 (showing the first 60)
+### Not tech - 176 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -150,7 +143,7 @@ mistake (a French site being read as foreign).
 | Alan | [People Associate (internship)](https://jobs.ashbyhq.com/alan/71fa3e9d-1f5f-4e3f-a1de-e68b3c85803a) | Paris, France |
 | Alan | [Enterprise Sales & Strategy Associate (Internship)](https://jobs.ashbyhq.com/alan/4196504b-488f-4376-bc56-eba9889fd763) | Paris |
 | Mistral AI | [IP & Licensing - Intern](https://jobs.ashbyhq.com/mistral.ai/e3fef906-5874-4ff0-b9a6-faa053e2c961) | Paris |
-| Mirakl | [Business Value Consultant Intern](https://job-boards.greenhouse.io/mirakl/jobs/5661348004) | Paris, France |
+| Sorare | [Marketing Intern](https://jobs.ashbyhq.com/sorare/66d081cd-cf6e-491c-8a73-8891f7c7ed0d) | Paris |
 | Mirakl | [Finance Analyst intern](https://job-boards.greenhouse.io/mirakl/jobs/5131573004) | Paris, France |
 | Mirakl | [HR Project Manager Intern - January 2027](https://job-boards.greenhouse.io/mirakl/jobs/6220219004) | Paris, France |
 | Mirakl | [Legal Intern - July 2027](https://job-boards.greenhouse.io/mirakl/jobs/5131494004) | Paris, France |
@@ -160,6 +153,7 @@ mistake (a French site being read as foreign).
 | Mirakl | [Sales Excellence Project Intern](https://job-boards.greenhouse.io/mirakl/jobs/6218264004) | Paris, France |
 | Mirakl | [Solution Consultant Intern](https://job-boards.greenhouse.io/mirakl/jobs/6219180004) | Paris, France |
 | Deezer | [Localization Assistant Intern m/f/d](https://deezer.teamtailor.com/jobs/8593399-localization-assistant-intern-m-f-d) | Paris, FR |
+| Deezer | [Global Communications and PR Intern](https://deezer.teamtailor.com/jobs/8619919-global-communications-and-pr-intern) | Paris, FR |
 | Deezer | [General Accounting - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/8611383-general-accounting-intern-m-f-d) | Paris, FR |
 | Deezer | [Commercial Analyst Intern m/f/d](https://deezer.teamtailor.com/jobs/8610548-commercial-analyst-intern-m-f-d) | Paris, FR |
 | Deezer | [Sales Enablement Intern](https://deezer.teamtailor.com/jobs/8609163-sales-enablement-intern) | Paris, FR |
@@ -171,12 +165,11 @@ mistake (a French site being read as foreign).
 | Deezer | [B2B Accounting - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/8570633-b2b-accounting-intern-m-f-d) | Paris, FR |
 | Deezer | [Music Operations Assistant - 6 months Internship (m/f/d)](https://deezer.teamtailor.com/jobs/8569908-music-operations-assistant-6-months-internship-m-f-d) | Paris, FR |
 | Deezer | [SEO / GEO Intern](https://deezer.teamtailor.com/jobs/8545959-seo-geo-intern) | Paris, FR |
-| Deezer | [Social Ads Creative Manager Intern - FRENCH REQUIRED (m/f/d)](https://deezer.teamtailor.com/jobs/8272091-social-ads-creative-manager-intern-french-required-m-f-d) | Paris, FR |
 | Deezer | [Commercial Project Management - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7635652-commercial-project-management-intern-m-f-d) | Paris, FR |
 | Deezer | [Strategy & M&A Intern - 6 months (m/f/d)](https://deezer.teamtailor.com/jobs/7633228-strategy-m-a-intern-6-months-m-f-d) | Paris, FR |
 | Deezer | [Talent acquisition & HR development - 6 months internship (m/f/d)](https://deezer.teamtailor.com/jobs/7632031-talent-acquisition-hr-development-6-months-internship-m-f-d) | Paris, FR |
-| Deezer | [Global Artist Relations Manager - Internship (m/f/d)](https://deezer.teamtailor.com/jobs/7632016-global-artist-relations-manager-internship-m-f-d) | Paris, FR |
 | Deezer | [Stage Concepteur·ice-Rédacteur·ice / Copywriter (H/F/X)](https://deezer.teamtailor.com/jobs/7632035-stage-concepteur-ice-redacteur-ice-copywriter-h-f-x) | Paris, FR |
+| Deezer | [Sales Intern - Deezer for Professionals (FRENCH SPEAKING MANDATORY)-(m/f/d)](https://deezer.teamtailor.com/jobs/7632050-sales-intern-deezer-for-professionals-french-speaking-mandatory-m-f-d) | Paris, FR |
 | Deezer | [FP&A intern - Revenue & Marketing  m/f/d](https://deezer.teamtailor.com/jobs/7632082-fp-a-intern-revenue-marketing-m-f-d) | Paris, FR |
 | Deezer | [Legal Corporate & Compliance - Intern (m/f/d)](https://deezer.teamtailor.com/jobs/7632102-legal-corporate-compliance-intern-m-f-d) | Paris, FR |
 | Deezer | [Marketing Assistant France (FRENCH SPEAKING NATIVE MANDATORY) - Internship (m/f/d)](https://deezer.teamtailor.com/jobs/7632104-marketing-assistant-france-french-speaking-native-mandatory-internship-m-f-d) | Paris, FR |
@@ -184,7 +177,7 @@ mistake (a French site being read as foreign).
 | Deezer | [Business Development Intern - 6 months (m/f/d)](https://deezer.teamtailor.com/jobs/7632112-business-development-intern-6-months-m-f-d) | Paris, FR |
 | Amadeus | [INTERN - Internal communications](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Nice/INTERN---Internal-communications_R38257) | Nice, R38257 |
 
-### Outside France - 80 (sample below)
+### Outside France - 86 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -192,6 +185,7 @@ mistake (a French site being read as foreign).
 | Aircall | [Regional Marketing Intern, LATAM (12 months)](https://jobs.lever.co/aircall/0e52ec00-a327-49de-9378-6b8487229f89) | San Francisco Office |
 | Aircall | [Sales Intern - UKI Market](https://jobs.lever.co/aircall/f1d2fb78-a40b-4a33-ab8f-75e573ba9749) | London Office |
 | Aircall | [Sales Partnerships Intern](https://jobs.lever.co/aircall/462b6547-d555-4e5f-b5a2-ea8c2de46101) | Madrid Office |
+| Back Market | [Data Analyst Intern](https://jobs.ashbyhq.com/backmarket/fb5d65f8-3619-46fa-8397-43d9ec1450f6) | Barcelona |
 | Mirakl | [Business Analyst Intern, London](https://job-boards.greenhouse.io/mirakl/jobs/6213022004) | London, England, United Kingdom |
 | Shift Technology | [Data Science Internship](https://job-boards.greenhouse.io/shifttechnology/jobs/7673330003) | Singapore - Singapore |
 | Shift Technology | [Data Science internship - Spanish speaker (6months)](https://job-boards.greenhouse.io/shifttechnology/jobs/7687752003) | Spain - Madrid |
@@ -201,16 +195,15 @@ mistake (a French site being read as foreign).
 | Amadeus | [Software QA Engineering Intern](https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Manila-Metro-Manila/Software-QA-Engineering-Intern_R29236) | Manila-Metro-Manila, R29236 |
 | Murex | [INTERNSHIP TUNIS -  Functional Product Engineer](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Tunis/EVERGREEN-INTERNSHIP-TUNIS---CS-Functional-Product_JR103123) | Tunis, JR103123; Intern |
 | Murex | [Trading Domain Functional Intern](https://murex.wd3.myworkdayjobs.com/en-US/MurexCareerPage1/job/Toronto/Trading-Domain-Functional-Intern_JR103273) | Toronto, JR103273; Intern |
-| Sopra Steria | [Sommerjobb Forretningsrådgivning 2027](https://jobs.smartrecruiters.com/SopraSteria1/744000157433299) | Oslo, no |
-| Sopra Steria | [Stage ambito Testing del Software](https://jobs.smartrecruiters.com/SopraSteria1/744000155750149) | Roma, it |
+| Sopra Steria | [HR Learning, Reporting & Campus Relations Intern](https://jobs.smartrecruiters.com/SopraSteria1/744000158094305) | ASSAGO, it |
 
 ---
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-10-26
+`board3.html` &middot; sweep of 2026-10-27
 
-### Unrecognised location - 121 (showing the first 60)
+### Unrecognised location - 119 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -220,65 +213,76 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - Ingénieur Industrialisation (F/H)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Ingnieur-Industrialisation--F-H-_R0345142-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345142; 10 - INDUSTRY; Junghans T2M Sas |
 | Thales | [STAGE - Technicien Méthodes Industrielles (F/H)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Technicien-Mthodes-Industrielles--F-H-_R0345137-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345137; 10 - INDUSTRY; Junghans T2M Sas |
 | Thales | [STAGE - Supply Chain & Amélioration continue- F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Supply-Chain---Amlioration-continue--F-H_R0343483) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0343483; 20 - SOFTWARE; Junghans T2M Sas |
-| Airbus | [STAGE 2027 -Analyse et Optimisation des coûts d'exploitation et de maintenance du parc robotique (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Analyse-et-Optimisation-des-cots-d-exploitation-et-de-maintenance-du-parc-robotique--ALL-GENDER-_JR10444436) | Saint-Nazaire-Area, JR10444436 |
+| Airbus | [STAGE 2027 -  Stage en Assurance Qualité et Métrologie (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027----Stage-en-Assurance-Qualit-et-Mtrologie--ALL-GENDER-_JR10445444) | Maulte-Area, JR10445444 |
+| Airbus | [STAGE 2027 - Ingénieur Projet Performance Supply Chain (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Projet-Performance-Supply-Chain--ALL-GENDER-_JR10440314) | Saint-Nazaire-Area, JR10440314 |
 | Airbus | [STAGE 2027 -  Digitalisation & Automatisation Atelier R&T Composite (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027----Digitalisation--d-atelier-et-amlioration-continue--ALL-GENDER-_JR10444561) | Maulte-Area, JR10444561 |
-| Airbus | [STAGE 2027 – Ingénieur Génie Civil (All gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Gestion-de-Projet-btiments--ALL-GENDER-_JR10446262) | Rochefort, JR10446262 |
-| Airbus | [STAGE 2027 - Ingénieur Hygiène, Sécurité et Environnement (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Hygine--Scurit-et-Environnement--ALL-GENDER-_JR10443686) | Rochefort, JR10443686 |
-| Airbus | [STAGE 2027 - Amélioration continue et assurance qualité (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Amlioration-continue-et-assurance-qualit--H-F-_JR10431251) | Maulte-Area, JR10431251 |
-| Airbus | [STAGE 2027 - Ingénieur qualité de la chaîne d'approvisionnement  (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-qualit-de-la-chane-d-approvisionnement---ALL-GENDER-_JR10443791) | Rochefort, JR10443791 |
-| Airbus | [STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177) | Saint-Nazaire-Area, JR10432177 |
-| Airbus | [STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192) | Saint-Nazaire-Area, JR10438192 |
-| Airbus | [STAGE 2027 – Ingénieur Performance Financière et Opérationnelle Qualité (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-du-Pilotage-de-Performance---Digitalisation-Qualit--ALL-GENDER-_JR10444465) | Saint-Nazaire-Area, JR10444465 |
+| Airbus | [STAGE 2027 - Digitalisation outils Assurance Qualité transverse (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Digitalisation-outils-Assurance-Qualit-transverse--ALL-GENDER-_JR10446284) | Rochefort, JR10446284 |
+| Airbus | [STAGE 2027 - Ingénieur Prévention des Risques Industriels (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Prvention-des-Risques-Industriels--ALL-GENDER-_JR10450783) | Maulte-Area, JR10450783 |
 | Airbus | [STAGE 2027 - Ingénieur Qualité Produits & Amélioration Continue — A350 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Amlioration-Produit-350-Structure--ALL-GENDER-_JR10443276) | Saint-Nazaire-Area, JR10443276 |
+| Airbus | [STAGE 2027 – Ingénieur Performance Financière et Opérationnelle Qualité (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-du-Pilotage-de-Performance---Digitalisation-Qualit--ALL-GENDER-_JR10444465) | Saint-Nazaire-Area, JR10444465 |
 | Airbus | [STAGE 2027 - Animateur Qualité - Structure A350 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Animateur-Qualit---Structure-A350--ALL-GENDER-_JR10446994) | Saint-Nazaire-Area, JR10446994 |
-| Airbus | [STAGE 2027 - Ingénieur Support Technique Systèmes Avion (A350) (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Technique-Systmes-Avion--A350---ALL-GENDER-_JR10446370) | Saint-Nazaire-Area, JR10446370 |
+| Airbus | [STAGE 2027 - Gestion de Projet IA & Innovation Qualité  - Structure A350 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-Projet-IA---Innovation-Qualit----Structure-A350--H-F-_JR10438192) | Saint-Nazaire-Area, JR10438192 |
+| Airbus | [STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177) | Saint-Nazaire-Area, JR10432177 |
 | Airbus | [STAGE 2027 - Ingénieur Recherche et Technologie Matériaux Composites (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Recherche-et-Technologie-Matriaux-Composites--ALL-GENDER-_JR10450573) | Maulte-Area, JR10450573 |
-| Airbus | [STAGE 2027 – Amélioration productivité et standardisation métier programme (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-productivit-et-standardisation-mtier-programme--ALL-GENDER-_JR10446822) | Rochefort, JR10446822 |
+| Airbus | [STAGE 2027 - Amélioration continue et assurance qualité (H/F)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Amlioration-continue-et-assurance-qualit--H-F-_JR10431251) | Maulte-Area, JR10431251 |
 | Airbus | [STAGE 2027 - Ingénieur Recherche et Technologie Matériaux Composites (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Recherche-et-Technologie-Matriaux-Composites--ALL-GENDER-_JR10450577) | Maulte-Area, JR10450577 |
-| Airbus | [STAGE 2027 - Ingénieur Support Technique Systèmes Avion (A350) (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Technique-Systmes-Avion--A350---ALL-GENDER-_JR10446396) | Saint-Nazaire-Area, JR10446396 |
+| Airbus | [STAGE 2027 - Communication HSE et Prévention des Risques (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Communication-HSE-et-Prvention-des-Risques--ALL-GENDER-_JR10450778) | Maulte-Area, JR10450778 |
+| Airbus | [STAGE 2027 - Bureau d’études Sièges pilotes - Développement système audio (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Bureau-d-tudes-Siges-pilotes---Dveloppement-systme-audio--ALL-GENDER-_JR10446170) | Rochefort, JR10446170 |
+| Airbus | [STAGE 2027 – Ingénieur Génie Civil (All gender)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Gestion-de-Projet-btiments--ALL-GENDER-_JR10446262) | Rochefort, JR10446262 |
 | Airbus | [STAGE 2027 - Digitalisation d'atelier de maintenance mécanique (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Digitalisation-d-atelier-de-maintenance-mcanique--ALL-GENDER-_JR10442723) | Saint-Nazaire-Area, JR10442723 |
 | Airbus | [STAGE 2027 - Simulation & robustesse des processus industriels (ALL GENDER) (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Simulation---robustesse-des-processus-industriels--ALL-GENDER---ALL-GENDER-_JR10446755) | Maulte-Area, JR10446755 |
 | Airbus | [STAGE 2027 -  Intégration des méthodes Low-Tech en conception industrielle (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Optimisation-des-Procds--ALL-GENDER-_JR10446752) | Maulte-Area, JR10446752 |
+| Airbus | [STAGE 2027 - Gestion de projet IA et Qualité Industrialisation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-projet-IA-et-Qualit-Industrialisation--ALL-GENDER-_JR10442058) | Saint-Nazaire-Area, JR10442058 |
+| Airbus | [STAGE 2027 - Gestion  de Projet IA & Performance Qualité Client (H/F)(ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion--de-Projet-IA---Performance-Qualit-Client--H-F--ALL-GENDER-_JR10446043) | Saint-Nazaire-Area, JR10446043 |
+| Airbus | [STAGE 2027 - Chargé de Projet Santé sécurité environnement (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Sant-Scurit-Environnement-en-production--ALL-GENDER-_JR10439525) | Saint-Nazaire-Area, JR10439525 |
+| Airbus | [STAGE 2027 -Analyse et Optimisation des coûts d'exploitation et de maintenance du parc robotique (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Analyse-et-Optimisation-des-cots-d-exploitation-et-de-maintenance-du-parc-robotique--ALL-GENDER-_JR10444436) | Saint-Nazaire-Area, JR10444436 |
+| Airbus | [STAGE 2027 - Ingénieur Hygiène, Sécurité et Environnement (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Hygine--Scurit-et-Environnement--ALL-GENDER-_JR10443686) | Rochefort, JR10443686 |
+| Airbus | [STAGE 2027 - Ingénieur qualité de la chaîne d'approvisionnement  (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-qualit-de-la-chane-d-approvisionnement---ALL-GENDER-_JR10443791) | Rochefort, JR10443791 |
+| Airbus | [STAGE 2027 - Ingénieur Support Technique Systèmes Avion (A350) (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Technique-Systmes-Avion--A350---ALL-GENDER-_JR10446370) | Saint-Nazaire-Area, JR10446370 |
+| Airbus | [STAGE 2027 – Amélioration productivité et standardisation métier programme (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-productivit-et-standardisation-mtier-programme--ALL-GENDER-_JR10446822) | Rochefort, JR10446822 |
+| Airbus | [STAGE 2027 - Ingénieur Support Technique Systèmes Avion (A350) (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Technique-Systmes-Avion--A350---ALL-GENDER-_JR10446396) | Saint-Nazaire-Area, JR10446396 |
 | Airbus | [STAGE 2027 - Ingénieur en Transformation Digitale :  Projet Qualité International (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-en-Transformation-Digitale----Projet-Qualit-International--ALL-GENDER-_JR10447005) | Saint-Nazaire-Area, JR10447005 |
 | Airbus | [STAGE 2027 - Digitalisation des méthodes de Fabrication et programmation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-industrialisation--ALL-GENDER-_JR10446977) | Maulte-Area, JR10446977 |
-| Airbus | [STAGE 2027 - Gestion de projet IA et Qualité Industrialisation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion-de-projet-IA-et-Qualit-Industrialisation--ALL-GENDER-_JR10442058) | Saint-Nazaire-Area, JR10442058 |
 | Airbus | [STAGE 2027 - Ingénieur assurance qualité (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-assurance-qualit--ALL-GENDER-_JR10447014) | Saint-Nazaire-Area, JR10447014 |
-| Airbus | [STAGE 2027 - Gestion  de Projet IA & Performance Qualité Client (H/F)(ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Gestion--de-Projet-IA---Performance-Qualit-Client--H-F--ALL-GENDER-_JR10446043) | Saint-Nazaire-Area, JR10446043 |
-| Airbus | [STAGE 2027 - Chargé de Projet SSE en Production & Conduite du Changement (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Sant-Scurit-Environnement-en-production--ALL-GENDER-_JR10439525) | Saint-Nazaire-Area, JR10439525 |
-| Airbus | [STAGE 2027 - Ingénieur Projet Performance Supply Chain (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Projet-Performance-Supply-Chain--ALL-GENDER-_JR10440314) | Saint-Nazaire-Area, JR10440314 |
 | Airbus | [Stage 2027 - Stage en management de projet & Pilotage Opérationnel - programme A320 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-chef-de-projets-et-organisation--ALL-GENDER-_JR10435785) | Saint-Nazaire-Area, JR10435785 |
-| Airbus | [STAGE 2027 - Bureau d’études Sièges pilotes - Développement système audio (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Bureau-d-tudes-Siges-pilotes---Dveloppement-systme-audio--ALL-GENDER-_JR10446170) | Rochefort, JR10446170 |
 | Airbus | [STAGE 2027 - Stage en Contrôle de gestion (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Stage-en-Contrle-de-gestion--ALL-GENDER-_JR10448473) | Rochefort, JR10448473 |
 | Airbus | [STAGE 2027 - Ingénieur en production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-en-production--ALL-GENDER-_JR10438334) | Saint-Nazaire-Area, JR10438334 |
-| Airbus | [STAGE 2027 - Communication HSE et Prévention des Risques (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Communication-HSE-et-Prvention-des-Risques--ALL-GENDER-_JR10450778) | Maulte-Area, JR10450778 |
 | Airbus | [STAGE 2027 - Stage en développement et industrialisation d'agents d'IA (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Antibes-Area/STAGE-2027---Stage-en-dveloppement-et-industrialisation-d-agents-d-IA--h-f-_JR10433451) | Antibes-Area, JR10433451 |
-| Airbus | [STAGE 2027 -  Stage en Assurance Qualité et Métrologie (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027----Stage-en-Assurance-Qualit-et-Mtrologie--ALL-GENDER-_JR10445444) | Maulte-Area, JR10445444 |
 | Airbus | [STAGE 2027 - Intégration & Digitalisation Formation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Intgration---Digitalisation-Formation--ALL-GENDER-_JR10440793) | Saint-Nazaire-Area, JR10440793 |
 | Airbus | [STAGE 2027 - Ingénieur en logistique industrielle et optimisation des flux (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-en-logistique-industrielle-et-optimisation-des-flux--ALL-GENDER-_JR10450070) | Maulte-Area, JR10450070 |
 | Airbus | [STAGE 2027 - Ingénieur en production : industrialisation de pièces élémentaires (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-en-production---industrialisation-de-pices-lmentaires--ALL-GENDER-_JR10446757) | Saint-Nazaire-Area, JR10446757 |
-| Airbus | [STAGE 2027 - Ingénieur Prévention des Risques Industriels (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Prvention-des-Risques-Industriels--ALL-GENDER-_JR10450783) | Maulte-Area, JR10450783 |
 | Airbus | [STAGE 2027 - Ingénieur Support Industrialisation Panoplies de Fixations A350 (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Support-Industrialisation-Panoplies-de-Fixations-A350--ALL-GENDER-_JR10445666) | Saint-Nazaire-Area, JR10445666 |
 | Airbus | [STAGE 2027 -Automatisation suivi maintenance & obsolescence via Skywise (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Automatisation-suivi-maintenance---obsolescence-via-Skywise--ALL-GENDER-_JR10444443) | Saint-Nazaire-Area, JR10444443 |
-| Airbus | [STAGE 2027 -Ingénieur mécatronique, R&D et Intégration de Systèmes Robotisés (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027--Ingnieur-mcatronique--R-D-et-Intgration-de-Systmes-Robotiss--ALL-GENDER-_JR10444432) | Saint-Nazaire-Area, JR10444432 |
 | Airbus | [STAGE 2027 -  Ingénieur Structuration Données Techniques (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027----Ingnieur-Structuration-Donnes-Techniques--ALL-GENDER-_JR10439688) | Saint-Nazaire-Area, JR10439688 |
 | Airbus | [Stage 2027-L’Intelligence artificielle pour amélioration de la Performance Opérationnelle(ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/Stage-2027-L-Intelligence-artificielle-pour-amlioration-de-la-Performance-Oprationnelle-ALL-GENDER-_JR10445859) | Saint-Nazaire-Area, JR10445859 |
-| Airbus | [STAGE 2027 – Ingenieur Mecanique Productique (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingenieur-Mecanique-Productique--ALL-GENDER-_JR10446011) | Saint-Nazaire-Area, JR10446011 |
 | Airbus | [STAGE 2027 -  Observabilité & Métriques Cloud : Traitement d’Images Satellitaires (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Antibes-Area/STAGE-2027----Observability-of-a-cloud-based-satellite-image-processing-application--h-f-_JR10433762) | Antibes-Area, JR10433762 |
 | Airbus | [STAGE  2027 -  Ingénieur Logistique (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE--2027----Ingnieur-Logistique--ALL-GENDER-_JR10447026) | Saint-Nazaire-Area, JR10447026 |
 | Airbus | [STAGE 2027 – Déploiement de l'intelligence artificielle dans les métiers programme (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Dploiement-de-l-intelligence-artificielle-dans-les-mtiers-programme--ALL-GENDER-_JR10437705) | Saint-Nazaire-Area, JR10437705 |
 | Airbus | [STAGE 2027 - Ingénieur Conception Sièges Pilotes (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Conception-Siges-Pilotes--ALL-GENDER-_JR10446188) | Rochefort, JR10446188 |
-| Airbus | [STAGE 2027 - Digitalisation outils Assurance Qualité transverse (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Digitalisation-outils-Assurance-Qualit-transverse--ALL-GENDER-_JR10446284) | Rochefort, JR10446284 |
 | Airbus | [STAGE 2027 - Systèmes de production industriels et simulation de flux  (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Systmes-de-production-industriels-et-simulation-de-flux---ALL-GENDER-_JR10449528) | Saint-Nazaire-Area, JR10449528 |
 | Airbus | [STAGE 2027 -  Ingénieur HSE/Spécialiste HSE (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027----Ingnieur-HSE-Spcialiste-HSE--ALL-GENDER-_JR10441661) | Saint-Nazaire-Area, JR10441661 |
 | Airbus | [STAGE 2027 - Ingénieur des équipements de production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-des-quipements-de-production--ALL-GENDER-_JR10442469) | Saint-Nazaire-Area, JR10442469 |
 | Airbus | [Stage 2027 - Support aux Opérations Recrutement (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/Stage-2027---Support-aux-Oprations-Recrutement--ALL-GENDER-_JR10436694) | Saint-Nazaire-Area, JR10436694 |
 | Airbus | [STAGE 2027 - Ingénieur Technique Sous-Traitance Globale (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-Technique-Sous-Traitance-Globale--ALL-GENDER-_JR10446815) | Rochefort, JR10446815 |
 | Airbus | [STAGE 2027 – Ingénieur méthodes et digitalisation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Ingnieur-mthodes-et-digitalisation--ALL-GENDER-_JR10443117) | Rochefort, JR10443117 |
+| Airbus | [STAGE 2027 - Ingénieur assurance qualité (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-assurance-qualit--ALL-GENDER-_JR10447008) | Saint-Nazaire-Area, JR10447008 |
+| Airbus | [STAGE 2027 - Ingénieur d'études amélioration continue et industrialisation (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-d-tudes-amlioration-continue-et-industrialisation--ALL-GENDER-_JR10445993) | Saint-Nazaire-Area, JR10445993 |
 
-### Not tech - 855 (showing the first 60)
+### Not tech - 886 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [STAGE - Industrie Digitale - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Industrie-Digitale---F-H_R0345063-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345063; 10 - INDUSTRY; Thales Las France Sas |
+| Thales | [STAGE - Amélioration continue F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Amlioration-continue-F-H_R0345075-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345075; 10 - INDUSTRY; Thales Las France Sas |
+| Thales | [STAGE - Technicien amélioration continue - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-Amlioration-Continue---F-H_R0342957-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0342957; 10 - INDUSTRY; Thales Avs France Sas |
+| Thales | [STAGE - Industrie Digitale F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Industrie-Digitale-F-H_R0345071-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345071; 10 - INDUSTRY; Thales Las France Sas |
+| Thales | [STAGE - Analyse produit, marché et compétition - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/STAGE---Analyse-produit--march-et-comptition---H-F_R0345487) | Limours, Intern/Trainee (Fixed Term) (Trainee); R0345487; 02 - STRATEGY, MARKETING, SALES; Thales Las France Sas |
+| Thales | [STAGE - Analyste marché et concurrence - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/STAGE---Analyste-march-et-concurrence---H-F_R0343213-1) | Limours, Intern/Trainee (Fixed Term) (Trainee); R0343213; 02 - STRATEGY, MARKETING, SALES; Thales Las France Sas |
+| Thales | [STAGE - Chargé(e) d’expédition - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rouen/STAGE---Charg-e--d-expdition---F-H_R0344233-1) | Rouen, Intern/Trainee (Fixed Term) (Trainee); R0344233; 11 - FINANCE; Thales Las France Sas |
+| Thales | [Stage - Chargé de communication - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Issy-les-Moulineaux/Stage---Charg-de-communication---F-H_R0343467) | Issy-les-Moulineaux, Intern/Trainee (Fixed Term) (Trainee); R0343467; 14 - COMMUNICATIONS; CortAIx Factory France Sas |
+| Thales | [STAGE - Logisticien de distribution - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rouen/STAGE---Logisticien-de-distribution---H-F_R0344881-1) | Rouen, Intern/Trainee (Fixed Term) (Trainee); R0344881; 10 - INDUSTRY; Thales Las France Sas |
+| Thales | [STAGE - Consulting Cyber - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Consulting-Cyber---F-H_R0345225-1) | Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0345225; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Cyber Solutions SAS |
+| Thales | [STAGE - Marketing Stratégique et Développement Commercial - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Marketing-Stratgique-et-Dveloppement-Commercial---F-H_R0346026-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0346026; 02 - STRATEGY, MARKETING, SALES; Thales DIS France SAS |
 | Thales | [STAGE - Chef de Projet Business Intelligence (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Chef-de-Projet-Business-Intelligence--H-F-_R0343230-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0343230; 03 - BID & PROJECT MANAGEMENT; Thales Services Numériques Sas |
 | Thales | [STAGE - Project Manager Artificial Intelligence Ops (AIOps) – H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Project-Manager-Artificial-Intelligence-Ops--AIOps----H-F_R0343235-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0343235; 03 - BID & PROJECT MANAGEMENT; Thales Services Numériques Sas |
 | Thales | [STAGE - Analyse des exigences d'ingénierie](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/STAGE---Analyse-des-exigences-d-ingnierie_R0344514) | Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0344514; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales SIX GTS France S.A.S. |
@@ -302,8 +306,6 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - Procédés de fabrication des drones - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Procds-de-fabrication-des-drones---F-H_R0344926-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344926; 10 - INDUSTRY; Thales Las France Sas |
 | Thales | [STAGE - Technicien logistique des moyens d'essais - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Technicien-logistique-des-moyens-d-essais---H-F_R0345333-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345333; 19 - HARDWARE; Thales Avs France Sas |
 | Thales | [STAGE - Acheteur Equipement Mécanique - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Acheteur-Equipement-Mcanique---F-H_R0343931-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0343931; 09 - PROCUREMENT; Thales Global Services Sas |
-| Thales | [STAGE OUVRIER - Annotation d'images - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE-OUVRIER---Annotation-d-images---F-H_R0342941) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0342941; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas |
-| Thales | [STAGE OUVRIER - Annotation d'images - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE-OUVRIER---Annotation-d-images---F-H_R0342560) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0342560; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas |
 | Thales | [Stage - Optimisation des attaques par canaux auxiliaires sur des processeurs complexes F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Ciotat/Stage---Optimisation-des-attaques-par-canaux-auxiliaires-sur-des-processeurs-complexes-F-H_R0344218-1) | La-Ciotat, Intern/Trainee (Fixed Term) (Trainee); R0344218; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales DIS France SAS |
 | Thales | [STAGE OUVRIER - Equipements Industriels - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE-OUVRIER---Equipements-Industriels---F-H_R0344863-1) | Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0344863; 10 - INDUSTRY; Thales Avs France Sas |
 | Thales | [STAGE - Talent Acquisition Partner - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Talent-Acquisition-Partner---F-H_R0344097-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344097; 12 - HUMAN RESOURCES; Thales Las France Sas |
@@ -324,26 +326,18 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - HSE Radioprotection F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---HSE-Radioprotection-F-H_R0344280-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0344280; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Las France Sas |
 | Thales | [STAGE - Amélioration d’une méthode de tuning de pilote automatique pour simulateurs d’entraînement haute-fidélité d’hélicoptère F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cergy/STAGE---Amlioration-d-une-mthode-de-tuning-de-pilote-automatique-pour-simulateurs-d-entranement-haute-fidlit-d-hlicoptre-F-H_R0341974-1) | Cergy, Intern/Trainee (Fixed Term) (Trainee); R0341974; 11 - FINANCE; Thales Avs France Sas |
 | Thales | [Stage - Service Delivery Manager Interventions H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Sophia-Antipolis/Stage---Service-Delivery-Manager-Interventions-H-F_R0344577) | Sophia-Antipolis, Intern/Trainee (Fixed Term) (Trainee); R0344577; 07 - CUSTOMER SERVICE; Thales Dms France Sas |
-| Thales | [STAGE - Chargé d'amélioration Continue - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-Amlioration-Continue---F-H_R0342957-1) | Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0342957; 10 - INDUSTRY; Thales Avs France Sas |
 | Thales | [STAGE – Project Management Officer – F / H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Project-Management-Officer---F---H_R0345187-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345187; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas |
 | Thales | [Stage – Mise en œuvre et caractérisation d’un micro-bolomètre pour des missions spatiales – (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Mise-en-uvre-et-caractrisation-d-un-micro-bolomtre-pour-des-missions-spatiales----H-F-_R0344947-1) | Cannes, Intern/Trainee (Fixed Term) (Trainee); R0344947; 18 - SYSTEM; Thales Alenia Space France Sas |
 | Thales | [Stage – Technicien Mise en place d'un moyen de mesure de jauges de contrainte – (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Sophia-Antipolis/Stage---Technicien-Mise-en-place-d-un-moyen-de-mesure-de-jauges-de-contrainte----H-F-_R0344196-1) | Sophia-Antipolis, Intern/Trainee (Fixed Term) (Trainee); R0344196; 19 - HARDWARE; Thales Dms France Sas |
 | Thales | [STAGE -  PMO Qualité et Satisfaction Client - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE----PMO-Qualit-et-Satisfaction-Client---F-H_R0345096-1) | Meudon, Intern/Trainee (Fixed Term) (Trainee); R0345096; 11 - FINANCE; Thales DIS France SAS |
 | Thales | [STAGE – Assistant Project Manager Officer - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Assistant-Project-Manager-Officer---F-H_R0343763-1) | Orlans, Intern/Trainee (Fixed Term) (Trainee); R0343763; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas |
 | Thales | [STAGE - Project Management Officer - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Project-Management-Officer---F-H_R0344888-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344888; 03 - BID & PROJECT MANAGEMENT; Thales Services Numériques Sas |
-| Thales | [Stage -  Evaluation des stratégies de migration JIRA (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/Stage----Evaluation-des-stratgies-de-migration-JIRA--H-F-_R0345117-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0345117; 20 - SOFTWARE; Thales Dms France Sas |
-| Thales | [Stage - Community Manager Transformation IA de l’Ingénierie (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/Stage---Community-Manager-Transformation-IA-de-l-Ingnierie--H-F-_R0345068) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0345068; 17 - ENGINEERING AND TECHNICAL MANAGEMENT; Thales Dms France Sas |
-| Thales | [STAGE - Optimisation des chaînes d’asservissement et de guidage (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Optimisation-des-chanes-d-asservissement-et-de-guidage--H-F-_R0343711-1) | La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0343711; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas |
-| Thales | [Stage – Assistant Contrôleur de Gestion Central - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Ciotat/Stage---Assistant-Contrleur-de-Gestion-Central---F-H_R0344271-1) | La-Ciotat, Intern/Trainee (Fixed Term) (Trainee); R0344271; 11 - FINANCE; Thales DIS France SAS |
-| Thales | [Stage - Assistant Project Manager - H/F](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/Stage---Assistant-Project-Manager---H-F_R0343642-1) | Limours, Intern/Trainee (Fixed Term) (Trainee); R0343642; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas |
-| Thales | [STAGE- Réalisation d'une maquette basée sur A-GRA - F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE--Ralisation-d-une-maquette-base-sur-A-GRA---F-H_R0344195-1) | Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344195; 20 - SOFTWARE; Thales Las France Sas |
-| Thales | [STAGE - Conception d'un chatbot documentaire - F / H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Massy-Carnot/STAGE---Conception-d-un-chatbot-documentaire---F---H_R0342952-1) | Massy-Carnot, Intern/Trainee (Fixed Term) (Trainee); R0342952; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas |
-| Thales | [STAGE - Structure produit - F / H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Massy/STAGE---Structure-produit---F---H_R0342934-1) | Massy, Intern/Trainee (Fixed Term) (Trainee); R0342934; 03 - BID & PROJECT MANAGEMENT; Thales Las France Sas |
 
-### Outside France - 908 (sample below)
+### Outside France - 902 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
+| Thales | [Talent Acquisition Intern (Jan 2027 intake)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/SINGAPORE/Talent-Acquisition-Intern--Jan-2027-intake-_R0339956) | SINGAPORE, Intern/Trainee (Fixed Term) (Trainee); R0339956; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS (Singapore) Pte. Ltd. |
 | Thales | [Stagiaire en développement outils & processus outillé](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Montreal/Stagiaire-en-dveloppement-outils---processus-outill_R0343987-1) | Montreal, Intern/Trainee (Fixed Term) (Trainee); R0343987; 20 - SOFTWARE; Thales Canada Inc., Avionics |
 | Thales | [Stagiaire IVV-1](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Montreal/Stagiaire-IVV-1_R0343975) | Montreal, Intern/Trainee (Fixed Term) (Trainee); R0343975; 18 - SYSTEM; Thales Canada Inc., Avionics |
 | Thales | [AI Intern - Business Efficiency - Mobile Connectivity Solutions](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Mexico-City/AI-Intern---Business-Efficiency---Mobile-Connectivity-Solutions_R0339389) | Mexico-City, Student/Work Experience (Fixed Term) (Seasonal); R0339389; 20 - SOFTWARE; Thales DIS Mexico SA de CV |
@@ -358,5 +352,4 @@ mistake (a French site being read as foreign).
 | Thales | [Stage - département finance](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Charleroi/Stage---dpartement-finance_R0337608) | Charleroi, Intern/Trainee (Fixed Term) (Trainee); R0337608; 11 - FINANCE; Thales Alenia Space Belgium |
 | Thales | [Stage Ressources humaines](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Charleroi/Stage-Ressources-humaines_R0339185) | Charleroi, Intern/Trainee (Fixed Term) (Trainee); R0339185; 12 - HUMAN RESOURCES; Thales Alenia Space Belgium |
 | Thales | [Business App Support Intern - 2027 Start](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Singapore/Business-App-Support-Intern---2027-Start_R0301783) | Singapore, Intern/Trainee (Fixed Term) (Trainee); R0301783; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales Solutions Asia Pte. Ltd. |
-| Thales | [Finance Intern](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Beijing/Finance-Intern_R0342877) | Beijing, Intern/Trainee (Fixed Term) (Trainee); R0342877; 11 - FINANCE; Thales (Beijing) Technologies Co., Ltd. |
 
