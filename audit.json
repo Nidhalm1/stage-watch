@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 690,
+      "foreign_count": 665,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -344,6 +344,13 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
+          "location": "Senlis, Hauts-de-France, FRA",
+          "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10575605/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
           "location": "Lyon, Auvergne-Rhone-Alpes, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10575611/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
@@ -354,13 +361,6 @@
           "location": "Beauchamp, Ile-de-France, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10574522/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
-          "location": "Senlis, Hauts-de-France, FRA",
-          "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10575605/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -378,7 +378,7 @@
         }
       ],
       "non_tech_total": 40,
-      "stamp": "2026-10-30",
+      "stamp": "2026-10-31",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -406,14 +406,14 @@
           "is_new": false,
           "location": "In-Office",
           "title": "Software Engineer Intern (2027)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8245197?gh_jid=8245197"
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8245211?gh_jid=8245211"
         },
         {
           "company": "Cloudflare",
           "is_new": false,
           "location": "In-Office",
           "title": "Software Engineer Intern (2027)",
-          "url": "https://boards.greenhouse.io/cloudflare/jobs/8245211?gh_jid=8245211"
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/8245197?gh_jid=8245197"
         },
         {
           "company": "Cloudflare",
@@ -434,7 +434,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 86,
+      "foreign_count": 85,
       "foreign_sample": [
         {
           "company": "Aircall",
@@ -712,7 +712,7 @@
         },
         {
           "company": "Pennylane",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "Stage - Social Media Manager",
           "url": "https://jobs.ashbyhq.com/pennylane/ea292941-2af0-4b45-9c60-50c2b2797375"
@@ -949,8 +949,8 @@
           "url": "https://deezer.teamtailor.com/jobs/7632101-music-culture-intern-6-months-m-f-d"
         }
       ],
-      "non_tech_total": 187,
-      "stamp": "2026-10-30",
+      "non_tech_total": 186,
+      "stamp": "2026-10-31",
       "unknown_location": [
         {
           "company": "Murex",
@@ -989,77 +989,77 @@
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage - AI Engineer H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-AI-Engineer-HFN-59100/1449970033/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE fin d'études - Ingénieur Qualité H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage - Office Manager City H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Office-Manager-City-HFN-59100/1451369233/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "Stage - Chef de projet documentation industrielle H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1449283133/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage Software Engineer Backend - H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Software-Engineer-Backend-HFN-59100/1451171233/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage Data Engineer- AI Tools - H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Data-Engineer-AI-Tools-HFN-59100/1452228833/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Stage - Développeur FullStack & IA appliquée au test F/H/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-D%C3%A9veloppeur-FullStack-&-IA-appliqu%C3%A9e-au-test-FHN-59100/1450224733/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
-          "location": "CROIX",
-          "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/"
-        },
-        {
-          "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
           "location": "CROIX",
           "title": "STAGE fin d'études - Ingénieur R&D en simulation thermique H/F/N",
           "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-en-simulation-thermique-HFN-59170/1448173333/"
         },
         {
           "company": "OVHcloud",
-          "is_new": true,
+          "is_new": false,
+          "location": "CROIX",
+          "title": "STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/"
+        },
+        {
+          "company": "OVHcloud",
+          "is_new": false,
           "location": "ROUBAIX",
           "title": "Industrial Lean Officer H/F/N",
           "url": "https://careers.ovhcloud.com/job/ROUBAIX-Industrial-Lean-Officer-HFN-59100/1449308133/"
@@ -1068,43 +1068,29 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
+          "title": "Building Automation Systems Specialist Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521974"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
+          "location": "",
           "title": "Software Engineering Internship",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527337"
         },
         {
           "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Remote Supply Chain Management Intern (Summer 2027)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526349"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521985"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
+          "is_new": false,
           "location": "",
           "title": "Fresh Graduate Engineer - Internship @Siemens Mobility Oman",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Stage - Agentic AI Workflows for Simulation f/m - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526311"
         }
       ],
-      "unknown_location_total": 21
+      "unknown_location_total": 19
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 900,
+      "foreign_count": 806,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1200,14 +1186,14 @@
       "non_tech": [
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0345133; 10 - INDUSTRY; Thales Alenia Space France Sas",
           "title": "STAGE  OUVRIER  - Contrôle composite par caméra -F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE--OUVRIER----Contrle-composite-par-camra--F-H_R0345133-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "PARIS-9me, Intern/Trainee (Fixed Term) (Trainee); R0346582; 11 - FINANCE; Thales Cloud Sécurisé",
           "title": "STAGE - S3NS - Consultant transformation Digitale - Finance (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/PARIS-9me/STAGE---S3NS---Consultant-transformation-Digitale---Finance--H-F-_R0346582"
@@ -1221,14 +1207,14 @@
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0346530; 02 - STRATEGY, MARKETING, SALES; Thales SIX GTS France S.A.S.",
           "title": "Stage Commerciale Export -  H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/Stage-Commerciale-Export----H-F_R0346530"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0345615; 02 - STRATEGY, MARKETING, SALES; Thales Alenia Space France Sas",
           "title": "STAGE - Analyste Stratégie et Innovation -Space Business Catalyst - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---Analyste-Stratgie-et-Innovation--Space-Business-Catalyst---F-H_R0345615-1"
@@ -1619,8 +1605,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Ciotat/Stage---Optimisation-des-attaques-par-canaux-auxiliaires-sur-des-processeurs-complexes-F-H_R0344218-1"
         }
       ],
-      "non_tech_total": 897,
-      "stamp": "2026-10-30",
+      "non_tech_total": 896,
+      "stamp": "2026-10-31",
       "unknown_location": [
         {
           "company": "Thales",
@@ -2043,8 +2029,8 @@
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/Stage-2027---Support-aux-Oprations-Recrutement--ALL-GENDER-_JR10436694"
         }
       ],
-      "unknown_location_total": 119
+      "unknown_location_total": 118
     }
   },
-  "generated": "2026-10-30T20:51:01.238923+01:00"
+  "generated": "2026-10-31T20:00:08.028085+01:00"
 }
