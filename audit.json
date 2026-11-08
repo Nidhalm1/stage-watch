@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 692,
+      "foreign_count": 688,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -273,7 +273,7 @@
         }
       ],
       "non_tech_total": 25,
-      "stamp": "2026-11-07",
+      "stamp": "2026-11-08",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -343,7 +343,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 65,
+      "foreign_count": 64,
       "foreign_sample": [
         {
           "company": "Back Market",
@@ -858,8 +858,8 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000158523678"
         }
       ],
-      "non_tech_total": 164,
-      "stamp": "2026-11-07",
+      "non_tech_total": 162,
+      "stamp": "2026-11-08",
       "unknown_location": [
         {
           "company": "Murex",
@@ -900,6 +900,13 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
+          "title": "Smart Infrastructure Electrical Products Engineering Leadership Development Program Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520912"
+        },
+        {
+          "company": "Siemens",
+          "is_new": false,
+          "location": "",
           "title": "Fresh Graduate Engineer - Internship @Siemens Mobility Oman",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
         },
@@ -907,29 +914,22 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Strategic Student Program: Digital Enterprise Software Applications Internship (Summer 2027, GSCS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527491"
+          "title": "Stage Développement outils : Configuration des données métro automatique h/f",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525463"
         },
         {
           "company": "Siemens",
-          "is_new": false,
+          "is_new": true,
           "location": "",
-          "title": "Smart Infrastructure Electrical Products Operations Leadership Development Program Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521212"
-        },
-        {
-          "company": "Siemens",
-          "is_new": false,
-          "location": "",
-          "title": "Stage - Agentic AI Workflows for Simulation f/m - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526311"
+          "title": "Stage en Business Intelligence et Analyse (BI/BA) h/f",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525003"
         }
       ],
       "unknown_location_total": 9
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 833,
+      "foreign_count": 832,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1444,8 +1444,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Amlioration-continue-F-H_R0345075-1"
         }
       ],
-      "non_tech_total": 949,
-      "stamp": "2026-11-07",
+      "non_tech_total": 953,
+      "stamp": "2026-11-08",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1488,6 +1488,20 @@
           "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345137; 10 - INDUSTRY; Junghans T2M Sas",
           "title": "STAGE - Technicien Méthodes Industrielles (F/H)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Technicien-Mthodes-Industrielles--F-H-_R0345137-1"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Rochefort, JR10446170",
+          "title": "STAGE 2027 -Stage en Développement système audio - Bureau d'études sièges pilotes(ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Bureau-d-tudes-Siges-pilotes---Dveloppement-systme-audio--ALL-GENDER-_JR10446170"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Maulte-Area, JR10446977",
+          "title": "STAGE 2027 - Digitalisation des méthodes de Fabrication et programmation (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-industrialisation--ALL-GENDER-_JR10446977"
         },
         {
           "company": "Airbus",
@@ -1737,13 +1751,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Maulte-Area, JR10446977",
-          "title": "STAGE 2027 - Digitalisation des méthodes de Fabrication et programmation (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-industrialisation--ALL-GENDER-_JR10446977"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10442868",
           "title": "STAGE 2027 - Support Ressources Humaines (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Support-Ressources-Humaines--ALL-GENDER-_JR10442868"
@@ -1859,17 +1866,10 @@
           "location": "Maulte-Area, JR10450778",
           "title": "STAGE 2027 - Communication HSE et Prévention des Risques (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Communication-HSE-et-Prvention-des-Risques--ALL-GENDER-_JR10450778"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Rochefort, JR10446170",
-          "title": "STAGE 2027 - Bureau d’études Sièges pilotes - Développement système audio (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Bureau-d-tudes-Siges-pilotes---Dveloppement-systme-audio--ALL-GENDER-_JR10446170"
         }
       ],
       "unknown_location_total": 131
     }
   },
-  "generated": "2026-11-07T20:15:31.122794+01:00"
+  "generated": "2026-11-08T20:17:45.835070+01:00"
 }
