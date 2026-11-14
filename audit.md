@@ -16,13 +16,14 @@ mistake (a French site being read as foreign).
 
 ## Stage Watch
 
-`board.html` &middot; sweep of 2026-11-13
+`board.html` &middot; sweep of 2026-11-14
 
-### Unrecognised location - 9
+### Unrecognised location - 10
 
 | Company | Title | Location |
 |---|---|---|
 | Cloudflare | [People Team Intern, HR Transformation (Winter 2027)](https://boards.greenhouse.io/cloudflare/jobs/8350166?gh_jid=8350166) | In-Office |
+| Cloudflare | [People Team: Software Engineer Intern (Winter 2027)](https://boards.greenhouse.io/cloudflare/jobs/7774167?gh_jid=7774167) | Hybrid |
 | Cloudflare | [Product Manager Intern (2027) - Austin, TX](https://boards.greenhouse.io/cloudflare/jobs/8274790?gh_jid=8274790) | In-Office |
 | Cloudflare | [Product Manager Intern (2027) - Lisbon, PT](https://boards.greenhouse.io/cloudflare/jobs/8332008?gh_jid=8332008) | In-Office |
 | Cloudflare | [Product Manager Intern (2027) - London, UK](https://boards.greenhouse.io/cloudflare/jobs/8328914?gh_jid=8328914) | In-Office |
@@ -61,7 +62,7 @@ mistake (a French site being read as foreign).
 | Amazon / AWS | [Construction Manager Intern (6 months) - 2027 (H/F)](https://www.amazon.jobs/en/jobs/10553738/construction-manager-intern-6-months-2027-h-f) | Clichy, Ile-de-France, FRA |
 | Amazon / AWS | [AWS Commercial Sales Internship](https://www.amazon.jobs/en/jobs/10587751/aws-commercial-sales-internship) | Paris, Ile-de-France, FRA |
 
-### Outside France - 679 (sample below)
+### Outside France - 681 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -85,7 +86,7 @@ mistake (a French site being read as foreign).
 
 ## French Tech Watch
 
-`board2.html` &middot; sweep of 2026-11-13
+`board2.html` &middot; sweep of 2026-11-14
 
 ### Unrecognised location - 19
 
@@ -101,17 +102,17 @@ mistake (a French site being read as foreign).
 | OVHcloud | [STAGE fin d'études - Ingénieur Qualité H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-Qualit%C3%A9-HFN-59170/1446157433/) | CROIX |
 | OVHcloud | [Stage - Office Manager City H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-Office-Manager-City-HFN-59100/1451369233/) | ROUBAIX |
 | OVHcloud | [Stage - Chef de projet documentation industrielle H/F/N](https://careers.ovhcloud.com/job/CROIX-Stage-Chef-de-projet-documentation-industrielle-HFN-59170/1449283133/) | CROIX |
+| OVHcloud | [STAGE ( 4-6 mois)Développeur Logiciel H/F/N](https://careers.ovhcloud.com/job/MONTR%C3%89AL-%28QU%C3%89BEC%29-STAGE-%28-4-6-mois%29D%C3%A9veloppeur-Logiciel-HFN-QC-H3A-2N4/1457360133/) | MONTR%C3%89AL %28QU%C3%89BEC%29 |
 | OVHcloud | [STAGE (4-6 mois) Ingénieur Logiciel](https://careers.ovhcloud.com/job/MONTR%C3%89AL-%28QU%C3%89BEC%29-STAGE-%284-6-mois%29-Ing%C3%A9nieur-Logiciel-QC-H3A-2N4/1456987433/) | MONTR%C3%89AL %28QU%C3%89BEC%29 |
 | OVHcloud | [STAGE ( 4-6mois) Ingénieur Logiciel H/F/N](https://careers.ovhcloud.com/job/MONTR%C3%89AL-%28QU%C3%89BEC%29-STAGE-%28-4-6mois%29-Ing%C3%A9nieur-Logiciel-HFN-QC-H3A-2N4/1457011033/) | MONTR%C3%89AL %28QU%C3%89BEC%29 |
 | OVHcloud | [Stage Software Engineer Backend - H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-Software-Engineer-Backend-HFN-59100/1451171233/) | ROUBAIX |
 | OVHcloud | [Stage - Développeur FullStack & IA appliquée au test F/H/N](https://careers.ovhcloud.com/job/ROUBAIX-Stage-D%C3%A9veloppeur-FullStack-&-IA-appliqu%C3%A9e-au-test-FHN-59100/1450224733/) | ROUBAIX |
 | OVHcloud | [STAGE fin d'études - Ingénieur R&D refroidissement liquide/diphasique H/F/N](https://careers.ovhcloud.com/job/CROIX-STAGE-fin-d&apos;%C3%A9tudes-Ing%C3%A9nieur-R&D-refroidissement-liquidediphasique-HFN-59170/1448204533/) | CROIX |
 | OVHcloud | [Industrial Lean Officer H/F/N](https://careers.ovhcloud.com/job/ROUBAIX-Industrial-Lean-Officer-HFN-59100/1449308133/) | ROUBAIX |
-| Siemens | [Building Automation Systems Specialist Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/527690) | - |
 | Siemens | [Strategic Student Program: Digital Enterprise Software Applications Internship (Summer 2027, GSCS)](https://jobs.siemens.com/en_US/externaljobs/JobDetail/527491) | - |
-| Siemens | [Building X Software Developer Internship](https://jobs.siemens.com/en_US/externaljobs/JobDetail/529063) | - |
+| Siemens | [Fresh Graduate Engineer - Internship (Omani National) @Siemens Mobility Oman](https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447) | - |
 
-### Not tech - 152 (showing the first 60)
+### Not tech - 151 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -176,7 +177,7 @@ mistake (a French site being read as foreign).
 | Sopra Steria | [Stage - Consultant(e) - Transformation digitale en Aéronautique - Aix en Provence](https://jobs.smartrecruiters.com/SopraSteria1/744000158466624) | Aix-en-Provence, fr |
 | Sopra Steria | [Stage - Chef/Cheffe de projet Performance durable](https://jobs.smartrecruiters.com/SopraSteria1/744000158342723) | Annecy, fr |
 
-### Outside France - 60 (sample below)
+### Outside France - 61 (sample below)
 
 | Company | Title | Location |
 |---|---|---|
@@ -200,7 +201,7 @@ mistake (a French site being read as foreign).
 
 ## Defence, Finance & Silicon Watch
 
-`board3.html` &middot; sweep of 2026-11-13
+`board3.html` &middot; sweep of 2026-11-14
 
 ### Unrecognised location - 120 (showing the first 60)
 
@@ -267,7 +268,7 @@ mistake (a French site being read as foreign).
 | Airbus | [STAGE 2027 - Amélioration de la gestion des stocks (h/f)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Le-Billone/STAGE-2027---Amlioration-de-la-gestion-des-stocks--h-f-_JR10441641) | Le-Billone, JR10441641 |
 | Airbus | [STAGE 2027 - Amélioration Continue en Production (ALL GENDER)](https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/STAGE-2027---Amlioration-Continue-en-Production--ALL-GENDER-_JR10432323) | Rochefort, JR10432323 |
 
-### Not tech - 928 (showing the first 60)
+### Not tech - 914 (showing the first 60)
 
 | Company | Title | Location |
 |---|---|---|
@@ -332,7 +333,7 @@ mistake (a French site being read as foreign).
 | Thales | [STAGE - Méthode logistique F/H](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Orlans/STAGE---Mthode-logistique-F-H_R0344664-1) | Orlans, Intern/Trainee (Fixed Term) (Trainee); R0344664; 10 - INDUSTRY; Thales Las France Sas |
 | Thales | [Stage – Assistant Commerce International et Réponse aux Appels d’Offres – Marché Spatial Institutionnel Européen – (H/F)](https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Assistant-Commerce-International-et-Rponse-aux-Appels-d-Offres---March-Spatial-Institutionnel-Europen----H-F-_R0344343) | Cannes, Intern/Trainee (Fixed Term) (Trainee); R0344343; 02 - STRATEGY, MARKETING, SALES; Thales Alenia Space France Sas |
 
-### Outside France - 709 (sample below)
+### Outside France - 769 (sample below)
 
 | Company | Title | Location |
 |---|---|---|

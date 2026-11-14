@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 679,
+      "foreign_count": 681,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -238,7 +238,7 @@
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Orleans, Centre-Val de Loire, FRA",
           "title": "Operations Intern - Région Centre - Start Date 2027",
           "url": "https://www.amazon.jobs/en/jobs/10604240/operations-intern-region-centre-start-date-2027"
@@ -266,7 +266,7 @@
         }
       ],
       "non_tech_total": 24,
-      "stamp": "2026-11-13",
+      "stamp": "2026-11-14",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -274,6 +274,13 @@
           "location": "In-Office",
           "title": "People Team Intern, HR Transformation (Winter 2027)",
           "url": "https://boards.greenhouse.io/cloudflare/jobs/8350166?gh_jid=8350166"
+        },
+        {
+          "company": "Cloudflare",
+          "is_new": true,
+          "location": "Hybrid",
+          "title": "People Team: Software Engineer Intern (Winter 2027)",
+          "url": "https://boards.greenhouse.io/cloudflare/jobs/7774167?gh_jid=7774167"
         },
         {
           "company": "Cloudflare",
@@ -332,11 +339,11 @@
           "url": "https://careers.ibm.com/careers/JobDetail?jobId=139962"
         }
       ],
-      "unknown_location_total": 9
+      "unknown_location_total": 10
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 60,
+      "foreign_count": 61,
       "foreign_sample": [
         {
           "company": "Back Market",
@@ -851,8 +858,8 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000158342723"
         }
       ],
-      "non_tech_total": 152,
-      "stamp": "2026-11-13",
+      "non_tech_total": 151,
+      "stamp": "2026-11-14",
       "unknown_location": [
         {
           "company": "Murex",
@@ -926,6 +933,13 @@
         },
         {
           "company": "OVHcloud",
+          "is_new": true,
+          "location": "MONTR%C3%89AL %28QU%C3%89BEC%29",
+          "title": "STAGE ( 4-6 mois)Développeur Logiciel H/F/N",
+          "url": "https://careers.ovhcloud.com/job/MONTR%C3%89AL-%28QU%C3%89BEC%29-STAGE-%28-4-6-mois%29D%C3%A9veloppeur-Logiciel-HFN-QC-H3A-2N4/1457360133/"
+        },
+        {
+          "company": "OVHcloud",
           "is_new": false,
           "location": "MONTR%C3%89AL %28QU%C3%89BEC%29",
           "title": "STAGE (4-6 mois) Ingénieur Logiciel",
@@ -968,13 +982,6 @@
         },
         {
           "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527690"
-        },
-        {
-          "company": "Siemens",
           "is_new": false,
           "location": "",
           "title": "Strategic Student Program: Digital Enterprise Software Applications Internship (Summer 2027, GSCS)",
@@ -982,17 +989,17 @@
         },
         {
           "company": "Siemens",
-          "is_new": false,
+          "is_new": true,
           "location": "",
-          "title": "Building X Software Developer Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/529063"
+          "title": "Fresh Graduate Engineer - Internship (Omani National) @Siemens Mobility Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
         }
       ],
       "unknown_location_total": 19
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 709,
+      "foreign_count": 769,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1088,14 +1095,14 @@
       "non_tech": [
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0346654; 19 - HARDWARE; Thales Avs France Sas",
           "title": "STAGE - Etablissement de lois de vieillissement des matériaux pour les écrans de cockpits aéroportés - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Etablissement-de-lois-de-vieillissement-des-matriaux-pour-les-crans-de-cockpits-aroports---F-H_R0346654-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0346653; 19 - HARDWARE; Thales Avs France Sas",
           "title": "STAGE - Mise au point d'un critère de déformation opto-mécanique pour la conception d'écrans LCD - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Mise-au-point-d-un-critre-de-dformation-opto-mcanique-pour-la-conception-d-crans-LCD---F-H_R0346653-2"
@@ -1507,8 +1514,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Assistant-Commerce-International-et-Rponse-aux-Appels-d-Offres---March-Spatial-Institutionnel-Europen----H-F-_R0344343"
         }
       ],
-      "non_tech_total": 928,
-      "stamp": "2026-11-13",
+      "non_tech_total": 914,
+      "stamp": "2026-11-14",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1652,21 +1659,21 @@
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Rochefort, JR10445867",
           "title": "Stage 2027 — Ingénieur en amélioration continue — Production & Logistique (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Rochefort/Stage-2027---Ingnieur-en-amlioration-continue---Production---Logistique--ALL-GENDER-_JR10445867"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10445832",
           "title": "STAGE 2027 - Ingénieur Production (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Production--ALL-GENDER-_JR10445832"
         },
         {
           "company": "Airbus",
-          "is_new": true,
+          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10440261",
           "title": "STAGE 2027 - Ingénieur de production (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-de-production--ALL-GENDER-_JR10440261"
@@ -1934,5 +1941,5 @@
       "unknown_location_total": 120
     }
   },
-  "generated": "2026-11-13T22:09:50.079288+01:00"
+  "generated": "2026-11-14T20:40:18.425416+01:00"
 }
