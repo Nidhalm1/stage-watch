@@ -3,22 +3,12 @@
     "board.html": {
       "also_new": [
         {
-          "company": "Red Hat",
+          "company": "Cloudflare",
           "kind": "unsure",
-          "title": "Business Analyst Intern"
-        },
-        {
-          "company": "Red Hat",
-          "kind": "unsure",
-          "title": "Cloud Services Intern"
-        },
-        {
-          "company": "Red Hat",
-          "kind": "unsure",
-          "title": "Cloud Services Intern"
+          "title": "AI & Automation Intern, Communications (Winter 2027)"
         }
       ],
-      "also_new_total": 3,
+      "also_new_total": 1,
       "board": "Stage Watch",
       "closed_today": [
         {
@@ -37,87 +27,83 @@
         "Microsoft"
       ],
       "filtered": 23,
-      "generated": "2026-11-17T00:36:01.224520+01:00",
+      "generated": "2026-11-17T23:44:19.771500+01:00",
       "incomplete": [
         "Confluent (empty)",
         "IBM (truncated)",
         "Oracle (truncated)",
         "Amazon / AWS (truncated)"
       ],
-      "live": 13,
-      "new": 0,
-      "new_roles": [],
-      "new_roles_total": 0,
-      "recent_roles": [],
-      "recent_roles_total": 0,
-      "scanned": 8582,
+      "live": 14,
+      "new": 1,
+      "new_roles": [
+        {
+          "company": "Scaleway",
+          "first_seen": "2026-11-17",
+          "location": "Paris",
+          "title": "R&D Intern - Machine learning",
+          "url": "https://jobs.lever.co/scaleway/a2a68808-4d53-4927-bc09-54efb9a6765b"
+        }
+      ],
+      "new_roles_total": 1,
+      "recent_roles": [
+        {
+          "company": "Scaleway",
+          "first_seen": "2026-11-17",
+          "location": "Paris",
+          "title": "R&D Intern - Machine learning",
+          "url": "https://jobs.lever.co/scaleway/a2a68808-4d53-4927-bc09-54efb9a6765b"
+        }
+      ],
+      "recent_roles_total": 1,
+      "scanned": 8610,
       "stamp": "2026-11-17",
-      "unsure": 15
+      "unsure": 17
     },
     "board2.html": {
       "also_new": [
         {
+          "company": "Amadeus",
+          "kind": "unsure",
+          "title": "Software Development Intern"
+        },
+        {
           "company": "Sopra Steria",
           "kind": "other",
-          "title": "Stage - Pré-Thèse : Détection de lacs et rivières par télédétection avec quantification d'incertitudes - Spatial - Toulouse"
+          "title": "Stage - Chef/Cheffe de projet Numérique Responsable"
         },
         {
-          "company": "Ubisoft",
+          "company": "Alten",
           "kind": "other",
-          "title": "R&D Assistant - Neural Compositing for Real-Time Graphics - INTERNSHIP (F/M/NB)"
+          "title": "Stage de fin d'étude - Chargé de recrutement H/F"
         },
         {
-          "company": "Ubisoft",
+          "company": "Expleo",
           "kind": "other",
-          "title": "R&D Assistant - Neural Appearance for Real-Time Graphics - INTERNSHIP (F/M/NB)"
+          "title": "Stage - PMO Administrator H/F"
         },
         {
-          "company": "OVHcloud",
+          "company": "Siemens",
           "kind": "other",
-          "title": "Stage - Acheteur H/F/N"
+          "title": "Stage - Topology Optimization for Electrical Machines (R&D) f/m - Strategic Student Program"
         },
         {
-          "company": "OVHcloud",
+          "company": "Siemens",
           "kind": "other",
-          "title": "Stage - Pre-Sales Engineer H/F/N"
+          "title": "Stagiaire - Chaîne logistique et approvisionnements f/h"
         },
         {
-          "company": "OVHcloud",
+          "company": "Siemens",
           "kind": "other",
-          "title": "Stage - Contract Manager H/F/N"
+          "title": "Stagiaire - Planificateur de production f/h"
         },
         {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE fin d'études - Ingénieur Qualité H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE ( 4-6 mois)Développeur Logiciel H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE (4-6 mois) Ingénieur Logiciel"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "STAGE ( 4-6mois) Ingénieur Logiciel H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "Stage Software Engineer Backend - H/F/N"
-        },
-        {
-          "company": "OVHcloud",
-          "kind": "unsure",
-          "title": "Stage - Développeur FullStack & IA appliquée au test F/H/N"
+          "company": "Siemens",
+          "kind": "other",
+          "title": "Stagiaire EHS f/h"
         }
       ],
-      "also_new_total": 15,
+      "also_new_total": 8,
       "board": "French Tech Watch",
       "closed_today": [
         {
@@ -164,113 +150,101 @@
           "company": "Expleo",
           "title": "Stage – Ingénieur Conception Installation Systèmes Mécaniques Aéronautique H/F",
           "url": "https://expleo-jobs-fr-fr.icims.com/jobs/56071/stage-%e2%80%93-ing%c3%a9nieur-conception-installation-syst%c3%a8mes-m%c3%a9caniques-a%c3%a9ronautique-h-f/job?in_iframe=1"
+        },
+        {
+          "company": "Sopra Steria",
+          "title": "Stage - Ingénieur(e) SysOps - Digital Platform Services - Biot",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000160634769"
+        },
+        {
+          "company": "Alten",
+          "title": "Stage - Industrialisation et adaptation d'un logiciel embarqué STM32- (H/F)",
+          "url": "https://jobs.smartrecruiters.com/alten/744000161437035"
+        },
+        {
+          "company": "Alten",
+          "title": "Stage IA Générative – Architectures Agentiques (H/F)",
+          "url": "https://jobs.smartrecruiters.com/alten/744000159878839"
         }
       ],
-      "closed_today_total": 9,
-      "closed_total": 135,
+      "closed_today_total": 20,
+      "closed_total": 146,
       "companies": 29,
-      "failed": 1,
+      "failed": 2,
       "failed_names": [
-        "Aircall"
+        "Aircall",
+        "OVHcloud"
       ],
-      "filtered": 147,
-      "generated": "2026-11-17T00:37:20.272841+01:00",
+      "filtered": 143,
+      "generated": "2026-11-17T23:45:17.841601+01:00",
       "incomplete": [
         "Qonto (empty)",
         "Nokia (truncated)",
         "Ericsson (empty)",
         "Siemens (truncated)"
       ],
-      "live": 263,
-      "new": 15,
+      "live": 248,
+      "new": 7,
       "new_roles": [
         {
           "company": "Sopra Steria",
           "first_seen": "2026-11-17",
-          "location": "Colomiers, fr",
-          "title": "Stage - Développeur(se) Full Stack Java - Aeroline - Toulouse",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000161764660"
+          "location": "Le Plessis-Robinson, fr",
+          "title": "Stage : Mise en œuvre d’un environnement de stimulation système – Défense & Sécurité - Le Plessis-Robinson",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000162074229"
         },
         {
           "company": "Alten",
           "first_seen": "2026-11-17",
-          "location": "Vitrolles, fr",
-          "title": "Stage ingénieur -Gestion de projet et Amélioration Continue",
-          "url": "https://jobs.smartrecruiters.com/alten/744000161846865"
-        },
-        {
-          "company": "Alten",
-          "first_seen": "2026-11-17",
-          "location": "Aix-en-Provence, fr",
-          "title": "Stage Méthode Industrielle – Electrique / Electronique (H/F)",
-          "url": "https://jobs.smartrecruiters.com/alten/744000161795774"
-        },
-        {
-          "company": "Alten",
-          "first_seen": "2026-11-17",
-          "location": "Rennes, fr",
-          "title": "Stage Innovation : Ingénieur Génie logiciel / Blockchain cryptologie",
-          "url": "https://jobs.smartrecruiters.com/alten/744000161796188"
+          "location": "Cholet, fr",
+          "title": "Stage de fin d'études - Développement / IVL H/F",
+          "url": "https://jobs.smartrecruiters.com/alten/744000162013064"
         },
         {
           "company": "Expleo",
           "first_seen": "2026-11-17",
-          "location": "FR-38-Gières,",
-          "title": "Stage - Ingénieur traitement du signal H/F",
-          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/58228/stage---ing%c3%a9nieur-traitement-du-signal-h-f/job?in_iframe=1"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "BREST",
-          "title": "STAGE fin d'études - ingénieur en conception électronique et système embarqué H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BREST-STAGE-fin-d&apos;%C3%A9tudes-ing%C3%A9nieur-en-conception-%C3%A9lectronique-et-syst%C3%A8me-embarqu%C3%A9-HFN-29200/1450044533/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "LYON",
-          "title": "Stage - AI Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/LYON-Stage-AI-Engineer-HFN-69003/1449884033/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "BORDEAUX",
-          "title": "Stage - Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BORDEAUX-Stage-Software-Engineer-HFN-33000/1449489233/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "BORDEAUX",
-          "title": "Stage - Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BORDEAUX-Stage-Software-Engineer-HFN-33000/1449563833/"
+          "location": "FR-78-Montigny-le-Bretonneux",
+          "title": "Stage – Modélisation et Simulation Multiphysique 0D/1D des Circuits de Refroidissement H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/55996/stage-%e2%80%93-mod%c3%a9lisation-et-simulation-multiphysique-0d-1d-des-circuits-de-refroidissement-h-f/job?in_iframe=1"
         },
         {
           "company": "Siemens",
           "first_seen": "2026-11-17",
           "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
-          "title": "Stage - Intelligent Systems, Simulation & 3D Animation f/m – Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528549"
+          "title": "Stage - AI-Assisted Testing Strategy & Tooling for Physics Simulation Software f/m - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525622"
         },
         {
           "company": "Siemens",
           "first_seen": "2026-11-17",
-          "location": "Meylan, Auvergne-Rhône-Alpes, France",
-          "title": "Stage - Electronique de Puissance dans Simcenter Simlab & Agents LLM f/h - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525956"
+          "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
+          "title": "Stage - Évaluation de GitLab pour les modèles de simulation f/h - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525585"
         },
         {
           "company": "Siemens",
           "first_seen": "2026-11-17",
           "location": "Chatillon, Île-de-France, France",
-          "title": "Stage - Ingénieur DevOps / CI-CD (F/H)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528724"
+          "title": "Stage développement d'outils d'analyse par IA et de tableaux de bord DATA f/h",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526126"
+        },
+        {
+          "company": "Siemens",
+          "first_seen": "2026-11-17",
+          "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
+          "title": "Stage - From Simulation to AI-Powered Applications f/m - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526625"
         }
       ],
-      "new_roles_total": 15,
+      "new_roles_total": 7,
       "recent_roles": [
+        {
+          "company": "Sopra Steria",
+          "first_seen": "2026-11-17",
+          "location": "Le Plessis-Robinson, fr",
+          "title": "Stage : Mise en œuvre d’un environnement de stimulation système – Défense & Sécurité - Le Plessis-Robinson",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000162074229"
+        },
         {
           "company": "Sopra Steria",
           "first_seen": "2026-11-17",
@@ -281,6 +255,13 @@
         {
           "company": "Alten",
           "first_seen": "2026-11-17",
+          "location": "Cholet, fr",
+          "title": "Stage de fin d'études - Développement / IVL H/F",
+          "url": "https://jobs.smartrecruiters.com/alten/744000162013064"
+        },
+        {
+          "company": "Alten",
+          "first_seen": "2026-11-17",
           "location": "Vitrolles, fr",
           "title": "Stage ingénieur -Gestion de projet et Amélioration Continue",
           "url": "https://jobs.smartrecruiters.com/alten/744000161846865"
@@ -307,39 +288,11 @@
           "url": "https://expleo-jobs-fr-fr.icims.com/jobs/58228/stage---ing%c3%a9nieur-traitement-du-signal-h-f/job?in_iframe=1"
         },
         {
-          "company": "OVHcloud",
+          "company": "Expleo",
           "first_seen": "2026-11-17",
-          "location": "BREST",
-          "title": "STAGE fin d'études - ingénieur en conception électronique et système embarqué H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BREST-STAGE-fin-d&apos;%C3%A9tudes-ing%C3%A9nieur-en-conception-%C3%A9lectronique-et-syst%C3%A8me-embarqu%C3%A9-HFN-29200/1450044533/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "LYON",
-          "title": "Stage - AI Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/LYON-Stage-AI-Engineer-HFN-69003/1449884033/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "BORDEAUX",
-          "title": "Stage - Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BORDEAUX-Stage-Software-Engineer-HFN-33000/1449489233/"
-        },
-        {
-          "company": "OVHcloud",
-          "first_seen": "2026-11-17",
-          "location": "BORDEAUX",
-          "title": "Stage - Software Engineer H/F/N",
-          "url": "https://careers.ovhcloud.com/job/BORDEAUX-Stage-Software-Engineer-HFN-33000/1449563833/"
-        },
-        {
-          "company": "Siemens",
-          "first_seen": "2026-11-17",
-          "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
-          "title": "Stage - Intelligent Systems, Simulation & 3D Animation f/m – Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528549"
+          "location": "FR-78-Montigny-le-Bretonneux",
+          "title": "Stage – Modélisation et Simulation Multiphysique 0D/1D des Circuits de Refroidissement H/F",
+          "url": "https://expleo-jobs-fr-fr.icims.com/jobs/55996/stage-%e2%80%93-mod%c3%a9lisation-et-simulation-multiphysique-0d-1d-des-circuits-de-refroidissement-h-f/job?in_iframe=1"
         },
         {
           "company": "Siemens",
@@ -351,80 +304,94 @@
         {
           "company": "Siemens",
           "first_seen": "2026-11-17",
+          "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
+          "title": "Stage - AI-Assisted Testing Strategy & Tooling for Physics Simulation Software f/m - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525622"
+        },
+        {
+          "company": "Siemens",
+          "first_seen": "2026-11-17",
+          "location": "Villeurbanne, Auvergne-Rhône-Alpes, France",
+          "title": "Stage - Évaluation de GitLab pour les modèles de simulation f/h - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525585"
+        },
+        {
+          "company": "Siemens",
+          "first_seen": "2026-11-17",
           "location": "Chatillon, Île-de-France, France",
-          "title": "Stage - Ingénieur DevOps / CI-CD (F/H)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528724"
+          "title": "Stage développement d'outils d'analyse par IA et de tableaux de bord DATA f/h",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526126"
         }
       ],
-      "recent_roles_total": 17,
-      "scanned": 5414,
+      "recent_roles_total": 14,
+      "scanned": 5426,
       "stamp": "2026-11-17",
-      "unsure": 20
+      "unsure": 9
     },
     "board3.html": {
       "also_new": [
         {
           "company": "Thales",
           "kind": "other",
-          "title": "STAGE-  Soutien logistique intégré -  F/H"
+          "title": "STAGE – Assistant qualité laboratoire & accréditation ISO 17025 – F/H"
         },
         {
           "company": "Thales",
           "kind": "other",
-          "title": "STAGE charge utile senseur sur drone - F/H"
+          "title": "Stage - Droit public des affaires - F/H"
         },
         {
-          "company": "Thales",
+          "company": "Airbus",
           "kind": "other",
-          "title": "STAGE - Offres - F/H"
+          "title": "STAGE 2027 - Optimisation des plans d'approvisionnement (h/f)"
         },
         {
-          "company": "Thales",
+          "company": "Airbus",
           "kind": "other",
-          "title": "Stage - Marketing produit et veille concurrentielle -  F/H"
+          "title": "Stage 2027 - Amélioration méthode Safety appliquée aux études COTS sur les Commandes de Vol (All Gender)"
         },
         {
-          "company": "Thales",
+          "company": "Airbus",
           "kind": "other",
-          "title": "Stagiaire Droit Résolution des Litiges et Contentieux"
+          "title": "STAGE 2027 - Analyse de risques HSE A350 (all gender)"
         },
         {
-          "company": "Thales",
-          "kind": "other",
-          "title": "STAGE - Etablissement de lois de vieillissement des matériaux pour les écrans de cockpits aéroportés - F/H"
+          "company": "Airbus",
+          "kind": "unsure",
+          "title": "STAGE 2027 - Ingénieur Amélioration continue (h/f)"
         },
         {
-          "company": "Thales",
+          "company": "Societe Generale",
           "kind": "other",
-          "title": "STAGE - Mise au point d'un critère de déformation opto-mécanique pour la conception d'écrans LCD - F/H"
+          "title": "Portofolio manager - Secteur assurances privées"
         },
         {
-          "company": "Thales",
+          "company": "Societe Generale",
           "kind": "other",
-          "title": "STAGE - Chargé(e) de Marketing Stratégique & Marketing Produits Radio - F/H"
+          "title": "STAGE - ASSISTANT(E) FINANCEMENTS STRUCTURES"
         },
         {
-          "company": "Thales",
+          "company": "Societe Generale",
           "kind": "other",
-          "title": "STAGE – Etude sur les répéteurs quantiques basés sur la correction d’erreurs (H/F)"
+          "title": "Assistant d'Équipe Client Facilitation"
         },
         {
-          "company": "Thales",
+          "company": "Societe Generale",
           "kind": "other",
-          "title": "STAGE – Audit de confiance et détection d'incohérences dans l'espace latent (J-space) d'un agent LLM d'analyse tactique (H/F)"
+          "title": "Stage Banquier Privé"
         },
         {
-          "company": "Thales",
+          "company": "BNP Paribas",
           "kind": "other",
-          "title": "STAGE – Building block multi trajet – F/H"
+          "title": "Stage - Gestionnaire Back Office Trésorerie & Collateral Liquidity Management H/F"
         },
         {
-          "company": "Thales",
+          "company": "BNP Paribas",
           "kind": "other",
-          "title": "STAGE - Détection et pistage - F/H"
+          "title": "Stage - Credit Advisor Gestion de Fortune - H/F"
         }
       ],
-      "also_new_total": 206,
+      "also_new_total": 38,
       "board": "Defence, Finance & Silicon Watch",
       "closed_today": [
         {
@@ -451,11 +418,6 @@
           "company": "Airbus",
           "title": "Stage 2027 Airbus Business Stage en Digital & IA – Gestion du Système Qualité (BMS) (h/f)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/Stage-2027-Airbus-Business-Stage-en-Digital---IA---Gestion-du-Systme-Qualit--BMS---h-f-_JR10444485"
-        },
-        {
-          "company": "Airbus",
-          "title": "STAGE 2027 - Stage en  Développement d'application mobile (H/F)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Marseille-Area/STAGE-2027---Stage-en--Dveloppement-d-application-mobile--H-F-_JR10441232"
         },
         {
           "company": "Airbus",
@@ -486,15 +448,20 @@
           "company": "Airbus",
           "title": "ATR - Stage- Improvement of trajectory computation software for operational route analysis",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Toulouse-Area/ATR---Stage--Improvement-of-trajectory-computation-software-for-operational-route-analysis_JR10448978"
+        },
+        {
+          "company": "Airbus",
+          "title": "STAGE 2027 - Ingénieur Amélioration continue (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Nantes-Area/STAGE-2027---Ingnieur-Amlioration-continue--ALL-GENDER-_JR10444519"
         }
       ],
-      "closed_today_total": 21,
-      "closed_total": 134,
+      "closed_today_total": 92,
+      "closed_total": 205,
       "companies": 25,
       "failed": 0,
       "failed_names": [],
-      "filtered": 892,
-      "generated": "2026-11-17T00:39:25.153881+01:00",
+      "filtered": 890,
+      "generated": "2026-11-17T23:47:01.215924+01:00",
       "incomplete": [
         "Dassault Aviation (truncated)",
         "MBDA (truncated)",
@@ -504,186 +471,186 @@
         "Dell (truncated)",
         "HPE (truncated)"
       ],
-      "live": 1280,
-      "new": 736,
+      "live": 1235,
+      "new": 31,
       "new_roles": [
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0343356; 18 - SYSTEM; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Ingénieur Conception d'un compagnon IA solutions de Guerre Electronique - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-Conception-d-un-compagnon-IA-solutions-de-Guerre-Electronique_R0343356"
+          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0347493; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Alenia Space France Sas",
+          "title": "STAGE - Ingénieur Développement d’algorithmes de calcul quantique pour applications spatiales - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---Ingnieur-Dveloppement-d-algorithmes-de-calcul-quantique-pour-applications-spatiales---F-H_R0347493-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0340719; 07 - CUSTOMER SERVICE; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Ingénieur Développement et standardisation de contenus pédagogiques - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-Dveloppement-et-standardisation-de-contenus-pdagogiques---F-H_R0340719-2"
+          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0348492; 20 - SOFTWARE; Thales SIX GTS France S.A.S.",
+          "title": "STAGE - Ingénieur systèmes embarqués - Synchronisation de Communications Radio - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-systmes-embarqus---F-H_R0348492-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0346655; 19 - HARDWARE; Thales Avs France Sas",
-          "title": "STAGE - Développement de modèles de simulation optique d'écrans LCD aéroportés - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Dveloppement-de-modles-de-simulation-optique-d-crans-LCD-aroports---F-H_R0346655"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345710; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur matériaux – Développement et qualification de matériaux polymères – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-matriaux---Dveloppement-et-qualification-de-matriaux-polymres---F-H_R0345710-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0346663; 19 - HARDWARE; Thales Avs France Sas",
-          "title": "STAGE – Développement d'écrans de cockpit nouvelle génération – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Dveloppement-d-crans-de-cockpit-nouvelle-gnration---F-H_R0346663-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345644; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur simulation électromagnétique d’actionneurs magnétiques – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-simulation-lectromagntique-d-actionneurs-magntiques---F-H_R0345644-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0344253; 20 - SOFTWARE; Trixell",
-          "title": "STAGE – Ingénieur traitement d’images médicales & IA – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Ingnieur-traitement-d-images-mdicales---IA---F-H_R0344253-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345707; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur matériaux – Qualification de procédés de traitements de surface et de peintures – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-matriaux---Qualification-de-procds-de-traitements-de-surface-et-de-peintures---F-H_R0345707-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0344727; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Support à la préparation d’appels d’offres avec des assistants IA spécialisés. (F/H)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/STAGE---Support--la-prparation-d-appels-d-offres-avec-des-assistants-IA-spcialiss--F-H-_R0344727"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0346519; 20 - SOFTWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur développement logiciel C# & architecture d’applications de test – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-dveloppement-logiciel-C----architecture-d-applications-de-test---F-H_R0346519-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0348203; 16 - IS-IT; Thales Global Services Sas",
-          "title": "STAGE - Data Engineer Power BI – H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Data-Engineer-Power-BI---H-F_R0348203-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0344779; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur optimisation des liaisons électroniques haute vitesse – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-optimisation-des-liaisons-lectroniques-haute-vitesse---F-H_R0344779"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Rungis, Intern/Trainee (Fixed Term) (Trainee); R0342451; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas",
-          "title": "STAGE - Ingénieur cybersécurité - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rungis/STAGE---Ingnieur-cyberscurit---F-H_R0342451-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0346452; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur développement Python pour l’analyse de la testabilité – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-dveloppement-Python-pour-l-analyse-de-la-testabilit---F-H_R0346452-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Cannes, Intern/Trainee (Fixed Term) (Trainee); R0340466; 09 - PROCUREMENT; Thales Alenia Space France Sas",
-          "title": "Stage – Ingénieur Category Buyer – (H/F)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Ingnieur-Customer-Buyer----H-F-_R0340466-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0346517; 18 - SYSTEM; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur mécatronique & robotique industrielle – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-mcatronique---robotique-industrielle---F-H_R0346517-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Gmenos, Intern/Trainee (Fixed Term) (Trainee); R0344869; 20 - SOFTWARE; Thales DIS France SAS",
-          "title": "Stage – Ingénieur logiciel – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gmenos/Stage---Ingnieur-logiciel---F-H_R0344869-1"
+          "location": "Palaiseau, Intern/Trainee (Fixed Term) (Trainee); R0347236; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales DIS France SAS",
+          "title": "STAGE - Ingénieur IA & Cybersécurité – Plateforme de Threat Intelligence de Nouvelle Génération - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Palaiseau/STAGE---Ingnieur-IA---Cyberscurit---Plateforme-de-Threat-Intelligence-de-Nouvelle-Gnration---F-H_R0347236-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344244; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Dms France Sas",
-          "title": "STAGE - Ingénieur de recherche combat collaboratif - H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Ingnieur-de-recherche-combat-collaboratif---H-F_R0344244-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0344781; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur vieillissement des matériaux & durabilité des produits – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-vieillissement-des-matriaux---durabilit-des-produits---F-H_R0344781-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0345092; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Dms France Sas",
-          "title": "STAGE - Ingénieur de recherche en radar - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Ingnieur-de-recherche-en-radar---F-H_R0345092-1"
+          "location": "Limours, Intern/Trainee (Fixed Term) (Trainee); R0343515; 18 - SYSTEM; Thales Las France Sas",
+          "title": "Stage – Ingénieur Knowledge Management - H.F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/STAGE---Cration-d-une-base-de-connaissance-Radar---F-H_R0343515-1"
         }
       ],
-      "new_roles_total": 736,
+      "new_roles_total": 31,
       "recent_roles": [
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0343356; 18 - SYSTEM; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Ingénieur Conception d'un compagnon IA solutions de Guerre Electronique - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-Conception-d-un-compagnon-IA-solutions-de-Guerre-Electronique_R0343356"
+          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0347493; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Alenia Space France Sas",
+          "title": "STAGE - Ingénieur Développement d’algorithmes de calcul quantique pour applications spatiales - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---Ingnieur-Dveloppement-d-algorithmes-de-calcul-quantique-pour-applications-spatiales---F-H_R0347493-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0340719; 07 - CUSTOMER SERVICE; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Ingénieur Développement et standardisation de contenus pédagogiques - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-Dveloppement-et-standardisation-de-contenus-pdagogiques---F-H_R0340719-2"
+          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0348492; 20 - SOFTWARE; Thales SIX GTS France S.A.S.",
+          "title": "STAGE - Ingénieur systèmes embarqués - Synchronisation de Communications Radio - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-systmes-embarqus---F-H_R0348492-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0346655; 19 - HARDWARE; Thales Avs France Sas",
-          "title": "STAGE - Développement de modèles de simulation optique d'écrans LCD aéroportés - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Dveloppement-de-modles-de-simulation-optique-d-crans-LCD-aroports---F-H_R0346655"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345710; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur matériaux – Développement et qualification de matériaux polymères – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-matriaux---Dveloppement-et-qualification-de-matriaux-polymres---F-H_R0345710-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0346663; 19 - HARDWARE; Thales Avs France Sas",
-          "title": "STAGE – Développement d'écrans de cockpit nouvelle génération – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Dveloppement-d-crans-de-cockpit-nouvelle-gnration---F-H_R0346663-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345644; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur simulation électromagnétique d’actionneurs magnétiques – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-simulation-lectromagntique-d-actionneurs-magntiques---F-H_R0345644-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Moirans, Intern/Trainee (Fixed Term) (Trainee); R0344253; 20 - SOFTWARE; Trixell",
-          "title": "STAGE – Ingénieur traitement d’images médicales & IA – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Moirans/STAGE---Ingnieur-traitement-d-images-mdicales---IA---F-H_R0344253-1"
+          "location": "Cholet, Intern/Trainee (Fixed Term) (Trainee); R0344749; 10 - INDUSTRY; Thales SIX GTS France S.A.S.",
+          "title": "STAGE - Ingénieur Accompagnement transformation IA Industrie - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cholet/STAGE---Ingnieur-Accompagnement-transformation-IA-Industrie---F-H_R0344749-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Gennevilliers, Intern/Trainee (Fixed Term) (Trainee); R0344727; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales SIX GTS France S.A.S.",
-          "title": "STAGE - Support à la préparation d’appels d’offres avec des assistants IA spécialisés. (F/H)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gennevilliers/STAGE---Support--la-prparation-d-appels-d-offres-avec-des-assistants-IA-spcialiss--F-H-_R0344727"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0345707; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur matériaux – Qualification de procédés de traitements de surface et de peintures – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-matriaux---Qualification-de-procds-de-traitements-de-surface-et-de-peintures---F-H_R0345707-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0348203; 16 - IS-IT; Thales Global Services Sas",
-          "title": "STAGE - Data Engineer Power BI – H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Data-Engineer-Power-BI---H-F_R0348203-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0346519; 20 - SOFTWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur développement logiciel C# & architecture d’applications de test – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-dveloppement-logiciel-C----architecture-d-applications-de-test---F-H_R0346519-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Rungis, Intern/Trainee (Fixed Term) (Trainee); R0342451; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Las France Sas",
-          "title": "STAGE - Ingénieur cybersécurité - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rungis/STAGE---Ingnieur-cyberscurit---F-H_R0342451-1"
+          "location": "Palaiseau, Intern/Trainee (Fixed Term) (Trainee); R0341472; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Dms France Sas",
+          "title": "Stage – Analyse Topologique de Données Acoustiques H/F",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Palaiseau/Stage---Analyse-Topologique-de-Donnes-Acoustiques--H-F_R0341472-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Cannes, Intern/Trainee (Fixed Term) (Trainee); R0340466; 09 - PROCUREMENT; Thales Alenia Space France Sas",
-          "title": "Stage – Ingénieur Category Buyer – (H/F)",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Ingnieur-Customer-Buyer----H-F-_R0340466-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0344779; 19 - HARDWARE; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur optimisation des liaisons électroniques haute vitesse – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-optimisation-des-liaisons-lectroniques-haute-vitesse---F-H_R0344779"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Gmenos, Intern/Trainee (Fixed Term) (Trainee); R0344869; 20 - SOFTWARE; Thales DIS France SAS",
-          "title": "Stage – Ingénieur logiciel – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Gmenos/Stage---Ingnieur-logiciel---F-H_R0344869-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0346452; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur développement Python pour l’analyse de la testabilité – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-dveloppement-Python-pour-l-analyse-de-la-testabilit---F-H_R0346452-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0344244; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Dms France Sas",
-          "title": "STAGE - Ingénieur de recherche combat collaboratif - H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Ingnieur-de-recherche-combat-collaboratif---H-F_R0344244-1"
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0346517; 18 - SYSTEM; Thales Avs France Sas",
+          "title": "STAGE – Ingénieur mécatronique & robotique industrielle – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-mcatronique---robotique-industrielle---F-H_R0346517-1"
         },
         {
           "company": "Thales",
           "first_seen": "2026-11-17",
-          "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0345092; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales Dms France Sas",
-          "title": "STAGE - Ingénieur de recherche en radar - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/STAGE---Ingnieur-de-recherche-en-radar---F-H_R0345092-1"
+          "location": "Palaiseau, Intern/Trainee (Fixed Term) (Trainee); R0347236; 21 - ENGINEERING AND TECHNICAL SPECIALTIES; Thales DIS France SAS",
+          "title": "STAGE - Ingénieur IA & Cybersécurité – Plateforme de Threat Intelligence de Nouvelle Génération - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Palaiseau/STAGE---Ingnieur-IA---Cyberscurit---Plateforme-de-Threat-Intelligence-de-Nouvelle-Gnration---F-H_R0347236-1"
         }
       ],
-      "recent_roles_total": 744,
-      "scanned": 8832,
+      "recent_roles_total": 748,
+      "scanned": 8841,
       "stamp": "2026-11-17",
-      "unsure": 125
+      "unsure": 124
     }
   },
-  "generated": "2026-11-17T00:39:25.153881+01:00"
+  "generated": "2026-11-17T23:47:01.215924+01:00"
 }
