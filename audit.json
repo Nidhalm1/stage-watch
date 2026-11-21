@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 679,
+      "foreign_count": 678,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -105,7 +105,7 @@
         },
         {
           "company": "Criteo",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Sales Manager Intern (start January 2027)",
           "url": "https://criteo.wd3.myworkdayjobs.com/en-US/Criteo_Career_Site/job/Paris/Sales-Manager-Intern--start-January-2027-_r21413"
@@ -169,16 +169,16 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Toulouse, Occitanie, FRA",
-          "title": "Operations Intern - Région Sud - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+          "location": "Lille, Hauts-de-France, FRA",
+          "title": "Operations Intern - Région Nord - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Lille, Hauts-de-France, FRA",
-          "title": "Operations Intern - Région Nord - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10492799/operations-intern-region-nord-start-date-2027"
+          "location": "Toulouse, Occitanie, FRA",
+          "title": "Operations Intern - Région Sud - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -266,7 +266,7 @@
         }
       ],
       "non_tech_total": 24,
-      "stamp": "2026-11-20",
+      "stamp": "2026-11-21",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -364,7 +364,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 63,
+      "foreign_count": 62,
       "foreign_sample": [
         {
           "company": "Back Market",
@@ -740,7 +740,7 @@
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Stage - Chief of Staff, Bureau du CEO (Services Financiers)",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000162670219"
@@ -879,19 +879,12 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000152233108"
         }
       ],
-      "non_tech_total": 125,
-      "stamp": "2026-11-20",
+      "non_tech_total": 127,
+      "stamp": "2026-11-21",
       "unknown_location": [
         {
           "company": "Amadeus",
-          "is_new": true,
-          "location": "Bogota, R37715",
-          "title": "Software Development Intern",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Bogota/Software-Development-Intern_R37715"
-        },
-        {
-          "company": "Amadeus",
-          "is_new": true,
+          "is_new": false,
           "location": "Bogota, R38458",
           "title": "Software Development Intern",
           "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Bogota/Software-Development-Intern_R38458"
@@ -941,16 +934,16 @@
         {
           "company": "OVHcloud",
           "is_new": false,
-          "location": "CROIX",
-          "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
+          "location": "ROUBAIX",
+          "title": "Stage Talent Acquisition Specialist Industry H/F/N",
+          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Talent-Acquisition-Specialist-Industry-HFN-59100/1453958133/"
         },
         {
           "company": "OVHcloud",
           "is_new": false,
-          "location": "ROUBAIX",
-          "title": "Stage Talent Acquisition Specialist Industry H/F/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Talent-Acquisition-Specialist-Industry-HFN-59100/1453958133/"
+          "location": "CROIX",
+          "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
         },
         {
           "company": "OVHcloud",
@@ -1033,22 +1026,29 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522712"
+          "title": "Product Designer Intern - Strategic Student Program",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527407"
         },
         {
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Stage Développement outils : Configuration des données métro automatique h/f",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525463"
+          "title": "Strategic Student Program: Digital Enterprise Software Applications Internship (Summer 2027, GSCS)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527491"
+        },
+        {
+          "company": "Siemens",
+          "is_new": true,
+          "location": "",
+          "title": "Building Automation Systems Specialist Internship",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522381"
         }
       ],
       "unknown_location_total": 23
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 789,
+      "foreign_count": 771,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1144,21 +1144,21 @@
       "non_tech": [
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0342354; 14 - COMMUNICATIONS; Thales Global Services Sas",
           "title": "STAGE - Community Manager Interne – H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Community-Manager-Interne---H-F_R0342354"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0349060; 02 - STRATEGY, MARKETING, SALES; Thales",
           "title": "Stage Stratégie & Marketing - Politique Produit et digitalisation",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stage-Stratgie---Marketing---Politique-Produit-et-digitalisation_R0349060-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Elancourt, Intern/Trainee (Fixed Term) (Trainee); R0347669; 19 - HARDWARE; Thales Dms France Sas",
           "title": "Stage - ouvrier F/H – Opérateur inventaire / tri",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Elancourt/Stage---ouvrier-F-H---Oprateur-inventaire---tri_R0347669"
@@ -1563,8 +1563,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/STAGE-OUVRIER---Logistique-de-distribution---F-H_R0342930-1"
         }
       ],
-      "non_tech_total": 880,
-      "stamp": "2026-11-20",
+      "non_tech_total": 859,
+      "stamp": "2026-11-21",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1990,5 +1990,5 @@
       "unknown_location_total": 118
     }
   },
-  "generated": "2026-11-20T23:06:40.518358+01:00"
+  "generated": "2026-11-21T21:45:59.943396+01:00"
 }
