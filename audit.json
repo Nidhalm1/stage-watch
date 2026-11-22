@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 678,
+      "foreign_count": 676,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -266,7 +266,7 @@
         }
       ],
       "non_tech_total": 24,
-      "stamp": "2026-11-21",
+      "stamp": "2026-11-22",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -364,7 +364,7 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 62,
+      "foreign_count": 63,
       "foreign_sample": [
         {
           "company": "Back Market",
@@ -879,16 +879,9 @@
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000152233108"
         }
       ],
-      "non_tech_total": 127,
-      "stamp": "2026-11-21",
+      "non_tech_total": 125,
+      "stamp": "2026-11-22",
       "unknown_location": [
-        {
-          "company": "Amadeus",
-          "is_new": false,
-          "location": "Bogota, R38458",
-          "title": "Software Development Intern",
-          "url": "https://amadeus.wd502.myworkdayjobs.com/en-US/jobs/job/Bogota/Software-Development-Intern_R38458"
-        },
         {
           "company": "Murex",
           "is_new": false,
@@ -934,16 +927,16 @@
         {
           "company": "OVHcloud",
           "is_new": false,
-          "location": "ROUBAIX",
-          "title": "Stage Talent Acquisition Specialist Industry H/F/N",
-          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Talent-Acquisition-Specialist-Industry-HFN-59100/1453958133/"
+          "location": "CROIX",
+          "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
+          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
         },
         {
           "company": "OVHcloud",
           "is_new": false,
-          "location": "CROIX",
-          "title": "STAGE (3-6 mois) - BIM Modeleur H/F/N",
-          "url": "https://careers.ovhcloud.com/job/CROIX-STAGE-%283-6-mois%29-BIM-Modeleur-HFN-59170/1446145933/"
+          "location": "ROUBAIX",
+          "title": "Stage Talent Acquisition Specialist Industry H/F/N",
+          "url": "https://careers.ovhcloud.com/job/ROUBAIX-Stage-Talent-Acquisition-Specialist-Industry-HFN-59100/1453958133/"
         },
         {
           "company": "OVHcloud",
@@ -1026,29 +1019,15 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Product Designer Intern - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527407"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Strategic Student Program: Digital Enterprise Software Applications Internship (Summer 2027, GSCS)",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527491"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
-          "title": "Building Automation Systems Specialist Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522381"
+          "title": "Fresh Graduate Engineer - Internship (Omani National) @Siemens Mobility Oman",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522447"
         }
       ],
-      "unknown_location_total": 23
+      "unknown_location_total": 20
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 771,
+      "foreign_count": 766,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1563,8 +1542,8 @@
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Limours/STAGE-OUVRIER---Logistique-de-distribution---F-H_R0342930-1"
         }
       ],
-      "non_tech_total": 859,
-      "stamp": "2026-11-21",
+      "non_tech_total": 857,
+      "stamp": "2026-11-22",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1990,5 +1969,5 @@
       "unknown_location_total": 118
     }
   },
-  "generated": "2026-11-21T21:45:59.943396+01:00"
+  "generated": "2026-11-22T21:56:33.812488+01:00"
 }
