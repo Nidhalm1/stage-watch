@@ -2,7 +2,7 @@
   "boards": {
     "board.html": {
       "board": "Stage Watch",
-      "foreign_count": 643,
+      "foreign_count": 638,
       "foreign_sample": [
         {
           "company": "Datadog",
@@ -147,7 +147,7 @@
         },
         {
           "company": "Scaleway",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris",
           "title": "PMO - Internship",
           "url": "https://jobs.lever.co/scaleway/112d06fe-2f0a-4b8c-972d-c7414a0a6344"
@@ -168,7 +168,7 @@
         },
         {
           "company": "Amazon / AWS",
-          "is_new": true,
+          "is_new": false,
           "location": "Clichy, Ile-de-France, FRA",
           "title": "Process Improvement Specialist Intern - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10554429/process-improvement-specialist-intern-2027"
@@ -183,16 +183,16 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Clichy, Ile-de-France, FRA",
-          "title": "Account Representative Intern, Early Career - 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027"
+          "location": "Toulouse, Occitanie, FRA",
+          "title": "Operations Intern - Région Sud - Start Date 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
         },
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Toulouse, Occitanie, FRA",
-          "title": "Operations Intern - Région Sud - Start Date 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10504848/operations-intern-region-sud-start-date-2027"
+          "location": "Clichy, Ile-de-France, FRA",
+          "title": "Account Representative Intern, Early Career - 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10557604/account-representative-intern-early-career-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -211,13 +211,6 @@
         {
           "company": "Amazon / AWS",
           "is_new": false,
-          "location": "Boves, Hauts-de-France, FRA",
-          "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
-          "url": "https://www.amazon.jobs/en/jobs/10575610/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
-        },
-        {
-          "company": "Amazon / AWS",
-          "is_new": false,
           "location": "Brétigny-sur-Orge, Ile-de-France, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10575606/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
@@ -228,6 +221,13 @@
           "location": "Lauwin-Planque, Hauts-de-France, FRA",
           "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
           "url": "https://www.amazon.jobs/en/jobs/10575484/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
+        },
+        {
+          "company": "Amazon / AWS",
+          "is_new": false,
+          "location": "Boves, Hauts-de-France, FRA",
+          "title": "Stagiaire Partenaire Ressources Humaines Opérations (6 Mois) - 2027",
+          "url": "https://www.amazon.jobs/en/jobs/10575610/stagiaire-partenaire-ressources-humaines-operations-6-mois-2027"
         },
         {
           "company": "Amazon / AWS",
@@ -287,7 +287,7 @@
         }
       ],
       "non_tech_total": 27,
-      "stamp": "2026-11-27",
+      "stamp": "2026-11-28",
       "unknown_location": [
         {
           "company": "Cloudflare",
@@ -385,19 +385,13 @@
     },
     "board2.html": {
       "board": "French Tech Watch",
-      "foreign_count": 58,
+      "foreign_count": 59,
       "foreign_sample": [
         {
           "company": "Back Market",
           "location": "Barcelona",
           "title": "Software Engineer Intern",
           "url": "https://jobs.ashbyhq.com/backmarket/09ecb805-3072-4e44-a66b-17c4bdb738f5"
-        },
-        {
-          "company": "Back Market",
-          "location": "Barcelona",
-          "title": "Data Analyst Intern",
-          "url": "https://jobs.ashbyhq.com/backmarket/fb5d65f8-3619-46fa-8397-43d9ec1450f6"
         },
         {
           "company": "Mistral AI",
@@ -476,6 +470,12 @@
           "location": "Oslo, no",
           "title": "Sommerjobb Teknologi 2027",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000160544519"
+        },
+        {
+          "company": "Sopra Steria",
+          "location": "Roma, it",
+          "title": "Stage ambito Testing del Software ",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000158804049"
         }
       ],
       "non_tech": [
@@ -579,7 +579,7 @@
         },
         {
           "company": "Mirakl",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, France",
           "title": "Procurement intern ",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/6271872004"
@@ -590,6 +590,13 @@
           "location": "Paris, France",
           "title": "Solution Consultant Intern ",
           "url": "https://job-boards.greenhouse.io/mirakl/jobs/6219180004"
+        },
+        {
+          "company": "Deezer",
+          "is_new": true,
+          "location": "Paris, FR",
+          "title": "Research Internship - Music Version Identification",
+          "url": "https://deezer.teamtailor.com/jobs/8790678-research-internship-music-version-identification"
         },
         {
           "company": "Deezer",
@@ -707,12 +714,19 @@
           "company": "Sopra Steria",
           "is_new": true,
           "location": "Courbevoie, fr",
+          "title": "Stage Chargé(e) de Recrutement - Ile-De-France",
+          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000163993633"
+        },
+        {
+          "company": "Sopra Steria",
+          "is_new": false,
+          "location": "Courbevoie, fr",
           "title": "Stage PPI - Juriste droit social France",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000163844829"
         },
         {
           "company": "Sopra Steria",
-          "is_new": true,
+          "is_new": false,
           "location": "Paris, fr",
           "title": "Stage - Chef/Cheffe de projet Numérique Responsable",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000163842371"
@@ -723,13 +737,6 @@
           "location": "Courbevoie, fr",
           "title": "Stage - Consultant Stratégie des Paiements - Services Financiers - Courbevoie",
           "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000163711928"
-        },
-        {
-          "company": "Sopra Steria",
-          "is_new": false,
-          "location": "Paris, fr",
-          "title": "Stage - Chief of Staff, Bureau du CEO (Services Financiers)",
-          "url": "https://jobs.smartrecruiters.com/SopraSteria1/744000162670219"
         },
         {
           "company": "Sopra Steria",
@@ -873,7 +880,7 @@
         },
         {
           "company": "Alten",
-          "is_new": true,
+          "is_new": false,
           "location": "Toulouse, fr",
           "title": "STAGE - Consultant RSE (H/F)",
           "url": "https://jobs.smartrecruiters.com/alten/744000163865144"
@@ -891,17 +898,10 @@
           "location": "Grenoble, fr",
           "title": "Stage Qualité – Secteur Nucléaire (ISO 9001) (H/F)",
           "url": "https://jobs.smartrecruiters.com/alten/744000162244664"
-        },
-        {
-          "company": "Alten",
-          "is_new": false,
-          "location": "Boulogne-Billancourt, fr",
-          "title": "Stage de fin d'étude - Chargé de recrutement H/F",
-          "url": "https://jobs.smartrecruiters.com/alten/744000162033027"
         }
       ],
-      "non_tech_total": 110,
-      "stamp": "2026-11-27",
+      "non_tech_total": 106,
+      "stamp": "2026-11-28",
       "unknown_location": [
         {
           "company": "Murex",
@@ -1054,36 +1054,29 @@
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Fire Alarm Systems Technician Internship",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527695"
+          "title": "Research Intern – Scientific Machine Learning for Physics and Simulation",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530519"
         },
         {
           "company": "Siemens",
           "is_new": true,
           "location": "",
-          "title": "Product Designer Intern - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527407"
+          "title": "Electromechanical Design Intern (12 Months)",
+          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527606"
         },
         {
           "company": "Siemens",
           "is_new": false,
           "location": "",
-          "title": "User Researcher Intern - Strategic Student Program",
-          "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528110"
-        },
-        {
-          "company": "Siemens",
-          "is_new": true,
-          "location": "",
           "title": "Building Automation Systems Specialist Internship",
           "url": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522712"
         }
       ],
-      "unknown_location_total": 25
+      "unknown_location_total": 24
     },
     "board3.html": {
       "board": "Defence, Finance & Silicon Watch",
-      "foreign_count": 772,
+      "foreign_count": 765,
       "foreign_sample": [
         {
           "company": "Thales",
@@ -1102,12 +1095,6 @@
           "location": "Montreal, Intern/Trainee (Fixed Term) (Trainee); R0348058; 20 - SOFTWARE; Thales Canada Inc., Avionics",
           "title": "Stagiaire hardware",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Montreal/Stagiaire-hardware_R0348058-1"
-        },
-        {
-          "company": "Thales",
-          "location": "Ottawa, Intern/Trainee (Fixed Term) (Trainee); R0348683; 20 - SOFTWARE; Thales DIS CPL Canada, Inc",
-          "title": "Member of Technical Staff- Intern",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Ottawa/Member-of-Technical-Staff--Intern_R0348683-2"
         },
         {
           "company": "Thales",
@@ -1174,26 +1161,53 @@
           "location": "Bangalore, Intern/Trainee (Fixed Term) (Trainee); R0347897; 19 - HARDWARE",
           "title": "Hardware Intern",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bangalore/Hardware-Intern_R0347897"
+        },
+        {
+          "company": "Thales",
+          "location": "Bangalore, Intern/Trainee (Fixed Term) (Trainee); R0347867; 20 - SOFTWARE",
+          "title": "Software Intern",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bangalore/Software-Intern_R0347867"
         }
       ],
       "non_tech": [
         {
           "company": "Thales",
           "is_new": true,
-          "location": "Rungis, Intern/Trainee (Fixed Term) (Trainee); R0348053; 02 - STRATEGY, MARKETING, SALES; Thales Las France Sas",
-          "title": "STAGE - Commerce - Stratégie de compte - F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Rungis/STAGE---Commerce---Stratgie-de-compte---F-H_R0348053-1"
+          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0345615; 02 - STRATEGY, MARKETING, SALES; Thales Alenia Space France Sas",
+          "title": "STAGE - Analyste Stratégie et Innovation -Space Business Catalyst - F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---Analyste-Stratgie-et-Innovation--Space-Business-Catalyst---F-H_R0345615-1"
         },
         {
           "company": "Thales",
           "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0349855; 12 - HUMAN RESOURCES; Thales",
+          "title": "Stagiaire Communication Handicap & Inclusion (H/F)",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Communication-Handicap---Inclusion--H-F-_R0349855-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Bordeaux, Intern/Trainee (Fixed Term) (Trainee); R0347780; 11 - FINANCE; Thales Avs France Sas",
+          "title": "STAGE – Méthodes et amélioration des processus de conception mécanique – F/H",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Bordeaux/STAGE---Ingnieur-mthodes-et-amlioration-des-processus-de-conception-mcanique---F-H_R0347780-1"
+        },
+        {
+          "company": "Thales",
+          "is_new": true,
+          "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0349858; 13 - LEGAL, CONTRACTS & COMPLIANCE; Thales",
+          "title": "Stagiaire Legal M&A",
+          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/Stagiaire-Legal-M-A_R0349858"
+        },
+        {
+          "company": "Thales",
+          "is_new": false,
           "location": "Chatellerault, Intern/Trainee (Fixed Term) (Trainee); R0345430; 10 - INDUSTRY; Thales Avs France Sas",
           "title": "STAGE - Technicien Support Industriel - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Chatellerault/STAGE---Ingnieur-Support-Industriel---F-H_R0345430-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Cannes, Intern/Trainee (Fixed Term) (Trainee); R0345570; 10 - INDUSTRY; Thales Alenia Space France Sas",
           "title": "Stage – Community Manager – (H/F)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Cannes/Stage---Community-Manager----H-F-_R0345570"
@@ -1207,14 +1221,14 @@
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Pont-Audemer, Intern/Trainee (Fixed Term) (Trainee); R0340435; 15 - HSE, REAL ESTATE, SECURITY, PERSONAL ASSISTANCE, MEDICAL WELFARE; Thales DIS France SAS",
           "title": "STAGE - HSE - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Pont-Audemer/STAGE---HSE---F-H_R0340435-1"
         },
         {
           "company": "Thales",
-          "is_new": true,
+          "is_new": false,
           "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0349692; 14 - COMMUNICATIONS; Thales",
           "title": "STAGE - Communication Interne - F/H",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Communication-Interne---F-H_R0349692-1"
@@ -1575,31 +1589,10 @@
           "location": "Meudon, Intern/Trainee (Fixed Term) (Trainee); R0311399; 10 - INDUSTRY; Thales Global Services Sas",
           "title": "STAGE - Brasage et soudage de pièces complexes – H/F",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Meudon/STAGE---Brasage-et-soudage-de-pices-complexes---H-F_R0311399-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Vlizy-Villacoublay, Intern/Trainee (Fixed Term) (Trainee); R0347084; 16 - IS-IT; Thales Global Services Sas",
-          "title": "STAGE - Chargé de communication et de gestion de contenu interne – H/F",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Vlizy-Villacoublay/STAGE---Charg-de-communication-et-de-gestion-de-contenu-interne---H-F_R0347084-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0346718; 09 - PROCUREMENT; Thales Alenia Space France Sas",
-          "title": "STAGE - Assistant Chef de Projet en transformation digitale - Achats F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/STAGE---Assistant-Chef-de-Projet-en-transformation-digitale---Achats-F-H_R0346718-1"
-        },
-        {
-          "company": "Thales",
-          "is_new": false,
-          "location": "Toulouse, Intern/Trainee (Fixed Term) (Trainee); R0344929; 10 - INDUSTRY; Thales Alenia Space France Sas",
-          "title": "STAGE OUVRIER – Gestion d’inventaire et suivi des outillages industriels – F/H",
-          "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/Toulouse/R0344929-STAGE-OUVRIER---Gestion-d-inventaire-et-suivi-des-outillages-industriels---F-H_R0344929-1"
         }
       ],
-      "non_tech_total": 875,
-      "stamp": "2026-11-27",
+      "non_tech_total": 866,
+      "stamp": "2026-11-28",
       "unknown_location": [
         {
           "company": "Thales",
@@ -1656,6 +1649,13 @@
           "location": "La-Fert-Saint-Aubin, Intern/Trainee (Fixed Term) (Trainee); R0345137; 10 - INDUSTRY; Junghans T2M Sas",
           "title": "STAGE - Technicien Méthodes Industrielles (F/H)",
           "url": "https://thales.wd3.myworkdayjobs.com/en-US/Careers/job/La-Fert-Saint-Aubin/STAGE---Technicien-Mthodes-Industrielles--F-H-_R0345137-1"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10446715",
+          "title": "STAGE 2027 - Ingénieur amélioration continue : optimisation des équipements d'atelier (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-amlioration-continue---optimisation-des-quipements-d-atelier--ALL-GENDER-_JR10446715"
         },
         {
           "company": "Airbus",
@@ -1754,13 +1754,6 @@
           "location": "Saint-Nazaire-Area, JR10432177",
           "title": "STAGE 2027 - Stage en gestion de projet IA  & Innovation Qualité  (H/F)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Assistant-Chef-de-Projet-IA---Innovation-Qualit----ALL-GENDER-_JR10432177"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10446778",
-          "title": "Stage 2027 -  Ingénieur Amélioration Continue & Performance Qualité (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/Stage-2027----Ingnieur-Amlioration-Continue---Performance-Qualit--ALL-GENDER-_JR10446778"
         },
         {
           "company": "Airbus",
@@ -1954,13 +1947,6 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Maulte-Area, JR10439346",
-          "title": "STAGE 2027 - Ingénieur Qualité (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Maulte-Area/STAGE-2027---Ingnieur-Inspection-qualit-pices-lmentaires--ALL-GENDER-_JR10439346"
-        },
-        {
-          "company": "Airbus",
-          "is_new": false,
           "location": "Saint-Nazaire-Area, JR10437705",
           "title": "STAGE 2027 – Déploiement de l'intelligence artificielle dans les métiers programme (ALL GENDER)",
           "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Dploiement-de-l-intelligence-artificielle-dans-les-mtiers-programme--ALL-GENDER-_JR10437705"
@@ -2017,13 +2003,20 @@
         {
           "company": "Airbus",
           "is_new": false,
-          "location": "Saint-Nazaire-Area, JR10446715",
-          "title": "STAGE 2027 - Ingénieur amélioration continue : optimisation des équipements d'atelier (ALL GENDER)",
-          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-amlioration-continue---optimisation-des-quipements-d-atelier--ALL-GENDER-_JR10446715"
+          "location": "Saint-Nazaire-Area, JR10444848",
+          "title": "STAGE 2027 - Ingénieur méthodes et Lean Manufacturing (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Ingnieur-Mthodes---Lean-Manufacturing--ALL-GENDER-_JR10444848"
+        },
+        {
+          "company": "Airbus",
+          "is_new": false,
+          "location": "Saint-Nazaire-Area, JR10442868",
+          "title": "STAGE 2027 - Support Ressources Humaines (ALL GENDER)",
+          "url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Saint-Nazaire-Area/STAGE-2027---Support-Ressources-Humaines--ALL-GENDER-_JR10442868"
         }
       ],
-      "unknown_location_total": 118
+      "unknown_location_total": 115
     }
   },
-  "generated": "2026-11-27T00:27:36.831859+01:00"
+  "generated": "2026-11-28T00:07:59.374653+01:00"
 }
